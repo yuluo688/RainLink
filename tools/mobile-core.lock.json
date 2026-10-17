@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "gomobileVersion": "v0.1.8",
+  "gomobileSum": "h1:vXgoN0pjsMONAaYCTdsKBX2T1kxuS7sbT/mZ7PElGoo=",
+  "ndkVersion": "27.0.12077973",
+  "androidApi": 29,
+  "cgoAlignment": {
+    "source": "src/cmd/cgo/out.go",
+    "sourceSha256": "3d05dfcfebb4ee9d3b04e08a3ff6b45401abab1ce8140673f35485a190ce8948"
+  },
+  "targets": ["android/arm64", "android/amd64"],
+  "tags": ["with_gvisor", "with_quic", "with_utls", "with_clash_api", "with_conntrack"]
+}

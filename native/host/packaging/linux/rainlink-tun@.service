@@ -1,0 +1,18 @@
+[Unit]
+Description=RainLink privileged network session
+
+[Service]
+Type=exec
+User=root
+Group=root
+ExecStart=/usr/libexec/rainlink/rainlink-host serve-tun
+ExecStopPost=/usr/libexec/rainlink/rainlink-host recover-tun-service
+StandardInput=socket
+StandardOutput=journal
+StandardError=journal
+UMask=0077
+NoNewPrivileges=yes
+KillMode=mixed
+TimeoutStartSec=90
+TimeoutStopSec=30
+LimitNOFILE=4096

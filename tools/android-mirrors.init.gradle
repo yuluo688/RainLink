@@ -1,0 +1,9 @@
+// Optional local build accelerator, also applied to Flutter's included build.
+// Invoke with --init-script; it never modifies the Flutter SDK or global Gradle.
+beforeSettings { settings ->
+    settings.dependencyResolutionManagement.repositories {
+        maven { url "https://maven.aliyun.com/repository/google" }
+        maven { url "https://maven.aliyun.com/repository/central" }
+        maven { url "https://maven.aliyun.com/repository/gradle-plugin" }
+    }
+}

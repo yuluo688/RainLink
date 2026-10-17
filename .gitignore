@@ -1,0 +1,28 @@
+# Local tools, build outputs, runtime data and editor state.
+/.toolchains/
+/.fvm/
+/build/
+/.idea/
+*.iml
+*.log
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+*.db
+*.db-shm
+*.db-wal
+.DS_Store
+Thumbs.db
+__pycache__/
+/app/android/app/libs/*.aar
+
+# Generated design deliveries and a local third-party checkout stay local.
+/design/RainLink-Design-Package.zip
+/design/exports/*
+!/design/exports/runtime-assets/
+/design/reference/figma-mcp-bridge/
+
+# Preserve the raw evidence linked by verification reports.
+!/docs/verification/**/*.log
+
+# Keep pubspec.lock, generated Drift code and platform runner sources tracked.

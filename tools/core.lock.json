@@ -1,0 +1,53 @@
+{
+  "version": "1.12.25-rainlink.1",
+  "upstreamVersion": "v1.12.25",
+  "module": "github.com/sagernet/sing-box",
+  "moduleSum": "h1:zg7RV4CCRsSelCfMTlQWiFvZE4gVyCVgwQWkfQWXggs=",
+  "goVersion": "go1.25.5",
+  "platform": "windows-amd64",
+  "tags": [
+    "with_quic",
+    "with_utls",
+    "with_clash_api"
+  ],
+  "binarySha256": "cf6863552456c535fd79a0724f2d01352e77c97f4958466b75d9f07d8f0edef7",
+  "upstreamFiles": {
+    "option/tls.go": "394b1bdab6751f5b82ad2b75170faf116e0dcce765e542f0666d5c0d1ccf73dd",
+    "common/tls/std_client.go": "ad41901bbf0e252d364f62f0f3afca0d902cf3fce089f6aaf9e7080d700dc955"
+  },
+  "additionalPlatforms": {
+    "linux-amd64": {
+      "version": "1.12.25-rainlink.2",
+      "binarySha256": "640e5293d90b94c71318031284e65cf8121d99ee9c06482f021ed77c9f3fa96d"
+    }
+  },
+  "linuxTUN": {
+    "version": "1.12.25-rainlink.2",
+    "upstreamFiles": {
+      "go.mod": "02dbbd355ff8db37886a4d292d1c87cf74fdee71c5276b45bbeb180b06196fb1",
+      "option/tun.go": "b8ec239b64b1b75ed0080c0ddff747805e62eba906b5f67e8e47e52b04e4aae0",
+      "protocol/tun/inbound.go": "1573cb301d4e9389172bd19e9353a54a765d012d1c3483bf457fa628c311263e"
+    },
+    "modules": {
+      "sing-tun": {
+        "module": "github.com/sagernet/sing-tun",
+        "version": "v0.7.13",
+        "sum": "h1:GuUBCymnGV/2jyxPae3eM9HlX1d7FaNxM97EqktDfy0=",
+        "files": {
+          "tun.go": "a68359a6ad017939f5fb84c3a5512e80b1ee0ff8d3bb06bb623311da699ebd7d",
+          "tun_linux.go": "fd4a5eb64046f2f005f2eef971519d0e46c3002b28c6cc1939f5ed97861e5dcb"
+        }
+      },
+      "netlink": {
+        "module": "github.com/sagernet/netlink",
+        "version": "v0.0.0-20240612041022-b9a21c07ac6a",
+        "sum": "h1:ObwtHN2VpqE0ZNjr6sGeT00J8uU7JF4cNUdb44/Duis=",
+        "files": {
+          "addr_linux.go": "3ef9988fa884c9d624bda12b07d8317afdcfe40758b88b5c9643cc944559c706",
+          "rule.go": "a23ad202d0f3d6424aad3ac004c857c7a6146b155a5ee943dd6fea63eec0be68",
+          "rule_linux.go": "12bb315914903771e99060b2da9efff988a91bb5acfcfad46cb8de1e178c7c9b"
+        }
+      }
+    }
+  }
+}

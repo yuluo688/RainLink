@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE policyconfig PUBLIC "-//freedesktop//DTD PolicyKit Policy Configuration 1.0//EN" "http://www.freedesktop.org/standards/PolicyKit/1/policyconfig.dtd">
+<policyconfig>
+  <vendor>RainLink</vendor>
+  <action id="org.rainlink.tun.manage">
+    <description>Manage a RainLink network session</description>
+    <description xml:lang="zh_CN">管理 RainLink 网络连接</description>
+    <message>Authentication is required to let RainLink manage this computer's network.</message>
+    <message xml:lang="zh_CN">RainLink 需要授权以接管本机网络。</message>
+    <defaults>
+      <allow_any>no</allow_any>
+      <allow_inactive>no</allow_inactive>
+      <allow_active>auth_admin</allow_active>
+    </defaults>
+  </action>
+</policyconfig>
