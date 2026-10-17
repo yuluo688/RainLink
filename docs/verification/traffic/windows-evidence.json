@@ -1,0 +1,16 @@
+{
+  "at": "2026-10-16T22:18:35.999640",
+  "scenario": "local origin through actual core in direct mode",
+  "payloadBytes": 262144,
+  "originRequests": 2,
+  "downloadRecorded": 271669,
+  "uploadRecorded": 3845,
+  "sampledAwayFromOverview": true,
+  "sameActiveSession": true,
+  "dailyBucketAndRankingConserved": true,
+  "databaseReopened": true,
+  "csvWrittenAndReadBack": true,
+  "csvPicker": "shared service replaced with fixed test output",
+  "userDatabaseModified": false,
+  "systemProxyRequested": false
+}

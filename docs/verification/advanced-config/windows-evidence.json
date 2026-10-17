@@ -1,0 +1,20 @@
+{
+  "at": "2026-10-17T02:36:17.971978",
+  "nativeWindows": true,
+  "temporaryDatabase": true,
+  "invalidConfigKeptSession": true,
+  "validationKeptSession": true,
+  "nativeSaveDialogAndReadback": {
+    "yaml": "export-1792175768287960.yaml",
+    "json": "export-1792175770862213.json"
+  },
+  "confirmationCancelKeptSession": true,
+  "applyRetainedActualTarget": true,
+  "actualDnsQueries": 1,
+  "actualOriginTransfers": 3,
+  "routeRejectedActualRequest": true,
+  "previousConfigRestored": true,
+  "systemProxyEnabled": false,
+  "tunEnabled": false,
+  "currentAndHistorySurvivedReopen": true
+}

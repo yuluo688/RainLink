@@ -1,0 +1,24 @@
+{
+  "schema": 6,
+  "integrity": "ok",
+  "tables": {
+    "nodes": {
+      "count": 68,
+      "sha256": "b132f1bab3f9aa7f62273c890d8e3aad1399ff537bc53ec133a71007e0f8d611"
+    },
+    "node_groups": {
+      "count": 1,
+      "sha256": "c5a53e38eb7de87032c5afcfdfc227794e6ccf368fc5a39506e76e313764a5f7"
+    },
+    "node_overrides": {
+      "count": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "preferences": {
+      "count": 4,
+      "sha256": "bf08c8a6f01829495e573f65a5afe2b4956bb6539dd001508d756edd1cc2ef13"
+    }
+  },
+  "startupRegistrySha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+  "systemProxyRegistrySha256": "a2e6841150ae1b263a657be911720b2366ca5f6e8cb0cb9279b8fa47cee41410"
+}

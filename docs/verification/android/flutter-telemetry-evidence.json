@@ -1,0 +1,23 @@
+{
+  "scope": "Android UI and actual libbox using a localhost direct HTTP stream through the explicit local proxy; no remote subscription",
+  "systemTunnelEstablished": true,
+  "heldRequestClosedByUi": true,
+  "coreLogEntries": 110,
+  "logsReadableAfterDisconnect": true,
+  "connectionsCsvVerified": true,
+  "logsCsvVerified": true,
+  "confirmedClearVerified": true,
+  "at": "2026-10-17T03:26:06.236802",
+  "captures": [
+    {
+      "file": "connections-real.png",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "file": "logs-real.png",
+      "width": 393,
+      "height": 852
+    }
+  ]
+}

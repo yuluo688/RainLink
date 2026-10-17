@@ -1,0 +1,1001 @@
+=== RUN   TestLinuxTUNLogRedactionAndMonotonicClearBarrier
+--- PASS: TestLinuxTUNLogRedactionAndMonotonicClearBarrier (0.01s)
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/stream
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/cursor
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/identity
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/length
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/future-tick
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/version
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/empty
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/empty-message
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/sequence
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/level
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/missing-tick
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/negative-tick
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/batch-size
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/event
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/source
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/timestamp
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/false-drop
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/unknown
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/duplicate
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/case
+--- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically (0.01s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/stream (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/cursor (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/identity (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/length (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/future-tick (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/version (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/empty (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/empty-message (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/sequence (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/level (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/missing-tick (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/negative-tick (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/batch-size (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/event (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/source (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/timestamp (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/false-drop (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/unknown (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/duplicate (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/case (0.00s)
+=== RUN   TestLinuxTUNLogFinalDrainIsBoundedAndReportsDrops
+--- PASS: TestLinuxTUNLogFinalDrainIsBoundedAndReportsDrops (0.01s)
+=== RUN   TestLinuxTUNLogBackpressureDoesNotBlockCoreAndCancelsBrokenStream
+--- PASS: TestLinuxTUNLogBackpressureDoesNotBlockCoreAndCancelsBrokenStream (1.10s)
+=== RUN   TestLinuxTUNLogCancellationJoinsWriter
+--- PASS: TestLinuxTUNLogCancellationJoinsWriter (0.10s)
+=== RUN   TestLinuxTUNLogRedactionAndMonotonicClearBarrier
+--- PASS: TestLinuxTUNLogRedactionAndMonotonicClearBarrier (0.00s)
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/source
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/missing-tick
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/negative-tick
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/event
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/empty
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/length
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/batch-size
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/empty-message
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/timestamp
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/version
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/stream
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/sequence
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/identity
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/level
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/future-tick
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/false-drop
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/cursor
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/unknown
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/duplicate
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/case
+--- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/source (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/missing-tick (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/negative-tick (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/event (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/empty (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/length (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/batch-size (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/empty-message (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/timestamp (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/version (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/stream (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/sequence (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/identity (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/level (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/future-tick (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/false-drop (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/cursor (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/unknown (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/duplicate (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/case (0.00s)
+=== RUN   TestLinuxTUNLogFinalDrainIsBoundedAndReportsDrops
+--- PASS: TestLinuxTUNLogFinalDrainIsBoundedAndReportsDrops (0.01s)
+=== RUN   TestLinuxTUNLogBackpressureDoesNotBlockCoreAndCancelsBrokenStream
+--- PASS: TestLinuxTUNLogBackpressureDoesNotBlockCoreAndCancelsBrokenStream (1.10s)
+=== RUN   TestLinuxTUNLogCancellationJoinsWriter
+--- PASS: TestLinuxTUNLogCancellationJoinsWriter (0.10s)
+=== RUN   TestLinuxTUNLogRedactionAndMonotonicClearBarrier
+--- PASS: TestLinuxTUNLogRedactionAndMonotonicClearBarrier (0.00s)
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/empty-message
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/timestamp
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/missing-tick
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/empty
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/cursor
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/identity
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/level
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/length
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/stream
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/false-drop
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/version
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/sequence
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/negative-tick
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/future-tick
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/batch-size
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/event
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/source
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/unknown
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/duplicate
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/case
+--- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/empty-message (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/timestamp (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/missing-tick (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/empty (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/cursor (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/identity (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/level (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/length (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/stream (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/false-drop (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/version (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/sequence (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/negative-tick (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/future-tick (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/batch-size (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/event (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/source (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/unknown (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/duplicate (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/case (0.00s)
+=== RUN   TestLinuxTUNLogFinalDrainIsBoundedAndReportsDrops
+--- PASS: TestLinuxTUNLogFinalDrainIsBoundedAndReportsDrops (0.01s)
+=== RUN   TestLinuxTUNLogBackpressureDoesNotBlockCoreAndCancelsBrokenStream
+--- PASS: TestLinuxTUNLogBackpressureDoesNotBlockCoreAndCancelsBrokenStream (1.10s)
+=== RUN   TestLinuxTUNLogCancellationJoinsWriter
+--- PASS: TestLinuxTUNLogCancellationJoinsWriter (0.10s)
+=== RUN   TestLinuxTUNLogRedactionAndMonotonicClearBarrier
+--- PASS: TestLinuxTUNLogRedactionAndMonotonicClearBarrier (0.00s)
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/negative-tick
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/false-drop
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/batch-size
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/version
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/event
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/cursor
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/identity
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/length
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/sequence
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/empty
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/empty-message
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/timestamp
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/future-tick
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/stream
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/level
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/source
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/missing-tick
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/unknown
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/duplicate
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/case
+--- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/negative-tick (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/false-drop (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/batch-size (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/version (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/event (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/cursor (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/identity (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/length (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/sequence (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/empty (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/empty-message (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/timestamp (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/future-tick (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/stream (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/level (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/source (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/missing-tick (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/unknown (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/duplicate (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/case (0.00s)
+=== RUN   TestLinuxTUNLogFinalDrainIsBoundedAndReportsDrops
+--- PASS: TestLinuxTUNLogFinalDrainIsBoundedAndReportsDrops (0.01s)
+=== RUN   TestLinuxTUNLogBackpressureDoesNotBlockCoreAndCancelsBrokenStream
+--- PASS: TestLinuxTUNLogBackpressureDoesNotBlockCoreAndCancelsBrokenStream (1.10s)
+=== RUN   TestLinuxTUNLogCancellationJoinsWriter
+--- PASS: TestLinuxTUNLogCancellationJoinsWriter (0.10s)
+=== RUN   TestLinuxTUNLogRedactionAndMonotonicClearBarrier
+--- PASS: TestLinuxTUNLogRedactionAndMonotonicClearBarrier (0.00s)
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/false-drop
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/event
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/source
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/timestamp
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/missing-tick
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/future-tick
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/version
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/identity
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/negative-tick
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/batch-size
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/empty
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/stream
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/cursor
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/sequence
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/level
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/length
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/empty-message
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/unknown
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/duplicate
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/case
+--- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/false-drop (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/event (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/source (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/timestamp (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/missing-tick (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/future-tick (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/version (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/identity (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/negative-tick (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/batch-size (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/empty (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/stream (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/cursor (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/sequence (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/level (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/length (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/empty-message (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/unknown (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/duplicate (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/case (0.00s)
+=== RUN   TestLinuxTUNLogFinalDrainIsBoundedAndReportsDrops
+--- PASS: TestLinuxTUNLogFinalDrainIsBoundedAndReportsDrops (0.01s)
+=== RUN   TestLinuxTUNLogBackpressureDoesNotBlockCoreAndCancelsBrokenStream
+--- PASS: TestLinuxTUNLogBackpressureDoesNotBlockCoreAndCancelsBrokenStream (1.10s)
+=== RUN   TestLinuxTUNLogCancellationJoinsWriter
+--- PASS: TestLinuxTUNLogCancellationJoinsWriter (0.10s)
+=== RUN   TestLinuxTUNLogRedactionAndMonotonicClearBarrier
+--- PASS: TestLinuxTUNLogRedactionAndMonotonicClearBarrier (0.00s)
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/event
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/empty
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/empty-message
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/version
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/length
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/false-drop
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/source
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/timestamp
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/missing-tick
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/negative-tick
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/stream
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/cursor
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/sequence
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/identity
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/level
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/future-tick
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/batch-size
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/unknown
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/duplicate
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/case
+--- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/event (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/empty (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/empty-message (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/version (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/length (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/false-drop (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/source (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/timestamp (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/missing-tick (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/negative-tick (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/stream (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/cursor (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/sequence (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/identity (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/level (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/future-tick (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/batch-size (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/unknown (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/duplicate (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/case (0.00s)
+=== RUN   TestLinuxTUNLogFinalDrainIsBoundedAndReportsDrops
+--- PASS: TestLinuxTUNLogFinalDrainIsBoundedAndReportsDrops (0.01s)
+=== RUN   TestLinuxTUNLogBackpressureDoesNotBlockCoreAndCancelsBrokenStream
+--- PASS: TestLinuxTUNLogBackpressureDoesNotBlockCoreAndCancelsBrokenStream (1.10s)
+=== RUN   TestLinuxTUNLogCancellationJoinsWriter
+--- PASS: TestLinuxTUNLogCancellationJoinsWriter (0.10s)
+=== RUN   TestLinuxTUNLogRedactionAndMonotonicClearBarrier
+--- PASS: TestLinuxTUNLogRedactionAndMonotonicClearBarrier (0.00s)
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/empty
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/sequence
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/identity
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/level
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/event
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/timestamp
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/future-tick
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/stream
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/source
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/empty-message
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/batch-size
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/version
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/cursor
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/length
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/missing-tick
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/negative-tick
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/false-drop
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/unknown
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/duplicate
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/case
+--- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/empty (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/sequence (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/identity (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/level (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/event (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/timestamp (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/future-tick (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/stream (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/source (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/empty-message (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/batch-size (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/version (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/cursor (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/length (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/missing-tick (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/negative-tick (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/false-drop (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/unknown (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/duplicate (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/case (0.00s)
+=== RUN   TestLinuxTUNLogFinalDrainIsBoundedAndReportsDrops
+--- PASS: TestLinuxTUNLogFinalDrainIsBoundedAndReportsDrops (0.01s)
+=== RUN   TestLinuxTUNLogBackpressureDoesNotBlockCoreAndCancelsBrokenStream
+--- PASS: TestLinuxTUNLogBackpressureDoesNotBlockCoreAndCancelsBrokenStream (1.10s)
+=== RUN   TestLinuxTUNLogCancellationJoinsWriter
+--- PASS: TestLinuxTUNLogCancellationJoinsWriter (0.10s)
+=== RUN   TestLinuxTUNLogRedactionAndMonotonicClearBarrier
+--- PASS: TestLinuxTUNLogRedactionAndMonotonicClearBarrier (0.00s)
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/version
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/event
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/empty
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/length
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/missing-tick
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/false-drop
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/sequence
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/identity
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/empty-message
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/future-tick
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/stream
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/level
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/source
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/negative-tick
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/batch-size
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/cursor
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/timestamp
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/unknown
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/duplicate
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/case
+--- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/version (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/event (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/empty (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/length (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/missing-tick (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/false-drop (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/sequence (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/identity (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/empty-message (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/future-tick (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/stream (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/level (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/source (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/negative-tick (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/batch-size (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/cursor (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/timestamp (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/unknown (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/duplicate (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/case (0.00s)
+=== RUN   TestLinuxTUNLogFinalDrainIsBoundedAndReportsDrops
+--- PASS: TestLinuxTUNLogFinalDrainIsBoundedAndReportsDrops (0.01s)
+=== RUN   TestLinuxTUNLogBackpressureDoesNotBlockCoreAndCancelsBrokenStream
+--- PASS: TestLinuxTUNLogBackpressureDoesNotBlockCoreAndCancelsBrokenStream (1.10s)
+=== RUN   TestLinuxTUNLogCancellationJoinsWriter
+--- PASS: TestLinuxTUNLogCancellationJoinsWriter (0.10s)
+=== RUN   TestLinuxTUNLogRedactionAndMonotonicClearBarrier
+--- PASS: TestLinuxTUNLogRedactionAndMonotonicClearBarrier (0.00s)
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/source
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/length
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/negative-tick
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/stream
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/cursor
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/level
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/version
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/empty
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/timestamp
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/missing-tick
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/future-tick
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/event
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/sequence
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/empty-message
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/false-drop
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/batch-size
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/identity
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/unknown
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/duplicate
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/case
+--- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/source (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/length (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/negative-tick (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/stream (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/cursor (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/level (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/version (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/empty (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/timestamp (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/missing-tick (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/future-tick (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/event (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/sequence (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/empty-message (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/false-drop (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/batch-size (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/identity (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/unknown (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/duplicate (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/case (0.00s)
+=== RUN   TestLinuxTUNLogFinalDrainIsBoundedAndReportsDrops
+--- PASS: TestLinuxTUNLogFinalDrainIsBoundedAndReportsDrops (0.01s)
+=== RUN   TestLinuxTUNLogBackpressureDoesNotBlockCoreAndCancelsBrokenStream
+--- PASS: TestLinuxTUNLogBackpressureDoesNotBlockCoreAndCancelsBrokenStream (1.10s)
+=== RUN   TestLinuxTUNLogCancellationJoinsWriter
+--- PASS: TestLinuxTUNLogCancellationJoinsWriter (0.10s)
+=== RUN   TestLinuxTUNLogRedactionAndMonotonicClearBarrier
+--- PASS: TestLinuxTUNLogRedactionAndMonotonicClearBarrier (0.00s)
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/level
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/timestamp
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/false-drop
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/batch-size
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/stream
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/sequence
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/identity
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/empty-message
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/negative-tick
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/version
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/event
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/source
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/length
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/missing-tick
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/future-tick
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/empty
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/cursor
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/unknown
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/duplicate
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/case
+--- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/level (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/timestamp (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/false-drop (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/batch-size (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/stream (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/sequence (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/identity (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/empty-message (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/negative-tick (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/version (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/event (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/source (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/length (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/missing-tick (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/future-tick (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/empty (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/cursor (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/unknown (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/duplicate (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/case (0.00s)
+=== RUN   TestLinuxTUNLogFinalDrainIsBoundedAndReportsDrops
+--- PASS: TestLinuxTUNLogFinalDrainIsBoundedAndReportsDrops (0.01s)
+=== RUN   TestLinuxTUNLogBackpressureDoesNotBlockCoreAndCancelsBrokenStream
+--- PASS: TestLinuxTUNLogBackpressureDoesNotBlockCoreAndCancelsBrokenStream (1.10s)
+=== RUN   TestLinuxTUNLogCancellationJoinsWriter
+--- PASS: TestLinuxTUNLogCancellationJoinsWriter (0.10s)
+=== RUN   TestLinuxTUNLogRedactionAndMonotonicClearBarrier
+--- PASS: TestLinuxTUNLogRedactionAndMonotonicClearBarrier (0.00s)
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/event
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/length
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/missing-tick
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/future-tick
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/false-drop
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/batch-size
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/version
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/sequence
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/source
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/empty-message
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/empty
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/cursor
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/timestamp
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/negative-tick
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/stream
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/identity
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/level
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/duplicate
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/case
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/unknown
+--- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/event (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/length (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/missing-tick (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/future-tick (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/false-drop (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/batch-size (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/version (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/sequence (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/source (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/empty-message (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/empty (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/cursor (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/timestamp (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/negative-tick (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/stream (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/identity (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/level (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/duplicate (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/case (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/unknown (0.00s)
+=== RUN   TestLinuxTUNLogFinalDrainIsBoundedAndReportsDrops
+--- PASS: TestLinuxTUNLogFinalDrainIsBoundedAndReportsDrops (0.01s)
+=== RUN   TestLinuxTUNLogBackpressureDoesNotBlockCoreAndCancelsBrokenStream
+--- PASS: TestLinuxTUNLogBackpressureDoesNotBlockCoreAndCancelsBrokenStream (1.10s)
+=== RUN   TestLinuxTUNLogCancellationJoinsWriter
+--- PASS: TestLinuxTUNLogCancellationJoinsWriter (0.10s)
+=== RUN   TestLinuxTUNLogRedactionAndMonotonicClearBarrier
+--- PASS: TestLinuxTUNLogRedactionAndMonotonicClearBarrier (0.00s)
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/stream
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/sequence
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/missing-tick
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/event
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/empty-message
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/negative-tick
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/version
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/cursor
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/identity
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/level
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/source
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/length
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/future-tick
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/empty
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/timestamp
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/false-drop
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/batch-size
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/unknown
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/duplicate
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/case
+--- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/stream (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/sequence (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/missing-tick (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/event (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/empty-message (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/negative-tick (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/version (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/cursor (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/identity (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/level (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/source (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/length (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/future-tick (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/empty (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/timestamp (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/false-drop (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/batch-size (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/unknown (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/duplicate (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/case (0.00s)
+=== RUN   TestLinuxTUNLogFinalDrainIsBoundedAndReportsDrops
+--- PASS: TestLinuxTUNLogFinalDrainIsBoundedAndReportsDrops (0.01s)
+=== RUN   TestLinuxTUNLogBackpressureDoesNotBlockCoreAndCancelsBrokenStream
+--- PASS: TestLinuxTUNLogBackpressureDoesNotBlockCoreAndCancelsBrokenStream (1.10s)
+=== RUN   TestLinuxTUNLogCancellationJoinsWriter
+--- PASS: TestLinuxTUNLogCancellationJoinsWriter (0.10s)
+=== RUN   TestLinuxTUNLogRedactionAndMonotonicClearBarrier
+--- PASS: TestLinuxTUNLogRedactionAndMonotonicClearBarrier (0.00s)
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/version
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/level
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/source
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/length
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/negative-tick
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/future-tick
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/missing-tick
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/empty
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/stream
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/cursor
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/false-drop
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/event
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/sequence
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/identity
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/empty-message
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/timestamp
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/batch-size
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/unknown
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/duplicate
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/case
+--- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/version (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/level (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/source (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/length (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/negative-tick (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/future-tick (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/missing-tick (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/empty (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/stream (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/cursor (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/false-drop (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/event (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/sequence (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/identity (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/empty-message (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/timestamp (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/batch-size (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/unknown (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/duplicate (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/case (0.00s)
+=== RUN   TestLinuxTUNLogFinalDrainIsBoundedAndReportsDrops
+--- PASS: TestLinuxTUNLogFinalDrainIsBoundedAndReportsDrops (0.01s)
+=== RUN   TestLinuxTUNLogBackpressureDoesNotBlockCoreAndCancelsBrokenStream
+--- PASS: TestLinuxTUNLogBackpressureDoesNotBlockCoreAndCancelsBrokenStream (1.10s)
+=== RUN   TestLinuxTUNLogCancellationJoinsWriter
+--- PASS: TestLinuxTUNLogCancellationJoinsWriter (0.10s)
+=== RUN   TestLinuxTUNLogRedactionAndMonotonicClearBarrier
+--- PASS: TestLinuxTUNLogRedactionAndMonotonicClearBarrier (0.00s)
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/length
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/stream
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/cursor
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/missing-tick
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/negative-tick
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/future-tick
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/version
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/level
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/timestamp
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/false-drop
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/batch-size
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/empty
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/sequence
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/empty-message
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/event
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/identity
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/source
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/unknown
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/duplicate
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/case
+--- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/length (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/stream (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/cursor (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/missing-tick (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/negative-tick (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/future-tick (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/version (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/level (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/timestamp (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/false-drop (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/batch-size (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/empty (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/sequence (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/empty-message (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/event (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/identity (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/source (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/unknown (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/duplicate (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/case (0.00s)
+=== RUN   TestLinuxTUNLogFinalDrainIsBoundedAndReportsDrops
+--- PASS: TestLinuxTUNLogFinalDrainIsBoundedAndReportsDrops (0.01s)
+=== RUN   TestLinuxTUNLogBackpressureDoesNotBlockCoreAndCancelsBrokenStream
+--- PASS: TestLinuxTUNLogBackpressureDoesNotBlockCoreAndCancelsBrokenStream (1.10s)
+=== RUN   TestLinuxTUNLogCancellationJoinsWriter
+--- PASS: TestLinuxTUNLogCancellationJoinsWriter (0.10s)
+=== RUN   TestLinuxTUNLogRedactionAndMonotonicClearBarrier
+--- PASS: TestLinuxTUNLogRedactionAndMonotonicClearBarrier (0.00s)
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/stream
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/sequence
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/level
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/negative-tick
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/event
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/empty
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/identity
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/timestamp
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/future-tick
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/false-drop
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/version
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/cursor
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/source
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/missing-tick
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/batch-size
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/length
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/empty-message
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/unknown
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/duplicate
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/case
+--- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/stream (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/sequence (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/level (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/negative-tick (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/event (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/empty (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/identity (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/timestamp (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/future-tick (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/false-drop (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/version (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/cursor (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/source (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/missing-tick (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/batch-size (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/length (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/empty-message (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/unknown (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/duplicate (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/case (0.00s)
+=== RUN   TestLinuxTUNLogFinalDrainIsBoundedAndReportsDrops
+--- PASS: TestLinuxTUNLogFinalDrainIsBoundedAndReportsDrops (0.01s)
+=== RUN   TestLinuxTUNLogBackpressureDoesNotBlockCoreAndCancelsBrokenStream
+--- PASS: TestLinuxTUNLogBackpressureDoesNotBlockCoreAndCancelsBrokenStream (1.10s)
+=== RUN   TestLinuxTUNLogCancellationJoinsWriter
+--- PASS: TestLinuxTUNLogCancellationJoinsWriter (0.10s)
+=== RUN   TestLinuxTUNLogRedactionAndMonotonicClearBarrier
+--- PASS: TestLinuxTUNLogRedactionAndMonotonicClearBarrier (0.00s)
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/event
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/stream
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/level
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/length
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/negative-tick
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/false-drop
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/batch-size
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/version
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/empty
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/cursor
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/sequence
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/source
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/identity
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/empty-message
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/timestamp
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/missing-tick
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/future-tick
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/unknown
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/duplicate
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/case
+--- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/event (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/stream (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/level (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/length (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/negative-tick (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/false-drop (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/batch-size (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/version (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/empty (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/cursor (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/sequence (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/source (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/identity (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/empty-message (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/timestamp (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/missing-tick (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/future-tick (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/unknown (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/duplicate (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/case (0.00s)
+=== RUN   TestLinuxTUNLogFinalDrainIsBoundedAndReportsDrops
+--- PASS: TestLinuxTUNLogFinalDrainIsBoundedAndReportsDrops (0.01s)
+=== RUN   TestLinuxTUNLogBackpressureDoesNotBlockCoreAndCancelsBrokenStream
+--- PASS: TestLinuxTUNLogBackpressureDoesNotBlockCoreAndCancelsBrokenStream (1.10s)
+=== RUN   TestLinuxTUNLogCancellationJoinsWriter
+--- PASS: TestLinuxTUNLogCancellationJoinsWriter (0.10s)
+=== RUN   TestLinuxTUNLogRedactionAndMonotonicClearBarrier
+--- PASS: TestLinuxTUNLogRedactionAndMonotonicClearBarrier (0.00s)
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/identity
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/source
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/length
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/cursor
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/empty-message
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/missing-tick
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/batch-size
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/event
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/stream
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/level
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/negative-tick
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/future-tick
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/version
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/empty
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/sequence
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/timestamp
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/false-drop
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/unknown
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/duplicate
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/case
+--- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/identity (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/source (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/length (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/cursor (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/empty-message (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/missing-tick (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/batch-size (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/event (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/stream (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/level (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/negative-tick (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/future-tick (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/version (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/empty (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/sequence (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/timestamp (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/false-drop (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/unknown (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/duplicate (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/case (0.00s)
+=== RUN   TestLinuxTUNLogFinalDrainIsBoundedAndReportsDrops
+--- PASS: TestLinuxTUNLogFinalDrainIsBoundedAndReportsDrops (0.00s)
+=== RUN   TestLinuxTUNLogBackpressureDoesNotBlockCoreAndCancelsBrokenStream
+--- PASS: TestLinuxTUNLogBackpressureDoesNotBlockCoreAndCancelsBrokenStream (1.10s)
+=== RUN   TestLinuxTUNLogCancellationJoinsWriter
+--- PASS: TestLinuxTUNLogCancellationJoinsWriter (0.10s)
+=== RUN   TestLinuxTUNLogRedactionAndMonotonicClearBarrier
+--- PASS: TestLinuxTUNLogRedactionAndMonotonicClearBarrier (0.00s)
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/version
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/empty
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/sequence
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/timestamp
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/missing-tick
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/batch-size
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/event
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/cursor
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/identity
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/empty-message
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/negative-tick
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/false-drop
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/stream
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/level
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/source
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/future-tick
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/length
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/case
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/unknown
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/duplicate
+--- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/version (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/empty (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/sequence (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/timestamp (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/missing-tick (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/batch-size (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/event (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/cursor (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/identity (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/empty-message (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/negative-tick (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/false-drop (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/stream (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/level (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/source (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/future-tick (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/length (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/case (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/unknown (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/duplicate (0.00s)
+=== RUN   TestLinuxTUNLogFinalDrainIsBoundedAndReportsDrops
+--- PASS: TestLinuxTUNLogFinalDrainIsBoundedAndReportsDrops (0.00s)
+=== RUN   TestLinuxTUNLogBackpressureDoesNotBlockCoreAndCancelsBrokenStream
+--- PASS: TestLinuxTUNLogBackpressureDoesNotBlockCoreAndCancelsBrokenStream (1.10s)
+=== RUN   TestLinuxTUNLogCancellationJoinsWriter
+--- PASS: TestLinuxTUNLogCancellationJoinsWriter (0.10s)
+=== RUN   TestLinuxTUNLogRedactionAndMonotonicClearBarrier
+--- PASS: TestLinuxTUNLogRedactionAndMonotonicClearBarrier (0.00s)
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/version
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/event
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/negative-tick
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/empty
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/identity
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/batch-size
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/cursor
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/sequence
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/source
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/length
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/timestamp
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/missing-tick
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/future-tick
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/false-drop
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/stream
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/level
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/empty-message
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/unknown
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/duplicate
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/case
+--- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/version (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/event (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/negative-tick (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/empty (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/identity (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/batch-size (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/cursor (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/sequence (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/source (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/length (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/timestamp (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/missing-tick (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/future-tick (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/false-drop (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/stream (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/level (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/empty-message (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/unknown (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/duplicate (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/case (0.00s)
+=== RUN   TestLinuxTUNLogFinalDrainIsBoundedAndReportsDrops
+--- PASS: TestLinuxTUNLogFinalDrainIsBoundedAndReportsDrops (0.01s)
+=== RUN   TestLinuxTUNLogBackpressureDoesNotBlockCoreAndCancelsBrokenStream
+--- PASS: TestLinuxTUNLogBackpressureDoesNotBlockCoreAndCancelsBrokenStream (1.10s)
+=== RUN   TestLinuxTUNLogCancellationJoinsWriter
+--- PASS: TestLinuxTUNLogCancellationJoinsWriter (0.10s)
+=== RUN   TestLinuxTUNLogRedactionAndMonotonicClearBarrier
+--- PASS: TestLinuxTUNLogRedactionAndMonotonicClearBarrier (0.00s)
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/sequence
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/future-tick
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/batch-size
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/identity
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/length
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/stream
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/source
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/empty-message
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/missing-tick
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/false-drop
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/version
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/empty
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/level
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/timestamp
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/negative-tick
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/event
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/cursor
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/unknown
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/duplicate
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/case
+--- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/sequence (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/future-tick (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/batch-size (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/identity (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/length (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/stream (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/source (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/empty-message (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/missing-tick (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/false-drop (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/version (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/empty (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/level (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/timestamp (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/negative-tick (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/event (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/cursor (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/unknown (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/duplicate (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/case (0.00s)
+=== RUN   TestLinuxTUNLogFinalDrainIsBoundedAndReportsDrops
+--- PASS: TestLinuxTUNLogFinalDrainIsBoundedAndReportsDrops (0.01s)
+=== RUN   TestLinuxTUNLogBackpressureDoesNotBlockCoreAndCancelsBrokenStream
+--- PASS: TestLinuxTUNLogBackpressureDoesNotBlockCoreAndCancelsBrokenStream (1.10s)
+=== RUN   TestLinuxTUNLogCancellationJoinsWriter
+--- PASS: TestLinuxTUNLogCancellationJoinsWriter (0.10s)
+PASS

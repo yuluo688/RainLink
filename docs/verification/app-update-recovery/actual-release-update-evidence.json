@@ -1,0 +1,49 @@
+{
+  "version": "0.1.0+3",
+  "checks": [
+    {
+      "scenario": "install",
+      "profileIsolated": true,
+      "realFlutterAot": true,
+      "hostIsHarmlessFixture": true,
+      "productionBundleModified": false,
+      "bootstrapAndFirstFrameAccepted": true,
+      "schema": 6,
+      "nodes": 0,
+      "candidateStayedOpen": true,
+      "normalExitObserved": true,
+      "transactionFilesCleaned": true,
+      "retainedQaProfile": "qa0b7abe193e"
+    },
+    {
+      "scenario": "rollback",
+      "profileIsolated": true,
+      "realFlutterAot": true,
+      "hostIsHarmlessFixture": true,
+      "productionBundleModified": false,
+      "actualBootstrapFailure": true,
+      "previousProgramRestored": true,
+      "schemaBeforeAndAfter": 5,
+      "databaseBytesRestored": true,
+      "previousRestartAcknowledged": true,
+      "transactionFilesCleaned": true,
+      "retainedQaProfile": "qa779173ee13"
+    },
+    {
+      "scenario": "prepared-helper-killed",
+      "realFlutterAot": true,
+      "actualHelperForcedExit": true,
+      "automaticBootstrapRecovery": true,
+      "schema": 6,
+      "nodes": 0,
+      "transactionFilesCleaned": true,
+      "normalExitObserved": true,
+      "retainedQaProfile": "qaecfa7b431b",
+      "profileIsolated": true,
+      "hostIsHarmlessFixture": true,
+      "productionBundleModified": false
+    }
+  ],
+  "officialGitHubReleaseUsed": false,
+  "userDatabaseUsed": false
+}

@@ -1,0 +1,11 @@
+{
+  "scope": "actual Android bridge, Keystore and core; isolated memory SQLite; localhost traffic through explicit proxy; UI recreation within the same Activity",
+  "savedSelectionAutoConnected": true,
+  "systemTunnelEstablished": true,
+  "originalSessionSurvivedUiRecreation": true,
+  "differentSelectedTargetDidNotReplaceActive": true,
+  "foregroundResumeDidNotReconnectAfterManualStop": true,
+  "nativeSessionIdleAfterManualStop": true,
+  "actualCoreResponses": 2,
+  "at": "2026-10-17T03:26:12.572454"
+}

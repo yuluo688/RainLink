@@ -1,0 +1,32 @@
+[
+  {
+    "icon": "chevron_down",
+    "designSha256": "ac9b1d8d343913a370351a8dd40018b3eacb18ebc34891297220b2c61bfac4f8",
+    "assetSha256": "ac9b1d8d343913a370351a8dd40018b3eacb18ebc34891297220b2c61bfac4f8",
+    "matches": true
+  },
+  {
+    "icon": "search",
+    "designSha256": "a599be032943c70672bb56da3b2d48606662ab6933cb8d1e13eecdc5a7ea001e",
+    "assetSha256": "a599be032943c70672bb56da3b2d48606662ab6933cb8d1e13eecdc5a7ea001e",
+    "matches": true
+  },
+  {
+    "icon": "check",
+    "designSha256": "32d9d80aecafbc209e5b093d033c5fe71af6ee178d606c09992745de2adf4c8e",
+    "assetSha256": "32d9d80aecafbc209e5b093d033c5fe71af6ee178d606c09992745de2adf4c8e",
+    "matches": true
+  },
+  {
+    "icon": "star",
+    "designSha256": "1469fff62b1b04fe7cd4fc9bb42b0ddfa2f136287ddcd6efcb80f409279c5c22",
+    "assetSha256": "1469fff62b1b04fe7cd4fc9bb42b0ddfa2f136287ddcd6efcb80f409279c5c22",
+    "matches": true
+  },
+  {
+    "icon": "close",
+    "designSha256": "aaaaeab113662ca4ee109369deed1722c3044985ddf8d014d62195ec3d5393d3",
+    "assetSha256": "aaaaeab113662ca4ee109369deed1722c3044985ddf8d014d62195ec3d5393d3",
+    "matches": true
+  }
+]

@@ -1,0 +1,274 @@
+Ephemeral rootfs mount: /tmp/rainlink-network-qa.XXgePIOE
+/mnt/host/c/Users/FalingFliff/Documents/ChatGPT/RainLink/build/qa/linux/alpine-minirootfs-3.22.2-x86_64.tar.gz: OK
+/qa/packages/acl-libs-2.3.2-r1.apk: 0 - OK
+/qa/packages/at-spi2-core-libs-2.56.5-r0.apk: 0 - OK
+/qa/packages/avahi-libs-0.8-r21.apk: 0 - OK
+/qa/packages/binutils-2.44-r3.apk: 0 - OK
+/qa/packages/brotli-libs-1.1.0-r2.apk: 0 - OK
+/qa/packages/busybox-1.37.0-r20.apk: 0 - OK
+/qa/packages/busybox-binsh-1.37.0-r20.apk: 0 - OK
+/qa/packages/c-ares-1.34.8-r0.apk: 0 - OK
+/qa/packages/ca-certificates-bundle-20260909-r0.apk: 0 - OK
+/qa/packages/cairo-1.18.4-r0.apk: 0 - OK
+/qa/packages/cairo-gobject-1.18.4-r0.apk: 0 - OK
+/qa/packages/cmake-3.31.7-r1.apk: 0 - OK
+/qa/packages/cups-libs-2.4.18-r0.apk: 0 - OK
+/qa/packages/dbus-1.16.2-r1.apk: 0 - OK
+/qa/packages/dbus-libs-1.16.2-r1.apk: 0 - OK
+/qa/packages/dconf-0.40.0-r6.apk: 0 - OK
+/qa/packages/double-conversion-3.3.1-r0.apk: 0 - OK
+/qa/packages/duktape-libs-2.7.0-r2.apk: 0 - OK
+/qa/packages/fontconfig-2.15.0-r3.apk: 0 - OK
+/qa/packages/freetype-2.13.3-r0.apk: 0 - OK
+/qa/packages/fribidi-1.0.16-r1.apk: 0 - OK
+/qa/packages/g++-14.2.0-r6.apk: 0 - OK
+/qa/packages/gcc-14.2.0-r6.apk: 0 - OK
+/qa/packages/gcr-3.41.2-r1.apk: 0 - OK
+/qa/packages/gcr-base-3.41.2-r1.apk: 0 - OK
+/qa/packages/gdk-pixbuf-2.42.12-r1.apk: 0 - OK
+/qa/packages/glib-2.84.4-r0.apk: 0 - OK
+/qa/packages/gmp-6.3.0-r3.apk: 0 - OK
+/qa/packages/gnome-keyring-48.0-r0.apk: 0 - OK
+/qa/packages/gnutls-3.8.13-r0.apk: 0 - OK
+/qa/packages/gobject-introspection-1.84.0-r0.apk: 0 - OK
+/qa/packages/graphite2-1.3.14-r6.apk: 0 - OK
+/qa/packages/gsettings-desktop-schemas-48.0-r0.apk: 0 - OK
+/qa/packages/gtk+3.0-3.24.50-r0.apk: 0 - OK
+/qa/packages/gtk-update-icon-cache-3.24.50-r0.apk: 0 - OK
+/qa/packages/harfbuzz-11.2.1-r0.apk: 0 - OK
+/qa/packages/hicolor-icon-theme-0.18-r0.apk: 0 - OK
+/qa/packages/icu-data-en-76.1-r1.apk: 0 - OK
+/qa/packages/icu-libs-76.1-r1.apk: 0 - OK
+/qa/packages/iproute2-minimal-6.15.0-r0.apk: 0 - OK
+/qa/packages/isl25-0.25-r2.apk: 0 - OK
+/qa/packages/jansson-2.14.1-r0.apk: 0 - OK
+/qa/packages/libarchive-3.8.3-r0.apk: 0 - OK
+/qa/packages/libatk-1.0-2.56.5-r0.apk: 0 - OK
+/qa/packages/libatk-bridge-2.0-2.56.5-r0.apk: 0 - OK
+/qa/packages/libatomic-14.2.0-r6.apk: 0 - OK
+/qa/packages/libb2-0.98.1-r3.apk: 0 - OK
+/qa/packages/libblkid-2.41.6-r1.apk: 0 - OK
+/qa/packages/libbsd-0.12.2-r0.apk: 0 - OK
+/qa/packages/libbz2-1.0.8-r6.apk: 0 - OK
+/qa/packages/libcap-ng-0.8.5-r0.apk: 0 - OK
+/qa/packages/libcap2-2.78-r0.apk: 0 - OK
+/qa/packages/libcrypto3-3.5.9-r0.apk: 0 - OK
+/qa/packages/libcurl-8.14.1-r3.apk: 0 - OK
+/qa/packages/libeconf-0.6.3-r0.apk: 0 - OK
+/qa/packages/libelf-0.193-r0.apk: 0 - OK
+/qa/packages/libepoxy-1.5.10-r1.apk: 0 - OK
+/qa/packages/libexpat-2.8.5-r0.apk: 0 - OK
+/qa/packages/libffi-3.4.8-r0.apk: 0 - OK
+/qa/packages/libgcc-14.2.0-r6.apk: 0 - OK
+/qa/packages/libgcrypt-1.10.3-r1.apk: 0 - OK
+/qa/packages/libgomp-14.2.0-r6.apk: 0 - OK
+/qa/packages/libgpg-error-1.55-r0.apk: 0 - OK
+/qa/packages/libidn2-2.3.7-r0.apk: 0 - OK
+/qa/packages/libintl-0.24.1-r0.apk: 0 - OK
+/qa/packages/libjpeg-turbo-3.1.0-r0.apk: 0 - OK
+/qa/packages/libmd-1.1.0-r0.apk: 0 - OK
+/qa/packages/libmnl-1.0.5-r2.apk: 0 - OK
+/qa/packages/libmount-2.41.6-r1.apk: 0 - OK
+/qa/packages/libpcre2-16-10.46-r0.apk: 0 - OK
+/qa/packages/libpng-1.6.59-r0.apk: 0 - OK
+/qa/packages/libproxy-0.5.10-r0.apk: 0 - OK
+/qa/packages/libpsl-0.21.5-r3.apk: 0 - OK
+/qa/packages/libsecret-0.21.7-r0.apk: 0 - OK
+/qa/packages/libsharpyuv-1.5.0-r0.apk: 0 - OK
+/qa/packages/libssl3-3.5.9-r0.apk: 0 - OK
+/qa/packages/libstdc++-14.2.0-r6.apk: 0 - OK
+/qa/packages/libstdc++-dev-14.2.0-r6.apk: 0 - OK
+/qa/packages/libtasn1-4.21.0-r0.apk: 0 - OK
+/qa/packages/libunistring-1.3-r0.apk: 0 - OK
+/qa/packages/libuv-1.51.0-r0.apk: 0 - OK
+/qa/packages/libwebp-1.5.0-r0.apk: 0 - OK
+/qa/packages/libx11-1.8.11-r0.apk: 0 - OK
+/qa/packages/libxau-1.0.12-r0.apk: 0 - OK
+/qa/packages/libxcb-1.17.0-r0.apk: 0 - OK
+/qa/packages/libxcomposite-0.4.6-r5.apk: 0 - OK
+/qa/packages/libxcursor-1.2.3-r0.apk: 0 - OK
+/qa/packages/libxdamage-1.1.6-r5.apk: 0 - OK
+/qa/packages/libxdmcp-1.1.5-r1.apk: 0 - OK
+/qa/packages/libxext-1.3.6-r2.apk: 0 - OK
+/qa/packages/libxfixes-6.0.1-r4.apk: 0 - OK
+/qa/packages/libxft-2.3.8-r3.apk: 0 - OK
+/qa/packages/libxi-1.8.2-r0.apk: 0 - OK
+/qa/packages/libxinerama-1.1.5-r4.apk: 0 - OK
+/qa/packages/libxkbcommon-1.8.1-r2.apk: 0 - OK
+/qa/packages/libxml2-2.13.9-r1.apk: 0 - OK
+/qa/packages/libxrandr-1.5.4-r1.apk: 0 - OK
+/qa/packages/libxrender-0.9.12-r0.apk: 0 - OK
+/qa/packages/lz4-libs-1.10.0-r0.apk: 0 - OK
+/qa/packages/make-4.4.1-r3.apk: 0 - OK
+/qa/packages/mpc1-1.3.1-r1.apk: 0 - OK
+/qa/packages/mpfr4-4.2.1_p1-r0.apk: 0 - OK
+/qa/packages/musl-1.2.5-r12.apk: 0 - OK
+/qa/packages/musl-dev-1.2.5-r12.apk: 0 - OK
+/qa/packages/nettle-3.10.2-r0.apk: 0 - OK
+/qa/packages/nghttp2-libs-1.69.0-r0.apk: 0 - OK
+/qa/packages/p11-kit-0.26.2-r0.apk: 0 - OK
+/qa/packages/pango-1.56.3-r0.apk: 0 - OK
+/qa/packages/pcre2-10.46-r0.apk: 0 - OK
+/qa/packages/pixman-0.46.4-r0.apk: 0 - OK
+/qa/packages/pkgconf-2.4.3-r0.apk: 0 - OK
+/qa/packages/qt6-qtbase-6.8.3-r0.apk: 0 - OK
+/qa/packages/rhash-libs-1.4.5-r0.apk: 0 - OK
+/qa/packages/setpriv-2.41.6-r1.apk: 0 - OK
+/qa/packages/shared-mime-info-2.4-r6.apk: 0 - OK
+/qa/packages/tiff-4.7.2-r0.apk: 0 - OK
+/qa/packages/tzdata-2026e-r0.apk: 0 - OK
+/qa/packages/wayland-libs-client-1.23.1-r3.apk: 0 - OK
+/qa/packages/wayland-libs-cursor-1.23.1-r3.apk: 0 - OK
+/qa/packages/wayland-libs-egl-1.23.1-r3.apk: 0 - OK
+/qa/packages/xkeyboard-config-2.43-r0.apk: 0 - OK
+/qa/packages/xz-libs-5.8.4-r0.apk: 0 - OK
+/qa/packages/zlib-1.3.2-r1.apk: 0 - OK
+/qa/packages/zstd-libs-1.5.7-r0.apk: 0 - OK
+(1/125) Purging ssl_client (1.37.0-r19)
+(2/125) Upgrading musl (1.2.5-r10 -> 1.2.5-r12)
+(3/125) Installing acl-libs (2.3.2-r1)
+(4/125) Upgrading busybox (1.37.0-r19 -> 1.37.0-r20)
+Executing busybox-1.37.0-r20.post-upgrade
+(5/125) Upgrading busybox-binsh (1.37.0-r19 -> 1.37.0-r20)
+(6/125) Upgrading libcrypto3 (3.5.4-r0 -> 3.5.9-r0)
+(7/125) Upgrading ca-certificates-bundle (20250911-r0 -> 20260909-r0)
+(8/125) Upgrading libssl3 (3.5.4-r0 -> 3.5.9-r0)
+(9/125) Upgrading zlib (1.3.1-r2 -> 1.3.2-r1)
+(10/125) Installing libxau (1.0.12-r0)
+(11/125) Installing libmd (1.1.0-r0)
+(12/125) Installing libbsd (0.12.2-r0)
+(13/125) Installing libxdmcp (1.1.5-r1)
+(14/125) Installing libxcb (1.17.0-r0)
+(15/125) Installing libx11 (1.8.11-r0)
+(16/125) Installing libxext (1.3.6-r2)
+(17/125) Installing libxi (1.8.2-r0)
+(18/125) Installing dbus-libs (1.16.2-r1)
+(19/125) Installing libffi (3.4.8-r0)
+(20/125) Installing libintl (0.24.1-r0)
+(21/125) Installing libeconf (0.6.3-r0)
+(22/125) Installing libblkid (2.41.6-r1)
+(23/125) Installing libmount (2.41.6-r1)
+(24/125) Installing pcre2 (10.46-r0)
+(25/125) Installing glib (2.84.4-r0)
+(26/125) Installing at-spi2-core-libs (2.56.5-r0)
+(27/125) Installing avahi-libs (0.8-r21)
+(28/125) Installing libgcc (14.2.0-r6)
+(29/125) Installing jansson (2.14.1-r0)
+(30/125) Installing libstdc++ (14.2.0-r6)
+(31/125) Installing zstd-libs (1.5.7-r0)
+(32/125) Installing binutils (2.44-r3)
+(33/125) Installing brotli-libs (1.1.0-r2)
+(34/125) Installing c-ares (1.34.8-r0)
+(35/125) Installing libxrender (0.9.12-r0)
+(36/125) Installing libexpat (2.8.5-r0)
+(37/125) Installing libbz2 (1.0.8-r6)
+(38/125) Installing libpng (1.6.59-r0)
+(39/125) Installing freetype (2.13.3-r0)
+(40/125) Installing fontconfig (2.15.0-r3)
+(41/125) Installing pixman (0.46.4-r0)
+(42/125) Installing cairo (1.18.4-r0)
+(43/125) Installing cairo-gobject (1.18.4-r0)
+(44/125) Installing lz4-libs (1.10.0-r0)
+(45/125) Installing xz-libs (5.8.4-r0)
+(46/125) Installing libarchive (3.8.3-r0)
+(47/125) Installing rhash-libs (1.4.5-r0)
+(48/125) Installing libuv (1.51.0-r0)
+(49/125) Installing cmake (3.31.7-r1)
+(50/125) Installing gmp (6.3.0-r3)
+(51/125) Installing nettle (3.10.2-r0)
+(52/125) Installing libunistring (1.3-r0)
+(53/125) Installing libidn2 (2.3.7-r0)
+(54/125) Installing libtasn1 (4.21.0-r0)
+(55/125) Installing p11-kit (0.26.2-r0)
+(56/125) Installing gnutls (3.8.13-r0)
+(57/125) Installing cups-libs (2.4.18-r0)
+(58/125) Installing dbus (1.16.2-r1)
+Executing dbus-1.16.2-r1.pre-install
+Executing dbus-1.16.2-r1.post-install
+(59/125) Installing dconf (0.40.0-r6)
+(60/125) Installing double-conversion (3.3.1-r0)
+(61/125) Installing duktape-libs (2.7.0-r2)
+(62/125) Installing fribidi (1.0.16-r1)
+(63/125) Installing libstdc++-dev (14.2.0-r6)
+(64/125) Installing libgomp (14.2.0-r6)
+(65/125) Installing libatomic (14.2.0-r6)
+(66/125) Installing isl25 (0.25-r2)
+(67/125) Installing mpfr4 (4.2.1_p1-r0)
+(68/125) Installing mpc1 (1.3.1-r1)
+(69/125) Installing gcc (14.2.0-r6)
+(70/125) Installing musl-dev (1.2.5-r12)
+(71/125) Installing g++ (14.2.0-r6)
+(72/125) Installing libgpg-error (1.55-r0)
+(73/125) Installing libgcrypt (1.10.3-r1)
+(74/125) Installing gobject-introspection (1.84.0-r0)
+(75/125) Installing pkgconf (2.4.3-r0)
+(76/125) Installing hicolor-icon-theme (0.18-r0)
+(77/125) Installing libxml2 (2.13.9-r1)
+(78/125) Installing shared-mime-info (2.4-r6)
+(79/125) Installing libjpeg-turbo (3.1.0-r0)
+(80/125) Installing libsharpyuv (1.5.0-r0)
+(81/125) Installing libwebp (1.5.0-r0)
+(82/125) Installing tiff (4.7.2-r0)
+(83/125) Installing gdk-pixbuf (2.42.12-r1)
+(84/125) Installing gtk-update-icon-cache (3.24.50-r0)
+(85/125) Installing libxcomposite (0.4.6-r5)
+(86/125) Installing libxfixes (6.0.1-r4)
+(87/125) Installing libxcursor (1.2.3-r0)
+(88/125) Installing libxdamage (1.1.6-r5)
+(89/125) Installing libxinerama (1.1.5-r4)
+(90/125) Installing libxrandr (1.5.4-r1)
+(91/125) Installing libatk-1.0 (2.56.5-r0)
+(92/125) Installing libatk-bridge-2.0 (2.56.5-r0)
+(93/125) Installing libepoxy (1.5.10-r1)
+(94/125) Installing graphite2 (1.3.14-r6)
+(95/125) Installing harfbuzz (11.2.1-r0)
+(96/125) Installing libxft (2.3.8-r3)
+(97/125) Installing pango (1.56.3-r0)
+(98/125) Installing wayland-libs-client (1.23.1-r3)
+(99/125) Installing wayland-libs-cursor (1.23.1-r3)
+(100/125) Installing wayland-libs-egl (1.23.1-r3)
+(101/125) Installing xkeyboard-config (2.43-r0)
+(102/125) Installing libxkbcommon (1.8.1-r2)
+(103/125) Installing gtk+3.0 (3.24.50-r0)
+(104/125) Installing gcr-base (3.41.2-r1)
+(105/125) Installing gcr (3.41.2-r1)
+(106/125) Installing libcap-ng (0.8.5-r0)
+(107/125) Installing gnome-keyring (48.0-r0)
+(108/125) Installing gsettings-desktop-schemas (48.0-r0)
+(109/125) Installing icu-data-en (76.1-r1)
+Executing icu-data-en-76.1-r1.post-install
+*
+* If you need ICU with non-English locales and legacy charset support, install
+* package icu-data-full.
+*
+(110/125) Installing icu-libs (76.1-r1)
+(111/125) Installing libcap2 (2.78-r0)
+(112/125) Installing libelf (0.193-r0)
+(113/125) Installing libmnl (1.0.5-r2)
+(114/125) Installing iproute2-minimal (6.15.0-r0)
+(115/125) Installing libb2 (0.98.1-r3)
+(116/125) Installing nghttp2-libs (1.69.0-r0)
+(117/125) Installing libpsl (0.21.5-r3)
+(118/125) Installing libcurl (8.14.1-r3)
+(119/125) Installing libpcre2-16 (10.46-r0)
+(120/125) Installing libproxy (0.5.10-r0)
+(121/125) Installing libsecret (0.21.7-r0)
+(122/125) Installing make (4.4.1-r3)
+(123/125) Installing tzdata (2026e-r0)
+(124/125) Installing qt6-qtbase (6.8.3-r0)
+(125/125) Installing setpriv (2.41.6-r1)
+Executing busybox-1.37.0-r20.trigger
+Executing glib-2.84.4-r0.trigger
+Executing dbus-1.16.2-r1.trigger
+Executing shared-mime-info-2.4-r6.trigger
+Executing gdk-pixbuf-2.42.12-r1.trigger
+Executing gtk-update-icon-cache-3.24.50-r0.trigger
+Executing gtk+3.0-3.24.50-r0.trigger
+OK: 364 MiB in 132 packages
+Kernel: Linux 6.6.87.2-microsoft-standard-WSL2
+Parent network namespace: net:[4026531840]
+Fixture network namespace: net:[4026532224]
+Fixture PID: 1
+Original authorizer and installed helper metadata/content unchanged.
+Ordinary-user observations, exclusive leases, exact policy deletion, and locked-core recovery tests passed.
+Parent links/routes/rules unchanged. No fixture network namespace process remains.

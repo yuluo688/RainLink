@@ -1,0 +1,39 @@
+Oct 17 12:56:51 rainlink-disposable-qa systemd[1]: Listening on rainlink-tun.socket - RainLink privileged network session socket.
+Oct 17 12:56:51 rainlink-disposable-qa systemd[1]: Starting rainlink-tun@0-631-0.service - RainLink privileged network session (PID 631/UID 0)...
+Oct 17 12:56:51 rainlink-disposable-qa systemd[1]: Started rainlink-tun@0-631-0.service - RainLink privileged network session (PID 631/UID 0).
+Oct 17 12:56:52 rainlink-disposable-qa systemd[1]: rainlink-tun@0-631-0.service: Deactivated successfully.
+Oct 17 12:56:54 rainlink-disposable-qa systemd[1]: Starting rainlink-tun@1-622-0.service - RainLink privileged network session (PID 622/UID 0)...
+Oct 17 12:56:54 rainlink-disposable-qa systemd[1]: Started rainlink-tun@1-622-0.service - RainLink privileged network session (PID 622/UID 0).
+Oct 17 12:56:55 rainlink-disposable-qa systemd[1]: Starting rainlink-tun@2-622-0.service - RainLink privileged network session (PID 622/UID 0)...
+Oct 17 12:56:55 rainlink-disposable-qa rainlink-host[769]: TUN exit cleanup skipped: another session remains active
+Oct 17 12:56:55 rainlink-disposable-qa systemd[1]: rainlink-tun@1-622-0.service: Deactivated successfully.
+Oct 17 12:56:55 rainlink-disposable-qa systemd[1]: Started rainlink-tun@2-622-0.service - RainLink privileged network session (PID 622/UID 0).
+Oct 17 12:56:55 rainlink-disposable-qa rainlink-host[783]: TUN exit cleanup skipped: another session remains active
+Oct 17 12:56:55 rainlink-disposable-qa systemd[1]: rainlink-tun@2-622-0.service: Deactivated successfully.
+Oct 17 12:56:56 rainlink-disposable-qa systemd[1]: Starting rainlink-tun@3-622-0.service - RainLink privileged network session (PID 622/UID 0)...
+Oct 17 12:56:56 rainlink-disposable-qa systemd[1]: Started rainlink-tun@3-622-0.service - RainLink privileged network session (PID 622/UID 0).
+Oct 17 12:56:57 rainlink-disposable-qa systemd[1]: rainlink-tun@3-622-0.service: Deactivated successfully.
+Oct 17 12:57:07 rainlink-disposable-qa systemd[1]: rainlink-tun.socket: Deactivated successfully.
+Oct 17 12:57:07 rainlink-disposable-qa systemd[1]: Closed rainlink-tun.socket - RainLink privileged network session socket.
+Oct 17 12:57:20 rainlink-disposable-qa systemd[1]: Listening on rainlink-tun.socket - RainLink privileged network session socket.
+Oct 17 12:57:21 rainlink-disposable-qa systemd[1]: Starting rainlink-tun@0-798-0.service - RainLink privileged network session (PID 798/UID 0)...
+Oct 17 12:57:21 rainlink-disposable-qa systemd[1]: Started rainlink-tun@0-798-0.service - RainLink privileged network session (PID 798/UID 0).
+Oct 17 12:57:21 rainlink-disposable-qa systemd[1]: rainlink-tun@0-798-0.service: Deactivated successfully.
+Oct 17 12:57:26 rainlink-disposable-qa systemd[1]: rainlink-tun.socket: Deactivated successfully.
+Oct 17 12:57:26 rainlink-disposable-qa systemd[1]: Closed rainlink-tun.socket - RainLink privileged network session socket.
+Oct 17 12:58:07 rainlink-disposable-qa systemd[1]: Listening on rainlink-tun.socket - RainLink privileged network session socket.
+Oct 17 12:58:07 rainlink-disposable-qa systemd[1]: Starting rainlink-tun@0-622-0.service - RainLink privileged network session (PID 622/UID 0)...
+Oct 17 12:58:07 rainlink-disposable-qa systemd[1]: Started rainlink-tun@0-622-0.service - RainLink privileged network session (PID 622/UID 0).
+Oct 17 12:58:08 rainlink-disposable-qa rainlink-host[1297]: TUN exit cleanup skipped: another session remains active
+Oct 17 12:58:08 rainlink-disposable-qa systemd[1]: rainlink-tun@0-622-0.service: Deactivated successfully.
+Oct 17 12:58:18 rainlink-disposable-qa systemd[1]: rainlink-tun.socket: Deactivated successfully.
+Oct 17 12:58:18 rainlink-disposable-qa systemd[1]: Closed rainlink-tun.socket - RainLink privileged network session socket.
+Oct 17 12:58:38 rainlink-disposable-qa systemd[1]: Listening on rainlink-tun.socket - RainLink privileged network session socket.
+Oct 17 12:58:39 rainlink-disposable-qa systemd[1]: Starting rainlink-tun@1-1383-0.service - RainLink privileged network session (PID 1383/UID 0)...
+Oct 17 12:58:39 rainlink-disposable-qa systemd[1]: Started rainlink-tun@1-1383-0.service - RainLink privileged network session (PID 1383/UID 0).
+Oct 17 12:58:39 rainlink-disposable-qa systemd[1]: rainlink-tun@1-1383-0.service: Deactivated successfully.
+Oct 17 12:58:41 rainlink-disposable-qa systemd[1]: Starting rainlink-tun@2-622-0.service - RainLink privileged network session (PID 622/UID 0)...
+Oct 17 12:58:41 rainlink-disposable-qa systemd[1]: Started rainlink-tun@2-622-0.service - RainLink privileged network session (PID 622/UID 0).
+Oct 17 12:58:42 rainlink-disposable-qa systemd[1]: rainlink-tun@2-622-0.service: Deactivated successfully.
+Oct 17 12:58:48 rainlink-disposable-qa systemd[1]: rainlink-tun.socket: Deactivated successfully.
+Oct 17 12:58:48 rainlink-disposable-qa systemd[1]: Closed rainlink-tun.socket - RainLink privileged network session socket.

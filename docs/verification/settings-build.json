@@ -1,0 +1,12 @@
+{
+  "at": "2026-10-16T23:31:26.4455467+08:00",
+  "archive": "build/RainLink-windows-x64-settings-preview.zip",
+  "bytes": 41503289,
+  "sha256": "946709e6af6b8efff80625e575ab3b00e55ea9946e08ea45d30aab36f6ddc714",
+  "hostSha256": "3018bc5d9175572e01f19a20c17c48072f8f124d153a42ce4c09737211ee41f6",
+  "coreSha256": "cf6863552456c535fd79a0724f2d01352e77c97f4958466b75d9f07d8f0edef7",
+  "engineSha256": "55089c0bb72c53220aeecd31c859946b4a7e990fd6ea29975f448e22b2586677",
+  "releaseEngineVerified": true,
+  "databaseSchema": 6,
+  "version": "0.1.0+1"
+}

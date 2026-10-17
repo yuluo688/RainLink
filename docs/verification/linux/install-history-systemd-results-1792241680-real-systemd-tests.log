@@ -1,0 +1,6 @@
+=== RUN   TestRealSystemdInstallation
+    systemd_integration_linux_test.go:49: raw fixed socket state="LoadState=not-found\nActiveState=inactive\nFragmentPath=\nDropInPaths=\nUnitFileState=\n" error=<nil>
+    systemd_integration_linux_test.go:50: VM already has service {false false false} systemctl show failed: exit status 1
+        invalid systemd unit state
+--- FAIL: TestRealSystemdInstallation (0.32s)
+FAIL

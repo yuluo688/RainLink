@@ -1,0 +1,52 @@
+{
+  "at": "2026-10-16",
+  "fileKey": "unsaved-mva99nf3-128z4u3c",
+  "method": "native SVG export; byte comparison",
+  "icons": [
+    {
+      "asset": "app/assets/icons/back.svg",
+      "sha256": "69f8fa58a68cc78b66a84921843784dbc920d197fea623203d7e5f0a4400fffa",
+      "matchesFigma": true
+    },
+    {
+      "asset": "app/assets/icons/chevron_down.svg",
+      "sha256": "ac9b1d8d343913a370351a8dd40018b3eacb18ebc34891297220b2c61bfac4f8",
+      "matchesFigma": true
+    },
+    {
+      "asset": "app/assets/icons/chevron_right.svg",
+      "sha256": "5e0f6c90d3b822a9fbd6459ca824446ada03c69861233ba0bbbdf1cf081a6b7f",
+      "matchesFigma": true
+    },
+    {
+      "asset": "app/assets/icons/globe.svg",
+      "sha256": "2cf15b34f5011e42e5f248dd461b45ef46d4a6584b44235379a943d65b3e487c",
+      "matchesFigma": true
+    },
+    {
+      "asset": "app/assets/icons/power.svg",
+      "sha256": "fe9d09085d0a6573866dfcba3a9b9241817366e770ddf16af7a649bd6cf376cc",
+      "matchesFigma": true
+    },
+    {
+      "asset": "app/assets/icons/refresh.svg",
+      "sha256": "d04cc93bc090bf4a917e78f2c6e502808b6354a2ce5fa7c168a6d4d23c87e7b4",
+      "matchesFigma": true
+    },
+    {
+      "asset": "app/assets/icons/settings.svg",
+      "sha256": "e9a28776914a12af67235f2c1c3b72cc41e9381911a66a1efa0196e5e218590e",
+      "matchesFigma": true
+    },
+    {
+      "asset": "app/assets/icons/speed.svg",
+      "sha256": "c0af435c72d157602593ac343ba7579f60aa1d67f5109357234884f4a1e79ac4",
+      "matchesFigma": true
+    },
+    {
+      "asset": "app/assets/icons/sun.svg",
+      "sha256": "bd0b9e673791095f1cd92216c8f3ded7edc8c38a44c525f254eb12ee6ecf7eab",
+      "matchesFigma": true
+    }
+  ]
+}

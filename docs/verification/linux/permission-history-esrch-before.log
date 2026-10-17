@@ -1,0 +1,217 @@
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/core-live
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/core-dead
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/prepared
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/term-resistant
+--- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit (3.76s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/core-live (1.35s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/core-dead (1.35s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/prepared (0.28s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/term-resistant (0.78s)
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/core-live
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/core-dead
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/prepared
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/term-resistant
+--- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit (3.77s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/core-live (1.37s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/core-dead (1.34s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/prepared (0.28s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/term-resistant (0.78s)
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/core-live
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/core-dead
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/prepared
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/term-resistant
+--- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit (3.77s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/core-live (1.35s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/core-dead (1.36s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/prepared (0.28s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/term-resistant (0.78s)
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/core-live
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/core-dead
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/prepared
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/term-resistant
+--- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit (3.75s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/core-live (1.35s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/core-dead (1.34s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/prepared (0.28s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/term-resistant (0.78s)
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/core-live
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/core-dead
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/prepared
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/term-resistant
+--- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit (2.74s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/core-live (0.34s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/core-dead (1.34s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/prepared (0.28s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/term-resistant (0.78s)
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/core-live
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/core-dead
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/prepared
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/term-resistant
+--- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit (2.73s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/core-live (1.33s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/core-dead (0.34s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/prepared (0.28s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/term-resistant (0.78s)
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/core-live
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/core-dead
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/prepared
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/term-resistant
+--- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit (2.73s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/core-live (1.35s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/core-dead (0.32s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/prepared (0.28s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/term-resistant (0.78s)
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/core-live
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/core-dead
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/prepared
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/term-resistant
+--- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit (3.75s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/core-live (1.34s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/core-dead (1.34s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/prepared (0.28s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/term-resistant (0.78s)
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/core-live
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/core-dead
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/prepared
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/term-resistant
+--- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit (2.75s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/core-live (1.34s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/core-dead (0.34s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/prepared (0.28s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/term-resistant (0.78s)
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/core-live
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/core-dead
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/prepared
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/term-resistant
+--- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit (3.76s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/core-live (1.35s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/core-dead (1.34s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/prepared (0.28s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/term-resistant (0.78s)
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/core-live
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/core-dead
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/prepared
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/term-resistant
+--- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit (2.75s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/core-live (1.35s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/core-dead (0.34s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/prepared (0.28s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/term-resistant (0.78s)
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/core-live
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/core-dead
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/prepared
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/term-resistant
+--- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit (2.79s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/core-live (1.35s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/core-dead (0.34s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/prepared (0.28s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/term-resistant (0.82s)
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/core-live
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/core-dead
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/prepared
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/term-resistant
+--- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit (3.76s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/core-live (1.35s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/core-dead (1.34s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/prepared (0.28s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/term-resistant (0.79s)
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/core-live
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/core-dead
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/prepared
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/term-resistant
+    watcher_linux_test.go:313: retained watchdog resource journal: {"version":2,"nonce":"aa0275c9ed1895bc9a06b3edf8a58735","namespace":"net:[4026532224]","owner":{"pid":1443,"start":5553,"boot":"f54d3b35-2d11-4e6a-b29d-9c3547a85268"},"core":{"pid":1454,"start":5556,"boot":"f54d3b35-2d11-4e6a-b29d-9c3547a85268"},"resources":{"name":"rl-watch-test","table":1380726717,"priority":23904},"checksum":"3255b165b4756f7d8f6aecfa5e619ea991b7a2caf0263c3a10aec261b6faa59a"} <nil>
+    watcher_linux_test.go:314: watchdog retained a recovered journal <nil>
+    watcher_linux_test.go:244: guardian and watchdog fixture output: TUN watchdog: read /proc/1454/stat: no such process
+        
+--- FAIL: TestIsolatedTUNWatchdogRecoversGuardianExit (3.74s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/core-live (1.33s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/core-dead (1.34s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/prepared (0.28s)
+    --- FAIL: TestIsolatedTUNWatchdogRecoversGuardianExit/term-resistant (0.78s)
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/core-live
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/core-dead
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/prepared
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/term-resistant
+--- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit (3.75s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/core-live (1.35s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/core-dead (1.34s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/prepared (0.28s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/term-resistant (0.78s)
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/core-live
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/core-dead
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/prepared
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/term-resistant
+--- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit (2.75s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/core-live (0.35s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/core-dead (1.34s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/prepared (0.28s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/term-resistant (0.79s)
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/core-live
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/core-dead
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/prepared
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/term-resistant
+    watcher_linux_test.go:313: retained watchdog resource journal: {"version":2,"nonce":"c321dd15ea71f5a0f2c73e7fa29a2f1e","namespace":"net:[4026532224]","owner":{"pid":1690,"start":6578,"boot":"f54d3b35-2d11-4e6a-b29d-9c3547a85268"},"core":{"pid":1702,"start":6580,"boot":"f54d3b35-2d11-4e6a-b29d-9c3547a85268"},"resources":{"name":"rl-watch-test","table":1380734819,"priority":16304},"checksum":"5907903157d5ae31ee54c510926f3fb9907da19fd40aa71a5b1a8b65f2bd87ea"} <nil>
+    watcher_linux_test.go:314: watchdog retained a recovered journal <nil>
+    watcher_linux_test.go:244: guardian and watchdog fixture output: TUN watchdog: read /proc/1702/stat: no such process
+        
+--- FAIL: TestIsolatedTUNWatchdogRecoversGuardianExit (3.75s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/core-live (1.34s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/core-dead (1.34s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/prepared (0.28s)
+    --- FAIL: TestIsolatedTUNWatchdogRecoversGuardianExit/term-resistant (0.78s)
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/core-live
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/core-dead
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/prepared
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/term-resistant
+    watcher_linux_test.go:313: retained watchdog resource journal: {"version":2,"nonce":"bc0d684a28e48dca686dbf8ac5b32a48","namespace":"net:[4026532224]","owner":{"pid":1771,"start":6952,"boot":"f54d3b35-2d11-4e6a-b29d-9c3547a85268"},"core":{"pid":1782,"start":6955,"boot":"f54d3b35-2d11-4e6a-b29d-9c3547a85268"},"resources":{"name":"rl-watch-test","table":1380712615,"priority":29920},"checksum":"0d527478131e993b461f9ba302e41586be684ae84f825a6357f74bc7d113a0c2"} <nil>
+    watcher_linux_test.go:314: watchdog retained a recovered journal <nil>
+    watcher_linux_test.go:244: guardian and watchdog fixture output: TUN watchdog: read /proc/1782/stat: no such process
+        
+--- FAIL: TestIsolatedTUNWatchdogRecoversGuardianExit (3.74s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/core-live (1.34s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/core-dead (1.34s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/prepared (0.28s)
+    --- FAIL: TestIsolatedTUNWatchdogRecoversGuardianExit/term-resistant (0.78s)
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/core-live
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/core-dead
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/prepared
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/term-resistant
+    watcher_linux_test.go:313: retained watchdog resource journal: {"version":2,"nonce":"d0675a1577cac39c943c759045f6dfef","namespace":"net:[4026532224]","owner":{"pid":1853,"start":7327,"boot":"f54d3b35-2d11-4e6a-b29d-9c3547a85268"},"core":{"pid":1864,"start":7329,"boot":"f54d3b35-2d11-4e6a-b29d-9c3547a85268"},"resources":{"name":"rl-watch-test","table":1380729403,"priority":17024},"checksum":"73749d6fd458c5733bca259c7168c12b214ba731534eb2c4f9ab045e594c9f7a"} <nil>
+    watcher_linux_test.go:314: watchdog retained a recovered journal <nil>
+    watcher_linux_test.go:244: guardian and watchdog fixture output: TUN watchdog: read /proc/1864/stat: no such process
+        
+--- FAIL: TestIsolatedTUNWatchdogRecoversGuardianExit (3.74s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/core-live (1.34s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/core-dead (1.34s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/prepared (0.28s)
+    --- FAIL: TestIsolatedTUNWatchdogRecoversGuardianExit/term-resistant (0.78s)
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/core-live
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/core-dead
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/prepared
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/term-resistant
+--- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit (3.78s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/core-live (1.35s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/core-dead (1.36s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/prepared (0.28s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/term-resistant (0.78s)
+FAIL

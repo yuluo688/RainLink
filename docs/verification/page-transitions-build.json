@@ -1,0 +1,12 @@
+{
+  "verifiedAt": "2026-10-16T10:16:04.2180470+08:00",
+  "executableSha256": "820B6B4E609A436A93D49BED1F1A2FBE572483B8FFE88E9A91DE02E3DFA4F0A9",
+  "flutterAotSha256": "5B74F4093E85EB42EC7F1925B21F91F4A621F1A5586E7C3115E4FD719EA3B686",
+  "flutterAnalyze": "passed",
+  "relatedWidgetTests": 23,
+  "windowsReleaseBuild": "passed",
+  "transitionDurationMs": 180,
+  "entranceOffsetLogicalPixels": 8,
+  "actualWindowCapture": "windows-page-transition.gif",
+  "nativeMobileVerification": "not run"
+}

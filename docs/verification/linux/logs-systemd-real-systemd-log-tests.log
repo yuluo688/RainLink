@@ -1,0 +1,9 @@
+=== RUN   TestRealSystemdTUNPermissionLogs
+=== RUN   TestRealSystemdTUNPermissionLogs/allow
+    tun_systemd_logs_linux_test.go:120: actual systemd socket and polkit decision delivered private logs and confirmed idle
+=== RUN   TestRealSystemdTUNPermissionLogs/deny
+    tun_systemd_logs_linux_test.go:120: actual systemd socket and polkit decision delivered private logs and confirmed idle
+--- PASS: TestRealSystemdTUNPermissionLogs (46.66s)
+    --- PASS: TestRealSystemdTUNPermissionLogs/allow (5.75s)
+    --- PASS: TestRealSystemdTUNPermissionLogs/deny (1.73s)
+PASS

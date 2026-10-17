@@ -1,0 +1,248 @@
+{
+  "readDate": "2026-10-15",
+  "timezone": "Asia/Shanghai",
+  "fileName": "RainLink",
+  "bridgeFileKey": "unsaved-mv9fbgep-e9d7ijqk",
+  "cloudRevision": "not_verified",
+  "platformPriority": [
+    "Windows",
+    "macOS",
+    "Linux",
+    "Android",
+    "iOS"
+  ],
+  "scope": "desktop_first_five_platforms",
+  "pages": [
+    {
+      "page": "desktop",
+      "nodeCount": 11651
+    },
+    {
+      "page": "mobile",
+      "nodeCount": 8026
+    },
+    {
+      "page": "system",
+      "nodeCount": 18105
+    }
+  ],
+  "readMethod": "Figma Bridge get_document/get_node, live exports, native prototype scans",
+  "totalMainScreens": 23,
+  "desktopMainScreens": 12,
+  "mobileMainScreens": 11,
+  "boundaryScreens": 4,
+  "componentSets": 66,
+  "componentVariants": 549,
+  "scanGroups": [
+    {
+      "kind": "desktop-main",
+      "rootId": "31:193393",
+      "nodesScanned": 1964,
+      "truncated": false,
+      "interactiveNodes": 169,
+      "actions": {
+        "NAVIGATE": 70,
+        "CHANGE_TO": 89,
+        "OVERLAY": 10
+      },
+      "destinations": {
+        "resolved": 169
+      },
+      "unresolved": []
+    },
+    {
+      "kind": "desktop-dialogs",
+      "rootId": "31:193394",
+      "nodesScanned": 311,
+      "truncated": false,
+      "interactiveNodes": 34,
+      "actions": {
+        "CHANGE_TO": 17,
+        "NAVIGATE": 10
+      },
+      "destinations": {
+        "resolved": 27
+      },
+      "unresolved": []
+    },
+    {
+      "kind": "mobile-main",
+      "rootId": "31:193395",
+      "nodesScanned": 1383,
+      "truncated": false,
+      "interactiveNodes": 130,
+      "actions": {
+        "NAVIGATE": 50,
+        "CHANGE_TO": 69,
+        "OVERLAY": 10
+      },
+      "destinations": {
+        "resolved": 129
+      },
+      "unresolved": []
+    },
+    {
+      "kind": "mobile-dialogs",
+      "rootId": "31:193396",
+      "nodesScanned": 121,
+      "truncated": false,
+      "interactiveNodes": 17,
+      "actions": {
+        "CHANGE_TO": 10
+      },
+      "destinations": {
+        "resolved": 10
+      },
+      "unresolved": []
+    },
+    {
+      "kind": "mobile-states",
+      "rootId": "80:189687",
+      "nodesScanned": 9143,
+      "truncated": false,
+      "interactiveNodes": 759,
+      "actions": {
+        "CHANGE_TO": 584,
+        "NAVIGATE": 112,
+        "OVERLAY": 3
+      },
+      "destinations": {
+        "resolved": 699
+      },
+      "unresolved": []
+    },
+    {
+      "kind": "settings",
+      "rootId": "59:44531",
+      "nodesScanned": 3780,
+      "truncated": false,
+      "interactiveNodes": 406,
+      "actions": {
+        "CHANGE_TO": 405,
+        "NAVIGATE": 1
+      },
+      "destinations": {
+        "resolved": 406
+      },
+      "unresolved": []
+    },
+    {
+      "kind": "acceptance",
+      "rootId": "80:152812",
+      "nodesScanned": 686,
+      "truncated": false,
+      "interactiveNodes": 2,
+      "actions": {},
+      "destinations": {},
+      "unresolved": []
+    }
+  ],
+  "desktopStateScans": [
+    {
+      "id": "80:158774",
+      "name": "修订 / 桌面端 / 添加",
+      "nodesScanned": 1718,
+      "truncated": false,
+      "interactiveNodes": 193,
+      "unresolved": 0
+    },
+    {
+      "id": "80:163674",
+      "name": "修订 / 桌面端 / 分组管理",
+      "nodesScanned": 4564,
+      "truncated": false,
+      "interactiveNodes": 350,
+      "unresolved": 0
+    },
+    {
+      "id": "80:164092",
+      "name": "修订 / 桌面端 / 订阅详情",
+      "nodesScanned": 236,
+      "truncated": false,
+      "interactiveNodes": 22,
+      "unresolved": 0
+    },
+    {
+      "id": "80:165499",
+      "name": "修订 / 桌面端 / 代理链",
+      "nodesScanned": 957,
+      "truncated": false,
+      "interactiveNodes": 89,
+      "unresolved": 0
+    },
+    {
+      "id": "80:166040",
+      "name": "修订 / 桌面端 / 节点操作",
+      "nodesScanned": 245,
+      "truncated": false,
+      "interactiveNodes": 32,
+      "unresolved": 0
+    },
+    {
+      "id": "80:184391",
+      "name": "修订 / 桌面端 / 分流规则",
+      "nodesScanned": 658,
+      "truncated": false,
+      "interactiveNodes": 77,
+      "unresolved": 0
+    },
+    {
+      "id": "80:185736",
+      "name": "修订 / 桌面端 / 实时连接",
+      "nodesScanned": 1024,
+      "truncated": false,
+      "interactiveNodes": 100,
+      "unresolved": 0
+    },
+    {
+      "id": "80:186352",
+      "name": "修订 / 桌面端 / 流量统计",
+      "nodesScanned": 471,
+      "truncated": false,
+      "interactiveNodes": 31,
+      "unresolved": 0
+    },
+    {
+      "id": "80:187541",
+      "name": "修订 / 桌面端 / 运行日志",
+      "nodesScanned": 634,
+      "truncated": false,
+      "interactiveNodes": 78,
+      "unresolved": 0
+    },
+    {
+      "id": "31:181447",
+      "name": "交互 / 桌面端 / 连接开关",
+      "nodesScanned": 1805,
+      "truncated": false,
+      "interactiveNodes": 53,
+      "unresolved": 0
+    }
+  ],
+  "note": "The first combined desktop-state scan reached its 10000-node limit and is excluded; all ten child component sets were rescanned without truncation. Scans cover main screens, current revised interaction sets, settings, and acceptance, not every legacy component in the design-system page. Resolved actions establish prototype targets only, not runtime behavior.",
+  "deliveryContract": [
+    "状态、平台与布局约定",
+    "选择与连接",
+    "selectedTarget（所选分组、节点或链）与 activeOutbound（实际出站）分别保存。选择只更新 selectedTarget；已连接时显示“待应用”，原出站保持。在概览断开后重新连接 才应用新选择；代理模式也只在概览设置。",
+    "跨页与持久化",
+    "运行时由统一状态仓库驱动所有页面；每组记住上次选中的节点。Figma Starter 使用局部变体与一致的默认示例，不支持跨页面的实时全局状态。代理链保存结果在同一组件呈现返回节点后的选中反馈。",
+    "自动归组",
+    "订阅由服务名称自动成组，缺失名称时用域名或自动编号；单个节点进入未分组。仅未分组节点可移动，移入订阅后更新保留手动节点。删除订阅会把手动节点退回未分组。",
+    "节点管理",
+    "手动节点可编辑连接参数、收藏、删除。订阅节点只允许别名、收藏和本地隐藏，连接参数随订阅同步；隐藏不会在下次更新后恢复。删除正在使用的节点时，现有会话在断开前保持。",
+    "桌面平台",
+    "Windows、macOS、Linux 在概览提供系统代理与 TUN 两个独立选项。TUN 按平台请求适配器或管理员权限；平台不可用时禁用并说明原因。权限失败不静默开启。",
+    "移动平台",
+    "iOS 使用 NetworkExtension，Android 使用 VpnService。首次连接先请求系统连接授权；拒绝后保留选择并提供重新授权。移动端没有桌面式系统代理开关，TUN 能力通过系统隧道接管，连接总开关保留在概览。",
+    "安装来源",
+    "iOS 按 App Store / TestFlight 更新。Android 按 Google Play、应用商店或独立安装包更新，商店版打开原商店，独立安装提示下载后安装。不会在商店版中展示桌面式原位替换。",
+    "异常与首次使用",
+    "无节点时显示首次使用状态与添加入口，禁用 连接 按钮。订阅地址错误就地提示；超时保留链接并可重试。连接失败保留所选目标，正在建立连接时允许取消；授权拒绝不继续连接。",
+    "弹窗与键盘",
+    "移动弹窗上限随可用高度变化。键盘出现时正文缩为可滚动区域，固定操作栏位于键盘上方；底部保留系统安全区。长名称单行省略，详情显示完整内容；IP 地址允许两行，不破坏国家图标与刷新命中区。",
+    "响应式与大字",
+    "桌面 1100–1440：侧栏保持 216 px，内容列使用 Fill；低于 1100 收为图标侧栏。移动 360–430：左右边距 16–20 px，列表宽度 Fill，按钮命中不小于 44 px。大字模式辅助文字至少 14 px，卡片随内容增长。",
+    "图表与导出",
+    "今日流量曲线单位 MB/s，周/月按日汇总为 GB。点击或悬停显示时间与上传/下载值。原型导出仅演示 UI 反馈，不创建真实 CSV 或日志；真实导出先隐藏认证信息。"
+  ]
+}

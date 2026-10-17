@@ -1,0 +1,17 @@
+[
+  {
+    "icon": "star",
+    "byteIdentical": true,
+    "sha256": "1469fff62b1b04fe7cd4fc9bb42b0ddfa2f136287ddcd6efcb80f409279c5c22"
+  },
+  {
+    "icon": "speed",
+    "byteIdentical": true,
+    "sha256": "c0af435c72d157602593ac343ba7579f60aa1d67f5109357234884f4a1e79ac4"
+  },
+  {
+    "icon": "more",
+    "byteIdentical": true,
+    "sha256": "160d54c8f3ed85cfda67663275daf9a1408291f9e80f61eda65120c221c9a105"
+  }
+]

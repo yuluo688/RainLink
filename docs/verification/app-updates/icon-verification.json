@@ -1,0 +1,46 @@
+{
+  "fileKey": "unsaved-mva99nf3-128z4u3c",
+  "source": "Figma Bridge native SVG re-export 2026-10-17",
+  "assets": [
+    {
+      "nodeId": "2:16521",
+      "source": "build/updates-icon-chevron_down.svg",
+      "runtime": "app/assets/icons/chevron_down.svg",
+      "svgMarkupIdentical": true,
+      "sourceSha256": "ac9b1d8d343913a370351a8dd40018b3eacb18ebc34891297220b2c61bfac4f8",
+      "runtimeSha256": "ac9b1d8d343913a370351a8dd40018b3eacb18ebc34891297220b2c61bfac4f8"
+    },
+    {
+      "nodeId": "2:16539",
+      "source": "build/updates-icon-download.svg",
+      "runtime": "app/assets/icons/download.svg",
+      "svgMarkupIdentical": true,
+      "sourceSha256": "ee6e5b811acbb7a59b4f3a1aad81e3a95b1cf9ecdfc17e255abd5a9d1f3c744f",
+      "runtimeSha256": "ee6e5b811acbb7a59b4f3a1aad81e3a95b1cf9ecdfc17e255abd5a9d1f3c744f"
+    },
+    {
+      "nodeId": "2:16567",
+      "source": "build/updates-icon-refresh.svg",
+      "runtime": "app/assets/icons/refresh.svg",
+      "svgMarkupIdentical": true,
+      "sourceSha256": "d04cc93bc090bf4a917e78f2c6e502808b6354a2ce5fa7c168a6d4d23c87e7b4",
+      "runtimeSha256": "d04cc93bc090bf4a917e78f2c6e502808b6354a2ce5fa7c168a6d4d23c87e7b4"
+    },
+    {
+      "nodeId": "2:16609",
+      "source": "build/updates-brand-mark.svg",
+      "runtime": "app/assets/brand/mark.svg",
+      "svgMarkupIdentical": true,
+      "sourceSha256": "7f1383b4dcd06ee9220f33382476821718159c315762412453d2fabfe585953b",
+      "runtimeSha256": "7f1383b4dcd06ee9220f33382476821718159c315762412453d2fabfe585953b"
+    },
+    {
+      "nodeId": "59:44535",
+      "source": "build/updates-icon-back.svg",
+      "runtime": "app/assets/icons/back.svg",
+      "svgMarkupIdentical": true,
+      "sourceSha256": "69f8fa58a68cc78b66a84921843784dbc920d197fea623203d7e5f0a4400fffa",
+      "runtimeSha256": "69f8fa58a68cc78b66a84921843784dbc920d197fea623203d7e5f0a4400fffa"
+    }
+  ]
+}

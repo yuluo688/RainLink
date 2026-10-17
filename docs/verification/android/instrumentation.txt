@@ -1,0 +1,195 @@
+INSTRUMENTATION_STATUS: class=dev.rainlink.rainlink.core.AndroidCoreTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=5
+INSTRUMENTATION_STATUS: stream=
+dev.rainlink.rainlink.core.AndroidCoreTest:
+INSTRUMENTATION_STATUS: test=startupPortConflictReleasesResourcesAndAllowsReconnect
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=dev.rainlink.rainlink.core.AndroidCoreTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=5
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=startupPortConflictReleasesResourcesAndAllowsReconnect
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=dev.rainlink.rainlink.core.AndroidCoreTest
+INSTRUMENTATION_STATUS: current=2
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=5
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=telemetryClosesRealStreamsAndKeepsSanitizedLogsAfterDisconnect
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=dev.rainlink.rainlink.core.AndroidCoreTest
+INSTRUMENTATION_STATUS: current=2
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=5
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=telemetryClosesRealStreamsAndKeepsSanitizedLogsAfterDisconnect
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=dev.rainlink.rainlink.core.AndroidCoreTest
+INSTRUMENTATION_STATUS: current=3
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=5
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=credentialsAreRandomAuthenticatedAndBoundToIdentity
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=dev.rainlink.rainlink.core.AndroidCoreTest
+INSTRUMENTATION_STATUS: current=3
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=5
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=credentialsAreRandomAuthenticatedAndBoundToIdentity
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=dev.rainlink.rainlink.core.AndroidCoreTest
+INSTRUMENTATION_STATUS: current=4
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=5
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=cancelCannotLeaveALateTunnelAndInvalidCredentialsDoNotConnect
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=dev.rainlink.rainlink.core.AndroidCoreTest
+INSTRUMENTATION_STATUS: current=4
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=5
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=cancelCannotLeaveALateTunnelAndInvalidCredentialsDoNotConnect
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=dev.rainlink.rainlink.core.AndroidCoreTest
+INSTRUMENTATION_STATUS: current=5
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=5
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=tunnelCarriesIPv4IPv6AndDNSAndSurvivesBackground
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=dev.rainlink.rainlink.core.AndroidCoreTest
+INSTRUMENTATION_STATUS: current=5
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=5
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=tunnelCarriesIPv4IPv6AndDNSAndSurvivesBackground
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 64.96
+
+OK (5 tests)
+
+
+INSTRUMENTATION_CODE: -1
+
+System documents:
+INSTRUMENTATION_STATUS: class=dev.rainlink.rainlink.export.AndroidDocumentExportTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=2
+INSTRUMENTATION_STATUS: stream=
+dev.rainlink.rainlink.export.AndroidDocumentExportTest:
+INSTRUMENTATION_STATUS: test=systemPickerSavesExactBytesAndUserCancellationReturnsNull
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=dev.rainlink.rainlink.export.AndroidDocumentExportTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=2
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=systemPickerSavesExactBytesAndUserCancellationReturnsNull
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=dev.rainlink.rainlink.export.AndroidDocumentExportTest
+INSTRUMENTATION_STATUS: current=2
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=2
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=invalidSourcesBusyStateAndActivityDisposalCannotReportSuccess
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=dev.rainlink.rainlink.export.AndroidDocumentExportTest
+INSTRUMENTATION_STATUS: current=2
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=2
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=invalidSourcesBusyStateAndActivityDisposalCannotReportSuccess
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 13.57
+
+OK (2 tests)
+
+
+INSTRUMENTATION_CODE: -1
+
+Notification cold start:
+INSTRUMENTATION_STATUS: class=dev.rainlink.rainlink.notifications.AndroidNotificationsTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+dev.rainlink.rainlink.notifications.AndroidNotificationsTest:
+INSTRUMENTATION_STATUS: test=expiryContainsOnlyCountsAndItsRealPendingIntentOpensGroups
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=dev.rainlink.rainlink.notifications.AndroidNotificationsTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=expiryContainsOnlyCountsAndItsRealPendingIntentOpensGroups
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 6.219
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+
+Runtime notification permission denied:
+INSTRUMENTATION_STATUS: class=dev.rainlink.rainlink.notifications.AndroidNotificationPermissionTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+dev.rainlink.rainlink.notifications.AndroidNotificationPermissionTest:
+INSTRUMENTATION_STATUS: test=actualSystemNotificationBlockCannotBeReportedAsDelivery
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=dev.rainlink.rainlink.notifications.AndroidNotificationPermissionTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=actualSystemNotificationBlockCannotBeReportedAsDelivery
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 0.044
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+
+Network handover:
+INSTRUMENTATION_STATUS: class=dev.rainlink.rainlink.core.AndroidNetworkHandoverTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+dev.rainlink.rainlink.core.AndroidNetworkHandoverTest:
+INSTRUMENTATION_STATUS: test=wifiCellularAndOfflineRecoveryKeepTheOriginalTunnelAndManualStopWins
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: rainlinkNetworkFlow={"stages":[{"stage":"wifi","sessionId":"VD4DXIY6BBCZR43IAEAF5D7BXA","tunnelNetwork":505916870669,"physicalNetworks":[488737001485],"physicalCapabilities":["[ Transports: WIFI Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED&PARTIAL_CONNECTIVITY&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED LinkUpBandwidth>=12000Kbps LinkDnBandwidth>=30000Kbps TransportInfo: <SSID: <unknown ssid>, BSSID: 02:00:00:00:00:00, MAC: 02:00:00:00:00:00, IP: \/10.0.2.16, Security type: 0, Supplicant state: COMPLETED, Wi-Fi standard: legacy, RSSI: -50, Link speed: 1Mbps, Tx Link speed: 1Mbps, Max Supported Tx Link speed: 11Mbps, Rx Link speed: 2Mbps, Max Supported Rx Link speed: 11Mbps, Frequency: 2447MHz, Net ID: -1, Metered hint: false, score: 60, isUsable: true, CarrierMerged: false, SubscriptionId: -1, IsPrimary: -1, Trusted: true, Restricted: false, Ephemeral: false, OEM paid: false, OEM private: false, OSU AP: false, FQDN: <none>, Provider friendly name: <none>, Requesting package name: <none><none>MLO Information: , Is TID-To-Link negotiation supported by the AP: false, AP MLD Address: <none>, AP MLO Link Id: <none>, AP MLO Affiliated links: <none>, Vendor Data: <none>> SignalStrength: -50 UnderlyingNetworks: Null]"]},{"stage":"cellular","sessionId":"VD4DXIY6BBCZR43IAEAF5D7BXA","tunnelNetwork":505916870669,"physicalNetworks":[510211837965],"physicalCapabilities":["[ Transports: CELLULAR Capabilities: MMS&SUPL&DUN&FOTA&IMS&CBS&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED LinkUpBandwidth>=14Kbps LinkDnBandwidth>=14Kbps Specifier: <TelephonyNetworkSpecifier [mSubId = 1]> SubscriptionIds: {1} UnderlyingNetworks: Null]"]},{"stage":"offline","sessionId":"VD4DXIY6BBCZR43IAEAF5D7BXA","tunnelNetwork":505916870669,"physicalNetworks":[],"physicalCapabilities":[]},{"stage":"wifi-restored","sessionId":"VD4DXIY6BBCZR43IAEAF5D7BXA","tunnelNetwork":505916870669,"physicalNetworks":[514506805261],"physicalCapabilities":["[ Transports: WIFI Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED LinkUpBandwidth>=12000Kbps LinkDnBandwidth>=30000Kbps TransportInfo: <SSID: <unknown ssid>, BSSID: 02:00:00:00:00:00, MAC: 02:00:00:00:00:00, IP: \/10.0.2.16, Security type: 0, Supplicant state: COMPLETED, Wi-Fi standard: legacy, RSSI: -50, Link speed: 1Mbps, Tx Link speed: 1Mbps, Max Supported Tx Link speed: 11Mbps, Rx Link speed: -1Mbps, Max Supported Rx Link speed: 11Mbps, Frequency: 2447MHz, Net ID: -1, Metered hint: false, score: 60, isUsable: true, CarrierMerged: false, SubscriptionId: -1, IsPrimary: -1, Trusted: true, Restricted: false, Ephemeral: false, OEM paid: false, OEM private: false, OSU AP: false, FQDN: <none>, Provider friendly name: <none>, Requesting package name: <none><none>MLO Information: , Is TID-To-Link negotiation supported by the AP: false, AP MLD Address: <none>, AP MLO Link Id: <none>, AP MLO Affiliated links: <none>, Vendor Data: <none>> SignalStrength: -50 UnderlyingNetworks: Null]"]}],"actualTransfers":3,"sameSystemTunnelSurvived":true,"manualStopPreventedLateReconnect":true,"transportEvidence":"only the stated physical transport is available during each actual independent-UID transfer"}
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=dev.rainlink.rainlink.core.AndroidNetworkHandoverTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=wifiCellularAndOfflineRecoveryKeepTheOriginalTunnelAndManualStopWins
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 20.248
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1

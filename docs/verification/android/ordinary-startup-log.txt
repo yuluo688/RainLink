@@ -1,0 +1,8 @@
+10-17 04:04:10.633   710  2042 I ActivityTaskManager: START u0 {flg=0x10000000 xflg=0x5 cmp=dev.rainlink.rainlink/.MainActivity} with LAUNCH_SINGLE_TOP from uid 2000 (BAL_ALLOW_PERMISSION) result code=0
+10-17 04:04:20.635   710   751 W ActivityTaskManager: Launch timeout has expired, giving up wake lock!
+10-17 04:04:25.610   710   748 I ActivityTaskManager: Displayed dev.rainlink.rainlink/.MainActivity for user 0: +15s3ms
+10-17 04:04:25.610   710   748 I ActivityTaskManager: Fully drawn dev.rainlink.rainlink/.MainActivity: +15s3ms
+10-17 04:06:03.681   710  1884 I ActivityTaskManager: START u0 {flg=0x10000000 xflg=0x5 cmp=dev.rainlink.rainlink/.MainActivity} with LAUNCH_SINGLE_TOP from uid 2000 (BAL_ALLOW_PERMISSION) result code=0
+10-17 04:06:13.670   710   751 W ActivityTaskManager: Launch timeout has expired, giving up wake lock!
+10-17 04:06:20.031   710   748 I ActivityTaskManager: Displayed dev.rainlink.rainlink/.MainActivity for user 0: +16s369ms
+10-17 04:06:20.031   710   748 I ActivityTaskManager: Fully drawn dev.rainlink.rainlink/.MainActivity: +16s369ms

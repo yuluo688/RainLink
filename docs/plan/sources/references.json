@@ -1,0 +1,100 @@
+{
+  "readDate": "2026-10-15",
+  "sources": [
+    {
+      "key": "flutter-native",
+      "url": "https://docs.flutter.dev/platform-integration/platform-channels",
+      "retrieved": true,
+      "readDate": "2026-10-15",
+      "excerpts": [
+        "ll platform-specific code using platform channels . Use the Pigeon package to generate type-safe platform-specific code. For more information, see Call platform-specific code using the Pigeon package . Flutter supports the following platforms and platform-specific languages: Android : Kotlin, Java iOS : Swift, Objective-C Windows : C++ macOS : Objective-C Linux : C info Note The information in this page is valid for most platforms, but platform-specific code for the web generally uses JS interoperability instead. This guide addresses using the platform channel mechanism if you need to use the platform's APIs in a non-Dart language. However, you can also writ",
+        "e app displays 'Battery level not available'. Step 5: Add a Windows platform-specific implementation # Start by opening the Windows host portion of your Flutter app in Visual Studio: Run flutter build windows in your project directory once to generate the Visual Studio solution file. Start Visual Studio. Select Open a project or solution . Navigate to the directory holding your Flutter app, then into the build folder, then the windows folder, then select the batterylevel.sln file. Click Open . Add the C++ implementation of the platform channel method: Expand batterylevel &gt; Source Files in the Solution Explorer. Open the file flutter_window.cpp . First, add the necessary inc",
+        "y, it displays 'Battery level not available'. Step 7: Add a Linux platform-specific implementation # For this example you need to install the upower developer headers. This is likely available from your distribution, for example with: sudo apt install libupower-glib-dev content_copy Start by opening the Linux host portion of your Flutter app in the editor of your choice. The instructions below are for Visual Studio Code with the \"C/C++\" and \"CMake\" extensions installed, but can be adjusted for other IDEs. Launch Visual Studio Code. Open the linux directory inside your project. Choose Yes in the prompt asking: Would you like to configure project \"linux\"? . This enables C++ au"
+      ],
+      "scope": "Documentation evidence; not a RainLink runtime test."
+    },
+    {
+      "key": "singbox-detour",
+      "url": "https://sing-box.sagernet.org/configuration/shared/dial/",
+      "retrieved": true,
+      "readDate": "2026-10-15",
+      "excerpts": [
+        " JSON Array [] tag when the content is only one item Fields detour The tag of the upstream outbound. If enabled, all other fields will be ignored. bind_interface The network interface to bind to. inet4_bind_address The IPv4 address to bind to. inet6_bind_address The IPv6 address to bind to. bind_address_no_port Since sing-box 1.13.0 Only supported on Linux. Do not reserve a port when binding to a source address. This allows reusing the same source port for multiple connections if the full 4-tuple (source IP, source port, destination IP, destination port) remains unique. routing_mark Only supported on Linux. Set netfilter routing mark. Integers (e.g. 1234 ) and strin"
+      ],
+      "scope": "Documentation evidence; not a RainLink runtime test."
+    },
+    {
+      "key": "singbox-clash-api",
+      "url": "https://sing-box.sagernet.org/configuration/experimental/clash-api/",
+      "retrieved": true,
+      "readDate": "2026-10-15",
+      "excerpts": [
+        " JSON Array [] tag when the content is only one item Fields external_controller RESTful web API listening address. Clash API will be disabled if empty. external_ui A relative path to the configuration directory or an absolute path to a directory in which you put some static web resource. sing-box will then serve it at http://{{external-controller}}/ui . external_ui_download_url ZIP download URL for the external UI, will be used if the specified external_ui directory is empty. https://github.com/MetaCubeX/Yacd-meta/archive/gh-pages.zip will be used if empty. external_ui_download_detour The tag of the outbound to download the external UI. Default outbound will be used if empty. se",
+        "ad the external UI. Default outbound will be used if empty. secret Secret for the RESTful API (optional) Authenticate by spedifying HTTP header Authorization: Bearer ${secret} ALWAYS set a secret if RESTful API is listening on 0.0.0.0 default_mode Default mode in clash, Rule will be used if empty. This setting has no direct effect, but can be used in routing and DNS rules via the clash_mode rule item. access_control_allow_origin Since sing-box 1.10.0 CORS allowed origins, * will be used if empty. To access the Clash API on a private network from a public website, you must explicitly specify it in access_control_allow_origin instead of using * . access_control_allow",
+        " ALWAYS set a secret if RESTful API is listening on 0.0.0.0 default_mode Default mode in clash, Rule will be used if empty. This setting has no direct effect, but can be used in routing and DNS rules via the clash_mode rule item. access_control_allow_origin Since sing-box 1.10.0 CORS allowed origins, * will be used if empty. To access the Clash API on a private network from a public website, you must explicitly specify it in access_control_allow_origin instead of using * . access_control_allow_private_network Since sing-box 1.10.0 Allow access from private network. To access the Clash API on a private network from a public website, access_control_allow_private_network mus"
+      ],
+      "scope": "Documentation evidence; not a RainLink runtime test."
+    },
+    {
+      "key": "singbox-clients-android",
+      "url": "https://sing-box.sagernet.org/clients/android/",
+      "retrieved": true,
+      "readDate": "2026-10-15",
+      "excerpts": [
+        " sing-box for Android SFA allows users to manage and run local or remote sing-box configuration files, and provides platform-specific function implementation, such as TUN transparent proxy implementation. Requirements Android 5.0+ Download Play Store Play Store (Beta) GitHub Releases F-Droid (Unified signature via reproducible builds) Source code GitHub "
+      ],
+      "scope": "Documentation evidence; not a RainLink runtime test."
+    },
+    {
+      "key": "singbox-clients-apple",
+      "url": "https://sing-box.sagernet.org/clients/apple/",
+      "retrieved": true,
+      "readDate": "2026-10-15",
+      "excerpts": [
+        " sing-box for Apple platforms SFI/SFM/SFT allows users to manage and run local or remote sing-box configuration files, and provides platform-specific function implementation, such as TUN transparent proxy implementation. Requirements iOS 15.0+ / macOS 13.0+ / Apple tvOS 17.0+ An Apple account outside of mainland China Download App Store (iOS / Apple tvOS) TestFlight (Beta) TestFlight quota is only available to sponsors (one-time sponsorships are accepted). Once you donate, you can get an invitation by join our Telegram group for sponsors from @yet_another_sponsor_bot or sending us your Apple ID via email . Download (iOS jailbreak version) G",
+        "plementation, such as TUN transparent proxy implementation. Requirements iOS 15.0+ / macOS 13.0+ / Apple tvOS 17.0+ An Apple account outside of mainland China Download App Store (iOS / Apple tvOS) TestFlight (Beta) TestFlight quota is only available to sponsors (one-time sponsorships are accepted). Once you donate, you can get an invitation by join our Telegram group for sponsors from @yet_another_sponsor_bot or sending us your Apple ID via email . Download (iOS jailbreak version) GitHub Releases SFI-iphoneos-arm64.deb : rootless SFI-iphoneos-arm64e.deb : roothide The jailbroken version of SFI: requires rootless or roothide iOS 15.0+ Additional features: It can run a "
+      ],
+      "scope": "Documentation evidence; not a RainLink runtime test."
+    },
+    {
+      "key": "android-vpn",
+      "url": "https://developer.android.com/develop/connectivity/vpn",
+      "retrieved": true,
+      "readDate": "2026-10-15",
+      "excerpts": [
+        "when transferring data to and from the VPN gateway. There’s only one active service per user or profile. Starting a new service, automatically stops an existing service. Add a service To add a VPN service to your app, create an Android service inheriting from VpnService . Declare the VPN service in your app manifest file with the following additions: Protect the service with the BIND_VPN_SERVICE permission so that only the system can bind to your service. Advertise the service with the &quot;android.net.VpnService&quot; intent filter so that the system can find your service. This example shows how you can declare the service in your app manifest file: &lt;service and",
+        "track the connection status. Your VPN service inherits from VpnService . The service also acts as your container for the VPN gateway connections and their local device interfaces. Your service instance call VpnService.Builder methods to establish a new local interface. Figure 1. How VpnService connects Android networking to the VPN gateway Your app transfers the following data to connect the device to the VPN gateway: Reads outgoing IP packets from the local interface’s file descriptor, encrypts them, and sends them to the VPN gateway. Writes incoming packets (received and decrypted from the VPN gateway) to the local interface’s file descriptor. Warning: Your ap",
+        "p to become the user’s current VPN service, call VpnService.prepare() . If the person using the device hasn’t already given permission for your app, the method returns an activity intent. You use this intent to start a system activity that asks for permission. The system shows a dialog that’s similar to other permissions dialogs, such as camera or contacts access. If your app is already prepared, the method returns null . Only one app can be the current prepared VPN service. Always call VpnService.prepare() because a person might have set a different app as the VPN service since your app last called the method. To learn more, see the Service lifecycle section.",
+        "pare() to ask for permission (when needed). Call VpnService.protect() to keep your app&#39;s tunnel socket outside of the system VPN and avoid a circular connection. Call DatagramSocket.connect() to connect your app&#39;s tunnel socket to the VPN gateway. Call VpnService.Builder methods to configure a new local TUN interface on the device for VPN traffic. Call VpnService.Builder.establish() so that the system establishes the local TUN interface and begins routing traffic through the interface. A VPN gateway normally suggests settings for the local TUN interface during handshaking. Your app calls VpnService.Builder methods to configure a service as shown in the"
+      ],
+      "scope": "Documentation evidence; not a RainLink runtime test."
+    },
+    {
+      "key": "apple-tunnel-markdown",
+      "url": "https://developer.apple.com/documentation/networkextension/packet-tunnel-provider.md",
+      "retrieved": true,
+      "readDate": "2026-10-15",
+      "excerpts": [
+        "ent that implements a packet-oriented, custom VPN protocol, create a packet tunnel provider app extension. When the system starts a VPN configuration that uses your packet tunnel provider, it performs the following steps: - Launches your app extension. - Instantiates your packet tunnel provider subclass within that app extension. - Starts forwarding packets to your provider. Your provider should open a tunnel to a VPN server and send those packets over that tunnel. Similarly, if your provider receives packets from the tunnel, it should pass them back to the system. Packet tunnel providers can run in destination IP mode or source-application mode. The latter is one form of p",
+        " packet tunnel provider, it performs the following steps: - Launches your app extension. - Instantiates your packet tunnel provider subclass within that app extension. - Starts forwarding packets to your provider. Your provider should open a tunnel to a VPN server and send those packets over that tunnel. Similarly, if your provider receives packets from the tunnel, it should pass them back to the system. Packet tunnel providers can run in destination IP mode or source-application mode. The latter is one form of per-app VPN (the other form is an [App proxy provider](/documentation/NetworkExtension/app-proxy-provider)). For detailed information about packet tunnel provider deploym"
+      ],
+      "scope": "Documentation evidence; not a RainLink runtime test."
+    },
+    {
+      "key": "singbox-home",
+      "url": "https://sing-box.sagernet.org/",
+      "retrieved": true,
+      "readDate": "2026-10-15",
+      "excerpts": [
+        "age for the sing-box project. The universal proxy platform. License Copyright (C) 2022 by nekohasekai &lt; [email&#160;protected] &gt; This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License alo"
+      ],
+      "scope": "Documentation evidence; not a RainLink runtime test."
+    },
+    {
+      "key": "flutter-supported-platforms",
+      "url": "https://docs.flutter.dev/reference/supported-platforms",
+      "retrieved": false,
+      "note": "Page retrieval unsuccessful in this session. Verify exact Flutter SDK/OS/architecture combinations during M0; proposed product baselines are not certified compatibility."
+    }
+  ]
+}

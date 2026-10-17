@@ -1,0 +1,31 @@
+{
+  "at": "2026-10-16T20:49:57.5978774+08:00",
+  "source": "live Figma Bridge native SVG exports",
+  "icons": [
+    {
+      "name": "copy",
+      "matches": true,
+      "sha256": "bc683a81cf7d74fb47ad5754501a38958dc22bcefff71f001fc4a844da1c24e6"
+    },
+    {
+      "name": "close",
+      "matches": true,
+      "sha256": "aaaaeab113662ca4ee109369deed1722c3044985ddf8d014d62195ec3d5393d3"
+    },
+    {
+      "name": "check",
+      "matches": true,
+      "sha256": "32d9d80aecafbc209e5b093d033c5fe71af6ee178d606c09992745de2adf4c8e"
+    },
+    {
+      "name": "download",
+      "matches": true,
+      "sha256": "ee6e5b811acbb7a59b4f3a1aad81e3a95b1cf9ecdfc17e255abd5a9d1f3c744f"
+    },
+    {
+      "name": "chevron_down",
+      "matches": true,
+      "sha256": "ac9b1d8d343913a370351a8dd40018b3eacb18ebc34891297220b2c61bfac4f8"
+    }
+  ]
+}

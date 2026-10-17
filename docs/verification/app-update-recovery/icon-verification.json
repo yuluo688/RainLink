@@ -1,0 +1,47 @@
+{
+  "at": "2026-10-17T05:38:55.376967+08:00",
+  "fileKey": "unsaved-mva99nf3-128z4u3c",
+  "source": "Figma Bridge native SVG re-export",
+  "assets": [
+    {
+      "nodeId": "2:16609",
+      "source": "build/recovery-brand-mark.svg",
+      "runtime": "app/assets/brand/mark.svg",
+      "sha256": "7f1383b4dcd06ee9220f33382476821718159c315762412453d2fabfe585953b",
+      "svgMarkupIdentical": true
+    },
+    {
+      "nodeId": "2:16567",
+      "source": "build/recovery-icon-refresh.svg",
+      "runtime": "app/assets/icons/refresh.svg",
+      "sha256": "d04cc93bc090bf4a917e78f2c6e502808b6354a2ce5fa7c168a6d4d23c87e7b4",
+      "svgMarkupIdentical": true
+    },
+    {
+      "nodeId": "2:16539",
+      "source": "build/recovery-icon-download.svg",
+      "runtime": "app/assets/icons/download.svg",
+      "sha256": "ee6e5b811acbb7a59b4f3a1aad81e3a95b1cf9ecdfc17e255abd5a9d1f3c744f",
+      "svgMarkupIdentical": true
+    },
+    {
+      "nodeId": "2:16521",
+      "source": "build/recovery-icon-chevron-down.svg",
+      "runtime": "app/assets/icons/chevron_down.svg",
+      "sha256": "ac9b1d8d343913a370351a8dd40018b3eacb18ebc34891297220b2c61bfac4f8",
+      "svgMarkupIdentical": true
+    },
+    {
+      "nodeId": "59:44535",
+      "source": "build/recovery-icon-back.svg",
+      "runtime": "app/assets/icons/back.svg",
+      "sha256": "69f8fa58a68cc78b66a84921843784dbc920d197fea623203d7e5f0a4400fffa",
+      "svgMarkupIdentical": true
+    }
+  ],
+  "nativeIconGenerationChecked": {
+    "pngCount": 27,
+    "icoCount": 1,
+    "icoSizes": 9
+  }
+}

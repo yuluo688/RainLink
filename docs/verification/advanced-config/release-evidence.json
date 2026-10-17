@@ -1,0 +1,19 @@
+{
+  "at": "2026-10-17T02:42:47.104120+08:00",
+  "nativeReleaseStartedAndClosed": true,
+  "nativeReleaseSettingsOpened": true,
+  "nativeReleaseValidationPassed": true,
+  "databaseUnchanged": true,
+  "startupEntryUnchanged": true,
+  "systemProxyUnchanged": true,
+  "schema": 6,
+  "integrity": "ok",
+  "counts": {
+    "nodes": 68,
+    "node_groups": 1,
+    "node_overrides": 0,
+    "preferences": 4
+  },
+  "stderrEmpty": true,
+  "previewSha256": "4baf86da0e0a6598ab16ad4676a0b6f37fa757083ef0b1c1a7e41fe63f763ee3"
+}

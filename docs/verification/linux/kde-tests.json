@@ -1,0 +1,1232 @@
+{
+  "capturedAt": "2026-10-17T07:50:01.530100+00:00",
+  "passed": true,
+  "passEvents": 242,
+  "topLevelPassEvents": 106,
+  "skippedInMainBatch": [
+    {
+      "name": "TestLinuxLockedSecretService",
+      "topLevel": true,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestPrepareUpstreamPreservesLocalRoutesAndRejectsFakeLiteral",
+      "topLevel": true,
+      "elapsedSeconds": 0.0
+    }
+  ],
+  "passes": [
+    {
+      "name": "TestStatusContractDoesNotClaimNetworkCapabilities",
+      "topLevel": true,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestRejectsUnsupportedCommandsWithoutEchoingSecrets",
+      "topLevel": true,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestOutputFailureIsNotReportedAsSuccess",
+      "topLevel": true,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestCancelledStartCannotLaunchEvenPrivilegedCore",
+      "topLevel": true,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestUntrustedCoreCannotAdvertiseTUNCapability",
+      "topLevel": true,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestLockedCoreMatchesCurrentPlatform",
+      "topLevel": true,
+      "elapsedSeconds": 0.02
+    },
+    {
+      "name": "TestLinuxCoreCannotOutliveKilledHost",
+      "topLevel": true,
+      "elapsedSeconds": 0.01
+    },
+    {
+      "name": "TestProxyApplyEncryptedJournalAndRestore",
+      "topLevel": true,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestProxyRejectsOversizedRecoveryBeforeChangingSettings",
+      "topLevel": true,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestProxyRecoveryRespectsLaterOwnersAndBypassEdits",
+      "topLevel": true,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestProxyRecoveryRespectsLaterOwnersAndBypassEdits/bypass-only",
+      "topLevel": false,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestProxyRecoveryRespectsLaterOwnersAndBypassEdits/new-client",
+      "topLevel": false,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestProxyRecoveryRespectsLaterOwnersAndBypassEdits/crash-before-write",
+      "topLevel": false,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestProxyRecoveryRespectsLaterOwnersAndBypassEdits/partial-apply",
+      "topLevel": false,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestProxyFailedApplyRollsBackAndFailedRecoveryRetainsJournal",
+      "topLevel": true,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestProxyFailedApplyRollsBackAndFailedRecoveryRetainsJournal/before-write",
+      "topLevel": false,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestProxyFailedApplyRollsBackAndFailedRecoveryRetainsJournal/partial-write",
+      "topLevel": false,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestProxyFailedApplyRollsBackAndFailedRecoveryRetainsJournal/readback",
+      "topLevel": false,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestProxyFailedApplyRollsBackAndFailedRecoveryRetainsJournal/cancelled",
+      "topLevel": false,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestProxyFailedApplyRollsBackAndFailedRecoveryRetainsJournal/failed-rollback",
+      "topLevel": false,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestProxyJournalRejectsTamperingAndLiveForeignOwner",
+      "topLevel": true,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestProxyJournalRejectsTamperingAndLiveForeignOwner/ciphertext",
+      "topLevel": false,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestProxyJournalRejectsTamperingAndLiveForeignOwner/identity",
+      "topLevel": false,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestProxyJournalRejectsTamperingAndLiveForeignOwner/live-owner",
+      "topLevel": false,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestInterruptedRestoreCanResumeAndPreservesALaterOwner",
+      "topLevel": true,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestInterruptedRestoreCanResumeAndPreservesALaterOwner/retry-partial-restore",
+      "topLevel": false,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestInterruptedRestoreCanResumeAndPreservesALaterOwner/later-owner",
+      "topLevel": false,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestUnavailableKeyringRetainsRecoveryUntilItCanBeUnlocked",
+      "topLevel": true,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestGNOMESelectionAndUnavailableBackendDoNotChangeSettings",
+      "topLevel": true,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestRealGNOMEProxyRoundTrip",
+      "topLevel": true,
+      "elapsedSeconds": 0.6
+    },
+    {
+      "name": "TestRecordedDesktopAndLegacyGNOMERecovery",
+      "topLevel": true,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestRecordedDesktopAndLegacyGNOMERecovery/recorded-desktop",
+      "topLevel": false,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestRecordedDesktopAndLegacyGNOMERecovery/legacy-v1",
+      "topLevel": false,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestChangedConfigurationBindingRetainsJournal",
+      "topLevel": true,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestRealKDEProxyRoundTripAndConsumer",
+      "topLevel": true,
+      "elapsedSeconds": 0.19
+    },
+    {
+      "name": "TestRealKDEInitiallyMissingConfiguration",
+      "topLevel": true,
+      "elapsedSeconds": 0.12
+    },
+    {
+      "name": "TestRealKDEDefaultsAndChangeNotification",
+      "topLevel": true,
+      "elapsedSeconds": 0.14
+    },
+    {
+      "name": "TestRealKDERecoveryRespectsLaterChanges",
+      "topLevel": true,
+      "elapsedSeconds": 0.53
+    },
+    {
+      "name": "TestRealKDERecoveryRespectsLaterChanges/bypass-only",
+      "topLevel": false,
+      "elapsedSeconds": 0.14
+    },
+    {
+      "name": "TestRealKDERecoveryRespectsLaterChanges/new-owner",
+      "topLevel": false,
+      "elapsedSeconds": 0.11
+    },
+    {
+      "name": "TestRealKDERecoveryRespectsLaterChanges/changed-location",
+      "topLevel": false,
+      "elapsedSeconds": 0.13
+    },
+    {
+      "name": "TestRealKDERecoveryRespectsLaterChanges/read-only-retry",
+      "topLevel": false,
+      "elapsedSeconds": 0.15
+    },
+    {
+      "name": "TestRealKDERejectsUnsupportedOrLockedConfiguration",
+      "topLevel": true,
+      "elapsedSeconds": 0.08
+    },
+    {
+      "name": "TestDurableWriteExclusiveReplacementAndLimit",
+      "topLevel": true,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestUnsafeFilesAreRejectedWithoutFollowingLinks",
+      "topLevel": true,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestUnsafeFilesAreRejectedWithoutFollowingLinks/symlink",
+      "topLevel": false,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestUnsafeFilesAreRejectedWithoutFollowingLinks/hardlink",
+      "topLevel": false,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestUnsafeFilesAreRejectedWithoutFollowingLinks/public",
+      "topLevel": false,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestUnsafeFilesAreRejectedWithoutFollowingLinks/fifo",
+      "topLevel": false,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestDirectoryPermissionsNamesAndDescriptorAnchor",
+      "topLevel": true,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestLockWaitCancellationAndRelease",
+      "topLevel": true,
+      "elapsedSeconds": 0.06
+    },
+    {
+      "name": "TestEnvelopeRoundTripAndBinding",
+      "topLevel": true,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestEnvelopeValidationBeforeKeyAccess",
+      "topLevel": true,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestEnvelopeValidationBeforeKeyAccess/empty-id",
+      "topLevel": false,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestEnvelopeValidationBeforeKeyAccess/long-id",
+      "topLevel": false,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestEnvelopeValidationBeforeKeyAccess/empty-plain",
+      "topLevel": false,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestEnvelopeValidationBeforeKeyAccess/large-plain",
+      "topLevel": false,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestEnvelopeKeyFailuresAndCancellation",
+      "topLevel": true,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestLinuxKeyCreationSerialized",
+      "topLevel": true,
+      "elapsedSeconds": 0.08
+    },
+    {
+      "name": "TestLinuxKeyFailures",
+      "topLevel": true,
+      "elapsedSeconds": 0.08
+    },
+    {
+      "name": "TestLinuxKeyFailures/missing",
+      "topLevel": false,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestLinuxKeyFailures/locked",
+      "topLevel": false,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestLinuxKeyFailures/locked-silent",
+      "topLevel": false,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestLinuxKeyFailures/search-failed",
+      "topLevel": false,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestLinuxKeyFailures/malformed",
+      "topLevel": false,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestLinuxKeyFailures/wrong-length",
+      "topLevel": false,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestLinuxKeyFailures/store-failed",
+      "topLevel": false,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestLinuxKeyFailures/store-missing",
+      "topLevel": false,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestLinuxKeyFailures/readback-missing",
+      "topLevel": false,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestLinuxKeyFailures/readback-different",
+      "topLevel": false,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestLinuxKeyFailures/cancelled",
+      "topLevel": false,
+      "elapsedSeconds": 0.08
+    },
+    {
+      "name": "TestLinuxKeyLockSecurityAndCancellation",
+      "topLevel": true,
+      "elapsedSeconds": 0.08
+    },
+    {
+      "name": "TestLinuxKeyLockSecurityAndCancellation/public-directory",
+      "topLevel": false,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestLinuxKeyLockSecurityAndCancellation/directory-symlink",
+      "topLevel": false,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestLinuxKeyLockSecurityAndCancellation/file-symlink",
+      "topLevel": false,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestLinuxKeyLockSecurityAndCancellation/public-file",
+      "topLevel": false,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestLinuxKeyLockSecurityAndCancellation/hard-link",
+      "topLevel": false,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestLinuxKeyLockSecurityAndCancellation/fifo",
+      "topLevel": false,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestLinuxKeyLockSecurityAndCancellation/cancelled",
+      "topLevel": false,
+      "elapsedSeconds": 0.08
+    },
+    {
+      "name": "TestKeyLockDirectory",
+      "topLevel": true,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestKeyLockAcrossProcesses",
+      "topLevel": true,
+      "elapsedSeconds": 0.1
+    },
+    {
+      "name": "TestBoundedOutputReaderFromCannotBypassLimit",
+      "topLevel": true,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestRunSecretCommand",
+      "topLevel": true,
+      "elapsedSeconds": 0.26
+    },
+    {
+      "name": "TestRunSecretCommand/stdin-only",
+      "topLevel": false,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestRunSecretCommand/missing",
+      "topLevel": false,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestRunSecretCommand/failed-store",
+      "topLevel": false,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestRunSecretCommand/locked",
+      "topLevel": false,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestRunSecretCommand/stdout-limit",
+      "topLevel": false,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestRunSecretCommand/stderr-limit",
+      "topLevel": false,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestRunSecretCommand/timeout",
+      "topLevel": false,
+      "elapsedSeconds": 0.25
+    },
+    {
+      "name": "TestLinuxSecretServiceIntegration",
+      "topLevel": true,
+      "elapsedSeconds": 0.12
+    },
+    {
+      "name": "TestAdvancedMergeChecksBundledCoreAndProtectsCapture",
+      "topLevel": true,
+      "elapsedSeconds": 0.02
+    },
+    {
+      "name": "TestAdvancedRejectsUnknownSecretsAndInvalidPolicies",
+      "topLevel": true,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestAdvancedActualDNSRouteAndLiveModes",
+      "topLevel": true,
+      "elapsedSeconds": 0.14
+    },
+    {
+      "name": "TestRealCoreChainOrderRuleTargetAndBindings",
+      "topLevel": true,
+      "elapsedSeconds": 0.39
+    },
+    {
+      "name": "TestRealCoreChainPrefixFailureCancellationAndIsolation",
+      "topLevel": true,
+      "elapsedSeconds": 0.38
+    },
+    {
+      "name": "TestChainValidationAndSafeCompilation",
+      "topLevel": true,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestRealCoreChainCancellationDuringRequest",
+      "topLevel": true,
+      "elapsedSeconds": 0.13
+    },
+    {
+      "name": "TestCredentialFailuresAreActionableAndRedacted",
+      "topLevel": true,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestCancelledCredentialCommandsAndTarget",
+      "topLevel": true,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestHysteria2Configuration",
+      "topLevel": true,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestCoreChecksHysteria2PortHoppingConfiguration",
+      "topLevel": true,
+      "elapsedSeconds": 0.02
+    },
+    {
+      "name": "TestRealCoreRoutesAndLiveModeChanges",
+      "topLevel": true,
+      "elapsedSeconds": 0.16
+    },
+    {
+      "name": "TestRealCoreSOCKS5Authentication",
+      "topLevel": true,
+      "elapsedSeconds": 0.18
+    },
+    {
+      "name": "TestCredentialsAreUserProtectedAndNodeBound",
+      "topLevel": true,
+      "elapsedSeconds": 0.03
+    },
+    {
+      "name": "TestInvalidNodeAndCancelledConnectNeverCommit",
+      "topLevel": true,
+      "elapsedSeconds": 0.01
+    },
+    {
+      "name": "TestMobileConnectionsReuseStablePagingAttributionAndConfirmedClosing",
+      "topLevel": true,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestMobileLogStoreSharesOnlySanitizedEntriesAcrossSessions",
+      "topLevel": true,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestMobileCompilerEightProtocolsAndPrivateSecrets",
+      "topLevel": true,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestMobileCompilerEightProtocolsAndPrivateSecrets/http",
+      "topLevel": false,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestMobileCompilerEightProtocolsAndPrivateSecrets/socks",
+      "topLevel": false,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestMobileCompilerEightProtocolsAndPrivateSecrets/shadowsocks",
+      "topLevel": false,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestMobileCompilerEightProtocolsAndPrivateSecrets/vless",
+      "topLevel": false,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestMobileCompilerEightProtocolsAndPrivateSecrets/vmess",
+      "topLevel": false,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestMobileCompilerEightProtocolsAndPrivateSecrets/trojan",
+      "topLevel": false,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestMobileCompilerEightProtocolsAndPrivateSecrets/hysteria2",
+      "topLevel": false,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestMobileCompilerEightProtocolsAndPrivateSecrets/tuic",
+      "topLevel": false,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestMobileTunnelCapturesBothFamiliesAndInterceptsDNSBeforeModes",
+      "topLevel": true,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestMobileNodeBindingsMatchDesktopAndLogsRedactCompiledSecrets",
+      "topLevel": true,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestMobileChainAndRuleBindings",
+      "topLevel": true,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestMobileRejectsMissingCredentialCaptureMismatchAndUntrustedInput",
+      "topLevel": true,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestRealCoreNodeProbeIsolationAndFailures",
+      "topLevel": true,
+      "elapsedSeconds": 0.38
+    },
+    {
+      "name": "TestRealCoreNodeProbeCancellationAndStatus",
+      "topLevel": true,
+      "elapsedSeconds": 0.5
+    },
+    {
+      "name": "TestRealCoreNodeProbeCancellationAndStatus/OK",
+      "topLevel": false,
+      "elapsedSeconds": 0.12
+    },
+    {
+      "name": "TestRealCoreNodeProbeCancellationAndStatus/Found",
+      "topLevel": false,
+      "elapsedSeconds": 0.12
+    },
+    {
+      "name": "TestRealCoreNodeProbeCancellationAndStatus/Service_Unavailable",
+      "topLevel": false,
+      "elapsedSeconds": 0.12
+    },
+    {
+      "name": "TestProbeDeadlinePublishesFailure",
+      "topLevel": true,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestCancelledOrReplacedProbeCannotOverwriteObservations",
+      "topLevel": true,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestCoreChecksRealityVisionConfigurations",
+      "topLevel": true,
+      "elapsedSeconds": 0.02
+    },
+    {
+      "name": "TestRealCoreEncryptedProtocolsAndAuthentication",
+      "topLevel": true,
+      "elapsedSeconds": 15.14
+    },
+    {
+      "name": "TestRealCoreEncryptedProtocolsAndAuthentication/SS_AEAD",
+      "topLevel": false,
+      "elapsedSeconds": 0.32
+    },
+    {
+      "name": "TestRealCoreEncryptedProtocolsAndAuthentication/SS_2022",
+      "topLevel": false,
+      "elapsedSeconds": 0.32
+    },
+    {
+      "name": "TestRealCoreEncryptedProtocolsAndAuthentication/VLESS_TCP",
+      "topLevel": false,
+      "elapsedSeconds": 0.31
+    },
+    {
+      "name": "TestRealCoreEncryptedProtocolsAndAuthentication/VLESS_WebSocket_TLS",
+      "topLevel": false,
+      "elapsedSeconds": 0.32
+    },
+    {
+      "name": "TestRealCoreEncryptedProtocolsAndAuthentication/VLESS_gRPC_TLS",
+      "topLevel": false,
+      "elapsedSeconds": 0.32
+    },
+    {
+      "name": "TestRealCoreEncryptedProtocolsAndAuthentication/VMess_AEAD_auto",
+      "topLevel": false,
+      "elapsedSeconds": 0.32
+    },
+    {
+      "name": "TestRealCoreEncryptedProtocolsAndAuthentication/VMess_AEAD_AES",
+      "topLevel": false,
+      "elapsedSeconds": 0.32
+    },
+    {
+      "name": "TestRealCoreEncryptedProtocolsAndAuthentication/VMess_AEAD_ChaCha",
+      "topLevel": false,
+      "elapsedSeconds": 0.32
+    },
+    {
+      "name": "TestRealCoreEncryptedProtocolsAndAuthentication/VMess_legacy_Alter_ID",
+      "topLevel": false,
+      "elapsedSeconds": 0.31
+    },
+    {
+      "name": "TestRealCoreEncryptedProtocolsAndAuthentication/VMess_WebSocket_TLS",
+      "topLevel": false,
+      "elapsedSeconds": 0.32
+    },
+    {
+      "name": "TestRealCoreEncryptedProtocolsAndAuthentication/VMess_gRPC_TLS",
+      "topLevel": false,
+      "elapsedSeconds": 0.32
+    },
+    {
+      "name": "TestRealCoreEncryptedProtocolsAndAuthentication/Trojan_TLS",
+      "topLevel": false,
+      "elapsedSeconds": 0.47
+    },
+    {
+      "name": "TestRealCoreEncryptedProtocolsAndAuthentication/Trojan_WebSocket_TLS",
+      "topLevel": false,
+      "elapsedSeconds": 0.32
+    },
+    {
+      "name": "TestRealCoreEncryptedProtocolsAndAuthentication/Hysteria2_QUIC",
+      "topLevel": false,
+      "elapsedSeconds": 1.09
+    },
+    {
+      "name": "TestRealCoreEncryptedProtocolsAndAuthentication/Hysteria2_Salamander",
+      "topLevel": false,
+      "elapsedSeconds": 6.09
+    },
+    {
+      "name": "TestRealCoreEncryptedProtocolsAndAuthentication/TUIC_QUIC_cubic",
+      "topLevel": false,
+      "elapsedSeconds": 1.23
+    },
+    {
+      "name": "TestRealCoreEncryptedProtocolsAndAuthentication/TUIC_QUIC_bbr",
+      "topLevel": false,
+      "elapsedSeconds": 1.22
+    },
+    {
+      "name": "TestRealCoreEncryptedProtocolsAndAuthentication/TUIC_QUIC_new_reno",
+      "topLevel": false,
+      "elapsedSeconds": 1.23
+    },
+    {
+      "name": "TestPrivateCredentialRevealIsIdentityBound",
+      "topLevel": true,
+      "elapsedSeconds": 0.03
+    },
+    {
+      "name": "TestLinuxGNOMEHostCaptureAndCrashRecovery",
+      "topLevel": true,
+      "elapsedSeconds": 2.93
+    },
+    {
+      "name": "TestLinuxGNOMEHostCaptureAndCrashRecovery/toggle-disconnect",
+      "topLevel": false,
+      "elapsedSeconds": 0.79
+    },
+    {
+      "name": "TestLinuxGNOMEHostCaptureAndCrashRecovery/eof",
+      "topLevel": false,
+      "elapsedSeconds": 0.45
+    },
+    {
+      "name": "TestLinuxGNOMEHostCaptureAndCrashRecovery/kill-host",
+      "topLevel": false,
+      "elapsedSeconds": 0.46
+    },
+    {
+      "name": "TestLinuxGNOMEHostCaptureAndCrashRecovery/kill-core",
+      "topLevel": false,
+      "elapsedSeconds": 0.46
+    },
+    {
+      "name": "TestLinuxGNOMEHostCaptureAndCrashRecovery/watcher-restart",
+      "topLevel": false,
+      "elapsedSeconds": 0.76
+    },
+    {
+      "name": "TestLinuxKDEHostCaptureAndCrashRecovery",
+      "topLevel": true,
+      "elapsedSeconds": 1.67
+    },
+    {
+      "name": "TestLinuxKDEHostCaptureAndCrashRecovery/toggle-disconnect",
+      "topLevel": false,
+      "elapsedSeconds": 0.45
+    },
+    {
+      "name": "TestLinuxKDEHostCaptureAndCrashRecovery/eof",
+      "topLevel": false,
+      "elapsedSeconds": 0.28
+    },
+    {
+      "name": "TestLinuxKDEHostCaptureAndCrashRecovery/kill-host",
+      "topLevel": false,
+      "elapsedSeconds": 0.27
+    },
+    {
+      "name": "TestLinuxKDEHostCaptureAndCrashRecovery/kill-core",
+      "topLevel": false,
+      "elapsedSeconds": 0.28
+    },
+    {
+      "name": "TestLinuxKDEHostCaptureAndCrashRecovery/watcher-restart",
+      "topLevel": false,
+      "elapsedSeconds": 0.39
+    },
+    {
+      "name": "TestRoutingBoundaryValidation",
+      "topLevel": true,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestRealCoreOrderedRoutingAndModeOverride",
+      "topLevel": true,
+      "elapsedSeconds": 0.16
+    },
+    {
+      "name": "TestRuleCompilerPreservesPerOutboundSecurity",
+      "topLevel": true,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestLinuxHostPrivateProtocolAndEOFCleanup",
+      "topLevel": true,
+      "elapsedSeconds": 0.18
+    },
+    {
+      "name": "TestRuntimeSettingsValidateAndCompile",
+      "topLevel": true,
+      "elapsedSeconds": 0.1
+    },
+    {
+      "name": "TestDNSActualHTTPSAndMalformedResponses",
+      "topLevel": true,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestDNSActualUDPAndCancellation",
+      "topLevel": true,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestRuntimeSettingsApplyPortAndPreserveLiveSession",
+      "topLevel": true,
+      "elapsedSeconds": 0.15
+    },
+    {
+      "name": "TestCoreActuallyUsesCustomDNS",
+      "topLevel": true,
+      "elapsedSeconds": 0.13
+    },
+    {
+      "name": "TestCoreLogFramingRedactionAndBounds",
+      "topLevel": true,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestConnectionPaginationAndSessionScopedClosing",
+      "topLevel": true,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestRealCoreConnectionCloseAndLogCollection",
+      "topLevel": true,
+      "elapsedSeconds": 0.13
+    },
+    {
+      "name": "TestTUNCompilerProtectsUpstreamAndInterceptsDNSBeforeUserModes",
+      "topLevel": true,
+      "elapsedSeconds": 0.02
+    },
+    {
+      "name": "TestIsolatedDiagnosticsCannotStartTUNCapture",
+      "topLevel": true,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestUpstreamAddressPolicy",
+      "topLevel": true,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestUpstreamAddressPolicy/loopback",
+      "topLevel": false,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestUpstreamAddressPolicy/private",
+      "topLevel": false,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestUpstreamAddressPolicy/link_local",
+      "topLevel": false,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestUpstreamAddressPolicy/public_IPv4",
+      "topLevel": false,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestUpstreamAddressPolicy/public_IPv6",
+      "topLevel": false,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestUpstreamAddressPolicy/fake_start",
+      "topLevel": false,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestUpstreamAddressPolicy/fake_end",
+      "topLevel": false,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestUpstreamAddressPolicy/outside_fake_range",
+      "topLevel": false,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestUpstreamAddressPolicy/mapped_fake",
+      "topLevel": false,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestUpstreamAddressPolicy/mixed_answers",
+      "topLevel": false,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestUpstreamAddressPolicy/private_and_fake",
+      "topLevel": false,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestHysteria2UpstreamConfigurationIsolation",
+      "topLevel": true,
+      "elapsedSeconds": 0.02
+    },
+    {
+      "name": "TestCoreChecksVMessAndTUICOptions",
+      "topLevel": true,
+      "elapsedSeconds": 0.07
+    },
+    {
+      "name": "TestCoreChecksVMessAndTUICOptions/vmess/default",
+      "topLevel": false,
+      "elapsedSeconds": 0.01
+    },
+    {
+      "name": "TestCoreChecksVMessAndTUICOptions/vmess/extended",
+      "topLevel": false,
+      "elapsedSeconds": 0.01
+    },
+    {
+      "name": "TestCoreChecksVMessAndTUICOptions/vmess/alternate",
+      "topLevel": false,
+      "elapsedSeconds": 0.01
+    },
+    {
+      "name": "TestCoreChecksVMessAndTUICOptions/tuic/default",
+      "topLevel": false,
+      "elapsedSeconds": 0.01
+    },
+    {
+      "name": "TestCoreChecksVMessAndTUICOptions/tuic/extended",
+      "topLevel": false,
+      "elapsedSeconds": 0.01
+    },
+    {
+      "name": "TestCoreChecksVMessAndTUICOptions/tuic/alternate",
+      "topLevel": false,
+      "elapsedSeconds": 0.01
+    },
+    {
+      "name": "TestVMessTUICBoundariesAndChainCompatibility",
+      "topLevel": true,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestRealCoreVMessAndTUICDatagrams",
+      "topLevel": true,
+      "elapsedSeconds": 1.57
+    },
+    {
+      "name": "TestRealCoreVMessAndTUICDatagrams/tuic/native",
+      "topLevel": false,
+      "elapsedSeconds": 0.35
+    },
+    {
+      "name": "TestRealCoreVMessAndTUICDatagrams/tuic/quic",
+      "topLevel": false,
+      "elapsedSeconds": 0.35
+    },
+    {
+      "name": "TestRealCoreVMessAndTUICDatagrams/tuic/stream",
+      "topLevel": false,
+      "elapsedSeconds": 0.35
+    },
+    {
+      "name": "TestRealCoreVMessAndTUICDatagrams/vmess/",
+      "topLevel": false,
+      "elapsedSeconds": 0.17
+    },
+    {
+      "name": "TestRealCoreVMessAndTUICDatagrams/vmess/xudp",
+      "topLevel": false,
+      "elapsedSeconds": 0.17
+    },
+    {
+      "name": "TestRealCoreVMessAndTUICDatagrams/vmess/packetaddr",
+      "topLevel": false,
+      "elapsedSeconds": 0.17
+    },
+    {
+      "name": "TestRealCoreVMessTUICChains",
+      "topLevel": true,
+      "elapsedSeconds": 0.36
+    },
+    {
+      "name": "TestRealCoreVMessTUICChains/vmess->tuic",
+      "topLevel": false,
+      "elapsedSeconds": 0.15
+    },
+    {
+      "name": "TestRealCoreVMessTUICChains/tuic->vmess",
+      "topLevel": false,
+      "elapsedSeconds": 0.15
+    },
+    {
+      "name": "TestRecoveryAfterEveryInterruptedRuntimeMove",
+      "topLevel": true,
+      "elapsedSeconds": 0.03
+    },
+    {
+      "name": "TestRecoveryAfterEveryInterruptedRuntimeMove/x",
+      "topLevel": false,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestRecoveryAfterEveryInterruptedRuntimeMove/xx",
+      "topLevel": false,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestRecoveryAfterEveryInterruptedRuntimeMove/xxx",
+      "topLevel": false,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestRecoveryAfterEveryInterruptedRuntimeMove/xxxx",
+      "topLevel": false,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestRecoveryAfterEveryInterruptedRuntimeMove/xxxxx",
+      "topLevel": false,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestRecoveryAfterEveryInterruptedRuntimeMove/xxxxxx",
+      "topLevel": false,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestRecoveryAfterEveryInterruptedRuntimeMove/xxxxxxx",
+      "topLevel": false,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestRecoveryAfterEveryInterruptedRuntimeMove/xxxxxxxx",
+      "topLevel": false,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestRecoveryAfterEveryInterruptedRuntimeMove/xxxxxxxxx",
+      "topLevel": false,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestRecoveryAfterEveryInterruptedRuntimeMove/xxxxxxxxxx",
+      "topLevel": false,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestRecoveryAfterEveryInterruptedRuntimeMove/xxxxxxxxxxx",
+      "topLevel": false,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestRecoveryAfterEveryInterruptedRuntimeMove/xxxxxxxxxxxx",
+      "topLevel": false,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestRecoveryAfterEveryInterruptedRuntimeMove/xxxxxxxxxxxxx",
+      "topLevel": false,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestRecoveryAfterEveryInterruptedRuntimeMove/xxxxxxxxxxxxxx",
+      "topLevel": false,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestDurableAcceptanceNeverRollsBackEvenIfFinalHandshakeFails",
+      "topLevel": true,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestCanceledRecoveryRetainsRecoverableBackup",
+      "topLevel": true,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestRecoveryCanResumeInterruptedRecovery",
+      "topLevel": true,
+      "elapsedSeconds": 0.03
+    },
+    {
+      "name": "TestAcceptedVersionRetainsMigratedDataOnHelperInterruption",
+      "topLevel": true,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestPreparedAndCompletedCleanupRecovery",
+      "topLevel": true,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestRecoveryRejectsCorruptBackupBeforeMutatingProgramOrDatabase",
+      "topLevel": true,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestJournalRejectsPathAndIdentityTampering",
+      "topLevel": true,
+      "elapsedSeconds": 0.01
+    },
+    {
+      "name": "TestBootstrapMustRemainIdenticalAcrossOnlineUpdates",
+      "topLevel": true,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestUnsafeBundlePathsAndLimits",
+      "topLevel": true,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestUnsafeBundlePathsAndLimits/extra",
+      "topLevel": false,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestUnsafeBundlePathsAndLimits/case-duplicate",
+      "topLevel": false,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestUnsafeBundlePathsAndLimits/symlink",
+      "topLevel": false,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestUnsafeBundlePathsAndLimits/directory",
+      "topLevel": false,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestUnsafeBundlePathsAndLimits/traversal",
+      "topLevel": false,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestDigestVersionManifestAndCancellation",
+      "topLevel": true,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestSuccessfulTransactionPreservesUnmanagedFiles",
+      "topLevel": true,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestFailedStartupRestoresProgramsAndDatabaseWAL",
+      "topLevel": true,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestMidReplacementFailureRestoresEveryOldEntry",
+      "topLevel": true,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestFailedCandidateStopRetainsBackupAndBlocksOrdinaryStartup",
+      "topLevel": true,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestAbortAndConflictingPreparations",
+      "topLevel": true,
+      "elapsedSeconds": 0.0
+    },
+    {
+      "name": "TestLinuxLockedSecretService",
+      "topLevel": true,
+      "elapsedSeconds": 0.07
+    }
+  ],
+  "failures": [],
+  "logSha256": "5f23289f803ab6d9fcfc361ecfe1ef5c1baa6e65ec24f14b4da2ecd2f1bc0002"
+}

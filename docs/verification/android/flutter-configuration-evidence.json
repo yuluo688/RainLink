@@ -1,0 +1,15 @@
+{
+  "scope": "actual Android gateway, Keystore, memory SQLite and libbox; localhost HTTP CONNECT fixtures; no remote subscription",
+  "visualEditorSavedWithoutConnecting": true,
+  "overviewConnectedSavedChain": true,
+  "actualForwardAndReverseOrderVerified": true,
+  "editingAndSelectionKeptActivePath": true,
+  "liveAdvancedRejectPreventedActualRequest": true,
+  "liveApplyKeptOriginalTargetModeAndHops": true,
+  "advancedAndPreviousPersistedAtomically": true,
+  "failedRestartRestoredActualTransfer": true,
+  "ruleChainAndAllThreeModesVerified": true,
+  "successfulResponses": 9,
+  "originRequests": 9,
+  "at": "2026-10-17T04:47:55.203468"
+}

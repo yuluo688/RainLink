@@ -1,0 +1,33 @@
+{
+  "at": "2026-10-16T13:36:32.185852+00:00",
+  "scenario": "existing encrypted provider nodes through isolated real core",
+  "databaseReadOnly": true,
+  "exactSystemProxyPreserved": true,
+  "results": [
+    {
+      "alias": "node-1",
+      "protocol": "vless",
+      "passed": false,
+      "latencyMs": null,
+      "resultRevisionMatched": true,
+      "cleanedUp": true
+    },
+    {
+      "alias": "node-2",
+      "protocol": "vless",
+      "passed": false,
+      "latencyMs": null,
+      "resultRevisionMatched": true,
+      "cleanedUp": true
+    },
+    {
+      "alias": "node-3",
+      "protocol": "vless",
+      "passed": false,
+      "latencyMs": null,
+      "resultRevisionMatched": true,
+      "cleanedUp": true
+    }
+  ],
+  "passed": false
+}

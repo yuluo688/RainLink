@@ -1,0 +1,64 @@
+=== RUN   TestIsolatedRootExecutableRejectsWritableLinkedAndForeignFiles
+    authorization_linux_test.go:31: requires disposable root namespace
+--- SKIP: TestIsolatedRootExecutableRejectsWritableLinkedAndForeignFiles (0.00s)
+=== RUN   TestIsolatedRootAuthorizationUsesFixedArgumentsAndRechecksUID
+    authorization_linux_test.go:93: requires disposable root namespace
+--- SKIP: TestIsolatedRootAuthorizationUsesFixedArgumentsAndRechecksUID (0.00s)
+=== RUN   TestPermissionCommandHasFixedMethodsAndExactEnvelope
+--- PASS: TestPermissionCommandHasFixedMethodsAndExactEnvelope (0.00s)
+=== RUN   TestJSONBoundaryRejectsAmbiguityWithoutEchoingSecrets
+=== RUN   TestJSONBoundaryRejectsAmbiguityWithoutEchoingSecrets/broken
+=== RUN   TestJSONBoundaryRejectsAmbiguityWithoutEchoingSecrets/utf8
+=== RUN   TestJSONBoundaryRejectsAmbiguityWithoutEchoingSecrets/depth
+=== RUN   TestJSONBoundaryRejectsAmbiguityWithoutEchoingSecrets/empty
+=== RUN   TestJSONBoundaryRejectsAmbiguityWithoutEchoingSecrets/trailing-junk
+=== RUN   TestJSONBoundaryRejectsAmbiguityWithoutEchoingSecrets/size
+=== RUN   TestJSONBoundaryRejectsAmbiguityWithoutEchoingSecrets/duplicate
+=== RUN   TestJSONBoundaryRejectsAmbiguityWithoutEchoingSecrets/escaped-duplicate
+=== RUN   TestJSONBoundaryRejectsAmbiguityWithoutEchoingSecrets/nested-duplicate
+=== RUN   TestJSONBoundaryRejectsAmbiguityWithoutEchoingSecrets/trailing
+--- PASS: TestJSONBoundaryRejectsAmbiguityWithoutEchoingSecrets (0.00s)
+    --- PASS: TestJSONBoundaryRejectsAmbiguityWithoutEchoingSecrets/broken (0.00s)
+    --- PASS: TestJSONBoundaryRejectsAmbiguityWithoutEchoingSecrets/utf8 (0.00s)
+    --- PASS: TestJSONBoundaryRejectsAmbiguityWithoutEchoingSecrets/depth (0.00s)
+    --- PASS: TestJSONBoundaryRejectsAmbiguityWithoutEchoingSecrets/empty (0.00s)
+    --- PASS: TestJSONBoundaryRejectsAmbiguityWithoutEchoingSecrets/trailing-junk (0.00s)
+    --- PASS: TestJSONBoundaryRejectsAmbiguityWithoutEchoingSecrets/size (0.00s)
+    --- PASS: TestJSONBoundaryRejectsAmbiguityWithoutEchoingSecrets/duplicate (0.00s)
+    --- PASS: TestJSONBoundaryRejectsAmbiguityWithoutEchoingSecrets/escaped-duplicate (0.00s)
+    --- PASS: TestJSONBoundaryRejectsAmbiguityWithoutEchoingSecrets/nested-duplicate (0.00s)
+    --- PASS: TestJSONBoundaryRejectsAmbiguityWithoutEchoingSecrets/trailing (0.00s)
+=== RUN   TestCodecConcurrentFramesRemainWhole
+--- PASS: TestCodecConcurrentFramesRemainWhole (0.00s)
+=== RUN   TestCodecIdleCancellationDoesNotPoisonNextRead
+--- PASS: TestCodecIdleCancellationDoesNotPoisonNextRead (0.00s)
+=== RUN   TestCodecQueuedOperationsCancelAndPartialFramesAreBounded
+=== RUN   TestCodecQueuedOperationsCancelAndPartialFramesAreBounded/read
+=== RUN   TestCodecQueuedOperationsCancelAndPartialFramesAreBounded/write
+=== RUN   TestCodecQueuedOperationsCancelAndPartialFramesAreBounded/body
+=== RUN   TestCodecQueuedOperationsCancelAndPartialFramesAreBounded/bad-json
+=== RUN   TestCodecQueuedOperationsCancelAndPartialFramesAreBounded/zero
+=== RUN   TestCodecQueuedOperationsCancelAndPartialFramesAreBounded/too-large
+=== RUN   TestCodecQueuedOperationsCancelAndPartialFramesAreBounded/header
+--- PASS: TestCodecQueuedOperationsCancelAndPartialFramesAreBounded (0.06s)
+    --- PASS: TestCodecQueuedOperationsCancelAndPartialFramesAreBounded/read (0.01s)
+    --- PASS: TestCodecQueuedOperationsCancelAndPartialFramesAreBounded/write (0.01s)
+    --- PASS: TestCodecQueuedOperationsCancelAndPartialFramesAreBounded/body (0.00s)
+    --- PASS: TestCodecQueuedOperationsCancelAndPartialFramesAreBounded/bad-json (0.00s)
+    --- PASS: TestCodecQueuedOperationsCancelAndPartialFramesAreBounded/zero (0.00s)
+    --- PASS: TestCodecQueuedOperationsCancelAndPartialFramesAreBounded/too-large (0.00s)
+    --- PASS: TestCodecQueuedOperationsCancelAndPartialFramesAreBounded/header (0.00s)
+=== RUN   TestCodecIdleHasNoPeriodicDeadlineAndFrameHasOneSharedLimit
+--- PASS: TestCodecIdleHasNoPeriodicDeadlineAndFrameHasOneSharedLimit (0.00s)
+=== RUN   TestCodecRejectsOversizeOutputAndReadsSplitWireFrame
+--- PASS: TestCodecRejectsOversizeOutputAndReadsSplitWireFrame (0.00s)
+=== RUN   TestIPCPeerChild
+--- PASS: TestIPCPeerChild (0.00s)
+=== RUN   TestPeerUsesKernelIdentityAndRevokesExitedCreator
+--- PASS: TestPeerUsesKernelIdentityAndRevokesExitedCreator (0.10s)
+=== RUN   TestPeerRejectsMissingDatagramAndUninspectedEndpoints
+--- PASS: TestPeerRejectsMissingDatagramAndUninspectedEndpoints (0.00s)
+=== RUN   TestIsolatedRootPeerCredentialsDropAndServiceAuthentication
+    peer_linux_test.go:244: requires disposable root namespace
+--- SKIP: TestIsolatedRootPeerCredentialsDropAndServiceAuthentication (0.00s)
+PASS

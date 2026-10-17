@@ -1,0 +1,20 @@
+[
+  {
+    "icon": "check",
+    "designSha256": "32d9d80aecafbc209e5b093d033c5fe71af6ee178d606c09992745de2adf4c8e",
+    "assetSha256": "32d9d80aecafbc209e5b093d033c5fe71af6ee178d606c09992745de2adf4c8e",
+    "matches": true
+  },
+  {
+    "icon": "more",
+    "designSha256": "160d54c8f3ed85cfda67663275daf9a1408291f9e80f61eda65120c221c9a105",
+    "assetSha256": "160d54c8f3ed85cfda67663275daf9a1408291f9e80f61eda65120c221c9a105",
+    "matches": true
+  },
+  {
+    "icon": "back",
+    "designSha256": "69f8fa58a68cc78b66a84921843784dbc920d197fea623203d7e5f0a4400fffa",
+    "assetSha256": "69f8fa58a68cc78b66a84921843784dbc920d197fea623203d7e5f0a4400fffa",
+    "matches": true
+  }
+]

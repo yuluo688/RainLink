@@ -1,0 +1,33 @@
+{
+  "at": "2026-10-17T05:02:10.958409+08:00",
+  "version": "0.1.0+2",
+  "databaseSchema": 6,
+  "counts": {
+    "nodes": 68,
+    "node_groups": 1,
+    "node_overrides": 0,
+    "preferences": 4
+  },
+  "allUserTablesUnchanged": true,
+  "startupRegistryUnchanged": true,
+  "systemProxyUnchanged": true,
+  "nativeVerificationUserStateUnchanged": true,
+  "productionReleaseCheck": {
+    "requestedInActualReleaseWindow": true,
+    "observedResult": "empty",
+    "observedLocalTime": "2026-10-17 05:01:32",
+    "downloadOrInstallPerformed": false
+  },
+  "autoConnectEnabled": false,
+  "startupUpdateCheckEnabled": false,
+  "expiryNotificationsEnabled": false,
+  "subscriptionRequestsPerformed": false,
+  "normalExitObserved": true,
+  "rainlinkProcessesRemaining": 0,
+  "wideSidebarVersionObserved": "0.1.0+2",
+  "preexistingFlClashHelperServicePreserved": 6156,
+  "snapshots": [
+    "build/updates-release-before.json",
+    "build/updates-release-after.json"
+  ]
+}

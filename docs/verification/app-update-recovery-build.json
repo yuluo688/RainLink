@@ -1,0 +1,31 @@
+{
+  "version": "0.1.0+3",
+  "archive": "build/RainLink-windows-x64-recovery-preview.zip",
+  "entries": 78,
+  "bytes": 46810871,
+  "sha256": "c96ce55968ad57441359484e461d1ece98c2f563cbe2135c8ad89d0f9564fff9",
+  "zipCrcVerified": true,
+  "perFileDigestVerified": true,
+  "userDatabaseIncluded": false,
+  "coreSha256": "cf6863552456c535fd79a0724f2d01352e77c97f4958466b75d9f07d8f0edef7",
+  "engineSha256": "55089c0bb72c53220aeecd31c859946b4a7e990fd6ea29975f448e22b2586677",
+  "hostSha256": "fd15ceb86467197abf11ecd12bd89d697e96835c33aa819c38c2899e08318718",
+  "updaterSha256": "6f4949ef5779a557570a63294e01094bf3a57b7e2c1c2e5912278cdf28723426",
+  "launcherSha256": "d1243b2e6b5e5472f797c6ac8a9ccfcf6d31ee62954112cb5f6e6f952cd582b1",
+  "releaseEngineVerified": true,
+  "coreVersion": "1.12.25-rainlink.1",
+  "applicationSha256": "e7ce3e25df2d53b0aa21e1607d36c1ecdf1d1276edb1239ec217e36937b3fe30",
+  "aotSha256": "405a80bade8039a8c29118d192bc611a4841c0776a9e09d8d95a84b2d232d6df",
+  "at": "2026-10-17T05:38:55.376967+08:00",
+  "bundleSchema": 2,
+  "bootstrapVersion": "1.0.0.0",
+  "runtimeLicensesIncluded": true,
+  "coreSourceIncluded": true,
+  "databaseSchema": 6,
+  "verification": "docs/verification/app-update-recovery.md",
+  "releaseAsset": {
+    "path": "build/RainLink-0.1.0+3-windows-x64.zip",
+    "sha256": "c96ce55968ad57441359484e461d1ece98c2f563cbe2135c8ad89d0f9564fff9",
+    "published": false
+  }
+}

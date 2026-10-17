@@ -1,0 +1,4 @@
+{
+  "skipped": true,
+  "reason": "Previously authorized HTTP node pair is not stored in the local database; no public chain probe was run."
+}

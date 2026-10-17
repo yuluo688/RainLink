@@ -1,0 +1,82 @@
+=== RUN   TestControllerRequiresPermissionHelper
+--- PASS: TestControllerRequiresPermissionHelper (0.00s)
+=== RUN   TestServiceExitSkipsOtherLiveSessionWithoutClaimingIdle
+--- PASS: TestServiceExitSkipsOtherLiveSessionWithoutClaimingIdle (0.75s)
+=== RUN   TestIdleConfirmationNeverRecoversOrDiscardsPendingJournal
+--- PASS: TestIdleConfirmationNeverRecoversOrDiscardsPendingJournal (0.25s)
+=== RUN   TestLeaseJournalWriteFailureAndCancelledBind
+--- PASS: TestLeaseJournalWriteFailureAndCancelledBind (0.00s)
+=== RUN   TestLeasePreparedIntentCancellationAndExclusiveLock
+--- PASS: TestLeasePreparedIntentCancellationAndExclusiveLock (0.50s)
+=== RUN   TestLeaseStopsLiveCoreAndRetriesIncompleteRecovery
+--- PASS: TestLeaseStopsLiveCoreAndRetriesIncompleteRecovery (0.00s)
+=== RUN   TestLeasePendingCloseAndChangedOwnership
+--- PASS: TestLeasePendingCloseAndChangedOwnership (0.00s)
+=== RUN   TestRecoveryChecksOwnerBootAndNamespaceBeforeNetwork
+=== RUN   TestRecoveryChecksOwnerBootAndNamespaceBeforeNetwork/live-owner
+=== RUN   TestRecoveryChecksOwnerBootAndNamespaceBeforeNetwork/dead-prepared
+=== RUN   TestRecoveryChecksOwnerBootAndNamespaceBeforeNetwork/reboot
+=== RUN   TestRecoveryChecksOwnerBootAndNamespaceBeforeNetwork/namespace
+=== RUN   TestRecoveryChecksOwnerBootAndNamespaceBeforeNetwork/live-core
+=== RUN   TestRecoveryChecksOwnerBootAndNamespaceBeforeNetwork/dead-core
+--- PASS: TestRecoveryChecksOwnerBootAndNamespaceBeforeNetwork (0.00s)
+    --- PASS: TestRecoveryChecksOwnerBootAndNamespaceBeforeNetwork/live-owner (0.00s)
+    --- PASS: TestRecoveryChecksOwnerBootAndNamespaceBeforeNetwork/dead-prepared (0.00s)
+    --- PASS: TestRecoveryChecksOwnerBootAndNamespaceBeforeNetwork/reboot (0.00s)
+    --- PASS: TestRecoveryChecksOwnerBootAndNamespaceBeforeNetwork/namespace (0.00s)
+    --- PASS: TestRecoveryChecksOwnerBootAndNamespaceBeforeNetwork/live-core (0.00s)
+    --- PASS: TestRecoveryChecksOwnerBootAndNamespaceBeforeNetwork/dead-core (0.00s)
+=== RUN   TestRecoveryPreservesLegacyUntaggedRuleIdentity
+--- PASS: TestRecoveryPreservesLegacyUntaggedRuleIdentity (0.00s)
+=== RUN   TestJournalRejectsCorruptionAmbiguityOversizeAndLinks
+=== RUN   TestJournalRejectsCorruptionAmbiguityOversizeAndLinks/checksum
+=== RUN   TestJournalRejectsCorruptionAmbiguityOversizeAndLinks/duplicate
+=== RUN   TestJournalRejectsCorruptionAmbiguityOversizeAndLinks/unknown-field
+=== RUN   TestJournalRejectsCorruptionAmbiguityOversizeAndLinks/oversize
+=== RUN   TestJournalRejectsCorruptionAmbiguityOversizeAndLinks/symlink
+=== RUN   TestJournalRejectsCorruptionAmbiguityOversizeAndLinks/mode
+=== RUN   TestJournalRejectsCorruptionAmbiguityOversizeAndLinks/invalid-identity
+=== RUN   TestJournalRejectsCorruptionAmbiguityOversizeAndLinks/invalid-spec
+=== RUN   TestJournalRejectsCorruptionAmbiguityOversizeAndLinks/bound-guardian
+=== RUN   TestJournalRejectsCorruptionAmbiguityOversizeAndLinks/noncanonical
+--- PASS: TestJournalRejectsCorruptionAmbiguityOversizeAndLinks (0.00s)
+    --- PASS: TestJournalRejectsCorruptionAmbiguityOversizeAndLinks/checksum (0.00s)
+    --- PASS: TestJournalRejectsCorruptionAmbiguityOversizeAndLinks/duplicate (0.00s)
+    --- PASS: TestJournalRejectsCorruptionAmbiguityOversizeAndLinks/unknown-field (0.00s)
+    --- PASS: TestJournalRejectsCorruptionAmbiguityOversizeAndLinks/oversize (0.00s)
+    --- PASS: TestJournalRejectsCorruptionAmbiguityOversizeAndLinks/symlink (0.00s)
+    --- PASS: TestJournalRejectsCorruptionAmbiguityOversizeAndLinks/mode (0.00s)
+    --- PASS: TestJournalRejectsCorruptionAmbiguityOversizeAndLinks/invalid-identity (0.00s)
+    --- PASS: TestJournalRejectsCorruptionAmbiguityOversizeAndLinks/invalid-spec (0.00s)
+    --- PASS: TestJournalRejectsCorruptionAmbiguityOversizeAndLinks/bound-guardian (0.00s)
+    --- PASS: TestJournalRejectsCorruptionAmbiguityOversizeAndLinks/noncanonical (0.00s)
+=== RUN   TestAllocatorReservesCompleteBlocksAndEveryTableReference
+--- PASS: TestAllocatorReservesCompleteBlocksAndEveryTableReference (0.06s)
+=== RUN   TestLinuxTUNGuardianFixture
+    kernel_linux_test.go:42: fixture child only
+--- SKIP: TestLinuxTUNGuardianFixture (0.00s)
+=== RUN   TestIsolatedTUNLeaseAndDeadGuardianRecovery
+    kernel_linux_test.go:75: requires root inside disposable namespaces with private /run
+--- SKIP: TestIsolatedTUNLeaseAndDeadGuardianRecovery (0.00s)
+=== RUN   TestIsolatedManagedCoreCollisionAndForeignOwner
+    managed_core_linux_test.go:36: requires root inside disposable namespaces with private /run
+--- SKIP: TestIsolatedManagedCoreCollisionAndForeignOwner (0.00s)
+=== RUN   TestLinuxTUNWatchdogOwnerFixture
+    watcher_linux_test.go:80: fixture child only
+--- SKIP: TestLinuxTUNWatchdogOwnerFixture (0.00s)
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit
+    watcher_linux_test.go:208: requires root inside disposable namespaces with private /run
+--- SKIP: TestIsolatedTUNWatchdogRecoversGuardianExit (0.00s)
+=== RUN   TestWatchdogRecoveryOwnershipCancellationAndStaleCore
+=== RUN   TestWatchdogRecoveryOwnershipCancellationAndStaleCore/live-owner
+=== RUN   TestWatchdogRecoveryOwnershipCancellationAndStaleCore/later-owner
+=== RUN   TestWatchdogRecoveryOwnershipCancellationAndStaleCore/different-namespace
+=== RUN   TestWatchdogRecoveryOwnershipCancellationAndStaleCore/cancelled
+=== RUN   TestWatchdogRecoveryOwnershipCancellationAndStaleCore/reused-core-pid
+--- PASS: TestWatchdogRecoveryOwnershipCancellationAndStaleCore (0.01s)
+    --- PASS: TestWatchdogRecoveryOwnershipCancellationAndStaleCore/live-owner (0.00s)
+    --- PASS: TestWatchdogRecoveryOwnershipCancellationAndStaleCore/later-owner (0.00s)
+    --- PASS: TestWatchdogRecoveryOwnershipCancellationAndStaleCore/different-namespace (0.00s)
+    --- PASS: TestWatchdogRecoveryOwnershipCancellationAndStaleCore/cancelled (0.00s)
+    --- PASS: TestWatchdogRecoveryOwnershipCancellationAndStaleCore/reused-core-pid (0.00s)
+PASS

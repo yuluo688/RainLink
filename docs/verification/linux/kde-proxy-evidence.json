@@ -1,0 +1,322 @@
+{
+  "capturedAt": "2026-10-17T07:50:01.531614+00:00",
+  "passed": true,
+  "scope": "Linux amd64 KDE6 and GNOME backends plus real host/core, isolated from the Windows desktop",
+  "environment": {
+    "kernel": "Linux 6.6.87.2-microsoft-standard-WSL2",
+    "baseImage": "Alpine minirootfs 3.22.2 x86_64",
+    "baseImageSha256": "412454ed98025ad9cd910d13f3d448b184e81502baa83180e89f98d0f13674be",
+    "userUID": 1000,
+    "privateMountNamespace": true,
+    "rootfsStorage": "1200 MiB maximum tmpfs; 363 MiB installed runtime/compiler packages plus extracted matching headers",
+    "privateSessionBus": true,
+    "isolatedHomeAndXDG": true,
+    "qt": "6.8.3-r0",
+    "kconfig": "6.13.0-r0",
+    "libproxy": "0.5.10-r0",
+    "packagesVerifiedByAPK": true,
+    "apkVerifiedCount": 122,
+    "packageManifestSha256": "9f20a1b67f6a00b3feadcb89bdbc024732bbf5b838fe34906cedaa898bbbc0c1",
+    "go": "go1.25.5 windows/amd64 cross build CGO_ENABLED=0",
+    "cmake": "3.31.7",
+    "cxx": "GCC 14.2.0; C++17; -Wall -Wextra -Werror"
+  },
+  "artifacts": {
+    "host": {
+      "path": "build/qa/kde/rainlink-host",
+      "bytes": 9800256,
+      "sha256": "e8dce9939c6e5d7e167103ea4e8aae6db435d575310148a0f8473f04dc7cb115"
+    },
+    "core": {
+      "path": "build/host/linux-amd64/sing-box",
+      "sha256": "ce9bb3e44c9b7e7869bd47f8523a22a148e2ff013ae96787558a3fbdd0661d82"
+    },
+    "kdeHelper": {
+      "path": "build/qa/kde/results/rainlink-kde-proxy",
+      "bytes": 51584,
+      "sha256": "d7a45baf9f377250a33501c354d19d24eb3b39ab0949abfce23622bc917127c4"
+    },
+    "resolver": {
+      "path": "build/qa/kde/results/rainlink-proxy-resolver",
+      "sha256": "37b1d03016e4bc5b6b8bf605e8ea87e88022ebb010a4ae2a20c917eddf110ed5"
+    },
+    "testBinaries": {
+      "cli.test": "0d5702a9820aa4b2188fb29c871b79ca8775eb74a3cc2eb6399b67982d906afe",
+      "coreprocess.test": "2e8080e3bacf33788e2a4a109cac911266e9c83a49fed7558ca3f1e74a758f07",
+      "linuxproxy.test": "157296a1015570ecd61f5b2bd22941530973d08634666154584cc6ce7c027720",
+      "privatefs.test": "b7cc480bc1b8610746eb5e46f1d67188e0246917d95bd677f3a32805f9352ef6",
+      "securestore.test": "a5eb26b78b2be6d2f4fc42730ec34c720cc2b605e6c46371f53525ecf10e1582",
+      "session.test": "e25187f4c90d0156aceea5faf168686e731c4e3ab6985724dfd4b4c208af3458",
+      "update.test": "b0146b550ac54f7ac61e682861c4cdf49c5ae995d4027163f932d2ba2a49f6be"
+    }
+  },
+  "observedHostStatus": {
+    "unsupported": {
+      "protocolVersion": 1,
+      "host": {
+        "version": "0.1.0",
+        "platform": "linux",
+        "arch": "amd64"
+      },
+      "core": {
+        "state": "ready",
+        "version": "1.12.25-rainlink.1"
+      },
+      "capabilities": {
+        "connect": true,
+        "systemProxy": false,
+        "tun": false
+      }
+    },
+    "gnome": {
+      "protocolVersion": 1,
+      "host": {
+        "version": "0.1.0",
+        "platform": "linux",
+        "arch": "amd64"
+      },
+      "core": {
+        "state": "ready",
+        "version": "1.12.25-rainlink.1"
+      },
+      "capabilities": {
+        "connect": true,
+        "systemProxy": true,
+        "tun": false
+      }
+    },
+    "kde": {
+      "protocolVersion": 1,
+      "host": {
+        "version": "0.1.0",
+        "platform": "linux",
+        "arch": "amd64"
+      },
+      "core": {
+        "state": "ready",
+        "version": "1.12.25-rainlink.1"
+      },
+      "capabilities": {
+        "connect": true,
+        "systemProxy": true,
+        "tun": false
+      }
+    }
+  },
+  "linux": {
+    "passEvents": 242,
+    "topLevelPassEvents": 106,
+    "skips": [
+      {
+        "name": "TestLinuxLockedSecretService",
+        "topLevel": true,
+        "elapsedSeconds": 0.0
+      },
+      {
+        "name": "TestPrepareUpstreamPreservesLocalRoutesAndRejectsFakeLiteral",
+        "topLevel": true,
+        "elapsedSeconds": 0.0
+      }
+    ],
+    "lockedSecretServiceExecutedSeparately": true,
+    "testsSha256": "cea615c82a4dde04414ef2d5170b28462a8093443994f8d00b0864f7b8bcca05"
+  },
+  "windows": {
+    "passEvents": 162,
+    "skips": [
+      "TestSystemProxyRestoresExactOriginalValues",
+      "TestBypassEditDoesNotLeaveDeadProxyConfigured",
+      "TestRecoveryPreservesAnotherClientsLaterProxy"
+    ],
+    "systemProxyOptIn": false,
+    "flClashKeptClosed": true,
+    "flClashServiceOperated": false
+  },
+  "shared": {
+    "flutterProtocolPassCount": 8,
+    "flutterProtocolTests": [
+      "Linux local core keeps unavailable capture capabilities disabled",
+      "Linux desktop capability enables only the observed system proxy",
+      "ready Windows host reports its observed TUN capability",
+      "host availability does not imply core capabilities",
+      "malformed or incompatible status fails closed",
+      "invalid top-level JSON values fail with a domain exception",
+      "unavailable adapters cannot report successful connection commands",
+      "selection preserves active snapshot and signals pending changes"
+    ],
+    "flutterAnalyzePassed": true,
+    "lastFullFlutterCount": 440,
+    "fullFlutterRepeatedThisStage": false
+  },
+  "checks": {
+    "gofmtPassed": true,
+    "goVet": [
+      "windows-amd64",
+      "linux-amd64",
+      "linux-arm64"
+    ],
+    "bashSyntax": [
+      "tools/build_kde_proxy.sh",
+      "tools/dev.sh",
+      "tools/verify_linux_session.sh"
+    ],
+    "cmakeCompiled": true,
+    "realDBusChangeNotification": true,
+    "independentLibproxyResolution": true,
+    "exactNativeShellEntrypointExecuted": false,
+    "raceDetector": false
+  },
+  "sourceResearch": [
+    {
+      "name": "kio-6.13.0.tar.gz",
+      "url": "https://codeload.github.com/KDE/kio/tar.gz/refs/tags/v6.13.0",
+      "status": 200,
+      "bytes": 7701947,
+      "sha256": "7d3cf944448f61d060711a0451c995f82d3976170e20eea53290a170bf2f7eda"
+    },
+    {
+      "name": "libproxy-0.5.10.tar.gz",
+      "url": "https://codeload.github.com/libproxy/libproxy/tar.gz/refs/tags/0.5.10",
+      "status": 200,
+      "bytes": 60453,
+      "sha256": "84734a0b89c95f4834fd55c26b362be2fb846445383e37f5209691694ad2b5de"
+    },
+    {
+      "name": "kconfig-6.13.0.tar.gz",
+      "url": "https://codeload.github.com/KDE/kconfig/tar.gz/refs/tags/v6.13.0",
+      "status": 200,
+      "bytes": 507732,
+      "sha256": "68b072a361a7201a8df3db1c4276dd322f6223c66967ff3083fd2e183ac5b0ff"
+    }
+  ],
+  "cleanup": {
+    "passed": true,
+    "privateMountReleased": true,
+    "testCoresWatchersBusesKeyringsStopped": true,
+    "emptyOrchestrationDirectoryRetained": true,
+    "logSha256": "e1c3968b6b8e46b100268b14e6f49e28df3122fc5d7c1c5800ed424fc496ce15"
+  },
+  "notVerified": [
+    "Actual Plasma or GNOME desktop session or browser UI",
+    "KDE 5",
+    "All Ubuntu versions",
+    "Linux TUN and Flutter GUI",
+    "ARM64 execution",
+    "Suspend, logout, reboot, network switches or long-duration recovery",
+    "Linux distribution package",
+    "Fresh full Flutter/visual or external-airport network validation"
+  ],
+  "logsSha256": {
+    "linux-final-tests.log": "5f23289f803ab6d9fcfc361ecfe1ef5c1baa6e65ec24f14b4da2ecd2f1bc0002",
+    "windows-tests.jsonl": "47d22bd01c6bb05b908bd8479f309beb0d7ed7cffe54803eed3747509074f22f",
+    "flutter-protocol-tests.jsonl": "a1aa35cab51a29e7eda6ac3b188c642b73384f0ae73f56d88f69bd24cb2eca3a",
+    "flutter-analyze.log": "092b006baad371a603efbcc3f96aaedd69c52714d7a7c40861f149057814694b",
+    "dart-format.log": "d4f2df599e3e290becf7ada789c21dd119f341ff577dc819715a36948538f3f3",
+    "go-format.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "windows-vet.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "linux-amd64-vet.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "linux-arm64-vet.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cmake-build.log": "6c94d2197f24e0aa36f1f3155c891fbb08d647b03f71de938c4d578edc00d9d4",
+    "bootstrap.log": "652a51dc7c15208364291d51d86e1360cfcd42c74d1464000e87e7df7b2a1f46",
+    "cleanup.log": "e1c3968b6b8e46b100268b14e6f49e28df3122fc5d7c1c5800ed424fc496ce15"
+  },
+  "sourceSha256": {
+    "app/lib/platform/core/host_status_protocol.dart": "515a138ac2954f821ae2dc7da5f5abed2e29a9990775143c3ad9a61f0e637dbc",
+    "app/test/core_gateway_test.dart": "faf86c975574a0db7188b296ea8888df7f3e284e2c9b5d48f3c03dc0a95f5355",
+    "native/host/cmd/rainlink-host/main.go": "36f7e946d55187513162b2acb19d8817d7ba68390cd1d0f94c7d208df1374a0d",
+    "native/host/cmd/rainlink-launcher/main_windows.go": "91e75f1428d9ebf91be0f378f45b53a2662e19eaa42e527047bb3ef7ad3cc36d",
+    "native/host/cmd/rainlink-updater/main_windows.go": "9298e2efa6763b9f7deafb1e0748c5a86eb759e8b7d9326ac2a3a833a77bb3c8",
+    "native/host/go.mod": "6cbd3d4bc03cd42d48ed429f097f0bae25b0c56b666def197f4ef419069d9275",
+    "native/host/go.sum": "680565d6c0cb938b328e363959a68f8671f6222b5c717adfff72a3621dcaa632",
+    "native/host/internal/cli/run.go": "568274ea1531a6666e84e02aaa74cdb21df429352911b4101203aa8344e3959e",
+    "native/host/internal/cli/run_test.go": "4907a520e3e3fe1b3a0f90041f2ca2752543d13e4da8b34c7796bb888c1c0493",
+    "native/host/internal/coreprocess/core_hash_generated.go": "d0b1c37ae5d8b113d379b397e0270d6d49a5d257d187083f3f5eae66574fe9ed",
+    "native/host/internal/coreprocess/elevation_windows.go": "42509e6ea72758fa4fadb77f6483d21a17d7ee33eed6a51d7bf5158fb22a0e73",
+    "native/host/internal/coreprocess/platform_other.go": "d2c8c409ed178e393f374e4dc325db436b53d357d927c80f2073e81f2a8f73ed",
+    "native/host/internal/coreprocess/platform_windows.go": "eca74dac264c6a862aa326106ed48db53345efe92720b76470686ab4b37adc7a",
+    "native/host/internal/coreprocess/process.go": "c82cba21e18ae92e66a732df40e5957a7f26c2e7f0d777f489a1e94b369bf945",
+    "native/host/internal/coreprocess/process_test.go": "312571c4d842bfd4854a1ec9966c3f7cf22d4f65cb93fed39a012097332221f5",
+    "native/host/internal/coreprocess/start_linux.go": "405f471dcc9de0a467b77cbf1faac051ef780f4950b1c8cc21e22c8d55708a53",
+    "native/host/internal/coreprocess/start_linux_test.go": "ac1b2291826184ade7f37755c2ef073300aada27cef14da3cd34743134a9846a",
+    "native/host/internal/coreprocess/start_other.go": "bc54add526848fe4a7e2e76c55f2b67d7a979fe0511a14ca2b0fb9e4d2929c23",
+    "native/host/internal/host/status.go": "786f14215eaa6152cad3d773f9eb7145a9e68924cc8c7765ea467a533bd7090a",
+    "native/host/internal/linuxproxy/configuration_linux.go": "49dcc8789e1f923cb7de5fc2feb07cfee2ef9846a4ed780c080d16ba5795e39f",
+    "native/host/internal/linuxproxy/controller_linux.go": "1571218351b6344fe56e2c814d1c0f8efaa65769957e21fd86ec8c30f49f9935",
+    "native/host/internal/linuxproxy/controller_linux_test.go": "078916b952c508f6ed01df70b6a3057ec7ec6e735f1a821486986e15624e0885",
+    "native/host/internal/linuxproxy/gnome_environment_linux.go": "fc957e4a5dc6c2e3f109598a32acf537be75cbd5ba5f02c804218d19d51d47fb",
+    "native/host/internal/linuxproxy/gnome_linux.go": "22fc1b322dab7249f3e4816d84b028f3a424e59ad0b610af6deb9a768ef90ac6",
+    "native/host/internal/linuxproxy/kde_linux.go": "31be49c7b7e173bfe9e151672f22ee87e65c8cd54d2f526122071763d51a7b14",
+    "native/host/internal/linuxproxy/kde_linux_test.go": "b38ff4b1ab9c1cf15942d5a8678a8779fe3e13ccfb8a0699aaf832366614996a",
+    "native/host/internal/privatefs/directory_linux.go": "dc49eeb4bd2e8c562b1c06dc2fcbdfff5b1be6023aab5420560b52eeca778319",
+    "native/host/internal/privatefs/directory_linux_test.go": "4d8601fff28d1214f40c37d071101f2f98ff8d4c03973f0ba5a8ce8c4179bd56",
+    "native/host/internal/securestore/envelope.go": "f9a8349f5c422e1ee7c39e47a598dc409a420732e7a8aba91d8359f07626a35b",
+    "native/host/internal/securestore/envelope_test.go": "cbc7c279c92844924347c195c00a7f452399a4effdecc5b3fdb2b6cabf0e8e8e",
+    "native/host/internal/securestore/key_service_linux.go": "88f9f0a66531222055ac352754dd3393b022843d3c662e06a71f6c7f9fa6066b",
+    "native/host/internal/securestore/key_service_linux_test.go": "1faaa668058b4785324ceb98dc6c6b0d340167387f3badabd2235597e3e0b338",
+    "native/host/internal/session/advanced.go": "343800fdd9a07a24bb6ad1e40b065a4f104c9cc26ef36dc966fb852fa22ed6c1",
+    "native/host/internal/session/advanced_test.go": "66ee6b2ddd973d002e3a9cb06c94da64b6e45ab85586b72760e5e57b3766c218",
+    "native/host/internal/session/chains.go": "adaff643df19c082ec0b2fba0faa3ed31859a692fad714bc26a1f4c6da94eb97",
+    "native/host/internal/session/chains_test.go": "7f68e8515ba41492e4212d07fa31afcf8b4e389cfb20f927ea22f6ba93a73d69",
+    "native/host/internal/session/config.go": "dba6b485b8eaafa594b1c1c8c4b441738ea88a947b5217df7c672097ccb95843",
+    "native/host/internal/session/connections.go": "2bf4dc0786c6e0cf38c8fb560215b912294d1206401ef4ecdcfa253b96455185",
+    "native/host/internal/session/credentials.go": "af7fcb4e7273c39997b4fae99b87eef4ede9b88e42f33e6831d0926b4c0ecca3",
+    "native/host/internal/session/credentials_linux.go": "0d4da892d58a703466b58e131a13f0c9dfb358e06599a24782aebbe5efe7c962",
+    "native/host/internal/session/credentials_other.go": "eabe29e39b898f582068566d4f9ba184d26e45e0e7f6ba6a7e71e1a206f1d33f",
+    "native/host/internal/session/credentials_test.go": "55c2abe7b751431fa760f7197fde6e4436de1cb95ccc9846ccbfcb2994c51eee",
+    "native/host/internal/session/hysteria2_test.go": "66a88050451dc9b73fa8cd7ccdf4c860323fd194f0690ee21255f97b10394cdb",
+    "native/host/internal/session/logs.go": "0584986ada23cf3a25c0c4b18d980f05d245556393c2bb23608c3b5e4d2ded33",
+    "native/host/internal/session/manager.go": "af063d13a6e9aab78a40b209374ac901f08b41d1c8104659103438e7ea6b0750",
+    "native/host/internal/session/manager_test.go": "046949706f966dc9af9ce7f7687ef321e213cbf4f5b4fc98504599c0f16b0e18",
+    "native/host/internal/session/mobile.go": "0c6a5020ba5896f09f59fe802b8dc23bd04cd8bcfdb2f43d80dc71c99a4a9504",
+    "native/host/internal/session/mobile_connections.go": "a28f5612980547097f6628d47149cc8d626c193715b2034deef68dad5b343a22",
+    "native/host/internal/session/mobile_connections_test.go": "5f0ea9fb6a48b2ef5b961abde59a4ad1c9cc5e3d2ae21521679b60bb77f4fedf",
+    "native/host/internal/session/mobile_test.go": "1b17ed7d39827111895ea239bbf5830da11df5f7bec9de85af272587250a1c21",
+    "native/host/internal/session/node_probe.go": "e64c931e3c9c0defe6c0df9ff8f5abe4c929bb211657d90bbb45d728290920b1",
+    "native/host/internal/session/node_probe_test.go": "6fb3b02e90c197f81f1793805cc216ea20f38faf51d27869b377a266b3a950ba",
+    "native/host/internal/session/platform_other.go": "65b7137c4f028917150c5ba38f606e4deaaedf006bcf85e686e3ce6325dd776c",
+    "native/host/internal/session/platform_windows.go": "b229e32532f0ba6bba8932fd759faa95a87c616759a2c420317a7635a8fed52f",
+    "native/host/internal/session/probe_test.go": "315916723d79fbe48a2bd8feda113a97c53b0826611c9906f5d35bdd50807e47",
+    "native/host/internal/session/protocols_test.go": "522bd2fa39a0bbc30dbde33c1e76e33375c3ce637627112e2a674ccb265e2eec",
+    "native/host/internal/session/proxy_linux.go": "da7fa4d4a97e78acd8ce41035e410e59e6c048292b73b0c2fb60166842feb017",
+    "native/host/internal/session/proxy_linux_test.go": "74c0b6b5908112dbb22eaec16fa39010bcd4bf79a057b182a5317170a4c0f632",
+    "native/host/internal/session/proxy_other.go": "800574a66b575d0334a7432e35dc9b02972babb787fc58e198a035dca0555219",
+    "native/host/internal/session/proxy_windows_test.go": "ebeda076d51f30f706141923698726287f5d30009ea913b7acb5683017198706",
+    "native/host/internal/session/routing.go": "2f6282451c7cb37a9d5c02c13092141a3b5429ff01f3a3e83e9866fd3fccd83b",
+    "native/host/internal/session/routing_test.go": "58cdfd7c0fde3941da552261227cee485d8bcb54bf751502474531753cb72b30",
+    "native/host/internal/session/serve.go": "b3a033f69fa4e86387a7aacd5b8a56138430923de38ca75cfea4f3e337eb3cf8",
+    "native/host/internal/session/serve_linux_test.go": "5341fb935ab5eeadc59770fb9831bea0dd165ca27df5d4177c05248d53c54165",
+    "native/host/internal/session/settings.go": "eeb0bfb65cf783acba54f9acb240ed4776aa4f8b5bc8a358c70370787f475106",
+    "native/host/internal/session/settings_test.go": "4b27eb1280440fd332f8b92350f7d3c4a837e6edf272017317bcf079211cd98b",
+    "native/host/internal/session/telemetry_test.go": "807eefd5ae83668f2e75d27fdfbca8085dd6893430ea6500f4dd9a69b16778e2",
+    "native/host/internal/session/tun.go": "1aad5d1266c39fa1d150ed9b68c41544b1f4091f9fe1fe8206cfcc8be2c43b40",
+    "native/host/internal/session/tun_other.go": "e28e38283215e364a89f3b113809fd8a08c2abaf9d1e8cc4298dbaaa643e534a",
+    "native/host/internal/session/tun_test.go": "eca977dbac16c3be4cd974c552377424c3e773646c312e93ef2984071556e570",
+    "native/host/internal/session/tun_windows.go": "5b22f129e3c7d56b736f926bd1752c08e400490b748c440c039878c2bcd551fb",
+    "native/host/internal/session/upstream.go": "16247808329668749a1af2d7db9a54ae2e59efa66e15240a786666b1d3c2eb43",
+    "native/host/internal/session/upstream_other.go": "c339c492e34b9b070d836827b76cbeb1bcb9dfa2ad0bfe2951244aa65b8baf42",
+    "native/host/internal/session/upstream_test.go": "1112859708ff59888024239a77da660e633d6e1e6ff81725f5fe1e581851ddee",
+    "native/host/internal/session/upstream_windows.go": "5502b99f7b7820dec2f653a90bbbb2ef4db5fabad25a70a9345a136441611375",
+    "native/host/internal/session/upstream_windows_test.go": "59d80ee8061b736d0e754812f1be3f2529d5078108f392d390e7d9642bca97d4",
+    "native/host/internal/session/vmess_tuic_test.go": "bdd699e1a66aa8e64899c0fc3341d7761f105e9fa0c82f31040ffacb639acac2",
+    "native/host/internal/update/archive.go": "8757edf5d7822c63d88762f5103db8e0fdea2e0a137cd08e152bf08e363aaf49",
+    "native/host/internal/update/journal.go": "4111dafd615805457b580c0444dccaa41aeec763f9a99fe5b96571a355324882",
+    "native/host/internal/update/journal_test.go": "d01363f1c17420838c76bc07e958eabc1e9a800624679bb3be548ae062d98e50",
+    "native/host/internal/update/process_windows_test.go": "db4a25c557346c2e8ba9d2736492cc1c1009a3cf6e6d0c0076c78402525d24fb",
+    "native/host/internal/update/recovery_windows.go": "f09ef55ea0b1621b034592e10e19241e120af73095ef6854303548381c4e0f20",
+    "native/host/internal/update/recovery_windows_test.go": "91d24d7d218c6ab7d06718c3ff5d5f997a34ee50189df776177b6f790601b5d3",
+    "native/host/internal/update/runtime_windows.go": "f7fb100e00e52306055196682bf3220065ba5aed2182c79d4fc7956e35ef4391",
+    "native/host/internal/update/safety_other.go": "62a4875f2e97972183b03234751997ec319d6621c9d4e526d59de3a903595383",
+    "native/host/internal/update/testdata/fixture.go": "92d3f8d16b3afc8b010fac09241584ea629993a5f9237b201909ee955a12bcee",
+    "native/host/internal/update/testdata/offline_host.go": "f0abf542793eb7f706fb3562147170181013c2a02932ba57624c253e34141070",
+    "native/host/internal/update/transaction.go": "05491ed19a3bc01172dcd3b307f9012af4465d2d19c2eff72e2ef73aadd35c8b",
+    "native/host/internal/update/transaction_test.go": "7fe13b806ea7cfb028ff72360a876670a0c113c6bafa008069e6201d9933c2cb",
+    "native/host/mobileconfig/config.go": "d934a6dc8ce887bde9fe3166733cc501b3c6be48b63a4fe445eb0164ae25d611",
+    "native/linux/kde_proxy/CMakeLists.txt": "5d9dc38efa960f32a8fdb8cee384e0be8800a64d27d4c1cd283d8bf95f5fa91f",
+    "native/linux/kde_proxy/main.cpp": "53fde8b17e6d4b78d1ec0453c6dbcb2d3a5baedd131361beff7aa0ed932c294d",
+    "native/linux/kde_proxy/README.md": "f4b56d48ddaaa5f38e8346f831d7137bc4358d19d64fb8bb03c8e714a5bd4de8",
+    "tools/build_kde_proxy.sh": "76755f601e170fbfb48082152da99efb1892a7977b2bd913636a629d1515e380",
+    "tools/dev.sh": "b9d0dc709f9e3338b8136269691d622b455c3059dcda7f1964c20aca2c662a48",
+    "tools/fixtures/linux_proxy_resolver.c": "7530528969711f2156807ff3c7a4db5b9df8adff69effcb70a70c68c1a854d16",
+    "tools/verify_linux_session.sh": "ba8d1f42628485a0d34207b911dc32e33f8b4dd5c6f0c58af0854f1ab5cfee52"
+  }
+}

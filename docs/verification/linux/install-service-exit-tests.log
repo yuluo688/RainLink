@@ -1,0 +1,5 @@
+=== RUN   TestServiceExitSkipsOtherLiveSessionWithoutClaimingIdle
+--- PASS: TestServiceExitSkipsOtherLiveSessionWithoutClaimingIdle (0.77s)
+=== RUN   TestIdleConfirmationNeverRecoversOrDiscardsPendingJournal
+--- PASS: TestIdleConfirmationNeverRecoversOrDiscardsPendingJournal (0.26s)
+PASS

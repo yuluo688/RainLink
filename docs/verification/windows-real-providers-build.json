@@ -1,0 +1,42 @@
+{
+  "builtAtUtc": "2026-10-16T07:29:09.222686+00:00",
+  "platform": "windows-x64",
+  "flutter": "3.27.4",
+  "dart": "3.6.2",
+  "go": "1.25.5",
+  "coreVersion": "1.12.25",
+  "databaseSchema": 3,
+  "flutterTests": 112,
+  "flutterAnalyze": "passed",
+  "dartFormat": "passed",
+  "releaseRuntime": "launched; screenshot inspected; stdout and stderr empty",
+  "releaseScreenshot": "docs/verification/windows-real-providers-release.png",
+  "releaseEngineMatchesSdk": true,
+  "realProviderVerification": {
+    "status": "partial",
+    "httpFirstRun": "2 of 2 passed independent CONNECT and RainLink HTTPS transfer",
+    "httpLastRun": "0 of 2; independent remote disconnect and RainLink handshake failure",
+    "subscriptionImport": "52 VLESS imported, 16 Hysteria2 and 3 notice entries skipped",
+    "subscriptionRefresh": "one successful real refresh; later failed refresh",
+    "vlessEarlierRun": "5 real nodes passed in JP, SG and US",
+    "vlessLastRun": "1 of 6 passed; US WebSocket/TLS succeeded, 5 Reality/Vision connections failed",
+    "systemProxyPreserved": true,
+    "database": "memory",
+    "existingNetwork": "FlClash TUN retained; Fake-IP DNS",
+    "countrySourceDifferenceObserved": true,
+    "results": "docs/verification/windows-real-providers-results.json"
+  },
+  "archive": "build/RainLink-windows-x64-provider-tested-preview.zip",
+  "archiveBytes": 44437039,
+  "archiveEntries": 68,
+  "archiveCrcCheck": "passed",
+  "archiveSha256": "48dcdbbde095f7d37771c430becbc8b8435520d8115ea6aa552412c61f5e9504",
+  "binarySha256": {
+    "rainlink.exe": "c0c995c83e0e0124727940d916ab3d649e4e25f537a93dba155f1b1ff041f404",
+    "rainlink-host.exe": "0763e67c15d6850c420ff0b3e8c77ba66faec248536b15f44416b0e44cc733d9",
+    "sing-box.exe": "fc7b65219abe8a0166d0b4891a2f7cabcbcc13b3adcf89e6d5913743a67aba10",
+    "sing-box-LICENSE.txt": "650d5e3b99a446fb38e820fa87a49562e0c79eab868fff58618ac487a58e554c",
+    "flutter_windows.dll": "55089c0bb72c53220aeecd31c859946b4a7e990fd6ea29975f448e22b2586677",
+    "data/app.so": "d4044db2bc6eafc43d87102e44afb8ec3891b292e1602150230463097f8751d6"
+  }
+}

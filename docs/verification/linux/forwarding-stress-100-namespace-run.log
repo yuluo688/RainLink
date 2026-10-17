@@ -1,0 +1,29 @@
+Ephemeral rootfs mount: /tmp/rainlink-network-qa.XXoDmHkb
+/mnt/host/c/Users/FalingFliff/Documents/ChatGPT/RainLink/build/qa/linux/alpine-minirootfs-3.22.2-x86_64.tar.gz: OK
+/qa/packages/iproute2-minimal-6.15.0-r0.apk: 0 - OK
+/qa/packages/libcap-ng-0.8.5-r0.apk: 0 - OK
+/qa/packages/libcap2-2.78-r0.apk: 0 - OK
+/qa/packages/libelf-0.193-r0.apk: 0 - OK
+/qa/packages/libmnl-1.0.5-r2.apk: 0 - OK
+/qa/packages/musl-1.2.5-r12.apk: 0 - OK
+/qa/packages/setpriv-2.41.6-r1.apk: 0 - OK
+/qa/packages/zlib-1.3.2-r1.apk: 0 - OK
+/qa/packages/zstd-libs-1.5.7-r0.apk: 0 - OK
+(1/9) Upgrading musl (1.2.5-r10 -> 1.2.5-r12)
+(2/9) Upgrading zlib (1.3.1-r2 -> 1.3.2-r1)
+(3/9) Installing libcap2 (2.78-r0)
+(4/9) Installing zstd-libs (1.5.7-r0)
+(5/9) Installing libelf (0.193-r0)
+(6/9) Installing libmnl (1.0.5-r2)
+(7/9) Installing iproute2-minimal (6.15.0-r0)
+(8/9) Installing libcap-ng (0.8.5-r0)
+(9/9) Installing setpriv (2.41.6-r1)
+Executing busybox-1.37.0-r19.trigger
+OK: 9 MiB in 23 packages
+Kernel: Linux 6.6.87.2-microsoft-standard-WSL2
+Parent network namespace: net:[4026531840]
+Fixture network namespace: net:[4026532224]
+Fixture PID: 1
+Original authorizer and installed helper metadata/content unchanged.
+Ordinary-user observations, exclusive leases, exact policy deletion, and locked-core recovery tests passed.
+Parent links/routes/rules unchanged. No fixture network namespace process remains.

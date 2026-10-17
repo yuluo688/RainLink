@@ -1,0 +1,17 @@
+=== RUN   TestIsolatedTUNLeaseAndDeadGuardianRecovery
+=== RUN   TestIsolatedTUNLeaseAndDeadGuardianRecovery/held-lease
+=== RUN   TestIsolatedTUNLeaseAndDeadGuardianRecovery/dead-guardian
+--- PASS: TestIsolatedTUNLeaseAndDeadGuardianRecovery (2.66s)
+    --- PASS: TestIsolatedTUNLeaseAndDeadGuardianRecovery/held-lease (1.56s)
+    --- PASS: TestIsolatedTUNLeaseAndDeadGuardianRecovery/dead-guardian (1.08s)
+=== RUN   TestIsolatedManagedCoreCollisionAndForeignOwner
+=== RUN   TestIsolatedManagedCoreCollisionAndForeignOwner/startup-policy-collision
+=== RUN   TestIsolatedManagedCoreCollisionAndForeignOwner/startup-route-collision-v6
+=== RUN   TestIsolatedManagedCoreCollisionAndForeignOwner/existing-interface
+=== RUN   TestIsolatedManagedCoreCollisionAndForeignOwner/graceful-later-owner
+--- PASS: TestIsolatedManagedCoreCollisionAndForeignOwner (1.19s)
+    --- PASS: TestIsolatedManagedCoreCollisionAndForeignOwner/startup-policy-collision (0.02s)
+    --- PASS: TestIsolatedManagedCoreCollisionAndForeignOwner/startup-route-collision-v6 (0.02s)
+    --- PASS: TestIsolatedManagedCoreCollisionAndForeignOwner/existing-interface (0.06s)
+    --- PASS: TestIsolatedManagedCoreCollisionAndForeignOwner/graceful-later-owner (1.07s)
+PASS

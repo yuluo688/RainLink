@@ -1,0 +1,14 @@
+{
+  "at": "2026-10-16T22:20:21.465343",
+  "scenario": "local HTTP fixtures with actual Windows host/core",
+  "favoritesAliasHideRestore": true,
+  "activeSessionPreserved": true,
+  "realHttpPayloads": 4,
+  "authenticatedUpstream": true,
+  "isolatedBatchReceipts": 2,
+  "rejectedNodeReportedFailure": true,
+  "inFlightCancelClosedUpstream": true,
+  "testDatabase": "in-memory",
+  "publicTargets": "rejected by local proxy fixtures",
+  "systemProxyRequested": false
+}

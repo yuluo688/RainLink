@@ -1,0 +1,51 @@
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/core-live
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/core-dead
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/prepared
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/term-resistant
+--- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit (3.75s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/core-live (1.35s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/core-dead (1.34s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/prepared (0.28s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/term-resistant (0.78s)
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/core-live
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/core-dead
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/prepared
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/term-resistant
+--- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit (3.76s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/core-live (1.35s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/core-dead (1.34s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/prepared (0.28s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/term-resistant (0.78s)
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/core-live
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/core-dead
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/prepared
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/term-resistant
+--- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit (3.73s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/core-live (1.34s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/core-dead (1.33s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/prepared (0.28s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/term-resistant (0.79s)
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/core-live
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/core-dead
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/prepared
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/term-resistant
+--- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit (3.76s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/core-live (1.34s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/core-dead (1.35s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/prepared (0.28s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/term-resistant (0.78s)
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/core-live
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/core-dead
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/prepared
+=== RUN   TestIsolatedTUNWatchdogRecoversGuardianExit/term-resistant
+--- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit (3.77s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/core-live (1.34s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/core-dead (1.36s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/prepared (0.28s)
+    --- PASS: TestIsolatedTUNWatchdogRecoversGuardianExit/term-resistant (0.78s)
+PASS

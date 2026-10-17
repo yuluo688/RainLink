@@ -1,0 +1,719 @@
+{
+  "status": "partial; successful transfers and subsequent failures both recorded",
+  "historicalHarnessExitCodesAreNotAStabilityResult": true,
+  "records": {
+    "initial": {
+      "direct": [
+        {
+          "alias": "http-1",
+          "connectStatus": 200,
+          "httpsStatus": 200,
+          "httpsTransfer": true,
+          "egressIp": "195.40.63.44",
+          "countryCode": "GB",
+          "durationMs": 2688
+        },
+        {
+          "alias": "http-2",
+          "connectStatus": 200,
+          "httpsStatus": 200,
+          "httpsTransfer": true,
+          "egressIp": "138.226.63.46",
+          "countryCode": "US",
+          "durationMs": 2453
+        }
+      ],
+      "rainlink": {
+        "event": "report",
+        "at": "2026-10-16T07:00:19.973508Z",
+        "database": "memory",
+        "systemProxyRequested": false,
+        "coreVersion": "1.12.25",
+        "manualStorage": {
+          "count": 2,
+          "ungrouped": true,
+          "protectedCredentials": true
+        },
+        "connections": [
+          {
+            "alias": "http-1",
+            "protocol": "HTTP",
+            "coreReady": true,
+            "egressIp": "195.40.63.44",
+            "countryCode": "GB",
+            "httpsRequestMs": 1908,
+            "responseBytes": 215,
+            "httpsTransfer": true,
+            "telemetry": {
+              "ip": "195.40.63.44",
+              "countryCode": "gb",
+              "latencyMs": 2007,
+              "uploadBytes": 4086,
+              "downloadBytes": 14871,
+              "probeError": ""
+            },
+            "trafficRecorded": true,
+            "listenerClosed": true,
+            "durationMs": 5251
+          },
+          {
+            "alias": "http-2",
+            "protocol": "HTTP",
+            "coreReady": true,
+            "egressIp": "138.226.63.46",
+            "countryCode": "US",
+            "httpsRequestMs": 965,
+            "responseBytes": 211,
+            "httpsTransfer": true,
+            "telemetry": {
+              "ip": "138.226.63.46",
+              "countryCode": "us",
+              "latencyMs": 951,
+              "uploadBytes": 4086,
+              "downloadBytes": 14833,
+              "probeError": ""
+            },
+            "trafficRecorded": true,
+            "listenerClosed": true,
+            "durationMs": 3219
+          },
+          {
+            "alias": "subscription-1",
+            "protocol": "Shadowsocks",
+            "regionHint": "other",
+            "coreReady": true,
+            "httpsTransfer": false,
+            "error": "tls_handshake_failed",
+            "listenerClosed": true,
+            "durationMs": 809
+          },
+          {
+            "alias": "subscription-2",
+            "protocol": "Shadowsocks",
+            "regionHint": "other",
+            "coreReady": true,
+            "httpsTransfer": false,
+            "error": "tls_handshake_failed",
+            "listenerClosed": true,
+            "durationMs": 811
+          },
+          {
+            "alias": "subscription-3",
+            "protocol": "Shadowsocks",
+            "regionHint": "other",
+            "coreReady": true,
+            "httpsTransfer": false,
+            "error": "tls_handshake_failed",
+            "listenerClosed": true,
+            "durationMs": 808
+          }
+        ],
+        "subscription": {
+          "imported": true,
+          "automaticGroup": true,
+          "nameFromProvider": true,
+          "nodeCount": 3,
+          "protocols": {
+            "Shadowsocks": 3
+          },
+          "skipped": 0,
+          "usageProvided": true,
+          "usedBytes": 27377425920,
+          "totalBytes": 1073741824000,
+          "expiresAt": "2029-12-17T10:15:35.000Z",
+          "intervalHours": 24,
+          "refresh": {
+            "succeeded": true,
+            "nodeCount": 3,
+            "sameNodeIds": true,
+            "selectionPreserved": true,
+            "manualNodesPreserved": true
+          },
+          "testedNodes": 3
+        }
+      },
+      "exitCode": 0,
+      "exactSystemProxyPreserved": true
+    },
+    "metaResponseComparison": {
+      "responses": [
+        {
+          "userAgent": "RainLink/0.1 (Clash-compatible)",
+          "route": "provided-http-proxy",
+          "status": 200,
+          "contentType": "text/html; charset=UTF-8",
+          "usageHeaderPresent": true,
+          "bytes": 197325,
+          "format": "yaml",
+          "nodes": 3,
+          "protocols": {
+            "ss": 3
+          },
+          "nameHints": [
+            {
+              "chineseName": "不支持您的代理软件",
+              "endpointClass": "loopback",
+              "port": 6666
+            },
+            {
+              "chineseName": "请换用支持的代理软件",
+              "endpointClass": "loopback",
+              "port": 6666
+            },
+            {
+              "chineseName": "官网地址",
+              "endpointClass": "loopback",
+              "port": 6666
+            }
+          ],
+          "identicalEndpoints": true
+        },
+        {
+          "userAgent": "Clash.Meta/1.19.0",
+          "route": "provided-http-proxy",
+          "status": 200,
+          "contentType": "text/html; charset=UTF-8",
+          "usageHeaderPresent": true,
+          "bytes": 517512,
+          "format": "yaml",
+          "nodes": 71,
+          "protocols": {
+            "vless": 52,
+            "hysteria2": 16,
+            "ss": 3
+          },
+          "nameHints": [
+            {
+              "chineseName": "日本东京倍  电信联通推荐",
+              "endpointClass": "domain",
+              "port": 443
+            },
+            {
+              "chineseName": "日本东京倍  电信联通推荐",
+              "endpointClass": "domain",
+              "port": 443
+            },
+            {
+              "chineseName": "日本东京倍  电信联通推荐",
+              "endpointClass": "domain",
+              "port": 443
+            },
+            {
+              "chineseName": "日本东京倍  电信联通推荐",
+              "endpointClass": "domain",
+              "port": 443
+            },
+            {
+              "chineseName": "日本东京倍  电信联通推荐",
+              "endpointClass": "domain",
+              "port": 443
+            },
+            {
+              "chineseName": "日本东京倍  高速专线推荐",
+              "endpointClass": "domain",
+              "port": 443
+            }
+          ],
+          "identicalEndpoints": false
+        }
+      ],
+      "exactSystemProxyPreserved": true
+    },
+    "correctedWithBootstrap": {
+      "direct": [
+        {
+          "alias": "http-1",
+          "httpsTransfer": false,
+          "error": "timeout",
+          "durationMs": 12016
+        },
+        {
+          "alias": "http-2",
+          "httpsTransfer": false,
+          "error": "timeout",
+          "durationMs": 12016
+        }
+      ],
+      "rainlink": {
+        "event": "report",
+        "at": "2026-10-16T07:10:23.510644Z",
+        "database": "memory",
+        "systemProxyRequested": false,
+        "coreVersion": "1.12.25",
+        "manualStorage": {
+          "count": 2,
+          "ungrouped": true,
+          "protectedCredentials": true
+        },
+        "connections": [
+          {
+            "alias": "http-1",
+            "protocol": "HTTP",
+            "endpointClass": "remote",
+            "coreReady": true,
+            "httpsTransfer": false,
+            "error": "timeout",
+            "listenerClosed": true,
+            "durationMs": 15839
+          },
+          {
+            "alias": "http-2",
+            "protocol": "HTTP",
+            "endpointClass": "remote",
+            "coreReady": true,
+            "httpsTransfer": false,
+            "error": "tls_handshake_failed",
+            "tlsFailure": [
+              "Connection terminated during handshake"
+            ],
+            "listenerClosed": true,
+            "durationMs": 14990
+          },
+          {
+            "alias": "subscription-1",
+            "protocol": "VLESS",
+            "regionHint": "jp",
+            "nameHint": "日本  电信移动联通推荐",
+            "endpointClass": "remote",
+            "coreReady": true,
+            "egressIp": "103.62.49.138",
+            "countryCode": "JP",
+            "httpsRequestMs": 1061,
+            "responseBytes": 216,
+            "httpsTransfer": true,
+            "telemetry": {
+              "ip": "103.62.49.138",
+              "countryCode": "jp",
+              "latencyMs": 1024,
+              "uploadBytes": 4086,
+              "downloadBytes": 14829,
+              "probeError": ""
+            },
+            "trafficRecorded": true,
+            "listenerClosed": true,
+            "durationMs": 3327
+          },
+          {
+            "alias": "subscription-2",
+            "protocol": "VLESS",
+            "regionHint": "sg",
+            "nameHint": "新加坡  电信移动联通推荐",
+            "endpointClass": "remote",
+            "coreReady": true,
+            "egressIp": "67.159.48.146",
+            "countryCode": "SG",
+            "httpsRequestMs": 916,
+            "responseBytes": 210,
+            "httpsTransfer": true,
+            "telemetry": {
+              "ip": "67.159.48.146",
+              "countryCode": "us",
+              "latencyMs": 916,
+              "uploadBytes": 4086,
+              "downloadBytes": 14823,
+              "probeError": ""
+            },
+            "trafficRecorded": true,
+            "listenerClosed": true,
+            "durationMs": 2462
+          },
+          {
+            "alias": "subscription-3",
+            "protocol": "VLESS",
+            "regionHint": "us",
+            "nameHint": "美国  合适下载使用倍",
+            "endpointClass": "remote",
+            "coreReady": true,
+            "egressIp": "108.181.24.43",
+            "countryCode": "US",
+            "httpsRequestMs": 1590,
+            "responseBytes": 211,
+            "httpsTransfer": true,
+            "telemetry": {
+              "ip": "108.181.24.43",
+              "countryCode": "us",
+              "latencyMs": 1711,
+              "uploadBytes": 4086,
+              "downloadBytes": 13530,
+              "probeError": ""
+            },
+            "trafficRecorded": true,
+            "listenerClosed": true,
+            "durationMs": 4208
+          },
+          {
+            "alias": "subscription-4",
+            "protocol": "Shadowsocks",
+            "regionHint": "other",
+            "nameHint": "距离下次重置剩余 天",
+            "endpointClass": "loopback",
+            "cipher": "aes-128-gcm",
+            "coreReady": true,
+            "httpsTransfer": false,
+            "error": "tls_handshake_failed",
+            "tlsFailure": [
+              "Connection terminated during handshake"
+            ],
+            "listenerClosed": true,
+            "durationMs": 810
+          },
+          {
+            "alias": "subscription-5",
+            "protocol": "VLESS",
+            "regionHint": "jp",
+            "nameHint": "日本  电信移动联通推荐",
+            "endpointClass": "remote",
+            "coreReady": true,
+            "egressIp": "103.62.49.162",
+            "countryCode": "JP",
+            "httpsRequestMs": 1129,
+            "responseBytes": 216,
+            "httpsTransfer": true,
+            "telemetry": {
+              "ip": "103.62.49.162",
+              "countryCode": "jp",
+              "latencyMs": 910,
+              "uploadBytes": 4086,
+              "downloadBytes": 14882,
+              "probeError": ""
+            },
+            "trafficRecorded": true,
+            "listenerClosed": true,
+            "durationMs": 2680
+          },
+          {
+            "alias": "subscription-6",
+            "protocol": "VLESS",
+            "regionHint": "jp",
+            "nameHint": "日本  电信移动联通推荐",
+            "endpointClass": "remote",
+            "coreReady": true,
+            "egressIp": "103.62.49.170",
+            "countryCode": "JP",
+            "httpsRequestMs": 689,
+            "responseBytes": 216,
+            "httpsTransfer": true,
+            "telemetry": {
+              "ip": "103.62.49.170",
+              "countryCode": "jp",
+              "latencyMs": 729,
+              "uploadBytes": 4086,
+              "downloadBytes": 14835,
+              "probeError": ""
+            },
+            "trafficRecorded": true,
+            "listenerClosed": true,
+            "durationMs": 2239
+          }
+        ],
+        "subscription": {
+          "imported": true,
+          "automaticGroup": true,
+          "nameFromProvider": true,
+          "nodeCount": 53,
+          "protocols": {
+            "Shadowsocks": 1,
+            "VLESS": 52
+          },
+          "skipped": 18,
+          "usageProvided": true,
+          "usedBytes": 27380498171,
+          "totalBytes": 1073741824000,
+          "expiresAt": "2029-12-17T10:15:35.000Z",
+          "intervalHours": 24,
+          "fetchRoute": "provided-http-proxy",
+          "refresh": {
+            "succeeded": true,
+            "nodeCount": 53,
+            "sameNodeIds": true,
+            "selectionPreserved": true,
+            "manualNodesPreserved": true
+          },
+          "testedNodes": 6
+        }
+      },
+      "exitCode": 0,
+      "exactSystemProxyPreserved": true
+    },
+    "finalSubscriptionAndSixNodes": {
+      "direct": [
+        {
+          "alias": "http-1",
+          "connectStatus": 400,
+          "httpsTransfer": false,
+          "durationMs": 688
+        },
+        {
+          "alias": "http-2",
+          "connectStatus": 400,
+          "httpsTransfer": false,
+          "durationMs": 688
+        }
+      ],
+      "rainlink": {
+        "event": "report",
+        "at": "2026-10-16T07:16:10.332404Z",
+        "database": "memory",
+        "systemProxyRequested": false,
+        "coreVersion": "1.12.25",
+        "manualStorage": {
+          "count": 2,
+          "ungrouped": true,
+          "protectedCredentials": true
+        },
+        "connections": [
+          {
+            "alias": "http-1",
+            "protocol": "HTTP",
+            "transport": "tcp",
+            "tls": false,
+            "reality": false,
+            "vision": false,
+            "endpointClass": "remote",
+            "coreReady": true,
+            "httpsTransfer": false,
+            "error": "tls_handshake_failed",
+            "tlsFailure": [
+              "Connection terminated during handshake"
+            ],
+            "listenerClosed": true,
+            "durationMs": 1516
+          },
+          {
+            "alias": "http-2",
+            "protocol": "HTTP",
+            "transport": "tcp",
+            "tls": false,
+            "reality": false,
+            "vision": false,
+            "endpointClass": "remote",
+            "coreReady": true,
+            "httpsTransfer": false,
+            "error": "tls_handshake_failed",
+            "tlsFailure": [
+              "Connection terminated during handshake"
+            ],
+            "listenerClosed": true,
+            "durationMs": 1774
+          },
+          {
+            "alias": "subscription-1",
+            "protocol": "VLESS",
+            "transport": "tcp",
+            "tls": true,
+            "reality": true,
+            "vision": true,
+            "regionHint": "jp",
+            "nameHint": "日本  电信移动联通推荐",
+            "endpointClass": "remote",
+            "coreReady": true,
+            "httpsTransfer": false,
+            "error": "tls_handshake_failed",
+            "tlsFailure": [
+              "Connection terminated during handshake"
+            ],
+            "listenerClosed": true,
+            "durationMs": 1303
+          },
+          {
+            "alias": "subscription-2",
+            "protocol": "VLESS",
+            "transport": "tcp",
+            "tls": true,
+            "reality": true,
+            "vision": true,
+            "regionHint": "sg",
+            "nameHint": "新加坡  电信移动联通推荐",
+            "endpointClass": "remote",
+            "coreReady": true,
+            "httpsTransfer": false,
+            "error": "tls_handshake_failed",
+            "tlsFailure": [
+              "Connection terminated during handshake"
+            ],
+            "listenerClosed": true,
+            "durationMs": 1302
+          },
+          {
+            "alias": "subscription-3",
+            "protocol": "VLESS",
+            "transport": "ws",
+            "tls": true,
+            "reality": false,
+            "vision": false,
+            "regionHint": "us",
+            "nameHint": "美国  合适下载使用倍",
+            "endpointClass": "remote",
+            "coreReady": true,
+            "egressIp": "108.181.24.43",
+            "countryCode": "US",
+            "httpsRequestMs": 1463,
+            "responseBytes": 211,
+            "httpsTransfer": true,
+            "telemetry": {
+              "ip": "108.181.24.43",
+              "countryCode": "us",
+              "latencyMs": 1571,
+              "uploadBytes": 4086,
+              "downloadBytes": 13558,
+              "probeError": ""
+            },
+            "trafficRecorded": true,
+            "listenerClosed": true,
+            "durationMs": 4093
+          },
+          {
+            "alias": "subscription-4",
+            "protocol": "VLESS",
+            "transport": "tcp",
+            "tls": true,
+            "reality": true,
+            "vision": true,
+            "regionHint": "jp",
+            "nameHint": "日本  电信移动联通推荐",
+            "endpointClass": "remote",
+            "coreReady": true,
+            "httpsTransfer": false,
+            "error": "tls_handshake_failed",
+            "tlsFailure": [
+              "Connection terminated during handshake"
+            ],
+            "listenerClosed": true,
+            "durationMs": 3690
+          },
+          {
+            "alias": "subscription-5",
+            "protocol": "VLESS",
+            "transport": "tcp",
+            "tls": true,
+            "reality": true,
+            "vision": true,
+            "regionHint": "jp",
+            "nameHint": "日本  电信移动联通推荐",
+            "endpointClass": "remote",
+            "coreReady": true,
+            "httpsTransfer": false,
+            "error": "tls_handshake_failed",
+            "tlsFailure": [
+              "Connection terminated during handshake"
+            ],
+            "listenerClosed": true,
+            "durationMs": 1719
+          },
+          {
+            "alias": "subscription-6",
+            "protocol": "VLESS",
+            "transport": "tcp",
+            "tls": true,
+            "reality": true,
+            "vision": true,
+            "regionHint": "jp",
+            "nameHint": "日本  电信移动联通推荐",
+            "endpointClass": "remote",
+            "coreReady": true,
+            "httpsTransfer": false,
+            "error": "tls_handshake_failed",
+            "tlsFailure": [
+              "Connection terminated during handshake"
+            ],
+            "listenerClosed": true,
+            "durationMs": 2448
+          }
+        ],
+        "subscription": {
+          "imported": true,
+          "automaticGroup": true,
+          "nameFromProvider": true,
+          "nodeCount": 52,
+          "protocols": {
+            "VLESS": 52
+          },
+          "skipped": 19,
+          "usageProvided": true,
+          "usedBytes": 27385338384,
+          "totalBytes": 1073741824000,
+          "expiresAt": "2029-12-17T10:15:35.000Z",
+          "intervalHours": 24,
+          "fetchRoute": "system-network",
+          "refresh": {
+            "succeeded": false,
+            "error": "无法获取订阅，请检查地址、证书与网络"
+          },
+          "testedNodes": 6
+        },
+        "passed": false
+      },
+      "exitCode": 1,
+      "exactSystemProxyPreserved": true
+    },
+    "lastHttpRetest": {
+      "direct": [
+        {
+          "alias": "http-1",
+          "httpsTransfer": false,
+          "error": "RemoteDisconnected",
+          "durationMs": 5000
+        },
+        {
+          "alias": "http-2",
+          "httpsTransfer": false,
+          "error": "RemoteDisconnected",
+          "durationMs": 5000
+        }
+      ],
+      "rainlink": {
+        "event": "report",
+        "at": "2026-10-16T07:19:45.671721Z",
+        "database": "memory",
+        "systemProxyRequested": false,
+        "coreVersion": "1.12.25",
+        "manualStorage": {
+          "count": 2,
+          "ungrouped": true,
+          "protectedCredentials": true
+        },
+        "connections": [
+          {
+            "alias": "http-1",
+            "protocol": "HTTP",
+            "transport": "tcp",
+            "tls": false,
+            "reality": false,
+            "vision": false,
+            "endpointClass": "remote",
+            "coreReady": true,
+            "httpsTransfer": false,
+            "error": "tls_handshake_failed",
+            "tlsFailure": [
+              "Connection terminated during handshake"
+            ],
+            "listenerClosed": true,
+            "durationMs": 5858
+          },
+          {
+            "alias": "http-2",
+            "protocol": "HTTP",
+            "transport": "tcp",
+            "tls": false,
+            "reality": false,
+            "vision": false,
+            "endpointClass": "remote",
+            "coreReady": true,
+            "httpsTransfer": false,
+            "error": "tls_handshake_failed",
+            "tlsFailure": [
+              "Connection terminated during handshake"
+            ],
+            "listenerClosed": true,
+            "durationMs": 6014
+          }
+        ],
+        "passed": false
+      },
+      "exitCode": 1,
+      "timedOut": false,
+      "exactSystemProxyPreserved": true,
+      "passed": false
+    }
+  }
+}

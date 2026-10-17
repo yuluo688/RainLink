@@ -1,0 +1,17 @@
+{
+  "verifiedAt": "2026-10-16T10:47:03.9114891+08:00",
+  "executableSha256": "820B6B4E609A436A93D49BED1F1A2FBE572483B8FFE88E9A91DE02E3DFA4F0A9",
+  "flutterAotSha256": "451B720B6AAEDC7DC4FB2DC6354ABB14942A4657F206D76297F3B622F9254061",
+  "flutterTests": 66,
+  "newPlatformLayoutTests": 8,
+  "flutterAnalyze": "passed",
+  "dartFormat": "passed",
+  "windowsReleaseBuild": "passed",
+  "windowsRuntime": "overview, nodes and settings verified",
+  "clientSizeLogical": [
+    947.2,
+    632.8
+  ],
+  "scale": 1.25,
+  "mobileNativeVerification": "not run; widget tests only"
+}

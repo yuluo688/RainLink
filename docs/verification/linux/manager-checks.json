@@ -1,0 +1,27 @@
+{
+  "vet-linux-amd64": {
+    "exitCode": 0
+  },
+  "vet-linux-arm64": {
+    "exitCode": 0
+  },
+  "vet-windows-amd64": {
+    "exitCode": 0
+  },
+  "gofmt": {
+    "exitCode": 0
+  },
+  "flutter-analyze": {
+    "source": "executed in this turn",
+    "exitCode": 0,
+    "result": "No issues found"
+  },
+  "shell-syntax": {
+    "exitCode": 0,
+    "source": "bash -n on namespace, session, runner and verification scripts"
+  },
+  "python-syntax": {
+    "exitCode": 0,
+    "source": "py_compile tools/finalize_linux_manager_evidence.py"
+  }
+}

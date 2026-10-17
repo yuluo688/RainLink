@@ -1,0 +1,17 @@
+{
+  "serial": "emulator-5580",
+  "device": "RainLink_QA",
+  "size": "Physical size: 1080x2400",
+  "density": "Physical density: 420",
+  "applicationStopped": true,
+  "networkServiceAbsent": true,
+  "activeTunnelAbsent": true,
+  "vpnType": -1,
+  "activeNetworkCount": 2,
+  "radios": {
+    "wifi": "1",
+    "mobileData": "1"
+  },
+  "at": "2026-10-17T12:58:32.403087+08:00",
+  "passed": true
+}

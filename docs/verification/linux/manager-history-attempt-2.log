@@ -1,0 +1,24 @@
+=== RUN   TestIsolatedLinuxTUNManagerLifecycle
+=== RUN   TestIsolatedLinuxTUNManagerLifecycle/stop
+=== RUN   TestIsolatedLinuxTUNManagerLifecycle/chain-rule
+=== RUN   TestIsolatedLinuxTUNManagerLifecycle/system-proxy
+=== RUN   TestIsolatedLinuxTUNManagerLifecycle/eof
+=== RUN   TestIsolatedLinuxTUNManagerLifecycle/host-killed
+=== RUN   TestIsolatedLinuxTUNManagerLifecycle/guardian-killed
+=== RUN   TestIsolatedLinuxTUNManagerLifecycle/core-killed
+=== RUN   TestIsolatedLinuxTUNManagerLifecycle/watchdog-killed
+=== RUN   TestIsolatedLinuxTUNManagerLifecycle/stop-timeout
+    managed_tun_linux_test.go:563: permission fixture stage failed stopped --- FAIL: TestLinuxTUNManagerClientFixture (1.80s)
+            managed_tun_linux_test.go:251: stop retry failed after root recovery TUN 权限服务仍在退出或恢复，请稍后重试断开
+        FAIL <nil> 
+--- FAIL: TestIsolatedLinuxTUNManagerLifecycle (18.74s)
+    --- PASS: TestIsolatedLinuxTUNManagerLifecycle/stop (1.80s)
+    --- PASS: TestIsolatedLinuxTUNManagerLifecycle/chain-rule (1.84s)
+    --- PASS: TestIsolatedLinuxTUNManagerLifecycle/system-proxy (2.38s)
+    --- PASS: TestIsolatedLinuxTUNManagerLifecycle/eof (1.80s)
+    --- PASS: TestIsolatedLinuxTUNManagerLifecycle/host-killed (1.79s)
+    --- PASS: TestIsolatedLinuxTUNManagerLifecycle/guardian-killed (1.84s)
+    --- PASS: TestIsolatedLinuxTUNManagerLifecycle/core-killed (1.81s)
+    --- PASS: TestIsolatedLinuxTUNManagerLifecycle/watchdog-killed (1.80s)
+    --- FAIL: TestIsolatedLinuxTUNManagerLifecycle/stop-timeout (1.92s)
+FAIL

@@ -1,0 +1,31 @@
+=== RUN   TestIsolatedLinuxTUNManagerLifecycle
+=== RUN   TestIsolatedLinuxTUNManagerLifecycle/no-service
+=== RUN   TestIsolatedLinuxTUNManagerLifecycle/stop
+=== RUN   TestIsolatedLinuxTUNManagerLifecycle/chain-rule
+=== RUN   TestIsolatedLinuxTUNManagerLifecycle/system-proxy
+=== RUN   TestIsolatedLinuxTUNManagerLifecycle/eof
+=== RUN   TestIsolatedLinuxTUNManagerLifecycle/host-killed
+=== RUN   TestIsolatedLinuxTUNManagerLifecycle/guardian-killed
+=== RUN   TestIsolatedLinuxTUNManagerLifecycle/core-killed
+=== RUN   TestIsolatedLinuxTUNManagerLifecycle/watchdog-killed
+=== RUN   TestIsolatedLinuxTUNManagerLifecycle/stop-timeout
+=== RUN   TestIsolatedLinuxTUNManagerLifecycle/route-loss
+=== RUN   TestIsolatedLinuxTUNManagerLifecycle/permission-denied
+=== RUN   TestIsolatedLinuxTUNManagerLifecycle/cancel-start
+=== RUN   TestIsolatedLinuxTUNManagerLifecycle/bad-cipher
+--- PASS: TestIsolatedLinuxTUNManagerLifecycle (23.46s)
+    --- PASS: TestIsolatedLinuxTUNManagerLifecycle/no-service (0.35s)
+    --- PASS: TestIsolatedLinuxTUNManagerLifecycle/stop (2.07s)
+    --- PASS: TestIsolatedLinuxTUNManagerLifecycle/chain-rule (2.08s)
+    --- PASS: TestIsolatedLinuxTUNManagerLifecycle/system-proxy (2.66s)
+    --- PASS: TestIsolatedLinuxTUNManagerLifecycle/eof (2.04s)
+    --- PASS: TestIsolatedLinuxTUNManagerLifecycle/host-killed (2.05s)
+    --- PASS: TestIsolatedLinuxTUNManagerLifecycle/guardian-killed (1.09s)
+    --- PASS: TestIsolatedLinuxTUNManagerLifecycle/core-killed (2.12s)
+    --- PASS: TestIsolatedLinuxTUNManagerLifecycle/watchdog-killed (2.12s)
+    --- PASS: TestIsolatedLinuxTUNManagerLifecycle/stop-timeout (2.20s)
+    --- PASS: TestIsolatedLinuxTUNManagerLifecycle/route-loss (2.06s)
+    --- PASS: TestIsolatedLinuxTUNManagerLifecycle/permission-denied (0.21s)
+    --- PASS: TestIsolatedLinuxTUNManagerLifecycle/cancel-start (0.29s)
+    --- PASS: TestIsolatedLinuxTUNManagerLifecycle/bad-cipher (0.20s)
+PASS

@@ -1,0 +1,49 @@
+=== RUN   TestIsolatedLinuxTUNPermissionLifecycle
+=== RUN   TestIsolatedLinuxTUNPermissionLifecycle/stop
+=== RUN   TestIsolatedLinuxTUNPermissionLifecycle/eof
+=== RUN   TestIsolatedLinuxTUNPermissionLifecycle/client-killed
+=== RUN   TestIsolatedLinuxTUNPermissionLifecycle/core-killed
+=== RUN   TestIsolatedLinuxTUNPermissionLifecycle/watchdog-killed
+=== RUN   TestIsolatedLinuxTUNPermissionLifecycle/guardian-killed
+=== RUN   TestIsolatedLinuxTUNPermissionLifecycle/permission-denied
+--- PASS: TestIsolatedLinuxTUNPermissionLifecycle (7.20s)
+    --- PASS: TestIsolatedLinuxTUNPermissionLifecycle/stop (1.19s)
+    --- PASS: TestIsolatedLinuxTUNPermissionLifecycle/eof (1.21s)
+    --- PASS: TestIsolatedLinuxTUNPermissionLifecycle/client-killed (1.18s)
+    --- PASS: TestIsolatedLinuxTUNPermissionLifecycle/core-killed (1.21s)
+    --- PASS: TestIsolatedLinuxTUNPermissionLifecycle/watchdog-killed (1.21s)
+    --- PASS: TestIsolatedLinuxTUNPermissionLifecycle/guardian-killed (1.18s)
+    --- PASS: TestIsolatedLinuxTUNPermissionLifecycle/permission-denied (0.01s)
+=== RUN   TestIsolatedLinuxTUNPermissionLifecycle
+=== RUN   TestIsolatedLinuxTUNPermissionLifecycle/stop
+=== RUN   TestIsolatedLinuxTUNPermissionLifecycle/eof
+=== RUN   TestIsolatedLinuxTUNPermissionLifecycle/client-killed
+=== RUN   TestIsolatedLinuxTUNPermissionLifecycle/core-killed
+=== RUN   TestIsolatedLinuxTUNPermissionLifecycle/watchdog-killed
+=== RUN   TestIsolatedLinuxTUNPermissionLifecycle/guardian-killed
+=== RUN   TestIsolatedLinuxTUNPermissionLifecycle/permission-denied
+--- PASS: TestIsolatedLinuxTUNPermissionLifecycle (5.20s)
+    --- PASS: TestIsolatedLinuxTUNPermissionLifecycle/stop (1.19s)
+    --- PASS: TestIsolatedLinuxTUNPermissionLifecycle/eof (0.19s)
+    --- PASS: TestIsolatedLinuxTUNPermissionLifecycle/client-killed (1.18s)
+    --- PASS: TestIsolatedLinuxTUNPermissionLifecycle/core-killed (1.21s)
+    --- PASS: TestIsolatedLinuxTUNPermissionLifecycle/watchdog-killed (1.21s)
+    --- PASS: TestIsolatedLinuxTUNPermissionLifecycle/guardian-killed (0.20s)
+    --- PASS: TestIsolatedLinuxTUNPermissionLifecycle/permission-denied (0.01s)
+=== RUN   TestIsolatedLinuxTUNPermissionLifecycle
+=== RUN   TestIsolatedLinuxTUNPermissionLifecycle/stop
+=== RUN   TestIsolatedLinuxTUNPermissionLifecycle/eof
+=== RUN   TestIsolatedLinuxTUNPermissionLifecycle/client-killed
+=== RUN   TestIsolatedLinuxTUNPermissionLifecycle/core-killed
+=== RUN   TestIsolatedLinuxTUNPermissionLifecycle/watchdog-killed
+=== RUN   TestIsolatedLinuxTUNPermissionLifecycle/guardian-killed
+=== RUN   TestIsolatedLinuxTUNPermissionLifecycle/permission-denied
+--- PASS: TestIsolatedLinuxTUNPermissionLifecycle (5.21s)
+    --- PASS: TestIsolatedLinuxTUNPermissionLifecycle/stop (1.20s)
+    --- PASS: TestIsolatedLinuxTUNPermissionLifecycle/eof (0.19s)
+    --- PASS: TestIsolatedLinuxTUNPermissionLifecycle/client-killed (0.19s)
+    --- PASS: TestIsolatedLinuxTUNPermissionLifecycle/core-killed (1.21s)
+    --- PASS: TestIsolatedLinuxTUNPermissionLifecycle/watchdog-killed (1.21s)
+    --- PASS: TestIsolatedLinuxTUNPermissionLifecycle/guardian-killed (1.19s)
+    --- PASS: TestIsolatedLinuxTUNPermissionLifecycle/permission-denied (0.01s)
+PASS

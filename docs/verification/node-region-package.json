@@ -1,0 +1,15 @@
+{
+  "archive": "build/RainLink-windows-x64-node-region-preview.zip",
+  "archiveBytes": 44470333,
+  "archiveEntries": 68,
+  "archiveSha256": "378e7bec63a77633072f60a736d4bc9527cd901cad940005151a4c051e17fe7a",
+  "archiveCrcCheck": "passed",
+  "releaseEngineMatchesSdk": true,
+  "binarySha256": {
+    "rainlink.exe": "9685943a631ce5f36353955ccc79f8b09e73e1fbe13b0a568b87d7e74c99b78f",
+    "rainlink-host.exe": "0763e67c15d6850c420ff0b3e8c77ba66faec248536b15f44416b0e44cc733d9",
+    "sing-box.exe": "fc7b65219abe8a0166d0b4891a2f7cabcbcc13b3adcf89e6d5913743a67aba10",
+    "flutter_windows.dll": "55089c0bb72c53220aeecd31c859946b4a7e990fd6ea29975f448e22b2586677",
+    "data/app.so": "bc9dccabed067bdeb46852781248627842e3be813eeb0afc927c207ed54a2336"
+  }
+}

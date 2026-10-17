@@ -1,0 +1,33 @@
+{
+  "at": "2026-10-17T07:08:21.592681+00:00",
+  "databaseReadOnly": true,
+  "systemProxyRequested": false,
+  "subscriptionBodyPersisted": false,
+  "coreReady": true,
+  "protocol": "hysteria2",
+  "httpStatus": 200,
+  "receivedBytes": 517317,
+  "responseWithinLimit": true,
+  "fetched": true,
+  "productionFetch": {
+    "productionFetcher": true,
+    "fetchedAndParsed": true,
+    "compatibleNodes": 68,
+    "protocols": {
+      "vless": 52,
+      "hysteria2": 16
+    },
+    "skippedItems": 2,
+    "issueCount": 11,
+    "requiresReview": true,
+    "usageProvided": true,
+    "totalProvided": true,
+    "expiryProvided": true,
+    "databaseWritten": false
+  },
+  "productionFetchPassed": true,
+  "hostCleanedUp": true,
+  "listenerClosed": true,
+  "exactSystemProxyPreserved": true,
+  "passed": true
+}

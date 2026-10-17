@@ -1,0 +1,21 @@
+{
+  "at": "2026-10-16",
+  "releaseEngineVerified": true,
+  "nativeSaveDialogVerified": true,
+  "schemaBefore": 5,
+  "schemaAfter": 6,
+  "nodesBefore": 68,
+  "nodesAfter": 68,
+  "integrity": "ok",
+  "overridesAfter": 0,
+  "historicalTotalsUnchanged": true,
+  "csv": {
+    "path": "traffic/release-native-traffic.csv",
+    "bytes": 257,
+    "sha256": "449acf9317eef8a018d78287b82a3d00e27a504c4e1f38dcbdec8c76b87bcd8a",
+    "utf8Bom": true,
+    "rows": 3
+  },
+  "captureChanges": false,
+  "connectedDuringReleaseVerification": false
+}

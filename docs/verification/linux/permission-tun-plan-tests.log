@@ -1,0 +1,36 @@
+=== RUN   TestLinuxTUNCompilerRejectsUntrustedBoundary
+=== RUN   TestLinuxTUNCompilerRejectsUntrustedBoundary/null
+=== RUN   TestLinuxTUNCompilerRejectsUntrustedBoundary/array
+=== RUN   TestLinuxTUNCompilerRejectsUntrustedBoundary/duplicate
+=== RUN   TestLinuxTUNCompilerRejectsUntrustedBoundary/case-alias
+=== RUN   TestLinuxTUNCompilerRejectsUntrustedBoundary/unbounded
+=== RUN   TestLinuxTUNCompilerRejectsUntrustedBoundary/missing-secret
+=== RUN   TestLinuxTUNCompilerRejectsUntrustedBoundary/raw-core
+=== RUN   TestLinuxTUNCompilerRejectsUntrustedBoundary/caller-resources
+=== RUN   TestLinuxTUNCompilerRejectsUntrustedBoundary/tail
+--- PASS: TestLinuxTUNCompilerRejectsUntrustedBoundary (0.00s)
+    --- PASS: TestLinuxTUNCompilerRejectsUntrustedBoundary/null (0.00s)
+    --- PASS: TestLinuxTUNCompilerRejectsUntrustedBoundary/array (0.00s)
+    --- PASS: TestLinuxTUNCompilerRejectsUntrustedBoundary/duplicate (0.00s)
+    --- PASS: TestLinuxTUNCompilerRejectsUntrustedBoundary/case-alias (0.00s)
+    --- PASS: TestLinuxTUNCompilerRejectsUntrustedBoundary/unbounded (0.00s)
+    --- PASS: TestLinuxTUNCompilerRejectsUntrustedBoundary/missing-secret (0.00s)
+    --- PASS: TestLinuxTUNCompilerRejectsUntrustedBoundary/raw-core (0.00s)
+    --- PASS: TestLinuxTUNCompilerRejectsUntrustedBoundary/caller-resources (0.00s)
+    --- PASS: TestLinuxTUNCompilerRejectsUntrustedBoundary/tail (0.00s)
+=== RUN   TestLinuxTUNCompilerUsesHeldResourcesAndPreservesKernelState
+--- PASS: TestLinuxTUNCompilerUsesHeldResourcesAndPreservesKernelState (0.02s)
+=== RUN   TestLinuxTUNPermissionClientFixture
+    tun_service_linux_test.go:34: ordinary-user fixture subprocess only
+--- SKIP: TestLinuxTUNPermissionClientFixture (0.00s)
+=== RUN   TestTUNCompilerProtectsUpstreamAndInterceptsDNSBeforeUserModes
+--- PASS: TestTUNCompilerProtectsUpstreamAndInterceptsDNSBeforeUserModes (0.02s)
+=== RUN   TestTUNInterfaceNameFitsPlatformAndDoesNotRepeat
+--- PASS: TestTUNInterfaceNameFitsPlatformAndDoesNotRepeat (0.00s)
+=== RUN   TestCancelledTUNPlanDoesNotInspectNetwork
+--- PASS: TestCancelledTUNPlanDoesNotInspectNetwork (0.00s)
+=== RUN   TestIsolatedDiagnosticsCannotStartTUNCapture
+--- PASS: TestIsolatedDiagnosticsCannotStartTUNCapture (0.00s)
+=== RUN   TestLinuxTUNPlanUsesRealKernelUpstream
+--- PASS: TestLinuxTUNPlanUsesRealKernelUpstream (0.00s)
+PASS

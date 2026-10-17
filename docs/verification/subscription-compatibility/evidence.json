@@ -1,0 +1,504 @@
+{
+  "at": "2026-10-17T15:10:16.523631+08:00",
+  "version": "0.1.0+4",
+  "databaseSchema": 7,
+  "scope": "Shared subscription parsing and explicit review; related desktop/mobile UI; Windows preview",
+  "flutter": {
+    "passed": true,
+    "counts": {
+      "success": 440
+    },
+    "log": {
+      "path": "build/qa/subscription-compatibility/flutter-tests.jsonl",
+      "sha256": "7d9487e01ae9cbeb3a661aa991f17fa9059b889cc00a51332d5cf4a53a316349"
+    }
+  },
+  "format": {
+    "passed": true,
+    "files": 267,
+    "changed": 0,
+    "log": {
+      "path": "build/qa/subscription-compatibility/format.log",
+      "sha256": "a56546bdab3a2e2782d4fa1c51bd7b1945331ce653782ac2c6735d15dfaa537f"
+    }
+  },
+  "analysis": {
+    "passed": true,
+    "log": {
+      "path": "build/qa/subscription-compatibility/analyze.log",
+      "sha256": "d520bb45590f4a6d733128ead6e1ffb5701dba5ea0bf0473be6a6d1642f2a782"
+    }
+  },
+  "nativeVisual": {
+    "passed": true,
+    "scenarios": 8,
+    "pngCount": 40,
+    "distinctThemePairs": 20,
+    "renderer": "Windows Flutter native runner; mobile sizes use platform override; fixture data",
+    "log": {
+      "path": "build/qa/subscription-compatibility/visual-tests.log",
+      "sha256": "1f2fc505acdb390effab24452f4f228a17f6a42de1b345e76b29481d7b65ac41"
+    },
+    "screenshots": [
+      {
+        "path": "docs/verification/subscription-compatibility/accepted-details-1440-dark-standard-fixture.png",
+        "width": 1440,
+        "height": 900,
+        "sha256": "218e2ac64cef1b4865098283064d9f5e37e580194d5a4f298db445e9773bd6a1"
+      },
+      {
+        "path": "docs/verification/subscription-compatibility/accepted-details-1440-light-standard-fixture.png",
+        "width": 1440,
+        "height": 900,
+        "sha256": "92742485bc213bd96088f05e834af72cb9a7c9e45b32d3113d61c8971ccac2f1"
+      },
+      {
+        "path": "docs/verification/subscription-compatibility/accepted-details-320-dark-extraLarge-fixture.png",
+        "width": 320,
+        "height": 640,
+        "sha256": "f5343a962fc9f875d47cdc8c7c522ba0de96bd938a7c89f04e6d9b6aacb4edba"
+      },
+      {
+        "path": "docs/verification/subscription-compatibility/accepted-details-320-light-extraLarge-fixture.png",
+        "width": 320,
+        "height": 640,
+        "sha256": "51e03844ec6fb9ecb183a1758bf61106933d771bd8474388dfeeb3d010431363"
+      },
+      {
+        "path": "docs/verification/subscription-compatibility/accepted-details-393-dark-standard-fixture.png",
+        "width": 393,
+        "height": 852,
+        "sha256": "089ae6023041bb7444b4fd21d283947ed6372847f687710b45d7460c5296243f"
+      },
+      {
+        "path": "docs/verification/subscription-compatibility/accepted-details-393-light-standard-fixture.png",
+        "width": 393,
+        "height": 852,
+        "sha256": "8427655884de3de805c753913084fee50366bbd32532e4fb90ba53a687c0c3a1"
+      },
+      {
+        "path": "docs/verification/subscription-compatibility/accepted-details-960-dark-standard-fixture.png",
+        "width": 960,
+        "height": 640,
+        "sha256": "3158a189d90bc72050f5a8566a37e72b7d4bf968dd97fd992f668834caf011c2"
+      },
+      {
+        "path": "docs/verification/subscription-compatibility/accepted-details-960-light-standard-fixture.png",
+        "width": 960,
+        "height": 640,
+        "sha256": "fbb5967dea0a040c9b3db464e023e9e974a72359d1e50d706d20fdc592b29727"
+      },
+      {
+        "path": "docs/verification/subscription-compatibility/import-review-1440-dark-standard-fixture.png",
+        "width": 1440,
+        "height": 900,
+        "sha256": "927e0fedd0ab32bcea3eb2f550df1c059143d9f83abd57bab632695d62afd2c0"
+      },
+      {
+        "path": "docs/verification/subscription-compatibility/import-review-1440-light-standard-fixture.png",
+        "width": 1440,
+        "height": 900,
+        "sha256": "569a5eb1ac39963ebb873e428e7275a24b555506c72869740fc98597dbb571c1"
+      },
+      {
+        "path": "docs/verification/subscription-compatibility/import-review-320-dark-extraLarge-fixture.png",
+        "width": 320,
+        "height": 640,
+        "sha256": "ae2d12aecef0d4de0b92c48c2bc8f5c6da2e9a245cfde1645155641e4b76928a"
+      },
+      {
+        "path": "docs/verification/subscription-compatibility/import-review-320-light-extraLarge-fixture.png",
+        "width": 320,
+        "height": 640,
+        "sha256": "4482ad930156793b1f06628f851f16a7ffb5b839aaa6b5ddc5d3f42f70ebfa25"
+      },
+      {
+        "path": "docs/verification/subscription-compatibility/import-review-393-dark-standard-fixture.png",
+        "width": 393,
+        "height": 852,
+        "sha256": "7f312898e44ef8295a75978dbc70fd21aca7621b22fc7d0dcc2974f9cce18ca0"
+      },
+      {
+        "path": "docs/verification/subscription-compatibility/import-review-393-light-standard-fixture.png",
+        "width": 393,
+        "height": 852,
+        "sha256": "ea47084050db5653a27c0caf14298d368a818f052dfe59a1c0ca4b6a961a091f"
+      },
+      {
+        "path": "docs/verification/subscription-compatibility/import-review-960-dark-standard-fixture.png",
+        "width": 960,
+        "height": 640,
+        "sha256": "f85ef44c251a637855cacb92bbd5d47047c065646a68395aeeeadd3dac18b2dc"
+      },
+      {
+        "path": "docs/verification/subscription-compatibility/import-review-960-light-standard-fixture.png",
+        "width": 960,
+        "height": 640,
+        "sha256": "167fa7ea273c55e30d1ab68b5d96682f5e2a55598e46de682c618fa0f2d72785"
+      },
+      {
+        "path": "docs/verification/subscription-compatibility/unusable-update-1440-dark-standard-fixture.png",
+        "width": 1440,
+        "height": 900,
+        "sha256": "5ebf7ac74eb00ad0d538fb233c21667a9b2ffdba9291a5fc1f3943b2c08fd83b"
+      },
+      {
+        "path": "docs/verification/subscription-compatibility/unusable-update-1440-light-standard-fixture.png",
+        "width": 1440,
+        "height": 900,
+        "sha256": "1c7b9306c602b94c90e4ac68806a1d18d3d0452f8530115fedb9afba16bc78f5"
+      },
+      {
+        "path": "docs/verification/subscription-compatibility/unusable-update-320-dark-extraLarge-fixture.png",
+        "width": 320,
+        "height": 640,
+        "sha256": "ed5e7ae4ce358c132f76597003d95b70190d5ca7c9fff3ff87d3bf43732d496a"
+      },
+      {
+        "path": "docs/verification/subscription-compatibility/unusable-update-320-light-extraLarge-fixture.png",
+        "width": 320,
+        "height": 640,
+        "sha256": "5ad2242ff47ef1d19c3bafbf29a807b4e52baa089ab59549f10a60e81b7f1932"
+      },
+      {
+        "path": "docs/verification/subscription-compatibility/unusable-update-393-dark-standard-fixture.png",
+        "width": 393,
+        "height": 852,
+        "sha256": "624282a19424df6ec13a9db53172e93b1e47c9020193ed17e0b323f4e94f7303"
+      },
+      {
+        "path": "docs/verification/subscription-compatibility/unusable-update-393-light-standard-fixture.png",
+        "width": 393,
+        "height": 852,
+        "sha256": "5ae64859c029845729ef8d243bbaf59ef87e178a3403ea390d3b9a36e0870ec7"
+      },
+      {
+        "path": "docs/verification/subscription-compatibility/unusable-update-960-dark-standard-fixture.png",
+        "width": 960,
+        "height": 640,
+        "sha256": "1453154dc1617bd2a8a3cd3797b42572a0b7555e62fc6b3db21fac1d0e3ed597"
+      },
+      {
+        "path": "docs/verification/subscription-compatibility/unusable-update-960-light-standard-fixture.png",
+        "width": 960,
+        "height": 640,
+        "sha256": "d1e7aa1a73e96ca25883d93714cf6742f30c1b803a18f3d79e860a933b74f8d4"
+      },
+      {
+        "path": "docs/verification/subscription-compatibility/update-review-1440-dark-standard-fixture.png",
+        "width": 1440,
+        "height": 900,
+        "sha256": "1db6a43c52c61ebcfe26b159410185d8e569f7522b02bde9665f8142e928357f"
+      },
+      {
+        "path": "docs/verification/subscription-compatibility/update-review-1440-light-standard-fixture.png",
+        "width": 1440,
+        "height": 900,
+        "sha256": "323be7a1a70a0c2114c62980e6932d78d499e0f534c2edd73f9d60b492b8d91d"
+      },
+      {
+        "path": "docs/verification/subscription-compatibility/update-review-320-dark-extraLarge-fixture.png",
+        "width": 320,
+        "height": 640,
+        "sha256": "a718ba2006e741ec94ba9837045e5b0e28a00feba51aef630fbf495f7403037d"
+      },
+      {
+        "path": "docs/verification/subscription-compatibility/update-review-320-light-extraLarge-fixture.png",
+        "width": 320,
+        "height": 640,
+        "sha256": "3b757751edc8745f4945ef09f420875859fa15f849704265ea0e18955d412acb"
+      },
+      {
+        "path": "docs/verification/subscription-compatibility/update-review-393-dark-standard-fixture.png",
+        "width": 393,
+        "height": 852,
+        "sha256": "5f8e8f1aee879cd1b1ad36518d157f3782135940e480b3e5a8c90528613b0214"
+      },
+      {
+        "path": "docs/verification/subscription-compatibility/update-review-393-light-standard-fixture.png",
+        "width": 393,
+        "height": 852,
+        "sha256": "a55ba313efa94947516300e402a88beeff65e2e48570084b65af0b22db1945e3"
+      },
+      {
+        "path": "docs/verification/subscription-compatibility/update-review-960-dark-standard-fixture.png",
+        "width": 960,
+        "height": 640,
+        "sha256": "cefc4d9268e8d0d90f11a78dc9be63aa4623b54c42703074e6a3710ad85e4822"
+      },
+      {
+        "path": "docs/verification/subscription-compatibility/update-review-960-light-standard-fixture.png",
+        "width": 960,
+        "height": 640,
+        "sha256": "b2c4520112402cf63a0efafb08b1e0d4fc6a27ead8bf48fa304ce3a0bcb965c6"
+      },
+      {
+        "path": "docs/verification/subscription-compatibility/updated-details-1440-dark-standard-fixture.png",
+        "width": 1440,
+        "height": 900,
+        "sha256": "e1622596644e8f80250780c240ec32b54a0e73761a898bde126600c6bc31a08d"
+      },
+      {
+        "path": "docs/verification/subscription-compatibility/updated-details-1440-light-standard-fixture.png",
+        "width": 1440,
+        "height": 900,
+        "sha256": "d5b718fc0d1ccd39677bf14af6c60b7a12a83544f85a3bf2f97eb3017eceba76"
+      },
+      {
+        "path": "docs/verification/subscription-compatibility/updated-details-320-dark-extraLarge-fixture.png",
+        "width": 320,
+        "height": 640,
+        "sha256": "acbcd90b4063f126e574f880dbc0ca8a8d0dd955322b62e015e1e8288b314ae1"
+      },
+      {
+        "path": "docs/verification/subscription-compatibility/updated-details-320-light-extraLarge-fixture.png",
+        "width": 320,
+        "height": 640,
+        "sha256": "8b15db3404098517a0639755e73b6d7ea88d08cdd115ea6af346df58d7a9d3d4"
+      },
+      {
+        "path": "docs/verification/subscription-compatibility/updated-details-393-dark-standard-fixture.png",
+        "width": 393,
+        "height": 852,
+        "sha256": "5cf554912a50728d81898b02960e749bbb9c16cb32527c88052cf92b59218377"
+      },
+      {
+        "path": "docs/verification/subscription-compatibility/updated-details-393-light-standard-fixture.png",
+        "width": 393,
+        "height": 852,
+        "sha256": "fc7ced6a876c405e5b921cae5fe4a78c2d97de80bd395f0dedcff004d13e2ad4"
+      },
+      {
+        "path": "docs/verification/subscription-compatibility/updated-details-960-dark-standard-fixture.png",
+        "width": 960,
+        "height": 640,
+        "sha256": "65a96597687e7eea15dbfe35f3bd6ddf92dcbdb484ec593a72bd047480c13745"
+      },
+      {
+        "path": "docs/verification/subscription-compatibility/updated-details-960-light-standard-fixture.png",
+        "width": 960,
+        "height": 640,
+        "sha256": "fbee4302814cc9731aadb19651c3521de97c12b962a9907afcd0ab7b5f3d999a"
+      }
+    ]
+  },
+  "nativeChain": {
+    "passed": true,
+    "evidence": "docs/verification/subscription-compatibility/chain-evidence.json",
+    "log": {
+      "path": "build/qa/subscription-compatibility/chain-integration.log",
+      "sha256": "7d2091dbaa86bbe9ad0dbc1af64c37d0007cf6ece9a0aa2ce9766e02dcfa2cff"
+    },
+    "subscriptionThroughActiveChain": true
+  },
+  "python": {
+    "packagingTestsPassed": 5,
+    "log": {
+      "path": "build/qa/subscription-compatibility/package-tests.log",
+      "sha256": "e7989f74da7d011efd14ab92ea0fa8444ad889d082c5cf2d26faba6dd9ae47d1"
+    },
+    "updateToolCompilePassed": true,
+    "fullAotUpdateVerificationRerun": false,
+    "subscriptionPathToolCompilePassed": true
+  },
+  "figma": {
+    "fileName": "RainLink",
+    "bridgeFileKey": "unsaved-mva99nf3-128z4u3c",
+    "referenceNodes": {
+      "desktopImport": "2:20702",
+      "desktopDetails": "23:54186",
+      "mobileImport": "2:23573",
+      "mobileDetails": "23:55019"
+    },
+    "identicalSvgCount": 10,
+    "icons": "docs/verification/subscription-compatibility/icon-verification.json",
+    "fullProductVisualAlignmentCompleted": false,
+    "packagedRuntimeAssetsIdenticalToSources": 44
+  },
+  "remote": {
+    "httpAndSubscription": {
+      "passed": false,
+      "evidence": "docs/verification/subscription-compatibility/remote-evidence.json"
+    },
+    "existingHysteria2": {
+      "passed": true,
+      "count": 3,
+      "evidence": "docs/verification/subscription-compatibility/remote-hy2-probes.json"
+    },
+    "systemProxyPreservedInBothRuns": true,
+    "flclashKeptClosed": true,
+    "phoneOperated": false,
+    "subscriptionViaHysteria2": {
+      "passed": true,
+      "compatibleNodes": 68,
+      "hysteria2Nodes": 16,
+      "productionFetcher": true,
+      "databaseWritten": false,
+      "evidence": "docs/verification/subscription-compatibility/subscription-via-hy2.json"
+    }
+  },
+  "release": {
+    "passed": true,
+    "buildLog": {
+      "path": "build/qa/subscription-compatibility/release-build.log",
+      "sha256": "89ad1e5c0e078f2ab695aadeea706c2782d798c525490f96f008fae0f8861f6b"
+    },
+    "package": {
+      "version": "0.1.0+4",
+      "archive": "build/RainLink-windows-x64-subscriptions-preview.zip",
+      "entries": 78,
+      "bytes": 46873693,
+      "sha256": "46489dd5ca9ced9a8dfa1f54d03509726edb2d986f5c9ecfda379e3a00a7bed7",
+      "zipCrcVerified": true,
+      "perFileDigestVerified": true,
+      "userDatabaseIncluded": false,
+      "coreSha256": "cf6863552456c535fd79a0724f2d01352e77c97f4958466b75d9f07d8f0edef7",
+      "engineSha256": "55089c0bb72c53220aeecd31c859946b4a7e990fd6ea29975f448e22b2586677",
+      "hostSha256": "8c3424bfc5e69de870b8edbebd26a08738a38097ac76eb4f7bee04caedb41094",
+      "updaterSha256": "6f4949ef5779a557570a63294e01094bf3a57b7e2c1c2e5912278cdf28723426",
+      "launcherSha256": "d1243b2e6b5e5472f797c6ac8a9ccfcf6d31ee62954112cb5f6e6f952cd582b1",
+      "releaseEngineVerified": true,
+      "coreVersion": "1.12.25-rainlink.1",
+      "applicationSha256": "7b4d1451a178045bdea79ae7f478be9aac005dcfd317efdbbbc9adf1570cb1d7",
+      "aotSha256": "ceabf1a51456b42787a4f67f6462079602f16c0ed096f8c3d3d08f0fcc548e24",
+      "at": "2026-10-17T15:10:16.523631+08:00",
+      "bundleSchema": 2,
+      "bootstrapVersion": "1.0.0.0",
+      "runtimeLicensesIncluded": true,
+      "coreSourceIncluded": true,
+      "databaseSchema": 7,
+      "verification": "docs/verification/subscription-compatibility.md",
+      "published": false
+    }
+  },
+  "sources": [
+    {
+      "path": "app/integration_test/subscription_review_visual_test.dart",
+      "sha256": "669809754ccf0e247a6f680ace0dea06d01e1fe0ca639fae912bfa7bb8cf9143"
+    },
+    {
+      "path": "app/integration_test/support/local_proxy_fixture.dart",
+      "sha256": "bbb9acc2ea7a5f84ec05859701ce3392048edb9c318caf0e316032c202532f10"
+    },
+    {
+      "path": "app/integration_test/windows_chain_test.dart",
+      "sha256": "d3049a64a1fc286eeff797e4dd14aa17dd258c677479826a726d754f09a48b04"
+    },
+    {
+      "path": "app/lib/app/build_info.g.dart",
+      "sha256": "42f5b7827718c3d0ae2d9886af711e160a31af6c06bdd8edcc7ee8181498eaf8"
+    },
+    {
+      "path": "app/lib/app/dependencies.dart",
+      "sha256": "061b2065546de2085b398fbed3817fa2b6b51f9911631837b4246663b94b1390"
+    },
+    {
+      "path": "app/lib/application/groups/group_providers.dart",
+      "sha256": "e76d62a668ca3703581216fa859d19900c2b30cc402e675c98812af4ae90b2c7"
+    },
+    {
+      "path": "app/lib/data/database/app_database.dart",
+      "sha256": "0c75bb4fa6890747ef7ddf42d71f1df245dd8b0ec7511ede3253fdb79026d9fd"
+    },
+    {
+      "path": "app/lib/data/database/app_database.g.dart",
+      "sha256": "62ed7b5a602c482d72bc75eecca32e2a0447436c5e1a0eeeea89f6f7b58ba7bd"
+    },
+    {
+      "path": "app/lib/data/groups/drift_group_repository.dart",
+      "sha256": "85bced6053612d592d0ca7aae97295d296173acc0b8b27157103e9bb05cb8b7c"
+    },
+    {
+      "path": "app/lib/data/subscriptions/http_subscription_fetcher.dart",
+      "sha256": "5e9a8b508d9aceb0d81ca0060c89d525b76ab2e8ae1b5417601bcd33662599d5"
+    },
+    {
+      "path": "app/lib/data/subscriptions/singbox_outbound_parser.dart",
+      "sha256": "73a219d5f2c199b91761e472e505bce55f6fa40d6c2d0d40f4cbac387eca981b"
+    },
+    {
+      "path": "app/lib/data/subscriptions/subscription_parser.dart",
+      "sha256": "260af63950f9aaad2c970dcd9165e7e4369841a0a32d094dff54f1e017f05fa5"
+    },
+    {
+      "path": "app/lib/domain/groups/node_group.dart",
+      "sha256": "85d0db0261b185bcfc508e5b2c4909fddd4b5a84ed79e6912bea734331966f68"
+    },
+    {
+      "path": "app/lib/domain/groups/subscription_issue.dart",
+      "sha256": "cf5d3c3077b10d075739d305db8848a92a4c9e209eb6a2ca10d9f80f32b38ddf"
+    },
+    {
+      "path": "app/lib/domain/groups/subscription_review.dart",
+      "sha256": "c5b586c0d3989fc8ff51e054c381e0f663aca1505651f95801784b1cabf8cedd"
+    },
+    {
+      "path": "app/lib/features/groups/presentation/group_details_dialog.dart",
+      "sha256": "81ca2063da39321be9d9ada173c070a8aa9b290e5311bf7899c3ff9e08d5ff02"
+    },
+    {
+      "path": "app/lib/features/groups/presentation/groups_page.dart",
+      "sha256": "99938d5c8a5fc0de9eea3e7f380160bc328c1501cf418a00349911a98aef2931"
+    },
+    {
+      "path": "app/lib/features/groups/presentation/subscription_review_panel.dart",
+      "sha256": "b088180cbcbf6cc1331151b551652c8f5b7fb77790b66f3fe557cfd35d5f090e"
+    },
+    {
+      "path": "app/lib/features/nodes/presentation/node_editor_dialog.dart",
+      "sha256": "6e78be67aef60b428ae6f7f7618e298a135e334870f35d02fc8768ecaf299768"
+    },
+    {
+      "path": "app/pubspec.yaml",
+      "sha256": "0fdb66cca118020f63d81f10f022ab2224391fab542a3c4e28ee0014efacabb7"
+    },
+    {
+      "path": "app/test/local_proxy_fixture_test.dart",
+      "sha256": "21889d2d9eaee73c8ab511318e03e8053a5b77a068552c465ad1092f89c78923"
+    },
+    {
+      "path": "app/test/singbox_subscription_test.dart",
+      "sha256": "045b38fb649bd536d8954d413ff3e243c58b7a28661698c3d2329e6526966371"
+    },
+    {
+      "path": "app/test/subscription_fetcher_test.dart",
+      "sha256": "659ac1db58c8c5f8a93b2e5f5bd05cd2ce39a0d23ccd1939d4f1f72d6fcf344b"
+    },
+    {
+      "path": "app/test/subscription_parser_test.dart",
+      "sha256": "95b4a65630f40892a3e1370b060c2598b699ce2b671140b56b2ea251c3daa6cb"
+    },
+    {
+      "path": "app/test/subscription_review_test.dart",
+      "sha256": "16c18f977a5806d6f1f584779f77c3d4f660f866ba6495e247825214b894da63"
+    },
+    {
+      "path": "app/test/subscription_review_ui_test.dart",
+      "sha256": "b8cae62df5b39ed78220c933ddc0086f437db509232e004c94a68edaaa4bae75"
+    },
+    {
+      "path": "app/test/subscription_route_test.dart",
+      "sha256": "4024c38603357a6d49e18a4f7db5d8d722dabe712a90391781a2d73470762a34"
+    },
+    {
+      "path": "app/tool/verify_remote.dart",
+      "sha256": "4205570cfabe7f8a56d7c45206115cefeb5cbf98b81a3d31bf6759f9443f9126"
+    },
+    {
+      "path": "app/tool/verify_subscription_path.dart",
+      "sha256": "86927af53ba3fc1615aef7904a0ec85060ec42cbaeac48c3a171bdab82f30971"
+    },
+    {
+      "path": "tools/verify_app_updates.py",
+      "sha256": "2ddfe491ec0cb1e0fb879b0505c24f89fe2446fbeba67a545d87be0f2d497206"
+    },
+    {
+      "path": "tools/verify_node_probes.py",
+      "sha256": "0395b72a8d49a1bf2c35ee7f05a29653e64952293ebb73f224f9b3fd36357d8b"
+    },
+    {
+      "path": "tools/verify_subscription_path.py",
+      "sha256": "9829c2f8b7613f63138c98d39b8c631b914d5ca663bf176fbea000328be5c75e"
+    }
+  ]
+}

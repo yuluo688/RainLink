@@ -1,0 +1,20 @@
+Oct 17 13:48:43 rainlink-disposable-qa systemd[1]: Listening on rainlink-tun.socket - RainLink privileged network session socket.
+Oct 17 13:48:43 rainlink-disposable-qa systemd[1]: Starting rainlink-tun@0-625-0.service - RainLink privileged network session (PID 625/UID 0)...
+Oct 17 13:48:43 rainlink-disposable-qa systemd[1]: Started rainlink-tun@0-625-0.service - RainLink privileged network session (PID 625/UID 0).
+Oct 17 13:48:44 rainlink-disposable-qa systemd[1]: rainlink-tun@0-625-0.service: Deactivated successfully.
+Oct 17 13:48:47 rainlink-disposable-qa systemd[1]: Starting rainlink-tun@1-764-65534.service - RainLink privileged network session (PID 764/UID 65534)...
+Oct 17 13:48:47 rainlink-disposable-qa systemd[1]: Started rainlink-tun@1-764-65534.service - RainLink privileged network session (PID 764/UID 65534).
+Oct 17 13:48:52 rainlink-disposable-qa systemd[1]: Starting rainlink-tun@2-621-0.service - RainLink privileged network session (PID 621/UID 0)...
+Oct 17 13:48:52 rainlink-disposable-qa systemd[1]: Started rainlink-tun@2-621-0.service - RainLink privileged network session (PID 621/UID 0).
+Oct 17 13:48:52 rainlink-disposable-qa systemd[1]: rainlink-tun@1-764-65534.service: Deactivated successfully.
+Oct 17 13:48:52 rainlink-disposable-qa systemd[1]: rainlink-tun@1-764-65534.service: Consumed 3.233s CPU time, 16.5M memory peak.
+Oct 17 13:48:52 rainlink-disposable-qa systemd[1]: rainlink-tun@2-621-0.service: Deactivated successfully.
+Oct 17 13:48:53 rainlink-disposable-qa systemd[1]: Starting rainlink-tun@3-838-65534.service - RainLink privileged network session (PID 838/UID 65534)...
+Oct 17 13:48:53 rainlink-disposable-qa systemd[1]: Started rainlink-tun@3-838-65534.service - RainLink privileged network session (PID 838/UID 65534).
+Oct 17 13:48:53 rainlink-disposable-qa rainlink-host[841]: TUN permission setup failed at authorization
+Oct 17 13:48:53 rainlink-disposable-qa systemd[1]: Starting rainlink-tun@4-621-0.service - RainLink privileged network session (PID 621/UID 0)...
+Oct 17 13:48:54 rainlink-disposable-qa systemd[1]: rainlink-tun@3-838-65534.service: Deactivated successfully.
+Oct 17 13:48:54 rainlink-disposable-qa systemd[1]: Started rainlink-tun@4-621-0.service - RainLink privileged network session (PID 621/UID 0).
+Oct 17 13:48:54 rainlink-disposable-qa systemd[1]: rainlink-tun@4-621-0.service: Deactivated successfully.
+Oct 17 13:49:03 rainlink-disposable-qa systemd[1]: rainlink-tun.socket: Deactivated successfully.
+Oct 17 13:49:03 rainlink-disposable-qa systemd[1]: Closed rainlink-tun.socket - RainLink privileged network session socket.

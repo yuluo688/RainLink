@@ -1,0 +1,234 @@
+{
+  "capturedAt": "2026-10-17T06:04:21.764674+00:00",
+  "passed": true,
+  "scope": "Linux amd64 core host and isolated GNOME dconf system proxy with crash recovery",
+  "environment": {
+    "kernel": "Linux 6.6.87.2-microsoft-standard-WSL2",
+    "baseImage": "Alpine 3.22.2 x86_64",
+    "userUID": 1000,
+    "baseImageSha256": "412454ed98025ad9cd910d13f3d448b184e81502baa83180e89f98d0f13674be",
+    "privateMountNamespace": true,
+    "privateSessionBus": true,
+    "temporaryHomeXDGKeyringAndDconf": true,
+    "rootfsStorage": "384 MiB tmpfs",
+    "go": "go1.25.5 windows/amd64 cross build CGO_ENABLED=0",
+    "gnomeKeyring": "48.0-r0",
+    "libsecret": "0.21.7-r0",
+    "dbus": "1.16.2-r1",
+    "glib": "2.84.4-r0",
+    "dconf": "0.40.0-r6",
+    "gnomeSchemas": "48.0-r0",
+    "packagesVerifiedByAPK": true
+  },
+  "artifacts": {
+    "host": {
+      "path": "build/host/linux-amd64/rainlink-host",
+      "bytes": 9765307,
+      "sha256": "d8121ab2cea29193ba2980fd907c6543c6d89467b1515c3c1ff6ed0eb2084b66"
+    },
+    "core": {
+      "path": "build/host/linux-amd64/sing-box",
+      "bytes": 27205780,
+      "sha256": "ce9bb3e44c9b7e7869bd47f8523a22a148e2ff013ae96787558a3fbdd0661d82"
+    },
+    "testBinariesSha256": {
+      "cli.test": "27e5de9c0c919912d5ddc659838e2a4a1d85b849c3c8943a15eb98a082564f3e",
+      "coreprocess.test": "2e8080e3bacf33788e2a4a109cac911266e9c83a49fed7558ca3f1e74a758f07",
+      "gnomeproxy.test": "f264ca741b457739af4bc83210c30a1c7cfdc9f214e54f1e51d25dbb97f078b0",
+      "privatefs.test": "b7cc480bc1b8610746eb5e46f1d67188e0246917d95bd677f3a32805f9352ef6",
+      "securestore.test": "baec6e403ff3327ecd91aa211dbcaa7e02fc119e5f43626c9e20bab8f2e9767a",
+      "session.test": "1b19554712324d9b18b41e95165192f8e11de47eb6cca4d80119599a02add07f",
+      "update.test": "b0146b550ac54f7ac61e682861c4cdf49c5ae995d4027163f932d2ba2a49f6be"
+    }
+  },
+  "observedHostStatus": {
+    "unsupportedDesktop": {
+      "protocolVersion": 1,
+      "host": {
+        "version": "0.1.0",
+        "platform": "linux",
+        "arch": "amd64"
+      },
+      "core": {
+        "state": "ready",
+        "version": "1.12.25-rainlink.1"
+      },
+      "capabilities": {
+        "connect": true,
+        "systemProxy": false,
+        "tun": false
+      }
+    },
+    "verifiedGNOMEBackend": {
+      "protocolVersion": 1,
+      "host": {
+        "version": "0.1.0",
+        "platform": "linux",
+        "arch": "amd64"
+      },
+      "core": {
+        "state": "ready",
+        "version": "1.12.25-rainlink.1"
+      },
+      "capabilities": {
+        "connect": true,
+        "systemProxy": true,
+        "tun": false
+      }
+    }
+  },
+  "linux": {
+    "passEvents": 222,
+    "topLevelPassed": 97,
+    "skipEvents": [
+      "TestLinuxLockedSecretService",
+      "TestPrepareUpstreamPreservesLocalRoutesAndRejectsFakeLiteral"
+    ],
+    "deferredTestSubsequentlyPassed": "TestLinuxLockedSecretService",
+    "gnomeHostRecoveryScenarios": [
+      "toggle-disconnect",
+      "eof",
+      "kill-host",
+      "kill-core",
+      "watcher-restart"
+    ],
+    "testDetails": "gnome-tests.json"
+  },
+  "windows": {
+    "passEvents": 162,
+    "realSystemProxyTestsOptedIn": false,
+    "skipEvents": [
+      "TestSystemProxyRestoresExactOriginalValues",
+      "TestBypassEditDoesNotLeaveDeadProxyConfigured",
+      "TestRecoveryPreservesAnotherClientsLaterProxy"
+    ],
+    "flclashAndItsServiceModified": false
+  },
+  "shared": {
+    "flutterFullRegressionTests": 405,
+    "finalTargetedStatusProtocolTestsPassed": 8,
+    "flutterAnalyzePassed": true,
+    "dartFormattedFiles": 257,
+    "windowsGoVetPassed": true,
+    "linuxAMD64GoVetPassed": true,
+    "linuxARM64GoVetPassed": true,
+    "androidARM64MobileGoVetPassed": true,
+    "goRaceDetectorRun": false,
+    "nativeLinuxVerificationShellSyntaxPassed": true,
+    "nativeLinuxVerificationShellEndToEndRun": false
+  },
+  "cleanup": {
+    "passed": true,
+    "temporaryRootfsMountsGone": true,
+    "temporaryWSLDirectoryRemoved": true,
+    "testKeyringBusCoreAndWatchersStopped": true
+  },
+  "notVerified": [
+    "Real GNOME desktop session and Flutter GUI",
+    "KDE system proxy",
+    "Linux TUN",
+    "Linux packaging and desktop integration",
+    "Linux ARM64 execution",
+    "Remote subscriptions on Linux",
+    "GNOME logout reboot suspend and long-term recovery",
+    "Linux network handover and performance",
+    "Fresh cloud Figma comparison"
+  ],
+  "rawEvidenceSha256": {
+    "gnome-final-native.log": "ffeeb9d38f318845315fc99a73c9c2118e4e65701b7c8c6a3e2d2ea670ccdcbf",
+    "windows-gnome-regression.jsonl": "e91c44afec06e4eba136fd5f69d0657a8ba6ce92f80bb749edcbe5f5909d80c8",
+    "flutter-gnome-regression.jsonl": "ff0059a27828fba9a13735bb28f3f8e772d58ddd4e731e5c6c4d086598db9332",
+    "gnome-cleanup.log": "51eb76d71eac3b41e3ca52937008ed209ed94117c47ecbdc41207ffb31dabebb"
+  },
+  "sourceSha256": {
+    "native/host/cmd/rainlink-host/main.go": "36f7e946d55187513162b2acb19d8817d7ba68390cd1d0f94c7d208df1374a0d",
+    "native/host/cmd/rainlink-launcher/main_windows.go": "91e75f1428d9ebf91be0f378f45b53a2662e19eaa42e527047bb3ef7ad3cc36d",
+    "native/host/cmd/rainlink-updater/main_windows.go": "9298e2efa6763b9f7deafb1e0748c5a86eb759e8b7d9326ac2a3a833a77bb3c8",
+    "native/host/internal/cli/run.go": "568274ea1531a6666e84e02aaa74cdb21df429352911b4101203aa8344e3959e",
+    "native/host/internal/cli/run_test.go": "4907a520e3e3fe1b3a0f90041f2ca2752543d13e4da8b34c7796bb888c1c0493",
+    "native/host/internal/coreprocess/core_hash_generated.go": "d0b1c37ae5d8b113d379b397e0270d6d49a5d257d187083f3f5eae66574fe9ed",
+    "native/host/internal/coreprocess/elevation_windows.go": "42509e6ea72758fa4fadb77f6483d21a17d7ee33eed6a51d7bf5158fb22a0e73",
+    "native/host/internal/coreprocess/platform_other.go": "d2c8c409ed178e393f374e4dc325db436b53d357d927c80f2073e81f2a8f73ed",
+    "native/host/internal/coreprocess/platform_windows.go": "eca74dac264c6a862aa326106ed48db53345efe92720b76470686ab4b37adc7a",
+    "native/host/internal/coreprocess/process.go": "c82cba21e18ae92e66a732df40e5957a7f26c2e7f0d777f489a1e94b369bf945",
+    "native/host/internal/coreprocess/process_test.go": "312571c4d842bfd4854a1ec9966c3f7cf22d4f65cb93fed39a012097332221f5",
+    "native/host/internal/coreprocess/start_linux.go": "405f471dcc9de0a467b77cbf1faac051ef780f4950b1c8cc21e22c8d55708a53",
+    "native/host/internal/coreprocess/start_linux_test.go": "ac1b2291826184ade7f37755c2ef073300aada27cef14da3cd34743134a9846a",
+    "native/host/internal/coreprocess/start_other.go": "bc54add526848fe4a7e2e76c55f2b67d7a979fe0511a14ca2b0fb9e4d2929c23",
+    "native/host/internal/gnomeproxy/backend_linux.go": "864c490291b8aaf95900c337b31ee163bfb2846fd8f9c96ffb8afc590bd1c46b",
+    "native/host/internal/gnomeproxy/controller_linux.go": "22e51c0381623db33073768d8e87b76c7bb45d6c0afa5e01c271a6212295aa7a",
+    "native/host/internal/gnomeproxy/controller_linux_test.go": "8215063b109f5205a89abfe989e4ce28359fc35d242f0ee4a4e25482d2a2fbb8",
+    "native/host/internal/gnomeproxy/environment_linux.go": "0351c9f7d2fc87425698f55d17a058add95f8d50bd75b63783dd72fab2282e45",
+    "native/host/internal/host/status.go": "786f14215eaa6152cad3d773f9eb7145a9e68924cc8c7765ea467a533bd7090a",
+    "native/host/internal/privatefs/directory_linux.go": "dc49eeb4bd2e8c562b1c06dc2fcbdfff5b1be6023aab5420560b52eeca778319",
+    "native/host/internal/privatefs/directory_linux_test.go": "4d8601fff28d1214f40c37d071101f2f98ff8d4c03973f0ba5a8ce8c4179bd56",
+    "native/host/internal/securestore/envelope.go": "27fbf93500f3ac0654eb8b387fff1241f02094a8e0c36b0b6fde9b96e3073f3c",
+    "native/host/internal/securestore/envelope_test.go": "cbc7c279c92844924347c195c00a7f452399a4effdecc5b3fdb2b6cabf0e8e8e",
+    "native/host/internal/securestore/key_service_linux.go": "88f9f0a66531222055ac352754dd3393b022843d3c662e06a71f6c7f9fa6066b",
+    "native/host/internal/securestore/key_service_linux_test.go": "1faaa668058b4785324ceb98dc6c6b0d340167387f3badabd2235597e3e0b338",
+    "native/host/internal/session/advanced.go": "343800fdd9a07a24bb6ad1e40b065a4f104c9cc26ef36dc966fb852fa22ed6c1",
+    "native/host/internal/session/advanced_test.go": "66ee6b2ddd973d002e3a9cb06c94da64b6e45ab85586b72760e5e57b3766c218",
+    "native/host/internal/session/chains.go": "adaff643df19c082ec0b2fba0faa3ed31859a692fad714bc26a1f4c6da94eb97",
+    "native/host/internal/session/chains_test.go": "7f68e8515ba41492e4212d07fa31afcf8b4e389cfb20f927ea22f6ba93a73d69",
+    "native/host/internal/session/config.go": "dba6b485b8eaafa594b1c1c8c4b441738ea88a947b5217df7c672097ccb95843",
+    "native/host/internal/session/connections.go": "2bf4dc0786c6e0cf38c8fb560215b912294d1206401ef4ecdcfa253b96455185",
+    "native/host/internal/session/credentials.go": "af7fcb4e7273c39997b4fae99b87eef4ede9b88e42f33e6831d0926b4c0ecca3",
+    "native/host/internal/session/credentials_linux.go": "0d4da892d58a703466b58e131a13f0c9dfb358e06599a24782aebbe5efe7c962",
+    "native/host/internal/session/credentials_other.go": "eabe29e39b898f582068566d4f9ba184d26e45e0e7f6ba6a7e71e1a206f1d33f",
+    "native/host/internal/session/credentials_test.go": "55c2abe7b751431fa760f7197fde6e4436de1cb95ccc9846ccbfcb2994c51eee",
+    "native/host/internal/session/hysteria2_test.go": "66a88050451dc9b73fa8cd7ccdf4c860323fd194f0690ee21255f97b10394cdb",
+    "native/host/internal/session/logs.go": "0584986ada23cf3a25c0c4b18d980f05d245556393c2bb23608c3b5e4d2ded33",
+    "native/host/internal/session/manager.go": "af063d13a6e9aab78a40b209374ac901f08b41d1c8104659103438e7ea6b0750",
+    "native/host/internal/session/manager_test.go": "046949706f966dc9af9ce7f7687ef321e213cbf4f5b4fc98504599c0f16b0e18",
+    "native/host/internal/session/mobile.go": "0c6a5020ba5896f09f59fe802b8dc23bd04cd8bcfdb2f43d80dc71c99a4a9504",
+    "native/host/internal/session/mobile_connections.go": "a28f5612980547097f6628d47149cc8d626c193715b2034deef68dad5b343a22",
+    "native/host/internal/session/mobile_connections_test.go": "5f0ea9fb6a48b2ef5b961abde59a4ad1c9cc5e3d2ae21521679b60bb77f4fedf",
+    "native/host/internal/session/mobile_test.go": "1b17ed7d39827111895ea239bbf5830da11df5f7bec9de85af272587250a1c21",
+    "native/host/internal/session/node_probe.go": "e64c931e3c9c0defe6c0df9ff8f5abe4c929bb211657d90bbb45d728290920b1",
+    "native/host/internal/session/node_probe_test.go": "6fb3b02e90c197f81f1793805cc216ea20f38faf51d27869b377a266b3a950ba",
+    "native/host/internal/session/platform_other.go": "65b7137c4f028917150c5ba38f606e4deaaedf006bcf85e686e3ce6325dd776c",
+    "native/host/internal/session/platform_windows.go": "b229e32532f0ba6bba8932fd759faa95a87c616759a2c420317a7635a8fed52f",
+    "native/host/internal/session/probe_test.go": "315916723d79fbe48a2bd8feda113a97c53b0826611c9906f5d35bdd50807e47",
+    "native/host/internal/session/protocols_test.go": "522bd2fa39a0bbc30dbde33c1e76e33375c3ce637627112e2a674ccb265e2eec",
+    "native/host/internal/session/proxy_linux.go": "9dc3dca8ed3aff2044483eb0463b6c9416bf831b4ef799e89f4a44937a7c6838",
+    "native/host/internal/session/proxy_linux_test.go": "de38b4d4a42f7ba16a76564d0de8f26b3f93691676f1c18243adbb43ffdfac1c",
+    "native/host/internal/session/proxy_other.go": "800574a66b575d0334a7432e35dc9b02972babb787fc58e198a035dca0555219",
+    "native/host/internal/session/proxy_windows_test.go": "ebeda076d51f30f706141923698726287f5d30009ea913b7acb5683017198706",
+    "native/host/internal/session/routing.go": "2f6282451c7cb37a9d5c02c13092141a3b5429ff01f3a3e83e9866fd3fccd83b",
+    "native/host/internal/session/routing_test.go": "58cdfd7c0fde3941da552261227cee485d8bcb54bf751502474531753cb72b30",
+    "native/host/internal/session/serve.go": "b3a033f69fa4e86387a7aacd5b8a56138430923de38ca75cfea4f3e337eb3cf8",
+    "native/host/internal/session/serve_linux_test.go": "5341fb935ab5eeadc59770fb9831bea0dd165ca27df5d4177c05248d53c54165",
+    "native/host/internal/session/settings.go": "eeb0bfb65cf783acba54f9acb240ed4776aa4f8b5bc8a358c70370787f475106",
+    "native/host/internal/session/settings_test.go": "4b27eb1280440fd332f8b92350f7d3c4a837e6edf272017317bcf079211cd98b",
+    "native/host/internal/session/telemetry_test.go": "807eefd5ae83668f2e75d27fdfbca8085dd6893430ea6500f4dd9a69b16778e2",
+    "native/host/internal/session/tun.go": "1aad5d1266c39fa1d150ed9b68c41544b1f4091f9fe1fe8206cfcc8be2c43b40",
+    "native/host/internal/session/tun_other.go": "e28e38283215e364a89f3b113809fd8a08c2abaf9d1e8cc4298dbaaa643e534a",
+    "native/host/internal/session/tun_test.go": "eca977dbac16c3be4cd974c552377424c3e773646c312e93ef2984071556e570",
+    "native/host/internal/session/tun_windows.go": "5b22f129e3c7d56b736f926bd1752c08e400490b748c440c039878c2bcd551fb",
+    "native/host/internal/session/upstream.go": "16247808329668749a1af2d7db9a54ae2e59efa66e15240a786666b1d3c2eb43",
+    "native/host/internal/session/upstream_other.go": "c339c492e34b9b070d836827b76cbeb1bcb9dfa2ad0bfe2951244aa65b8baf42",
+    "native/host/internal/session/upstream_test.go": "1112859708ff59888024239a77da660e633d6e1e6ff81725f5fe1e581851ddee",
+    "native/host/internal/session/upstream_windows.go": "5502b99f7b7820dec2f653a90bbbb2ef4db5fabad25a70a9345a136441611375",
+    "native/host/internal/session/upstream_windows_test.go": "59d80ee8061b736d0e754812f1be3f2529d5078108f392d390e7d9642bca97d4",
+    "native/host/internal/session/vmess_tuic_test.go": "bdd699e1a66aa8e64899c0fc3341d7761f105e9fa0c82f31040ffacb639acac2",
+    "native/host/internal/update/archive.go": "8757edf5d7822c63d88762f5103db8e0fdea2e0a137cd08e152bf08e363aaf49",
+    "native/host/internal/update/journal.go": "4111dafd615805457b580c0444dccaa41aeec763f9a99fe5b96571a355324882",
+    "native/host/internal/update/journal_test.go": "d01363f1c17420838c76bc07e958eabc1e9a800624679bb3be548ae062d98e50",
+    "native/host/internal/update/process_windows_test.go": "db4a25c557346c2e8ba9d2736492cc1c1009a3cf6e6d0c0076c78402525d24fb",
+    "native/host/internal/update/recovery_windows.go": "f09ef55ea0b1621b034592e10e19241e120af73095ef6854303548381c4e0f20",
+    "native/host/internal/update/recovery_windows_test.go": "91d24d7d218c6ab7d06718c3ff5d5f997a34ee50189df776177b6f790601b5d3",
+    "native/host/internal/update/runtime_windows.go": "f7fb100e00e52306055196682bf3220065ba5aed2182c79d4fc7956e35ef4391",
+    "native/host/internal/update/safety_other.go": "62a4875f2e97972183b03234751997ec319d6621c9d4e526d59de3a903595383",
+    "native/host/internal/update/testdata/fixture.go": "92d3f8d16b3afc8b010fac09241584ea629993a5f9237b201909ee955a12bcee",
+    "native/host/internal/update/testdata/offline_host.go": "f0abf542793eb7f706fb3562147170181013c2a02932ba57624c253e34141070",
+    "native/host/internal/update/transaction.go": "05491ed19a3bc01172dcd3b307f9012af4465d2d19c2eff72e2ef73aadd35c8b",
+    "native/host/internal/update/transaction_test.go": "7fe13b806ea7cfb028ff72360a876670a0c113c6bafa008069e6201d9933c2cb",
+    "native/host/mobileconfig/config.go": "d934a6dc8ce887bde9fe3166733cc501b3c6be48b63a4fe445eb0164ae25d611",
+    "native/host/go.mod": "6cbd3d4bc03cd42d48ed429f097f0bae25b0c56b666def197f4ef419069d9275",
+    "native/host/go.sum": "680565d6c0cb938b328e363959a68f8671f6222b5c717adfff72a3621dcaa632",
+    "tools/verify_linux_session.sh": "841b808de412cd537e29787cb7791b25e54ad206f8ac231da3136617d538cfd2",
+    "tools/core.lock.json": "e6719a848bbadba7a0e03b9340d1d18176adf20f07cbabb2325b68452579fb99",
+    "app/lib/platform/core/host_status_protocol.dart": "945a1284a698ecd97461cdf498841560e041b646f555de26a33414e03cbc8207",
+    "app/test/core_gateway_test.dart": "738f746c34b08e89048fcbe85f7d32cf4dcedb53a34f585b32dbf820d24a928f"
+  }
+}

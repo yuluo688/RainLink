@@ -1,0 +1,114 @@
+=== RUN   TestLinuxTUNManagerClientFixture
+    managed_tun_linux_test.go:35: ordinary-user managed-host subprocess only
+--- SKIP: TestLinuxTUNManagerClientFixture (0.00s)
+=== RUN   TestLinuxTUNClientRetainsDeadlineBeforeContextTimer
+--- PASS: TestLinuxTUNClientRetainsDeadlineBeforeContextTimer (0.00s)
+=== RUN   TestLinuxTUNNativeLifecycleClientFixture
+    tun_client_linux_test.go:245: ordinary native client subprocess only
+--- SKIP: TestLinuxTUNNativeLifecycleClientFixture (0.00s)
+=== RUN   TestLinuxTUNCompilerRejectsUntrustedBoundary
+=== RUN   TestLinuxTUNCompilerRejectsUntrustedBoundary/null
+=== RUN   TestLinuxTUNCompilerRejectsUntrustedBoundary/array
+=== RUN   TestLinuxTUNCompilerRejectsUntrustedBoundary/duplicate
+=== RUN   TestLinuxTUNCompilerRejectsUntrustedBoundary/case-alias
+=== RUN   TestLinuxTUNCompilerRejectsUntrustedBoundary/tail
+=== RUN   TestLinuxTUNCompilerRejectsUntrustedBoundary/missing-secret
+=== RUN   TestLinuxTUNCompilerRejectsUntrustedBoundary/unbounded
+=== RUN   TestLinuxTUNCompilerRejectsUntrustedBoundary/raw-core
+=== RUN   TestLinuxTUNCompilerRejectsUntrustedBoundary/caller-resources
+--- PASS: TestLinuxTUNCompilerRejectsUntrustedBoundary (0.00s)
+    --- PASS: TestLinuxTUNCompilerRejectsUntrustedBoundary/null (0.00s)
+    --- PASS: TestLinuxTUNCompilerRejectsUntrustedBoundary/array (0.00s)
+    --- PASS: TestLinuxTUNCompilerRejectsUntrustedBoundary/duplicate (0.00s)
+    --- PASS: TestLinuxTUNCompilerRejectsUntrustedBoundary/case-alias (0.00s)
+    --- PASS: TestLinuxTUNCompilerRejectsUntrustedBoundary/tail (0.00s)
+    --- PASS: TestLinuxTUNCompilerRejectsUntrustedBoundary/missing-secret (0.00s)
+    --- PASS: TestLinuxTUNCompilerRejectsUntrustedBoundary/unbounded (0.00s)
+    --- PASS: TestLinuxTUNCompilerRejectsUntrustedBoundary/raw-core (0.00s)
+    --- PASS: TestLinuxTUNCompilerRejectsUntrustedBoundary/caller-resources (0.00s)
+=== RUN   TestLinuxTUNCompilerUsesHeldResourcesAndPreservesKernelState
+--- PASS: TestLinuxTUNCompilerUsesHeldResourcesAndPreservesKernelState (0.03s)
+=== RUN   TestLinuxTUNForwardingClientFixture
+    tun_forward_linux_test.go:147: ordinary-user forwarding subprocess only
+--- SKIP: TestLinuxTUNForwardingClientFixture (0.00s)
+=== RUN   TestLinuxTUNForwardingServerFixture
+    tun_forward_server_linux_test.go:79: forwarding server subprocess only
+--- SKIP: TestLinuxTUNForwardingServerFixture (0.00s)
+=== RUN   TestLinuxTUNLogRedactionAndMonotonicClearBarrier
+--- PASS: TestLinuxTUNLogRedactionAndMonotonicClearBarrier (0.00s)
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/version
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/event
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/empty
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/sequence
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/source
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/length
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/stream
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/cursor
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/identity
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/empty-message
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/timestamp
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/missing-tick
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/negative-tick
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/future-tick
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/false-drop
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/batch-size
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/level
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/unknown
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/duplicate
+=== RUN   TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/case
+--- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically (0.01s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/version (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/event (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/empty (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/sequence (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/source (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/length (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/stream (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/cursor (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/identity (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/empty-message (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/timestamp (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/missing-tick (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/negative-tick (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/future-tick (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/false-drop (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/batch-size (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/level (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/unknown (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/duplicate (0.00s)
+    --- PASS: TestLinuxTUNLogReceiverRejectsInvalidBatchesAtomically/case (0.00s)
+=== RUN   TestLinuxTUNLogFinalDrainIsBoundedAndReportsDrops
+--- PASS: TestLinuxTUNLogFinalDrainIsBoundedAndReportsDrops (0.01s)
+=== RUN   TestLinuxTUNLogBackpressureDoesNotBlockCoreAndCancelsBrokenStream
+--- PASS: TestLinuxTUNLogBackpressureDoesNotBlockCoreAndCancelsBrokenStream (1.10s)
+=== RUN   TestLinuxTUNLogCancellationJoinsWriter
+--- PASS: TestLinuxTUNLogCancellationJoinsWriter (0.10s)
+=== RUN   TestLinuxTUNPermissionClientFixture
+    tun_service_linux_test.go:34: ordinary-user fixture subprocess only
+--- SKIP: TestLinuxTUNPermissionClientFixture (0.00s)
+=== RUN   TestLinuxTUNRouteAgingRetainsAllConfigurationFields
+=== RUN   TestLinuxTUNRouteAgingRetainsAllConfigurationFields/natural-aging
+=== RUN   TestLinuxTUNRouteAgingRetainsAllConfigurationFields/expired-too-fast
+=== RUN   TestLinuxTUNRouteAgingRetainsAllConfigurationFields/lifetime-reset
+=== RUN   TestLinuxTUNRouteAgingRetainsAllConfigurationFields/other-cache-field
+=== RUN   TestLinuxTUNRouteAgingRetainsAllConfigurationFields/priority
+=== RUN   TestLinuxTUNRouteAgingRetainsAllConfigurationFields/additional-route
+--- PASS: TestLinuxTUNRouteAgingRetainsAllConfigurationFields (0.00s)
+    --- PASS: TestLinuxTUNRouteAgingRetainsAllConfigurationFields/natural-aging (0.00s)
+    --- PASS: TestLinuxTUNRouteAgingRetainsAllConfigurationFields/expired-too-fast (0.00s)
+    --- PASS: TestLinuxTUNRouteAgingRetainsAllConfigurationFields/lifetime-reset (0.00s)
+    --- PASS: TestLinuxTUNRouteAgingRetainsAllConfigurationFields/other-cache-field (0.00s)
+    --- PASS: TestLinuxTUNRouteAgingRetainsAllConfigurationFields/priority (0.00s)
+    --- PASS: TestLinuxTUNRouteAgingRetainsAllConfigurationFields/additional-route (0.00s)
+=== RUN   TestTUNCompilerProtectsUpstreamAndInterceptsDNSBeforeUserModes
+--- PASS: TestTUNCompilerProtectsUpstreamAndInterceptsDNSBeforeUserModes (0.03s)
+=== RUN   TestTUNInterfaceNameFitsPlatformAndDoesNotRepeat
+--- PASS: TestTUNInterfaceNameFitsPlatformAndDoesNotRepeat (0.00s)
+=== RUN   TestCancelledTUNPlanDoesNotInspectNetwork
+--- PASS: TestCancelledTUNPlanDoesNotInspectNetwork (0.00s)
+=== RUN   TestIsolatedDiagnosticsCannotStartTUNCapture
+--- PASS: TestIsolatedDiagnosticsCannotStartTUNCapture (0.00s)
+=== RUN   TestLinuxTUNPlanUsesRealKernelUpstream
+--- PASS: TestLinuxTUNPlanUsesRealKernelUpstream (0.00s)
+PASS

@@ -1,0 +1,105 @@
+{
+  "environment": "Windows elevated local fixture",
+  "realProviderTest": false,
+  "before": {
+    "network": "bc34c1d1c419c816c0da5efddf2b48863dd5d13a3169bac552148478273797c0",
+    "proxy": "a2e6841150ae1b263a657be911720b2366ca5f6e8cb0cb9279b8fa47cee41410"
+  },
+  "scenarios": [
+    {
+      "name": "core-crash",
+      "unproxiedTcpCaptured": true,
+      "fixtureRequests": 1,
+      "tunConfirmed": true,
+      "singleGuardedCore": true,
+      "networkRestored": true,
+      "proxyRestored": true
+    },
+    {
+      "name": "udp-dns",
+      "unproxiedUdpCaptured": true,
+      "dnsInterceptedByRuntimePolicy": true,
+      "tunConfirmed": true,
+      "singleGuardedCore": true,
+      "networkRestored": true,
+      "proxyRestored": true
+    },
+    {
+      "name": "guardian-crash",
+      "unproxiedTcpCaptured": true,
+      "fixtureRequests": 1,
+      "tunConfirmed": true,
+      "singleGuardedCore": true,
+      "networkRestored": true,
+      "proxyRestored": true
+    },
+    {
+      "name": "udp-dns",
+      "unproxiedUdpCaptured": true,
+      "dnsInterceptedByRuntimePolicy": true,
+      "tunConfirmed": true,
+      "singleGuardedCore": true,
+      "networkRestored": true,
+      "proxyRestored": true
+    },
+    {
+      "name": "host-crash",
+      "unproxiedTcpCaptured": true,
+      "fixtureRequests": 1,
+      "tunConfirmed": true,
+      "singleGuardedCore": true,
+      "networkRestored": true,
+      "proxyRestored": true
+    },
+    {
+      "name": "udp-dns",
+      "unproxiedUdpCaptured": true,
+      "dnsInterceptedByRuntimePolicy": true,
+      "tunConfirmed": true,
+      "singleGuardedCore": true,
+      "networkRestored": true,
+      "proxyRestored": true
+    },
+    {
+      "name": "core-crash",
+      "unproxiedTcpCaptured": true,
+      "fixtureRequests": 1,
+      "tunConfirmed": true,
+      "singleGuardedCore": true,
+      "networkRestored": true,
+      "proxyRestored": true
+    },
+    {
+      "name": "udp-dns",
+      "unproxiedUdpCaptured": true,
+      "dnsInterceptedByRuntimePolicy": true,
+      "tunConfirmed": true,
+      "singleGuardedCore": true,
+      "networkRestored": true,
+      "proxyRestored": true
+    },
+    {
+      "name": "guardian-crash",
+      "unproxiedTcpCaptured": true,
+      "fixtureRequests": 1,
+      "tunConfirmed": true,
+      "singleGuardedCore": true,
+      "networkRestored": true,
+      "proxyRestored": true
+    },
+    {
+      "name": "udp-dns",
+      "unproxiedUdpCaptured": true,
+      "dnsInterceptedByRuntimePolicy": true,
+      "tunConfirmed": true,
+      "singleGuardedCore": true,
+      "networkRestored": true,
+      "proxyRestored": true
+    }
+  ],
+  "after": {
+    "network": "bc34c1d1c419c816c0da5efddf2b48863dd5d13a3169bac552148478273797c0",
+    "proxy": "a2e6841150ae1b263a657be911720b2366ca5f6e8cb0cb9279b8fa47cee41410"
+  },
+  "passed": true
+}

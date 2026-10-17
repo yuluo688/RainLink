@@ -1,0 +1,10 @@
+{
+  "at": "2026-10-16T21:56:26.2888200+08:00",
+  "archive": "build/RainLink-windows-x64-node-management-preview.zip",
+  "bytes": 41350560,
+  "sha256": "d621b62eea97ce2e0dbeec8e725cf5e512713969cef574da8d4338793c6cba5d",
+  "hostSha256": "de6c52fe0e50f0294b4001a4f30199e96208c316c0bc209e44629621880c1f6e",
+  "coreSha256": "cf6863552456c535fd79a0724f2d01352e77c97f4958466b75d9f07d8f0edef7",
+  "releaseEngineVerified": true,
+  "databaseSchema": 5
+}

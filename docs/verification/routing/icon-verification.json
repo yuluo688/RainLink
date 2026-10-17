@@ -1,0 +1,22 @@
+[
+  {
+    "name": "rules",
+    "matches": true,
+    "sha256": "a5b18206c66ae096f5b16fb2841fa5d458bfc10d73f92bccb76394efadb8dee9"
+  },
+  {
+    "name": "plus",
+    "matches": true,
+    "sha256": "b40fc164b7889fcb382fce8e3989cd4da442e3876b6d216492eed8042b828b4c"
+  },
+  {
+    "name": "more",
+    "matches": true,
+    "sha256": "160d54c8f3ed85cfda67663275daf9a1408291f9e80f61eda65120c221c9a105"
+  },
+  {
+    "name": "close",
+    "matches": true,
+    "sha256": "aaaaeab113662ca4ee109369deed1722c3044985ddf8d014d62195ec3d5393d3"
+  }
+]

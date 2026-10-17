@@ -1,0 +1,10 @@
+{
+  "realLoopbackHttp": true,
+  "actualSha256Download": true,
+  "copiedWindowsHelperReady": true,
+  "safeAbortAcknowledged": true,
+  "installedRuntimeUnchanged": true,
+  "helperCacheRemoved": true,
+  "committedInThisTest": false,
+  "userDatabaseUsed": false
+}

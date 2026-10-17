@@ -1,0 +1,64 @@
+{
+  "atUtc": "2026-10-16T10:03:02.654753+00:00",
+  "archive": "build/RainLink-windows-x64-hysteria2-network-preview.zip",
+  "archiveBytes": 40334072,
+  "archiveEntries": 69,
+  "archiveSha256": "71bbda00953205d2a32738b16edae30595d65942b26909abd4dd1211882971a8",
+  "archiveCrcCheck": "passed",
+  "flutter": "3.27.4",
+  "dart": "3.6.2",
+  "go": "1.25.5",
+  "core": "1.12.25-rainlink.1",
+  "goFormat": "passed",
+  "goVet": "passed",
+  "goTestActions": {
+    "run": 41,
+    "output": 85,
+    "pass": 38,
+    "skip": 3
+  },
+  "skippedGoTests": [
+    "TestSystemProxyRestoresExactOriginalValues",
+    "TestBypassEditDoesNotLeaveDeadProxyConfigured",
+    "TestRecoveryPreservesAnotherClientsLaterProxy"
+  ],
+  "dartFormat": "passed",
+  "flutterAnalyze": "passed",
+  "flutterUnitTests": "138 passed in previous protocol-support round; not rerun for host and tool changes",
+  "releaseEngineMatchesSdk": true,
+  "bundledHostMatchesBuild": true,
+  "bundledCoreMatchesBuild": true,
+  "binarySha256": {
+    "rainlink.exe": "38985be00b1a44e319a49031631a1c33ccc8196303a4a62a7165a40d299b0861",
+    "rainlink-host.exe": "54dcdfea86ae24a13d8f96a6bcc23e26d1d924a4c6c1df38168585f15d9e3b0e",
+    "sing-box.exe": "cf6863552456c535fd79a0724f2d01352e77c97f4958466b75d9f07d8f0edef7",
+    "flutter_windows.dll": "55089c0bb72c53220aeecd31c859946b4a7e990fd6ea29975f448e22b2586677",
+    "data/app.so": "04628b8ec06a2f676578e9b8ef158f34f57fa0122cab64e64d3b37828301abae",
+    "sing-box-source.zip": "df48298c816fda8663cccf9e65f87db74b75e490ac8e9e8b7862292ef2183601"
+  },
+  "releaseProcessId": 25872,
+  "releaseStdoutBytes": 0,
+  "releaseStderrBytes": 0,
+  "releaseUi": {
+    "preferencesPreserved": true,
+    "groupSelectionPreserved": true,
+    "nodeIdsPreserved": true,
+    "protocolCounts": {
+      "hysteria2": 16,
+      "vless": 52
+    },
+    "systemProxyPreserved": true,
+    "listenersClosed": true,
+    "actualUiHttpsEgressObserved": true,
+    "actualUiCountryObserved": true,
+    "testTrafficAddedToDailyStats": true,
+    "actualUiProbeFailureObserved": true,
+    "failedProbeScreenshot": "docs/verification/hysteria2-network-probe-failure.png"
+  },
+  "realProviderHttpsObserved": true,
+  "realProviderAvailabilityStable": false,
+  "originalNodes": 68,
+  "hysteria2Nodes": 16,
+  "userDatabaseSchema": 3,
+  "realMobileDeviceNetworkTested": false
+}

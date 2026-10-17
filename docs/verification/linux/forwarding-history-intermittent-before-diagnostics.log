@@ -1,0 +1,8 @@
+=== RUN   TestIsolatedLinuxTUNForwarding
+--- PASS: TestIsolatedLinuxTUNForwarding (3.88s)
+=== RUN   TestIsolatedLinuxTUNForwarding
+--- PASS: TestIsolatedLinuxTUNForwarding (4.22s)
+=== RUN   TestIsolatedLinuxTUNForwarding
+    tun_forward_linux_test.go:365: ordinary forwarding client did not confirm all traffic --- FAIL: TestLinuxTUNForwardingClientFixture (4.03s) <nil> 
+--- FAIL: TestIsolatedLinuxTUNForwarding (5.67s)
+FAIL

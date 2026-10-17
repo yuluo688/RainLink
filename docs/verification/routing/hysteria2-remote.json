@@ -1,0 +1,63 @@
+{
+  "atUtc": "2026-10-16T11:28:29.618234+00:00",
+  "scope": "existing authorized encrypted provider nodes; no subscription fetch",
+  "baselineHost": false,
+  "otherClientRunning": false,
+  "tests": [
+    {
+      "nodeAlias": 1,
+      "protocol": "hysteria2",
+      "regionHint": "sg",
+      "serverIsLiteral": true,
+      "certificatePinRetained": true,
+      "portHoppingRetained": true,
+      "systemProxyRequested": false,
+      "coreReady": true,
+      "traceEndpoint": "api.ip.sb/geoip",
+      "curlExitCode": 0,
+      "httpsTransfer": true,
+      "traceCountryCode": "US",
+      "telemetry": {
+        "egressObserved": true,
+        "countryCode": "sg",
+        "latencyMs": 1026,
+        "uploadBytes": 4299,
+        "downloadBytes": 15243,
+        "probeError": "",
+        "egressMatchesTrace": false
+      },
+      "trafficRecorded": true,
+      "listenerClosed": true,
+      "durationMs": 2546
+    },
+    {
+      "nodeAlias": 6,
+      "protocol": "hysteria2",
+      "regionHint": "tw",
+      "serverIsLiteral": false,
+      "certificatePinRetained": true,
+      "portHoppingRetained": true,
+      "systemProxyRequested": false,
+      "coreReady": true,
+      "traceEndpoint": "api.ip.sb/geoip",
+      "curlExitCode": 0,
+      "httpsTransfer": true,
+      "traceCountryCode": "TW",
+      "telemetry": {
+        "egressObserved": true,
+        "countryCode": "tw",
+        "latencyMs": 1366,
+        "uploadBytes": 4299,
+        "downloadBytes": 14002,
+        "probeError": "",
+        "egressMatchesTrace": true
+      },
+      "trafficRecorded": true,
+      "listenerClosed": true,
+      "durationMs": 2859
+    }
+  ],
+  "userDataAndPreferencesUnchanged": true,
+  "systemProxyUnchanged": true,
+  "passed": true
+}

@@ -1,0 +1,57 @@
+[
+  {
+    "icon": "back.svg",
+    "matchesFigma": true,
+    "sha256": "69f8fa58a68cc78b66a84921843784dbc920d197fea623203d7e5f0a4400fffa"
+  },
+  {
+    "icon": "check.svg",
+    "matchesFigma": true,
+    "sha256": "32d9d80aecafbc209e5b093d033c5fe71af6ee178d606c09992745de2adf4c8e"
+  },
+  {
+    "icon": "close.svg",
+    "matchesFigma": true,
+    "sha256": "aaaaeab113662ca4ee109369deed1722c3044985ddf8d014d62195ec3d5393d3"
+  },
+  {
+    "icon": "download.svg",
+    "matchesFigma": true,
+    "sha256": "ee6e5b811acbb7a59b4f3a1aad81e3a95b1cf9ecdfc17e255abd5a9d1f3c744f"
+  },
+  {
+    "icon": "globe.svg",
+    "matchesFigma": true,
+    "sha256": "2cf15b34f5011e42e5f248dd461b45ef46d4a6584b44235379a943d65b3e487c"
+  },
+  {
+    "icon": "link.svg",
+    "matchesFigma": true,
+    "sha256": "3e31ce5fee121e68bd76583099c068eb9077f61d946bfa150c77fc973a050558"
+  },
+  {
+    "icon": "more.svg",
+    "matchesFigma": true,
+    "sha256": "160d54c8f3ed85cfda67663275daf9a1408291f9e80f61eda65120c221c9a105"
+  },
+  {
+    "icon": "plus.svg",
+    "matchesFigma": true,
+    "sha256": "b40fc164b7889fcb382fce8e3989cd4da442e3876b6d216492eed8042b828b4c"
+  },
+  {
+    "icon": "search.svg",
+    "matchesFigma": true,
+    "sha256": "a599be032943c70672bb56da3b2d48606662ab6933cb8d1e13eecdc5a7ea001e"
+  },
+  {
+    "icon": "speed.svg",
+    "matchesFigma": true,
+    "sha256": "c0af435c72d157602593ac343ba7579f60aa1d67f5109357234884f4a1e79ac4"
+  },
+  {
+    "icon": "upload.svg",
+    "matchesFigma": true,
+    "sha256": "570cdfd6724df8e8782acb2e1731a81f56c0838a27eefc3851d16c758155adf0"
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "at": "2026-10-16T20:56:14.884444",
+  "scenario": "localhost VMess and TUIC v5 fixtures with bundled core",
+  "vmessManualDialog": true,
+  "vmessAlterId": 64,
+  "tuicSubscriptionImported": true,
+  "tuicCertificatePinned": true,
+  "realHttpPayloads": 2,
+  "selectedOnlyOnSave": true,
+  "connectedFromOverview": true,
+  "systemProxyChanged": false,
+  "testDatabase": "in-memory",
+  "internetTargets": "rejected by fixture routes"
+}

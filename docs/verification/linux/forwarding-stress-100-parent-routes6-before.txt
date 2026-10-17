@@ -1,0 +1,4 @@
+fe80::/64 dev eth0  metric 256 
+local ::1 dev lo table local  metric 0 
+local fe80::215:5dff:feb8:59b dev eth0 table local  metric 0 
+multicast ff00::/8 dev eth0 table local  metric 256 

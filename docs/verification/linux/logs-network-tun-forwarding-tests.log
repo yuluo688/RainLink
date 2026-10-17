@@ -1,0 +1,7 @@
+=== RUN   TestIsolatedLinuxTUNForwarding
+--- PASS: TestIsolatedLinuxTUNForwarding (4.09s)
+=== RUN   TestIsolatedLinuxTUNForwarding
+--- PASS: TestIsolatedLinuxTUNForwarding (4.21s)
+=== RUN   TestIsolatedLinuxTUNForwarding
+--- PASS: TestIsolatedLinuxTUNForwarding (4.22s)
+PASS

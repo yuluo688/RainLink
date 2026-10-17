@@ -1,0 +1,2 @@
+{"messages":["TUN 系统授权已通过","network: updated default interface ens2, index 2","inbound/mixed[mixed-in]: tcp server started at 127.0.0.1:37471","inbound/tun[rainlink-tun]: started at rl-lixxdfm5","clash-api: restful api listening at 127.0.0.1:34701","sing-box started (0.644s)","TUN 会话清理已完成，网络资源已恢复"],"scenario":"allow"}
+PASS

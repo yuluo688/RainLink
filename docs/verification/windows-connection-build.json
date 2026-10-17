@@ -1,0 +1,57 @@
+{
+  "builtAtUtc": "2026-10-16T04:26:18.875191+00:00",
+  "platform": "windows-x64",
+  "flutter": "3.27.4",
+  "dart": "3.6.2",
+  "go": "1.25.5",
+  "coreVersion": "1.12.25",
+  "flutterTests": 80,
+  "flutterAnalyze": "passed",
+  "goVet": "passed",
+  "goRealCoreAndSystemProxyTests": "passed",
+  "windowsUiIntegration": "passed",
+  "desktopSmoke": "passed",
+  "recoveryScenarios": [
+    {
+      "scenario": "disconnect",
+      "coreVersion": "1.12.25",
+      "realTransfer": true,
+      "publicEgress": {
+        "ipObserved": true,
+        "countryCode": "sg",
+        "latencyMs": null
+      },
+      "exactProxyRestoration": true,
+      "listenerClosed": true
+    },
+    {
+      "scenario": "stdin_eof",
+      "coreVersion": "1.12.25",
+      "realTransfer": true,
+      "exactProxyRestoration": true,
+      "listenerClosed": true
+    },
+    {
+      "scenario": "core_crash",
+      "coreVersion": "1.12.25",
+      "realTransfer": true,
+      "exactProxyRestoration": true,
+      "listenerClosed": true
+    },
+    {
+      "scenario": "host_crash",
+      "coreVersion": "1.12.25",
+      "realTransfer": true,
+      "exactProxyRestoration": true,
+      "listenerClosed": true
+    }
+  ],
+  "archive": "build\\RainLink-windows-x64-preview.zip",
+  "archiveBytes": 43917158,
+  "archiveSha256": "4d2a293534f305059cec7ba70eec24a215292cc54a92526fccedf2c5b474e90d",
+  "binarySha256": {
+    "rainlink.exe": "df4548fb70f56deb135f8577c2f5f72db083976365641cbf959a3c9b1353f0e2",
+    "rainlink-host.exe": "f928728570bf7cd29bdf61ff9e9449eb84b0d58dc2f6eddb6d977f21e24eeaac",
+    "sing-box.exe": "fc7b65219abe8a0166d0b4891a2f7cabcbcc13b3adcf89e6d5913743a67aba10"
+  }
+}

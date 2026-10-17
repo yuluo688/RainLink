@@ -1,0 +1,31 @@
+{
+  "at": "2026-10-17T03:46:26.474213+08:00",
+  "archive": "build/RainLink-windows-x64-expiry-preview.zip",
+  "archiveSha256": "2a8fc3544465c12f8eb48508006fc89ea8ad8a62b2e3fe59bff85b5f07455260",
+  "releaseEngineVerified": true,
+  "actualReleaseWindowInspected": true,
+  "screenshots": [
+    "release-overview.png",
+    "release-general.png",
+    "release-expiry-row.png"
+  ],
+  "reminderLeftDisabled": true,
+  "normalExit": true,
+  "unitAndWidgetTests": 303,
+  "visualFixtureScreenshots": 32,
+  "nativeIntegrationPassed": true,
+  "notificationDisplayVerified": false,
+  "stateDigestsUnchangedAfterTestsAndRelease": true,
+  "databaseIntegrity": "ok",
+  "databaseSchema": 6,
+  "counts": {
+    "nodes": 68,
+    "node_groups": 1,
+    "node_overrides": 0,
+    "preferences": 4
+  },
+  "startupRegistryUnchanged": true,
+  "systemProxyUnchanged": true,
+  "rainlinkProcessesRemaining": false,
+  "existingHelperPidPreserved": 6156
+}

@@ -1,0 +1,21 @@
+{
+  "at": "2026-10-17T03:12:16.594916+08:00",
+  "archive": "build/RainLink-windows-x64-density-preview.zip",
+  "bytes": 41151204,
+  "sha256": "af2a8cd5ae874b496826fca8aa4feea909accb00b48577195e9da9e3fb75a596",
+  "applicationSha256": "9c938d495b82323471b7f6f5d8a7f23b4d6f7ed1d6ce62500575392c5754c605",
+  "aotSha256": "a5e5979f41261b13484e0a003db165ead550b59e984f1a15d33cffb60b596aa5",
+  "hostSha256": "fd15ceb86467197abf11ecd12bd89d697e96835c33aa819c38c2899e08318718",
+  "coreSha256": "cf6863552456c535fd79a0724f2d01352e77c97f4958466b75d9f07d8f0edef7",
+  "coreVersion": "1.12.25-rainlink.1",
+  "engineSha256": "55089c0bb72c53220aeecd31c859946b4a7e990fd6ea29975f448e22b2586677",
+  "releaseEngineVerified": true,
+  "zipCrcVerified": true,
+  "entries": 75,
+  "runtimeLicensesIncluded": true,
+  "coreSourceIncluded": true,
+  "userDatabaseIncluded": false,
+  "databaseSchema": 6,
+  "version": "0.1.0+1",
+  "verification": "docs/verification/density.md"
+}

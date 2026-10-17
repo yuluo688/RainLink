@@ -1,0 +1,44 @@
+{
+  "at": "2026-10-17T03:10:22.252055+08:00",
+  "flutterTests": 287,
+  "flutterAnalyze": "passed",
+  "dartFilesFormatted": 215,
+  "nativeWindowsEvidence": "windows-evidence.json",
+  "figmaIcons": "icons.json",
+  "fixtureImages": 140,
+  "sizes": [
+    [
+      960,
+      640
+    ],
+    [
+      1440,
+      900
+    ],
+    [
+      393,
+      852
+    ],
+    [
+      320,
+      640
+    ]
+  ],
+  "mobileLargeTextScale": 1.3,
+  "fixtureMobileLayoutOnly": true,
+  "visualIntegrationPassed": true,
+  "reviewedScreenshots": [
+    "overview-960-dark-compact-fixture.png",
+    "overview-960-dark-standard-fixture.png",
+    "settings-appearance-960-dark-compact-fixture.png",
+    "settings-appearance-1440-light-standard-fixture.png",
+    "settings-appearance-393-dark-compact-fixture.png",
+    "density-menu-320-light-standard-fixture.png",
+    "add-node-320-light-standard-fixture.png",
+    "nodes-393-dark-compact-fixture.png",
+    "groups-393-dark-compact-fixture.png",
+    "connections-list-320-light-standard-fixture.png",
+    "logs-list-393-dark-compact-fixture.png",
+    "advanced-keyboard-320-light-standard-fixture.png"
+  ]
+}

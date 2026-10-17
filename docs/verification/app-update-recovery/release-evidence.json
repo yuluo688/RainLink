@@ -1,0 +1,44 @@
+{
+  "at": "2026-10-17T05:38:55.376967+08:00",
+  "version": "0.1.0+3",
+  "databaseSchema": 6,
+  "counts": {
+    "nodes": 68,
+    "node_groups": 1,
+    "node_overrides": 0,
+    "preferences": 4
+  },
+  "allUserTablesUnchanged": true,
+  "startupRegistryUnchanged": true,
+  "systemProxyUnchanged": true,
+  "normalEntry": "rainlink.exe",
+  "runtimeEntry": "rainlink-ui.exe",
+  "normalExitObserved": true,
+  "rainlinkProcessesRemaining": 0,
+  "productionReleaseCheck": {
+    "requestedInActualReleaseWindow": true,
+    "observedResult": "empty",
+    "observedLocalTime": "2026-10-17 05:36:50",
+    "downloadOrInstallPerformed": false
+  },
+  "startupUpdateCheckEnabled": false,
+  "autoConnectEnabled": false,
+  "expiryNotificationsEnabled": false,
+  "subscriptionRequestsPerformed": false,
+  "preexistingFlClashHelperServicePreserved": 6156,
+  "wideSidebarVersionObserved": "0.1.0+3",
+  "snapshots": [
+    "build/recovery-release-before.json",
+    "build/recovery-release-after.json"
+  ],
+  "checks": {
+    "flutterPassed": 332,
+    "goPassedTestEvents": 79,
+    "goSkippedTestEvents": 26,
+    "pythonPackagingPassed": 5,
+    "windowsDownloadPrepareAbort": true,
+    "actualAotScenarios": 3,
+    "strongKillBeforeAndAfterAcceptance": true,
+    "physicalPowerLossTested": false
+  }
+}

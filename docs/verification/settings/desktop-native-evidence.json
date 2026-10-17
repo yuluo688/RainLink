@@ -1,0 +1,19 @@
+{
+  "at": "2026-10-17T00:23:33.142336",
+  "nativeWindows": true,
+  "temporaryDatabase": true,
+  "autoConnectAppliedSavedTarget": true,
+  "savedMode": "direct",
+  "systemProxyEnabled": false,
+  "nativeTrayCreated": true,
+  "shellTrayRegistrationVerified": true,
+  "windowCloseKeptSession": true,
+  "transferWhileHidden": 1,
+  "nativeTrayRestoredWindow": true,
+  "disableTrayRestoredWindow": true,
+  "hiddenWithoutTrayRejected": true,
+  "connectionNotificationSubmitted": true,
+  "notificationDisplayVerified": false,
+  "startupRegistryWriteAndReadback": true,
+  "startupRegistrationRestored": true
+}

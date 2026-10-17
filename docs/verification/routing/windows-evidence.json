@@ -1,0 +1,13 @@
+{
+  "at": "2026-10-16T19:22:36.210565",
+  "scenario": "localhost fixtures with real bundled core",
+  "uiRuleAddAndEdit": true,
+  "cidrNormalized": true,
+  "groupMemoryObserved": true,
+  "ruleMode": "group-proxy",
+  "globalMode": "primary-proxy",
+  "directMode": "direct-origin",
+  "editKeptActiveSnapshot": true,
+  "reconnectAppliedNewRules": true,
+  "systemProxyChanged": false
+}

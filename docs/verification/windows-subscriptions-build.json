@@ -1,0 +1,72 @@
+{
+  "builtAtUtc": "2026-10-16T06:49:16.677969+00:00",
+  "platform": "windows-x64",
+  "flutter": "3.27.4",
+  "dart": "3.6.2",
+  "go": "1.25.5",
+  "coreVersion": "1.12.25",
+  "databaseSchema": 3,
+  "flutterTests": 109,
+  "flutterAnalyze": "passed",
+  "dartFormat": "passed",
+  "goVet": "passed",
+  "goRealCoreAndSystemProxyTests": "passed",
+  "realUpstreamCases": [
+    "SS AEAD",
+    "SS 2022",
+    "VLESS TCP",
+    "VLESS WebSocket TLS",
+    "VLESS gRPC TLS",
+    "Trojan TLS",
+    "Trojan WebSocket TLS"
+  ],
+  "realityVision": "core configuration check only; no external Reality handshake",
+  "windowsSubscriptionUiIntegration": "passed with in-memory local subscription fixture",
+  "windowsManualNodeUiIntegration": "passed",
+  "desktopSmoke": "passed",
+  "releaseRuntime": "launched and screenshot inspected",
+  "releaseEngineMatchesSdk": true,
+  "recoveryScenarios": [
+    {
+      "scenario": "disconnect",
+      "coreVersion": "1.12.25",
+      "realTransfer": true,
+      "exactProxyRestoration": true,
+      "listenerClosed": true
+    },
+    {
+      "scenario": "stdin_eof",
+      "coreVersion": "1.12.25",
+      "realTransfer": true,
+      "exactProxyRestoration": true,
+      "listenerClosed": true
+    },
+    {
+      "scenario": "core_crash",
+      "coreVersion": "1.12.25",
+      "realTransfer": true,
+      "exactProxyRestoration": true,
+      "listenerClosed": true
+    },
+    {
+      "scenario": "host_crash",
+      "coreVersion": "1.12.25",
+      "realTransfer": true,
+      "exactProxyRestoration": true,
+      "listenerClosed": true
+    }
+  ],
+  "archive": "build/RainLink-windows-x64-subscriptions-preview.zip",
+  "archiveBytes": 44436629,
+  "archiveEntries": 68,
+  "archiveCrcCheck": "passed",
+  "archiveSha256": "4bb12a27d96f0eec3ff3a27733386e13ffc844e71674c4d96cb2bd2663d38c49",
+  "binarySha256": {
+    "rainlink.exe": "f66efa003bb2ae8372eb96a45dbf03567a3a0db0b2346087ed17386d8b85dbfb",
+    "rainlink-host.exe": "0763e67c15d6850c420ff0b3e8c77ba66faec248536b15f44416b0e44cc733d9",
+    "sing-box.exe": "fc7b65219abe8a0166d0b4891a2f7cabcbcc13b3adcf89e6d5913743a67aba10",
+    "sing-box-LICENSE.txt": "650d5e3b99a446fb38e820fa87a49562e0c79eab868fff58618ac487a58e554c",
+    "flutter_windows.dll": "55089c0bb72c53220aeecd31c859946b4a7e990fd6ea29975f448e22b2586677",
+    "data/app.so": "694401b69e063ee08b03387d5507eca546a5e321ae6874db4ee09338b78d2558"
+  }
+}

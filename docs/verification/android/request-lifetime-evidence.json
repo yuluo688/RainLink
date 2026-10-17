@@ -1,0 +1,5 @@
+{
+  "passed": true,
+  "delayedHandshakes": 3,
+  "targetRequests": 3
+}

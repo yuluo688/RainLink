@@ -1,0 +1,162 @@
+{
+  "device": "RainLink_QA",
+  "serial": "emulator-5580",
+  "androidApi": "36",
+  "scope": "isolated emulator; authenticated local proxy; no real subscription",
+  "passed": true,
+  "apkSha256": "83e5acd6802e98e03536930b4062ece9089debbca417dd58e2f30620c6fcae06",
+  "testApkSha256": "1cc3b7aa31077c3d3d331b033ab3bc34878996df8887cc4b41d64c2a057e36da",
+  "memoryPressureTransferRounds": 12,
+  "telemetryScope": "stable connection paging; session-scoped single/all close; persistent in-process sanitized logs",
+  "documentScope": "actual ACTION_CREATE_DOCUMENT save and byte readback; cancel; invalid source; busy; activity disposal while picker is open",
+  "startupRecoveryScope": "three occupied-port startup failures; cleanup returns idle; each subsequent system-registered tunnel carries traffic through a 1.5 second delayed proxy handshake",
+  "requestClientScope": "shell UID app_process Socket client; write side stays open until response completion; bounded connect and read waits",
+  "requestScriptSha256": "e3142ac7c44a90174608fdbb0aac485cd63debd1565ecc6eb7b195a57fc3086c",
+  "notificationScope": "runtime notification permission revoked before a separate instrumentation process; count-only expiry notification; real PendingIntent opens Flutter groups; connected and disconnected alerts; optional alerts disabled without removing foreground notice",
+  "coreBuild": {
+    "coreVersion": "1.12.25-rainlink.1",
+    "sourceSum": "h1:zg7RV4CCRsSelCfMTlQWiFvZE4gVyCVgwQWkfQWXggs=",
+    "toolchain": "go1.25.5",
+    "recipe": {
+      "schema": 1,
+      "gomobileVersion": "v0.1.8",
+      "gomobileSum": "h1:vXgoN0pjsMONAaYCTdsKBX2T1kxuS7sbT/mZ7PElGoo=",
+      "ndkVersion": "27.0.12077973",
+      "androidApi": 29,
+      "cgoAlignment": {
+        "source": "src/cmd/cgo/out.go",
+        "sourceSha256": "3d05dfcfebb4ee9d3b04e08a3ff6b45401abab1ce8140673f35485a190ce8948"
+      },
+      "targets": [
+        "android/arm64",
+        "android/amd64"
+      ],
+      "tags": [
+        "with_gvisor",
+        "with_quic",
+        "with_utls",
+        "with_clash_api",
+        "with_conntrack"
+      ]
+    },
+    "cgo": {
+      "recipe": {
+        "toolchain": "go1.25.5",
+        "sourceSha256": "3d05dfcfebb4ee9d3b04e08a3ff6b45401abab1ce8140673f35485a190ce8948",
+        "patchedSourceSha256": "540c6c534c447d9172c83ac31307b94808fcdfffbfc3e24325f3c3391d4a6067",
+        "wrapperSourceSha256": "c3adafccd382d1aaad0b7af3d53fb627fed3c015f556782f2db8d3a6177bdc4b"
+      },
+      "compilerSha256": "f027b53f8707e3620bfbcef992d211d322d8483178d2cd2e3442bf133dcd4d8c",
+      "wrapperSha256": "60061067d84a972abf05c4107f54af79755e90f812bb8151237b6afa10d142d3"
+    },
+    "aarSha256": "8659fc680fdd4ddcd6bd76e89b0c2ce1b4bc17a2988b70b9f669896fed75a856",
+    "libraries": {
+      "jni/arm64-v8a/librainlink.so": {
+        "sha256": "b0274643f151233b874004674cef1e959a07e53df39029620e124a245390ba28",
+        "loadAlignments": [
+          16384,
+          16384,
+          16384,
+          16384
+        ]
+      },
+      "jni/x86_64/librainlink.so": {
+        "sha256": "8084fabeca5cbcc5af1eebc4e4c1e13aa4498b3eb599ba9508d41612b6c8f6e8",
+        "loadAlignments": [
+          16384,
+          16384,
+          16384,
+          16384
+        ]
+      }
+    }
+  },
+  "instrumentationRuns": {
+    "core": {
+      "tests": 5,
+      "passed": true
+    },
+    "documents": {
+      "tests": 2,
+      "passed": true
+    },
+    "notificationColdStart": {
+      "tests": 1,
+      "passed": true
+    },
+    "notificationPermissionDenied": {
+      "tests": 1,
+      "passed": true
+    },
+    "networkHandover": {
+      "tests": 1,
+      "passed": true
+    }
+  },
+  "networkHandover": {
+    "stages": [
+      {
+        "stage": "wifi",
+        "sessionId": "VD4DXIY6BBCZR43IAEAF5D7BXA",
+        "tunnelNetwork": 505916870669,
+        "physicalNetworks": [
+          488737001485
+        ],
+        "physicalCapabilities": [
+          "[ Transports: WIFI Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED&PARTIAL_CONNECTIVITY&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED LinkUpBandwidth>=12000Kbps LinkDnBandwidth>=30000Kbps TransportInfo: <SSID: <unknown ssid>, BSSID: 02:00:00:00:00:00, MAC: 02:00:00:00:00:00, IP: /10.0.2.16, Security type: 0, Supplicant state: COMPLETED, Wi-Fi standard: legacy, RSSI: -50, Link speed: 1Mbps, Tx Link speed: 1Mbps, Max Supported Tx Link speed: 11Mbps, Rx Link speed: 2Mbps, Max Supported Rx Link speed: 11Mbps, Frequency: 2447MHz, Net ID: -1, Metered hint: false, score: 60, isUsable: true, CarrierMerged: false, SubscriptionId: -1, IsPrimary: -1, Trusted: true, Restricted: false, Ephemeral: false, OEM paid: false, OEM private: false, OSU AP: false, FQDN: <none>, Provider friendly name: <none>, Requesting package name: <none><none>MLO Information: , Is TID-To-Link negotiation supported by the AP: false, AP MLD Address: <none>, AP MLO Link Id: <none>, AP MLO Affiliated links: <none>, Vendor Data: <none>> SignalStrength: -50 UnderlyingNetworks: Null]"
+        ]
+      },
+      {
+        "stage": "cellular",
+        "sessionId": "VD4DXIY6BBCZR43IAEAF5D7BXA",
+        "tunnelNetwork": 505916870669,
+        "physicalNetworks": [
+          510211837965
+        ],
+        "physicalCapabilities": [
+          "[ Transports: CELLULAR Capabilities: MMS&SUPL&DUN&FOTA&IMS&CBS&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED LinkUpBandwidth>=14Kbps LinkDnBandwidth>=14Kbps Specifier: <TelephonyNetworkSpecifier [mSubId = 1]> SubscriptionIds: {1} UnderlyingNetworks: Null]"
+        ]
+      },
+      {
+        "stage": "offline",
+        "sessionId": "VD4DXIY6BBCZR43IAEAF5D7BXA",
+        "tunnelNetwork": 505916870669,
+        "physicalNetworks": [],
+        "physicalCapabilities": []
+      },
+      {
+        "stage": "wifi-restored",
+        "sessionId": "VD4DXIY6BBCZR43IAEAF5D7BXA",
+        "tunnelNetwork": 505916870669,
+        "physicalNetworks": [
+          514506805261
+        ],
+        "physicalCapabilities": [
+          "[ Transports: WIFI Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED LinkUpBandwidth>=12000Kbps LinkDnBandwidth>=30000Kbps TransportInfo: <SSID: <unknown ssid>, BSSID: 02:00:00:00:00:00, MAC: 02:00:00:00:00:00, IP: /10.0.2.16, Security type: 0, Supplicant state: COMPLETED, Wi-Fi standard: legacy, RSSI: -50, Link speed: 1Mbps, Tx Link speed: 1Mbps, Max Supported Tx Link speed: 11Mbps, Rx Link speed: -1Mbps, Max Supported Rx Link speed: 11Mbps, Frequency: 2447MHz, Net ID: -1, Metered hint: false, score: 60, isUsable: true, CarrierMerged: false, SubscriptionId: -1, IsPrimary: -1, Trusted: true, Restricted: false, Ephemeral: false, OEM paid: false, OEM private: false, OSU AP: false, FQDN: <none>, Provider friendly name: <none>, Requesting package name: <none><none>MLO Information: , Is TID-To-Link negotiation supported by the AP: false, AP MLD Address: <none>, AP MLO Link Id: <none>, AP MLO Affiliated links: <none>, Vendor Data: <none>> SignalStrength: -50 UnderlyingNetworks: Null]"
+        ]
+      }
+    ],
+    "actualTransfers": 3,
+    "sameSystemTunnelSurvived": true,
+    "manualStopPreventedLateReconnect": true,
+    "transportEvidence": "only the stated physical transport is available during each actual independent-UID transfer"
+  },
+  "networkHandoverOriginalRadios": {
+    "wifi": "1",
+    "mobileData": "1"
+  },
+  "networkHandoverRestoredRadios": {
+    "wifi": "1",
+    "mobileData": "1"
+  },
+  "authenticatedConnects": 28,
+  "ipv6Connects": 1,
+  "dnsQueries": 31,
+  "targetRequests": 28,
+  "forwardUpload": 1839,
+  "forwardDownload": 922133,
+  "heldRequests": 3,
+  "heldConnectionsClosed": 3,
+  "delayedProxyHandshakes": 3,
+  "at": "2026-10-17T12:55:17+0800"
+}

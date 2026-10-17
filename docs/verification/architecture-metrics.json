@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-15",
+  "environment": {
+    "os": "Windows x64",
+    "dart": "3.6.2 JIT",
+    "go": "1.25.5",
+    "hostVersion": "0.1.0",
+    "hostProtocolVersion": 1
+  },
+  "method": {
+    "warmupRequests": 5,
+    "samplesPerConcurrency": 30,
+    "unit": "batch completion milliseconds",
+    "excludesVmStartup": true,
+    "isolatedBenchmark": false,
+    "caveat": "Before measurements overlapped a Flutter test compilation. Do not infer a stable speedup percentage or network performance."
+  },
+  "before": {
+    "concurrency_1": { "p50_ms": 20.505, "p95_ms": 28.656 },
+    "concurrency_8": { "p50_ms": 51.353, "p95_ms": 67.318 }
+  },
+  "after": {
+    "concurrency_1": { "p50_ms": 19.702, "p95_ms": 20.763 },
+    "concurrency_8": { "p50_ms": 19.723, "p95_ms": 20.537 }
+  },
+  "releaseValidation": {
+    "hostSha256": "F4B5288395DB36BDDD35BFC754BCD3BD06B1368A1CF1EFE3F6AE9C815718A0FF",
+    "hostMatchesBuiltBinary": true,
+    "windowPhysicalSize": [1800, 960],
+    "fitsWorkArea": true,
+    "screenshot": "windows-optimized-overview.png"
+  },
+  "realProcessCleanup": [
+    { "scenario": "stdout_limit", "error": "invalid_response", "childReaped": true },
+    { "scenario": "stderr_limit", "error": "invalid_response", "childReaped": true },
+    { "scenario": "timeout", "error": "host_timeout", "childReaped": true },
+    { "scenario": "dispose", "error": "disposed", "childReaped": true }
+  ]
+}

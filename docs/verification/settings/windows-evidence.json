@@ -1,0 +1,16 @@
+{
+  "at": "2026-10-17T02:30:33.269076",
+  "nativeWindows": true,
+  "temporaryDatabase": true,
+  "validationKeptLiveSession": true,
+  "testKeptLiveSession": true,
+  "saveKeptLiveSession": true,
+  "restartCancelKeptSession": true,
+  "confirmedRestartAppliedPort": true,
+  "restartRetainedOriginalTarget": true,
+  "runtimeDnsReceivedQueries": 6,
+  "actualOriginTransfers": 1,
+  "dnsCancellationKeptSession": true,
+  "systemProxyEnabled": false,
+  "settingsSurvivedReopen": true
+}

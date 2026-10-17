@@ -1,0 +1,611 @@
+{
+  "atUtc": "2026-10-16T10:02:58.660986+00:00",
+  "credentialsAndServersRedacted": true,
+  "beforeFlClashClosedDomainComparison": {
+    "tests": [
+      {
+        "nodeAlias": 6,
+        "binding": "physical",
+        "portHopping": true,
+        "serverIsLiteral": false,
+        "realCredentials": true,
+        "resolver": "local",
+        "httpsStatus": null,
+        "responseBytes": 0,
+        "errorClass": "ConnectionResetError",
+        "hints": [
+          "timeout",
+          "no recent network activity"
+        ],
+        "detectedInterface": "physical",
+        "durationMs": 5375,
+        "listenerClosed": true
+      },
+      {
+        "nodeAlias": 6,
+        "binding": "physical",
+        "portHopping": true,
+        "serverIsLiteral": false,
+        "realCredentials": true,
+        "resolver": "alidns",
+        "httpsStatus": 204,
+        "responseBytes": 0,
+        "errorClass": null,
+        "hints": [],
+        "detectedInterface": "physical",
+        "durationMs": 1094,
+        "listenerClosed": true
+      },
+      {
+        "nodeAlias": 7,
+        "binding": "physical",
+        "portHopping": true,
+        "serverIsLiteral": false,
+        "realCredentials": true,
+        "resolver": "local",
+        "httpsStatus": null,
+        "responseBytes": 0,
+        "errorClass": "ConnectionResetError",
+        "hints": [
+          "timeout",
+          "no recent network activity"
+        ],
+        "detectedInterface": "physical",
+        "durationMs": 5375,
+        "listenerClosed": true
+      },
+      {
+        "nodeAlias": 7,
+        "binding": "physical",
+        "portHopping": true,
+        "serverIsLiteral": false,
+        "realCredentials": true,
+        "resolver": "alidns",
+        "httpsStatus": null,
+        "responseBytes": 0,
+        "errorClass": "ConnectionResetError",
+        "hints": [
+          "timeout",
+          "no recent network activity"
+        ],
+        "detectedInterface": "physical",
+        "durationMs": 5453,
+        "listenerClosed": true
+      }
+    ],
+    "systemProxyUnchanged": true,
+    "otherClientSettingsChanged": false
+  },
+  "afterFlClashClosedRounds": [
+    {
+      "label": "curl Cloudflare first round",
+      "atUtc": "2026-10-16T09:44:53.433527+00:00",
+      "scope": "existing authorized encrypted provider nodes; no subscription fetch",
+      "baselineHost": false,
+      "otherClientRunning": false,
+      "tests": [
+        {
+          "nodeAlias": 1,
+          "protocol": "hysteria2",
+          "regionHint": "sg",
+          "serverIsLiteral": true,
+          "certificatePinRetained": true,
+          "portHoppingRetained": true,
+          "systemProxyRequested": false,
+          "coreReady": true,
+          "curlExitCode": 28,
+          "httpsTransfer": false,
+          "traceCountryCode": null,
+          "telemetry": {
+            "egressObserved": true,
+            "countryCode": "sg",
+            "latencyMs": null,
+            "uploadBytes": 3518,
+            "downloadBytes": 8565,
+            "probeError": "",
+            "egressMatchesTrace": false
+          },
+          "trafficRecorded": true,
+          "listenerClosed": true,
+          "durationMs": 27187
+        },
+        {
+          "nodeAlias": 6,
+          "protocol": "hysteria2",
+          "regionHint": "tw",
+          "serverIsLiteral": false,
+          "certificatePinRetained": true,
+          "portHoppingRetained": true,
+          "systemProxyRequested": false,
+          "coreReady": true,
+          "curlExitCode": 0,
+          "httpsTransfer": true,
+          "traceCountryCode": "TW",
+          "telemetry": {
+            "egressObserved": true,
+            "countryCode": "tw",
+            "latencyMs": 585,
+            "uploadBytes": 4325,
+            "downloadBytes": 13606,
+            "probeError": "",
+            "egressMatchesTrace": true
+          },
+          "trafficRecorded": true,
+          "listenerClosed": true,
+          "durationMs": 2031
+        },
+        {
+          "nodeAlias": 9,
+          "protocol": "hysteria2",
+          "regionHint": "us",
+          "serverIsLiteral": false,
+          "certificatePinRetained": true,
+          "portHoppingRetained": true,
+          "systemProxyRequested": false,
+          "coreReady": true,
+          "curlExitCode": 28,
+          "httpsTransfer": false,
+          "traceCountryCode": null,
+          "telemetry": {
+            "egressObserved": true,
+            "countryCode": "us",
+            "latencyMs": null,
+            "uploadBytes": 3538,
+            "downloadBytes": 9777,
+            "probeError": "",
+            "egressMatchesTrace": false
+          },
+          "trafficRecorded": true,
+          "listenerClosed": true,
+          "durationMs": 27156
+        },
+        {
+          "nodeAlias": 2,
+          "protocol": "hysteria2",
+          "regionHint": "sg",
+          "serverIsLiteral": true,
+          "certificatePinRetained": true,
+          "portHoppingRetained": true,
+          "systemProxyRequested": false,
+          "coreReady": true,
+          "curlExitCode": 28,
+          "httpsTransfer": false,
+          "traceCountryCode": null,
+          "telemetry": {
+            "egressObserved": false,
+            "countryCode": "",
+            "latencyMs": null,
+            "uploadBytes": 1514,
+            "downloadBytes": 0,
+            "probeError": "",
+            "egressMatchesTrace": false
+          },
+          "trafficRecorded": false,
+          "listenerClosed": true,
+          "durationMs": 26797
+        }
+      ],
+      "userDataAndPreferencesUnchanged": true,
+      "systemProxyUnchanged": true,
+      "passed": false
+    },
+    {
+      "label": "curl IP query second round",
+      "atUtc": "2026-10-16T09:47:11.534299+00:00",
+      "scope": "existing authorized encrypted provider nodes; no subscription fetch",
+      "baselineHost": false,
+      "otherClientRunning": false,
+      "tests": [
+        {
+          "nodeAlias": 1,
+          "protocol": "hysteria2",
+          "regionHint": "sg",
+          "serverIsLiteral": true,
+          "certificatePinRetained": true,
+          "portHoppingRetained": true,
+          "systemProxyRequested": false,
+          "coreReady": true,
+          "traceEndpoint": "api.ip.sb/geoip",
+          "curlExitCode": 0,
+          "httpsTransfer": true,
+          "traceCountryCode": "SG",
+          "telemetry": {
+            "egressObserved": true,
+            "countryCode": "us",
+            "latencyMs": 419,
+            "uploadBytes": 4299,
+            "downloadBytes": 15239,
+            "probeError": "",
+            "egressMatchesTrace": false
+          },
+          "trafficRecorded": true,
+          "listenerClosed": true,
+          "durationMs": 1640
+        },
+        {
+          "nodeAlias": 6,
+          "protocol": "hysteria2",
+          "regionHint": "tw",
+          "serverIsLiteral": false,
+          "certificatePinRetained": true,
+          "portHoppingRetained": true,
+          "systemProxyRequested": false,
+          "coreReady": true,
+          "traceEndpoint": "api.ip.sb/geoip",
+          "curlExitCode": 0,
+          "httpsTransfer": true,
+          "traceCountryCode": "TW",
+          "telemetry": {
+            "egressObserved": true,
+            "countryCode": "tw",
+            "latencyMs": 733,
+            "uploadBytes": 4299,
+            "downloadBytes": 14021,
+            "probeError": "",
+            "egressMatchesTrace": true
+          },
+          "trafficRecorded": true,
+          "listenerClosed": true,
+          "durationMs": 2265
+        },
+        {
+          "nodeAlias": 9,
+          "protocol": "hysteria2",
+          "regionHint": "us",
+          "serverIsLiteral": false,
+          "certificatePinRetained": true,
+          "portHoppingRetained": true,
+          "systemProxyRequested": false,
+          "coreReady": true,
+          "traceEndpoint": "api.ip.sb/geoip",
+          "curlExitCode": 28,
+          "httpsTransfer": false,
+          "traceCountryCode": null,
+          "telemetry": {
+            "egressObserved": false,
+            "countryCode": "",
+            "latencyMs": null,
+            "uploadBytes": 0,
+            "downloadBytes": 0,
+            "probeError": "出口检测失败，可重试；连接状态以核心回执为准",
+            "egressMatchesTrace": false
+          },
+          "trafficRecorded": false,
+          "listenerClosed": true,
+          "durationMs": 21062
+        },
+        {
+          "nodeAlias": 2,
+          "protocol": "hysteria2",
+          "regionHint": "sg",
+          "serverIsLiteral": true,
+          "certificatePinRetained": true,
+          "portHoppingRetained": true,
+          "systemProxyRequested": false,
+          "coreReady": true,
+          "traceEndpoint": "api.ip.sb/geoip",
+          "curlExitCode": 0,
+          "httpsTransfer": true,
+          "traceCountryCode": "US",
+          "telemetry": {
+            "egressObserved": true,
+            "countryCode": "sg",
+            "latencyMs": 634,
+            "uploadBytes": 4299,
+            "downloadBytes": 15219,
+            "probeError": "",
+            "egressMatchesTrace": false
+          },
+          "trafficRecorded": true,
+          "listenerClosed": true,
+          "durationMs": 1765
+        }
+      ],
+      "userDataAndPreferencesUnchanged": true,
+      "systemProxyUnchanged": true,
+      "passed": false
+    },
+    {
+      "label": "previous host with FlClash closed",
+      "atUtc": "2026-10-16T09:47:37.194258+00:00",
+      "scope": "existing authorized encrypted provider nodes; no subscription fetch",
+      "baselineHost": true,
+      "otherClientRunning": false,
+      "tests": [
+        {
+          "nodeAlias": 1,
+          "protocol": "hysteria2",
+          "regionHint": "sg",
+          "serverIsLiteral": true,
+          "certificatePinRetained": true,
+          "portHoppingRetained": true,
+          "systemProxyRequested": false,
+          "coreReady": true,
+          "traceEndpoint": "api.ip.sb/geoip",
+          "curlExitCode": 28,
+          "httpsTransfer": false,
+          "traceCountryCode": null,
+          "telemetry": {
+            "egressObserved": true,
+            "countryCode": "sg",
+            "latencyMs": null,
+            "uploadBytes": 5700,
+            "downloadBytes": 12486,
+            "probeError": "",
+            "egressMatchesTrace": false
+          },
+          "trafficRecorded": true,
+          "listenerClosed": true,
+          "durationMs": 16250
+        },
+        {
+          "nodeAlias": 6,
+          "protocol": "hysteria2",
+          "regionHint": "tw",
+          "serverIsLiteral": false,
+          "certificatePinRetained": true,
+          "portHoppingRetained": true,
+          "systemProxyRequested": false,
+          "coreReady": true,
+          "traceEndpoint": "api.ip.sb/geoip",
+          "curlExitCode": 28,
+          "httpsTransfer": false,
+          "traceCountryCode": null,
+          "telemetry": {
+            "egressObserved": true,
+            "countryCode": "tw",
+            "latencyMs": null,
+            "uploadBytes": 5700,
+            "downloadBytes": 12515,
+            "probeError": "",
+            "egressMatchesTrace": false
+          },
+          "trafficRecorded": true,
+          "listenerClosed": true,
+          "durationMs": 17688
+        }
+      ],
+      "userDataAndPreferencesUnchanged": true,
+      "systemProxyUnchanged": true,
+      "passed": false
+    }
+  ],
+  "dartStoredNodesVerification": {
+    "direct": [],
+    "rainlink": {
+      "event": "report",
+      "at": "2026-10-16T09:50:28.340089Z",
+      "database": "memory",
+      "systemProxyRequested": false,
+      "coreVersion": "1.12.25-rainlink.1",
+      "manualStorage": {
+        "count": 0,
+        "ungrouped": true,
+        "protectedCredentials": true
+      },
+      "connections": [
+        {
+          "alias": "stored-1",
+          "protocol": "Hysteria2",
+          "transport": "quic",
+          "tls": true,
+          "reality": false,
+          "vision": false,
+          "endpointClass": "remote",
+          "coreReady": true,
+          "httpsTransfer": false,
+          "error": "timeout",
+          "listenerClosed": true,
+          "durationMs": 15824
+        },
+        {
+          "alias": "stored-2",
+          "protocol": "Hysteria2",
+          "transport": "quic",
+          "tls": true,
+          "reality": false,
+          "vision": false,
+          "endpointClass": "remote",
+          "coreReady": true,
+          "httpsTransfer": false,
+          "error": "timeout",
+          "listenerClosed": true,
+          "durationMs": 15939
+        },
+        {
+          "alias": "stored-3",
+          "protocol": "Hysteria2",
+          "transport": "quic",
+          "tls": true,
+          "reality": false,
+          "vision": false,
+          "endpointClass": "remote",
+          "coreReady": true,
+          "countryCode": "US",
+          "httpsRequestMs": 1438,
+          "responseBytes": 211,
+          "httpsTransfer": true,
+          "telemetry": {
+            "countryCode": "us",
+            "latencyMs": 1455,
+            "uploadBytes": 4086,
+            "downloadBytes": 13562,
+            "probeError": "",
+            "egressObserved": true
+          },
+          "trafficRecorded": true,
+          "listenerClosed": true,
+          "durationMs": 2983,
+          "egressObserved": true
+        },
+        {
+          "alias": "stored-4",
+          "protocol": "Hysteria2",
+          "transport": "quic",
+          "tls": true,
+          "reality": false,
+          "vision": false,
+          "endpointClass": "remote",
+          "coreReady": true,
+          "countryCode": "SG",
+          "httpsRequestMs": 874,
+          "responseBytes": 216,
+          "httpsTransfer": true,
+          "telemetry": {
+            "countryCode": "sg",
+            "latencyMs": 873,
+            "uploadBytes": 4086,
+            "downloadBytes": 14859,
+            "probeError": "",
+            "egressObserved": true
+          },
+          "trafficRecorded": true,
+          "listenerClosed": true,
+          "durationMs": 2405,
+          "egressObserved": true
+        }
+      ],
+      "passed": false
+    },
+    "exitCode": 1,
+    "timedOut": false,
+    "exactSystemProxyPreserved": true,
+    "passed": false,
+    "userDataAndPreferencesUnchanged": true,
+    "nodeAliases": [
+      1,
+      6,
+      9,
+      2
+    ]
+  },
+  "selectedNodeResolverComparisonAfterFlClashClosed": {
+    "tests": [
+      {
+        "nodeAlias": 9,
+        "binding": "default",
+        "portHopping": true,
+        "serverIsLiteral": false,
+        "realCredentials": true,
+        "resolver": "local",
+        "httpsStatus": 204,
+        "responseBytes": 0,
+        "errorClass": null,
+        "errorDetails": null,
+        "hints": [],
+        "detectedInterface": "physical",
+        "durationMs": 1375,
+        "listenerClosed": true
+      },
+      {
+        "nodeAlias": 9,
+        "binding": "default",
+        "portHopping": true,
+        "serverIsLiteral": false,
+        "realCredentials": true,
+        "resolver": "alidns",
+        "httpsStatus": null,
+        "responseBytes": 0,
+        "errorClass": "timeout",
+        "errorDetails": {
+          "errno": null,
+          "winerror": null,
+          "stack": [
+            {
+              "file": "client.py",
+              "line": 1424
+            },
+            {
+              "file": "ssl.py",
+              "line": 500
+            },
+            {
+              "file": "ssl.py",
+              "line": 1040
+            },
+            {
+              "file": "ssl.py",
+              "line": 1309
+            }
+          ]
+        },
+        "hints": [],
+        "detectedInterface": "physical",
+        "durationMs": 12375,
+        "listenerClosed": true
+      },
+      {
+        "nodeAlias": 9,
+        "binding": "physical",
+        "portHopping": true,
+        "serverIsLiteral": false,
+        "realCredentials": true,
+        "resolver": "local",
+        "httpsStatus": 204,
+        "responseBytes": 0,
+        "errorClass": null,
+        "errorDetails": null,
+        "hints": [],
+        "detectedInterface": "physical",
+        "durationMs": 1406,
+        "listenerClosed": true
+      },
+      {
+        "nodeAlias": 9,
+        "binding": "physical",
+        "portHopping": true,
+        "serverIsLiteral": false,
+        "realCredentials": true,
+        "resolver": "alidns",
+        "httpsStatus": null,
+        "responseBytes": 0,
+        "errorClass": "timeout",
+        "errorDetails": {
+          "errno": null,
+          "winerror": null,
+          "stack": [
+            {
+              "file": "client.py",
+              "line": 1424
+            },
+            {
+              "file": "ssl.py",
+              "line": 500
+            },
+            {
+              "file": "ssl.py",
+              "line": 1040
+            },
+            {
+              "file": "ssl.py",
+              "line": 1309
+            }
+          ]
+        },
+        "hints": [],
+        "detectedInterface": "physical",
+        "durationMs": 12360,
+        "listenerClosed": true
+      }
+    ],
+    "systemProxyUnchanged": true,
+    "otherClientSettingsChanged": false
+  },
+  "releaseUi": {
+    "preferencesPreserved": true,
+    "groupSelectionPreserved": true,
+    "nodeIdsPreserved": true,
+    "protocolCounts": {
+      "hysteria2": 16,
+      "vless": 52
+    },
+    "systemProxyPreserved": true,
+    "listenersClosed": true,
+    "actualUiHttpsEgressObserved": true,
+    "actualUiCountryObserved": true,
+    "testTrafficAddedToDailyStats": true,
+    "actualUiProbeFailureObserved": true,
+    "failedProbeScreenshot": "docs/verification/hysteria2-network-probe-failure.png"
+  },
+  "allProviderAttemptsStable": false
+}

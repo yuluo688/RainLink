@@ -1,0 +1,18 @@
+{
+  "apkSha256": "83e5acd6802e98e03536930b4062ece9089debbca417dd58e2f30620c6fcae06",
+  "installedApkShaMatches": true,
+  "ordinaryHomePhase": "disconnected; no selected target",
+  "homeSummaryVisibleAboveNavigation": true,
+  "sixSettingsCategoriesPresent": true,
+  "threeGeneralSwitchesDefaultOff": true,
+  "backActionAtUpperLeft": true,
+  "backNavigationReturnedToSettings": true,
+  "launchCommandOutput": "Starting: Intent { cmp=dev.rainlink.rainlink/.MainActivity }\r\nStatus: ok\r\nLaunchState: COLD\r\nActivity: dev.rainlink.rainlink/.MainActivity\r\nTotalTime: 4583\r\nWaitTime: 4588\r\nComplete",
+  "scope": "ordinary main.dart application; isolated QA emulator; existing persisted test traffic; no user subscription",
+  "assertionsPassed": true,
+  "manualVisualReviewPending": false,
+  "at": "2026-10-17T12:56:34.694108+08:00",
+  "manualVisualReviewedAt": "2026-10-17T12:58:32.403087+08:00",
+  "manualVisualReview": "home, six-category settings and general settings reviewed at 393x852; no clipping; upper-left return and actual navigation verified",
+  "passed": true
+}

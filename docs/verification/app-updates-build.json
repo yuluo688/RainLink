@@ -1,0 +1,28 @@
+{
+  "version": "0.1.0+2",
+  "archive": "build/RainLink-windows-x64-updates-preview.zip",
+  "entries": 77,
+  "bytes": 44006216,
+  "sha256": "b836364ab774f166482907d1be27cd6b8601193c4e2fa65a9b15913dc940cc18",
+  "zipCrcVerified": true,
+  "perFileDigestVerified": true,
+  "userDatabaseIncluded": false,
+  "coreSha256": "cf6863552456c535fd79a0724f2d01352e77c97f4958466b75d9f07d8f0edef7",
+  "engineSha256": "55089c0bb72c53220aeecd31c859946b4a7e990fd6ea29975f448e22b2586677",
+  "hostSha256": "fd15ceb86467197abf11ecd12bd89d697e96835c33aa819c38c2899e08318718",
+  "updaterSha256": "634648d2578bd1811c1ecc38f9869d865ec28f6c38213c09d97280630551a78a",
+  "releaseEngineVerified": true,
+  "coreVersion": "1.12.25-rainlink.1",
+  "applicationSha256": "46306e7bb6f9ae43f859fd88641422628819e773e8e515eca8dca4d54ee8b96d",
+  "aotSha256": "dda5a778cfaa631f91eac6aa723ebc136b8c974687418535fd6b0b6a0856edef",
+  "at": "2026-10-17T05:02:10.958409+08:00",
+  "runtimeLicensesIncluded": true,
+  "coreSourceIncluded": true,
+  "databaseSchema": 6,
+  "verification": "docs/verification/app-updates.md",
+  "releaseAsset": {
+    "path": "build/RainLink-0.1.0+2-windows-x64.zip",
+    "sha256": "b836364ab774f166482907d1be27cd6b8601193c4e2fa65a9b15913dc940cc18",
+    "published": false
+  }
+}

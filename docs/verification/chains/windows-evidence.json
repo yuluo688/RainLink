@@ -1,0 +1,13 @@
+{
+  "at": "2026-10-17T15:06:11.126459",
+  "scenario": "localhost HTTP CONNECT fixtures with real bundled core",
+  "uiSaveSelectedOnly": true,
+  "connectedFromOverview": true,
+  "forwardOrder": "A -> B -> origin",
+  "reverseAfterReconnect": "B -> A -> origin",
+  "liveSessionSurvivedTestCancellation": true,
+  "editKeptActivePath": true,
+  "subscriptionFetchedThroughActiveChain": true,
+  "systemProxyChanged": false,
+  "publicProbe": "fixtures intentionally reject Internet targets"
+}

@@ -1,0 +1,9 @@
+{
+  "at": "2026-10-16T20:59:35.7758973+08:00",
+  "archive": "build/RainLink-windows-x64-protocols-preview.zip",
+  "bytes": 41306791,
+  "sha256": "c59b7e1c1f854c1de896151530c6bedad97d17fd6b1c92560862c999cce67bc7",
+  "hostSha256": "8145718f6516d102a4ce5e124f1bbd704226e2a23fd4cdce3adff3d915aa450f",
+  "coreSha256": "cf6863552456c535fd79a0724f2d01352e77c97f4958466b75d9f07d8f0edef7",
+  "releaseEngineVerified": true
+}

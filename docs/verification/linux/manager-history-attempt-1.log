@@ -1,0 +1,29 @@
+=== RUN   TestIsolatedLinuxTUNManagerLifecycle
+=== RUN   TestIsolatedLinuxTUNManagerLifecycle/stop
+=== RUN   TestIsolatedLinuxTUNManagerLifecycle/chain-rule
+=== RUN   TestIsolatedLinuxTUNManagerLifecycle/system-proxy
+=== RUN   TestIsolatedLinuxTUNManagerLifecycle/eof
+=== RUN   TestIsolatedLinuxTUNManagerLifecycle/host-killed
+=== RUN   TestIsolatedLinuxTUNManagerLifecycle/guardian-killed
+=== RUN   TestIsolatedLinuxTUNManagerLifecycle/core-killed
+=== RUN   TestIsolatedLinuxTUNManagerLifecycle/watchdog-killed
+=== RUN   TestIsolatedLinuxTUNManagerLifecycle/stop-timeout
+    managed_tun_linux_test.go:542: unsupported process shutdown signal
+=== RUN   TestIsolatedLinuxTUNManagerLifecycle/permission-denied
+    managed_tun_linux_test.go:572: managed host did not restore the complete network <nil> stat /run/rainlink-tun/capture-recovery.json: no such file or directory
+=== RUN   TestIsolatedLinuxTUNManagerLifecycle/cancel-start
+=== RUN   TestIsolatedLinuxTUNManagerLifecycle/bad-cipher
+--- FAIL: TestIsolatedLinuxTUNManagerLifecycle (23.52s)
+    --- PASS: TestIsolatedLinuxTUNManagerLifecycle/stop (1.80s)
+    --- PASS: TestIsolatedLinuxTUNManagerLifecycle/chain-rule (1.85s)
+    --- PASS: TestIsolatedLinuxTUNManagerLifecycle/system-proxy (2.63s)
+    --- PASS: TestIsolatedLinuxTUNManagerLifecycle/eof (1.86s)
+    --- PASS: TestIsolatedLinuxTUNManagerLifecycle/host-killed (0.90s)
+    --- PASS: TestIsolatedLinuxTUNManagerLifecycle/guardian-killed (0.94s)
+    --- PASS: TestIsolatedLinuxTUNManagerLifecycle/core-killed (1.98s)
+    --- PASS: TestIsolatedLinuxTUNManagerLifecycle/watchdog-killed (1.99s)
+    --- FAIL: TestIsolatedLinuxTUNManagerLifecycle/stop-timeout (1.88s)
+    --- FAIL: TestIsolatedLinuxTUNManagerLifecycle/permission-denied (5.27s)
+    --- PASS: TestIsolatedLinuxTUNManagerLifecycle/cancel-start (0.37s)
+    --- PASS: TestIsolatedLinuxTUNManagerLifecycle/bad-cipher (0.22s)
+FAIL

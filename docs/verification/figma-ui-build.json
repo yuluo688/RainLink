@@ -1,0 +1,15 @@
+{
+  "verifiedAt": "2026-10-16T09:44:14.6508467+08:00",
+  "executableSha256": "820B6B4E609A436A93D49BED1F1A2FBE572483B8FFE88E9A91DE02E3DFA4F0A9",
+  "flutterAotSha256": "24F4D2DAD9B5E0AAE0120A1300DE5D2B4A1266EF3F32A030B0B087DBEB959CF0",
+  "windowsIconSha256": "9C54225754E4A6D021F53744EC9553F59221FB43B3049357D1AA8F25470B6CFC",
+  "bundledSvgVerified": 44,
+  "bundledFontsVerified": 3,
+  "nativeLauncherPngCount": 27,
+  "windowsIconResolutionCount": 9,
+  "fullFlutterTests": 55,
+  "finalRelatedFlutterTests": 23,
+  "flutterAnalyze": "passed",
+  "windowsReleaseBuild": "passed",
+  "nativeOtherPlatforms": "not run"
+}

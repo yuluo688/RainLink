@@ -1,0 +1,25 @@
+{
+  "tests": [
+    {
+      "portHopping": true,
+      "realCredentialsSent": false,
+      "responseStatus": null,
+      "durationMs": 5328,
+      "hints": [
+        "timeout",
+        "no recent network activity"
+      ]
+    },
+    {
+      "portHopping": false,
+      "realCredentialsSent": false,
+      "responseStatus": 502,
+      "durationMs": 5328,
+      "hints": [
+        "timeout",
+        "no recent network activity"
+      ]
+    }
+  ],
+  "dummyAuthenticationOnly": true
+}

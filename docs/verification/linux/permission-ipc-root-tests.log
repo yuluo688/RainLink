@@ -1,0 +1,11 @@
+=== RUN   TestIsolatedRootExecutableRejectsWritableLinkedAndForeignFiles
+--- PASS: TestIsolatedRootExecutableRejectsWritableLinkedAndForeignFiles (0.00s)
+=== RUN   TestIsolatedRootAuthorizationUsesFixedArgumentsAndRechecksUID
+--- PASS: TestIsolatedRootAuthorizationUsesFixedArgumentsAndRechecksUID (0.52s)
+=== RUN   TestIsolatedRootPeerCredentialsDropAndServiceAuthentication
+=== RUN   TestIsolatedRootPeerCredentialsDropAndServiceAuthentication/ordinary-client-authenticates-root-service
+=== RUN   TestIsolatedRootPeerCredentialsDropAndServiceAuthentication/connected-root-client-drops-all-uids
+--- PASS: TestIsolatedRootPeerCredentialsDropAndServiceAuthentication (0.01s)
+    --- PASS: TestIsolatedRootPeerCredentialsDropAndServiceAuthentication/ordinary-client-authenticates-root-service (0.00s)
+    --- PASS: TestIsolatedRootPeerCredentialsDropAndServiceAuthentication/connected-root-client-drops-all-uids (0.00s)
+PASS

@@ -1,0 +1,1122 @@
+[
+  {
+    "result": "pass",
+    "test": "TestDurableWriteExclusiveReplacementAndLimit",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestUnsafeFilesAreRejectedWithoutFollowingLinks",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestUnsafeFilesAreRejectedWithoutFollowingLinks/symlink",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestUnsafeFilesAreRejectedWithoutFollowingLinks/hardlink",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestUnsafeFilesAreRejectedWithoutFollowingLinks/public",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestUnsafeFilesAreRejectedWithoutFollowingLinks/fifo",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestDirectoryPermissionsNamesAndDescriptorAnchor",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestLockWaitCancellationAndRelease",
+    "seconds": 0.06
+  },
+  {
+    "result": "pass",
+    "test": "TestProxyApplyEncryptedJournalAndRestore",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestProxyRecoveryRespectsLaterOwnersAndBypassEdits",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestProxyRecoveryRespectsLaterOwnersAndBypassEdits/bypass-only",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestProxyRecoveryRespectsLaterOwnersAndBypassEdits/new-client",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestProxyRecoveryRespectsLaterOwnersAndBypassEdits/crash-before-write",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestProxyRecoveryRespectsLaterOwnersAndBypassEdits/partial-apply",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestProxyFailedApplyRollsBackAndFailedRecoveryRetainsJournal",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestProxyFailedApplyRollsBackAndFailedRecoveryRetainsJournal/before-write",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestProxyFailedApplyRollsBackAndFailedRecoveryRetainsJournal/partial-write",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestProxyFailedApplyRollsBackAndFailedRecoveryRetainsJournal/readback",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestProxyFailedApplyRollsBackAndFailedRecoveryRetainsJournal/cancelled",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestProxyFailedApplyRollsBackAndFailedRecoveryRetainsJournal/failed-rollback",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestProxyJournalRejectsTamperingAndLiveForeignOwner",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestProxyJournalRejectsTamperingAndLiveForeignOwner/ciphertext",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestProxyJournalRejectsTamperingAndLiveForeignOwner/identity",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestProxyJournalRejectsTamperingAndLiveForeignOwner/live-owner",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestInterruptedRestoreCanResumeAndPreservesALaterOwner",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestInterruptedRestoreCanResumeAndPreservesALaterOwner/retry-partial-restore",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestInterruptedRestoreCanResumeAndPreservesALaterOwner/later-owner",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestUnavailableKeyringRetainsRecoveryUntilItCanBeUnlocked",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestGNOMESelectionAndUnavailableBackendDoNotChangeSettings",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestRealGNOMEProxyRoundTrip",
+    "seconds": 0.52
+  },
+  {
+    "result": "pass",
+    "test": "TestEnvelopeRoundTripAndBinding",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestEnvelopeValidationBeforeKeyAccess",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestEnvelopeValidationBeforeKeyAccess/empty-id",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestEnvelopeValidationBeforeKeyAccess/long-id",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestEnvelopeValidationBeforeKeyAccess/empty-plain",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestEnvelopeValidationBeforeKeyAccess/large-plain",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestEnvelopeKeyFailuresAndCancellation",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestLinuxKeyCreationSerialized",
+    "seconds": 0.08
+  },
+  {
+    "result": "pass",
+    "test": "TestLinuxKeyFailures",
+    "seconds": 0.08
+  },
+  {
+    "result": "pass",
+    "test": "TestLinuxKeyFailures/missing",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestLinuxKeyFailures/locked",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestLinuxKeyFailures/locked-silent",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestLinuxKeyFailures/search-failed",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestLinuxKeyFailures/malformed",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestLinuxKeyFailures/wrong-length",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestLinuxKeyFailures/store-failed",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestLinuxKeyFailures/store-missing",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestLinuxKeyFailures/readback-missing",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestLinuxKeyFailures/readback-different",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestLinuxKeyFailures/cancelled",
+    "seconds": 0.08
+  },
+  {
+    "result": "pass",
+    "test": "TestLinuxKeyLockSecurityAndCancellation",
+    "seconds": 0.08
+  },
+  {
+    "result": "pass",
+    "test": "TestLinuxKeyLockSecurityAndCancellation/public-directory",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestLinuxKeyLockSecurityAndCancellation/directory-symlink",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestLinuxKeyLockSecurityAndCancellation/file-symlink",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestLinuxKeyLockSecurityAndCancellation/public-file",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestLinuxKeyLockSecurityAndCancellation/hard-link",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestLinuxKeyLockSecurityAndCancellation/fifo",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestLinuxKeyLockSecurityAndCancellation/cancelled",
+    "seconds": 0.08
+  },
+  {
+    "result": "pass",
+    "test": "TestKeyLockDirectory",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestKeyLockAcrossProcesses",
+    "seconds": 0.1
+  },
+  {
+    "result": "pass",
+    "test": "TestBoundedOutputReaderFromCannotBypassLimit",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestRunSecretCommand",
+    "seconds": 0.26
+  },
+  {
+    "result": "pass",
+    "test": "TestRunSecretCommand/stdin-only",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestRunSecretCommand/missing",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestRunSecretCommand/failed-store",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestRunSecretCommand/locked",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestRunSecretCommand/stdout-limit",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestRunSecretCommand/stderr-limit",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestRunSecretCommand/timeout",
+    "seconds": 0.25
+  },
+  {
+    "result": "pass",
+    "test": "TestLinuxSecretServiceIntegration",
+    "seconds": 0.11
+  },
+  {
+    "result": "skip",
+    "test": "TestLinuxLockedSecretService",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestCancelledStartCannotLaunchEvenPrivilegedCore",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestUntrustedCoreCannotAdvertiseTUNCapability",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestLockedCoreMatchesCurrentPlatform",
+    "seconds": 0.02
+  },
+  {
+    "result": "pass",
+    "test": "TestLinuxCoreCannotOutliveKilledHost",
+    "seconds": 0.02
+  },
+  {
+    "result": "pass",
+    "test": "TestStatusContractDoesNotClaimNetworkCapabilities",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestRejectsUnsupportedCommandsWithoutEchoingSecrets",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestOutputFailureIsNotReportedAsSuccess",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestAdvancedMergeChecksBundledCoreAndProtectsCapture",
+    "seconds": 0.02
+  },
+  {
+    "result": "pass",
+    "test": "TestAdvancedRejectsUnknownSecretsAndInvalidPolicies",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestAdvancedActualDNSRouteAndLiveModes",
+    "seconds": 0.14
+  },
+  {
+    "result": "pass",
+    "test": "TestRealCoreChainOrderRuleTargetAndBindings",
+    "seconds": 0.38
+  },
+  {
+    "result": "pass",
+    "test": "TestRealCoreChainPrefixFailureCancellationAndIsolation",
+    "seconds": 0.37
+  },
+  {
+    "result": "pass",
+    "test": "TestChainValidationAndSafeCompilation",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestRealCoreChainCancellationDuringRequest",
+    "seconds": 0.13
+  },
+  {
+    "result": "pass",
+    "test": "TestCredentialFailuresAreActionableAndRedacted",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestCancelledCredentialCommandsAndTarget",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestHysteria2Configuration",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestCoreChecksHysteria2PortHoppingConfiguration",
+    "seconds": 0.02
+  },
+  {
+    "result": "pass",
+    "test": "TestRealCoreRoutesAndLiveModeChanges",
+    "seconds": 0.15
+  },
+  {
+    "result": "pass",
+    "test": "TestRealCoreSOCKS5Authentication",
+    "seconds": 0.18
+  },
+  {
+    "result": "pass",
+    "test": "TestCredentialsAreUserProtectedAndNodeBound",
+    "seconds": 0.03
+  },
+  {
+    "result": "pass",
+    "test": "TestInvalidNodeAndCancelledConnectNeverCommit",
+    "seconds": 0.01
+  },
+  {
+    "result": "pass",
+    "test": "TestMobileConnectionsReuseStablePagingAttributionAndConfirmedClosing",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestMobileLogStoreSharesOnlySanitizedEntriesAcrossSessions",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestMobileCompilerEightProtocolsAndPrivateSecrets",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestMobileCompilerEightProtocolsAndPrivateSecrets/http",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestMobileCompilerEightProtocolsAndPrivateSecrets/socks",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestMobileCompilerEightProtocolsAndPrivateSecrets/shadowsocks",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestMobileCompilerEightProtocolsAndPrivateSecrets/vless",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestMobileCompilerEightProtocolsAndPrivateSecrets/vmess",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestMobileCompilerEightProtocolsAndPrivateSecrets/trojan",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestMobileCompilerEightProtocolsAndPrivateSecrets/hysteria2",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestMobileCompilerEightProtocolsAndPrivateSecrets/tuic",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestMobileTunnelCapturesBothFamiliesAndInterceptsDNSBeforeModes",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestMobileNodeBindingsMatchDesktopAndLogsRedactCompiledSecrets",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestMobileChainAndRuleBindings",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestMobileRejectsMissingCredentialCaptureMismatchAndUntrustedInput",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestRealCoreNodeProbeIsolationAndFailures",
+    "seconds": 0.37
+  },
+  {
+    "result": "pass",
+    "test": "TestRealCoreNodeProbeCancellationAndStatus",
+    "seconds": 0.49
+  },
+  {
+    "result": "pass",
+    "test": "TestRealCoreNodeProbeCancellationAndStatus/OK",
+    "seconds": 0.12
+  },
+  {
+    "result": "pass",
+    "test": "TestRealCoreNodeProbeCancellationAndStatus/Found",
+    "seconds": 0.12
+  },
+  {
+    "result": "pass",
+    "test": "TestRealCoreNodeProbeCancellationAndStatus/Service_Unavailable",
+    "seconds": 0.12
+  },
+  {
+    "result": "pass",
+    "test": "TestProbeDeadlinePublishesFailure",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestCancelledOrReplacedProbeCannotOverwriteObservations",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestCoreChecksRealityVisionConfigurations",
+    "seconds": 0.02
+  },
+  {
+    "result": "pass",
+    "test": "TestRealCoreEncryptedProtocolsAndAuthentication",
+    "seconds": 14.94
+  },
+  {
+    "result": "pass",
+    "test": "TestRealCoreEncryptedProtocolsAndAuthentication/SS_AEAD",
+    "seconds": 0.31
+  },
+  {
+    "result": "pass",
+    "test": "TestRealCoreEncryptedProtocolsAndAuthentication/SS_2022",
+    "seconds": 0.31
+  },
+  {
+    "result": "pass",
+    "test": "TestRealCoreEncryptedProtocolsAndAuthentication/VLESS_TCP",
+    "seconds": 0.31
+  },
+  {
+    "result": "pass",
+    "test": "TestRealCoreEncryptedProtocolsAndAuthentication/VLESS_WebSocket_TLS",
+    "seconds": 0.31
+  },
+  {
+    "result": "pass",
+    "test": "TestRealCoreEncryptedProtocolsAndAuthentication/VLESS_gRPC_TLS",
+    "seconds": 0.31
+  },
+  {
+    "result": "pass",
+    "test": "TestRealCoreEncryptedProtocolsAndAuthentication/VMess_AEAD_auto",
+    "seconds": 0.31
+  },
+  {
+    "result": "pass",
+    "test": "TestRealCoreEncryptedProtocolsAndAuthentication/VMess_AEAD_AES",
+    "seconds": 0.31
+  },
+  {
+    "result": "pass",
+    "test": "TestRealCoreEncryptedProtocolsAndAuthentication/VMess_AEAD_ChaCha",
+    "seconds": 0.31
+  },
+  {
+    "result": "pass",
+    "test": "TestRealCoreEncryptedProtocolsAndAuthentication/VMess_legacy_Alter_ID",
+    "seconds": 0.31
+  },
+  {
+    "result": "pass",
+    "test": "TestRealCoreEncryptedProtocolsAndAuthentication/VMess_WebSocket_TLS",
+    "seconds": 0.31
+  },
+  {
+    "result": "pass",
+    "test": "TestRealCoreEncryptedProtocolsAndAuthentication/VMess_gRPC_TLS",
+    "seconds": 0.31
+  },
+  {
+    "result": "pass",
+    "test": "TestRealCoreEncryptedProtocolsAndAuthentication/Trojan_TLS",
+    "seconds": 0.46
+  },
+  {
+    "result": "pass",
+    "test": "TestRealCoreEncryptedProtocolsAndAuthentication/Trojan_WebSocket_TLS",
+    "seconds": 0.31
+  },
+  {
+    "result": "pass",
+    "test": "TestRealCoreEncryptedProtocolsAndAuthentication/Hysteria2_QUIC",
+    "seconds": 1.06
+  },
+  {
+    "result": "pass",
+    "test": "TestRealCoreEncryptedProtocolsAndAuthentication/Hysteria2_Salamander",
+    "seconds": 6.06
+  },
+  {
+    "result": "pass",
+    "test": "TestRealCoreEncryptedProtocolsAndAuthentication/TUIC_QUIC_cubic",
+    "seconds": 1.2
+  },
+  {
+    "result": "pass",
+    "test": "TestRealCoreEncryptedProtocolsAndAuthentication/TUIC_QUIC_bbr",
+    "seconds": 1.2
+  },
+  {
+    "result": "pass",
+    "test": "TestRealCoreEncryptedProtocolsAndAuthentication/TUIC_QUIC_new_reno",
+    "seconds": 1.2
+  },
+  {
+    "result": "pass",
+    "test": "TestPrivateCredentialRevealIsIdentityBound",
+    "seconds": 0.03
+  },
+  {
+    "result": "pass",
+    "test": "TestLinuxGNOMEHostCaptureAndCrashRecovery",
+    "seconds": 2.62
+  },
+  {
+    "result": "pass",
+    "test": "TestLinuxGNOMEHostCaptureAndCrashRecovery/toggle-disconnect",
+    "seconds": 0.69
+  },
+  {
+    "result": "pass",
+    "test": "TestLinuxGNOMEHostCaptureAndCrashRecovery/eof",
+    "seconds": 0.4
+  },
+  {
+    "result": "pass",
+    "test": "TestLinuxGNOMEHostCaptureAndCrashRecovery/kill-host",
+    "seconds": 0.43
+  },
+  {
+    "result": "pass",
+    "test": "TestLinuxGNOMEHostCaptureAndCrashRecovery/kill-core",
+    "seconds": 0.43
+  },
+  {
+    "result": "pass",
+    "test": "TestLinuxGNOMEHostCaptureAndCrashRecovery/watcher-restart",
+    "seconds": 0.67
+  },
+  {
+    "result": "pass",
+    "test": "TestRoutingBoundaryValidation",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestRealCoreOrderedRoutingAndModeOverride",
+    "seconds": 0.15
+  },
+  {
+    "result": "pass",
+    "test": "TestRuleCompilerPreservesPerOutboundSecurity",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestLinuxHostPrivateProtocolAndEOFCleanup",
+    "seconds": 0.18
+  },
+  {
+    "result": "pass",
+    "test": "TestRuntimeSettingsValidateAndCompile",
+    "seconds": 0.09
+  },
+  {
+    "result": "pass",
+    "test": "TestDNSActualHTTPSAndMalformedResponses",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestDNSActualUDPAndCancellation",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestRuntimeSettingsApplyPortAndPreserveLiveSession",
+    "seconds": 0.14
+  },
+  {
+    "result": "pass",
+    "test": "TestCoreActuallyUsesCustomDNS",
+    "seconds": 0.13
+  },
+  {
+    "result": "pass",
+    "test": "TestCoreLogFramingRedactionAndBounds",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestConnectionPaginationAndSessionScopedClosing",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestRealCoreConnectionCloseAndLogCollection",
+    "seconds": 0.13
+  },
+  {
+    "result": "pass",
+    "test": "TestTUNCompilerProtectsUpstreamAndInterceptsDNSBeforeUserModes",
+    "seconds": 0.02
+  },
+  {
+    "result": "pass",
+    "test": "TestIsolatedDiagnosticsCannotStartTUNCapture",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestUpstreamAddressPolicy",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestUpstreamAddressPolicy/loopback",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestUpstreamAddressPolicy/private",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestUpstreamAddressPolicy/link_local",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestUpstreamAddressPolicy/public_IPv4",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestUpstreamAddressPolicy/public_IPv6",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestUpstreamAddressPolicy/fake_start",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestUpstreamAddressPolicy/fake_end",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestUpstreamAddressPolicy/outside_fake_range",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestUpstreamAddressPolicy/mapped_fake",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestUpstreamAddressPolicy/mixed_answers",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestUpstreamAddressPolicy/private_and_fake",
+    "seconds": 0.0
+  },
+  {
+    "result": "skip",
+    "test": "TestPrepareUpstreamPreservesLocalRoutesAndRejectsFakeLiteral",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestHysteria2UpstreamConfigurationIsolation",
+    "seconds": 0.02
+  },
+  {
+    "result": "pass",
+    "test": "TestCoreChecksVMessAndTUICOptions",
+    "seconds": 0.06
+  },
+  {
+    "result": "pass",
+    "test": "TestCoreChecksVMessAndTUICOptions/vmess/default",
+    "seconds": 0.01
+  },
+  {
+    "result": "pass",
+    "test": "TestCoreChecksVMessAndTUICOptions/vmess/extended",
+    "seconds": 0.01
+  },
+  {
+    "result": "pass",
+    "test": "TestCoreChecksVMessAndTUICOptions/vmess/alternate",
+    "seconds": 0.01
+  },
+  {
+    "result": "pass",
+    "test": "TestCoreChecksVMessAndTUICOptions/tuic/default",
+    "seconds": 0.01
+  },
+  {
+    "result": "pass",
+    "test": "TestCoreChecksVMessAndTUICOptions/tuic/extended",
+    "seconds": 0.01
+  },
+  {
+    "result": "pass",
+    "test": "TestCoreChecksVMessAndTUICOptions/tuic/alternate",
+    "seconds": 0.01
+  },
+  {
+    "result": "pass",
+    "test": "TestVMessTUICBoundariesAndChainCompatibility",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestRealCoreVMessAndTUICDatagrams",
+    "seconds": 1.55
+  },
+  {
+    "result": "pass",
+    "test": "TestRealCoreVMessAndTUICDatagrams/tuic/native",
+    "seconds": 0.35
+  },
+  {
+    "result": "pass",
+    "test": "TestRealCoreVMessAndTUICDatagrams/tuic/quic",
+    "seconds": 0.35
+  },
+  {
+    "result": "pass",
+    "test": "TestRealCoreVMessAndTUICDatagrams/tuic/stream",
+    "seconds": 0.35
+  },
+  {
+    "result": "pass",
+    "test": "TestRealCoreVMessAndTUICDatagrams/vmess/",
+    "seconds": 0.17
+  },
+  {
+    "result": "pass",
+    "test": "TestRealCoreVMessAndTUICDatagrams/vmess/xudp",
+    "seconds": 0.17
+  },
+  {
+    "result": "pass",
+    "test": "TestRealCoreVMessAndTUICDatagrams/vmess/packetaddr",
+    "seconds": 0.17
+  },
+  {
+    "result": "pass",
+    "test": "TestRealCoreVMessTUICChains",
+    "seconds": 0.35
+  },
+  {
+    "result": "pass",
+    "test": "TestRealCoreVMessTUICChains/vmess->tuic",
+    "seconds": 0.15
+  },
+  {
+    "result": "pass",
+    "test": "TestRealCoreVMessTUICChains/tuic->vmess",
+    "seconds": 0.15
+  },
+  {
+    "result": "pass",
+    "test": "TestRecoveryAfterEveryInterruptedRuntimeMove",
+    "seconds": 0.03
+  },
+  {
+    "result": "pass",
+    "test": "TestRecoveryAfterEveryInterruptedRuntimeMove/x",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestRecoveryAfterEveryInterruptedRuntimeMove/xx",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestRecoveryAfterEveryInterruptedRuntimeMove/xxx",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestRecoveryAfterEveryInterruptedRuntimeMove/xxxx",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestRecoveryAfterEveryInterruptedRuntimeMove/xxxxx",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestRecoveryAfterEveryInterruptedRuntimeMove/xxxxxx",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestRecoveryAfterEveryInterruptedRuntimeMove/xxxxxxx",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestRecoveryAfterEveryInterruptedRuntimeMove/xxxxxxxx",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestRecoveryAfterEveryInterruptedRuntimeMove/xxxxxxxxx",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestRecoveryAfterEveryInterruptedRuntimeMove/xxxxxxxxxx",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestRecoveryAfterEveryInterruptedRuntimeMove/xxxxxxxxxxx",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestRecoveryAfterEveryInterruptedRuntimeMove/xxxxxxxxxxxx",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestRecoveryAfterEveryInterruptedRuntimeMove/xxxxxxxxxxxxx",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestRecoveryAfterEveryInterruptedRuntimeMove/xxxxxxxxxxxxxx",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestDurableAcceptanceNeverRollsBackEvenIfFinalHandshakeFails",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestCanceledRecoveryRetainsRecoverableBackup",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestRecoveryCanResumeInterruptedRecovery",
+    "seconds": 0.03
+  },
+  {
+    "result": "pass",
+    "test": "TestAcceptedVersionRetainsMigratedDataOnHelperInterruption",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestPreparedAndCompletedCleanupRecovery",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestRecoveryRejectsCorruptBackupBeforeMutatingProgramOrDatabase",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestJournalRejectsPathAndIdentityTampering",
+    "seconds": 0.01
+  },
+  {
+    "result": "pass",
+    "test": "TestBootstrapMustRemainIdenticalAcrossOnlineUpdates",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestUnsafeBundlePathsAndLimits",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestUnsafeBundlePathsAndLimits/extra",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestUnsafeBundlePathsAndLimits/case-duplicate",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestUnsafeBundlePathsAndLimits/symlink",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestUnsafeBundlePathsAndLimits/directory",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestUnsafeBundlePathsAndLimits/traversal",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestDigestVersionManifestAndCancellation",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestSuccessfulTransactionPreservesUnmanagedFiles",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestFailedStartupRestoresProgramsAndDatabaseWAL",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestMidReplacementFailureRestoresEveryOldEntry",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestFailedCandidateStopRetainsBackupAndBlocksOrdinaryStartup",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestAbortAndConflictingPreparations",
+    "seconds": 0.0
+  },
+  {
+    "result": "pass",
+    "test": "TestLinuxLockedSecretService",
+    "seconds": 0.07
+  }
+]

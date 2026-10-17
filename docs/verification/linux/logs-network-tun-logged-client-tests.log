@@ -1,0 +1,43 @@
+=== RUN   TestIsolatedLinuxTUNLoggedClientReceipts
+=== RUN   TestIsolatedLinuxTUNLoggedClientReceipts/success
+=== RUN   TestIsolatedLinuxTUNLoggedClientReceipts/start-rejected
+=== RUN   TestIsolatedLinuxTUNLoggedClientReceipts/invalid-start-log
+=== RUN   TestIsolatedLinuxTUNLoggedClientReceipts/invalid-live-log
+=== RUN   TestIsolatedLinuxTUNLoggedClientReceipts/missing-stop
+=== RUN   TestIsolatedLinuxTUNLoggedClientReceipts/old-helper
+--- PASS: TestIsolatedLinuxTUNLoggedClientReceipts (0.01s)
+    --- PASS: TestIsolatedLinuxTUNLoggedClientReceipts/success (0.00s)
+    --- PASS: TestIsolatedLinuxTUNLoggedClientReceipts/start-rejected (0.00s)
+    --- PASS: TestIsolatedLinuxTUNLoggedClientReceipts/invalid-start-log (0.00s)
+    --- PASS: TestIsolatedLinuxTUNLoggedClientReceipts/invalid-live-log (0.00s)
+    --- PASS: TestIsolatedLinuxTUNLoggedClientReceipts/missing-stop (0.00s)
+    --- PASS: TestIsolatedLinuxTUNLoggedClientReceipts/old-helper (0.00s)
+=== RUN   TestIsolatedLinuxTUNLoggedClientReceipts
+=== RUN   TestIsolatedLinuxTUNLoggedClientReceipts/success
+=== RUN   TestIsolatedLinuxTUNLoggedClientReceipts/start-rejected
+=== RUN   TestIsolatedLinuxTUNLoggedClientReceipts/invalid-start-log
+=== RUN   TestIsolatedLinuxTUNLoggedClientReceipts/invalid-live-log
+=== RUN   TestIsolatedLinuxTUNLoggedClientReceipts/missing-stop
+=== RUN   TestIsolatedLinuxTUNLoggedClientReceipts/old-helper
+--- PASS: TestIsolatedLinuxTUNLoggedClientReceipts (0.01s)
+    --- PASS: TestIsolatedLinuxTUNLoggedClientReceipts/success (0.00s)
+    --- PASS: TestIsolatedLinuxTUNLoggedClientReceipts/start-rejected (0.00s)
+    --- PASS: TestIsolatedLinuxTUNLoggedClientReceipts/invalid-start-log (0.00s)
+    --- PASS: TestIsolatedLinuxTUNLoggedClientReceipts/invalid-live-log (0.00s)
+    --- PASS: TestIsolatedLinuxTUNLoggedClientReceipts/missing-stop (0.00s)
+    --- PASS: TestIsolatedLinuxTUNLoggedClientReceipts/old-helper (0.00s)
+=== RUN   TestIsolatedLinuxTUNLoggedClientReceipts
+=== RUN   TestIsolatedLinuxTUNLoggedClientReceipts/success
+=== RUN   TestIsolatedLinuxTUNLoggedClientReceipts/start-rejected
+=== RUN   TestIsolatedLinuxTUNLoggedClientReceipts/invalid-start-log
+=== RUN   TestIsolatedLinuxTUNLoggedClientReceipts/invalid-live-log
+=== RUN   TestIsolatedLinuxTUNLoggedClientReceipts/missing-stop
+=== RUN   TestIsolatedLinuxTUNLoggedClientReceipts/old-helper
+--- PASS: TestIsolatedLinuxTUNLoggedClientReceipts (0.01s)
+    --- PASS: TestIsolatedLinuxTUNLoggedClientReceipts/success (0.00s)
+    --- PASS: TestIsolatedLinuxTUNLoggedClientReceipts/start-rejected (0.00s)
+    --- PASS: TestIsolatedLinuxTUNLoggedClientReceipts/invalid-start-log (0.00s)
+    --- PASS: TestIsolatedLinuxTUNLoggedClientReceipts/invalid-live-log (0.00s)
+    --- PASS: TestIsolatedLinuxTUNLoggedClientReceipts/missing-stop (0.00s)
+    --- PASS: TestIsolatedLinuxTUNLoggedClientReceipts/old-helper (0.00s)
+PASS

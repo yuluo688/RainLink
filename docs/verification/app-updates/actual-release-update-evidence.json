@@ -1,0 +1,35 @@
+{
+  "version": "0.1.0+2",
+  "checks": [
+    {
+      "scenario": "install",
+      "profileIsolated": true,
+      "realFlutterAot": true,
+      "hostIsHarmlessFixture": true,
+      "productionBundleModified": false,
+      "bootstrapAndFirstFrameAccepted": true,
+      "schema": 6,
+      "nodes": 0,
+      "candidateStayedOpen": true,
+      "normalExitObserved": true,
+      "transactionFilesCleaned": true,
+      "retainedQaProfile": "qa5def1358d9"
+    },
+    {
+      "scenario": "rollback",
+      "profileIsolated": true,
+      "realFlutterAot": true,
+      "hostIsHarmlessFixture": true,
+      "productionBundleModified": false,
+      "actualBootstrapFailure": true,
+      "previousProgramRestored": true,
+      "schemaBeforeAndAfter": 5,
+      "databaseBytesRestored": true,
+      "previousRestartAcknowledged": true,
+      "transactionFilesCleaned": true,
+      "retainedQaProfile": "qa0b39e6fba9"
+    }
+  ],
+  "officialGitHubReleaseUsed": false,
+  "userDatabaseUsed": false
+}

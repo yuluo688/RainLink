@@ -1,0 +1,29 @@
+=== RUN   TestProcessCredentialsRequireMatchingUIDSlotsAndLifetime
+--- PASS: TestProcessCredentialsRequireMatchingUIDSlotsAndLifetime (0.00s)
+=== RUN   TestPinnedProcessMonitorCancellationSignalsAndExit
+--- PASS: TestPinnedProcessMonitorCancellationSignalsAndExit (0.10s)
+=== RUN   TestProcessDisappearingDuringProcReadRetainsUncertainErrors
+=== RUN   TestProcessDisappearingDuringProcReadRetainsUncertainErrors/stat/no_such_file_or_directory
+=== RUN   TestProcessDisappearingDuringProcReadRetainsUncertainErrors/boot/no_such_file_or_directory
+=== RUN   TestProcessDisappearingDuringProcReadRetainsUncertainErrors/stat/no_such_process
+=== RUN   TestProcessDisappearingDuringProcReadRetainsUncertainErrors/boot/no_such_process
+=== RUN   TestProcessDisappearingDuringProcReadRetainsUncertainErrors/stat/permission_denied
+=== RUN   TestProcessDisappearingDuringProcReadRetainsUncertainErrors/boot/permission_denied
+=== RUN   TestProcessDisappearingDuringProcReadRetainsUncertainErrors/stat/input/output_error
+=== RUN   TestProcessDisappearingDuringProcReadRetainsUncertainErrors/boot/input/output_error
+--- PASS: TestProcessDisappearingDuringProcReadRetainsUncertainErrors (0.00s)
+    --- PASS: TestProcessDisappearingDuringProcReadRetainsUncertainErrors/stat/no_such_file_or_directory (0.00s)
+    --- PASS: TestProcessDisappearingDuringProcReadRetainsUncertainErrors/boot/no_such_file_or_directory (0.00s)
+    --- PASS: TestProcessDisappearingDuringProcReadRetainsUncertainErrors/stat/no_such_process (0.00s)
+    --- PASS: TestProcessDisappearingDuringProcReadRetainsUncertainErrors/boot/no_such_process (0.00s)
+    --- PASS: TestProcessDisappearingDuringProcReadRetainsUncertainErrors/stat/permission_denied (0.00s)
+    --- PASS: TestProcessDisappearingDuringProcReadRetainsUncertainErrors/boot/permission_denied (0.00s)
+    --- PASS: TestProcessDisappearingDuringProcReadRetainsUncertainErrors/stat/input/output_error (0.00s)
+    --- PASS: TestProcessDisappearingDuringProcReadRetainsUncertainErrors/boot/input/output_error (0.00s)
+=== RUN   TestProcessStatIdentityAndExitedStates
+--- PASS: TestProcessStatIdentityAndExitedStates (0.00s)
+=== RUN   TestProcessIdentitySeparatesLiveChildExitAndPIDReuse
+--- PASS: TestProcessIdentitySeparatesLiveChildExitAndPIDReuse (0.00s)
+=== RUN   TestProcessNamespaceAndPersistedIdentityValidation
+--- PASS: TestProcessNamespaceAndPersistedIdentityValidation (0.00s)
+PASS

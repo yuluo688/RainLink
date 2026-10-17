@@ -1,0 +1,17 @@
+=== RUN   TestRealSystemdInstallation
+    systemd_integration_linux_test.go:52: install-tun success=true
+    systemd_integration_linux_test.go:56: real systemd accepted installed socket/template, served authenticated idle protocol, no polkit request
+    systemd_integration_linux_test.go:88: real systemd exit hook preserved another live lease without falsely confirming idle
+    systemd_integration_linux_test.go:89: install-tun success=true
+    systemd_integration_linux_test.go:96: install-tun success=true
+    systemd_integration_linux_test.go:100: real systemd repeated upgrade preserved disabled socket
+    systemd_integration_linux_test.go:112: install-tun success=false
+    systemd_integration_linux_test.go:127: administrator overrides and ordinary-user installation correctly refused
+    systemd_integration_linux_test.go:152: install-tun success=false
+    systemd_integration_linux_test.go:163: recover-tun-install success=true
+    systemd_integration_linux_test.go:167: active capture refused replacement; explicit recovery restored original service
+    systemd_integration_linux_test.go:174: uninstall-tun success=true
+    systemd_integration_linux_test.go:178: recover-tun-install success=true
+    systemd_integration_linux_test.go:182: real systemd uninstall and recovery completed; no capture/session remains
+--- PASS: TestRealSystemdInstallation (141.49s)
+PASS

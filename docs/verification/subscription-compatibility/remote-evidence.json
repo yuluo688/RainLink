@@ -1,0 +1,73 @@
+{
+  "direct": [
+    {
+      "alias": "http-1",
+      "httpsTransfer": false,
+      "error": "timeout",
+      "durationMs": 12063
+    },
+    {
+      "alias": "http-2",
+      "httpsTransfer": false,
+      "error": "timeout",
+      "durationMs": 12063
+    }
+  ],
+  "rainlink": {
+    "event": "report",
+    "at": "2026-10-17T06:41:38.979958Z",
+    "database": "memory",
+    "systemProxyRequested": false,
+    "coreVersion": "1.12.25-rainlink.1",
+    "manualStorage": {
+      "count": 2,
+      "ungrouped": true,
+      "protectedCredentials": true
+    },
+    "connections": [
+      {
+        "alias": "http-1",
+        "protocol": "HTTP",
+        "transport": "tcp",
+        "tls": false,
+        "reality": false,
+        "vision": false,
+        "endpointClass": "remote",
+        "coreReady": true,
+        "httpsTransfer": false,
+        "error": "tls_handshake_failed",
+        "tlsFailure": [
+          "Connection terminated during handshake"
+        ],
+        "listenerClosed": true,
+        "durationMs": 5839
+      },
+      {
+        "alias": "http-2",
+        "protocol": "HTTP",
+        "transport": "tcp",
+        "tls": false,
+        "reality": false,
+        "vision": false,
+        "endpointClass": "remote",
+        "coreReady": true,
+        "httpsTransfer": false,
+        "error": "tls_handshake_failed",
+        "tlsFailure": [
+          "Connection terminated during handshake"
+        ],
+        "listenerClosed": true,
+        "durationMs": 5810
+      }
+    ],
+    "subscription": {
+      "imported": false,
+      "error": "无法获取订阅，请检查地址、证书与网络"
+    },
+    "passed": false
+  },
+  "exitCode": 1,
+  "timedOut": false,
+  "exactSystemProxyPreserved": true,
+  "passed": false
+}

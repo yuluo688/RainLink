@@ -1,0 +1,9 @@
+{
+  "scenario": "isolated localhost HTTP stream through the bundled sing-box",
+  "systemProxyChanged": false,
+  "heldRequestClosedByUi": true,
+  "coreLogEntries": 14,
+  "nativeSaveDialogAndFileVerified": true,
+  "csvPath": "C:\\Users\\FalingFliff\\Documents\\ChatGPT\\RainLink\\app\\../docs/verification/telemetry/connections-real-1792150003548.csv",
+  "at": "2026-10-16T19:26:46.702313"
+}

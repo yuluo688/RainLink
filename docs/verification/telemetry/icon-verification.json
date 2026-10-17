@@ -1,0 +1,27 @@
+[
+  {
+    "name": "connections",
+    "matches": true,
+    "sha256": "f7fe6c6a26de8d4a89fe36f66eeab9b1011e655e567b264de3024f957be5af45"
+  },
+  {
+    "name": "terminal",
+    "matches": true,
+    "sha256": "b1ee8a8a836d4e5b75cdecbc696cca383b2bd6346cfc12a4804c630f4eef80f0"
+  },
+  {
+    "name": "search",
+    "matches": true,
+    "sha256": "a599be032943c70672bb56da3b2d48606662ab6933cb8d1e13eecdc5a7ea001e"
+  },
+  {
+    "name": "close",
+    "matches": true,
+    "sha256": "aaaaeab113662ca4ee109369deed1722c3044985ddf8d014d62195ec3d5393d3"
+  },
+  {
+    "name": "download",
+    "matches": true,
+    "sha256": "ee6e5b811acbb7a59b4f3a1aad81e3a95b1cf9ecdfc17e255abd5a9d1f3c744f"
+  }
+]

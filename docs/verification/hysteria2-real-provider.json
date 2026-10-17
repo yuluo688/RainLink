@@ -1,0 +1,123 @@
+{
+  "direct": [],
+  "rainlink": {
+    "event": "report",
+    "at": "2026-10-16T09:14:07.834914Z",
+    "database": "memory",
+    "systemProxyRequested": false,
+    "coreVersion": "1.12.25-rainlink.1",
+    "manualStorage": {
+      "count": 0,
+      "ungrouped": true,
+      "protectedCredentials": true
+    },
+    "connections": [
+      {
+        "alias": "subscription-1",
+        "protocol": "Hysteria2",
+        "transport": "quic",
+        "tls": true,
+        "reality": false,
+        "vision": false,
+        "regionHint": "sg",
+        "nameHint": "新加坡  高速专线",
+        "endpointClass": "remote",
+        "coreReady": true,
+        "httpsTransfer": false,
+        "error": "tls_handshake_failed",
+        "tlsFailure": [
+          "Connection terminated during handshake"
+        ],
+        "listenerClosed": true,
+        "durationMs": 10810
+      },
+      {
+        "alias": "subscription-2",
+        "protocol": "Hysteria2",
+        "transport": "quic",
+        "tls": true,
+        "reality": false,
+        "vision": false,
+        "regionHint": "tw",
+        "nameHint": "台湾  避免晚高峰使用",
+        "endpointClass": "remote",
+        "coreReady": true,
+        "httpsTransfer": false,
+        "error": "tls_handshake_failed",
+        "tlsFailure": [
+          "Connection terminated during handshake"
+        ],
+        "listenerClosed": true,
+        "durationMs": 10812
+      },
+      {
+        "alias": "subscription-3",
+        "protocol": "Hysteria2",
+        "transport": "quic",
+        "tls": true,
+        "reality": false,
+        "vision": false,
+        "regionHint": "us",
+        "nameHint": "美国倍  电信联通移动推荐",
+        "endpointClass": "remote",
+        "coreReady": true,
+        "httpsTransfer": false,
+        "error": "tls_handshake_failed",
+        "tlsFailure": [
+          "Connection terminated during handshake"
+        ],
+        "listenerClosed": true,
+        "durationMs": 10804
+      },
+      {
+        "alias": "subscription-4",
+        "protocol": "Hysteria2",
+        "transport": "quic",
+        "tls": true,
+        "reality": false,
+        "vision": false,
+        "regionHint": "sg",
+        "nameHint": "新加坡  高速专线",
+        "endpointClass": "remote",
+        "coreReady": true,
+        "httpsTransfer": false,
+        "error": "tls_handshake_failed",
+        "tlsFailure": [
+          "Connection terminated during handshake"
+        ],
+        "listenerClosed": true,
+        "durationMs": 10799
+      }
+    ],
+    "subscription": {
+      "imported": true,
+      "automaticGroup": true,
+      "nameFromProvider": true,
+      "nodeCount": 68,
+      "protocols": {
+        "VLESS": 52,
+        "Hysteria2": 16
+      },
+      "skipped": 3,
+      "usageProvided": true,
+      "usedBytes": 27476951024,
+      "totalBytes": 1073741824000,
+      "expiresAt": "2029-12-17T10:15:35.000Z",
+      "intervalHours": 24,
+      "fetchRoute": "system-network",
+      "refresh": {
+        "succeeded": true,
+        "nodeCount": 68,
+        "sameNodeIds": true,
+        "selectionPreserved": true,
+        "manualNodesPreserved": true
+      },
+      "testedNodes": 4
+    },
+    "passed": false
+  },
+  "exitCode": 1,
+  "timedOut": false,
+  "exactSystemProxyPreserved": true,
+  "passed": false
+}

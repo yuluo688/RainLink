@@ -1,0 +1,7 @@
+=== RUN   TestRainLinkManagedPolicyValidation
+--- PASS: TestRainLinkManagedPolicyValidation (0.00s)
+=== RUN   TestRainLinkManagedPolicyNeverDeletesByRangeOrUpdatesInPlace
+--- PASS: TestRainLinkManagedPolicyNeverDeletesByRangeOrUpdatesInPlace (0.00s)
+=== RUN   TestRainLinkManagedRuleConflictsIncludeBothFamiliesAndGotoTargets
+--- PASS: TestRainLinkManagedRuleConflictsIncludeBothFamiliesAndGotoTargets (0.00s)
+PASS

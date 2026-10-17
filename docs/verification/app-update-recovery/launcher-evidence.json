@@ -1,0 +1,12 @@
+{
+  "launcherSha256": "d1243b2e6b5e5472f797c6ac8a9ccfcf6d31ee62954112cb5f6e6f952cd582b1",
+  "uiSha256": "7b4d1451a178045bdea79ae7f478be9aac005dcfd317efdbbbc9adf1570cb1d7",
+  "bootstrapVersion": "1.0.0.0",
+  "schema": 2,
+  "nativeIconImages": 9,
+  "figmaIcoPayloadsIdentical": true,
+  "launcherAndUiIconResourcesIdentical": true,
+  "explicitBootstrapIdentityVerified": true,
+  "standaloneWithoutFlutterDll": true,
+  "startupWritesNoLockFile": true
+}

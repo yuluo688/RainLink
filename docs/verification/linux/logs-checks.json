@@ -1,0 +1,29 @@
+{
+  "tools/verify_linux_systemd_vm.sh": {
+    "exitCode": 0
+  },
+  "gofmt": {
+    "exitCode": 0
+  },
+  "tools/verify_linux_network.sh": {
+    "exitCode": 0
+  },
+  "tools/fixtures/linux_systemd_logs_guest.sh": {
+    "exitCode": 0
+  },
+  "pythonSyntax": {
+    "exitCode": 0
+  },
+  "tools/fixtures/linux_network_namespace.sh": {
+    "exitCode": 0
+  },
+  "vet-windows-amd64": {
+    "exitCode": 0
+  },
+  "vet-linux-amd64": {
+    "exitCode": 0
+  },
+  "vet-linux-arm64": {
+    "exitCode": 0
+  }
+}

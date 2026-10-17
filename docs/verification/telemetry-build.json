@@ -1,0 +1,10 @@
+{
+  "builtAt": "2026-10-16T18:57:01.5886511+08:00",
+  "bundle": "C:\\Users\\FalingFliff\\Documents\\ChatGPT\\RainLink\\build\\RainLink-windows-x64-telemetry-preview.zip",
+  "bytes": 41150227,
+  "sha256": "a6ab9677f426b958daca8f0fe2abd4e3dfc732aaf8fdc55b24f47fa0892db503",
+  "releasePid": 21168,
+  "hostSha256": "e9e02f4b3824582527b713e092fc082e000bc46ccbd790f69aecf6dff806a6cf",
+  "coreSha256": "cf6863552456c535fd79a0724f2d01352e77c97f4958466b75d9f07d8f0edef7",
+  "flutterEngineSha256": "55089c0bb72c53220aeecd31c859946b4a7e990fd6ea29975f448e22b2586677"
+}

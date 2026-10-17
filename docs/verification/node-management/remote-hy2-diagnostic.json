@@ -1,0 +1,39 @@
+{
+  "at": "2026-10-16T13:38:59.709156+00:00",
+  "scenario": "existing encrypted provider nodes through isolated real core",
+  "databaseReadOnly": true,
+  "exactSystemProxyPreserved": true,
+  "results": [
+    {
+      "alias": "node-1",
+      "protocol": "hysteria2",
+      "passed": false,
+      "failureCode": "timeout",
+      "httpStatus": null,
+      "latencyMs": null,
+      "resultRevisionMatched": true,
+      "cleanedUp": true
+    },
+    {
+      "alias": "node-2",
+      "protocol": "hysteria2",
+      "passed": true,
+      "failureCode": null,
+      "httpStatus": null,
+      "latencyMs": 1291,
+      "resultRevisionMatched": true,
+      "cleanedUp": true
+    },
+    {
+      "alias": "node-3",
+      "protocol": "hysteria2",
+      "passed": true,
+      "failureCode": null,
+      "httpStatus": null,
+      "latencyMs": 702,
+      "resultRevisionMatched": true,
+      "cleanedUp": true
+    }
+  ],
+  "passed": false
+}

@@ -1,0 +1,15 @@
+{
+  "at": "2026-10-17T03:09:24.558735",
+  "nativeWindows": true,
+  "temporaryDatabase": true,
+  "compactRowHeight": 56.0,
+  "standardRowHeight": 64.0,
+  "nativeSqliteFailureKeptConfirmedDensity": true,
+  "visibleSelectorKeptConfirmedDensity": true,
+  "switchBackAndRetryWorked": true,
+  "sameActualCoreSession": true,
+  "actualOriginTransfers": 3,
+  "systemProxyEnabled": false,
+  "tunEnabled": false,
+  "densitySurvivedReopen": true
+}

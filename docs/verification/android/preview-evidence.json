@@ -1,0 +1,60 @@
+{
+  "artifact": "build/RainLink-0.1.0+3-android-debug-preview.apk",
+  "version": "0.1.0+3",
+  "bytes": 212259918,
+  "sha256": "83e5acd6802e98e03536930b4062ece9089debbca417dd58e2f30620c6fcae06",
+  "entrypoint": "lib/main.dart",
+  "signing": "Android Debug; development preview",
+  "abis": [
+    "arm64-v8a",
+    "x86_64"
+  ],
+  "nativeAndPackageShaMatch": true,
+  "installedApkShaMatches": true,
+  "qaRequestClientExcludedFromMainApk": true,
+  "ordinaryHomeObserved": true,
+  "ordinaryHomePhase": "disconnected; no selected target",
+  "homeSummaryVisibleAboveNavigation": true,
+  "ordinaryHomeScreenshot": "preview-home.png",
+  "ordinaryHomeHierarchy": "preview-home.xml",
+  "ordinarySettingsScreenshot": "preview-settings.png",
+  "ordinaryGeneralSettingsScreenshot": "preview-settings-general.png",
+  "ordinaryUiObservation": "preview-ui-observation.json",
+  "screenshotScope": "ordinary main.dart application; isolated QA emulator; existing persisted test traffic; no user subscription",
+  "flutterTestsPassed": 403,
+  "kotlinUnitTestsPassed": 5,
+  "nativeTestsPassed": 10,
+  "nativeTestProcesses": 5,
+  "androidLint": {
+    "errors": 0,
+    "warnings": 4
+  },
+  "dartAnalyzePassed": true,
+  "dartFormatCheck": {
+    "files": 255,
+    "changed": 0
+  },
+  "nativeEvidence": "native-evidence.json",
+  "packageEvidence": "package-evidence.json",
+  "flutterTelemetryEvidence": "flutter-telemetry-evidence.json",
+  "flutterStartupEvidence": "flutter-startup-evidence.json",
+  "figmaSvgEvidence": "icon-full-evidence.json",
+  "figmaSvgMatches": 44,
+  "androidFixtureCaptures": 16,
+  "performanceLimit": "Historical slow software-rendered emulator launches remain in earlier records. This host-GPU Debug cold launch reported 4583 ms; production launch and long-session stability remain unverified.",
+  "at": "2026-10-17T12:58:32.403087+08:00",
+  "passed": true,
+  "cleanupEvidence": "cleanup-evidence.json",
+  "qaCleanupPassed": true,
+  "flutterConfigurationEvidence": "flutter-configuration-evidence.json",
+  "configurationActualResponses": 9,
+  "networkHandoverActualTransfers": 3,
+  "figmaBaselineRecheck": "icon-baseline-recheck.json",
+  "ordinaryColdLaunchTotalTimeMs": 4583,
+  "qaEnvironment": {
+    "api": 36,
+    "ramMiB": 2048,
+    "graphics": "host GPU; NVIDIA RTX 3050 Ti",
+    "hypervisor": "WHPX"
+  }
+}

@@ -1,0 +1,56 @@
+[
+  {
+    "icon": "back.svg",
+    "figmaSha256": "69f8fa58a68cc78b66a84921843784dbc920d197fea623203d7e5f0a4400fffa",
+    "appSha256": "69f8fa58a68cc78b66a84921843784dbc920d197fea623203d7e5f0a4400fffa",
+    "equal": true
+  },
+  {
+    "icon": "chart.svg",
+    "figmaSha256": "609d082dac1a5b6b68476fe3da7fe5ec52756fb99d24782316dbe7a24ecb4777",
+    "appSha256": "609d082dac1a5b6b68476fe3da7fe5ec52756fb99d24782316dbe7a24ecb4777",
+    "equal": true
+  },
+  {
+    "icon": "folder.svg",
+    "figmaSha256": "078aa5ef96e8928863c12ec97688dd9a2f543c70a4e6df40368447285e694bbe",
+    "appSha256": "078aa5ef96e8928863c12ec97688dd9a2f543c70a4e6df40368447285e694bbe",
+    "equal": true
+  },
+  {
+    "icon": "grid.svg",
+    "figmaSha256": "eb301a0210303bff2f22e68afb420e37cb6e2cb0699105c7fca7b3b18015975e",
+    "appSha256": "eb301a0210303bff2f22e68afb420e37cb6e2cb0699105c7fca7b3b18015975e",
+    "equal": true
+  },
+  {
+    "icon": "link.svg",
+    "figmaSha256": "3e31ce5fee121e68bd76583099c068eb9077f61d946bfa150c77fc973a050558",
+    "appSha256": "3e31ce5fee121e68bd76583099c068eb9077f61d946bfa150c77fc973a050558",
+    "equal": true
+  },
+  {
+    "icon": "nodes.svg",
+    "figmaSha256": "f56eadd49ef712876c2af03deb109d29fc3db0f84b4d65ffbbd2655d0854d0c1",
+    "appSha256": "f56eadd49ef712876c2af03deb109d29fc3db0f84b4d65ffbbd2655d0854d0c1",
+    "equal": true
+  },
+  {
+    "icon": "power.svg",
+    "figmaSha256": "fe9d09085d0a6573866dfcba3a9b9241817366e770ddf16af7a649bd6cf376cc",
+    "appSha256": "fe9d09085d0a6573866dfcba3a9b9241817366e770ddf16af7a649bd6cf376cc",
+    "equal": true
+  },
+  {
+    "icon": "refresh.svg",
+    "figmaSha256": "d04cc93bc090bf4a917e78f2c6e502808b6354a2ce5fa7c168a6d4d23c87e7b4",
+    "appSha256": "d04cc93bc090bf4a917e78f2c6e502808b6354a2ce5fa7c168a6d4d23c87e7b4",
+    "equal": true
+  },
+  {
+    "icon": "settings.svg",
+    "figmaSha256": "e9a28776914a12af67235f2c1c3b72cc41e9381911a66a1efa0196e5e218590e",
+    "appSha256": "e9a28776914a12af67235f2c1c3b72cc41e9381911a66a1efa0196e5e218590e",
+    "equal": true
+  }
+]

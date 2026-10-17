@@ -1,0 +1,27 @@
+{
+  "at": "2026-10-17T03:13:56.422164+08:00",
+  "releaseStarted": true,
+  "realWindowsWindow": true,
+  "defaultCompactObserved": true,
+  "openedAppearanceAndDensityMenu": true,
+  "changedUserPreferences": false,
+  "stayedDisconnected": true,
+  "closedNormally": true,
+  "beforeAndAfterUserStateEqual": true,
+  "databaseSchema": 6,
+  "integrity": "ok",
+  "counts": {
+    "nodes": 68,
+    "node_groups": 1,
+    "node_overrides": 0,
+    "preferences": 4
+  },
+  "startupAndSystemProxySummariesUnchanged": true,
+  "archive": "build/RainLink-windows-x64-density-preview.zip",
+  "archiveSha256": "af2a8cd5ae874b496826fca8aa4feea909accb00b48577195e9da9e3fb75a596",
+  "screenshots": [
+    "release-overview.png",
+    "release-appearance.png",
+    "release-density-menu.png"
+  ]
+}

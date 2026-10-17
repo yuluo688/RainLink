@@ -1,0 +1,5115 @@
+{
+  "after": {
+    "Links": [
+      {
+        "Index": 1,
+        "Name": "lo",
+        "Flags": 65609,
+        "Type": 772,
+        "Kind": "",
+        "Master": 0,
+        "OperState": 0
+      },
+      {
+        "Index": 2,
+        "Name": "uplink1",
+        "Flags": 69699,
+        "Type": 1,
+        "Kind": "veth",
+        "Master": 0,
+        "OperState": 6
+      },
+      {
+        "Index": 3,
+        "Name": "uplink0",
+        "Flags": 69699,
+        "Type": 1,
+        "Kind": "veth",
+        "Master": 0,
+        "OperState": 6
+      },
+      {
+        "Index": 4,
+        "Name": "backup1",
+        "Flags": 69699,
+        "Type": 1,
+        "Kind": "veth",
+        "Master": 0,
+        "OperState": 6
+      },
+      {
+        "Index": 5,
+        "Name": "backup0",
+        "Flags": 69699,
+        "Type": 1,
+        "Kind": "veth",
+        "Master": 0,
+        "OperState": 6
+      }
+    ],
+    "Routes": [
+      {
+        "Family": 2,
+        "Destination": "0.0.0.0/0",
+        "Source": "0.0.0.0/0",
+        "TOS": 0,
+        "Table": 254,
+        "Protocol": 3,
+        "Scope": 0,
+        "Type": 1,
+        "Flags": 0,
+        "Priority": 40,
+        "Preference": 0,
+        "Interface": 3,
+        "Gateway": "192.0.2.1",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/gAAAA=="
+          },
+          {
+            "Type": 6,
+            "Value": "KAAAAA=="
+          },
+          {
+            "Type": 5,
+            "Value": "wAACAQ=="
+          },
+          {
+            "Type": 4,
+            "Value": "AwAAAA=="
+          }
+        ]
+      },
+      {
+        "Family": 2,
+        "Destination": "0.0.0.0/0",
+        "Source": "0.0.0.0/0",
+        "TOS": 0,
+        "Table": 254,
+        "Protocol": 3,
+        "Scope": 0,
+        "Type": 1,
+        "Flags": 0,
+        "Priority": 70,
+        "Preference": 0,
+        "Interface": 5,
+        "Gateway": "198.51.100.1",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/gAAAA=="
+          },
+          {
+            "Type": 6,
+            "Value": "RgAAAA=="
+          },
+          {
+            "Type": 5,
+            "Value": "xjNkAQ=="
+          },
+          {
+            "Type": 4,
+            "Value": "BQAAAA=="
+          }
+        ]
+      },
+      {
+        "Family": 2,
+        "Destination": "192.0.2.0/24",
+        "Source": "0.0.0.0/0",
+        "TOS": 0,
+        "Table": 254,
+        "Protocol": 2,
+        "Scope": 253,
+        "Type": 1,
+        "Flags": 0,
+        "Priority": 0,
+        "Preference": 0,
+        "Interface": 3,
+        "Gateway": "",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/gAAAA=="
+          },
+          {
+            "Type": 1,
+            "Value": "wAACAA=="
+          },
+          {
+            "Type": 7,
+            "Value": "wAACAg=="
+          },
+          {
+            "Type": 4,
+            "Value": "AwAAAA=="
+          }
+        ]
+      },
+      {
+        "Family": 2,
+        "Destination": "198.51.100.0/24",
+        "Source": "0.0.0.0/0",
+        "TOS": 0,
+        "Table": 254,
+        "Protocol": 2,
+        "Scope": 253,
+        "Type": 1,
+        "Flags": 0,
+        "Priority": 0,
+        "Preference": 0,
+        "Interface": 5,
+        "Gateway": "",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/gAAAA=="
+          },
+          {
+            "Type": 1,
+            "Value": "xjNkAA=="
+          },
+          {
+            "Type": 7,
+            "Value": "xjNkAg=="
+          },
+          {
+            "Type": 4,
+            "Value": "BQAAAA=="
+          }
+        ]
+      },
+      {
+        "Family": 2,
+        "Destination": "127.0.0.0/8",
+        "Source": "0.0.0.0/0",
+        "TOS": 0,
+        "Table": 255,
+        "Protocol": 2,
+        "Scope": 254,
+        "Type": 2,
+        "Flags": 0,
+        "Priority": 0,
+        "Preference": 0,
+        "Interface": 1,
+        "Gateway": "",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/wAAAA=="
+          },
+          {
+            "Type": 1,
+            "Value": "fwAAAA=="
+          },
+          {
+            "Type": 7,
+            "Value": "fwAAAQ=="
+          },
+          {
+            "Type": 4,
+            "Value": "AQAAAA=="
+          }
+        ]
+      },
+      {
+        "Family": 2,
+        "Destination": "127.0.0.1/32",
+        "Source": "0.0.0.0/0",
+        "TOS": 0,
+        "Table": 255,
+        "Protocol": 2,
+        "Scope": 254,
+        "Type": 2,
+        "Flags": 0,
+        "Priority": 0,
+        "Preference": 0,
+        "Interface": 1,
+        "Gateway": "",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/wAAAA=="
+          },
+          {
+            "Type": 1,
+            "Value": "fwAAAQ=="
+          },
+          {
+            "Type": 7,
+            "Value": "fwAAAQ=="
+          },
+          {
+            "Type": 4,
+            "Value": "AQAAAA=="
+          }
+        ]
+      },
+      {
+        "Family": 2,
+        "Destination": "127.255.255.255/32",
+        "Source": "0.0.0.0/0",
+        "TOS": 0,
+        "Table": 255,
+        "Protocol": 2,
+        "Scope": 253,
+        "Type": 3,
+        "Flags": 0,
+        "Priority": 0,
+        "Preference": 0,
+        "Interface": 1,
+        "Gateway": "",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/wAAAA=="
+          },
+          {
+            "Type": 1,
+            "Value": "f////w=="
+          },
+          {
+            "Type": 7,
+            "Value": "fwAAAQ=="
+          },
+          {
+            "Type": 4,
+            "Value": "AQAAAA=="
+          }
+        ]
+      },
+      {
+        "Family": 2,
+        "Destination": "192.0.2.2/32",
+        "Source": "0.0.0.0/0",
+        "TOS": 0,
+        "Table": 255,
+        "Protocol": 2,
+        "Scope": 254,
+        "Type": 2,
+        "Flags": 0,
+        "Priority": 0,
+        "Preference": 0,
+        "Interface": 3,
+        "Gateway": "",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/wAAAA=="
+          },
+          {
+            "Type": 1,
+            "Value": "wAACAg=="
+          },
+          {
+            "Type": 7,
+            "Value": "wAACAg=="
+          },
+          {
+            "Type": 4,
+            "Value": "AwAAAA=="
+          }
+        ]
+      },
+      {
+        "Family": 2,
+        "Destination": "192.0.2.255/32",
+        "Source": "0.0.0.0/0",
+        "TOS": 0,
+        "Table": 255,
+        "Protocol": 2,
+        "Scope": 253,
+        "Type": 3,
+        "Flags": 0,
+        "Priority": 0,
+        "Preference": 0,
+        "Interface": 3,
+        "Gateway": "",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/wAAAA=="
+          },
+          {
+            "Type": 1,
+            "Value": "wAAC/w=="
+          },
+          {
+            "Type": 7,
+            "Value": "wAACAg=="
+          },
+          {
+            "Type": 4,
+            "Value": "AwAAAA=="
+          }
+        ]
+      },
+      {
+        "Family": 2,
+        "Destination": "198.51.100.2/32",
+        "Source": "0.0.0.0/0",
+        "TOS": 0,
+        "Table": 255,
+        "Protocol": 2,
+        "Scope": 254,
+        "Type": 2,
+        "Flags": 0,
+        "Priority": 0,
+        "Preference": 0,
+        "Interface": 5,
+        "Gateway": "",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/wAAAA=="
+          },
+          {
+            "Type": 1,
+            "Value": "xjNkAg=="
+          },
+          {
+            "Type": 7,
+            "Value": "xjNkAg=="
+          },
+          {
+            "Type": 4,
+            "Value": "BQAAAA=="
+          }
+        ]
+      },
+      {
+        "Family": 2,
+        "Destination": "198.51.100.255/32",
+        "Source": "0.0.0.0/0",
+        "TOS": 0,
+        "Table": 255,
+        "Protocol": 2,
+        "Scope": 253,
+        "Type": 3,
+        "Flags": 0,
+        "Priority": 0,
+        "Preference": 0,
+        "Interface": 5,
+        "Gateway": "",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/wAAAA=="
+          },
+          {
+            "Type": 1,
+            "Value": "xjNk/w=="
+          },
+          {
+            "Type": 7,
+            "Value": "xjNkAg=="
+          },
+          {
+            "Type": 4,
+            "Value": "BQAAAA=="
+          }
+        ]
+      },
+      {
+        "Family": 10,
+        "Destination": "2001:db8:1::/64",
+        "Source": "::/0",
+        "TOS": 0,
+        "Table": 254,
+        "Protocol": 2,
+        "Scope": 0,
+        "Type": 1,
+        "Flags": 0,
+        "Priority": 256,
+        "Preference": 0,
+        "Interface": 3,
+        "Gateway": "",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/gAAAA=="
+          },
+          {
+            "Type": 1,
+            "Value": "IAENuAABAAAAAAAAAAAAAA=="
+          },
+          {
+            "Type": 6,
+            "Value": "AAEAAA=="
+          },
+          {
+            "Type": 4,
+            "Value": "AwAAAA=="
+          },
+          {
+            "Type": 12,
+            "Value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          },
+          {
+            "Type": 20,
+            "Value": "AA=="
+          }
+        ]
+      },
+      {
+        "Family": 10,
+        "Destination": "2001:db8:2::/64",
+        "Source": "::/0",
+        "TOS": 0,
+        "Table": 254,
+        "Protocol": 2,
+        "Scope": 0,
+        "Type": 1,
+        "Flags": 0,
+        "Priority": 256,
+        "Preference": 0,
+        "Interface": 5,
+        "Gateway": "",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/gAAAA=="
+          },
+          {
+            "Type": 1,
+            "Value": "IAENuAACAAAAAAAAAAAAAA=="
+          },
+          {
+            "Type": 6,
+            "Value": "AAEAAA=="
+          },
+          {
+            "Type": 4,
+            "Value": "BQAAAA=="
+          },
+          {
+            "Type": 12,
+            "Value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          },
+          {
+            "Type": 20,
+            "Value": "AA=="
+          }
+        ]
+      },
+      {
+        "Family": 10,
+        "Destination": "fe80::/64",
+        "Source": "::/0",
+        "TOS": 0,
+        "Table": 254,
+        "Protocol": 2,
+        "Scope": 0,
+        "Type": 1,
+        "Flags": 0,
+        "Priority": 256,
+        "Preference": 0,
+        "Interface": 2,
+        "Gateway": "",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/gAAAA=="
+          },
+          {
+            "Type": 1,
+            "Value": "/oAAAAAAAAAAAAAAAAAAAA=="
+          },
+          {
+            "Type": 6,
+            "Value": "AAEAAA=="
+          },
+          {
+            "Type": 4,
+            "Value": "AgAAAA=="
+          },
+          {
+            "Type": 12,
+            "Value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          },
+          {
+            "Type": 20,
+            "Value": "AA=="
+          }
+        ]
+      },
+      {
+        "Family": 10,
+        "Destination": "fe80::/64",
+        "Source": "::/0",
+        "TOS": 0,
+        "Table": 254,
+        "Protocol": 2,
+        "Scope": 0,
+        "Type": 1,
+        "Flags": 0,
+        "Priority": 256,
+        "Preference": 0,
+        "Interface": 3,
+        "Gateway": "",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/gAAAA=="
+          },
+          {
+            "Type": 1,
+            "Value": "/oAAAAAAAAAAAAAAAAAAAA=="
+          },
+          {
+            "Type": 6,
+            "Value": "AAEAAA=="
+          },
+          {
+            "Type": 4,
+            "Value": "AwAAAA=="
+          },
+          {
+            "Type": 12,
+            "Value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          },
+          {
+            "Type": 20,
+            "Value": "AA=="
+          }
+        ]
+      },
+      {
+        "Family": 10,
+        "Destination": "fe80::/64",
+        "Source": "::/0",
+        "TOS": 0,
+        "Table": 254,
+        "Protocol": 2,
+        "Scope": 0,
+        "Type": 1,
+        "Flags": 0,
+        "Priority": 256,
+        "Preference": 0,
+        "Interface": 4,
+        "Gateway": "",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/gAAAA=="
+          },
+          {
+            "Type": 1,
+            "Value": "/oAAAAAAAAAAAAAAAAAAAA=="
+          },
+          {
+            "Type": 6,
+            "Value": "AAEAAA=="
+          },
+          {
+            "Type": 4,
+            "Value": "BAAAAA=="
+          },
+          {
+            "Type": 12,
+            "Value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          },
+          {
+            "Type": 20,
+            "Value": "AA=="
+          }
+        ]
+      },
+      {
+        "Family": 10,
+        "Destination": "fe80::/64",
+        "Source": "::/0",
+        "TOS": 0,
+        "Table": 254,
+        "Protocol": 2,
+        "Scope": 0,
+        "Type": 1,
+        "Flags": 0,
+        "Priority": 256,
+        "Preference": 0,
+        "Interface": 5,
+        "Gateway": "",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/gAAAA=="
+          },
+          {
+            "Type": 1,
+            "Value": "/oAAAAAAAAAAAAAAAAAAAA=="
+          },
+          {
+            "Type": 6,
+            "Value": "AAEAAA=="
+          },
+          {
+            "Type": 4,
+            "Value": "BQAAAA=="
+          },
+          {
+            "Type": 12,
+            "Value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          },
+          {
+            "Type": 20,
+            "Value": "AA=="
+          }
+        ]
+      },
+      {
+        "Family": 10,
+        "Destination": "::/0",
+        "Source": "::/0",
+        "TOS": 0,
+        "Table": 254,
+        "Protocol": 3,
+        "Scope": 0,
+        "Type": 1,
+        "Flags": 0,
+        "Priority": 20,
+        "Preference": 0,
+        "Interface": 5,
+        "Gateway": "2001:db8:2::1",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/gAAAA=="
+          },
+          {
+            "Type": 6,
+            "Value": "FAAAAA=="
+          },
+          {
+            "Type": 5,
+            "Value": "IAENuAACAAAAAAAAAAAAAQ=="
+          },
+          {
+            "Type": 4,
+            "Value": "BQAAAA=="
+          },
+          {
+            "Type": 12,
+            "Value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          },
+          {
+            "Type": 20,
+            "Value": "AA=="
+          }
+        ]
+      },
+      {
+        "Family": 10,
+        "Destination": "::/0",
+        "Source": "::/0",
+        "TOS": 0,
+        "Table": 254,
+        "Protocol": 3,
+        "Scope": 0,
+        "Type": 1,
+        "Flags": 0,
+        "Priority": 40,
+        "Preference": 0,
+        "Interface": 3,
+        "Gateway": "2001:db8:1::1",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/gAAAA=="
+          },
+          {
+            "Type": 6,
+            "Value": "KAAAAA=="
+          },
+          {
+            "Type": 5,
+            "Value": "IAENuAABAAAAAAAAAAAAAQ=="
+          },
+          {
+            "Type": 4,
+            "Value": "AwAAAA=="
+          },
+          {
+            "Type": 12,
+            "Value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          },
+          {
+            "Type": 20,
+            "Value": "AA=="
+          }
+        ]
+      },
+      {
+        "Family": 10,
+        "Destination": "::1/128",
+        "Source": "::/0",
+        "TOS": 0,
+        "Table": 255,
+        "Protocol": 2,
+        "Scope": 0,
+        "Type": 2,
+        "Flags": 0,
+        "Priority": 0,
+        "Preference": 0,
+        "Interface": 1,
+        "Gateway": "",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/wAAAA=="
+          },
+          {
+            "Type": 1,
+            "Value": "AAAAAAAAAAAAAAAAAAAAAQ=="
+          },
+          {
+            "Type": 6,
+            "Value": "AAAAAA=="
+          },
+          {
+            "Type": 4,
+            "Value": "AQAAAA=="
+          },
+          {
+            "Type": 12,
+            "Value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          },
+          {
+            "Type": 20,
+            "Value": "AA=="
+          }
+        ]
+      },
+      {
+        "Family": 10,
+        "Destination": "2001:db8:1::2/128",
+        "Source": "::/0",
+        "TOS": 0,
+        "Table": 255,
+        "Protocol": 2,
+        "Scope": 0,
+        "Type": 2,
+        "Flags": 0,
+        "Priority": 0,
+        "Preference": 0,
+        "Interface": 3,
+        "Gateway": "",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/wAAAA=="
+          },
+          {
+            "Type": 1,
+            "Value": "IAENuAABAAAAAAAAAAAAAg=="
+          },
+          {
+            "Type": 6,
+            "Value": "AAAAAA=="
+          },
+          {
+            "Type": 4,
+            "Value": "AwAAAA=="
+          },
+          {
+            "Type": 12,
+            "Value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          },
+          {
+            "Type": 20,
+            "Value": "AA=="
+          }
+        ]
+      },
+      {
+        "Family": 10,
+        "Destination": "2001:db8:2::2/128",
+        "Source": "::/0",
+        "TOS": 0,
+        "Table": 255,
+        "Protocol": 2,
+        "Scope": 0,
+        "Type": 2,
+        "Flags": 0,
+        "Priority": 0,
+        "Preference": 0,
+        "Interface": 5,
+        "Gateway": "",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/wAAAA=="
+          },
+          {
+            "Type": 1,
+            "Value": "IAENuAACAAAAAAAAAAAAAg=="
+          },
+          {
+            "Type": 6,
+            "Value": "AAAAAA=="
+          },
+          {
+            "Type": 4,
+            "Value": "BQAAAA=="
+          },
+          {
+            "Type": 12,
+            "Value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          },
+          {
+            "Type": 20,
+            "Value": "AA=="
+          }
+        ]
+      },
+      {
+        "Family": 10,
+        "Destination": "fe80::457:38ff:fed1:f368/128",
+        "Source": "::/0",
+        "TOS": 0,
+        "Table": 255,
+        "Protocol": 2,
+        "Scope": 0,
+        "Type": 2,
+        "Flags": 0,
+        "Priority": 0,
+        "Preference": 0,
+        "Interface": 2,
+        "Gateway": "",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/wAAAA=="
+          },
+          {
+            "Type": 1,
+            "Value": "/oAAAAAAAAAEVzj//tHzaA=="
+          },
+          {
+            "Type": 6,
+            "Value": "AAAAAA=="
+          },
+          {
+            "Type": 4,
+            "Value": "AgAAAA=="
+          },
+          {
+            "Type": 12,
+            "Value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          },
+          {
+            "Type": 20,
+            "Value": "AA=="
+          }
+        ]
+      },
+      {
+        "Family": 10,
+        "Destination": "fe80::3029:9dff:fe4f:9024/128",
+        "Source": "::/0",
+        "TOS": 0,
+        "Table": 255,
+        "Protocol": 2,
+        "Scope": 0,
+        "Type": 2,
+        "Flags": 0,
+        "Priority": 0,
+        "Preference": 0,
+        "Interface": 3,
+        "Gateway": "",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/wAAAA=="
+          },
+          {
+            "Type": 1,
+            "Value": "/oAAAAAAAAAwKZ3//k+QJA=="
+          },
+          {
+            "Type": 6,
+            "Value": "AAAAAA=="
+          },
+          {
+            "Type": 4,
+            "Value": "AwAAAA=="
+          },
+          {
+            "Type": 12,
+            "Value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          },
+          {
+            "Type": 20,
+            "Value": "AA=="
+          }
+        ]
+      },
+      {
+        "Family": 10,
+        "Destination": "fe80::48f9:b8ff:fe05:6c9/128",
+        "Source": "::/0",
+        "TOS": 0,
+        "Table": 255,
+        "Protocol": 2,
+        "Scope": 0,
+        "Type": 2,
+        "Flags": 0,
+        "Priority": 0,
+        "Preference": 0,
+        "Interface": 5,
+        "Gateway": "",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/wAAAA=="
+          },
+          {
+            "Type": 1,
+            "Value": "/oAAAAAAAABI+bj//gUGyQ=="
+          },
+          {
+            "Type": 6,
+            "Value": "AAAAAA=="
+          },
+          {
+            "Type": 4,
+            "Value": "BQAAAA=="
+          },
+          {
+            "Type": 12,
+            "Value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          },
+          {
+            "Type": 20,
+            "Value": "AA=="
+          }
+        ]
+      },
+      {
+        "Family": 10,
+        "Destination": "fe80::649b:2eff:febd:bfb2/128",
+        "Source": "::/0",
+        "TOS": 0,
+        "Table": 255,
+        "Protocol": 2,
+        "Scope": 0,
+        "Type": 2,
+        "Flags": 0,
+        "Priority": 0,
+        "Preference": 0,
+        "Interface": 4,
+        "Gateway": "",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/wAAAA=="
+          },
+          {
+            "Type": 1,
+            "Value": "/oAAAAAAAABkmy7//r2/sg=="
+          },
+          {
+            "Type": 6,
+            "Value": "AAAAAA=="
+          },
+          {
+            "Type": 4,
+            "Value": "BAAAAA=="
+          },
+          {
+            "Type": 12,
+            "Value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          },
+          {
+            "Type": 20,
+            "Value": "AA=="
+          }
+        ]
+      },
+      {
+        "Family": 10,
+        "Destination": "ff00::/8",
+        "Source": "::/0",
+        "TOS": 0,
+        "Table": 255,
+        "Protocol": 2,
+        "Scope": 0,
+        "Type": 5,
+        "Flags": 0,
+        "Priority": 256,
+        "Preference": 0,
+        "Interface": 2,
+        "Gateway": "",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/wAAAA=="
+          },
+          {
+            "Type": 1,
+            "Value": "/wAAAAAAAAAAAAAAAAAAAA=="
+          },
+          {
+            "Type": 6,
+            "Value": "AAEAAA=="
+          },
+          {
+            "Type": 4,
+            "Value": "AgAAAA=="
+          },
+          {
+            "Type": 12,
+            "Value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          },
+          {
+            "Type": 20,
+            "Value": "AA=="
+          }
+        ]
+      },
+      {
+        "Family": 10,
+        "Destination": "ff00::/8",
+        "Source": "::/0",
+        "TOS": 0,
+        "Table": 255,
+        "Protocol": 2,
+        "Scope": 0,
+        "Type": 5,
+        "Flags": 0,
+        "Priority": 256,
+        "Preference": 0,
+        "Interface": 3,
+        "Gateway": "",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/wAAAA=="
+          },
+          {
+            "Type": 1,
+            "Value": "/wAAAAAAAAAAAAAAAAAAAA=="
+          },
+          {
+            "Type": 6,
+            "Value": "AAEAAA=="
+          },
+          {
+            "Type": 4,
+            "Value": "AwAAAA=="
+          },
+          {
+            "Type": 12,
+            "Value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          },
+          {
+            "Type": 20,
+            "Value": "AA=="
+          }
+        ]
+      },
+      {
+        "Family": 10,
+        "Destination": "ff00::/8",
+        "Source": "::/0",
+        "TOS": 0,
+        "Table": 255,
+        "Protocol": 2,
+        "Scope": 0,
+        "Type": 5,
+        "Flags": 0,
+        "Priority": 256,
+        "Preference": 0,
+        "Interface": 4,
+        "Gateway": "",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/wAAAA=="
+          },
+          {
+            "Type": 1,
+            "Value": "/wAAAAAAAAAAAAAAAAAAAA=="
+          },
+          {
+            "Type": 6,
+            "Value": "AAEAAA=="
+          },
+          {
+            "Type": 4,
+            "Value": "BAAAAA=="
+          },
+          {
+            "Type": 12,
+            "Value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          },
+          {
+            "Type": 20,
+            "Value": "AA=="
+          }
+        ]
+      },
+      {
+        "Family": 10,
+        "Destination": "ff00::/8",
+        "Source": "::/0",
+        "TOS": 0,
+        "Table": 255,
+        "Protocol": 2,
+        "Scope": 0,
+        "Type": 5,
+        "Flags": 0,
+        "Priority": 256,
+        "Preference": 0,
+        "Interface": 5,
+        "Gateway": "",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/wAAAA=="
+          },
+          {
+            "Type": 1,
+            "Value": "/wAAAAAAAAAAAAAAAAAAAA=="
+          },
+          {
+            "Type": 6,
+            "Value": "AAEAAA=="
+          },
+          {
+            "Type": 4,
+            "Value": "BQAAAA=="
+          },
+          {
+            "Type": 12,
+            "Value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          },
+          {
+            "Type": 20,
+            "Value": "AA=="
+          }
+        ]
+      }
+    ],
+    "Rules": [
+      {
+        "Family": 2,
+        "Destination": "0.0.0.0/0",
+        "Source": "0.0.0.0/0",
+        "TOS": 0,
+        "Table": 255,
+        "Action": 1,
+        "Flags": 0,
+        "Priority": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/wAAAA=="
+          },
+          {
+            "Type": 14,
+            "Value": "/////w=="
+          },
+          {
+            "Type": 21,
+            "Value": "Ag=="
+          }
+        ]
+      },
+      {
+        "Family": 2,
+        "Destination": "0.0.0.0/0",
+        "Source": "0.0.0.0/0",
+        "TOS": 0,
+        "Table": 254,
+        "Action": 1,
+        "Flags": 0,
+        "Priority": 32766,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/gAAAA=="
+          },
+          {
+            "Type": 14,
+            "Value": "/////w=="
+          },
+          {
+            "Type": 21,
+            "Value": "Ag=="
+          },
+          {
+            "Type": 6,
+            "Value": "/n8AAA=="
+          }
+        ]
+      },
+      {
+        "Family": 2,
+        "Destination": "0.0.0.0/0",
+        "Source": "0.0.0.0/0",
+        "TOS": 0,
+        "Table": 253,
+        "Action": 1,
+        "Flags": 0,
+        "Priority": 32767,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/QAAAA=="
+          },
+          {
+            "Type": 14,
+            "Value": "/////w=="
+          },
+          {
+            "Type": 21,
+            "Value": "Ag=="
+          },
+          {
+            "Type": 6,
+            "Value": "/38AAA=="
+          }
+        ]
+      },
+      {
+        "Family": 10,
+        "Destination": "::/0",
+        "Source": "::/0",
+        "TOS": 0,
+        "Table": 255,
+        "Action": 1,
+        "Flags": 0,
+        "Priority": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/wAAAA=="
+          },
+          {
+            "Type": 14,
+            "Value": "/////w=="
+          },
+          {
+            "Type": 21,
+            "Value": "Ag=="
+          }
+        ]
+      },
+      {
+        "Family": 10,
+        "Destination": "::/0",
+        "Source": "::/0",
+        "TOS": 0,
+        "Table": 254,
+        "Action": 1,
+        "Flags": 0,
+        "Priority": 32766,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/gAAAA=="
+          },
+          {
+            "Type": 14,
+            "Value": "/////w=="
+          },
+          {
+            "Type": 21,
+            "Value": "Ag=="
+          },
+          {
+            "Type": 6,
+            "Value": "/n8AAA=="
+          }
+        ]
+      }
+    ]
+  },
+  "before": {
+    "Links": [
+      {
+        "Index": 1,
+        "Name": "lo",
+        "Flags": 65609,
+        "Type": 772,
+        "Kind": "",
+        "Master": 0,
+        "OperState": 0
+      },
+      {
+        "Index": 2,
+        "Name": "uplink1",
+        "Flags": 69699,
+        "Type": 1,
+        "Kind": "veth",
+        "Master": 0,
+        "OperState": 6
+      },
+      {
+        "Index": 3,
+        "Name": "uplink0",
+        "Flags": 69699,
+        "Type": 1,
+        "Kind": "veth",
+        "Master": 0,
+        "OperState": 6
+      },
+      {
+        "Index": 4,
+        "Name": "backup1",
+        "Flags": 69699,
+        "Type": 1,
+        "Kind": "veth",
+        "Master": 0,
+        "OperState": 6
+      },
+      {
+        "Index": 5,
+        "Name": "backup0",
+        "Flags": 69699,
+        "Type": 1,
+        "Kind": "veth",
+        "Master": 0,
+        "OperState": 6
+      }
+    ],
+    "Routes": [
+      {
+        "Family": 2,
+        "Destination": "0.0.0.0/0",
+        "Source": "0.0.0.0/0",
+        "TOS": 0,
+        "Table": 254,
+        "Protocol": 3,
+        "Scope": 0,
+        "Type": 1,
+        "Flags": 0,
+        "Priority": 40,
+        "Preference": 0,
+        "Interface": 3,
+        "Gateway": "192.0.2.1",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/gAAAA=="
+          },
+          {
+            "Type": 6,
+            "Value": "KAAAAA=="
+          },
+          {
+            "Type": 5,
+            "Value": "wAACAQ=="
+          },
+          {
+            "Type": 4,
+            "Value": "AwAAAA=="
+          }
+        ]
+      },
+      {
+        "Family": 2,
+        "Destination": "0.0.0.0/0",
+        "Source": "0.0.0.0/0",
+        "TOS": 0,
+        "Table": 254,
+        "Protocol": 3,
+        "Scope": 0,
+        "Type": 1,
+        "Flags": 0,
+        "Priority": 70,
+        "Preference": 0,
+        "Interface": 5,
+        "Gateway": "198.51.100.1",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/gAAAA=="
+          },
+          {
+            "Type": 6,
+            "Value": "RgAAAA=="
+          },
+          {
+            "Type": 5,
+            "Value": "xjNkAQ=="
+          },
+          {
+            "Type": 4,
+            "Value": "BQAAAA=="
+          }
+        ]
+      },
+      {
+        "Family": 2,
+        "Destination": "192.0.2.0/24",
+        "Source": "0.0.0.0/0",
+        "TOS": 0,
+        "Table": 254,
+        "Protocol": 2,
+        "Scope": 253,
+        "Type": 1,
+        "Flags": 0,
+        "Priority": 0,
+        "Preference": 0,
+        "Interface": 3,
+        "Gateway": "",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/gAAAA=="
+          },
+          {
+            "Type": 1,
+            "Value": "wAACAA=="
+          },
+          {
+            "Type": 7,
+            "Value": "wAACAg=="
+          },
+          {
+            "Type": 4,
+            "Value": "AwAAAA=="
+          }
+        ]
+      },
+      {
+        "Family": 2,
+        "Destination": "198.51.100.0/24",
+        "Source": "0.0.0.0/0",
+        "TOS": 0,
+        "Table": 254,
+        "Protocol": 2,
+        "Scope": 253,
+        "Type": 1,
+        "Flags": 0,
+        "Priority": 0,
+        "Preference": 0,
+        "Interface": 5,
+        "Gateway": "",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/gAAAA=="
+          },
+          {
+            "Type": 1,
+            "Value": "xjNkAA=="
+          },
+          {
+            "Type": 7,
+            "Value": "xjNkAg=="
+          },
+          {
+            "Type": 4,
+            "Value": "BQAAAA=="
+          }
+        ]
+      },
+      {
+        "Family": 2,
+        "Destination": "127.0.0.0/8",
+        "Source": "0.0.0.0/0",
+        "TOS": 0,
+        "Table": 255,
+        "Protocol": 2,
+        "Scope": 254,
+        "Type": 2,
+        "Flags": 0,
+        "Priority": 0,
+        "Preference": 0,
+        "Interface": 1,
+        "Gateway": "",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/wAAAA=="
+          },
+          {
+            "Type": 1,
+            "Value": "fwAAAA=="
+          },
+          {
+            "Type": 7,
+            "Value": "fwAAAQ=="
+          },
+          {
+            "Type": 4,
+            "Value": "AQAAAA=="
+          }
+        ]
+      },
+      {
+        "Family": 2,
+        "Destination": "127.0.0.1/32",
+        "Source": "0.0.0.0/0",
+        "TOS": 0,
+        "Table": 255,
+        "Protocol": 2,
+        "Scope": 254,
+        "Type": 2,
+        "Flags": 0,
+        "Priority": 0,
+        "Preference": 0,
+        "Interface": 1,
+        "Gateway": "",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/wAAAA=="
+          },
+          {
+            "Type": 1,
+            "Value": "fwAAAQ=="
+          },
+          {
+            "Type": 7,
+            "Value": "fwAAAQ=="
+          },
+          {
+            "Type": 4,
+            "Value": "AQAAAA=="
+          }
+        ]
+      },
+      {
+        "Family": 2,
+        "Destination": "127.255.255.255/32",
+        "Source": "0.0.0.0/0",
+        "TOS": 0,
+        "Table": 255,
+        "Protocol": 2,
+        "Scope": 253,
+        "Type": 3,
+        "Flags": 0,
+        "Priority": 0,
+        "Preference": 0,
+        "Interface": 1,
+        "Gateway": "",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/wAAAA=="
+          },
+          {
+            "Type": 1,
+            "Value": "f////w=="
+          },
+          {
+            "Type": 7,
+            "Value": "fwAAAQ=="
+          },
+          {
+            "Type": 4,
+            "Value": "AQAAAA=="
+          }
+        ]
+      },
+      {
+        "Family": 2,
+        "Destination": "192.0.2.2/32",
+        "Source": "0.0.0.0/0",
+        "TOS": 0,
+        "Table": 255,
+        "Protocol": 2,
+        "Scope": 254,
+        "Type": 2,
+        "Flags": 0,
+        "Priority": 0,
+        "Preference": 0,
+        "Interface": 3,
+        "Gateway": "",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/wAAAA=="
+          },
+          {
+            "Type": 1,
+            "Value": "wAACAg=="
+          },
+          {
+            "Type": 7,
+            "Value": "wAACAg=="
+          },
+          {
+            "Type": 4,
+            "Value": "AwAAAA=="
+          }
+        ]
+      },
+      {
+        "Family": 2,
+        "Destination": "192.0.2.255/32",
+        "Source": "0.0.0.0/0",
+        "TOS": 0,
+        "Table": 255,
+        "Protocol": 2,
+        "Scope": 253,
+        "Type": 3,
+        "Flags": 0,
+        "Priority": 0,
+        "Preference": 0,
+        "Interface": 3,
+        "Gateway": "",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/wAAAA=="
+          },
+          {
+            "Type": 1,
+            "Value": "wAAC/w=="
+          },
+          {
+            "Type": 7,
+            "Value": "wAACAg=="
+          },
+          {
+            "Type": 4,
+            "Value": "AwAAAA=="
+          }
+        ]
+      },
+      {
+        "Family": 2,
+        "Destination": "198.51.100.2/32",
+        "Source": "0.0.0.0/0",
+        "TOS": 0,
+        "Table": 255,
+        "Protocol": 2,
+        "Scope": 254,
+        "Type": 2,
+        "Flags": 0,
+        "Priority": 0,
+        "Preference": 0,
+        "Interface": 5,
+        "Gateway": "",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/wAAAA=="
+          },
+          {
+            "Type": 1,
+            "Value": "xjNkAg=="
+          },
+          {
+            "Type": 7,
+            "Value": "xjNkAg=="
+          },
+          {
+            "Type": 4,
+            "Value": "BQAAAA=="
+          }
+        ]
+      },
+      {
+        "Family": 2,
+        "Destination": "198.51.100.255/32",
+        "Source": "0.0.0.0/0",
+        "TOS": 0,
+        "Table": 255,
+        "Protocol": 2,
+        "Scope": 253,
+        "Type": 3,
+        "Flags": 0,
+        "Priority": 0,
+        "Preference": 0,
+        "Interface": 5,
+        "Gateway": "",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/wAAAA=="
+          },
+          {
+            "Type": 1,
+            "Value": "xjNk/w=="
+          },
+          {
+            "Type": 7,
+            "Value": "xjNkAg=="
+          },
+          {
+            "Type": 4,
+            "Value": "BQAAAA=="
+          }
+        ]
+      },
+      {
+        "Family": 10,
+        "Destination": "2001:db8:1::/64",
+        "Source": "::/0",
+        "TOS": 0,
+        "Table": 254,
+        "Protocol": 2,
+        "Scope": 0,
+        "Type": 1,
+        "Flags": 0,
+        "Priority": 256,
+        "Preference": 0,
+        "Interface": 3,
+        "Gateway": "",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/gAAAA=="
+          },
+          {
+            "Type": 1,
+            "Value": "IAENuAABAAAAAAAAAAAAAA=="
+          },
+          {
+            "Type": 6,
+            "Value": "AAEAAA=="
+          },
+          {
+            "Type": 4,
+            "Value": "AwAAAA=="
+          },
+          {
+            "Type": 12,
+            "Value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          },
+          {
+            "Type": 20,
+            "Value": "AA=="
+          }
+        ]
+      },
+      {
+        "Family": 10,
+        "Destination": "2001:db8:2::/64",
+        "Source": "::/0",
+        "TOS": 0,
+        "Table": 254,
+        "Protocol": 2,
+        "Scope": 0,
+        "Type": 1,
+        "Flags": 0,
+        "Priority": 256,
+        "Preference": 0,
+        "Interface": 5,
+        "Gateway": "",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/gAAAA=="
+          },
+          {
+            "Type": 1,
+            "Value": "IAENuAACAAAAAAAAAAAAAA=="
+          },
+          {
+            "Type": 6,
+            "Value": "AAEAAA=="
+          },
+          {
+            "Type": 4,
+            "Value": "BQAAAA=="
+          },
+          {
+            "Type": 12,
+            "Value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          },
+          {
+            "Type": 20,
+            "Value": "AA=="
+          }
+        ]
+      },
+      {
+        "Family": 10,
+        "Destination": "fe80::/64",
+        "Source": "::/0",
+        "TOS": 0,
+        "Table": 254,
+        "Protocol": 2,
+        "Scope": 0,
+        "Type": 1,
+        "Flags": 0,
+        "Priority": 256,
+        "Preference": 0,
+        "Interface": 2,
+        "Gateway": "",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/gAAAA=="
+          },
+          {
+            "Type": 1,
+            "Value": "/oAAAAAAAAAAAAAAAAAAAA=="
+          },
+          {
+            "Type": 6,
+            "Value": "AAEAAA=="
+          },
+          {
+            "Type": 4,
+            "Value": "AgAAAA=="
+          },
+          {
+            "Type": 12,
+            "Value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          },
+          {
+            "Type": 20,
+            "Value": "AA=="
+          }
+        ]
+      },
+      {
+        "Family": 10,
+        "Destination": "fe80::/64",
+        "Source": "::/0",
+        "TOS": 0,
+        "Table": 254,
+        "Protocol": 2,
+        "Scope": 0,
+        "Type": 1,
+        "Flags": 0,
+        "Priority": 256,
+        "Preference": 0,
+        "Interface": 3,
+        "Gateway": "",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/gAAAA=="
+          },
+          {
+            "Type": 1,
+            "Value": "/oAAAAAAAAAAAAAAAAAAAA=="
+          },
+          {
+            "Type": 6,
+            "Value": "AAEAAA=="
+          },
+          {
+            "Type": 4,
+            "Value": "AwAAAA=="
+          },
+          {
+            "Type": 12,
+            "Value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          },
+          {
+            "Type": 20,
+            "Value": "AA=="
+          }
+        ]
+      },
+      {
+        "Family": 10,
+        "Destination": "fe80::/64",
+        "Source": "::/0",
+        "TOS": 0,
+        "Table": 254,
+        "Protocol": 2,
+        "Scope": 0,
+        "Type": 1,
+        "Flags": 0,
+        "Priority": 256,
+        "Preference": 0,
+        "Interface": 4,
+        "Gateway": "",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/gAAAA=="
+          },
+          {
+            "Type": 1,
+            "Value": "/oAAAAAAAAAAAAAAAAAAAA=="
+          },
+          {
+            "Type": 6,
+            "Value": "AAEAAA=="
+          },
+          {
+            "Type": 4,
+            "Value": "BAAAAA=="
+          },
+          {
+            "Type": 12,
+            "Value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          },
+          {
+            "Type": 20,
+            "Value": "AA=="
+          }
+        ]
+      },
+      {
+        "Family": 10,
+        "Destination": "fe80::/64",
+        "Source": "::/0",
+        "TOS": 0,
+        "Table": 254,
+        "Protocol": 2,
+        "Scope": 0,
+        "Type": 1,
+        "Flags": 0,
+        "Priority": 256,
+        "Preference": 0,
+        "Interface": 5,
+        "Gateway": "",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/gAAAA=="
+          },
+          {
+            "Type": 1,
+            "Value": "/oAAAAAAAAAAAAAAAAAAAA=="
+          },
+          {
+            "Type": 6,
+            "Value": "AAEAAA=="
+          },
+          {
+            "Type": 4,
+            "Value": "BQAAAA=="
+          },
+          {
+            "Type": 12,
+            "Value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          },
+          {
+            "Type": 20,
+            "Value": "AA=="
+          }
+        ]
+      },
+      {
+        "Family": 10,
+        "Destination": "::/0",
+        "Source": "::/0",
+        "TOS": 0,
+        "Table": 254,
+        "Protocol": 3,
+        "Scope": 0,
+        "Type": 1,
+        "Flags": 0,
+        "Priority": 20,
+        "Preference": 0,
+        "Interface": 5,
+        "Gateway": "2001:db8:2::1",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/gAAAA=="
+          },
+          {
+            "Type": 6,
+            "Value": "FAAAAA=="
+          },
+          {
+            "Type": 5,
+            "Value": "IAENuAACAAAAAAAAAAAAAQ=="
+          },
+          {
+            "Type": 4,
+            "Value": "BQAAAA=="
+          },
+          {
+            "Type": 12,
+            "Value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          },
+          {
+            "Type": 20,
+            "Value": "AA=="
+          }
+        ]
+      },
+      {
+        "Family": 10,
+        "Destination": "::/0",
+        "Source": "::/0",
+        "TOS": 0,
+        "Table": 254,
+        "Protocol": 3,
+        "Scope": 0,
+        "Type": 1,
+        "Flags": 0,
+        "Priority": 40,
+        "Preference": 0,
+        "Interface": 3,
+        "Gateway": "2001:db8:1::1",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/gAAAA=="
+          },
+          {
+            "Type": 6,
+            "Value": "KAAAAA=="
+          },
+          {
+            "Type": 5,
+            "Value": "IAENuAABAAAAAAAAAAAAAQ=="
+          },
+          {
+            "Type": 4,
+            "Value": "AwAAAA=="
+          },
+          {
+            "Type": 12,
+            "Value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          },
+          {
+            "Type": 20,
+            "Value": "AA=="
+          }
+        ]
+      },
+      {
+        "Family": 10,
+        "Destination": "::1/128",
+        "Source": "::/0",
+        "TOS": 0,
+        "Table": 255,
+        "Protocol": 2,
+        "Scope": 0,
+        "Type": 2,
+        "Flags": 0,
+        "Priority": 0,
+        "Preference": 0,
+        "Interface": 1,
+        "Gateway": "",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/wAAAA=="
+          },
+          {
+            "Type": 1,
+            "Value": "AAAAAAAAAAAAAAAAAAAAAQ=="
+          },
+          {
+            "Type": 6,
+            "Value": "AAAAAA=="
+          },
+          {
+            "Type": 4,
+            "Value": "AQAAAA=="
+          },
+          {
+            "Type": 12,
+            "Value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          },
+          {
+            "Type": 20,
+            "Value": "AA=="
+          }
+        ]
+      },
+      {
+        "Family": 10,
+        "Destination": "2001:db8:1::2/128",
+        "Source": "::/0",
+        "TOS": 0,
+        "Table": 255,
+        "Protocol": 2,
+        "Scope": 0,
+        "Type": 2,
+        "Flags": 0,
+        "Priority": 0,
+        "Preference": 0,
+        "Interface": 3,
+        "Gateway": "",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/wAAAA=="
+          },
+          {
+            "Type": 1,
+            "Value": "IAENuAABAAAAAAAAAAAAAg=="
+          },
+          {
+            "Type": 6,
+            "Value": "AAAAAA=="
+          },
+          {
+            "Type": 4,
+            "Value": "AwAAAA=="
+          },
+          {
+            "Type": 12,
+            "Value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          },
+          {
+            "Type": 20,
+            "Value": "AA=="
+          }
+        ]
+      },
+      {
+        "Family": 10,
+        "Destination": "2001:db8:2::2/128",
+        "Source": "::/0",
+        "TOS": 0,
+        "Table": 255,
+        "Protocol": 2,
+        "Scope": 0,
+        "Type": 2,
+        "Flags": 0,
+        "Priority": 0,
+        "Preference": 0,
+        "Interface": 5,
+        "Gateway": "",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/wAAAA=="
+          },
+          {
+            "Type": 1,
+            "Value": "IAENuAACAAAAAAAAAAAAAg=="
+          },
+          {
+            "Type": 6,
+            "Value": "AAAAAA=="
+          },
+          {
+            "Type": 4,
+            "Value": "BQAAAA=="
+          },
+          {
+            "Type": 12,
+            "Value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          },
+          {
+            "Type": 20,
+            "Value": "AA=="
+          }
+        ]
+      },
+      {
+        "Family": 10,
+        "Destination": "fe80::457:38ff:fed1:f368/128",
+        "Source": "::/0",
+        "TOS": 0,
+        "Table": 255,
+        "Protocol": 2,
+        "Scope": 0,
+        "Type": 2,
+        "Flags": 0,
+        "Priority": 0,
+        "Preference": 0,
+        "Interface": 2,
+        "Gateway": "",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/wAAAA=="
+          },
+          {
+            "Type": 1,
+            "Value": "/oAAAAAAAAAEVzj//tHzaA=="
+          },
+          {
+            "Type": 6,
+            "Value": "AAAAAA=="
+          },
+          {
+            "Type": 4,
+            "Value": "AgAAAA=="
+          },
+          {
+            "Type": 12,
+            "Value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          },
+          {
+            "Type": 20,
+            "Value": "AA=="
+          }
+        ]
+      },
+      {
+        "Family": 10,
+        "Destination": "fe80::3029:9dff:fe4f:9024/128",
+        "Source": "::/0",
+        "TOS": 0,
+        "Table": 255,
+        "Protocol": 2,
+        "Scope": 0,
+        "Type": 2,
+        "Flags": 0,
+        "Priority": 0,
+        "Preference": 0,
+        "Interface": 3,
+        "Gateway": "",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/wAAAA=="
+          },
+          {
+            "Type": 1,
+            "Value": "/oAAAAAAAAAwKZ3//k+QJA=="
+          },
+          {
+            "Type": 6,
+            "Value": "AAAAAA=="
+          },
+          {
+            "Type": 4,
+            "Value": "AwAAAA=="
+          },
+          {
+            "Type": 12,
+            "Value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          },
+          {
+            "Type": 20,
+            "Value": "AA=="
+          }
+        ]
+      },
+      {
+        "Family": 10,
+        "Destination": "fe80::48f9:b8ff:fe05:6c9/128",
+        "Source": "::/0",
+        "TOS": 0,
+        "Table": 255,
+        "Protocol": 2,
+        "Scope": 0,
+        "Type": 2,
+        "Flags": 0,
+        "Priority": 0,
+        "Preference": 0,
+        "Interface": 5,
+        "Gateway": "",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/wAAAA=="
+          },
+          {
+            "Type": 1,
+            "Value": "/oAAAAAAAABI+bj//gUGyQ=="
+          },
+          {
+            "Type": 6,
+            "Value": "AAAAAA=="
+          },
+          {
+            "Type": 4,
+            "Value": "BQAAAA=="
+          },
+          {
+            "Type": 12,
+            "Value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          },
+          {
+            "Type": 20,
+            "Value": "AA=="
+          }
+        ]
+      },
+      {
+        "Family": 10,
+        "Destination": "fe80::649b:2eff:febd:bfb2/128",
+        "Source": "::/0",
+        "TOS": 0,
+        "Table": 255,
+        "Protocol": 2,
+        "Scope": 0,
+        "Type": 2,
+        "Flags": 0,
+        "Priority": 0,
+        "Preference": 0,
+        "Interface": 4,
+        "Gateway": "",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/wAAAA=="
+          },
+          {
+            "Type": 1,
+            "Value": "/oAAAAAAAABkmy7//r2/sg=="
+          },
+          {
+            "Type": 6,
+            "Value": "AAAAAA=="
+          },
+          {
+            "Type": 4,
+            "Value": "BAAAAA=="
+          },
+          {
+            "Type": 12,
+            "Value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          },
+          {
+            "Type": 20,
+            "Value": "AA=="
+          }
+        ]
+      },
+      {
+        "Family": 10,
+        "Destination": "ff00::/8",
+        "Source": "::/0",
+        "TOS": 0,
+        "Table": 255,
+        "Protocol": 2,
+        "Scope": 0,
+        "Type": 5,
+        "Flags": 0,
+        "Priority": 256,
+        "Preference": 0,
+        "Interface": 2,
+        "Gateway": "",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/wAAAA=="
+          },
+          {
+            "Type": 1,
+            "Value": "/wAAAAAAAAAAAAAAAAAAAA=="
+          },
+          {
+            "Type": 6,
+            "Value": "AAEAAA=="
+          },
+          {
+            "Type": 4,
+            "Value": "AgAAAA=="
+          },
+          {
+            "Type": 12,
+            "Value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          },
+          {
+            "Type": 20,
+            "Value": "AA=="
+          }
+        ]
+      },
+      {
+        "Family": 10,
+        "Destination": "ff00::/8",
+        "Source": "::/0",
+        "TOS": 0,
+        "Table": 255,
+        "Protocol": 2,
+        "Scope": 0,
+        "Type": 5,
+        "Flags": 0,
+        "Priority": 256,
+        "Preference": 0,
+        "Interface": 3,
+        "Gateway": "",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/wAAAA=="
+          },
+          {
+            "Type": 1,
+            "Value": "/wAAAAAAAAAAAAAAAAAAAA=="
+          },
+          {
+            "Type": 6,
+            "Value": "AAEAAA=="
+          },
+          {
+            "Type": 4,
+            "Value": "AwAAAA=="
+          },
+          {
+            "Type": 12,
+            "Value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          },
+          {
+            "Type": 20,
+            "Value": "AA=="
+          }
+        ]
+      },
+      {
+        "Family": 10,
+        "Destination": "ff00::/8",
+        "Source": "::/0",
+        "TOS": 0,
+        "Table": 255,
+        "Protocol": 2,
+        "Scope": 0,
+        "Type": 5,
+        "Flags": 0,
+        "Priority": 256,
+        "Preference": 0,
+        "Interface": 4,
+        "Gateway": "",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/wAAAA=="
+          },
+          {
+            "Type": 1,
+            "Value": "/wAAAAAAAAAAAAAAAAAAAA=="
+          },
+          {
+            "Type": 6,
+            "Value": "AAEAAA=="
+          },
+          {
+            "Type": 4,
+            "Value": "BAAAAA=="
+          },
+          {
+            "Type": 12,
+            "Value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          },
+          {
+            "Type": 20,
+            "Value": "AA=="
+          }
+        ]
+      },
+      {
+        "Family": 10,
+        "Destination": "ff00::/8",
+        "Source": "::/0",
+        "TOS": 0,
+        "Table": 255,
+        "Protocol": 2,
+        "Scope": 0,
+        "Type": 5,
+        "Flags": 0,
+        "Priority": 256,
+        "Preference": 0,
+        "Interface": 5,
+        "Gateway": "",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/wAAAA=="
+          },
+          {
+            "Type": 1,
+            "Value": "/wAAAAAAAAAAAAAAAAAAAA=="
+          },
+          {
+            "Type": 6,
+            "Value": "AAEAAA=="
+          },
+          {
+            "Type": 4,
+            "Value": "BQAAAA=="
+          },
+          {
+            "Type": 12,
+            "Value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          },
+          {
+            "Type": 20,
+            "Value": "AA=="
+          }
+        ]
+      }
+    ],
+    "Rules": [
+      {
+        "Family": 2,
+        "Destination": "0.0.0.0/0",
+        "Source": "0.0.0.0/0",
+        "TOS": 0,
+        "Table": 255,
+        "Action": 1,
+        "Flags": 0,
+        "Priority": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/wAAAA=="
+          },
+          {
+            "Type": 14,
+            "Value": "/////w=="
+          },
+          {
+            "Type": 21,
+            "Value": "Ag=="
+          }
+        ]
+      },
+      {
+        "Family": 2,
+        "Destination": "0.0.0.0/0",
+        "Source": "0.0.0.0/0",
+        "TOS": 0,
+        "Table": 254,
+        "Action": 1,
+        "Flags": 0,
+        "Priority": 32766,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/gAAAA=="
+          },
+          {
+            "Type": 14,
+            "Value": "/////w=="
+          },
+          {
+            "Type": 21,
+            "Value": "Ag=="
+          },
+          {
+            "Type": 6,
+            "Value": "/n8AAA=="
+          }
+        ]
+      },
+      {
+        "Family": 2,
+        "Destination": "0.0.0.0/0",
+        "Source": "0.0.0.0/0",
+        "TOS": 0,
+        "Table": 253,
+        "Action": 1,
+        "Flags": 0,
+        "Priority": 32767,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/QAAAA=="
+          },
+          {
+            "Type": 14,
+            "Value": "/////w=="
+          },
+          {
+            "Type": 21,
+            "Value": "Ag=="
+          },
+          {
+            "Type": 6,
+            "Value": "/38AAA=="
+          }
+        ]
+      },
+      {
+        "Family": 10,
+        "Destination": "::/0",
+        "Source": "::/0",
+        "TOS": 0,
+        "Table": 255,
+        "Action": 1,
+        "Flags": 0,
+        "Priority": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/wAAAA=="
+          },
+          {
+            "Type": 14,
+            "Value": "/////w=="
+          },
+          {
+            "Type": 21,
+            "Value": "Ag=="
+          }
+        ]
+      },
+      {
+        "Family": 10,
+        "Destination": "::/0",
+        "Source": "::/0",
+        "TOS": 0,
+        "Table": 254,
+        "Action": 1,
+        "Flags": 0,
+        "Priority": 32766,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/gAAAA=="
+          },
+          {
+            "Type": 14,
+            "Value": "/////w=="
+          },
+          {
+            "Type": 21,
+            "Value": "Ag=="
+          },
+          {
+            "Type": 6,
+            "Value": "/n8AAA=="
+          }
+        ]
+      }
+    ]
+  },
+  "core": {
+    "pid": 1303,
+    "start": 2746,
+    "boot": "9f82e980-cfa3-4b7b-b623-07d66668f046"
+  },
+  "guardian": {
+    "pid": 1280,
+    "start": 2742,
+    "boot": "9f82e980-cfa3-4b7b-b623-07d66668f046"
+  },
+  "ready": {
+    "Links": [
+      {
+        "Index": 1,
+        "Name": "lo",
+        "Flags": 65609,
+        "Type": 772,
+        "Kind": "",
+        "Master": 0,
+        "OperState": 0
+      },
+      {
+        "Index": 2,
+        "Name": "uplink1",
+        "Flags": 69699,
+        "Type": 1,
+        "Kind": "veth",
+        "Master": 0,
+        "OperState": 6
+      },
+      {
+        "Index": 3,
+        "Name": "uplink0",
+        "Flags": 69699,
+        "Type": 1,
+        "Kind": "veth",
+        "Master": 0,
+        "OperState": 6
+      },
+      {
+        "Index": 4,
+        "Name": "backup1",
+        "Flags": 69699,
+        "Type": 1,
+        "Kind": "veth",
+        "Master": 0,
+        "OperState": 6
+      },
+      {
+        "Index": 5,
+        "Name": "backup0",
+        "Flags": 69699,
+        "Type": 1,
+        "Kind": "veth",
+        "Master": 0,
+        "OperState": 6
+      },
+      {
+        "Index": 20,
+        "Name": "rl-zesqhqlb",
+        "Flags": 69841,
+        "Type": 65534,
+        "Kind": "tun",
+        "Master": 0,
+        "OperState": 0
+      }
+    ],
+    "Routes": [
+      {
+        "Family": 2,
+        "Destination": "0.0.0.0/0",
+        "Source": "0.0.0.0/0",
+        "TOS": 0,
+        "Table": 1380741248,
+        "Protocol": 3,
+        "Scope": 0,
+        "Type": 1,
+        "Flags": 0,
+        "Priority": 0,
+        "Preference": 0,
+        "Interface": 20,
+        "Gateway": "172.29.255.2",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "gHBMUg=="
+          },
+          {
+            "Type": 5,
+            "Value": "rB3/Ag=="
+          },
+          {
+            "Type": 4,
+            "Value": "FAAAAA=="
+          }
+        ]
+      },
+      {
+        "Family": 2,
+        "Destination": "0.0.0.0/0",
+        "Source": "0.0.0.0/0",
+        "TOS": 0,
+        "Table": 254,
+        "Protocol": 3,
+        "Scope": 0,
+        "Type": 1,
+        "Flags": 0,
+        "Priority": 40,
+        "Preference": 0,
+        "Interface": 3,
+        "Gateway": "192.0.2.1",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/gAAAA=="
+          },
+          {
+            "Type": 6,
+            "Value": "KAAAAA=="
+          },
+          {
+            "Type": 5,
+            "Value": "wAACAQ=="
+          },
+          {
+            "Type": 4,
+            "Value": "AwAAAA=="
+          }
+        ]
+      },
+      {
+        "Family": 2,
+        "Destination": "0.0.0.0/0",
+        "Source": "0.0.0.0/0",
+        "TOS": 0,
+        "Table": 254,
+        "Protocol": 3,
+        "Scope": 0,
+        "Type": 1,
+        "Flags": 0,
+        "Priority": 70,
+        "Preference": 0,
+        "Interface": 5,
+        "Gateway": "198.51.100.1",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/gAAAA=="
+          },
+          {
+            "Type": 6,
+            "Value": "RgAAAA=="
+          },
+          {
+            "Type": 5,
+            "Value": "xjNkAQ=="
+          },
+          {
+            "Type": 4,
+            "Value": "BQAAAA=="
+          }
+        ]
+      },
+      {
+        "Family": 2,
+        "Destination": "172.29.255.0/30",
+        "Source": "0.0.0.0/0",
+        "TOS": 0,
+        "Table": 254,
+        "Protocol": 2,
+        "Scope": 253,
+        "Type": 1,
+        "Flags": 0,
+        "Priority": 0,
+        "Preference": 0,
+        "Interface": 20,
+        "Gateway": "",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/gAAAA=="
+          },
+          {
+            "Type": 1,
+            "Value": "rB3/AA=="
+          },
+          {
+            "Type": 7,
+            "Value": "rB3/AQ=="
+          },
+          {
+            "Type": 4,
+            "Value": "FAAAAA=="
+          }
+        ]
+      },
+      {
+        "Family": 2,
+        "Destination": "192.0.2.0/24",
+        "Source": "0.0.0.0/0",
+        "TOS": 0,
+        "Table": 254,
+        "Protocol": 2,
+        "Scope": 253,
+        "Type": 1,
+        "Flags": 0,
+        "Priority": 0,
+        "Preference": 0,
+        "Interface": 3,
+        "Gateway": "",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/gAAAA=="
+          },
+          {
+            "Type": 1,
+            "Value": "wAACAA=="
+          },
+          {
+            "Type": 7,
+            "Value": "wAACAg=="
+          },
+          {
+            "Type": 4,
+            "Value": "AwAAAA=="
+          }
+        ]
+      },
+      {
+        "Family": 2,
+        "Destination": "198.51.100.0/24",
+        "Source": "0.0.0.0/0",
+        "TOS": 0,
+        "Table": 254,
+        "Protocol": 2,
+        "Scope": 253,
+        "Type": 1,
+        "Flags": 0,
+        "Priority": 0,
+        "Preference": 0,
+        "Interface": 5,
+        "Gateway": "",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/gAAAA=="
+          },
+          {
+            "Type": 1,
+            "Value": "xjNkAA=="
+          },
+          {
+            "Type": 7,
+            "Value": "xjNkAg=="
+          },
+          {
+            "Type": 4,
+            "Value": "BQAAAA=="
+          }
+        ]
+      },
+      {
+        "Family": 2,
+        "Destination": "127.0.0.0/8",
+        "Source": "0.0.0.0/0",
+        "TOS": 0,
+        "Table": 255,
+        "Protocol": 2,
+        "Scope": 254,
+        "Type": 2,
+        "Flags": 0,
+        "Priority": 0,
+        "Preference": 0,
+        "Interface": 1,
+        "Gateway": "",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/wAAAA=="
+          },
+          {
+            "Type": 1,
+            "Value": "fwAAAA=="
+          },
+          {
+            "Type": 7,
+            "Value": "fwAAAQ=="
+          },
+          {
+            "Type": 4,
+            "Value": "AQAAAA=="
+          }
+        ]
+      },
+      {
+        "Family": 2,
+        "Destination": "127.0.0.1/32",
+        "Source": "0.0.0.0/0",
+        "TOS": 0,
+        "Table": 255,
+        "Protocol": 2,
+        "Scope": 254,
+        "Type": 2,
+        "Flags": 0,
+        "Priority": 0,
+        "Preference": 0,
+        "Interface": 1,
+        "Gateway": "",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/wAAAA=="
+          },
+          {
+            "Type": 1,
+            "Value": "fwAAAQ=="
+          },
+          {
+            "Type": 7,
+            "Value": "fwAAAQ=="
+          },
+          {
+            "Type": 4,
+            "Value": "AQAAAA=="
+          }
+        ]
+      },
+      {
+        "Family": 2,
+        "Destination": "127.255.255.255/32",
+        "Source": "0.0.0.0/0",
+        "TOS": 0,
+        "Table": 255,
+        "Protocol": 2,
+        "Scope": 253,
+        "Type": 3,
+        "Flags": 0,
+        "Priority": 0,
+        "Preference": 0,
+        "Interface": 1,
+        "Gateway": "",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/wAAAA=="
+          },
+          {
+            "Type": 1,
+            "Value": "f////w=="
+          },
+          {
+            "Type": 7,
+            "Value": "fwAAAQ=="
+          },
+          {
+            "Type": 4,
+            "Value": "AQAAAA=="
+          }
+        ]
+      },
+      {
+        "Family": 2,
+        "Destination": "172.29.255.1/32",
+        "Source": "0.0.0.0/0",
+        "TOS": 0,
+        "Table": 255,
+        "Protocol": 2,
+        "Scope": 254,
+        "Type": 2,
+        "Flags": 0,
+        "Priority": 0,
+        "Preference": 0,
+        "Interface": 20,
+        "Gateway": "",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/wAAAA=="
+          },
+          {
+            "Type": 1,
+            "Value": "rB3/AQ=="
+          },
+          {
+            "Type": 7,
+            "Value": "rB3/AQ=="
+          },
+          {
+            "Type": 4,
+            "Value": "FAAAAA=="
+          }
+        ]
+      },
+      {
+        "Family": 2,
+        "Destination": "172.29.255.3/32",
+        "Source": "0.0.0.0/0",
+        "TOS": 0,
+        "Table": 255,
+        "Protocol": 2,
+        "Scope": 253,
+        "Type": 3,
+        "Flags": 0,
+        "Priority": 0,
+        "Preference": 0,
+        "Interface": 20,
+        "Gateway": "",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/wAAAA=="
+          },
+          {
+            "Type": 1,
+            "Value": "rB3/Aw=="
+          },
+          {
+            "Type": 7,
+            "Value": "rB3/AQ=="
+          },
+          {
+            "Type": 4,
+            "Value": "FAAAAA=="
+          }
+        ]
+      },
+      {
+        "Family": 2,
+        "Destination": "192.0.2.2/32",
+        "Source": "0.0.0.0/0",
+        "TOS": 0,
+        "Table": 255,
+        "Protocol": 2,
+        "Scope": 254,
+        "Type": 2,
+        "Flags": 0,
+        "Priority": 0,
+        "Preference": 0,
+        "Interface": 3,
+        "Gateway": "",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/wAAAA=="
+          },
+          {
+            "Type": 1,
+            "Value": "wAACAg=="
+          },
+          {
+            "Type": 7,
+            "Value": "wAACAg=="
+          },
+          {
+            "Type": 4,
+            "Value": "AwAAAA=="
+          }
+        ]
+      },
+      {
+        "Family": 2,
+        "Destination": "192.0.2.255/32",
+        "Source": "0.0.0.0/0",
+        "TOS": 0,
+        "Table": 255,
+        "Protocol": 2,
+        "Scope": 253,
+        "Type": 3,
+        "Flags": 0,
+        "Priority": 0,
+        "Preference": 0,
+        "Interface": 3,
+        "Gateway": "",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/wAAAA=="
+          },
+          {
+            "Type": 1,
+            "Value": "wAAC/w=="
+          },
+          {
+            "Type": 7,
+            "Value": "wAACAg=="
+          },
+          {
+            "Type": 4,
+            "Value": "AwAAAA=="
+          }
+        ]
+      },
+      {
+        "Family": 2,
+        "Destination": "198.51.100.2/32",
+        "Source": "0.0.0.0/0",
+        "TOS": 0,
+        "Table": 255,
+        "Protocol": 2,
+        "Scope": 254,
+        "Type": 2,
+        "Flags": 0,
+        "Priority": 0,
+        "Preference": 0,
+        "Interface": 5,
+        "Gateway": "",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/wAAAA=="
+          },
+          {
+            "Type": 1,
+            "Value": "xjNkAg=="
+          },
+          {
+            "Type": 7,
+            "Value": "xjNkAg=="
+          },
+          {
+            "Type": 4,
+            "Value": "BQAAAA=="
+          }
+        ]
+      },
+      {
+        "Family": 2,
+        "Destination": "198.51.100.255/32",
+        "Source": "0.0.0.0/0",
+        "TOS": 0,
+        "Table": 255,
+        "Protocol": 2,
+        "Scope": 253,
+        "Type": 3,
+        "Flags": 0,
+        "Priority": 0,
+        "Preference": 0,
+        "Interface": 5,
+        "Gateway": "",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/wAAAA=="
+          },
+          {
+            "Type": 1,
+            "Value": "xjNk/w=="
+          },
+          {
+            "Type": 7,
+            "Value": "xjNkAg=="
+          },
+          {
+            "Type": 4,
+            "Value": "BQAAAA=="
+          }
+        ]
+      },
+      {
+        "Family": 10,
+        "Destination": "::/0",
+        "Source": "::/0",
+        "TOS": 0,
+        "Table": 1380741248,
+        "Protocol": 3,
+        "Scope": 0,
+        "Type": 1,
+        "Flags": 0,
+        "Priority": 1024,
+        "Preference": 0,
+        "Interface": 20,
+        "Gateway": "fdfe:dcba:9876::2",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "gHBMUg=="
+          },
+          {
+            "Type": 6,
+            "Value": "AAQAAA=="
+          },
+          {
+            "Type": 5,
+            "Value": "/f7cuph2AAAAAAAAAAAAAg=="
+          },
+          {
+            "Type": 4,
+            "Value": "FAAAAA=="
+          },
+          {
+            "Type": 12,
+            "Value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          },
+          {
+            "Type": 20,
+            "Value": "AA=="
+          }
+        ]
+      },
+      {
+        "Family": 10,
+        "Destination": "2001:db8:1::/64",
+        "Source": "::/0",
+        "TOS": 0,
+        "Table": 254,
+        "Protocol": 2,
+        "Scope": 0,
+        "Type": 1,
+        "Flags": 0,
+        "Priority": 256,
+        "Preference": 0,
+        "Interface": 3,
+        "Gateway": "",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/gAAAA=="
+          },
+          {
+            "Type": 1,
+            "Value": "IAENuAABAAAAAAAAAAAAAA=="
+          },
+          {
+            "Type": 6,
+            "Value": "AAEAAA=="
+          },
+          {
+            "Type": 4,
+            "Value": "AwAAAA=="
+          },
+          {
+            "Type": 12,
+            "Value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          },
+          {
+            "Type": 20,
+            "Value": "AA=="
+          }
+        ]
+      },
+      {
+        "Family": 10,
+        "Destination": "2001:db8:2::/64",
+        "Source": "::/0",
+        "TOS": 0,
+        "Table": 254,
+        "Protocol": 2,
+        "Scope": 0,
+        "Type": 1,
+        "Flags": 0,
+        "Priority": 256,
+        "Preference": 0,
+        "Interface": 5,
+        "Gateway": "",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/gAAAA=="
+          },
+          {
+            "Type": 1,
+            "Value": "IAENuAACAAAAAAAAAAAAAA=="
+          },
+          {
+            "Type": 6,
+            "Value": "AAEAAA=="
+          },
+          {
+            "Type": 4,
+            "Value": "BQAAAA=="
+          },
+          {
+            "Type": 12,
+            "Value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          },
+          {
+            "Type": 20,
+            "Value": "AA=="
+          }
+        ]
+      },
+      {
+        "Family": 10,
+        "Destination": "fdfe:dcba:9876::/126",
+        "Source": "::/0",
+        "TOS": 0,
+        "Table": 254,
+        "Protocol": 2,
+        "Scope": 0,
+        "Type": 1,
+        "Flags": 0,
+        "Priority": 256,
+        "Preference": 0,
+        "Interface": 20,
+        "Gateway": "",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/gAAAA=="
+          },
+          {
+            "Type": 1,
+            "Value": "/f7cuph2AAAAAAAAAAAAAA=="
+          },
+          {
+            "Type": 6,
+            "Value": "AAEAAA=="
+          },
+          {
+            "Type": 4,
+            "Value": "FAAAAA=="
+          },
+          {
+            "Type": 12,
+            "Value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          },
+          {
+            "Type": 20,
+            "Value": "AA=="
+          }
+        ]
+      },
+      {
+        "Family": 10,
+        "Destination": "fe80::/64",
+        "Source": "::/0",
+        "TOS": 0,
+        "Table": 254,
+        "Protocol": 2,
+        "Scope": 0,
+        "Type": 1,
+        "Flags": 0,
+        "Priority": 256,
+        "Preference": 0,
+        "Interface": 2,
+        "Gateway": "",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/gAAAA=="
+          },
+          {
+            "Type": 1,
+            "Value": "/oAAAAAAAAAAAAAAAAAAAA=="
+          },
+          {
+            "Type": 6,
+            "Value": "AAEAAA=="
+          },
+          {
+            "Type": 4,
+            "Value": "AgAAAA=="
+          },
+          {
+            "Type": 12,
+            "Value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          },
+          {
+            "Type": 20,
+            "Value": "AA=="
+          }
+        ]
+      },
+      {
+        "Family": 10,
+        "Destination": "fe80::/64",
+        "Source": "::/0",
+        "TOS": 0,
+        "Table": 254,
+        "Protocol": 2,
+        "Scope": 0,
+        "Type": 1,
+        "Flags": 0,
+        "Priority": 256,
+        "Preference": 0,
+        "Interface": 3,
+        "Gateway": "",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/gAAAA=="
+          },
+          {
+            "Type": 1,
+            "Value": "/oAAAAAAAAAAAAAAAAAAAA=="
+          },
+          {
+            "Type": 6,
+            "Value": "AAEAAA=="
+          },
+          {
+            "Type": 4,
+            "Value": "AwAAAA=="
+          },
+          {
+            "Type": 12,
+            "Value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          },
+          {
+            "Type": 20,
+            "Value": "AA=="
+          }
+        ]
+      },
+      {
+        "Family": 10,
+        "Destination": "fe80::/64",
+        "Source": "::/0",
+        "TOS": 0,
+        "Table": 254,
+        "Protocol": 2,
+        "Scope": 0,
+        "Type": 1,
+        "Flags": 0,
+        "Priority": 256,
+        "Preference": 0,
+        "Interface": 4,
+        "Gateway": "",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/gAAAA=="
+          },
+          {
+            "Type": 1,
+            "Value": "/oAAAAAAAAAAAAAAAAAAAA=="
+          },
+          {
+            "Type": 6,
+            "Value": "AAEAAA=="
+          },
+          {
+            "Type": 4,
+            "Value": "BAAAAA=="
+          },
+          {
+            "Type": 12,
+            "Value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          },
+          {
+            "Type": 20,
+            "Value": "AA=="
+          }
+        ]
+      },
+      {
+        "Family": 10,
+        "Destination": "fe80::/64",
+        "Source": "::/0",
+        "TOS": 0,
+        "Table": 254,
+        "Protocol": 2,
+        "Scope": 0,
+        "Type": 1,
+        "Flags": 0,
+        "Priority": 256,
+        "Preference": 0,
+        "Interface": 5,
+        "Gateway": "",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/gAAAA=="
+          },
+          {
+            "Type": 1,
+            "Value": "/oAAAAAAAAAAAAAAAAAAAA=="
+          },
+          {
+            "Type": 6,
+            "Value": "AAEAAA=="
+          },
+          {
+            "Type": 4,
+            "Value": "BQAAAA=="
+          },
+          {
+            "Type": 12,
+            "Value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          },
+          {
+            "Type": 20,
+            "Value": "AA=="
+          }
+        ]
+      },
+      {
+        "Family": 10,
+        "Destination": "fe80::/64",
+        "Source": "::/0",
+        "TOS": 0,
+        "Table": 254,
+        "Protocol": 2,
+        "Scope": 0,
+        "Type": 1,
+        "Flags": 0,
+        "Priority": 256,
+        "Preference": 0,
+        "Interface": 20,
+        "Gateway": "",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/gAAAA=="
+          },
+          {
+            "Type": 1,
+            "Value": "/oAAAAAAAAAAAAAAAAAAAA=="
+          },
+          {
+            "Type": 6,
+            "Value": "AAEAAA=="
+          },
+          {
+            "Type": 4,
+            "Value": "FAAAAA=="
+          },
+          {
+            "Type": 12,
+            "Value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          },
+          {
+            "Type": 20,
+            "Value": "AA=="
+          }
+        ]
+      },
+      {
+        "Family": 10,
+        "Destination": "::/0",
+        "Source": "::/0",
+        "TOS": 0,
+        "Table": 254,
+        "Protocol": 3,
+        "Scope": 0,
+        "Type": 1,
+        "Flags": 0,
+        "Priority": 20,
+        "Preference": 0,
+        "Interface": 5,
+        "Gateway": "2001:db8:2::1",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/gAAAA=="
+          },
+          {
+            "Type": 6,
+            "Value": "FAAAAA=="
+          },
+          {
+            "Type": 5,
+            "Value": "IAENuAACAAAAAAAAAAAAAQ=="
+          },
+          {
+            "Type": 4,
+            "Value": "BQAAAA=="
+          },
+          {
+            "Type": 12,
+            "Value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          },
+          {
+            "Type": 20,
+            "Value": "AA=="
+          }
+        ]
+      },
+      {
+        "Family": 10,
+        "Destination": "::/0",
+        "Source": "::/0",
+        "TOS": 0,
+        "Table": 254,
+        "Protocol": 3,
+        "Scope": 0,
+        "Type": 1,
+        "Flags": 0,
+        "Priority": 40,
+        "Preference": 0,
+        "Interface": 3,
+        "Gateway": "2001:db8:1::1",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/gAAAA=="
+          },
+          {
+            "Type": 6,
+            "Value": "KAAAAA=="
+          },
+          {
+            "Type": 5,
+            "Value": "IAENuAABAAAAAAAAAAAAAQ=="
+          },
+          {
+            "Type": 4,
+            "Value": "AwAAAA=="
+          },
+          {
+            "Type": 12,
+            "Value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          },
+          {
+            "Type": 20,
+            "Value": "AA=="
+          }
+        ]
+      },
+      {
+        "Family": 10,
+        "Destination": "::1/128",
+        "Source": "::/0",
+        "TOS": 0,
+        "Table": 255,
+        "Protocol": 2,
+        "Scope": 0,
+        "Type": 2,
+        "Flags": 0,
+        "Priority": 0,
+        "Preference": 0,
+        "Interface": 1,
+        "Gateway": "",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/wAAAA=="
+          },
+          {
+            "Type": 1,
+            "Value": "AAAAAAAAAAAAAAAAAAAAAQ=="
+          },
+          {
+            "Type": 6,
+            "Value": "AAAAAA=="
+          },
+          {
+            "Type": 4,
+            "Value": "AQAAAA=="
+          },
+          {
+            "Type": 12,
+            "Value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          },
+          {
+            "Type": 20,
+            "Value": "AA=="
+          }
+        ]
+      },
+      {
+        "Family": 10,
+        "Destination": "2001:db8:1::2/128",
+        "Source": "::/0",
+        "TOS": 0,
+        "Table": 255,
+        "Protocol": 2,
+        "Scope": 0,
+        "Type": 2,
+        "Flags": 0,
+        "Priority": 0,
+        "Preference": 0,
+        "Interface": 3,
+        "Gateway": "",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/wAAAA=="
+          },
+          {
+            "Type": 1,
+            "Value": "IAENuAABAAAAAAAAAAAAAg=="
+          },
+          {
+            "Type": 6,
+            "Value": "AAAAAA=="
+          },
+          {
+            "Type": 4,
+            "Value": "AwAAAA=="
+          },
+          {
+            "Type": 12,
+            "Value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          },
+          {
+            "Type": 20,
+            "Value": "AA=="
+          }
+        ]
+      },
+      {
+        "Family": 10,
+        "Destination": "2001:db8:2::2/128",
+        "Source": "::/0",
+        "TOS": 0,
+        "Table": 255,
+        "Protocol": 2,
+        "Scope": 0,
+        "Type": 2,
+        "Flags": 0,
+        "Priority": 0,
+        "Preference": 0,
+        "Interface": 5,
+        "Gateway": "",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/wAAAA=="
+          },
+          {
+            "Type": 1,
+            "Value": "IAENuAACAAAAAAAAAAAAAg=="
+          },
+          {
+            "Type": 6,
+            "Value": "AAAAAA=="
+          },
+          {
+            "Type": 4,
+            "Value": "BQAAAA=="
+          },
+          {
+            "Type": 12,
+            "Value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          },
+          {
+            "Type": 20,
+            "Value": "AA=="
+          }
+        ]
+      },
+      {
+        "Family": 10,
+        "Destination": "fdfe:dcba:9876::1/128",
+        "Source": "::/0",
+        "TOS": 0,
+        "Table": 255,
+        "Protocol": 2,
+        "Scope": 0,
+        "Type": 2,
+        "Flags": 0,
+        "Priority": 0,
+        "Preference": 0,
+        "Interface": 20,
+        "Gateway": "",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/wAAAA=="
+          },
+          {
+            "Type": 1,
+            "Value": "/f7cuph2AAAAAAAAAAAAAQ=="
+          },
+          {
+            "Type": 6,
+            "Value": "AAAAAA=="
+          },
+          {
+            "Type": 4,
+            "Value": "FAAAAA=="
+          },
+          {
+            "Type": 12,
+            "Value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          },
+          {
+            "Type": 20,
+            "Value": "AA=="
+          }
+        ]
+      },
+      {
+        "Family": 10,
+        "Destination": "fe80::457:38ff:fed1:f368/128",
+        "Source": "::/0",
+        "TOS": 0,
+        "Table": 255,
+        "Protocol": 2,
+        "Scope": 0,
+        "Type": 2,
+        "Flags": 0,
+        "Priority": 0,
+        "Preference": 0,
+        "Interface": 2,
+        "Gateway": "",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/wAAAA=="
+          },
+          {
+            "Type": 1,
+            "Value": "/oAAAAAAAAAEVzj//tHzaA=="
+          },
+          {
+            "Type": 6,
+            "Value": "AAAAAA=="
+          },
+          {
+            "Type": 4,
+            "Value": "AgAAAA=="
+          },
+          {
+            "Type": 12,
+            "Value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          },
+          {
+            "Type": 20,
+            "Value": "AA=="
+          }
+        ]
+      },
+      {
+        "Family": 10,
+        "Destination": "fe80::1b33:6d7f:f4f:ac7d/128",
+        "Source": "::/0",
+        "TOS": 0,
+        "Table": 255,
+        "Protocol": 2,
+        "Scope": 0,
+        "Type": 2,
+        "Flags": 0,
+        "Priority": 0,
+        "Preference": 0,
+        "Interface": 20,
+        "Gateway": "",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/wAAAA=="
+          },
+          {
+            "Type": 1,
+            "Value": "/oAAAAAAAAAbM21/D0+sfQ=="
+          },
+          {
+            "Type": 6,
+            "Value": "AAAAAA=="
+          },
+          {
+            "Type": 4,
+            "Value": "FAAAAA=="
+          },
+          {
+            "Type": 12,
+            "Value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          },
+          {
+            "Type": 20,
+            "Value": "AA=="
+          }
+        ]
+      },
+      {
+        "Family": 10,
+        "Destination": "fe80::3029:9dff:fe4f:9024/128",
+        "Source": "::/0",
+        "TOS": 0,
+        "Table": 255,
+        "Protocol": 2,
+        "Scope": 0,
+        "Type": 2,
+        "Flags": 0,
+        "Priority": 0,
+        "Preference": 0,
+        "Interface": 3,
+        "Gateway": "",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/wAAAA=="
+          },
+          {
+            "Type": 1,
+            "Value": "/oAAAAAAAAAwKZ3//k+QJA=="
+          },
+          {
+            "Type": 6,
+            "Value": "AAAAAA=="
+          },
+          {
+            "Type": 4,
+            "Value": "AwAAAA=="
+          },
+          {
+            "Type": 12,
+            "Value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          },
+          {
+            "Type": 20,
+            "Value": "AA=="
+          }
+        ]
+      },
+      {
+        "Family": 10,
+        "Destination": "fe80::48f9:b8ff:fe05:6c9/128",
+        "Source": "::/0",
+        "TOS": 0,
+        "Table": 255,
+        "Protocol": 2,
+        "Scope": 0,
+        "Type": 2,
+        "Flags": 0,
+        "Priority": 0,
+        "Preference": 0,
+        "Interface": 5,
+        "Gateway": "",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/wAAAA=="
+          },
+          {
+            "Type": 1,
+            "Value": "/oAAAAAAAABI+bj//gUGyQ=="
+          },
+          {
+            "Type": 6,
+            "Value": "AAAAAA=="
+          },
+          {
+            "Type": 4,
+            "Value": "BQAAAA=="
+          },
+          {
+            "Type": 12,
+            "Value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          },
+          {
+            "Type": 20,
+            "Value": "AA=="
+          }
+        ]
+      },
+      {
+        "Family": 10,
+        "Destination": "fe80::649b:2eff:febd:bfb2/128",
+        "Source": "::/0",
+        "TOS": 0,
+        "Table": 255,
+        "Protocol": 2,
+        "Scope": 0,
+        "Type": 2,
+        "Flags": 0,
+        "Priority": 0,
+        "Preference": 0,
+        "Interface": 4,
+        "Gateway": "",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/wAAAA=="
+          },
+          {
+            "Type": 1,
+            "Value": "/oAAAAAAAABkmy7//r2/sg=="
+          },
+          {
+            "Type": 6,
+            "Value": "AAAAAA=="
+          },
+          {
+            "Type": 4,
+            "Value": "BAAAAA=="
+          },
+          {
+            "Type": 12,
+            "Value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          },
+          {
+            "Type": 20,
+            "Value": "AA=="
+          }
+        ]
+      },
+      {
+        "Family": 10,
+        "Destination": "ff00::/8",
+        "Source": "::/0",
+        "TOS": 0,
+        "Table": 255,
+        "Protocol": 2,
+        "Scope": 0,
+        "Type": 5,
+        "Flags": 0,
+        "Priority": 256,
+        "Preference": 0,
+        "Interface": 2,
+        "Gateway": "",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/wAAAA=="
+          },
+          {
+            "Type": 1,
+            "Value": "/wAAAAAAAAAAAAAAAAAAAA=="
+          },
+          {
+            "Type": 6,
+            "Value": "AAEAAA=="
+          },
+          {
+            "Type": 4,
+            "Value": "AgAAAA=="
+          },
+          {
+            "Type": 12,
+            "Value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          },
+          {
+            "Type": 20,
+            "Value": "AA=="
+          }
+        ]
+      },
+      {
+        "Family": 10,
+        "Destination": "ff00::/8",
+        "Source": "::/0",
+        "TOS": 0,
+        "Table": 255,
+        "Protocol": 2,
+        "Scope": 0,
+        "Type": 5,
+        "Flags": 0,
+        "Priority": 256,
+        "Preference": 0,
+        "Interface": 3,
+        "Gateway": "",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/wAAAA=="
+          },
+          {
+            "Type": 1,
+            "Value": "/wAAAAAAAAAAAAAAAAAAAA=="
+          },
+          {
+            "Type": 6,
+            "Value": "AAEAAA=="
+          },
+          {
+            "Type": 4,
+            "Value": "AwAAAA=="
+          },
+          {
+            "Type": 12,
+            "Value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          },
+          {
+            "Type": 20,
+            "Value": "AA=="
+          }
+        ]
+      },
+      {
+        "Family": 10,
+        "Destination": "ff00::/8",
+        "Source": "::/0",
+        "TOS": 0,
+        "Table": 255,
+        "Protocol": 2,
+        "Scope": 0,
+        "Type": 5,
+        "Flags": 0,
+        "Priority": 256,
+        "Preference": 0,
+        "Interface": 4,
+        "Gateway": "",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/wAAAA=="
+          },
+          {
+            "Type": 1,
+            "Value": "/wAAAAAAAAAAAAAAAAAAAA=="
+          },
+          {
+            "Type": 6,
+            "Value": "AAEAAA=="
+          },
+          {
+            "Type": 4,
+            "Value": "BAAAAA=="
+          },
+          {
+            "Type": 12,
+            "Value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          },
+          {
+            "Type": 20,
+            "Value": "AA=="
+          }
+        ]
+      },
+      {
+        "Family": 10,
+        "Destination": "ff00::/8",
+        "Source": "::/0",
+        "TOS": 0,
+        "Table": 255,
+        "Protocol": 2,
+        "Scope": 0,
+        "Type": 5,
+        "Flags": 0,
+        "Priority": 256,
+        "Preference": 0,
+        "Interface": 5,
+        "Gateway": "",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/wAAAA=="
+          },
+          {
+            "Type": 1,
+            "Value": "/wAAAAAAAAAAAAAAAAAAAA=="
+          },
+          {
+            "Type": 6,
+            "Value": "AAEAAA=="
+          },
+          {
+            "Type": 4,
+            "Value": "BQAAAA=="
+          },
+          {
+            "Type": 12,
+            "Value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          },
+          {
+            "Type": 20,
+            "Value": "AA=="
+          }
+        ]
+      },
+      {
+        "Family": 10,
+        "Destination": "ff00::/8",
+        "Source": "::/0",
+        "TOS": 0,
+        "Table": 255,
+        "Protocol": 2,
+        "Scope": 0,
+        "Type": 5,
+        "Flags": 0,
+        "Priority": 256,
+        "Preference": 0,
+        "Interface": 20,
+        "Gateway": "",
+        "NextHops": null,
+        "NextHopID": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/wAAAA=="
+          },
+          {
+            "Type": 1,
+            "Value": "/wAAAAAAAAAAAAAAAAAAAA=="
+          },
+          {
+            "Type": 6,
+            "Value": "AAEAAA=="
+          },
+          {
+            "Type": 4,
+            "Value": "FAAAAA=="
+          },
+          {
+            "Type": 12,
+            "Value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          },
+          {
+            "Type": 20,
+            "Value": "AA=="
+          }
+        ]
+      }
+    ],
+    "Rules": [
+      {
+        "Family": 2,
+        "Destination": "0.0.0.0/0",
+        "Source": "0.0.0.0/0",
+        "TOS": 0,
+        "Table": 255,
+        "Action": 1,
+        "Flags": 0,
+        "Priority": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/wAAAA=="
+          },
+          {
+            "Type": 14,
+            "Value": "/////w=="
+          },
+          {
+            "Type": 21,
+            "Value": "Ag=="
+          }
+        ]
+      },
+      {
+        "Family": 2,
+        "Destination": "172.29.255.0/30",
+        "Source": "0.0.0.0/0",
+        "TOS": 0,
+        "Table": 1380741248,
+        "Action": 1,
+        "Flags": 0,
+        "Priority": 31808,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "gHBMUg=="
+          },
+          {
+            "Type": 14,
+            "Value": "/////w=="
+          },
+          {
+            "Type": 21,
+            "Value": "8g=="
+          },
+          {
+            "Type": 6,
+            "Value": "QHwAAA=="
+          },
+          {
+            "Type": 1,
+            "Value": "rB3/AA=="
+          }
+        ]
+      },
+      {
+        "Family": 2,
+        "Destination": "0.0.0.0/0",
+        "Source": "0.0.0.0/0",
+        "TOS": 0,
+        "Table": 1380741248,
+        "Action": 1,
+        "Flags": 0,
+        "Priority": 31809,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "gHBMUg=="
+          },
+          {
+            "Type": 14,
+            "Value": "AAAAAA=="
+          },
+          {
+            "Type": 21,
+            "Value": "8g=="
+          },
+          {
+            "Type": 6,
+            "Value": "QXwAAA=="
+          }
+        ]
+      },
+      {
+        "Family": 2,
+        "Destination": "0.0.0.0/0",
+        "Source": "0.0.0.0/0",
+        "TOS": 0,
+        "Table": 254,
+        "Action": 1,
+        "Flags": 2,
+        "Priority": 31810,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/gAAAA=="
+          },
+          {
+            "Type": 14,
+            "Value": "AAAAAA=="
+          },
+          {
+            "Type": 21,
+            "Value": "8g=="
+          },
+          {
+            "Type": 6,
+            "Value": "QnwAAA=="
+          },
+          {
+            "Type": 24,
+            "Value": "NQA1AA=="
+          }
+        ]
+      },
+      {
+        "Family": 2,
+        "Destination": "0.0.0.0/0",
+        "Source": "0.0.0.0/0",
+        "TOS": 0,
+        "Table": 0,
+        "Action": 2,
+        "Flags": 0,
+        "Priority": 31810,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "AAAAAA=="
+          },
+          {
+            "Type": 14,
+            "Value": "/////w=="
+          },
+          {
+            "Type": 21,
+            "Value": "8g=="
+          },
+          {
+            "Type": 3,
+            "Value": "cmwtemVzcWhxbGIA"
+          },
+          {
+            "Type": 6,
+            "Value": "QnwAAA=="
+          },
+          {
+            "Type": 4,
+            "Value": "SnwAAA=="
+          }
+        ]
+      },
+      {
+        "Family": 2,
+        "Destination": "0.0.0.0/0",
+        "Source": "0.0.0.0/0",
+        "TOS": 0,
+        "Table": 1380741248,
+        "Action": 1,
+        "Flags": 2,
+        "Priority": 31811,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "gHBMUg=="
+          },
+          {
+            "Type": 14,
+            "Value": "/////w=="
+          },
+          {
+            "Type": 21,
+            "Value": "8g=="
+          },
+          {
+            "Type": 3,
+            "Value": "bG8A"
+          },
+          {
+            "Type": 6,
+            "Value": "Q3wAAA=="
+          }
+        ]
+      },
+      {
+        "Family": 2,
+        "Destination": "0.0.0.0/0",
+        "Source": "0.0.0.0/32",
+        "TOS": 0,
+        "Table": 1380741248,
+        "Action": 1,
+        "Flags": 0,
+        "Priority": 31811,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "gHBMUg=="
+          },
+          {
+            "Type": 14,
+            "Value": "/////w=="
+          },
+          {
+            "Type": 21,
+            "Value": "8g=="
+          },
+          {
+            "Type": 3,
+            "Value": "bG8A"
+          },
+          {
+            "Type": 6,
+            "Value": "Q3wAAA=="
+          },
+          {
+            "Type": 2,
+            "Value": "AAAAAA=="
+          }
+        ]
+      },
+      {
+        "Family": 2,
+        "Destination": "0.0.0.0/0",
+        "Source": "172.29.255.0/30",
+        "TOS": 0,
+        "Table": 1380741248,
+        "Action": 1,
+        "Flags": 0,
+        "Priority": 31811,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "gHBMUg=="
+          },
+          {
+            "Type": 14,
+            "Value": "/////w=="
+          },
+          {
+            "Type": 21,
+            "Value": "8g=="
+          },
+          {
+            "Type": 3,
+            "Value": "bG8A"
+          },
+          {
+            "Type": 6,
+            "Value": "Q3wAAA=="
+          },
+          {
+            "Type": 2,
+            "Value": "rB3/AA=="
+          }
+        ]
+      },
+      {
+        "Family": 2,
+        "Destination": "0.0.0.0/0",
+        "Source": "0.0.0.0/0",
+        "TOS": 0,
+        "Table": 0,
+        "Action": 3,
+        "Flags": 0,
+        "Priority": 31818,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "AAAAAA=="
+          },
+          {
+            "Type": 14,
+            "Value": "/////w=="
+          },
+          {
+            "Type": 21,
+            "Value": "8g=="
+          },
+          {
+            "Type": 6,
+            "Value": "SnwAAA=="
+          }
+        ]
+      },
+      {
+        "Family": 2,
+        "Destination": "0.0.0.0/0",
+        "Source": "0.0.0.0/0",
+        "TOS": 0,
+        "Table": 254,
+        "Action": 1,
+        "Flags": 0,
+        "Priority": 32766,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/gAAAA=="
+          },
+          {
+            "Type": 14,
+            "Value": "/////w=="
+          },
+          {
+            "Type": 21,
+            "Value": "Ag=="
+          },
+          {
+            "Type": 6,
+            "Value": "/n8AAA=="
+          }
+        ]
+      },
+      {
+        "Family": 2,
+        "Destination": "0.0.0.0/0",
+        "Source": "0.0.0.0/0",
+        "TOS": 0,
+        "Table": 253,
+        "Action": 1,
+        "Flags": 0,
+        "Priority": 32767,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/QAAAA=="
+          },
+          {
+            "Type": 14,
+            "Value": "/////w=="
+          },
+          {
+            "Type": 21,
+            "Value": "Ag=="
+          },
+          {
+            "Type": 6,
+            "Value": "/38AAA=="
+          }
+        ]
+      },
+      {
+        "Family": 10,
+        "Destination": "::/0",
+        "Source": "::/0",
+        "TOS": 0,
+        "Table": 255,
+        "Action": 1,
+        "Flags": 0,
+        "Priority": 0,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/wAAAA=="
+          },
+          {
+            "Type": 14,
+            "Value": "/////w=="
+          },
+          {
+            "Type": 21,
+            "Value": "Ag=="
+          }
+        ]
+      },
+      {
+        "Family": 10,
+        "Destination": "::/0",
+        "Source": "::/0",
+        "TOS": 0,
+        "Table": 1380741248,
+        "Action": 1,
+        "Flags": 0,
+        "Priority": 31808,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "gHBMUg=="
+          },
+          {
+            "Type": 14,
+            "Value": "AAAAAA=="
+          },
+          {
+            "Type": 21,
+            "Value": "8g=="
+          },
+          {
+            "Type": 6,
+            "Value": "QHwAAA=="
+          }
+        ]
+      },
+      {
+        "Family": 10,
+        "Destination": "::/0",
+        "Source": "::/0",
+        "TOS": 0,
+        "Table": 254,
+        "Action": 1,
+        "Flags": 2,
+        "Priority": 31809,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/gAAAA=="
+          },
+          {
+            "Type": 14,
+            "Value": "AAAAAA=="
+          },
+          {
+            "Type": 21,
+            "Value": "8g=="
+          },
+          {
+            "Type": 6,
+            "Value": "QXwAAA=="
+          },
+          {
+            "Type": 24,
+            "Value": "NQA1AA=="
+          }
+        ]
+      },
+      {
+        "Family": 10,
+        "Destination": "::/0",
+        "Source": "::/0",
+        "TOS": 0,
+        "Table": 0,
+        "Action": 2,
+        "Flags": 0,
+        "Priority": 31809,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "AAAAAA=="
+          },
+          {
+            "Type": 14,
+            "Value": "/////w=="
+          },
+          {
+            "Type": 21,
+            "Value": "8g=="
+          },
+          {
+            "Type": 3,
+            "Value": "cmwtemVzcWhxbGIA"
+          },
+          {
+            "Type": 6,
+            "Value": "QXwAAA=="
+          },
+          {
+            "Type": 4,
+            "Value": "SnwAAA=="
+          }
+        ]
+      },
+      {
+        "Family": 10,
+        "Destination": "::/0",
+        "Source": "::/1",
+        "TOS": 0,
+        "Table": 0,
+        "Action": 2,
+        "Flags": 0,
+        "Priority": 31809,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "AAAAAA=="
+          },
+          {
+            "Type": 14,
+            "Value": "/////w=="
+          },
+          {
+            "Type": 21,
+            "Value": "8g=="
+          },
+          {
+            "Type": 3,
+            "Value": "bG8A"
+          },
+          {
+            "Type": 6,
+            "Value": "QXwAAA=="
+          },
+          {
+            "Type": 4,
+            "Value": "SnwAAA=="
+          },
+          {
+            "Type": 2,
+            "Value": "AAAAAAAAAAAAAAAAAAAAAA=="
+          }
+        ]
+      },
+      {
+        "Family": 10,
+        "Destination": "::/0",
+        "Source": "8000::/1",
+        "TOS": 0,
+        "Table": 0,
+        "Action": 2,
+        "Flags": 0,
+        "Priority": 31809,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "AAAAAA=="
+          },
+          {
+            "Type": 14,
+            "Value": "/////w=="
+          },
+          {
+            "Type": 21,
+            "Value": "8g=="
+          },
+          {
+            "Type": 3,
+            "Value": "bG8A"
+          },
+          {
+            "Type": 6,
+            "Value": "QXwAAA=="
+          },
+          {
+            "Type": 4,
+            "Value": "SnwAAA=="
+          },
+          {
+            "Type": 2,
+            "Value": "gAAAAAAAAAAAAAAAAAAAAA=="
+          }
+        ]
+      },
+      {
+        "Family": 10,
+        "Destination": "::/0",
+        "Source": "fdfe:dcba:9876::/126",
+        "TOS": 0,
+        "Table": 1380741248,
+        "Action": 1,
+        "Flags": 0,
+        "Priority": 31810,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "gHBMUg=="
+          },
+          {
+            "Type": 14,
+            "Value": "/////w=="
+          },
+          {
+            "Type": 21,
+            "Value": "8g=="
+          },
+          {
+            "Type": 3,
+            "Value": "bG8A"
+          },
+          {
+            "Type": 6,
+            "Value": "QnwAAA=="
+          },
+          {
+            "Type": 2,
+            "Value": "/f7cuph2AAAAAAAAAAAAAA=="
+          }
+        ]
+      },
+      {
+        "Family": 10,
+        "Destination": "::/0",
+        "Source": "::/0",
+        "TOS": 0,
+        "Table": 1380741248,
+        "Action": 1,
+        "Flags": 0,
+        "Priority": 31811,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "gHBMUg=="
+          },
+          {
+            "Type": 14,
+            "Value": "/////w=="
+          },
+          {
+            "Type": 21,
+            "Value": "8g=="
+          },
+          {
+            "Type": 6,
+            "Value": "Q3wAAA=="
+          }
+        ]
+      },
+      {
+        "Family": 10,
+        "Destination": "::/0",
+        "Source": "::/0",
+        "TOS": 0,
+        "Table": 0,
+        "Action": 3,
+        "Flags": 0,
+        "Priority": 31818,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "AAAAAA=="
+          },
+          {
+            "Type": 14,
+            "Value": "/////w=="
+          },
+          {
+            "Type": 21,
+            "Value": "8g=="
+          },
+          {
+            "Type": 6,
+            "Value": "SnwAAA=="
+          }
+        ]
+      },
+      {
+        "Family": 10,
+        "Destination": "::/0",
+        "Source": "::/0",
+        "TOS": 0,
+        "Table": 254,
+        "Action": 1,
+        "Flags": 0,
+        "Priority": 32766,
+        "Attributes": [
+          {
+            "Type": 15,
+            "Value": "/gAAAA=="
+          },
+          {
+            "Type": 14,
+            "Value": "/////w=="
+          },
+          {
+            "Type": 21,
+            "Value": "Ag=="
+          },
+          {
+            "Type": 6,
+            "Value": "/n8AAA=="
+          }
+        ]
+      }
+    ]
+  },
+  "resources": {
+    "name": "rl-zesqhqlb",
+    "table": 1380741248,
+    "priority": 31808
+  },
+  "scenario": "eof",
+  "watchdog": {
+    "pid": 1291,
+    "start": 2744,
+    "boot": "9f82e980-cfa3-4b7b-b623-07d66668f046"
+  }
+}

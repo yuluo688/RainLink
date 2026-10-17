@@ -1,0 +1,20 @@
+# RainLink 高级配置
+log:
+  level: "info"
+dns:
+  servers:
+    -
+      type: "udp"
+      server: "127.0.0.1"
+      server_port: 61330
+  independent_cache: true
+route:
+  rules:
+    -
+      domain:
+        - "allowed.advanced.test"
+      outbound: "direct"
+    -
+      domain:
+        - "blocked.advanced.test"
+      action: "reject"

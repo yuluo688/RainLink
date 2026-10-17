@@ -1,0 +1,7 @@
+=== RUN   TestRootDirectoryRefusesLinksWritableAncestorsAndForeignOwners
+--- PASS: TestRootDirectoryRefusesLinksWritableAncestorsAndForeignOwners (0.00s)
+=== RUN   TestRootFilesAtomicReplaceLimitsAndPinnedDirectory
+--- PASS: TestRootFilesAtomicReplaceLimitsAndPinnedDirectory (0.00s)
+=== RUN   TestRootFilesRefuseSymlinkHardlinkSpecialAndUnsafeMode
+--- PASS: TestRootFilesRefuseSymlinkHardlinkSpecialAndUnsafeMode (0.00s)
+PASS

@@ -1,0 +1,31 @@
+{
+  "shellSyntax": {
+    "exitCode": 0,
+    "scripts": [
+      "tools/verify_linux_install.sh",
+      "tools/verify_linux_systemd_vm.sh",
+      "tools/fixtures/linux_install_namespace.sh",
+      "tools/fixtures/linux_systemd_guest.sh"
+    ]
+  },
+  "windows-amd64": {
+    "exitCode": 0
+  },
+  "linux-amd64": {
+    "exitCode": 0
+  },
+  "gofmt": {
+    "exitCode": 0
+  },
+  "linux-arm64": {
+    "exitCode": 0
+  },
+  "pythonSyntax": {
+    "exitCode": 0,
+    "scripts": [
+      "tools/finalize_linux_install_evidence.py",
+      "tools/finalize_linux_forwarding_evidence.py",
+      "tools/finalize_linux_manager_evidence.py"
+    ]
+  }
+}

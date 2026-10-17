@@ -1,0 +1,496 @@
+Cloud-init v. 25.1.4 running 'init-local' at Sat, 17 Oct 2026 12:49:02 +0000. Up 37.41 seconds.
+Cloud-init v. 25.1.4 running 'init' at Sat, 17 Oct 2026 12:49:16 +0000. Up 50.85 seconds.
+ci-info: ++++++++++++++++++++++++++++++++++++++Net device info++++++++++++++++++++++++++++++++++++++
+ci-info: +--------+------+----------------------------+---------------+--------+-------------------+
+ci-info: | Device |  Up  |          Address           |      Mask     | Scope  |     Hw-Address    |
+ci-info: +--------+------+----------------------------+---------------+--------+-------------------+
+ci-info: |  ens2  | True |         10.0.2.15          | 255.255.255.0 | global | 52:54:00:12:34:56 |
+ci-info: |  ens2  | True | fe80::5054:ff:fe12:3456/64 |       .       |  link  | 52:54:00:12:34:56 |
+ci-info: |   lo   | True |         127.0.0.1          |   255.0.0.0   |  host  |         .         |
+ci-info: |   lo   | True |          ::1/128           |       .       |  host  |         .         |
+ci-info: +--------+------+----------------------------+---------------+--------+-------------------+
+ci-info: ++++++++++++++++++++++++++++Route IPv4 info+++++++++++++++++++++++++++++
+ci-info: +-------+-------------+----------+-----------------+-----------+-------+
+ci-info: | Route | Destination | Gateway  |     Genmask     | Interface | Flags |
+ci-info: +-------+-------------+----------+-----------------+-----------+-------+
+ci-info: |   0   |   0.0.0.0   | 10.0.2.2 |     0.0.0.0     |    ens2   |   UG  |
+ci-info: |   1   |   10.0.2.0  | 0.0.0.0  |  255.255.255.0  |    ens2   |   U   |
+ci-info: |   2   |   10.0.2.2  | 0.0.0.0  | 255.255.255.255 |    ens2   |   UH  |
+ci-info: |   3   |   10.0.2.3  | 0.0.0.0  | 255.255.255.255 |    ens2   |   UH  |
+ci-info: +-------+-------------+----------+-----------------+-----------+-------+
+ci-info: +++++++++++++++++++Route IPv6 info+++++++++++++++++++
+ci-info: +-------+-------------+---------+-----------+-------+
+ci-info: | Route | Destination | Gateway | Interface | Flags |
+ci-info: +-------+-------------+---------+-----------+-------+
+ci-info: |   0   |  fe80::/64  |    ::   |    ens2   |   U   |
+ci-info: |   2   |    local    |    ::   |    ens2   |   U   |
+ci-info: |   3   |  multicast  |    ::   |    ens2   |   U   |
+ci-info: +-------+-------------+---------+-----------+-------+
+Cloud-init v. 25.1.4 running 'modules:config' at Sat, 17 Oct 2026 12:49:25 +0000. Up 59.38 seconds.
+Cloud-init v. 25.1.4 running 'modules:final' at Sat, 17 Oct 2026 12:49:29 +0000. Up 63.80 seconds.
+Real systemd VM: Linux 6.12.113+deb13-cloud-amd64
+systemd 257 (257.13-1~deb13u1)
++PAM +AUDIT +SELINUX +APPARMOR +IMA +IPE +SMACK +SECCOMP +GCRYPT -GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN +IPTC +KMOD +LIBCRYPTSETUP +LIBCRYPTSETUP_PLUGINS +LIBFDISK +PCRE2 +PWQUALITY +P11KIT +QRENCODE +TPM2 +BZIP2 +LZ4 +XZ +ZLIB +ZSTD +BPF_FRAMEWORK +BTF -XKBCOMMON -UTMP +SYSVINIT +LIBARCHIVE
+Failed to add filter for units: No data available
+2026-10-17 12:50:17,785 - cc_scripts_user.py[WARNING]: Failed to run module scripts-user (scripts in /var/lib/cloud/instance/scripts)
+2026-10-17 12:50:17,806 - log_util.py[WARNING]: Running module scripts-user (<module 'cloudinit.config.cc_scripts_user' from '/usr/lib/python3/dist-packages/cloudinit/config/cc_scripts_user.py'>) failed
+Cloud-init v. 25.1.4 finished at Sat, 17 Oct 2026 12:50:18 +0000. Datasource DataSourceNoCloud [seed=/dev/vdb1].  Up 112.45 seconds
+Generating public/private rsa key pair.
+Your identification has been saved in /etc/ssh/ssh_host_rsa_key
+Your public key has been saved in /etc/ssh/ssh_host_rsa_key.pub
+The key fingerprint is:
+SHA256:PRxXNAW3hz9i14X1vorgGvpSg7Qip3R7khh1tdAxXsE root@rainlink-disposable-qa
+The key's randomart image is:
++---[RSA 3072]----+
+|      .ooo.  .=o+|
+|     ..ooE   . *o|
+|      o.. . . o.+|
+|   . o . o o   o+|
+|  . o o S +  o o+|
+| + + o o   .. o o|
+|. B + ....     . |
+| o + o. o . . .  |
+|    o.oo.. . .   |
++----[SHA256]-----+
+Generating public/private ecdsa key pair.
+Your identification has been saved in /etc/ssh/ssh_host_ecdsa_key
+Your public key has been saved in /etc/ssh/ssh_host_ecdsa_key.pub
+The key fingerprint is:
+SHA256:+TJcekwRCjtTgK3R7yRkpmEdGXDr+OYlhIl2r+KR5Zs root@rainlink-disposable-qa
+The key's randomart image is:
++---[ECDSA 256]---+
+|    .**=. .      |
+|    =.O= . .     |
+|   . O=.. .      |
+|   .o=.oo. .     |
+|  o * o+S o      |
+| . = + ..*       |
+|  o . = * +      |
+|  .. * o +       |
+| ...E .          |
++----[SHA256]-----+
+Generating public/private ed25519 key pair.
+Your identification has been saved in /etc/ssh/ssh_host_ed25519_key
+Your public key has been saved in /etc/ssh/ssh_host_ed25519_key.pub
+The key fingerprint is:
+SHA256:CPhL8QB/s84333GpKZ78NYyHljXObIek6EQAH4B9mTo root@rainlink-disposable-qa
+The key's randomart image is:
++--[ED25519 256]--+
+|  .  oo..o       |
+|   +. .o+.       |
+|  . = ooo        |
+|   . *E+ .       |
+|    o +.S .   +  |
+|   . +   . . % + |
+|    . o o o B & .|
+|       . *.+ O o |
+|         .*o=    |
++----[SHA256]-----+
+Cloud-init v. 25.1.4 running 'init-local' at Sat, 17 Oct 2026 12:52:06 +0000. Up 35.36 seconds.
+Cloud-init v. 25.1.4 running 'init' at Sat, 17 Oct 2026 12:52:11 +0000. Up 39.71 seconds.
+ci-info: ++++++++++++++++++++++++++++++++++++++Net device info++++++++++++++++++++++++++++++++++++++
+ci-info: +--------+------+----------------------------+---------------+--------+-------------------+
+ci-info: | Device |  Up  |          Address           |      Mask     | Scope  |     Hw-Address    |
+ci-info: +--------+------+----------------------------+---------------+--------+-------------------+
+ci-info: |  ens2  | True |         10.0.2.15          | 255.255.255.0 | global | 52:54:00:12:34:56 |
+ci-info: |  ens2  | True | fe80::5054:ff:fe12:3456/64 |       .       |  link  | 52:54:00:12:34:56 |
+ci-info: |   lo   | True |         127.0.0.1          |   255.0.0.0   |  host  |         .         |
+ci-info: |   lo   | True |          ::1/128           |       .       |  host  |         .         |
+ci-info: +--------+------+----------------------------+---------------+--------+-------------------+
+ci-info: ++++++++++++++++++++++++++++Route IPv4 info+++++++++++++++++++++++++++++
+ci-info: +-------+-------------+----------+-----------------+-----------+-------+
+ci-info: | Route | Destination | Gateway  |     Genmask     | Interface | Flags |
+ci-info: +-------+-------------+----------+-----------------+-----------+-------+
+ci-info: |   0   |   0.0.0.0   | 10.0.2.2 |     0.0.0.0     |    ens2   |   UG  |
+ci-info: |   1   |   10.0.2.0  | 0.0.0.0  |  255.255.255.0  |    ens2   |   U   |
+ci-info: |   2   |   10.0.2.2  | 0.0.0.0  | 255.255.255.255 |    ens2   |   UH  |
+ci-info: |   3   |   10.0.2.3  | 0.0.0.0  | 255.255.255.255 |    ens2   |   UH  |
+ci-info: +-------+-------------+----------+-----------------+-----------+-------+
+ci-info: +++++++++++++++++++Route IPv6 info+++++++++++++++++++
+ci-info: +-------+-------------+---------+-----------+-------+
+ci-info: | Route | Destination | Gateway | Interface | Flags |
+ci-info: +-------+-------------+---------+-----------+-------+
+ci-info: |   0   |  fe80::/64  |    ::   |    ens2   |   U   |
+ci-info: |   2   |    local    |    ::   |    ens2   |   U   |
+ci-info: |   3   |  multicast  |    ::   |    ens2   |   U   |
+ci-info: +-------+-------------+---------+-----------+-------+
+Cloud-init v. 25.1.4 running 'modules:config' at Sat, 17 Oct 2026 12:52:16 +0000. Up 45.14 seconds.
+Cloud-init v. 25.1.4 running 'modules:final' at Sat, 17 Oct 2026 12:52:20 +0000. Up 48.55 seconds.
+Real systemd VM: Linux 6.12.113+deb13-cloud-amd64
+systemd 257 (257.13-1~deb13u1)
++PAM +AUDIT +SELINUX +APPARMOR +IMA +IPE +SMACK +SECCOMP +GCRYPT -GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN +IPTC +KMOD +LIBCRYPTSETUP +LIBCRYPTSETUP_PLUGINS +LIBFDISK +PCRE2 +PWQUALITY +P11KIT +QRENCODE +TPM2 +BZIP2 +LZ4 +XZ +ZLIB +ZSTD +BPF_FRAMEWORK +BTF -XKBCOMMON -UTMP +SYSVINIT +LIBARCHIVE
+Failed to add filter for units: No data available
+2026-10-17 12:52:23,411 - cc_scripts_user.py[WARNING]: Failed to run module scripts-user (scripts in /var/lib/cloud/instance/scripts)
+2026-10-17 12:52:23,432 - log_util.py[WARNING]: Running module scripts-user (<module 'cloudinit.config.cc_scripts_user' from '/usr/lib/python3/dist-packages/cloudinit/config/cc_scripts_user.py'>) failed
+Cloud-init v. 25.1.4 finished at Sat, 17 Oct 2026 12:52:24 +0000. Datasource DataSourceNoCloud [seed=/dev/vdb1].  Up 52.49 seconds
+Generating public/private rsa key pair.
+Your identification has been saved in /etc/ssh/ssh_host_rsa_key
+Your public key has been saved in /etc/ssh/ssh_host_rsa_key.pub
+The key fingerprint is:
+SHA256:gdHFSP0Bhi7B/XCt9dFWO1z5299+UI7a+WnZUhqgc/A root@rainlink-disposable-qa
+The key's randomart image is:
++---[RSA 3072]----+
+|     ..+.*+o   .=|
+|      oo*.+ + o.=|
+|      .o.+ + o *.|
+|      . ..+ o . +|
+|       .S  + . +o|
+|          o E +.+|
+|           o o *=|
+|            . =o*|
+|              .=+|
++----[SHA256]-----+
+Generating public/private ecdsa key pair.
+Your identification has been saved in /etc/ssh/ssh_host_ecdsa_key
+Your public key has been saved in /etc/ssh/ssh_host_ecdsa_key.pub
+The key fingerprint is:
+SHA256:1q2hzjhMpWM24+oaEGzC3tL6/WvVz0jqhH7ucSVwL0s root@rainlink-disposable-qa
+The key's randomart image is:
++---[ECDSA 256]---+
+|                 |
+|o                |
+|o+       . .     |
+|+.o     ..o..    |
+|.o o   oS +E.o   |
+| .o   O..o.==    |
+| ..  * =oo+o+    |
+|  ... ==.oo. o   |
+|  .+oo+=O+       |
++----[SHA256]-----+
+Generating public/private ed25519 key pair.
+Your identification has been saved in /etc/ssh/ssh_host_ed25519_key
+Your public key has been saved in /etc/ssh/ssh_host_ed25519_key.pub
+The key fingerprint is:
+SHA256:LtnRJpjUXGf7qeDckKhyonGV96nMQQ9F1L/DauFtQ7Y root@rainlink-disposable-qa
+The key's randomart image is:
++--[ED25519 256]--+
+|         .+.o    |
+|       o o o..   |
+|      . o . ..   |
+|     . + + . ... |
+|      = S *  .o. |
+|     . B X =..*  |
+|  . + = + *.o* o |
+|   + + + o  + E  |
+|  .     +  . . . |
++----[SHA256]-----+
+Cloud-init v. 25.1.4 running 'init-local' at Sat, 17 Oct 2026 12:56:18 +0000. Up 37.76 seconds.
+Cloud-init v. 25.1.4 running 'init' at Sat, 17 Oct 2026 12:56:23 +0000. Up 42.38 seconds.
+ci-info: ++++++++++++++++++++++++++++++++++++++Net device info++++++++++++++++++++++++++++++++++++++
+ci-info: +--------+------+----------------------------+---------------+--------+-------------------+
+ci-info: | Device |  Up  |          Address           |      Mask     | Scope  |     Hw-Address    |
+ci-info: +--------+------+----------------------------+---------------+--------+-------------------+
+ci-info: |  ens2  | True |         10.0.2.15          | 255.255.255.0 | global | 52:54:00:12:34:56 |
+ci-info: |  ens2  | True | fe80::5054:ff:fe12:3456/64 |       .       |  link  | 52:54:00:12:34:56 |
+ci-info: |   lo   | True |         127.0.0.1          |   255.0.0.0   |  host  |         .         |
+ci-info: |   lo   | True |          ::1/128           |       .       |  host  |         .         |
+ci-info: +--------+------+----------------------------+---------------+--------+-------------------+
+ci-info: ++++++++++++++++++++++++++++Route IPv4 info+++++++++++++++++++++++++++++
+ci-info: +-------+-------------+----------+-----------------+-----------+-------+
+ci-info: | Route | Destination | Gateway  |     Genmask     | Interface | Flags |
+ci-info: +-------+-------------+----------+-----------------+-----------+-------+
+ci-info: |   0   |   0.0.0.0   | 10.0.2.2 |     0.0.0.0     |    ens2   |   UG  |
+ci-info: |   1   |   10.0.2.0  | 0.0.0.0  |  255.255.255.0  |    ens2   |   U   |
+ci-info: |   2   |   10.0.2.2  | 0.0.0.0  | 255.255.255.255 |    ens2   |   UH  |
+ci-info: |   3   |   10.0.2.3  | 0.0.0.0  | 255.255.255.255 |    ens2   |   UH  |
+ci-info: +-------+-------------+----------+-----------------+-----------+-------+
+ci-info: +++++++++++++++++++Route IPv6 info+++++++++++++++++++
+ci-info: +-------+-------------+---------+-----------+-------+
+ci-info: | Route | Destination | Gateway | Interface | Flags |
+ci-info: +-------+-------------+---------+-----------+-------+
+ci-info: |   0   |  fe80::/64  |    ::   |    ens2   |   U   |
+ci-info: |   1   |  fec0::/64  |    ::   |    ens2   |   Ue  |
+ci-info: |   2   |     ::/0    | fe80::2 |    ens2   |  UGe  |
+ci-info: |   4   |    local    |    ::   |    ens2   |   U   |
+ci-info: |   5   |  multicast  |    ::   |    ens2   |   U   |
+ci-info: +-------+-------------+---------+-----------+-------+
+Cloud-init v. 25.1.4 running 'modules:config' at Sat, 17 Oct 2026 12:56:28 +0000. Up 47.30 seconds.
+Cloud-init v. 25.1.4 running 'modules:final' at Sat, 17 Oct 2026 12:56:32 +0000. Up 51.04 seconds.
+Real systemd VM: Linux 6.12.113+deb13-cloud-amd64
+systemd 257 (257.13-1~deb13u1)
++PAM +AUDIT +SELINUX +APPARMOR +IMA +IPE +SMACK +SECCOMP +GCRYPT -GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN +IPTC +KMOD +LIBCRYPTSETUP +LIBCRYPTSETUP_PLUGINS +LIBFDISK +PCRE2 +PWQUALITY +P11KIT +QRENCODE +TPM2 +BZIP2 +LZ4 +XZ +ZLIB +ZSTD +BPF_FRAMEWORK +BTF -XKBCOMMON -UTMP +SYSVINIT +LIBARCHIVE
+=== RUN   TestRealSystemdInstallation
+    systemd_integration_linux_test.go:52: install-tun success=true
+    systemd_integration_linux_test.go:56: real systemd accepted installed socket/template, served authenticated idle protocol, no polkit request
+    systemd_integration_linux_test.go:88: real systemd exit hook preserved another live lease without falsely confirming idle
+    systemd_integration_linux_test.go:89: install-tun success=true
+    systemd_integration_linux_test.go:96: install-tun success=true
+    systemd_integration_linux_test.go:100: real systemd repeated upgrade preserved disabled socket
+    systemd_integration_linux_test.go:112: install-tun success=false
+    systemd_integration_linux_test.go:127: administrator overrides and ordinary-user installation correctly refused
+    systemd_integration_linux_test.go:152: install-tun success=false
+    systemd_integration_linux_test.go:163: recover-tun-install success=true
+    systemd_integration_linux_test.go:167: active capture refused replacement; explicit recovery restored original service
+    systemd_integration_linux_test.go:174: uninstall-tun success=true
+    systemd_integration_linux_test.go:178: recover-tun-install success=true
+    systemd_integration_linux_test.go:182: real systemd uninstall and recovery completed; no capture/session remains
+--- PASS: TestRealSystemdInstallation (141.49s)
+PASS
+Cloud-init v. 25.1.4 finished at Sat, 17 Oct 2026 12:58:57 +0000. Datasource DataSourceNoCloud [seed=/dev/vdb1].  Up 196.42 seconds
+Generating public/private rsa key pair.
+Your identification has been saved in /etc/ssh/ssh_host_rsa_key
+Your public key has been saved in /etc/ssh/ssh_host_rsa_key.pub
+The key fingerprint is:
+SHA256:H0WfrZfrcRJ1TBGG4dTaAdVDA7COjk7QKWv9bGIyokc root@rainlink-disposable-qa
+The key's randomart image is:
++---[RSA 3072]----+
+|           .o=OB=|
+|           .+o.Oo|
+|           ...= B|
+|      . . o. . +o|
+|     o oS...  o..|
+|   E  = o. .   o.|
+|  .  o + ..   .o.|
+|   o.oooo.    ..o|
+| .o . +.oo     . |
++----[SHA256]-----+
+Generating public/private ecdsa key pair.
+Your identification has been saved in /etc/ssh/ssh_host_ecdsa_key
+Your public key has been saved in /etc/ssh/ssh_host_ecdsa_key.pub
+The key fingerprint is:
+SHA256:wPVF+UKgnWXIaIWvoAw4gbvolxmZ3zpxgG7TjMBnvEY root@rainlink-disposable-qa
+The key's randomart image is:
++---[ECDSA 256]---+
+|.       .=o+=.   |
+|o    . .++o=o    |
+|.+. . o...+. .   |
+|+o.E ...  . . .  |
+|.o*oB...S.   .   |
+|o  @o+ ..        |
+|. o * +          |
+| . + o .         |
+|  .  .o          |
++----[SHA256]-----+
+Generating public/private ed25519 key pair.
+Your identification has been saved in /etc/ssh/ssh_host_ed25519_key
+Your public key has been saved in /etc/ssh/ssh_host_ed25519_key.pub
+The key fingerprint is:
+SHA256:UAssR9tWU2xmimN0bvyeo/0/yXe64NQv6cTzJ32YQY8 root@rainlink-disposable-qa
+The key's randomart image is:
++--[ED25519 256]--+
+|     oo . oo.    |
+|    . o=.o..=    |
+|     oo.+= =     |
+|       o+ =   .  |
+|       .So . . o |
+|            .oE .|
+|           .o.**.|
+|           ++o*B*|
+|          ..o+=*X|
++----[SHA256]-----+
+Cloud-init v. 25.1.4 running 'init-local' at Sat, 17 Oct 2026 13:39:32 +0000. Up 35.63 seconds.
+Cloud-init v. 25.1.4 running 'init' at Sat, 17 Oct 2026 13:39:37 +0000. Up 41.04 seconds.
+ci-info: ++++++++++++++++++++++++++++++++++++++Net device info++++++++++++++++++++++++++++++++++++++
+ci-info: +--------+------+----------------------------+---------------+--------+-------------------+
+ci-info: | Device |  Up  |          Address           |      Mask     | Scope  |     Hw-Address    |
+ci-info: +--------+------+----------------------------+---------------+--------+-------------------+
+ci-info: |  ens2  | True |         10.0.2.15          | 255.255.255.0 | global | 52:54:00:12:34:56 |
+ci-info: |  ens2  | True | fe80::5054:ff:fe12:3456/64 |       .       |  link  | 52:54:00:12:34:56 |
+ci-info: |   lo   | True |         127.0.0.1          |   255.0.0.0   |  host  |         .         |
+ci-info: |   lo   | True |          ::1/128           |       .       |  host  |         .         |
+ci-info: +--------+------+----------------------------+---------------+--------+-------------------+
+ci-info: ++++++++++++++++++++++++++++Route IPv4 info+++++++++++++++++++++++++++++
+ci-info: +-------+-------------+----------+-----------------+-----------+-------+
+ci-info: | Route | Destination | Gateway  |     Genmask     | Interface | Flags |
+ci-info: +-------+-------------+----------+-----------------+-----------+-------+
+ci-info: |   0   |   0.0.0.0   | 10.0.2.2 |     0.0.0.0     |    ens2   |   UG  |
+ci-info: |   1   |   10.0.2.0  | 0.0.0.0  |  255.255.255.0  |    ens2   |   U   |
+ci-info: |   2   |   10.0.2.2  | 0.0.0.0  | 255.255.255.255 |    ens2   |   UH  |
+ci-info: |   3   |   10.0.2.3  | 0.0.0.0  | 255.255.255.255 |    ens2   |   UH  |
+ci-info: +-------+-------------+----------+-----------------+-----------+-------+
+ci-info: +++++++++++++++++++Route IPv6 info+++++++++++++++++++
+ci-info: +-------+-------------+---------+-----------+-------+
+ci-info: | Route | Destination | Gateway | Interface | Flags |
+ci-info: +-------+-------------+---------+-----------+-------+
+ci-info: |   0   |  fe80::/64  |    ::   |    ens2   |   U   |
+ci-info: |   2   |    local    |    ::   |    ens2   |   U   |
+ci-info: |   3   |  multicast  |    ::   |    ens2   |   U   |
+ci-info: +-------+-------------+---------+-----------+-------+
+Cloud-init v. 25.1.4 running 'modules:config' at Sat, 17 Oct 2026 13:39:41 +0000. Up 44.83 seconds.
+Cloud-init v. 25.1.4 running 'modules:final' at Sat, 17 Oct 2026 13:39:45 +0000. Up 48.12 seconds.
+Real permission log VM: Linux 6.12.113+deb13-cloud-amd64
+systemd 257 (257.13-1~deb13u1)
++PAM +AUDIT +SELINUX +APPARMOR +IMA +IPE +SMACK +SECCOMP +GCRYPT -GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN +IPTC +KMOD +LIBCRYPTSETUP +LIBCRYPTSETUP_PLUGINS +LIBFDISK +PCRE2 +PWQUALITY +P11KIT +QRENCODE +TPM2 +BZIP2 +LZ4 +XZ +ZLIB +ZSTD +BPF_FRAMEWORK +BTF -XKBCOMMON -UTMP +SYSVINIT +LIBARCHIVE
+2026-10-17 13:40:32,988 - cc_scripts_user.py[WARNING]: Failed to run module scripts-user (scripts in /var/lib/cloud/instance/scripts)
+2026-10-17 13:40:33,010 - log_util.py[WARNING]: Running module scripts-user (<module 'cloudinit.config.cc_scripts_user' from '/usr/lib/python3/dist-packages/cloudinit/config/cc_scripts_user.py'>) failed
+Cloud-init v. 25.1.4 finished at Sat, 17 Oct 2026 13:40:33 +0000. Datasource DataSourceNoCloud [seed=/dev/vdb1].  Up 96.22 seconds
+Generating public/private rsa key pair.
+Your identification has been saved in /etc/ssh/ssh_host_rsa_key
+Your public key has been saved in /etc/ssh/ssh_host_rsa_key.pub
+The key fingerprint is:
+SHA256:jTTChzOPB9zf4A8QkflOA/xkTEfRWyUt+8sP91pdkec root@rainlink-disposable-qa
+The key's randomart image is:
++---[RSA 3072]----+
+|       .o*..+o..o|
+|     o o=.+.  o.+|
+|      O **.    B.|
+|       X B=o  o.o|
+|      . So=..  .E|
+|       .  .o    +|
+|            . o =|
+|               *.|
+|              ..+|
++----[SHA256]-----+
+Generating public/private ecdsa key pair.
+Your identification has been saved in /etc/ssh/ssh_host_ecdsa_key
+Your public key has been saved in /etc/ssh/ssh_host_ecdsa_key.pub
+The key fingerprint is:
+SHA256:la6I3y74jliCfpZ5b0HjSoSlbJbZKERZY8t4fN5AVZU root@rainlink-disposable-qa
+The key's randomart image is:
++---[ECDSA 256]---+
+|..o+ ........    |
+| o= +.     E     |
+|...=Oo    o      |
+| ..Xoooo o       |
+|  + ..o.S .      |
+| .   o + .       |
+|. . *.o o        |
+|.  O.=.o         |
+| .+ oo*+o        |
++----[SHA256]-----+
+Generating public/private ed25519 key pair.
+Your identification has been saved in /etc/ssh/ssh_host_ed25519_key
+Your public key has been saved in /etc/ssh/ssh_host_ed25519_key.pub
+The key fingerprint is:
+SHA256:iK2jnaS6SjKLC43A17jTeAlSX2tt86i9Z7FGYaP9xhI root@rainlink-disposable-qa
+The key's randomart image is:
++--[ED25519 256]--+
+|                 |
+|                 |
+|   .   .         |
+|. . +o..o  +     |
+|.o +.oooS++ o    |
+|.oo =.o ..+E     |
+|=..+++   ...*    |
+|=o =oo  o  * +   |
+|O+o o  . o= o    |
++----[SHA256]-----+
+Cloud-init v. 25.1.4 running 'init-local' at Sat, 17 Oct 2026 13:43:23 +0000. Up 34.52 seconds.
+Cloud-init v. 25.1.4 running 'init' at Sat, 17 Oct 2026 13:43:28 +0000. Up 39.54 seconds.
+ci-info: ++++++++++++++++++++++++++++++++++++++Net device info++++++++++++++++++++++++++++++++++++++
+ci-info: +--------+------+----------------------------+---------------+--------+-------------------+
+ci-info: | Device |  Up  |          Address           |      Mask     | Scope  |     Hw-Address    |
+ci-info: +--------+------+----------------------------+---------------+--------+-------------------+
+ci-info: |  ens2  | True |         10.0.2.15          | 255.255.255.0 | global | 52:54:00:12:34:56 |
+ci-info: |  ens2  | True | fe80::5054:ff:fe12:3456/64 |       .       |  link  | 52:54:00:12:34:56 |
+ci-info: |   lo   | True |         127.0.0.1          |   255.0.0.0   |  host  |         .         |
+ci-info: |   lo   | True |          ::1/128           |       .       |  host  |         .         |
+ci-info: +--------+------+----------------------------+---------------+--------+-------------------+
+ci-info: ++++++++++++++++++++++++++++Route IPv4 info+++++++++++++++++++++++++++++
+ci-info: +-------+-------------+----------+-----------------+-----------+-------+
+ci-info: | Route | Destination | Gateway  |     Genmask     | Interface | Flags |
+ci-info: +-------+-------------+----------+-----------------+-----------+-------+
+ci-info: |   0   |   0.0.0.0   | 10.0.2.2 |     0.0.0.0     |    ens2   |   UG  |
+ci-info: |   1   |   10.0.2.0  | 0.0.0.0  |  255.255.255.0  |    ens2   |   U   |
+ci-info: |   2   |   10.0.2.2  | 0.0.0.0  | 255.255.255.255 |    ens2   |   UH  |
+ci-info: |   3   |   10.0.2.3  | 0.0.0.0  | 255.255.255.255 |    ens2   |   UH  |
+ci-info: +-------+-------------+----------+-----------------+-----------+-------+
+ci-info: +++++++++++++++++++Route IPv6 info+++++++++++++++++++
+ci-info: +-------+-------------+---------+-----------+-------+
+ci-info: | Route | Destination | Gateway | Interface | Flags |
+ci-info: +-------+-------------+---------+-----------+-------+
+ci-info: |   0   |  fe80::/64  |    ::   |    ens2   |   U   |
+ci-info: |   2   |    local    |    ::   |    ens2   |   U   |
+ci-info: |   3   |  multicast  |    ::   |    ens2   |   U   |
+ci-info: +-------+-------------+---------+-----------+-------+
+Cloud-init v. 25.1.4 running 'modules:config' at Sat, 17 Oct 2026 13:43:32 +0000. Up 43.38 seconds.
+Cloud-init v. 25.1.4 running 'modules:final' at Sat, 17 Oct 2026 13:43:35 +0000. Up 46.71 seconds.
+Real permission log VM: Linux 6.12.113+deb13-cloud-amd64
+systemd 257 (257.13-1~deb13u1)
++PAM +AUDIT +SELINUX +APPARMOR +IMA +IPE +SMACK +SECCOMP +GCRYPT -GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN +IPTC +KMOD +LIBCRYPTSETUP +LIBCRYPTSETUP_PLUGINS +LIBFDISK +PCRE2 +PWQUALITY +P11KIT +QRENCODE +TPM2 +BZIP2 +LZ4 +XZ +ZLIB +ZSTD +BPF_FRAMEWORK +BTF -XKBCOMMON -UTMP +SYSVINIT +LIBARCHIVE
+2026-10-17 13:44:20,798 - cc_scripts_user.py[WARNING]: Failed to run module scripts-user (scripts in /var/lib/cloud/instance/scripts)
+2026-10-17 13:44:20,802 - log_util.py[WARNING]: Running module scripts-user (<module 'cloudinit.config.cc_scripts_user' from '/usr/lib/python3/dist-packages/cloudinit/config/cc_scripts_user.py'>) failed
+Cloud-init v. 25.1.4 finished at Sat, 17 Oct 2026 13:44:21 +0000. Datasource DataSourceNoCloud [seed=/dev/vdb1].  Up 92.34 seconds
+Generating public/private rsa key pair.
+Your identification has been saved in /etc/ssh/ssh_host_rsa_key
+Your public key has been saved in /etc/ssh/ssh_host_rsa_key.pub
+The key fingerprint is:
+SHA256:w/ooq3MGHjK/HgMnWkZgHiGjZisGJDhuDQ/efLH7ofk root@rainlink-disposable-qa
+The key's randomart image is:
++---[RSA 3072]----+
+|*=.              |
+|X=.  .           |
+|==O   o          |
+|+=.= o .         |
+|=o+ . . S        |
+|**o  . o .       |
+|.=oo  = .        |
+|  +o+o +         |
+| .+*.ooE.        |
++----[SHA256]-----+
+Generating public/private ecdsa key pair.
+Your identification has been saved in /etc/ssh/ssh_host_ecdsa_key
+Your public key has been saved in /etc/ssh/ssh_host_ecdsa_key.pub
+The key fingerprint is:
+SHA256:Kj/yD2zGUksQbtNZ13cRRXZWx6F2Zk5GzHXgdpLQAaw root@rainlink-disposable-qa
+The key's randomart image is:
++---[ECDSA 256]---+
+|    .   . .ooo=X^|
+|   . o o .  oo=**|
+|    = o    . +=B.|
+|   . o    E ..Bo |
+|      o S      . |
+|     = o         |
+|    o O          |
+|    .*..         |
+|     ooo.        |
++----[SHA256]-----+
+Generating public/private ed25519 key pair.
+Your identification has been saved in /etc/ssh/ssh_host_ed25519_key
+Your public key has been saved in /etc/ssh/ssh_host_ed25519_key.pub
+The key fingerprint is:
+SHA256:6Le0w+QW3wq93EtbTbo4EIQLvGIxwNi5lMCy8O1bTQI root@rainlink-disposable-qa
+The key's randomart image is:
++--[ED25519 256]--+
+|o=.+ .   .       |
+|+.* E o . .      |
+|o+ o + o o       |
+|. o + o.o .      |
+|   o ..+S  .    .|
+|    ... +..    + |
+|     o.++o.o. o .|
+|    .  o==.+o+ . |
+|       .o.+.=o.  |
++----[SHA256]-----+
+Cloud-init v. 25.1.4 running 'init-local' at Sat, 17 Oct 2026 13:48:09 +0000. Up 39.20 seconds.
+Cloud-init v. 25.1.4 running 'init' at Sat, 17 Oct 2026 13:48:14 +0000. Up 43.90 seconds.
+ci-info: ++++++++++++++++++++++++++++++++++++++Net device info++++++++++++++++++++++++++++++++++++++
+ci-info: +--------+------+----------------------------+---------------+--------+-------------------+
+ci-info: | Device |  Up  |          Address           |      Mask     | Scope  |     Hw-Address    |
+ci-info: +--------+------+----------------------------+---------------+--------+-------------------+
+ci-info: |  ens2  | True |         10.0.2.15          | 255.255.255.0 | global | 52:54:00:12:34:56 |
+ci-info: |  ens2  | True | fe80::5054:ff:fe12:3456/64 |       .       |  link  | 52:54:00:12:34:56 |
+ci-info: |   lo   | True |         127.0.0.1          |   255.0.0.0   |  host  |         .         |
+ci-info: |   lo   | True |          ::1/128           |       .       |  host  |         .         |
+ci-info: +--------+------+----------------------------+---------------+--------+-------------------+
+ci-info: ++++++++++++++++++++++++++++Route IPv4 info+++++++++++++++++++++++++++++
+ci-info: +-------+-------------+----------+-----------------+-----------+-------+
+ci-info: | Route | Destination | Gateway  |     Genmask     | Interface | Flags |
+ci-info: +-------+-------------+----------+-----------------+-----------+-------+
+ci-info: |   0   |   0.0.0.0   | 10.0.2.2 |     0.0.0.0     |    ens2   |   UG  |
+ci-info: |   1   |   10.0.2.0  | 0.0.0.0  |  255.255.255.0  |    ens2   |   U   |
+ci-info: |   2   |   10.0.2.2  | 0.0.0.0  | 255.255.255.255 |    ens2   |   UH  |
+ci-info: |   3   |   10.0.2.3  | 0.0.0.0  | 255.255.255.255 |    ens2   |   UH  |
+ci-info: +-------+-------------+----------+-----------------+-----------+-------+
+ci-info: +++++++++++++++++++Route IPv6 info+++++++++++++++++++
+ci-info: +-------+-------------+---------+-----------+-------+
+ci-info: | Route | Destination | Gateway | Interface | Flags |
+ci-info: +-------+-------------+---------+-----------+-------+
+ci-info: |   0   |  fe80::/64  |    ::   |    ens2   |   U   |
+ci-info: |   2   |    local    |    ::   |    ens2   |   U   |
+ci-info: |   3   |  multicast  |    ::   |    ens2   |   U   |
+ci-info: +-------+-------------+---------+-----------+-------+
+Cloud-init v. 25.1.4 running 'modules:config' at Sat, 17 Oct 2026 13:48:19 +0000. Up 49.01 seconds.
+Cloud-init v. 25.1.4 running 'modules:final' at Sat, 17 Oct 2026 13:48:23 +0000. Up 52.54 seconds.
+Real permission log VM: Linux 6.12.113+deb13-cloud-amd64
+systemd 257 (257.13-1~deb13u1)
++PAM +AUDIT +SELINUX +APPARMOR +IMA +IPE +SMACK +SECCOMP +GCRYPT -GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN +IPTC +KMOD +LIBCRYPTSETUP +LIBCRYPTSETUP_PLUGINS +LIBFDISK +PCRE2 +PWQUALITY +P11KIT +QRENCODE +TPM2 +BZIP2 +LZ4 +XZ +ZLIB +ZSTD +BPF_FRAMEWORK +BTF -XKBCOMMON -UTMP +SYSVINIT +LIBARCHIVE
+=== RUN   TestRealSystemdTUNPermissionLogs
+=== RUN   TestRealSystemdTUNPermissionLogs/allow
+    tun_systemd_logs_linux_test.go:120: actual systemd socket and polkit decision delivered private logs and confirmed idle
+=== RUN   TestRealSystemdTUNPermissionLogs/deny
+    tun_systemd_logs_linux_test.go:120: actual systemd socket and polkit decision delivered private logs and confirmed idle
+--- PASS: TestRealSystemdTUNPermissionLogs (46.66s)
+    --- PASS: TestRealSystemdTUNPermissionLogs/allow (5.75s)
+    --- PASS: TestRealSystemdTUNPermissionLogs/deny (1.73s)
+PASS

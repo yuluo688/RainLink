@@ -1,0 +1,174 @@
+{
+  "source": {
+    "readDate": "2026-10-15",
+    "timezone": "Asia/Shanghai",
+    "fileName": "RainLink",
+    "bridgeFileKey": "unsaved-mv9fbgep-e9d7ijqk",
+    "cloudRevision": "not_verified",
+    "platformPriority": [
+      "Windows",
+      "macOS",
+      "Linux",
+      "Android",
+      "iOS"
+    ],
+    "scope": "desktop_first_five_platforms",
+    "pages": [
+      "01 · 桌面端",
+      "02 · 移动端",
+      "03 · 设计系统、组件与流程"
+    ],
+    "notes": [
+      "Screenshot bounds and live nodes take precedence over older text styles.",
+      "Prototype state variables are excluded from runtime design tokens."
+    ]
+  },
+  "colors": {
+    "dark": {
+      "background": "#0F1011",
+      "surface": "#151617",
+      "surfaceRaised": "#1B1C1E",
+      "hover": "#242528",
+      "border": "#2B2D31",
+      "textPrimary": "#F4F4F6",
+      "textSecondary": "#C0C2C8",
+      "textMuted": "#969AA3",
+      "primary": "#8ADCBF",
+      "primarySurface": "#1B2B25",
+      "onPrimary": "#10241C",
+      "success": "#8ADCBF",
+      "warning": "#E8BC78",
+      "warningSurface": "#30281D",
+      "error": "#F28B96",
+      "errorSurface": "#302125",
+      "info": "#A5BDF7",
+      "infoSurface": "#202737",
+      "chartSecondary": "#9DAAF1",
+      "transparent": "#00000000"
+    },
+    "light": {
+      "background": "#FAFAFA",
+      "surface": "#FFFFFF",
+      "surfaceRaised": "#F4F4F5",
+      "hover": "#ECECEE",
+      "border": "#E4E4E7",
+      "textPrimary": "#18191B",
+      "textSecondary": "#55585F",
+      "textMuted": "#696D75",
+      "primary": "#08795C",
+      "primarySurface": "#E7F5EE",
+      "onPrimary": "#FFFFFF",
+      "success": "#08795C",
+      "warning": "#955F0D",
+      "warningSurface": "#FFF3DE",
+      "error": "#BD354A",
+      "errorSurface": "#FFEAEF",
+      "info": "#316BC1",
+      "infoSurface": "#EBF1FD",
+      "chartSecondary": "#6876C8",
+      "transparent": "#00000000"
+    }
+  },
+  "spacing": {
+    "4": 4,
+    "8": 8,
+    "12": 12,
+    "16": 16,
+    "20": 20,
+    "24": 24,
+    "32": 32,
+    "40": 40,
+    "48": 48,
+    "64": 64
+  },
+  "radii": {
+    "8": 8,
+    "10": 10,
+    "12": 12,
+    "16": 16,
+    "24": 24
+  },
+  "typography": {
+    "pageTitle": {
+      "size": 26,
+      "lineHeight": 36,
+      "fontFamily": "Noto Sans SC"
+    },
+    "sectionTitle": {
+      "size": 20,
+      "lineHeight": 29,
+      "fontFamily": "Noto Sans SC"
+    },
+    "cardTitle": {
+      "size": 16,
+      "lineHeight": 23,
+      "fontFamily": "Noto Sans SC"
+    },
+    "body": {
+      "size": 14,
+      "lineHeight": 20,
+      "fontFamily": "Noto Sans SC"
+    },
+    "label": {
+      "size": 13,
+      "lineHeight": 19,
+      "fontFamily": "Noto Sans SC"
+    },
+    "caption": {
+      "size": 12,
+      "lineHeight": 17,
+      "fontFamily": "Noto Sans SC"
+    },
+    "latinFontFamily": "Inter",
+    "monoFontFamily": "Roboto Mono"
+  },
+  "layout": {
+    "desktop": {
+      "referenceWidth": 1440,
+      "referenceHeight": 900,
+      "sidebarWide": 248,
+      "sidebarCompact": 216,
+      "compactBelowWidth": 1440,
+      "iconRailBelowWidth": 1100,
+      "contentPadding": 36,
+      "statusBarHeight": 56,
+      "nodeRowHeight": 56,
+      "groupRowHeight": 72
+    },
+    "mobile": {
+      "referenceWidth": 393,
+      "referenceHeight": 852,
+      "contentPadding": 20,
+      "smallContentPadding": 16,
+      "minHitSize": 44,
+      "nodeRowMinHeight": 72,
+      "subscriptionRowMinHeight": 108,
+      "ungroupedRowMinHeight": 66
+    }
+  },
+  "motion": {
+    "pageMs": 180,
+    "reorderMs": 220,
+    "sheetMs": 240,
+    "reducedMs": 100
+  },
+  "normalization": [
+    {
+      "item": "pageTitle",
+      "live": 26,
+      "legacyTextStyle": 28,
+      "decision": "Use 26/36 from product frame and DESIGN.md."
+    },
+    {
+      "item": "sidebar",
+      "liveWide": 248,
+      "liveNarrow": 216,
+      "decision": "248 at 1440+, 216 at 1100-1439, icon rail below 1100."
+    },
+    {
+      "item": "透明",
+      "liveAlpha": 1,
+      "decision": "Captured legacy token is opaque; use explicit zero-alpha semantic token for no fill."
+    }
+  ]
+}

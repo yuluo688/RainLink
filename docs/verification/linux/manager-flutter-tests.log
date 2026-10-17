@@ -1,0 +1,442 @@
+00:00 +0: loading C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/advanced_config_controller_test.dart
+00:00 +0: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/advanced_config_controller_test.dart: offline apply saves without connecting and can restore the previous version
+00:00 +1: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/advanced_config_controller_test.dart: rejected validation preserves the active session and stored history
+00:00 +2: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/advanced_config_controller_test.dart: reconnect failure restores actual target, capture and previous runtime
+00:00 +3: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/advanced_config_controller_test.dart: failed disk transaction also restores the previously applied session
+00:00 +4: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/advanced_config_controller_test.dart: a stale runtime or connection confirmation cannot apply a patch
+00:00 +5: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/advanced_config_controller_test.dart: ordinary forms cannot overwrite an advanced patch from a stale snapshot
+00:00 +6: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/advanced_config_controller_test.dart: disconnect during apply cannot revive a late connection
+00:00 +7: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/advanced_config_controller_test.dart: failed write after user disconnect does not reconnect for rollback
+00:00 +8: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/advanced_config_controller_test.dart: patch and history are atomic and survive database reopen
+00:00 +9: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/advanced_config_controller_test.dart: patch and history are atomic and survive database reopen
+00:00 +10: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/advanced_config_controller_test.dart: patch and history are atomic and survive database reopen
+00:00 +11: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/advanced_config_controller_test.dart: patch and history are atomic and survive database reopen
+00:00 +12: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/android_core_gateway_test.dart: Android requires the tunnel and forwards encrypted Hysteria2 settings
+00:00 +13: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/android_core_gateway_test.dart: a mismatched capture receipt is stopped before reporting connected
+00:00 +14: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/android_core_gateway_test.dart: cancel rejects a late successful connect
+00:00 +15: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/android_core_gateway_test.dart: activity disposal leaves the native foreground session running
+00:00 +16: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/android_core_gateway_test.dart: recovery keeps encrypted target, rule and runtime snapshots
+00:00 +17: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/android_core_gateway_test.dart: connect accepts equivalent empty advanced configuration: null
+00:00 +18: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/android_core_gateway_test.dart: recovery accepts equivalent empty advanced configuration: null
+00:00 +19: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/android_core_gateway_test.dart: connect accepts equivalent empty advanced configuration: 
+00:00 +20: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/android_core_gateway_test.dart: recovery accepts equivalent empty advanced configuration: 
+00:00 +21: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/android_core_gateway_test.dart: connect accepts equivalent empty advanced configuration:  {} 
+00:00 +22: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/android_core_gateway_test.dart: recovery accepts equivalent empty advanced configuration:  {} 
+00:00 +23: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/android_core_gateway_test.dart: recovery stops an actual proxyPort mismatch
+00:00 +24: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/android_core_gateway_test.dart: recovery stops an actual dnsMode mismatch
+00:00 +25: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/android_core_gateway_test.dart: recovery stops an actual resolver mismatch
+00:00 +26: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/android_core_gateway_test.dart: recovery stops an actual bootstrapDns mismatch
+00:00 +27: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/android_core_gateway_test.dart: recovery stops an actual ipv6 mismatch
+00:00 +28: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/android_core_gateway_test.dart: recovery stops an actual logLevel mismatch
+00:00 +29: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/android_core_gateway_test.dart: recovery stops an actual advanced mismatch
+00:00 +30: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/android_core_gateway_test.dart: invalid native runtime settings are rejected and disconnected
+00:00 +31: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/android_core_gateway_test.dart: recovery preserves chain hops and independent rule targets
+00:00 +32: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/android_core_gateway_test.dart: invalid recovery is disconnected and plaintext is never adopted
+00:00 +33: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/android_core_gateway_test.dart: close still disconnects if test cancellation fails
+00:00 +34: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/android_core_gateway_test.dart: DNS replies require actual IPs and cancellation invalidates late results
+00:00 +35: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/android_document_export_test.dart: system export receives an exact UTF-8 file and returns its content URI
+00:00 +36: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/android_document_export_test.dart: picker cancellation returns null and removes temporary content
+00:00 +37: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/android_document_export_test.dart: malformed saved URI is not reported as success: file:///private/secret
+00:00 +38: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/android_document_export_test.dart: malformed saved URI is not reported as success: 
+00:00 +39: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/android_document_export_test.dart: malformed saved URI is not reported as success: content:/missing-authority
+00:00 +40: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/android_document_export_test.dart: native busy errors keep failure visible and release temporary files
+00:01 +41: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/android_document_export_test.dart: native write_failed errors keep failure visible and release temporary files
+00:01 +42: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/android_document_export_test.dart: native unavailable errors keep failure visible and release temporary files
+00:01 +43: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/android_document_export_test.dart: timeout cancels only its request and ignores late provider completion
+00:01 +44: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/android_document_export_test.dart: invalid names and oversized content never cross the platform boundary
+00:01 +45: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/android_telemetry_test.dart: Android joins stable connection pages without inventing processes
+00:01 +46: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/android_telemetry_test.dart: Android rejects moving page field sessionId
+00:01 +47: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/android_telemetry_test.dart: Android rejects moving page field snapshotId
+00:01 +48: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/android_telemetry_test.dart: Android rejects moving page field sampledAt
+00:01 +49: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/android_telemetry_test.dart: Android rejects moving page field total
+00:01 +50: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/android_telemetry_test.dart: Android rejects moving page field uploadTotal
+00:01 +51: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/android_telemetry_test.dart: Android rejects moving page field downloadTotal
+00:01 +52: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/android_telemetry_test.dart: Android rejects moving page field next
+00:01 +53: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/android_telemetry_test.dart: Android rejects moving page field entries
+00:01 +54: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/android_telemetry_test.dart: Android rejects stale first page and bounds snapshot size
+00:01 +55: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/android_telemetry_test.dart: Android rejects repeated IDs across connection pages
+00:01 +56: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/android_telemetry_test.dart: Android scopes close commands and propagates unconfirmed failure
+00:01 +57: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/android_telemetry_test.dart: Android logs and clearing work without a connected UI session
+00:01 +58: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/android_telemetry_test.dart: Android rejects malformed log checkpoints
+00:01 +59: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/android_telemetry_test.dart: disposing the UI stops telemetry requests without stopping the service
+00:01 +60: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/app_test.dart: theme write exceptions show failure and allow retry (variant: TargetPlatform.macOS)
+00:01 +61: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/app_test.dart: theme write exceptions show failure and allow retry (variant: TargetPlatform.macOS)
+00:01 +62: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/app_test.dart: theme write exceptions show failure and allow retry (variant: TargetPlatform.macOS)
+00:01 +63: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/app_test.dart: theme write exceptions show failure and allow retry (variant: TargetPlatform.macOS)
+00:01 +64: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/app_test.dart: theme write exceptions show failure and allow retry (variant: TargetPlatform.macOS)
+00:01 +65: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/app_test.dart: theme write exceptions show failure and allow retry (variant: TargetPlatform.macOS)
+00:01 +66: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/app_test.dart: theme write exceptions show failure and allow retry (variant: TargetPlatform.macOS)
+00:01 +67: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/app_test.dart: theme write exceptions show failure and allow retry (variant: TargetPlatform.macOS)
+00:01 +68: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/app_test.dart: theme write exceptions show failure and allow retry (variant: TargetPlatform.macOS)
+00:01 +69: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/app_test.dart: theme write exceptions show failure and allow retry (variant: TargetPlatform.macOS)
+00:01 +70: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/app_test.dart: theme write exceptions show failure and allow retry (variant: TargetPlatform.macOS)
+00:01 +71: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/app_test.dart: theme write exceptions show failure and allow retry (variant: TargetPlatform.macOS)
+00:01 +72: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/app_test.dart: theme write exceptions show failure and allow retry (variant: TargetPlatform.macOS)
+00:02 +73: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/app_test.dart: theme write exceptions show failure and allow retry (variant: TargetPlatform.macOS)
+00:02 +74: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/app_test.dart: theme write exceptions show failure and allow retry (variant: TargetPlatform.macOS)
+00:02 +75: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/app_test.dart: theme write exceptions show failure and allow retry (variant: TargetPlatform.macOS)
+00:02 +76: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/app_test.dart: theme write exceptions show failure and allow retry (variant: TargetPlatform.macOS)
+00:02 +77: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/app_test.dart: theme write exceptions show failure and allow retry (variant: TargetPlatform.macOS)
+00:02 +78: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/app_test.dart: theme write exceptions show failure and allow retry (variant: TargetPlatform.macOS)
+00:02 +79: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/app_test.dart: theme write exceptions show failure and allow retry (variant: TargetPlatform.macOS)
+00:02 +80: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/app_test.dart: theme write exceptions show failure and allow retry (variant: TargetPlatform.macOS)
+00:02 +81: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/app_test.dart: theme write exceptions show failure and allow retry (variant: TargetPlatform.macOS)
+00:02 +82: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/app_test.dart: theme write exceptions show failure and allow retry (variant: TargetPlatform.macOS)
+00:02 +83: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/app_test.dart: theme write exceptions show failure and allow retry (variant: TargetPlatform.macOS)
+00:02 +84: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/app_test.dart: theme write exceptions show failure and allow retry (variant: TargetPlatform.macOS)
+00:02 +85: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/app_test.dart: theme write exceptions show failure and allow retry (variant: TargetPlatform.macOS)
+00:02 +86: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/app_test.dart: theme write exceptions show failure and allow retry (variant: TargetPlatform.macOS)
+00:02 +87: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/app_test.dart: theme write exceptions show failure and allow retry (variant: TargetPlatform.macOS)
+00:02 +88: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/app_test.dart: theme write exceptions show failure and allow retry (variant: TargetPlatform.macOS)
+00:03 +89: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/app_test.dart: theme write exceptions show failure and allow retry (variant: TargetPlatform.macOS)
+00:03 +90: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/app_test.dart: theme write exceptions show failure and allow retry (variant: TargetPlatform.macOS)
+00:03 +91: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/app_test.dart: theme write exceptions show failure and allow retry (variant: TargetPlatform.macOS)
+00:03 +92: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/app_test.dart: theme write exceptions show failure and allow retry (variant: TargetPlatform.macOS)
+00:03 +93: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/app_test.dart: theme write exceptions show failure and allow retry (variant: TargetPlatform.macOS)
+00:03 +94: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/app_test.dart: theme write exceptions show failure and allow retry (variant: TargetPlatform.macOS)
+00:03 +95: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/app_test.dart: theme write exceptions show failure and allow retry (variant: TargetPlatform.macOS)
+00:03 +96: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/app_test.dart: theme write exceptions show failure and allow retry (variant: TargetPlatform.macOS)
+00:03 +97: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/app_test.dart: theme write exceptions show failure and allow retry (variant: TargetPlatform.macOS)
+00:03 +98: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/app_test.dart: theme write exceptions show failure and allow retry (variant: TargetPlatform.macOS)
+00:03 +99: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/app_update_ui_test.dart: empty release, error retry and cancelled late response stay distinct
+00:03 +100: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/app_update_ui_test.dart: empty release, error retry and cancelled late response stay distinct
+00:03 +101: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/app_update_ui_test.dart: empty release, error retry and cancelled late response stay distinct
+00:03 +102: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/app_update_ui_test.dart: empty release, error retry and cancelled late response stay distinct
+00:03 +103: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/app_update_ui_test.dart: empty release, error retry and cancelled late response stay distinct
+00:03 +104: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/app_update_ui_test.dart: empty release, error retry and cancelled late response stay distinct
+00:03 +105: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/app_update_ui_test.dart: empty release, error retry and cancelled late response stay distinct
+00:03 +106: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/app_update_ui_test.dart: empty release, error retry and cancelled late response stay distinct
+00:03 +107: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/app_update_ui_test.dart: empty release, error retry and cancelled late response stay distinct
+00:04 +108: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/chain_ui_test.dart: node search, duplicate prevention, order and save persist the visible chain (variant: TargetPlatform.windows)
+00:04 +109: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/chain_ui_test.dart: node search, duplicate prevention, order and save persist the visible chain (variant: TargetPlatform.windows)
+00:04 +110: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/chain_ui_test.dart: node search, duplicate prevention, order and save persist the visible chain (variant: TargetPlatform.windows)
+00:04 +111: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/chain_ui_test.dart: node search, duplicate prevention, order and save persist the visible chain (variant: TargetPlatform.windows)
+00:04 +112: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/chain_ui_test.dart: node search, duplicate prevention, order and save persist the visible chain (variant: TargetPlatform.windows)
+00:04 +113: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/chain_ui_test.dart: node search, duplicate prevention, order and save persist the visible chain (variant: TargetPlatform.windows)
+00:04 +114: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/chain_ui_test.dart: node search, duplicate prevention, order and save persist the visible chain (variant: TargetPlatform.windows)
+00:05 +115: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/chain_ui_test.dart: node search, duplicate prevention, order and save persist the visible chain (variant: TargetPlatform.windows)
+00:05 +116: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/chain_ui_test.dart: node search, duplicate prevention, order and save persist the visible chain (variant: TargetPlatform.windows)
+00:05 +117: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/chain_ui_test.dart: node search, duplicate prevention, order and save persist the visible chain (variant: TargetPlatform.windows)
+00:05 +118: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/chain_ui_test.dart: node search, duplicate prevention, order and save persist the visible chain (variant: TargetPlatform.windows)
+00:05 +119: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/chain_ui_test.dart: node search, duplicate prevention, order and save persist the visible chain (variant: TargetPlatform.windows)
+00:05 +120: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/chain_ui_test.dart: node search, duplicate prevention, order and save persist the visible chain (variant: TargetPlatform.windows)
+00:05 +121: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/chain_ui_test.dart: node search, duplicate prevention, order and save persist the visible chain (variant: TargetPlatform.windows)
+00:06 +122: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/chain_ui_test.dart: node search, duplicate prevention, order and save persist the visible chain (variant: TargetPlatform.windows)
+00:06 +123: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/chain_ui_test.dart: node search, duplicate prevention, order and save persist the visible chain (variant: TargetPlatform.windows)
+00:06 +124: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/chain_ui_test.dart: node search, duplicate prevention, order and save persist the visible chain (variant: TargetPlatform.windows)
+00:06 +125: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/chain_ui_test.dart: node search, duplicate prevention, order and save persist the visible chain (variant: TargetPlatform.windows)
+00:06 +126: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/chain_ui_test.dart: node search, duplicate prevention, order and save persist the visible chain (variant: TargetPlatform.windows)
+00:06 +127: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/chain_ui_test.dart: node search, duplicate prevention, order and save persist the visible chain (variant: TargetPlatform.windows)
+00:06 +128: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/chain_ui_test.dart: node search, duplicate prevention, order and save persist the visible chain (variant: TargetPlatform.windows)
+00:06 +129: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/chain_ui_test.dart: node search, duplicate prevention, order and save persist the visible chain (variant: TargetPlatform.windows)
+00:06 +130: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/chain_ui_test.dart: node search, duplicate prevention, order and save persist the visible chain (variant: TargetPlatform.windows)
+00:06 +131: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/chain_ui_test.dart: node search, duplicate prevention, order and save persist the visible chain (variant: TargetPlatform.windows)
+00:06 +132: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/chain_ui_test.dart: node search, duplicate prevention, order and save persist the visible chain (variant: TargetPlatform.windows)
+00:06 +133: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/chain_ui_test.dart: node search, duplicate prevention, order and save persist the visible chain (variant: TargetPlatform.windows)
+00:06 +134: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/chain_ui_test.dart: node search, duplicate prevention, order and save persist the visible chain (variant: TargetPlatform.windows)
+00:06 +135: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/chain_ui_test.dart: node search, duplicate prevention, order and save persist the visible chain (variant: TargetPlatform.windows)
+00:07 +136: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/chain_ui_test.dart: node search, duplicate prevention, order and save persist the visible chain (variant: TargetPlatform.windows)
+00:07 +137: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.compact AppTheme.dark at Size(1440.0, 900.0) fits pages and dialogs (variant: TargetPlatform.windows)
+00:07 +138: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.compact AppTheme.dark at Size(1440.0, 900.0) fits pages and dialogs (variant: TargetPlatform.windows)
+00:07 +139: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.compact AppTheme.dark at Size(1440.0, 900.0) fits pages and dialogs (variant: TargetPlatform.windows)
+00:07 +140: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.compact AppTheme.dark at Size(1440.0, 900.0) fits pages and dialogs (variant: TargetPlatform.windows)
+00:07 +141: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.compact AppTheme.dark at Size(1440.0, 900.0) fits pages and dialogs (variant: TargetPlatform.windows)
+00:07 +142: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.compact AppTheme.dark at Size(1440.0, 900.0) fits pages and dialogs (variant: TargetPlatform.windows)
+00:07 +143: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.compact AppTheme.dark at Size(1440.0, 900.0) fits pages and dialogs (variant: TargetPlatform.windows)
+00:07 +144: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.compact AppTheme.dark at Size(1440.0, 900.0) fits pages and dialogs (variant: TargetPlatform.windows)
+00:07 +145: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.compact AppTheme.dark at Size(1440.0, 900.0) fits pages and dialogs (variant: TargetPlatform.windows)
+00:07 +146: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.compact AppTheme.dark at Size(1440.0, 900.0) fits pages and dialogs (variant: TargetPlatform.windows)
+00:07 +147: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.compact AppTheme.dark at Size(1440.0, 900.0) fits pages and dialogs (variant: TargetPlatform.windows)
+00:07 +148: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.compact AppTheme.dark at Size(1440.0, 900.0) fits pages and dialogs (variant: TargetPlatform.windows)
+00:07 +149: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.compact AppTheme.dark at Size(1440.0, 900.0) fits pages and dialogs (variant: TargetPlatform.windows)
+00:08 +150: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.compact AppTheme.dark at Size(1440.0, 900.0) fits pages and dialogs (variant: TargetPlatform.windows)
+00:08 +151: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.compact AppTheme.dark at Size(1440.0, 900.0) fits pages and dialogs (variant: TargetPlatform.windows)
+00:08 +152: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.compact AppTheme.dark at Size(1440.0, 900.0) fits pages and dialogs (variant: TargetPlatform.windows)
+00:08 +153: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.compact AppTheme.dark at Size(1440.0, 900.0) fits pages and dialogs (variant: TargetPlatform.windows)
+00:08 +154: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.compact AppTheme.dark at Size(1440.0, 900.0) fits pages and dialogs (variant: TargetPlatform.windows)
+00:09 +155: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.compact AppTheme.dark at Size(1440.0, 900.0) fits pages and dialogs (variant: TargetPlatform.windows)
+00:09 +156: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.compact AppTheme.dark at Size(1440.0, 900.0) fits pages and dialogs (variant: TargetPlatform.windows)
+00:09 +157: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.compact AppTheme.dark at Size(1440.0, 900.0) fits pages and dialogs (variant: TargetPlatform.windows)
+00:09 +158: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.compact AppTheme.dark at Size(1440.0, 900.0) fits pages and dialogs (variant: TargetPlatform.windows)
+00:09 +159: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.compact AppTheme.dark at Size(1440.0, 900.0) fits pages and dialogs (variant: TargetPlatform.windows)
+00:09 +160: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.compact AppTheme.dark at Size(1440.0, 900.0) fits pages and dialogs (variant: TargetPlatform.windows)
+00:09 +161: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.compact AppTheme.dark at Size(1440.0, 900.0) fits pages and dialogs (variant: TargetPlatform.windows)
+00:09 +162: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.compact AppTheme.dark at Size(1440.0, 900.0) fits pages and dialogs (variant: TargetPlatform.windows)
+00:09 +163: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.compact AppTheme.dark at Size(1440.0, 900.0) fits pages and dialogs (variant: TargetPlatform.windows)
+00:09 +164: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.compact AppTheme.dark at Size(1440.0, 900.0) fits pages and dialogs (variant: TargetPlatform.windows)
+00:09 +165: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.compact AppTheme.dark at Size(1440.0, 900.0) fits pages and dialogs (variant: TargetPlatform.windows)
+00:09 +166: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.compact AppTheme.dark at Size(1440.0, 900.0) fits pages and dialogs (variant: TargetPlatform.windows)
+00:09 +167: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.compact AppTheme.dark at Size(1440.0, 900.0) fits pages and dialogs (variant: TargetPlatform.windows)
+00:09 +168: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.compact AppTheme.dark at Size(1440.0, 900.0) fits pages and dialogs (variant: TargetPlatform.windows)
+00:09 +169: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.compact AppTheme.dark at Size(1440.0, 900.0) fits pages and dialogs (variant: TargetPlatform.windows)
+00:09 +170: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.compact AppTheme.dark at Size(1440.0, 900.0) fits pages and dialogs (variant: TargetPlatform.windows)
+00:09 +171: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.compact AppTheme.dark at Size(1440.0, 900.0) fits pages and dialogs (variant: TargetPlatform.windows)
+00:09 +172: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.compact AppTheme.dark at Size(1440.0, 900.0) fits pages and dialogs (variant: TargetPlatform.windows)
+00:09 +173: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.compact AppTheme.dark at Size(1440.0, 900.0) fits pages and dialogs (variant: TargetPlatform.windows)
+00:09 +174: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.compact AppTheme.dark at Size(1440.0, 900.0) fits pages and dialogs (variant: TargetPlatform.windows)
+00:09 +175: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.compact AppTheme.dark at Size(1440.0, 900.0) fits pages and dialogs (variant: TargetPlatform.windows)
+00:09 +176: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.compact AppTheme.dark at Size(1440.0, 900.0) fits pages and dialogs (variant: TargetPlatform.windows)
+00:09 +177: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.compact AppTheme.dark at Size(1440.0, 900.0) fits pages and dialogs (variant: TargetPlatform.windows)
+00:09 +178: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.compact AppTheme.dark at Size(1440.0, 900.0) fits pages and dialogs (variant: TargetPlatform.windows)
+00:09 +179: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.compact AppTheme.dark at Size(1440.0, 900.0) fits pages and dialogs (variant: TargetPlatform.windows)
+00:10 +180: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.compact AppTheme.dark at Size(1440.0, 900.0) fits pages and dialogs (variant: TargetPlatform.windows)
+00:10 +181: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.compact AppTheme.dark at Size(1440.0, 900.0) fits pages and dialogs (variant: TargetPlatform.windows)
+00:10 +182: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.compact AppTheme.dark at Size(1440.0, 900.0) fits pages and dialogs (variant: TargetPlatform.windows)
+00:10 +183: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.compact AppTheme.dark at Size(1440.0, 900.0) fits pages and dialogs (variant: TargetPlatform.windows)
+00:10 +184: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.compact AppTheme.dark at Size(1440.0, 900.0) fits pages and dialogs (variant: TargetPlatform.windows)
+00:10 +185: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/host_command_runner_test.dart: an unresponsive child reports failed shutdown
+00:10 +186: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/host_command_runner_test.dart: an unresponsive child reports failed shutdown
+00:10 +187: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/desktop_window_chrome_test.dart: native command failure is reported and visible (variant: TargetPlatform.windows)
+00:10 +188: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/hysteria2_test.dart: subscription refresh adds HY2 while preserving previous selection and encrypted secrets
+00:10 +189: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/hysteria2_test.dart: subscription refresh adds HY2 while preserving previous selection and encrypted secrets
+00:10 +190: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.compact AppTheme.light at Size(1440.0, 900.0) fits pages and dialogs (variant: TargetPlatform.windows)
+00:10 +191: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.compact AppTheme.light at Size(1440.0, 900.0) fits pages and dialogs (variant: TargetPlatform.windows)
+00:10 +192: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.compact AppTheme.light at Size(1440.0, 900.0) fits pages and dialogs (variant: TargetPlatform.windows)
+00:10 +193: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.compact AppTheme.light at Size(1440.0, 900.0) fits pages and dialogs (variant: TargetPlatform.windows)
+00:11 +194: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.compact AppTheme.light at Size(1440.0, 900.0) fits pages and dialogs (variant: TargetPlatform.windows)
+00:11 +195: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.compact AppTheme.light at Size(1440.0, 900.0) fits pages and dialogs (variant: TargetPlatform.windows)
+00:11 +196: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.compact AppTheme.light at Size(1440.0, 900.0) fits pages and dialogs (variant: TargetPlatform.windows)
+00:11 +197: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.compact AppTheme.light at Size(1440.0, 900.0) fits pages and dialogs (variant: TargetPlatform.windows)
+00:11 +198: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.compact AppTheme.light at Size(1440.0, 900.0) fits pages and dialogs (variant: TargetPlatform.windows)
+00:11 +199: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.compact AppTheme.light at Size(1440.0, 900.0) fits pages and dialogs (variant: TargetPlatform.windows)
+00:11 +200: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.compact AppTheme.light at Size(1440.0, 900.0) fits pages and dialogs (variant: TargetPlatform.windows)
+00:11 +201: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.compact AppTheme.light at Size(1440.0, 900.0) fits pages and dialogs (variant: TargetPlatform.windows)
+00:11 +202: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.compact AppTheme.light at Size(1440.0, 900.0) fits pages and dialogs (variant: TargetPlatform.windows)
+00:11 +203: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.compact AppTheme.light at Size(1440.0, 900.0) fits pages and dialogs (variant: TargetPlatform.windows)
+00:11 +204: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.compact AppTheme.light at Size(1440.0, 900.0) fits pages and dialogs (variant: TargetPlatform.windows)
+00:11 +205: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.compact AppTheme.light at Size(1440.0, 900.0) fits pages and dialogs (variant: TargetPlatform.windows)
+00:11 +206: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.compact AppTheme.light at Size(1440.0, 900.0) fits pages and dialogs (variant: TargetPlatform.windows)
+00:11 +207: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.compact AppTheme.light at Size(1440.0, 900.0) fits pages and dialogs (variant: TargetPlatform.windows)
+00:11 +208: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.compact AppTheme.light at Size(1440.0, 900.0) fits pages and dialogs (variant: TargetPlatform.windows)
+00:11 +209: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.compact AppTheme.light at Size(1440.0, 900.0) fits pages and dialogs (variant: TargetPlatform.windows)
+00:11 +210: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.compact AppTheme.light at Size(1440.0, 900.0) fits pages and dialogs (variant: TargetPlatform.windows)
+00:11 +211: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.compact AppTheme.light at Size(1440.0, 900.0) fits pages and dialogs (variant: TargetPlatform.windows)
+00:12 +212: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.compact AppTheme.light at Size(1440.0, 900.0) fits pages and dialogs (variant: TargetPlatform.windows)
+00:12 +213: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.compact AppTheme.light at Size(1440.0, 900.0) fits pages and dialogs (variant: TargetPlatform.windows)
+00:12 +214: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.compact AppTheme.light at Size(1440.0, 900.0) fits pages and dialogs (variant: TargetPlatform.windows)
+00:12 +215: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.compact AppTheme.light at Size(1440.0, 900.0) fits pages and dialogs (variant: TargetPlatform.windows)
+00:12 +216: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.compact AppTheme.light at Size(1440.0, 900.0) fits pages and dialogs (variant: TargetPlatform.windows)
+00:12 +217: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.compact AppTheme.light at Size(1440.0, 900.0) fits pages and dialogs (variant: TargetPlatform.windows)
+00:12 +218: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/mobile_settings_ui_test.dart: denied notification authorization leaves the preference off and explains how to retry
+00:12 +219: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/mobile_settings_ui_test.dart: denied notification authorization leaves the preference off and explains how to retry
+00:12 +220: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/mobile_settings_ui_test.dart: denied notification authorization leaves the preference off and explains how to retry
+00:12 +221: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/mobile_settings_ui_test.dart: denied notification authorization leaves the preference off and explains how to retry
+00:13 +222: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.standard AppTheme.dark at Size(1440.0, 900.0) fits pages and dialogs (variant: TargetPlatform.windows)
+00:13 +223: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.standard AppTheme.dark at Size(1440.0, 900.0) fits pages and dialogs (variant: TargetPlatform.windows)
+00:13 +224: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.standard AppTheme.dark at Size(1440.0, 900.0) fits pages and dialogs (variant: TargetPlatform.windows)
+00:13 +225: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.standard AppTheme.dark at Size(1440.0, 900.0) fits pages and dialogs (variant: TargetPlatform.windows)
+00:13 +226: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/node_identity_ui_test.dart: TargetPlatform.windows separates regions and preserves searchable names (variant: TargetPlatform.windows)
+00:13 +227: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/node_identity_ui_test.dart: TargetPlatform.windows separates regions and preserves searchable names (variant: TargetPlatform.windows)
+00:14 +228: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/node_identity_ui_test.dart: TargetPlatform.windows separates regions and preserves searchable names (variant: TargetPlatform.windows)
+00:14 +229: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/node_identity_ui_test.dart: TargetPlatform.windows separates regions and preserves searchable names (variant: TargetPlatform.windows)
+00:14 +230: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/node_identity_ui_test.dart: TargetPlatform.windows separates regions and preserves searchable names (variant: TargetPlatform.windows)
+00:14 +231: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/node_identity_ui_test.dart: TargetPlatform.windows separates regions and preserves searchable names (variant: TargetPlatform.windows)
+00:14 +232: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/node_identity_ui_test.dart: TargetPlatform.windows separates regions and preserves searchable names (variant: TargetPlatform.windows)
+00:14 +233: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/node_identity_ui_test.dart: TargetPlatform.windows separates regions and preserves searchable names (variant: TargetPlatform.windows)
+00:14 +234: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/node_identity_ui_test.dart: TargetPlatform.windows separates regions and preserves searchable names (variant: TargetPlatform.windows)
+00:14 +235: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/node_identity_ui_test.dart: TargetPlatform.windows separates regions and preserves searchable names (variant: TargetPlatform.windows)
+00:14 +236: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/node_identity_ui_test.dart: TargetPlatform.windows separates regions and preserves searchable names (variant: TargetPlatform.windows)
+00:14 +237: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/node_identity_ui_test.dart: TargetPlatform.windows separates regions and preserves searchable names (variant: TargetPlatform.windows)
+00:14 +238: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/node_identity_ui_test.dart: TargetPlatform.windows separates regions and preserves searchable names (variant: TargetPlatform.windows)
+00:14 +239: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/node_identity_ui_test.dart: TargetPlatform.windows separates regions and preserves searchable names (variant: TargetPlatform.windows)
+00:15 +240: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/node_identity_ui_test.dart: TargetPlatform.windows separates regions and preserves searchable names (variant: TargetPlatform.windows)
+00:15 +241: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/node_management_ui_test.dart: TargetPlatform.windows Size(960.0, 640.0) favorites/alias/hide/restore and batch probe never connect (variant: TargetPlatform.windows)
+00:15 +242: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/node_management_ui_test.dart: TargetPlatform.windows Size(960.0, 640.0) favorites/alias/hide/restore and batch probe never connect (variant: TargetPlatform.windows)
+00:15 +243: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/node_management_ui_test.dart: TargetPlatform.windows Size(960.0, 640.0) favorites/alias/hide/restore and batch probe never connect (variant: TargetPlatform.windows)
+00:15 +244: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/node_management_ui_test.dart: TargetPlatform.windows Size(960.0, 640.0) favorites/alias/hide/restore and batch probe never connect (variant: TargetPlatform.windows)
+00:15 +245: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/node_management_ui_test.dart: TargetPlatform.windows Size(960.0, 640.0) favorites/alias/hide/restore and batch probe never connect (variant: TargetPlatform.windows)
+00:15 +246: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/node_management_ui_test.dart: TargetPlatform.windows Size(960.0, 640.0) favorites/alias/hide/restore and batch probe never connect (variant: TargetPlatform.windows)
+00:16 +247: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/node_management_ui_test.dart: TargetPlatform.windows Size(960.0, 640.0) favorites/alias/hide/restore and batch probe never connect (variant: TargetPlatform.windows)
+00:16 +248: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/node_management_ui_test.dart: TargetPlatform.windows Size(960.0, 640.0) favorites/alias/hide/restore and batch probe never connect (variant: TargetPlatform.windows)
+00:16 +249: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/node_management_ui_test.dart: TargetPlatform.windows Size(960.0, 640.0) favorites/alias/hide/restore and batch probe never connect (variant: TargetPlatform.windows)
+00:16 +250: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/node_management_ui_test.dart: TargetPlatform.windows Size(960.0, 640.0) favorites/alias/hide/restore and batch probe never connect (variant: TargetPlatform.windows)
+00:17 +251: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/node_management_ui_test.dart: TargetPlatform.windows Size(960.0, 640.0) favorites/alias/hide/restore and batch probe never connect (variant: TargetPlatform.windows)
+00:17 +252: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/node_management_ui_test.dart: TargetPlatform.windows Size(960.0, 640.0) favorites/alias/hide/restore and batch probe never connect (variant: TargetPlatform.windows)
+00:17 +253: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/node_management_ui_test.dart: TargetPlatform.windows Size(960.0, 640.0) favorites/alias/hide/restore and batch probe never connect (variant: TargetPlatform.windows)
+00:17 +254: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/node_management_ui_test.dart: TargetPlatform.windows Size(960.0, 640.0) favorites/alias/hide/restore and batch probe never connect (variant: TargetPlatform.windows)
+00:17 +255: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/node_management_ui_test.dart: TargetPlatform.windows Size(960.0, 640.0) favorites/alias/hide/restore and batch probe never connect (variant: TargetPlatform.windows)
+00:17 +256: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/node_management_ui_test.dart: TargetPlatform.windows Size(960.0, 640.0) favorites/alias/hide/restore and batch probe never connect (variant: TargetPlatform.windows)
+00:17 +257: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/node_management_ui_test.dart: TargetPlatform.windows Size(960.0, 640.0) favorites/alias/hide/restore and batch probe never connect (variant: TargetPlatform.windows)
+00:17 +258: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/node_management_ui_test.dart: TargetPlatform.windows Size(960.0, 640.0) favorites/alias/hide/restore and batch probe never connect (variant: TargetPlatform.windows)
+00:17 +259: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/node_management_ui_test.dart: TargetPlatform.windows Size(960.0, 640.0) favorites/alias/hide/restore and batch probe never connect (variant: TargetPlatform.windows)
+00:17 +260: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/platform_layout_test.dart: TargetPlatform.windows retains its layout family regardless of width (variant: TargetPlatform.windows)
+00:18 +261: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/platform_layout_test.dart: TargetPlatform.windows retains its layout family regardless of width (variant: TargetPlatform.windows)
+00:18 +262: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/platform_layout_test.dart: TargetPlatform.windows retains its layout family regardless of width (variant: TargetPlatform.windows)
+00:18 +263: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/platform_layout_test.dart: TargetPlatform.windows retains its layout family regardless of width (variant: TargetPlatform.windows)
+00:18 +264: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/platform_layout_test.dart: TargetPlatform.windows retains its layout family regardless of width (variant: TargetPlatform.windows)
+00:18 +265: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/platform_layout_test.dart: TargetPlatform.windows retains its layout family regardless of width (variant: TargetPlatform.windows)
+00:18 +266: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/platform_layout_test.dart: TargetPlatform.windows retains its layout family regardless of width (variant: TargetPlatform.windows)
+00:18 +267: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/protocol_editor_test.dart: subscription paste only fills a draft, persists auto-update choice and ignores a late clipboard reply
+00:18 +268: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/protocol_editor_test.dart: subscription paste only fills a draft, persists auto-update choice and ignores a late clipboard reply
+00:18 +269: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/protocol_editor_test.dart: subscription paste only fills a draft, persists auto-update choice and ignores a late clipboard reply
+00:18 +270: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/protocol_editor_test.dart: subscription paste only fills a draft, persists auto-update choice and ignores a late clipboard reply
+00:18 +271: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/protocol_editor_test.dart: subscription paste only fills a draft, persists auto-update choice and ignores a late clipboard reply
+00:18 +272: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/protocol_editor_test.dart: subscription paste only fills a draft, persists auto-update choice and ignores a late clipboard reply
+00:18 +273: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/protocol_editor_test.dart: subscription paste only fills a draft, persists auto-update choice and ignores a late clipboard reply
+00:18 +274: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/protocol_editor_test.dart: subscription paste only fills a draft, persists auto-update choice and ignores a late clipboard reply
+00:18 +275: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/protocol_editor_test.dart: subscription paste only fills a draft, persists auto-update choice and ignores a late clipboard reply
+00:18 +276: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/protocol_editor_test.dart: subscription paste only fills a draft, persists auto-update choice and ignores a late clipboard reply
+00:18 +277: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/rules_ui_test.dart: filters and adding a normalized rule use real controller commands (variant: TargetPlatform.windows)
+00:18 +278: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/rules_ui_test.dart: filters and adding a normalized rule use real controller commands (variant: TargetPlatform.windows)
+00:18 +279: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/rules_ui_test.dart: filters and adding a normalized rule use real controller commands (variant: TargetPlatform.windows)
+00:18 +280: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/rules_ui_test.dart: filters and adding a normalized rule use real controller commands (variant: TargetPlatform.windows)
+00:19 +281: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/rules_ui_test.dart: filters and adding a normalized rule use real controller commands (variant: TargetPlatform.windows)
+00:19 +282: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/rules_ui_test.dart: filters and adding a normalized rule use real controller commands (variant: TargetPlatform.windows)
+00:19 +283: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/rules_ui_test.dart: filters and adding a normalized rule use real controller commands (variant: TargetPlatform.windows)
+00:19 +284: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/rules_ui_test.dart: filters and adding a normalized rule use real controller commands (variant: TargetPlatform.windows)
+00:19 +285: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/rules_ui_test.dart: filters and adding a normalized rule use real controller commands (variant: TargetPlatform.windows)
+00:19 +286: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/rules_ui_test.dart: filters and adding a normalized rule use real controller commands (variant: TargetPlatform.windows)
+00:19 +287: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/rules_ui_test.dart: filters and adding a normalized rule use real controller commands (variant: TargetPlatform.windows)
+00:19 +288: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/protocol_editor_test.dart: VMess editor validates and saves protocol-specific options (variant: TargetPlatform.windows)
+00:19 +289: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/protocol_editor_test.dart: VMess editor validates and saves protocol-specific options (variant: TargetPlatform.windows)
+00:19 +290: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/protocol_editor_test.dart: VMess editor validates and saves protocol-specific options (variant: TargetPlatform.windows)
+00:19 +291: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/node_management_ui_test.dart: TargetPlatform.android Size(393.0, 852.0) favorites/alias/hide/restore and batch probe never connect (variant: TargetPlatform.android)
+00:20 +292: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/node_management_ui_test.dart: TargetPlatform.android Size(393.0, 852.0) favorites/alias/hide/restore and batch probe never connect (variant: TargetPlatform.android)
+00:20 +293: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/node_management_ui_test.dart: TargetPlatform.android Size(393.0, 852.0) favorites/alias/hide/restore and batch probe never connect (variant: TargetPlatform.android)
+00:20 +294: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.compact AppTheme.dark at Size(393.0, 852.0) fits pages and dialogs (variant: TargetPlatform.iOS)
+00:20 +295: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.compact AppTheme.dark at Size(393.0, 852.0) fits pages and dialogs (variant: TargetPlatform.iOS)
+00:20 +296: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.compact AppTheme.dark at Size(393.0, 852.0) fits pages and dialogs (variant: TargetPlatform.iOS)
+00:21 +297: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/protocol_editor_test.dart: TUIC editor validates and saves protocol-specific options (variant: TargetPlatform.android)
+00:21 +298: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/protocol_editor_test.dart: TUIC editor validates and saves protocol-specific options (variant: TargetPlatform.android)
+00:21 +299: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/settings_ui_test.dart: density selector applies spacing after save and retains it on failure (variant: TargetPlatform.windows)
+00:21 +300: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/settings_ui_test.dart: density selector applies spacing after save and retains it on failure (variant: TargetPlatform.windows)
+00:22 +301: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/settings_ui_test.dart: density selector applies spacing after save and retains it on failure (variant: TargetPlatform.windows)
+00:22 +302: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/settings_ui_test.dart: density selector applies spacing after save and retains it on failure (variant: TargetPlatform.windows)
+00:22 +303: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/settings_ui_test.dart: density selector applies spacing after save and retains it on failure (variant: TargetPlatform.windows)
+00:22 +304: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/settings_ui_test.dart: density selector applies spacing after save and retains it on failure (variant: TargetPlatform.windows)
+00:22 +305: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/settings_ui_test.dart: density selector applies spacing after save and retains it on failure (variant: TargetPlatform.windows)
+00:22 +306: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/settings_ui_test.dart: density selector applies spacing after save and retains it on failure (variant: TargetPlatform.windows)
+00:22 +307: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/settings_ui_test.dart: density selector applies spacing after save and retains it on failure (variant: TargetPlatform.windows)
+00:22 +308: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/settings_ui_test.dart: density selector applies spacing after save and retains it on failure (variant: TargetPlatform.windows)
+00:22 +309: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/settings_ui_test.dart: density selector applies spacing after save and retains it on failure (variant: TargetPlatform.windows)
+00:22 +310: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/settings_ui_test.dart: density selector applies spacing after save and retains it on failure (variant: TargetPlatform.windows)
+00:22 +311: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/settings_ui_test.dart: density selector applies spacing after save and retains it on failure (variant: TargetPlatform.windows)
+00:23 +312: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/settings_ui_test.dart: density selector applies spacing after save and retains it on failure (variant: TargetPlatform.windows)
+00:23 +313: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/subscription_expiry_test.dart: aggregates private subscriptions once per term and renews after expiry
+00:23 +314: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.standard AppTheme.light at Size(393.0, 852.0) fits pages and dialogs (variant: TargetPlatform.iOS)
+00:23 +315: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.standard AppTheme.light at Size(393.0, 852.0) fits pages and dialogs (variant: TargetPlatform.iOS)
+00:23 +316: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.standard AppTheme.light at Size(393.0, 852.0) fits pages and dialogs (variant: TargetPlatform.iOS)
+00:23 +317: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.standard AppTheme.light at Size(393.0, 852.0) fits pages and dialogs (variant: TargetPlatform.iOS)
+00:23 +318: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.standard AppTheme.light at Size(393.0, 852.0) fits pages and dialogs (variant: TargetPlatform.iOS)
+00:23 +319: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.standard AppTheme.light at Size(393.0, 852.0) fits pages and dialogs (variant: TargetPlatform.iOS)
+00:23 +320: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.standard AppTheme.light at Size(393.0, 852.0) fits pages and dialogs (variant: TargetPlatform.iOS)
+00:23 +321: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.standard AppTheme.light at Size(393.0, 852.0) fits pages and dialogs (variant: TargetPlatform.iOS)
+00:23 +322: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.standard AppTheme.light at Size(393.0, 852.0) fits pages and dialogs (variant: TargetPlatform.iOS)
+00:23 +323: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.standard AppTheme.light at Size(393.0, 852.0) fits pages and dialogs (variant: TargetPlatform.iOS)
+00:23 +324: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.standard AppTheme.light at Size(393.0, 852.0) fits pages and dialogs (variant: TargetPlatform.iOS)
+00:23 +325: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.standard AppTheme.light at Size(393.0, 852.0) fits pages and dialogs (variant: TargetPlatform.iOS)
+00:23 +326: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.standard AppTheme.light at Size(393.0, 852.0) fits pages and dialogs (variant: TargetPlatform.iOS)
+00:23 +327: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.standard AppTheme.light at Size(393.0, 852.0) fits pages and dialogs (variant: TargetPlatform.iOS)
+00:23 +328: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.standard AppTheme.light at Size(393.0, 852.0) fits pages and dialogs (variant: TargetPlatform.iOS)
+00:23 +329: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.standard AppTheme.light at Size(393.0, 852.0) fits pages and dialogs (variant: TargetPlatform.iOS)
+00:23 +330: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.standard AppTheme.light at Size(393.0, 852.0) fits pages and dialogs (variant: TargetPlatform.iOS)
+00:23 +331: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.standard AppTheme.light at Size(393.0, 852.0) fits pages and dialogs (variant: TargetPlatform.iOS)
+00:23 +332: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.standard AppTheme.light at Size(393.0, 852.0) fits pages and dialogs (variant: TargetPlatform.iOS)
+00:23 +333: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.standard AppTheme.light at Size(393.0, 852.0) fits pages and dialogs (variant: TargetPlatform.iOS)
+00:23 +334: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.standard AppTheme.light at Size(393.0, 852.0) fits pages and dialogs (variant: TargetPlatform.iOS)
+00:23 +335: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.standard AppTheme.light at Size(393.0, 852.0) fits pages and dialogs (variant: TargetPlatform.iOS)
+00:23 +336: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.standard AppTheme.light at Size(393.0, 852.0) fits pages and dialogs (variant: TargetPlatform.iOS)
+00:23 +337: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.standard AppTheme.light at Size(393.0, 852.0) fits pages and dialogs (variant: TargetPlatform.iOS)
+00:23 +338: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.standard AppTheme.light at Size(393.0, 852.0) fits pages and dialogs (variant: TargetPlatform.iOS)
+00:23 +339: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.standard AppTheme.light at Size(393.0, 852.0) fits pages and dialogs (variant: TargetPlatform.iOS)
+00:23 +340: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.standard AppTheme.light at Size(393.0, 852.0) fits pages and dialogs (variant: TargetPlatform.iOS)
+00:23 +341: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/density_ui_test.dart: AppDensity.standard AppTheme.light at Size(393.0, 852.0) fits pages and dialogs (variant: TargetPlatform.iOS)
+00:23 +342: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/subscription_fetcher_test.dart: a failed local proxy never falls back to the reachable direct origin
+00:24 +343: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/subscription_fetcher_test.dart: a failed local proxy never falls back to the reachable direct origin
+00:24 +344: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/subscription_fetcher_test.dart: a failed local proxy never falls back to the reachable direct origin
+00:24 +345: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/subscription_fetcher_test.dart: a failed local proxy never falls back to the reachable direct origin
+00:24 +346: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/subscription_fetcher_test.dart: a failed local proxy never falls back to the reachable direct origin
+00:24 +347: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/subscription_fetcher_test.dart: a failed local proxy never falls back to the reachable direct origin
+00:24 +348: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/subscription_fetcher_test.dart: a failed local proxy never falls back to the reachable direct origin
+00:24 +349: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/subscription_fetcher_test.dart: a failed local proxy never falls back to the reachable direct origin
+00:24 +350: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/subscription_fetcher_test.dart: a failed local proxy never falls back to the reachable direct origin
+00:24 +351: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/subscription_fetcher_test.dart: a failed local proxy never falls back to the reachable direct origin
+00:24 +352: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/subscription_fetcher_test.dart: a failed local proxy never falls back to the reachable direct origin
+00:24 +353: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/subscription_fetcher_test.dart: a failed local proxy never falls back to the reachable direct origin
+00:24 +354: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/subscription_fetcher_test.dart: a failed local proxy never falls back to the reachable direct origin
+00:24 +355: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/subscription_fetcher_test.dart: a failed local proxy never falls back to the reachable direct origin
+00:24 +356: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/subscription_fetcher_test.dart: a failed local proxy never falls back to the reachable direct origin
+00:24 +357: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/subscription_fetcher_test.dart: a failed local proxy never falls back to the reachable direct origin
+00:24 +358: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/subscription_fetcher_test.dart: a failed local proxy never falls back to the reachable direct origin
+00:24 +359: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/subscription_fetcher_test.dart: a failed local proxy never falls back to the reachable direct origin
+00:25 +360: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/subscription_fetcher_test.dart: a failed local proxy never falls back to the reachable direct origin
+00:25 +361: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/subscription_fetcher_test.dart: a failed local proxy never falls back to the reachable direct origin
+00:25 +362: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/subscription_review_ui_test.dart: subscription review Size(1440.0, 900.0) dark standard: edit URL, expand, accept and update without connection (variant: TargetPlatform.windows)
+00:25 +363: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/subscription_review_ui_test.dart: subscription review Size(1440.0, 900.0) dark standard: edit URL, expand, accept and update without connection (variant: TargetPlatform.windows)
+00:25 +364: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/subscription_review_ui_test.dart: subscription review Size(1440.0, 900.0) dark standard: edit URL, expand, accept and update without connection (variant: TargetPlatform.windows)
+00:25 +365: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/subscription_review_ui_test.dart: subscription review Size(1440.0, 900.0) dark standard: edit URL, expand, accept and update without connection (variant: TargetPlatform.windows)
+00:25 +366: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/subscription_review_ui_test.dart: subscription review Size(1440.0, 900.0) dark standard: edit URL, expand, accept and update without connection (variant: TargetPlatform.windows)
+00:25 +367: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/subscription_review_ui_test.dart: subscription review Size(1440.0, 900.0) dark standard: edit URL, expand, accept and update without connection (variant: TargetPlatform.windows)
+00:26 +368: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/subscription_review_ui_test.dart: subscription review Size(1440.0, 900.0) dark standard: edit URL, expand, accept and update without connection (variant: TargetPlatform.windows)
+00:26 +369: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/subscription_review_ui_test.dart: subscription review Size(1440.0, 900.0) dark standard: edit URL, expand, accept and update without connection (variant: TargetPlatform.windows)
+00:26 +370: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/subscription_review_ui_test.dart: subscription review Size(1440.0, 900.0) dark standard: edit URL, expand, accept and update without connection (variant: TargetPlatform.windows)
+00:26 +371: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/subscription_review_ui_test.dart: subscription review Size(1440.0, 900.0) dark standard: edit URL, expand, accept and update without connection (variant: TargetPlatform.windows)
+00:26 +372: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/subscription_review_ui_test.dart: subscription review Size(1440.0, 900.0) dark standard: edit URL, expand, accept and update without connection (variant: TargetPlatform.windows)
+00:26 +373: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/subscription_review_ui_test.dart: subscription review Size(1440.0, 900.0) dark standard: edit URL, expand, accept and update without connection (variant: TargetPlatform.windows)
+00:26 +374: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/subscription_review_ui_test.dart: subscription review Size(1440.0, 900.0) dark standard: edit URL, expand, accept and update without connection (variant: TargetPlatform.windows)
+00:27 +375: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/subscription_review_ui_test.dart: subscription review Size(1440.0, 900.0) dark standard: edit URL, expand, accept and update without connection (variant: TargetPlatform.windows)
+00:27 +376: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/subscription_review_ui_test.dart: subscription review Size(1440.0, 900.0) dark standard: edit URL, expand, accept and update without connection (variant: TargetPlatform.windows)
+00:27 +377: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/subscription_review_ui_test.dart: subscription review Size(1440.0, 900.0) dark standard: edit URL, expand, accept and update without connection (variant: TargetPlatform.windows)
+00:27 +378: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/subscription_review_ui_test.dart: subscription review Size(1440.0, 900.0) dark standard: edit URL, expand, accept and update without connection (variant: TargetPlatform.windows)
+00:27 +379: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/subscription_review_ui_test.dart: subscription review Size(1440.0, 900.0) dark standard: edit URL, expand, accept and update without connection (variant: TargetPlatform.windows)
+00:27 +380: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/subscription_review_ui_test.dart: subscription review Size(1440.0, 900.0) dark standard: edit URL, expand, accept and update without connection (variant: TargetPlatform.windows)
+00:27 +381: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/subscription_review_ui_test.dart: subscription review Size(1440.0, 900.0) dark standard: edit URL, expand, accept and update without connection (variant: TargetPlatform.windows)
+00:28 +382: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/subscription_review_ui_test.dart: subscription review Size(1440.0, 900.0) dark standard: edit URL, expand, accept and update without connection (variant: TargetPlatform.windows)
+00:28 +383: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/subscription_review_ui_test.dart: subscription review Size(1440.0, 900.0) dark standard: edit URL, expand, accept and update without connection (variant: TargetPlatform.windows)
+00:28 +384: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/subscription_review_ui_test.dart: subscription review Size(1440.0, 900.0) dark standard: edit URL, expand, accept and update without connection (variant: TargetPlatform.windows)
+00:28 +385: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/subscription_review_ui_test.dart: subscription review Size(1440.0, 900.0) dark standard: edit URL, expand, accept and update without connection (variant: TargetPlatform.windows)
+00:28 +386: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/subscription_review_ui_test.dart: subscription review Size(1440.0, 900.0) dark standard: edit URL, expand, accept and update without connection (variant: TargetPlatform.windows)
+00:28 +387: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/subscription_review_ui_test.dart: subscription review Size(1440.0, 900.0) dark standard: edit URL, expand, accept and update without connection (variant: TargetPlatform.windows)
+00:28 +388: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/subscription_review_ui_test.dart: subscription review Size(1440.0, 900.0) dark standard: edit URL, expand, accept and update without connection (variant: TargetPlatform.windows)
+00:28 +389: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/subscription_ui_test.dart: TargetPlatform.windows Size(1040.0, 720.0) imports subscription in a URL-only dialog and selects group without connecting (variant: TargetPlatform.windows)
+00:28 +390: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/subscription_ui_test.dart: TargetPlatform.windows Size(1040.0, 720.0) imports subscription in a URL-only dialog and selects group without connecting (variant: TargetPlatform.windows)
+00:28 +391: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/subscription_ui_test.dart: TargetPlatform.windows Size(1040.0, 720.0) imports subscription in a URL-only dialog and selects group without connecting (variant: TargetPlatform.windows)
+00:28 +392: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/subscription_ui_test.dart: TargetPlatform.windows Size(1040.0, 720.0) imports subscription in a URL-only dialog and selects group without connecting (variant: TargetPlatform.windows)
+00:28 +393: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/subscription_ui_test.dart: TargetPlatform.windows Size(1040.0, 720.0) imports subscription in a URL-only dialog and selects group without connecting (variant: TargetPlatform.windows)
+00:28 +394: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/settings_ui_test.dart: appearance preferences actually scale text and disable transitions (variant: TargetPlatform.windows)
+00:28 +395: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/subscription_review_ui_test.dart: subscription review Size(1440.0, 900.0) light standard: edit URL, expand, accept and update without connection (variant: TargetPlatform.windows)
+00:28 +396: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/subscription_review_ui_test.dart: subscription review Size(1440.0, 900.0) light standard: edit URL, expand, accept and update without connection (variant: TargetPlatform.windows)
+00:29 +397: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/subscription_review_ui_test.dart: subscription review Size(1440.0, 900.0) light standard: edit URL, expand, accept and update without connection (variant: TargetPlatform.windows)
+00:29 +398: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/subscription_review_ui_test.dart: subscription review Size(1440.0, 900.0) light standard: edit URL, expand, accept and update without connection (variant: TargetPlatform.windows)
+00:29 +399: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/subscription_review_ui_test.dart: subscription review Size(1440.0, 900.0) light standard: edit URL, expand, accept and update without connection (variant: TargetPlatform.windows)
+00:29 +400: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/subscription_review_ui_test.dart: subscription review Size(1440.0, 900.0) light standard: edit URL, expand, accept and update without connection (variant: TargetPlatform.windows)
+00:29 +401: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/traffic_ui_test.dart: traffic period, chart and frozen CSV fit Size(960.0, 640.0) at 1.0 (variant: TargetPlatform.windows)
+00:29 +402: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/traffic_ui_test.dart: traffic period, chart and frozen CSV fit Size(960.0, 640.0) at 1.0 (variant: TargetPlatform.windows)
+00:29 +403: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/traffic_ui_test.dart: traffic period, chart and frozen CSV fit Size(960.0, 640.0) at 1.0 (variant: TargetPlatform.windows)
+00:30 +404: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/traffic_ui_test.dart: traffic period, chart and frozen CSV fit Size(960.0, 640.0) at 1.0 (variant: TargetPlatform.windows)
+00:30 +405: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/traffic_ui_test.dart: traffic period, chart and frozen CSV fit Size(960.0, 640.0) at 1.0 (variant: TargetPlatform.windows)
+00:30 +406: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/traffic_ui_test.dart: traffic period, chart and frozen CSV fit Size(960.0, 640.0) at 1.0 (variant: TargetPlatform.windows)
+00:30 +407: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/traffic_ui_test.dart: traffic period, chart and frozen CSV fit Size(960.0, 640.0) at 1.0 (variant: TargetPlatform.windows)
+00:30 +408: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/traffic_ui_test.dart: traffic period, chart and frozen CSV fit Size(960.0, 640.0) at 1.0 (variant: TargetPlatform.windows)
+00:30 +409: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/traffic_ui_test.dart: traffic period, chart and frozen CSV fit Size(960.0, 640.0) at 1.0 (variant: TargetPlatform.windows)
+00:30 +410: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/traffic_ui_test.dart: traffic period, chart and frozen CSV fit Size(960.0, 640.0) at 1.0 (variant: TargetPlatform.windows)
+00:30 +411: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/traffic_ui_test.dart: traffic period, chart and frozen CSV fit Size(960.0, 640.0) at 1.0 (variant: TargetPlatform.windows)
+00:30 +412: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/traffic_ui_test.dart: traffic period, chart and frozen CSV fit Size(960.0, 640.0) at 1.0 (variant: TargetPlatform.windows)
+00:30 +413: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/traffic_ui_test.dart: traffic period, chart and frozen CSV fit Size(960.0, 640.0) at 1.0 (variant: TargetPlatform.windows)
+00:30 +414: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/traffic_ui_test.dart: traffic period, chart and frozen CSV fit Size(960.0, 640.0) at 1.0 (variant: TargetPlatform.windows)
+00:31 +415: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/traffic_ui_test.dart: traffic period, chart and frozen CSV fit Size(960.0, 640.0) at 1.0 (variant: TargetPlatform.windows)
+00:31 +416: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/traffic_ui_test.dart: traffic period, chart and frozen CSV fit Size(960.0, 640.0) at 1.0 (variant: TargetPlatform.windows)
+00:31 +417: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/traffic_ui_test.dart: traffic period, chart and frozen CSV fit Size(960.0, 640.0) at 1.0 (variant: TargetPlatform.windows)
+00:31 +418: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/ui_alignment_test.dart: populated overview and traffic fit Size(1440.0, 900.0) in AppTheme.dark (variant: TargetPlatform.windows)
+00:32 +419: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/ui_alignment_test.dart: populated overview and traffic fit Size(1440.0, 900.0) in AppTheme.dark (variant: TargetPlatform.windows)
+00:32 +420: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/ui_alignment_test.dart: populated overview and traffic fit Size(1440.0, 900.0) in AppTheme.dark (variant: TargetPlatform.windows)
+00:32 +421: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/ui_alignment_test.dart: populated overview and traffic fit Size(1440.0, 900.0) in AppTheme.dark (variant: TargetPlatform.windows)
+00:32 +422: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/telemetry_ui_test.dart: mobile telemetry controls and log follow work at Size(393.0, 852.0) AppDensity.compact (variant: TargetPlatform.android)
+00:32 +423: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/telemetry_ui_test.dart: mobile telemetry controls and log follow work at Size(393.0, 852.0) AppDensity.compact (variant: TargetPlatform.android)
+00:33 +424: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/subscription_review_ui_test.dart: subscription review Size(393.0, 852.0) dark standard: edit URL, expand, accept and update without connection (variant: TargetPlatform.android)
+00:33 +425: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/ui_alignment_test.dart: populated overview and traffic fit Size(1440.0, 900.0) in AppTheme.light (variant: TargetPlatform.windows)
+00:33 +426: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/ui_alignment_test.dart: populated overview and traffic fit Size(1440.0, 900.0) in AppTheme.light (variant: TargetPlatform.windows)
+00:33 +427: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/telemetry_ui_test.dart: mobile telemetry controls and log follow work at Size(320.0, 640.0) AppDensity.standard (variant: TargetPlatform.android)
+00:34 +428: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/telemetry_ui_test.dart: mobile telemetry controls and log follow work at Size(320.0, 640.0) AppDensity.standard (variant: TargetPlatform.android)
+00:34 +429: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/telemetry_ui_test.dart: mobile telemetry controls and log follow work at Size(320.0, 640.0) AppDensity.standard (variant: TargetPlatform.android)
+00:34 +430: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/subscription_review_ui_test.dart: subscription review Size(320.0, 640.0) dark extraLarge: edit URL, expand, accept and update without connection (variant: TargetPlatform.android)
+00:34 +431: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/subscription_review_ui_test.dart: subscription review Size(320.0, 640.0) dark extraLarge: edit URL, expand, accept and update without connection (variant: TargetPlatform.android)
+00:34 +432: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/ui_alignment_test.dart: populated overview and traffic fit Size(892.0, 632.0) in AppTheme.dark (variant: TargetPlatform.windows)
+00:34 +433: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/subscription_review_ui_test.dart: subscription review Size(320.0, 640.0) light extraLarge: edit URL, expand, accept and update without connection (variant: TargetPlatform.android)
+00:35 +434: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/ui_alignment_test.dart: populated overview and traffic fit Size(892.0, 632.0) in AppTheme.light (variant: TargetPlatform.windows)
+00:35 +435: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/ui_alignment_test.dart: populated mobile lists and traffic fit Size(393.0, 852.0) (variant: TargetPlatform.android)
+00:35 +436: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/ui_alignment_test.dart: populated mobile lists and traffic fit Size(320.0, 640.0) (variant: TargetPlatform.android)
+00:35 +437: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/ui_alignment_test.dart: mobile overview fits including system safe areas: TargetPlatform.android (variant: TargetPlatform.android)
+00:35 +438: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/ui_alignment_test.dart: mobile overview fits including system safe areas: TargetPlatform.iOS (variant: TargetPlatform.iOS)
+00:35 +439: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/ui_alignment_test.dart: long IPv6 and large text remain readable on narrow mobile (variant: TargetPlatform.android)
+00:36 +440: All tests passed!

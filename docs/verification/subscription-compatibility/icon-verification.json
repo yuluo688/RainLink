@@ -1,0 +1,52 @@
+[
+  {
+    "name": "profile",
+    "sha256": "9d39d346de008a607c2f901250a457d4bbf0d9c60ee066a14296e280c1f28033",
+    "svgMarkupIdentical": true
+  },
+  {
+    "name": "check",
+    "sha256": "32d9d80aecafbc209e5b093d033c5fe71af6ee178d606c09992745de2adf4c8e",
+    "svgMarkupIdentical": true
+  },
+  {
+    "name": "close",
+    "sha256": "aaaaeab113662ca4ee109369deed1722c3044985ddf8d014d62195ec3d5393d3",
+    "svgMarkupIdentical": true
+  },
+  {
+    "name": "download",
+    "sha256": "ee6e5b811acbb7a59b4f3a1aad81e3a95b1cf9ecdfc17e255abd5a9d1f3c744f",
+    "svgMarkupIdentical": true
+  },
+  {
+    "name": "upload",
+    "sha256": "570cdfd6724df8e8782acb2e1731a81f56c0838a27eefc3851d16c758155adf0",
+    "svgMarkupIdentical": true
+  },
+  {
+    "name": "refresh",
+    "sha256": "d04cc93bc090bf4a917e78f2c6e502808b6354a2ce5fa7c168a6d4d23c87e7b4",
+    "svgMarkupIdentical": true
+  },
+  {
+    "name": "copy",
+    "sha256": "bc683a81cf7d74fb47ad5754501a38958dc22bcefff71f001fc4a844da1c24e6",
+    "svgMarkupIdentical": true
+  },
+  {
+    "name": "more",
+    "sha256": "160d54c8f3ed85cfda67663275daf9a1408291f9e80f61eda65120c221c9a105",
+    "svgMarkupIdentical": true
+  },
+  {
+    "name": "folder",
+    "sha256": "078aa5ef96e8928863c12ec97688dd9a2f543c70a4e6df40368447285e694bbe",
+    "svgMarkupIdentical": true
+  },
+  {
+    "name": "back",
+    "sha256": "69f8fa58a68cc78b66a84921843784dbc920d197fea623203d7e5f0a4400fffa",
+    "svgMarkupIdentical": true
+  }
+]

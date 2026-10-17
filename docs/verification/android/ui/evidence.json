@@ -1,0 +1,117 @@
+{
+  "scope": "Android renderer with isolated UI fixtures; no real network values",
+  "captures": [
+    {
+      "route": "/overview",
+      "theme": "dark",
+      "file": "overview-dark-fixture.png",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "route": "/nodes",
+      "theme": "dark",
+      "file": "nodes-dark-fixture.png",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "route": "/groups",
+      "theme": "dark",
+      "file": "groups-dark-fixture.png",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "route": "/traffic",
+      "theme": "dark",
+      "file": "traffic-dark-fixture.png",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "route": "/settings",
+      "theme": "dark",
+      "file": "settings-dark-fixture.png",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "route": "/settings-general",
+      "theme": "dark",
+      "file": "settings-general-dark-fixture.png",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "route": "/connections",
+      "theme": "dark",
+      "file": "connections-dark-fixture.png",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "route": "/logs",
+      "theme": "dark",
+      "file": "logs-dark-fixture.png",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "route": "/overview",
+      "theme": "light",
+      "file": "overview-light-fixture.png",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "route": "/nodes",
+      "theme": "light",
+      "file": "nodes-light-fixture.png",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "route": "/groups",
+      "theme": "light",
+      "file": "groups-light-fixture.png",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "route": "/traffic",
+      "theme": "light",
+      "file": "traffic-light-fixture.png",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "route": "/settings",
+      "theme": "light",
+      "file": "settings-light-fixture.png",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "route": "/settings-general",
+      "theme": "light",
+      "file": "settings-general-light-fixture.png",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "route": "/connections",
+      "theme": "light",
+      "file": "connections-light-fixture.png",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "route": "/logs",
+      "theme": "light",
+      "file": "logs-light-fixture.png",
+      "width": 393,
+      "height": 852
+    }
+  ]
+}

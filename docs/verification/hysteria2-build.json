@@ -1,0 +1,59 @@
+{
+  "atUtc": "2026-10-16T09:22:46.797235+00:00",
+  "archive": "build\\RainLink-windows-x64-hysteria2-preview.zip",
+  "archiveBytes": 40317573,
+  "archiveEntries": 69,
+  "archiveSha256": "539fe889d33212b03af40cc5a1697a5bb2c1d5b38a0507a6a35a9b02b3f9e5a4",
+  "archiveCrcCheck": "passed",
+  "flutter": "3.27.4",
+  "dart": "3.6.2",
+  "go": "1.25.5",
+  "core": "1.12.25-rainlink.1",
+  "flutterAnalyze": "passed",
+  "dartFormat": "118 files; no changes",
+  "flutterTests": 138,
+  "goTestActions": {
+    "pass": 21,
+    "skip": 3
+  },
+  "skippedGoTests": [
+    "TestSystemProxyRestoresExactOriginalValues",
+    "TestBypassEditDoesNotLeaveDeadProxyConfigured",
+    "TestRecoveryPreservesAnotherClientsLaterProxy"
+  ],
+  "releaseEngineMatchesSdk": true,
+  "bundledHostMatchesBuild": true,
+  "bundledCoreMatchesLock": true,
+  "coreSourceArchiveRebuildMatches": true,
+  "binarySha256": {
+    "rainlink.exe": "2b49854a1a70efd6ab74655382c9c8672821f586410ee5aaa6b290ddfd8b13b6",
+    "rainlink-host.exe": "9c65291fe9c637220496d4b63c23040c31523637cff67bc6a6ce04a15d370fd2",
+    "sing-box.exe": "cf6863552456c535fd79a0724f2d01352e77c97f4958466b75d9f07d8f0edef7",
+    "flutter_windows.dll": "55089c0bb72c53220aeecd31c859946b4a7e990fd6ea29975f448e22b2586677",
+    "data/app.so": "04628b8ec06a2f676578e9b8ef158f34f57fa0122cab64e64d3b37828301abae",
+    "sing-box-source.zip": "df48298c816fda8663cccf9e65f87db74b75e490ac8e9e8b7862292ef2183601"
+  },
+  "userDatabaseUiRefresh": {
+    "hysteria2Count": 16,
+    "totalNodes": 68,
+    "originalNodeIdsPreserved": true,
+    "selectedNodePreserved": true,
+    "refreshHasError": false,
+    "uiRefreshUsed": true
+  },
+  "hysteria2CredentialsProtected": true,
+  "certificatePinRetainedForAllHysteria2": true,
+  "portHoppingRetainedForAllHysteria2": true,
+  "realProviderConnectionTests": {
+    "attempted": 4,
+    "httpsSucceeded": 0,
+    "result": "QUIC handshake timeout; real-provider connectivity not established"
+  },
+  "releaseProcessId": 9884,
+  "releaseStdoutBytes": 0,
+  "releaseStderrBytes": 0,
+  "releaseScreenshot": "docs/verification/hysteria2-nodes-release.png",
+  "runtime": "Hysteria2 search; disconnected; original selected node; light theme",
+  "databaseSchema": 3,
+  "realMobileDeviceNetworkTested": false
+}
