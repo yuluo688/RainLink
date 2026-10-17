@@ -1,0 +1,327 @@
+{
+  "exportedAt": "2026-10-16",
+  "fileName": "RainLink",
+  "bridgeFileKey": "unsaved-mva99nf3-128z4u3c",
+  "designUrl": "https://www.figma.com/design/d2zbhuqMRbUMRLs6wIssFJ/RainLink",
+  "method": "Figma Bridge save_screenshots, native SVG export",
+  "sourcePathsModified": false,
+  "launcherSource": {
+    "nodeId": "2:16609",
+    "path": "design/exports/runtime-assets/brand-1024.png",
+    "format": "PNG",
+    "scale": 25.6,
+    "pixelWidth": 1024,
+    "pixelHeight": 1024,
+    "generatedBy": "tools/generate_app_icons.py"
+  },
+  "assets": [
+    {
+      "nodeId": "2:16478",
+      "name": "图标 / 网格",
+      "path": "app/assets/icons/grid.svg",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "nodeId": "2:16484",
+      "name": "图标 / 节点",
+      "path": "app/assets/icons/nodes.svg",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "nodeId": "2:16490",
+      "name": "图标 / 配置",
+      "path": "app/assets/icons/profile.svg",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "nodeId": "2:16494",
+      "name": "图标 / 规则",
+      "path": "app/assets/icons/rules.svg",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "nodeId": "2:16500",
+      "name": "图标 / 连接",
+      "path": "app/assets/icons/connections.svg",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "nodeId": "2:16503",
+      "name": "图标 / 图表",
+      "path": "app/assets/icons/chart.svg",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "nodeId": "2:16506",
+      "name": "图标 / 终端",
+      "path": "app/assets/icons/terminal.svg",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "nodeId": "2:16510",
+      "name": "图标 / 设置",
+      "path": "app/assets/icons/settings.svg",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "nodeId": "2:16514",
+      "name": "图标 / 搜索",
+      "path": "app/assets/icons/search.svg",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "nodeId": "2:16518",
+      "name": "图标 / 展开箭头",
+      "path": "app/assets/icons/chevron_right.svg",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "nodeId": "2:16521",
+      "name": "图标 / 向下",
+      "path": "app/assets/icons/chevron_down.svg",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "nodeId": "2:16524",
+      "name": "图标 / 添加",
+      "path": "app/assets/icons/plus.svg",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "nodeId": "2:16527",
+      "name": "图标 / 确认",
+      "path": "app/assets/icons/check.svg",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "nodeId": "2:16530",
+      "name": "图标 / 关闭",
+      "path": "app/assets/icons/close.svg",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "nodeId": "2:16533",
+      "name": "图标 / 收藏星标",
+      "path": "app/assets/icons/star.svg",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "nodeId": "2:16536",
+      "name": "图标 / 电源",
+      "path": "app/assets/icons/power.svg",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "nodeId": "2:16539",
+      "name": "图标 / 下载",
+      "path": "app/assets/icons/download.svg",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "nodeId": "2:16542",
+      "name": "图标 / 上传",
+      "path": "app/assets/icons/upload.svg",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "nodeId": "2:16545",
+      "name": "图标 / 测速",
+      "path": "app/assets/icons/speed.svg",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "nodeId": "2:16549",
+      "name": "图标 / 地球",
+      "path": "app/assets/icons/globe.svg",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "nodeId": "2:16553",
+      "name": "图标 / 盾牌",
+      "path": "app/assets/icons/shield.svg",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "nodeId": "2:16557",
+      "name": "图标 / 通知铃",
+      "path": "app/assets/icons/bell.svg",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "nodeId": "2:16560",
+      "name": "图标 / 太阳",
+      "path": "app/assets/icons/sun.svg",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "nodeId": "2:16564",
+      "name": "图标 / 月亮",
+      "path": "app/assets/icons/moon.svg",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "nodeId": "2:16567",
+      "name": "图标 / 刷新",
+      "path": "app/assets/icons/refresh.svg",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "nodeId": "2:16570",
+      "name": "图标 / 二维码",
+      "path": "app/assets/icons/qr.svg",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "nodeId": "2:16573",
+      "name": "图标 / 链路",
+      "path": "app/assets/icons/link.svg",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "nodeId": "2:16576",
+      "name": "图标 / 复制",
+      "path": "app/assets/icons/copy.svg",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "nodeId": "2:16580",
+      "name": "图标 / 更多",
+      "path": "app/assets/icons/more.svg",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "nodeId": "2:16585",
+      "name": "图标 / 时钟",
+      "path": "app/assets/icons/clock.svg",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "nodeId": "2:16589",
+      "name": "图标 / 文件夹",
+      "path": "app/assets/icons/folder.svg",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "nodeId": "2:16592",
+      "name": "图标 / 箭头",
+      "path": "app/assets/icons/arrow_right.svg",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "nodeId": "2:16595",
+      "name": "图标 / 笔记本",
+      "path": "app/assets/icons/laptop.svg",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "nodeId": "2:16599",
+      "name": "图标 / 无线网络",
+      "path": "app/assets/icons/wifi.svg",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "nodeId": "2:16603",
+      "name": "图标 / 雨滴",
+      "path": "app/assets/icons/rain.svg",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "nodeId": "2:16609",
+      "name": "品牌 / 标志",
+      "path": "app/assets/brand/mark.svg",
+      "width": 40,
+      "height": 40
+    },
+    {
+      "nodeId": "25:57527",
+      "name": "国家图标 / CN",
+      "path": "app/assets/flags/cn.svg",
+      "width": 24,
+      "height": 16
+    },
+    {
+      "nodeId": "25:57535",
+      "name": "国家图标 / JP",
+      "path": "app/assets/flags/jp.svg",
+      "width": 24,
+      "height": 16
+    },
+    {
+      "nodeId": "25:57539",
+      "name": "国家图标 / SG",
+      "path": "app/assets/flags/sg.svg",
+      "width": 24,
+      "height": 16
+    },
+    {
+      "nodeId": "25:57550",
+      "name": "国家图标 / US",
+      "path": "app/assets/flags/us.svg",
+      "width": 24,
+      "height": 16
+    },
+    {
+      "nodeId": "25:57581",
+      "name": "国家图标 / GB",
+      "path": "app/assets/flags/gb.svg",
+      "width": 24,
+      "height": 16
+    },
+    {
+      "nodeId": "25:57588",
+      "name": "国家图标 / DE",
+      "path": "app/assets/flags/de.svg",
+      "width": 24,
+      "height": 16
+    },
+    {
+      "nodeId": "25:57593",
+      "name": "国家图标 / NL",
+      "path": "app/assets/flags/nl.svg",
+      "width": 24,
+      "height": 16
+    },
+    {
+      "nodeId": "59:44535",
+      "name": "Icon / 返回",
+      "path": "app/assets/icons/back.svg",
+      "width": 24,
+      "height": 24
+    }
+  ]
+}

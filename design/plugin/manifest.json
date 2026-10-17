@@ -1,0 +1,93 @@
+{
+  "name": "RainLink Design Studio",
+  "id": "rainlink-design-studio",
+  "api": "1.0.0",
+  "main": "code.js",
+  "editorType": [
+    "figma"
+  ],
+  "documentAccess": "dynamic-page",
+  "networkAccess": {
+    "allowedDomains": [
+      "none"
+    ]
+  },
+  "menu": [
+    {
+      "name": "修复 UI 评估中的已知问题",
+      "command": "reviewfix"
+    },
+    {
+      "name": "统一返回箭头至左上角",
+      "command": "backnav"
+    },
+    {
+      "name": "补全两端设置 UI",
+      "command": "settingsui"
+    },
+    {
+      "name": "添加两端节点搜索",
+      "command": "nodesearch"
+    },
+    {
+      "name": "紧凑桌面与移动端列表",
+      "command": "density"
+    },
+    {
+      "name": "系统代理与 TUN 模式移到首页",
+      "command": "homecontrols"
+    },
+    {
+      "name": "精简画布与组件交互",
+      "command": "compact"
+    },
+    {
+      "name": "添加改为弹窗并显示订阅信息",
+      "command": "subscriptions"
+    },
+    {
+      "name": "应用 Design.md 规范并简化列表",
+      "command": "designmd"
+    },
+    {
+      "name": "修正概览导航与旧模式入口",
+      "command": "touchup"
+    },
+    {
+      "name": "概览统一控制连接与代理模式",
+      "command": "groups"
+    },
+    {
+      "name": "修复与核验概览原型",
+      "command": "repair"
+    },
+    {
+      "name": "检查原型方案能力",
+      "command": "probe"
+    },
+    {
+      "name": "设为中文并原位更新",
+      "command": "localize"
+    },
+    {
+      "name": "重建完整设计（默认中文）",
+      "command": "build"
+    },
+    {
+      "name": "优化与核验",
+      "command": "refine"
+    },
+    {
+      "name": "原位完成设计",
+      "command": "finalize"
+    },
+    {
+      "name": "诊断当前概览缓存",
+      "command": "homeprobe"
+    },
+    {
+      "name": "离线更新桌面概览",
+      "command": "homeoffline"
+    }
+  ]
+}

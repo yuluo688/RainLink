@@ -1,0 +1,99 @@
+{
+  "reviewedAt": "2026-10-15",
+  "source": {
+    "fileName": "RainLink",
+    "fileKey": "unsaved-mv9e8175-vkzuyob8",
+    "finalPolish": "8"
+  },
+  "coverage": {
+    "productScreens": 23,
+    "settingsVariants": 26,
+    "boundaryPreviews": 4,
+    "visibleProductNodes": 3238
+  },
+  "findings": [
+    {
+      "id": "A01",
+      "priority": "P2",
+      "title": "桌面顶栏高度不一致",
+      "nodes": [
+        "31:186008",
+        "31:182748",
+        "16:221290"
+      ],
+      "evidence": {
+        "nodesAndProfilesBarHeight": 68,
+        "otherDesktopBarHeight": 56,
+        "nodesAndProfilesPageHeaderY": 92,
+        "otherDesktopPageHeaderY": 80,
+        "verticalShift": 12
+      },
+      "recommendation": "复用统一的 56 px 顶部状态栏，保持内容区起点一致。"
+    },
+    {
+      "id": "A02",
+      "priority": "P2",
+      "title": "流量图横轴与零线基准未统一",
+      "nodes": [
+        "2:19136",
+        "2:23007"
+      ],
+      "evidence": {
+        "firstTimeLabelCenterOffsetFromPlotStart": -21,
+        "yAxisReserve": 36,
+        "curveBaselineOffsetFromZeroGrid": 9
+      },
+      "recommendation": "绘图区、横轴和曲线使用同一坐标范围，刻度中心对齐实际采样位置，上传曲线保持在零线及其上方。"
+    },
+    {
+      "id": "A03",
+      "priority": "P2",
+      "title": "移动端弹窗底部安全留白不一致",
+      "nodes": [
+        "2:23573",
+        "14:79814",
+        "23:55019"
+      ],
+      "evidence": {
+        "screenHeight": 852,
+        "addLastButtonBottom": 817,
+        "moveLastButtonBottom": 827,
+        "subscriptionLastButtonBottom": 835,
+        "bottomGaps": [
+          35,
+          25,
+          17
+        ]
+      },
+      "recommendation": "使用同一个底部安全区容器，iPhone 15 Pro 至少预留 34 px 安全区；统一水平内边距。"
+    },
+    {
+      "id": "A04",
+      "priority": "P2",
+      "title": "移动端设置子页返回导航位置不一致",
+      "nodes": [
+        "2:23130",
+        "59:48893",
+        "59:48263",
+        "63:49140",
+        "2:23924",
+        "16:215343"
+      ],
+      "evidence": {
+        "settingsWorkAreaY": 134,
+        "settingsDetailBackLocalY": 4,
+        "settingsDetailBackGlobalY": 138,
+        "otherDetailBackGlobalY": 66,
+        "verticalShift": 72,
+        "outerSettingsHeaderRemainsVisible": true,
+        "navigationType": "CHANGE_TO"
+      },
+      "recommendation": "将设置子页的返回导航放进统一顶部标题栏，避免保留外层设置标题后再叠一层详情标题。"
+    }
+  ],
+  "excluded": {
+    "intentionalScrollClipping": true,
+    "transparentHitAreaOverscan": true
+  },
+  "designModified": false
+}
