@@ -1,0 +1,29 @@
+allprojects {
+    repositories {
+        if (providers.gradleProperty("useMavenMirror").orNull == "true") {
+            maven { url "https://maven.aliyun.com/repository/google" }
+            maven { url "https://maven.aliyun.com/repository/central" }
+        }
+        google()
+        mavenCentral()
+    }
+}
+
+rootProject.buildDir = "../build"
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+    plugins.withId("com.android.library") {
+        androidComponents.finalizeDsl { library ->
+            // Pinned Flutter plugins still declare API 32. Their AndroidX
+            // dependency graph requires the same compile API as the app for lint.
+            if (library.compileSdk < 35) library.compileSdk = 35
+        }
+    }
+}
+subprojects {
+    project.evaluationDependsOn(":app")
+}
+
+tasks.register("clean", Delete) {
+    delete rootProject.buildDir
+}

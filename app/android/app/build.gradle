@@ -1,0 +1,58 @@
+plugins {
+    id "com.android.application"
+    id "kotlin-android"
+    // The Flutter Gradle Plugin must be applied after the Android and Kotlin Gradle plugins.
+    id "dev.flutter.flutter-gradle-plugin"
+}
+
+android {
+    namespace = "dev.rainlink.rainlink"
+    compileSdk = 35
+    ndkVersion = "27.0.12077973"
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8
+    }
+
+    defaultConfig {
+        // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
+        applicationId = "dev.rainlink.rainlink"
+        // You can update the following values to match your application needs.
+        // For more information, see: https://flutter.dev/to/review-gradle-config.
+        minSdk = 29
+        targetSdk = 35
+        ndk { abiFilters "arm64-v8a", "x86_64" }
+        versionCode = flutter.versionCode
+        versionName = flutter.versionName
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            // TODO: Add your own signing config for the release build.
+            // Signing with the debug keys for now, so `flutter run --release` works.
+            signingConfig = signingConfigs.debug
+        }
+    }
+}
+
+dependencies {
+    implementation files("libs/rainlink-core.aar")
+    testImplementation "junit:junit:4.13.2"
+    // Flutter 3.27's integration_test plugin exposes older test dependencies on
+    // debugRuntimeClasspath. Keep both debug configurations at one pinned API.
+    debugImplementation "androidx.test:runner:1.6.2"
+    debugImplementation "androidx.test.ext:junit:1.2.1"
+    debugImplementation "androidx.test.espresso:espresso-core:3.6.1"
+    androidTestImplementation "androidx.test:runner:1.6.2"
+    androidTestImplementation "androidx.test.ext:junit:1.2.1"
+}
+
+flutter {
+    source = "../.."
+}

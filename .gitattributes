@@ -14,3 +14,5 @@ native/host/packaging/linux/* text eol=lf
 
 # Verification manifests hash the original bytes, including line endings.
 docs/verification/** -text
+app/assets/fonts/*-OFL.txt -text
+app/assets/licenses/** -text
