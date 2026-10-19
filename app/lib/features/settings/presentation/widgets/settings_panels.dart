@@ -17,6 +17,8 @@ import '../../../../domain/preferences/device_settings.dart';
 import '../../../../domain/core/runtime_settings.dart';
 import '../../../../app/build_info.g.dart';
 import 'settings_rows.dart';
+import 'tun_service_panel.dart';
+import '../../../../application/core/tun_service_controller.dart';
 import '../../../../design_system/layout/app_layout.dart';
 
 class AppearanceSettingsPanel extends ConsumerStatefulWidget {
@@ -497,6 +499,10 @@ class _CoreSettingsPanelState extends ConsumerState<CoreSettingsPanel> {
               title: '高级配置',
               description: '查看与编辑 YAML / JSON',
               onTap: widget.onAdvanced)),
+      if (ref.watch(tunServiceGatewayProvider) != null) ...[
+        const SizedBox(height: 12),
+        const TunServicePanel(),
+      ],
     ]);
   }
 }

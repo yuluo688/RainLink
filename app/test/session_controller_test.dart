@@ -115,6 +115,22 @@ class _RecoverableGateway extends _Gateway implements SessionRecoveryGateway {
 }
 
 void main() {
+  test('service installation prevents a concurrent connection attempt',
+      () async {
+    final gateway = _Gateway();
+    addTearDown(gateway.errors.close);
+    var serviceBusy = true;
+    final controller = SessionController(gateway,
+        onMode: (_) {}, serviceBusy: () => serviceBusy);
+    addTearDown(controller.dispose);
+    await controller.connect(node, ProxyMode.rule);
+    expect(gateway.requests, isEmpty);
+    expect(controller.state.error, contains('权限服务正在更新'));
+    serviceBusy = false;
+    await controller.connect(node, ProxyMode.rule);
+    expect(gateway.requests, hasLength(1));
+    expect(controller.state.connected, isTrue);
+  });
   test('restored Android session can restart its original encrypted request',
       () async {
     final gateway = _RecoverableGateway()..observedTun = true;

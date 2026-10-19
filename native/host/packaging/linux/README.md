@@ -1,5 +1,7 @@
 # Linux 权限服务与安装管理
 
+2026-10-20 新增 Linux 设置页管理入口及独立 `manage-tun-service` 协议，支持状态、安装/更新、卸载、恢复和取消。当前已通过单元测试、Flutter 回归和静态检查；真实 `pkexec` 管理 VM 因依赖下载失败未进入测试，桌面认证及 Linux GUI 仍待验收，公开 TUN 保持关闭，见[服务管理阶段记录](../../../../docs/verification/linux-tun-service-management.md)。下文“GUI 入口未完成”等描述属于前阶段验收范围。
+
 已新增管理员命令安装、升级、卸载和持久恢复，当前普通宿主继续报告 `tun=false`。安装事务与真实 CLI 的隔离测试使用 fixture 服务驱动；真实系统结果另行标注，见[安装验收](../../../../docs/verification/linux-tun-install.md)。内核身份固定使用 `SO_PEERPIDFD`，要求 Linux 6.5 及以上。
 
 固定安装位置：

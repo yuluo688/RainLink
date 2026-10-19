@@ -11,6 +11,17 @@ import (
 )
 
 func main() {
+	if len(os.Args) == 2 && os.Args[1] == "manage-tun-service" || len(os.Args) == 3 && os.Args[1] == "manage-tun-elevated" {
+		method := ""
+		if len(os.Args) == 3 {
+			method = os.Args[2]
+		}
+		if err := manageTUNService(len(os.Args) == 3, method); err != nil {
+			fmt.Fprintln(os.Stderr, "TUN service management did not complete")
+			os.Exit(1)
+		}
+		return
+	}
 	if len(os.Args) == 2 && (os.Args[1] == "install-tun" || os.Args[1] == "uninstall-tun" || os.Args[1] == "recover-tun-install") {
 		if err := manageTUNInstallation(os.Args[1]); err != nil {
 			fmt.Fprintln(os.Stderr, "TUN service installation:", err)

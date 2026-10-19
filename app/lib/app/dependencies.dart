@@ -40,6 +40,8 @@ import '../domain/preferences/app_preferences.dart';
 import '../domain/nodes/proxy_node.dart';
 import '../domain/nodes/node_probe.dart';
 import '../platform/core/desktop_core_gateway.dart';
+import '../platform/core/linux_tun_service_gateway.dart';
+import '../application/core/tun_service_controller.dart';
 import '../platform/core/android_core_gateway.dart';
 import '../platform/core/unavailable_core_gateway.dart';
 import '../platform/window/windows_desktop_integration.dart';
@@ -93,6 +95,13 @@ List<Override> createAppOverrides({
         final integration = WindowsDesktopIntegration();
         ref.onDispose(integration.dispose);
         return integration;
+      }),
+      tunServiceGatewayProvider.overrideWith((ref) {
+        final gateway = ref.watch(coreGatewayProvider);
+        if (!Platform.isLinux || gateway is! DesktopCoreGateway) return null;
+        final service = LinuxTunServiceGateway(gateway.executablePath);
+        ref.onDispose(() => unawaited(service.close()));
+        return service;
       }),
       chainTesterProvider.overrideWith((ref) {
         final gateway = ref.watch(coreGatewayProvider);

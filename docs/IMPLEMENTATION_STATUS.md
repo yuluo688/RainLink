@@ -1,6 +1,8 @@
 # RainLink 实现与验收清单
 
-更新：2026-10-17。依据完整开发方案及实时 Figma，持续更新；“已实现”不等于所有平台均已验收。
+更新：2026-10-20。依据完整开发方案及实时 Figma，持续更新；“已实现”不等于所有平台均已验收。
+
+最新 Linux 服务管理进展：设置页已接入状态、安装/更新、卸载、恢复、取消和连接互斥，新增独立 `manage-tun-service` 通道。Flutter 全量 454 项通过，最后的未知状态显示修正另经 6 项 UI 回归验证；静态检查与 Linux 管理/文件检查单元测试通过。真实 `pkexec` 管理 VM 在下载依赖时失败，未执行管理闭环；活动桌面认证弹窗、取消后的真实恢复及 Linux GUI 视觉仍待验收，公开 TUN 保持关闭。范围与复现见[服务管理阶段记录](verification/linux-tun-service-management.md)。以下各阶段结果及旧摘要保持其当时范围。
 
 最新 Linux 权限日志续验：核心 check / run 的脱敏输出、授权及恢复日志已传回普通宿主，复用原日志 UI；普通宿主增至 15 个场景。Linux 网络 414 个、日志压力 20 轮共 500 个、真实 systemd / polkit 3 个、Windows 164 个 Go 通过事件分别通过，详见[权限日志验收](verification/linux-tun-logs.md)。真实 VM 使用临时 UID / action 的 YES / NO 规则，未验证活动桌面密码弹窗。GUI 管理和分发仍待推进，公开 Linux TUN 保持关闭。本阶段没有 Dart 修改或新 Flutter 执行；此前 440 项结果保留。用户要求暂时收尾并保存代码，检查点见[阶段记录](verification/closeout-20261017.md)。
 

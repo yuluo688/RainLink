@@ -4,6 +4,8 @@
 
 **建议采用 Flutter / Dart 共享界面和业务层，sing-box 提供网络核心，平台适配层处理系统代理、TUN、隧道授权和分发。** 首期先完成真实连接与故障恢复，再逐步交付现有桌面 UI 的全部业务能力。
 
+2026-10-20 进展：Linux GUI 权限服务管理已实现设置入口、独立管理协议和普通用户 `pkexec` 调用路径，自动化检查通过；真实管理 VM 的依赖下载失败，未完成该路径验收。后续优先补真实授权、取消/恢复和桌面视觉，再推进分发；公开 Linux TUN 仍关闭，见[服务管理阶段记录](verification/linux-tun-service-management.md)。以下记录为历史阶段快照。
+
 2026-10-17 阶段收尾：按用户要求暂存开发进度并提交代码，完整目标未完成，见[检查点](verification/closeout-20261017.md)。最新 Linux 权限日志已复用原日志页面，15 个完整宿主场景通过；Linux 隔离网络 414 个、20 轮日志压力 500 个、真实 systemd / polkit 3 个、Windows 164 个 Go 通过事件分别记录。真实 VM 已验证核心启动、日志、YES / NO 授权及恢复，活动桌面认证弹窗仍待验收；公开 TUN 能力保持关闭，下一步为认证 / 取消和 GUI 服务管理。范围见[日志验收](verification/linux-tun-logs.md)。本阶段没有重新运行 Flutter 或全页面视觉核验。
 
 2026-10-16 进展：Windows 八种协议（HTTP、SOCKS5、Shadowsocks、VLESS、VMess、Trojan、Hysteria2、TUIC v5）、认证安全保存、真实 sing-box 会话、系统代理、模式切换、出口探测及采样已接入；订阅 URL 导入、自动分组、手动 / 自动更新、流量和到期信息已接入。节点收藏、订阅本地别名、隐藏恢复与可取消的独立测速已实现；连接、日志、自定义规则与可视化代理链已有实际核心验收，正常与异常恢复已有实机验证。桌面 / 移动布局继续独立，共享业务层。当前 stdio 会话协议及尚未实现的范围见 [宿主接口](HOST_PROTOCOL.md)、[实现清单](IMPLEMENTATION_STATUS.md)、[节点管理验收](verification/node-management.md)、[八协议验收](verification/protocols.md) 和 [订阅验收](verification/windows-subscriptions.md)。以下表格保留完整产品目标，不表示所有功能已经完成。

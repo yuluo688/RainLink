@@ -75,6 +75,7 @@ final sessionControllerProvider =
             traffic: ref.watch(trafficRepositoryProvider),
             runtimeSettings: () =>
                 ref.read(deviceSettingsControllerProvider).runtime,
+            serviceBusy: () => ref.read(coreServiceBusyProvider),
             onMode: (mode) =>
                 ref.read(proxyModeProvider.notifier).state = mode));
 
@@ -83,6 +84,7 @@ class SessionController extends StateNotifier<SessionView> {
       {this.traffic,
       this.routing,
       this.runtimeSettings,
+      this.serviceBusy,
       required this.onMode,
       this.requiresTun = false,
       bool initialTun = false,
@@ -107,6 +109,7 @@ class SessionController extends StateNotifier<SessionView> {
     }
   }
   final bool requiresTun;
+  final bool Function()? serviceBusy;
   Future<void> _initialized = Future<void>.value();
   Future<void> get initialized => _initialized;
 
@@ -185,6 +188,13 @@ class SessionController extends StateNotifier<SessionView> {
   Future<void> _connect(
       ProxyNode? node, ProxyChain? chain, ProxyMode mode) async {
     if (state.working || state.connected || state.active != null) return;
+    if (serviceBusy?.call() ?? false) {
+      state = SessionView(
+          systemProxy: state.systemProxy,
+          tun: state.tun,
+          error: '权限服务正在更新，请等待操作完成后连接');
+      return;
+    }
     final generation = ++_generation;
     final capture = state.systemProxy;
     final tun = state.tun;

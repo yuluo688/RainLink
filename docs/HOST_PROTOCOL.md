@@ -95,6 +95,22 @@ GNOME 接管通过一次 dconf changeset 提交，恢复保留未设置项目，
 Linux TUN 的公开开关尚未开放。`internal/linuxnet` 提供有界双栈观察、上游选择及歧义拒绝的规则删除；`internal/linuxtun` 提供 root 租约、持久记录与精确恢复。Linux 核心 `.2` 的显式 `rainlink_managed=true` 使用独占网卡及协议 242，避免上游区间删除；16 条规则由 guardian 恢复，version 2 记录兼容 version 1，见[托管核心验收](verification/linux-managed-tun-core.md)。内部 `watch-tun` 仅供 root 通过继承管道启动，pidfd 就绪后监控原进程死亡；恢复先停止绑定核心。普通 Manager 已接入真实密钥环、连接、遥测、模式、日志和确认恢复；真实 systemd 安装 / 升级 / 卸载及 VM 中 polkit 允许 / 拒绝通过，活动桌面弹窗、GUI 管理与分发仍待完成，见[权限日志验收](verification/linux-tun-logs.md)。macOS 宿主与 iOS 扩展尚未完成；Android 使用独立原生通道，范围见[Android 验收](verification/android.md)。
 
 
+## Linux 权限服务安装管理（开发阶段）
+
+Linux 设置页使用独立的 `rainlink-host manage-tun-service` 进程，通过 stdin/stdout 交换逐行 JSON；不复用活动网络会话。请求为 `{id,method,payload?}`，`payload` 只能省略或为空对象；ID 必须为递增的正整数，单行最多 4096 字节，拒绝重复字段、大小写别名、额外参数和任意路径。
+
+| 方法 | 结果 / 行为 |
+| --- | --- |
+| status | 只读返回 `protocolVersion:1`、`state`、`canManage`、`enabled`、`active`、中文 `message`；不请求授权或启动网络接管 |
+| install | 经系统授权调用固定安装/更新动作；实际完成才返回 `{completed:true}` |
+| uninstall | 经系统授权调用固定卸载动作；实际完成才确认 |
+| recover | 经系统授权调用固定事务恢复动作；实际完成才确认 |
+| cancel | 返回 `{requested:true}` 仅表示已请求取消，原操作结束前保持忙碌 |
+
+`state` 为 `missing/current/different/incomplete/unavailable`。`incomplete` 或 `unavailable` 时 UI 不显示未确认的启动/开机状态。状态只证明可观察文件及 socket 状态，不证明私有安装事务已经完成。管理动作前必须断开网络会话，操作期间禁止新连接；完成或失败后重新读取状态，不能仅凭完成回执宣称安装成功。
+
+宿主通过固定且已检查的 `/usr/bin/pkexec` 启动当前运行 inode 的 `manage-tun-elevated` 固定动作；认证由系统桌面 agent 负责，应用不处理密码。取消通过关闭控制管道传入 root worker；EOF 取消操作并等待 worker 的有界恢复。读取限 15 秒，操作限 8 分钟，Flutter 请求限 9 分钟。该管理路径真实 `pkexec` 闭环及桌面弹窗尚未验收，详见[阶段记录](verification/linux-tun-service-management.md)，公开 Linux TUN 仍为 false。
+
 ## Linux root 权限服务（内部阶段）
 
 普通 Flutter/host 的公开协议与 Linux `tun=false` 能力保持原样。普通 Manager 已接入私有客户端的凭据、生命周期、遥测、模式、脱敏日志与恢复，15 个完整宿主场景通过；固定路径 root 安装、升级、卸载及事务恢复已有真实 systemd 续验。VM 中 polkit 使用临时 YES / NO 规则，活动桌面认证提示尚待验收。`rainlink-host serve-tun` 只供 root 的单连接 Unix socket 服务调用；`recover-tun` 为 root 的显式补充恢复入口。

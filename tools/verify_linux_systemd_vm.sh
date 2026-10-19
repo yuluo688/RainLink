@@ -19,7 +19,13 @@ case "${1:-}" in
     guest_source=linux_systemd_logs_guest.sh
     result_log=real-systemd-log-tests.log
     ;;
-  *) echo "Usage: $0 [--permission-logs]" >&2; exit 2 ;;
+  --service-management)
+    test_binary=linuxmanage.test
+    test_package=linuxmanage
+    guest_source=linux_systemd_management_guest.sh
+    result_log=real-systemd-management-tests.log
+    ;;
+  *) echo "Usage: $0 [--permission-logs|--service-management]" >&2; exit 2 ;;
 esac
 cache="$repo_root/build/qa/linux-install/vm-cache"
 mkdir -p "$cache"

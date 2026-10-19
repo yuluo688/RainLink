@@ -8,6 +8,9 @@ final coreGatewayProvider = Provider<CoreGateway>((ref) {
   throw StateError('CoreGateway must be provided during bootstrap.');
 });
 
+// Service transactions own system resources even while no session is active.
+final coreServiceBusyProvider = StateProvider<bool>((ref) => false);
+
 final coreStatusProvider = FutureProvider<CoreStatus>((ref) async {
   // An update candidate must not launch a core child before the helper accepts
   // its first frame and migrated database.
