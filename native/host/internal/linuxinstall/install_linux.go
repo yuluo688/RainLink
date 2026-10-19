@@ -135,11 +135,19 @@ func (i *installer) close() error {
 	return result
 }
 
-func (i *installer) point(name string) error {
-	if i.checkpoint != nil {
-		return i.checkpoint(name)
+func (i *installer) point(ctx context.Context, name string) error {
+	if err := ctx.Err(); err != nil {
+		return err
 	}
-	return nil
+	if i.checkpoint != nil {
+		if err := i.checkpoint(name); err != nil {
+			return err
+		}
+	}
+	// Observe cancellation after each durable write, including the manifest
+	// before commit. Recovery uses its own context and the committed journal
+	// still decides whether to restore the previous or finish the new version.
+	return ctx.Err()
 }
 
 func (i *installer) prepare(ctx context.Context, source *os.File) (_ *manifest, result error) {
@@ -289,7 +297,7 @@ func (i *installer) transact(ctx context.Context, before, after *manifest, state
 			}
 		}
 	}()
-	if err := i.point("journal"); err != nil {
+	if err := i.point(ctx, "journal"); err != nil {
 		return err
 	}
 	if err := i.quiesce(ctx); err != nil {
@@ -298,7 +306,7 @@ func (i *installer) transact(ctx context.Context, before, after *manifest, state
 	if err := i.services.enable(ctx, false); err != nil {
 		return err
 	}
-	if err := i.point("stopped"); err != nil {
+	if err := i.point(ctx, "stopped"); err != nil {
 		return err
 	}
 	// Recheck after stopping: administrator edits are preserved, even if they
@@ -310,7 +318,7 @@ func (i *installer) transact(ctx context.Context, before, after *manifest, state
 		if err := i.applyFile(ctx, index, false, entry(after, index)); err != nil {
 			return err
 		}
-		if err := i.point(fmt.Sprintf("file-%d", index)); err != nil {
+		if err := i.point(ctx, fmt.Sprintf("file-%d", index)); err != nil {
 			return err
 		}
 	}
@@ -339,7 +347,7 @@ func (i *installer) transact(ctx context.Context, before, after *manifest, state
 	} else if err := i.verifyService(ctx, serviceState{}); err != nil {
 		return err
 	}
-	if err := i.point("started"); err != nil {
+	if err := i.point(ctx, "started"); err != nil {
 		return err
 	}
 	if err := i.verifyFiles(ctx, after); err != nil {
@@ -348,14 +356,14 @@ func (i *installer) transact(ctx context.Context, before, after *manifest, state
 	if err := i.saveManifest(after); err != nil {
 		return err
 	}
-	if err := i.point("manifest"); err != nil {
+	if err := i.point(ctx, "manifest"); err != nil {
 		return err
 	}
 	record.Committed = true
 	if err := writeJSON(i.state, journalName, record, false); err != nil {
 		return err
 	}
-	if err := i.point("committed"); err != nil {
+	if err := i.point(ctx, "committed"); err != nil {
 		return err
 	}
 	return i.finish()

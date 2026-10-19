@@ -75,9 +75,7 @@ func (systemBackend) change(ctx context.Context, method string) (result error) {
 	command.Stdin = input
 	var stdout, stderr boundedOutput
 	command.Stdout, command.Stderr = &stdout, &stderr
-	// A normal user cannot kill a root child. Closing this pipe revokes the
-	// operation; the elevated worker cancels and completes durable rollback.
-	command.Cancel = func() error { return control.Close() }
+	command.Cancel = func() error { return cancelElevation(control, command.Process) }
 	command.WaitDelay = 7 * time.Minute
 	if err = command.Start(); err != nil {
 		return &failure{"authorization_unavailable", "无法启动系统授权，请检查桌面认证服务"}
@@ -107,6 +105,23 @@ func (systemBackend) change(ctx context.Context, method string) (result error) {
 		return &failure{"invalid_response", "未收到服务安装确认，请重新检查状态"}
 	}
 	return nil
+}
+
+func cancelElevation(control *os.File, process *os.Process) error {
+	// Revoke first: even if authorization wins the race, the root worker sees
+	// EOF and cancels with durable rollback. pkexec does not read stdin while
+	// authenticating; SIGTERM dismisses that pending check while its real UID
+	// still belongs to the caller. After it becomes root, EPERM is expected and
+	// the pipe remains the only cancellation authority. Never escalate to KILL.
+	closeErr := control.Close()
+	if errors.Is(closeErr, os.ErrClosed) {
+		closeErr = nil
+	}
+	signalErr := process.Signal(syscall.SIGTERM)
+	if errors.Is(signalErr, syscall.EPERM) || errors.Is(signalErr, os.ErrProcessDone) {
+		signalErr = nil
+	}
+	return errors.Join(closeErr, signalErr)
 }
 
 // RunElevated is an internal, fixed-action worker. It never reads a password:

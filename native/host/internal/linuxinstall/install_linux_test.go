@@ -218,6 +218,60 @@ func TestEveryTransactionFailureRollsBack(t *testing.T) {
 	}
 }
 
+func TestCancellationAtEachTransactionBoundary(t *testing.T) {
+	points := []string{"journal", "stopped", "file-0", "file-1", "file-2", "file-3", "file-4", "started", "manifest", "committed"}
+	for _, action := range []string{"install", "upgrade-enabled", "upgrade-disabled", "uninstall-enabled", "uninstall-disabled"} {
+		for _, point := range points {
+			t.Run(action+"/"+point, func(t *testing.T) {
+				_, i, service, _ := newFixture(t)
+				var before, after *manifest
+				state := serviceState{}
+				if action != "install" {
+					before = installFixture(t, i, "old")
+					state.Present = true
+					state.Enabled = strings.HasSuffix(action, "-enabled")
+					state.Active = state.Enabled
+					service.enabled, service.active = state.Enabled, state.Active
+				}
+				if !strings.HasPrefix(action, "uninstall-") {
+					after = stageFixture(t, i, "new")
+				}
+				ctx, cancel := context.WithCancel(t.Context())
+				defer cancel()
+				reached := false
+				i.checkpoint = func(name string) error {
+					if name == point {
+						reached = true
+						cancel()
+					}
+					return nil
+				}
+				if err := i.transact(ctx, before, after, state); !errors.Is(err, context.Canceled) {
+					t.Fatal("cancellation did not retain its original error", err)
+				}
+				if !reached {
+					t.Fatal("cancellation checkpoint was not reached")
+				}
+				want, wantEnabled, wantActive := before, state.Enabled, state.Active
+				if point == "committed" {
+					// The durable commit decides ownership even if cancellation
+					// arrives before cleanup; no rollback of committed files.
+					want = after
+					if after == nil {
+						wantEnabled, wantActive = false, false
+					} else if before == nil {
+						wantEnabled, wantActive = true, true
+					}
+				}
+				verifyFixture(t, i, want)
+				if service.enabled != wantEnabled || service.active != wantActive {
+					t.Fatal("cancellation changed the confirmed service state", service, wantEnabled, wantActive)
+				}
+			})
+		}
+	}
+}
+
 func TestServiceFailureAndCancellationRollBack(t *testing.T) {
 	for _, operation := range []string{"stop", "enable-false", "reload", "enable-true", "start", "ready", "cancel"} {
 		t.Run(operation, func(t *testing.T) {

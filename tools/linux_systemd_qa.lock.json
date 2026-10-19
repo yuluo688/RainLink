@@ -3,5 +3,19 @@
   "imageName": "debian-13-genericcloud-amd64.qcow2",
   "sha512": "ec584ccabfef7120b4c4f7482adf0e615894d9292cedec446b64194b951ebe5dd97c336b5dcbae458333764b0edd516334506017f33c4f2020ef8d38b569ffe3",
   "checksumSource": "https://cloud.debian.org/images/cloud/trixie/latest/SHA512SUMS",
-  "scope": "Disposable QA image only, not a product dependency. Replaced upstream images must be reviewed and relocked before use."
+  "scope": "Disposable QA image only, not a product dependency. Replaced upstream images must be reviewed and relocked before use.",
+  "managementPkexec": {
+    "url": "https://deb.debian.org/debian/pool/main/p/policykit-1/pkexec_126-2_amd64.deb",
+    "sha256": "04e7b9595d8e96ac6bd64b3f92cce00fdd3ae5546b3adf86d30b1b3b1b801314",
+    "size": 24908,
+    "checksumSource": "https://deb.debian.org/debian/dists/trixie/main/binary-amd64/Packages.xz",
+    "scope": "QA-only dependency; the guest also verifies the package against its signed Debian apt metadata before installing."
+  },
+  "authenticationPythonDBus": {
+    "url": "https://deb.debian.org/debian/pool/main/d/dbus-python/python3-dbus_1.4.0-1_amd64.deb",
+    "sha256": "62d05b99e55dfd06f3cf8a8bd4912d572bd1dfa82bdc9dec5d1e23bdad7c8e46",
+    "size": 98424,
+    "checksumSource": "https://deb.debian.org/debian/dists/trixie/main/binary-amd64/Packages.xz",
+    "scope": "QA-only Python D-Bus authentication-agent fixture; guest rechecks signed apt metadata."
+  }
 }
