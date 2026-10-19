@@ -48,6 +48,8 @@ class TunServiceController extends StateNotifier<TunServiceView> {
   final TunServiceGateway? gateway;
   final bool Function() canChange;
   final void Function(bool) onBusy;
+  Future<void>? _operation;
+  bool _suspended = false;
 
   Future<void> refresh() async {
     final service = gateway;
@@ -61,7 +63,19 @@ class TunServiceController extends StateNotifier<TunServiceView> {
     }
   }
 
-  Future<void> perform(TunServiceAction action) async {
+  Future<void> perform(TunServiceAction action) {
+    if (!mounted || _suspended || _operation != null) {
+      return Future<void>.value();
+    }
+    late final Future<void> operation;
+    operation = _perform(action).whenComplete(() {
+      if (identical(_operation, operation)) _operation = null;
+    });
+    _operation = operation;
+    return operation;
+  }
+
+  Future<void> _perform(TunServiceAction action) async {
     final service = gateway;
     if (service == null || state.busy || state.loading) return;
     final previous = state.status;
@@ -128,4 +142,17 @@ class TunServiceController extends StateNotifier<TunServiceView> {
       }
     }
   }
+
+  /// Window exit waits for the original operation, including its state read-back.
+  Future<void> suspend() async {
+    _suspended = true;
+    final operation = _operation;
+    if (operation != null) {
+      await cancel();
+      await operation;
+    }
+  }
+
+  /// A refused application exit keeps this same gateway available for retry.
+  void resume() => _suspended = false;
 }

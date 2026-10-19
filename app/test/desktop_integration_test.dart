@@ -314,7 +314,7 @@ void main() {
     expect(calls.last, 'destroy');
     expect(repo.settings.general.autoConnect, isTrue);
     await tester.pumpWidget(const SizedBox());
-  });
+  }, variant: TargetPlatformVariant({TargetPlatform.windows}));
 
   testWidgets('failed restore keeps the window and tray available for retry',
       (tester) async {
@@ -355,7 +355,7 @@ void main() {
     }
     expect(calls.last, 'destroy');
     await tester.pumpWidget(const SizedBox());
-  });
+  }, variant: TargetPlatformVariant({TargetPlatform.windows}));
 
   testWidgets(
       'update exit restores network before commit and recovers refused handoff',
@@ -427,7 +427,7 @@ void main() {
     await tester.pumpAndSettle();
     expect(calls.last, 'destroy');
     await tester.pumpWidget(const SizedBox());
-  });
+  }, variant: TargetPlatformVariant({TargetPlatform.windows}));
 
   test(
       'Windows adapter rejects invalid receipts and hides native error details',

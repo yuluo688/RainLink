@@ -17,14 +17,15 @@ class TunServicePanel extends ConsumerWidget {
         context: context,
         builder: (context) => AlertDialog(
                 title: Text('$label？'),
-                content: Text(switch (action) {
-                  TunServiceAction.install =>
-                    '系统将请求管理员授权，安装当前应用配套的 TUN 权限服务。已有服务会按事务更新，用户节点和订阅保留。',
-                  TunServiceAction.uninstall =>
-                    '系统将请求管理员授权，恢复服务管理的网络状态并卸载权限服务。用户节点和订阅保留。',
-                  TunServiceAction.recover =>
-                    '系统将请求管理员授权，检查上次中断的安装事务并恢复到确认的状态。',
-                }),
+                content: SizedBox(
+                    width: 400,
+                    child: Text(switch (action) {
+                      TunServiceAction.install =>
+                        '将安装或更新当前版本的 TUN 权限服务，需要管理员授权。节点和订阅会保留。',
+                      TunServiceAction.uninstall =>
+                        '将关闭并卸载权限服务，恢复相关网络设置，需要管理员授权。节点和订阅会保留。',
+                      TunServiceAction.recover => '将检查并恢复上次未完成的服务安装，需要管理员授权。',
+                    })),
                 actions: [
                   TextButton(
                       onPressed: () => Navigator.pop(context, false),

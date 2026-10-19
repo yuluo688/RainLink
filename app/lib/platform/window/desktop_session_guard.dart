@@ -1,5 +1,5 @@
 import 'dart:async';
-import 'dart:io';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:window_manager/window_manager.dart';
@@ -8,6 +8,7 @@ import '../../application/connection/connect_selected.dart';
 import '../../application/connection/connection_providers.dart';
 import '../../application/connection/session_controller.dart';
 import '../../application/core/core_providers.dart';
+import '../../application/core/tun_service_controller.dart';
 import '../../application/preferences/desktop_integration_controller.dart';
 import '../../application/preferences/device_settings_controller.dart';
 import '../../application/updates/app_update_controller.dart';
@@ -31,6 +32,10 @@ class DesktopSessionGuard extends ConsumerStatefulWidget {
 class _DesktopSessionGuardState extends ConsumerState<DesktopSessionGuard>
     with WindowListener {
   DesktopIntegration? _integration;
+  TunServiceController? _tunService;
+  final _desktop = !kIsWeb &&
+      const {TargetPlatform.windows, TargetPlatform.linux, TargetPlatform.macOS}
+          .contains(defaultTargetPlatform);
   StreamSubscription<DesktopAction>? _actions;
   bool _closing = false;
   bool _acting = false;
@@ -43,8 +48,11 @@ class _DesktopSessionGuardState extends ConsumerState<DesktopSessionGuard>
   @override
   void initState() {
     super.initState();
-    if (!Platform.isWindows) return;
+    if (!_desktop) return;
     _integration = ref.read(desktopIntegrationProvider);
+    if (ref.read(tunServiceGatewayProvider) != null) {
+      _tunService = ref.read(tunServiceControllerProvider.notifier);
+    }
     _detachUpdate = ref
         .read(updateShutdownProvider)
         .attach((update) => _exit(update: update));
@@ -82,19 +90,20 @@ class _DesktopSessionGuardState extends ConsumerState<DesktopSessionGuard>
       await windowManager.setPreventClose(true);
       if (_disposed) return;
       final integration = _integration;
-      if (integration == null) return;
-      _actions = integration.actions.listen((action) {
-        if (_disposed || _closing || !mounted) return;
-        if (action == DesktopAction.quit) {
-          unawaited(_exit());
-        } else if (action == DesktopAction.toggleConnection) {
-          unawaited(_toggle());
-        }
-      });
-      await integration.setTrayVisible(
-          ref.read(deviceSettingsControllerProvider).general.showTray);
-      if (_disposed) return;
-      _updateTray(ref.read(sessionControllerProvider));
+      if (integration != null) {
+        _actions = integration.actions.listen((action) {
+          if (_disposed || _closing || !mounted) return;
+          if (action == DesktopAction.quit) {
+            unawaited(_exit());
+          } else if (action == DesktopAction.toggleConnection) {
+            unawaited(_toggle());
+          }
+        });
+        await integration.setTrayVisible(
+            ref.read(deviceSettingsControllerProvider).general.showTray);
+        if (_disposed) return;
+        _updateTray(ref.read(sessionControllerProvider));
+      }
       if (ref.read(deviceSettingsControllerProvider).general.autoConnect) {
         await ref.read(connectSelectedProvider)(
             cancelled: () =>
@@ -187,7 +196,9 @@ class _DesktopSessionGuardState extends ConsumerState<DesktopSessionGuard>
   Future<void> _closeWindow() async {
     if (_closing) return;
     final general = ref.read(deviceSettingsControllerProvider).general;
-    if (general.closeBehavior == WindowCloseBehavior.tray && general.showTray) {
+    if (_integration != null &&
+        general.closeBehavior == WindowCloseBehavior.tray &&
+        general.showTray) {
       try {
         final integration = _integration;
         final observed = await integration?.inspect();
@@ -216,6 +227,7 @@ class _DesktopSessionGuardState extends ConsumerState<DesktopSessionGuard>
     final logs = ref.read(coreLogCollectorProvider.notifier);
     final expiry = ref.read(subscriptionExpiryMonitorProvider);
     try {
+      await _tunService?.suspend();
       final session = ref.read(sessionControllerProvider.notifier);
       if (ref.read(sessionControllerProvider).phase != ConnectionPhase.idle) {
         await session.disconnect();
@@ -249,6 +261,7 @@ class _DesktopSessionGuardState extends ConsumerState<DesktopSessionGuard>
         _report('安装交接未完成，安装程序正在停止，请稍后重试');
       }
       setState(() => _closing = false);
+      _tunService?.resume();
       updates.resumeAfterFailedExit(
           message: update == null ? '退出未完成，应用保持打开' : null);
       subscriptions.resume();
@@ -271,14 +284,14 @@ class _DesktopSessionGuardState extends ConsumerState<DesktopSessionGuard>
   void dispose() {
     _disposed = true;
     _detachUpdate?.call();
-    if (Platform.isWindows) windowManager.removeListener(this);
+    if (_desktop) windowManager.removeListener(this);
     unawaited(_actions?.cancel());
     super.dispose();
   }
 
   @override
   Widget build(BuildContext context) {
-    final enabled = !Platform.isWindows || (!_closing && _startupReady);
+    final enabled = !_desktop || (!_closing && _startupReady);
     return FocusTraversalGroup(
         descendantsAreFocusable: enabled,
         child: AbsorbPointer(absorbing: !enabled, child: widget.child));

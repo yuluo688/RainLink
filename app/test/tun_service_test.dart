@@ -22,7 +22,53 @@ class _Client extends HostSessionClient {
   }
 }
 
+class _GatedInspection extends FakeTunService {
+  Completer<void>? readBack;
+  @override
+  Future<TunServiceStatus> inspect() async {
+    await readBack?.future;
+    return super.inspect();
+  }
+}
+
 void main() {
+  test('exit waits for operation and read-back; refused exit can resume',
+      () async {
+    final gateway = _GatedInspection()
+      ..operation = Completer<void>()
+      ..failure = const CoreGatewayException('cancelled', '已取消授权');
+    final busy = <bool>[];
+    final controller =
+        TunServiceController(gateway, canChange: () => true, onBusy: busy.add);
+    addTearDown(controller.dispose);
+    await Future<void>.delayed(Duration.zero);
+    final installing = controller.perform(TunServiceAction.install);
+    var stopped = false;
+    final stopping = controller.suspend().then((_) => stopped = true);
+    await Future<void>.delayed(Duration.zero);
+    expect(gateway.cancellations, 1);
+    expect(stopped, isFalse);
+    gateway.readBack = Completer<void>();
+    gateway.operation!.complete();
+    await Future<void>.delayed(Duration.zero);
+    expect(stopped, isFalse);
+    expect(busy, [true]);
+    gateway.readBack!.complete();
+    await installing;
+    await stopping;
+    expect(busy, [true, false]);
+    await controller.perform(TunServiceAction.install);
+    expect(gateway.changes, 1);
+    controller.resume();
+    gateway
+      ..operation = null
+      ..failure = null
+      ..readBack = null;
+    await controller.perform(TunServiceAction.install);
+    expect(gateway.changes, 2);
+    expect(controller.state.status?.state, TunServiceState.current);
+  });
+
   test('does not authorize while an active session needs restoration',
       () async {
     final gateway = FakeTunService();

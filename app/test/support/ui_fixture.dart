@@ -101,6 +101,7 @@ class _VisualSession extends SessionController {
 List<Override> visualOverrides(
     {AppTheme theme = AppTheme.dark,
     List<ProxyNode> nodes = visualNodes,
+    bool connected = true,
     bool mobileTunnel = false,
     String ip = '203.0.113.24'}) {
   final now = DateTime.now();
@@ -139,8 +140,10 @@ List<Override> visualOverrides(
               updatedAt: now,
               expiresAt: now.add(const Duration(days: 30))),
         ])),
-    sessionControllerProvider
-        .overrideWith((ref) => _VisualSession(ip, mobileTunnel: mobileTunnel)),
+    sessionControllerProvider.overrideWith((ref) => connected
+        ? _VisualSession(ip, mobileTunnel: mobileTunnel)
+        : SessionController(const UnavailableCoreGateway('视觉测试'),
+            onMode: (_) {})),
     dailyTrafficProvider.overrideWith((ref) => Stream.value(
         const DailyTraffic(upload: 587202560, download: 8439610736))),
     trafficHistoryProvider.overrideWith((ref) => Stream.value(days)),
