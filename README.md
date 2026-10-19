@@ -2,7 +2,7 @@
 
 桌面优先的五平台客户端。Flutter 负责界面与业务，Go Host 负责桌面核心边界，Android 使用 Kotlin 前台网络服务与嵌入式 libbox。
 
-2026-10-20 开发进展：Linux「设置 → 核心引擎」已加入 TUN 权限服务状态、安装/更新、卸载、恢复与取消入口，使用独立宿主管理通道，并与网络连接互斥。Flutter 全量测试、相关回归与静态检查通过；新增真实 `pkexec` 管理测试因 VM 下载依赖失败尚未执行，活动桌面认证弹窗与正式分发也未验收。公开 Linux TUN 仍关闭，详见[服务管理阶段记录](docs/verification/linux-tun-service-management.md)。下文早期阶段测试数量保留原验收范围。
+2026-10-20 开发进展：Linux「设置 → 核心引擎」已加入 TUN 权限服务管理；共享桌面退出会等待管理操作、状态回读与网络恢复。已修复等待认证和安装提交前可能漏掉取消的问题。实际 pkexec/polkit 的八种授权/管理场景，以及安装器在真实 systemd 下的五种写入后取消场景通过，后者由私有测试 checkpoint 注入取消；普通 broker 写入中取消、活动图形认证、Linux GUI 与正式分发继续验收，公开 Linux TUN 仍关闭。最新证据见[安装取消与恢复](docs/verification/linux-install-cancellation.md)，前轮 Flutter、截图与图标范围见[服务管理与安全退出](docs/verification/linux-tun-service-management-acceptance.md)。下文早期阶段测试数量保留原验收范围。
 
 当前 Windows 版已支持 HTTP / HTTPS 代理、SOCKS5、Shadowsocks、VLESS、VMess、Trojan、Hysteria2 和 TUIC v5 的真实连接，以及订阅 URL 导入、自动分组、手动 / 自动更新、用量和到期信息。节点认证、UUID、混淆密码和订阅地址由 Windows DPAPI 加密保存；配置通过私有管道交给核心。两端按运行平台选择独立布局，共享路由与业务状态；手机横屏和桌面缩窄时保留本端导航。
 

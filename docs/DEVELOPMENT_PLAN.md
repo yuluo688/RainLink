@@ -2,7 +2,13 @@
 
 日期：2026-10-15。目标平台：Windows、macOS、Linux、Android、iOS。首期交付前三种桌面平台，移动端在桌面内测稳定后推进。
 
+2026-10-20 安装取消续验：50 个取消边界和原有 30 次 SIGKILL 恢复通过；实际 systemd 下的五种写入后取消/提交保持场景，以及八种授权与管理回归通过。私有测试 checkpoint 的恢复证据与普通 broker 端到端取消范围分开记录，见[安装取消与恢复](verification/linux-install-cancellation.md)。接着补图形桌面、普通 broker 写入中取消和分发，公开 Linux TUN 保持关闭。
+
+2026-10-20 等待认证取消：已修复并通过真实 pkexec/polkit 的 AUTH_ADMIN 取消、EOF 和代理拒绝，五种原有服务管理场景也通过回归。测试使用无密码的 D-Bus 协议代理，图形桌面认证及写入期间取消继续验收，见[认证取消记录](verification/linux-service-authentication-cancellation.md)。
+
 **建议采用 Flutter / Dart 共享界面和业务层，sing-box 提供网络核心，平台适配层处理系统代理、TUN、隧道授权和分发。** 首期先完成真实连接与故障恢复，再逐步交付现有桌面 UI 的全部业务能力。
+
+2026-10-20 服务管理续验：普通用户实际 pkexec 的管理、不同构建替换、授权后锁等待时取消和 EOF 已通过；Linux/macOS 接入共享安全退出并经组件验证。460 项 Flutter 与 40 张 fixture 通过，保存的 44 个 Figma SVG 与当前资产一致。下一步仍为活动桌面认证、事务写入期间取消、Linux GUI/分发及最新设计稿核对，公开 TUN 保持关闭，见[续验记录](verification/linux-tun-service-management-acceptance.md)。下文首次服务管理进展保留原检查点范围。
 
 2026-10-20 进展：Linux GUI 权限服务管理已实现设置入口、独立管理协议和普通用户 `pkexec` 调用路径，自动化检查通过；真实管理 VM 的依赖下载失败，未完成该路径验收。后续优先补真实授权、取消/恢复和桌面视觉，再推进分发；公开 Linux TUN 仍关闭，见[服务管理阶段记录](verification/linux-tun-service-management.md)。以下记录为历史阶段快照。
 

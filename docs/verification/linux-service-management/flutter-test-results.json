@@ -1,0 +1,1850 @@
+{
+  "source": "build/qa/linux-manage/flutter-full-20261020.jsonl",
+  "sourceSha256": "658f482018a425679ad677b9dd40dc0e30b7eedc23820597e10d8db32c1c8707",
+  "success": true,
+  "visiblePassed": 460,
+  "hiddenFrameworkEvents": 61,
+  "durationMilliseconds": 39485,
+  "tests": [
+    {
+      "name": "offline apply saves without connecting and can restore the previous version",
+      "result": "success"
+    },
+    {
+      "name": "rejected validation preserves the active session and stored history",
+      "result": "success"
+    },
+    {
+      "name": "reconnect failure restores actual target, capture and previous runtime",
+      "result": "success"
+    },
+    {
+      "name": "failed disk transaction also restores the previously applied session",
+      "result": "success"
+    },
+    {
+      "name": "a stale runtime or connection confirmation cannot apply a patch",
+      "result": "success"
+    },
+    {
+      "name": "ordinary forms cannot overwrite an advanced patch from a stale snapshot",
+      "result": "success"
+    },
+    {
+      "name": "disconnect during apply cannot revive a late connection",
+      "result": "success"
+    },
+    {
+      "name": "failed write after user disconnect does not reconnect for rollback",
+      "result": "success"
+    },
+    {
+      "name": "YAML and JSON round-trip DNS policies and supplementary route rules",
+      "result": "success"
+    },
+    {
+      "name": "syntax errors and forbidden input cannot quote pasted credentials",
+      "result": "success"
+    },
+    {
+      "name": "bounded parser rejects expansion, deep nesting and oversized input",
+      "result": "success"
+    },
+    {
+      "name": "patch and history are atomic and survive database reopen",
+      "result": "success"
+    },
+    {
+      "name": "Android requires the tunnel and forwards encrypted Hysteria2 settings",
+      "result": "success"
+    },
+    {
+      "name": "a mismatched capture receipt is stopped before reporting connected",
+      "result": "success"
+    },
+    {
+      "name": "cancel rejects a late successful connect",
+      "result": "success"
+    },
+    {
+      "name": "activity disposal leaves the native foreground session running",
+      "result": "success"
+    },
+    {
+      "name": "recovery keeps encrypted target, rule and runtime snapshots",
+      "result": "success"
+    },
+    {
+      "name": "connect accepts equivalent empty advanced configuration: null",
+      "result": "success"
+    },
+    {
+      "name": "recovery accepts equivalent empty advanced configuration: null",
+      "result": "success"
+    },
+    {
+      "name": "connect accepts equivalent empty advanced configuration: ",
+      "result": "success"
+    },
+    {
+      "name": "recovery accepts equivalent empty advanced configuration: ",
+      "result": "success"
+    },
+    {
+      "name": "connect accepts equivalent empty advanced configuration:  {} ",
+      "result": "success"
+    },
+    {
+      "name": "recovery accepts equivalent empty advanced configuration:  {} ",
+      "result": "success"
+    },
+    {
+      "name": "recovery stops an actual proxyPort mismatch",
+      "result": "success"
+    },
+    {
+      "name": "recovery stops an actual dnsMode mismatch",
+      "result": "success"
+    },
+    {
+      "name": "recovery stops an actual resolver mismatch",
+      "result": "success"
+    },
+    {
+      "name": "recovery stops an actual bootstrapDns mismatch",
+      "result": "success"
+    },
+    {
+      "name": "recovery stops an actual ipv6 mismatch",
+      "result": "success"
+    },
+    {
+      "name": "recovery stops an actual logLevel mismatch",
+      "result": "success"
+    },
+    {
+      "name": "recovery stops an actual advanced mismatch",
+      "result": "success"
+    },
+    {
+      "name": "invalid native runtime settings are rejected and disconnected",
+      "result": "success"
+    },
+    {
+      "name": "recovery preserves chain hops and independent rule targets",
+      "result": "success"
+    },
+    {
+      "name": "invalid recovery is disconnected and plaintext is never adopted",
+      "result": "success"
+    },
+    {
+      "name": "close still disconnects if test cancellation fails",
+      "result": "success"
+    },
+    {
+      "name": "DNS replies require actual IPs and cancellation invalidates late results",
+      "result": "success"
+    },
+    {
+      "name": "system export receives an exact UTF-8 file and returns its content URI",
+      "result": "success"
+    },
+    {
+      "name": "picker cancellation returns null and removes temporary content",
+      "result": "success"
+    },
+    {
+      "name": "malformed saved URI is not reported as success: file:///private/secret",
+      "result": "success"
+    },
+    {
+      "name": "malformed saved URI is not reported as success: ",
+      "result": "success"
+    },
+    {
+      "name": "malformed saved URI is not reported as success: content:/missing-authority",
+      "result": "success"
+    },
+    {
+      "name": "native busy errors keep failure visible and release temporary files",
+      "result": "success"
+    },
+    {
+      "name": "native write_failed errors keep failure visible and release temporary files",
+      "result": "success"
+    },
+    {
+      "name": "native unavailable errors keep failure visible and release temporary files",
+      "result": "success"
+    },
+    {
+      "name": "timeout cancels only its request and ignores late provider completion",
+      "result": "success"
+    },
+    {
+      "name": "invalid names and oversized content never cross the platform boundary",
+      "result": "success"
+    },
+    {
+      "name": "Android joins stable connection pages without inventing processes",
+      "result": "success"
+    },
+    {
+      "name": "Android rejects moving page field sessionId",
+      "result": "success"
+    },
+    {
+      "name": "Android rejects moving page field snapshotId",
+      "result": "success"
+    },
+    {
+      "name": "Android rejects moving page field sampledAt",
+      "result": "success"
+    },
+    {
+      "name": "Android rejects moving page field total",
+      "result": "success"
+    },
+    {
+      "name": "Android rejects moving page field uploadTotal",
+      "result": "success"
+    },
+    {
+      "name": "Android rejects moving page field downloadTotal",
+      "result": "success"
+    },
+    {
+      "name": "Android rejects moving page field next",
+      "result": "success"
+    },
+    {
+      "name": "Android rejects moving page field entries",
+      "result": "success"
+    },
+    {
+      "name": "Android rejects stale first page and bounds snapshot size",
+      "result": "success"
+    },
+    {
+      "name": "Android rejects repeated IDs across connection pages",
+      "result": "success"
+    },
+    {
+      "name": "Android scopes close commands and propagates unconfirmed failure",
+      "result": "success"
+    },
+    {
+      "name": "Android logs and clearing work without a connected UI session",
+      "result": "success"
+    },
+    {
+      "name": "Android rejects malformed log checkpoints",
+      "result": "success"
+    },
+    {
+      "name": "disposing the UI stops telemetry requests without stopping the service",
+      "result": "success"
+    },
+    {
+      "name": "startup is opt-in and preferences preserve their confirmed state on failure",
+      "result": "success"
+    },
+    {
+      "name": "failed preference load is retryable and no update request bypasses it",
+      "result": "success"
+    },
+    {
+      "name": "no releases, current versions and malformed local build are distinct",
+      "result": "success"
+    },
+    {
+      "name": "cancelling a metadata request ignores its late result and permits a new check",
+      "result": "success"
+    },
+    {
+      "name": "download cancellation ignores late progress and cannot produce install eligibility",
+      "result": "success"
+    },
+    {
+      "name": "changing channel clears previous release/package only after preferences commit",
+      "result": "success"
+    },
+    {
+      "name": "install preparation uses the shutdown coordinator before committing",
+      "result": "success"
+    },
+    {
+      "name": "shutdown refusal aborts prepared update and retains a usable downloaded package",
+      "result": "success"
+    },
+    {
+      "name": "cancelling preparation aborts a helper that becomes ready late",
+      "result": "success"
+    },
+    {
+      "name": "normal close cancels I/O and waits for transfers and pending preference writes",
+      "result": "success"
+    },
+    {
+      "name": "refused exit resumes the controller without circular installation waits",
+      "result": "success"
+    },
+    {
+      "name": "interrupted recovery is reported once without exposing local details",
+      "result": "success"
+    },
+    {
+      "name": "accepted and unresolved updates have distinct receipts",
+      "result": "success"
+    },
+    {
+      "name": "invalid or oversized state cannot report success",
+      "result": "success"
+    },
+    {
+      "name": "release versions compare semantic stages and numeric build numbers",
+      "result": "success"
+    },
+    {
+      "name": "production update policy only trusts the repository and release CDN",
+      "result": "success"
+    },
+    {
+      "name": "actual HTTP release metadata and file downloads selects numeric versions, filters drafts and explicitly permits previews",
+      "result": "success"
+    },
+    {
+      "name": "actual HTTP release metadata and file downloads rejects malformed metadata and never exposes response body details",
+      "result": "success"
+    },
+    {
+      "name": "actual HTTP release metadata and file downloads metadata cancellation closes an in-flight request and timeout is bounded",
+      "result": "success"
+    },
+    {
+      "name": "actual HTTP release metadata and file downloads downloads actual bytes and returns a file only after SHA256 verification",
+      "result": "success"
+    },
+    {
+      "name": "actual HTTP release metadata and file downloads mismatched digest, oversized and truncated files are discarded",
+      "result": "success"
+    },
+    {
+      "name": "actual HTTP release metadata and file downloads missing digest disables download and untrusted redirects are refused",
+      "result": "success"
+    },
+    {
+      "name": "actual HTTP release metadata and file downloads cancel and timeout wait for file handles before cleaning temporary downloads",
+      "result": "success"
+    },
+    {
+      "name": "update preferences use real SQLite and failed writes preserve old values",
+      "result": "success"
+    },
+    {
+      "name": "startup error and stack survive a secondary cleanup failure",
+      "result": "success"
+    },
+    {
+      "name": "failure before database acquisition needs no cleanup",
+      "result": "success"
+    },
+    {
+      "name": "asynchronous database chains render without hiding the startup error",
+      "result": "success"
+    },
+    {
+      "name": "a package trace from cleanup also remains renderable",
+      "result": "success"
+    },
+    {
+      "name": "selecting a group clears the chain and preserves its remembered node",
+      "result": "success"
+    },
+    {
+      "name": "a partial or out-of-order response cannot report a successful chain test",
+      "result": "success"
+    },
+    {
+      "name": "fingerprints expire on order and node revision, while names remain editable",
+      "result": "success"
+    },
+    {
+      "name": "saving persists IDs only, selects the chain, and node selection clears it",
+      "result": "success"
+    },
+    {
+      "name": "core failure and concurrent node changes preserve the saved chain and selection",
+      "result": "success"
+    },
+    {
+      "name": "stale edits and removed hops cannot silently replace or reroute a saved chain",
+      "result": "success"
+    },
+    {
+      "name": "primary and rule chains freeze every hop and invalidate bindings after node changes",
+      "result": "success"
+    },
+    {
+      "name": "saving discards a test for another path and deletion leaves rule references repairable",
+      "result": "success"
+    },
+    {
+      "name": "cancel discards late chain-test completion and keeps editor usable",
+      "result": "success"
+    },
+    {
+      "name": "cancel during chain resolution cannot start a delayed connection",
+      "result": "success"
+    },
+    {
+      "name": "theme write exceptions show failure and allow retry (variant: TargetPlatform.macOS)",
+      "result": "success"
+    },
+    {
+      "name": "Linux local core keeps unavailable capture capabilities disabled",
+      "result": "success"
+    },
+    {
+      "name": "Linux desktop capability enables only the observed system proxy",
+      "result": "success"
+    },
+    {
+      "name": "ready Windows host reports its observed TUN capability",
+      "result": "success"
+    },
+    {
+      "name": "host availability does not imply core capabilities",
+      "result": "success"
+    },
+    {
+      "name": "malformed or incompatible status fails closed",
+      "result": "success"
+    },
+    {
+      "name": "invalid top-level JSON values fail with a domain exception",
+      "result": "success"
+    },
+    {
+      "name": "unavailable adapters cannot report successful connection commands",
+      "result": "success"
+    },
+    {
+      "name": "selection preserves active snapshot and signals pending changes",
+      "result": "success"
+    },
+    {
+      "name": "empty release, error retry and cancelled late response stay distinct",
+      "result": "success"
+    },
+    {
+      "name": "pause preserves the view, explicit close uses the core and failure preserves rows",
+      "result": "success"
+    },
+    {
+      "name": "late observation cannot overwrite a new session or a disconnected page",
+      "result": "success"
+    },
+    {
+      "name": "programming errors are not converted to storage failures (variant: TargetPlatform.macOS)",
+      "result": "success"
+    },
+    {
+      "name": "download progress can cancel and install confirmation can refuse",
+      "result": "success"
+    },
+    {
+      "name": "mode and host updates leave the overview frame intact (variant: TargetPlatform.macOS)",
+      "result": "success"
+    },
+    {
+      "name": "database preserves millisecond order, deduplicates, bounds capacity and expires logs",
+      "result": "success"
+    },
+    {
+      "name": "preferences keep confirmed values and unsupported platforms do not act",
+      "result": "success"
+    },
+    {
+      "name": "initial state cannot connect or change system capture (variant: TargetPlatform.macOS)",
+      "result": "success"
+    },
+    {
+      "name": "schema 3 migrates without losing nodes or preferences; logs survive reopen",
+      "result": "success"
+    },
+    {
+      "name": "collector checkpoints only persisted batches and serializes clear after reads",
+      "result": "success"
+    },
+    {
+      "name": "telemetry boundary rejects invalid cursors, levels and counters",
+      "result": "success"
+    },
+    {
+      "name": "CSV export matches filters and neutralizes spreadsheet injection",
+      "result": "success"
+    },
+    {
+      "name": "every bundled Figma SVG decodes and paints visible pixels",
+      "result": "success"
+    },
+    {
+      "name": "concurrent inspections share one command; later refresh runs again",
+      "result": "success"
+    },
+    {
+      "name": "a failed command does not poison later inspections",
+      "result": "success"
+    },
+    {
+      "name": "a nonzero exit cannot report valid stdout as success",
+      "result": "success"
+    },
+    {
+      "name": "disposed gateways reject late results and new requests",
+      "result": "success"
+    },
+    {
+      "name": "missing executables are unavailable without launching a command",
+      "result": "success"
+    },
+    {
+      "name": "update startup gates native inspection and ignores disposed consumers",
+      "result": "success"
+    },
+    {
+      "name": "general and connection preferences persist independently with validation",
+      "result": "success"
+    },
+    {
+      "name": "tray failure preserves preferences and disk failure rolls the tray back",
+      "result": "success"
+    },
+    {
+      "name": "all desktop routes and proxy chain are reachable (variant: TargetPlatform.macOS)",
+      "result": "success"
+    },
+    {
+      "name": "compact switch preserves hit target, keyboard and semantics",
+      "result": "success"
+    },
+    {
+      "name": "startup write must pass actual readback before controller confirms",
+      "result": "success"
+    },
+    {
+      "name": "unavailable capture switch cannot toggle by pointer or semantics",
+      "result": "success"
+    },
+    {
+      "name": "startup waits for selection and honors cancellation: false",
+      "result": "success"
+    },
+    {
+      "name": "startup waits for selection and honors cancellation: true",
+      "result": "success"
+    },
+    {
+      "name": "keyboard shortcut changes route (variant: TargetPlatform.macOS)",
+      "result": "success"
+    },
+    {
+      "name": "node search, duplicate prevention, order and save persist the visible chain (variant: TargetPlatform.windows)",
+      "result": "success"
+    },
+    {
+      "name": "close to tray preserves connection and explicit quit restores before destroy (variant: TargetPlatform.windows)",
+      "result": "success"
+    },
+    {
+      "name": "failed restore keeps the window and tray available for retry (variant: TargetPlatform.windows)",
+      "result": "success"
+    },
+    {
+      "name": "rapid navigation keeps desktop chrome fixed and settles once (variant: TargetPlatform.macOS)",
+      "result": "success"
+    },
+    {
+      "name": "update exit restores network before commit and recovers refused handoff (variant: TargetPlatform.windows)",
+      "result": "success"
+    },
+    {
+      "name": "Windows adapter rejects invalid receipts and hides native error details",
+      "result": "success"
+    },
+    {
+      "name": "expiry native boundary sends counts only and rejects invalid values",
+      "result": "success"
+    },
+    {
+      "name": "reduced motion switches pages immediately at Size(947.2, 632.8) (variant: TargetPlatform.macOS)",
+      "result": "success"
+    },
+    {
+      "name": "core rejection preserves the editable draft and reports the failure (variant: TargetPlatform.windows)",
+      "result": "success"
+    },
+    {
+      "name": "reduced motion switches pages immediately at Size(393.0, 852.0) (variant: TargetPlatform.android)",
+      "result": "success"
+    },
+    {
+      "name": "default settings migrate without changing schema and survive reopen",
+      "result": "success"
+    },
+    {
+      "name": "old appearance preferences stay compact and invalid density is rejected",
+      "result": "success"
+    },
+    {
+      "name": "failed density write retains confirmed appearance and queue recovers",
+      "result": "success"
+    },
+    {
+      "name": "invalid endpoints and ports fail with a safe domain error",
+      "result": "success"
+    },
+    {
+      "name": "validation and persistence failures leave confirmed settings unchanged",
+      "result": "success"
+    },
+    {
+      "name": "interleaved saves preserve independent settings and disposal cancels queue",
+      "result": "success"
+    },
+    {
+      "name": "node search and clear fit Size(947.2, 632.8) without fabricating rows (variant: TargetPlatform.macOS)",
+      "result": "success"
+    },
+    {
+      "name": "mobile editor remains compact and usable with enlarged Chinese text (variant: TargetPlatform.android)",
+      "result": "success"
+    },
+    {
+      "name": "node search and clear fit Size(393.0, 852.0) without fabricating rows (variant: TargetPlatform.android)",
+      "result": "success"
+    },
+    {
+      "name": "subscription automatically forms one group with protected URL, secrets and metadata",
+      "result": "success"
+    },
+    {
+      "name": "no-op update preserves ID and revision, rename preserves selection, secret rotation advances revision",
+      "result": "success"
+    },
+    {
+      "name": "refresh preserves manually moved nodes and falls back when selected imported node disappears",
+      "result": "success"
+    },
+    {
+      "name": "caption shares the status row at desktop minimum width (variant: TargetPlatform.windows)",
+      "result": "success"
+    },
+    {
+      "name": "reordered accounts sharing public identity retain the correct selected credential",
+      "result": "success"
+    },
+    {
+      "name": "node search and clear fit Size(320.0, 640.0) without fabricating rows (variant: TargetPlatform.android)",
+      "result": "success"
+    },
+    {
+      "name": "subscription nodes cannot be edited or deleted individually",
+      "result": "success"
+    },
+    {
+      "name": "reads chunked output at the limit and drains binary diagnostics",
+      "result": "success"
+    },
+    {
+      "name": "oversized stdout fails immediately and reaps the child",
+      "result": "success"
+    },
+    {
+      "name": "failed or cancelled updates retain nodes, selection and previous successful metadata",
+      "result": "success"
+    },
+    {
+      "name": "oversized stderr fails immediately and reaps the child",
+      "result": "success"
+    },
+    {
+      "name": "crypto failure and cancellation during preparation leave no partial group or nodes",
+      "result": "success"
+    },
+    {
+      "name": "timeout terminates a running command and waits for exit",
+      "result": "success"
+    },
+    {
+      "name": "deleting during fetch never resurrects the subscription; moved nodes return to ungrouped",
+      "result": "success"
+    },
+    {
+      "name": "timeout includes startup and reclaims a late child",
+      "result": "success"
+    },
+    {
+      "name": "dispose cancels active work and forbids new commands",
+      "result": "success"
+    },
+    {
+      "name": "dispose during startup also reclaims the late child",
+      "result": "success"
+    },
+    {
+      "name": "rename is preserved and a concurrent configuration change prevents stale refresh",
+      "result": "success"
+    },
+    {
+      "name": "invalid UTF-8 and failed startup use domain errors",
+      "result": "success"
+    },
+    {
+      "name": "removing subscription clears invalid selection; deleting manual groups keeps their nodes",
+      "result": "success"
+    },
+    {
+      "name": "v2 migration preserves nodes, credentials and selection and adds group columns",
+      "result": "success"
+    },
+    {
+      "name": "group metadata and node settings survive reopening the database",
+      "result": "success"
+    },
+    {
+      "name": "complete desktop overview fits one viewport at Size(1440.0, 900.0) (variant: TargetPlatform.macOS)",
+      "result": "success"
+    },
+    {
+      "name": "buttons dispatch commands and native events update restore state (variant: TargetPlatform.windows)",
+      "result": "success"
+    },
+    {
+      "name": "Clash Hysteria2 nodes are imported with QUIC options and two secrets",
+      "result": "success"
+    },
+    {
+      "name": "hy2 and hysteria2 URI aliases preserve encoded auth and default TLS",
+      "result": "success"
+    },
+    {
+      "name": "complete desktop overview fits one viewport at Size(1427.2, 760.8) (variant: TargetPlatform.macOS)",
+      "result": "success"
+    },
+    {
+      "name": "provider certificate pins and duplicate port aliases retain semantics",
+      "result": "success"
+    },
+    {
+      "name": "invalid or unsupported Hysteria2 settings fail without leaking secrets",
+      "result": "success"
+    },
+    {
+      "name": "status caption double-click maximizes and restores (variant: TargetPlatform.windows)",
+      "result": "success"
+    },
+    {
+      "name": "AppDensity.compact AppTheme.dark at Size(1440.0, 900.0) fits pages and dialogs (variant: TargetPlatform.windows)",
+      "result": "success"
+    },
+    {
+      "name": "complete desktop overview fits one viewport at Size(1280.0, 720.0) (variant: TargetPlatform.macOS)",
+      "result": "success"
+    },
+    {
+      "name": "native command failure is reported and visible (variant: TargetPlatform.windows)",
+      "result": "success"
+    },
+    {
+      "name": "subscription refresh adds HY2 while preserving previous selection and encrypted secrets",
+      "result": "success"
+    },
+    {
+      "name": "manual editing preserves both encrypted secrets only when left together",
+      "result": "success"
+    },
+    {
+      "name": "complete desktop overview fits one viewport at Size(947.2, 632.8) (variant: TargetPlatform.macOS)",
+      "result": "success"
+    },
+    {
+      "name": "mobile does not create desktop controls or call window channels (variant: TargetPlatform.android)",
+      "result": "success"
+    },
+    {
+      "name": "an unresponsive child reports failed shutdown",
+      "result": "success"
+    },
+    {
+      "name": "complete desktop overview fits one viewport at Size(892.0, 632.0) (variant: TargetPlatform.macOS)",
+      "result": "success"
+    },
+    {
+      "name": "narrow desktop keeps its sidebar and window status bar (variant: TargetPlatform.windows)",
+      "result": "success"
+    },
+    {
+      "name": "late native state completes safely after controller disposal",
+      "result": "success"
+    },
+    {
+      "name": "slightly enlarged text fits the smallest desktop viewport (variant: TargetPlatform.macOS)",
+      "result": "success"
+    },
+    {
+      "name": "enlarged text keeps the complete overview reachable (variant: TargetPlatform.macOS)",
+      "result": "success"
+    },
+    {
+      "name": "CONNECT fixture preserves fragmented tunnels (half-close: false)",
+      "result": "success"
+    },
+    {
+      "name": "overview and settings fit 1100.0 logical pixels (variant: TargetPlatform.macOS)",
+      "result": "success"
+    },
+    {
+      "name": "startup waits for recovery, uses saved mode and connects only once",
+      "result": "success"
+    },
+    {
+      "name": "existing native session is restored without reconnecting a selected target",
+      "result": "success"
+    },
+    {
+      "name": "startup cannot connect after disabled",
+      "result": "success"
+    },
+    {
+      "name": "startup cannot connect after background",
+      "result": "success"
+    },
+    {
+      "name": "startup cannot connect after manual-stop",
+      "result": "success"
+    },
+    {
+      "name": "startup cannot connect after dispose",
+      "result": "success"
+    },
+    {
+      "name": "mobile notifications do not require a desktop tray and disk errors compensate native changes",
+      "result": "success"
+    },
+    {
+      "name": "unconfirmed native preference writes are compensated before returning failure",
+      "result": "success"
+    },
+    {
+      "name": "startup notification sync waits for an in-flight user preference write",
+      "result": "success"
+    },
+    {
+      "name": "mobile rejects desktop window changes and retains portable notification preferences",
+      "result": "success"
+    },
+    {
+      "name": "Android boundary rejects false readback, malformed permission and private native errors",
+      "result": "success"
+    },
+    {
+      "name": "Android expiry boundary sends only bounded counts and requires actual acceptance",
+      "result": "success"
+    },
+    {
+      "name": "AppDensity.compact AppTheme.light at Size(1440.0, 900.0) fits pages and dialogs (variant: TargetPlatform.windows)",
+      "result": "success"
+    },
+    {
+      "name": "overview and settings fit 960.0 logical pixels (variant: TargetPlatform.macOS)",
+      "result": "success"
+    },
+    {
+      "name": "CONNECT fixture preserves fragmented tunnels (half-close: true)",
+      "result": "success"
+    },
+    {
+      "name": "separates flag prefixes without changing the source name",
+      "result": "success"
+    },
+    {
+      "name": "supports enclosed, spaced and trailing flags",
+      "result": "success"
+    },
+    {
+      "name": "explicit flag wins over other regions mentioned in a name",
+      "result": "success"
+    },
+    {
+      "name": "uses explicit country and city labels with or without flags",
+      "result": "success"
+    },
+    {
+      "name": "keeps ordinary names and does not guess from partial country codes",
+      "result": "success"
+    },
+    {
+      "name": "overview and settings fit 393.0 logical pixels (variant: TargetPlatform.android)",
+      "result": "success"
+    },
+    {
+      "name": "overview and settings fit 320.0 logical pixels (variant: TargetPlatform.android)",
+      "result": "success"
+    },
+    {
+      "name": "denied notification authorization leaves the preference off and explains how to retry",
+      "result": "success"
+    },
+    {
+      "name": "AppDensity.standard AppTheme.dark at Size(1440.0, 900.0) fits pages and dialogs (variant: TargetPlatform.windows)",
+      "result": "success"
+    },
+    {
+      "name": "granted notification and auto-connect switches persist and remain independent from tray settings",
+      "result": "success"
+    },
+    {
+      "name": "disabled Android channel cannot be mistaken for enabled delivery",
+      "result": "success"
+    },
+    {
+      "name": "mobile notification rows remain usable at 320 wide and large text",
+      "result": "success"
+    },
+    {
+      "name": "batch limits concurrency, deduplicates and omits hidden nodes",
+      "result": "success"
+    },
+    {
+      "name": "cancel keeps completed results and ignores late success before the next batch",
+      "result": "success"
+    },
+    {
+      "name": "cleanup failure keeps cancellation available and prevents a new batch",
+      "result": "success"
+    },
+    {
+      "name": "wrong revision and exceptions become failures rather than stale latency",
+      "result": "success"
+    },
+    {
+      "name": "malformed results and invalid batches are rejected",
+      "result": "success"
+    },
+    {
+      "name": "v4 migration keeps nodes, selection and encrypted credentials on reopen",
+      "result": "success"
+    },
+    {
+      "name": "subscription rename/reorder and concurrent update preserve local choices",
+      "result": "success"
+    },
+    {
+      "name": "hidden nodes cannot be selected directly but existing chain references survive",
+      "result": "success"
+    },
+    {
+      "name": "removed subscription identities drop overrides without transferring them to replacements",
+      "result": "success"
+    },
+    {
+      "name": "invalid alias and stale identities never create orphan rows",
+      "result": "success"
+    },
+    {
+      "name": "AppDensity.standard AppTheme.light at Size(1440.0, 900.0) fits pages and dialogs (variant: TargetPlatform.windows)",
+      "result": "success"
+    },
+    {
+      "name": "a mobile notification action routes through the app-owned router",
+      "result": "success"
+    },
+    {
+      "name": "node and selection persist across database reopen; delete clears selection",
+      "result": "success"
+    },
+    {
+      "name": "migration from v1 preserves theme and adds node storage",
+      "result": "success"
+    },
+    {
+      "name": "edit preserves encrypted credentials and rejects stale revisions",
+      "result": "success"
+    },
+    {
+      "name": "invalid input and protection failure never insert a node",
+      "result": "success"
+    },
+    {
+      "name": "protocol changes require new secrets and persist VLESS TLS transport options",
+      "result": "success"
+    },
+    {
+      "name": "traffic totals count deltas once across reconnects and day rollover",
+      "result": "success"
+    },
+    {
+      "name": "TargetPlatform.windows separates regions and preserves searchable names (variant: TargetPlatform.windows)",
+      "result": "success"
+    },
+    {
+      "name": "AppDensity.compact AppTheme.dark at Size(960.0, 640.0) fits pages and dialogs (variant: TargetPlatform.windows)",
+      "result": "success"
+    },
+    {
+      "name": "TargetPlatform.android separates regions and preserves searchable names (variant: TargetPlatform.android)",
+      "result": "success"
+    },
+    {
+      "name": "rules normalize domain, IPv4 and IPv6 at the boundary",
+      "result": "success"
+    },
+    {
+      "name": "unique enabled final fallback and bounded rule/target count are enforced",
+      "result": "success"
+    },
+    {
+      "name": "AppDensity.compact AppTheme.light at Size(960.0, 640.0) fits pages and dialogs (variant: TargetPlatform.windows)",
+      "result": "success"
+    },
+    {
+      "name": "rules persist, normalize and reject stale or failed writes without replacing data",
+      "result": "success"
+    },
+    {
+      "name": "references are checked after async validation and invalid writes roll back",
+      "result": "success"
+    },
+    {
+      "name": "corrupt stored rules surface an error instead of silently resetting routing",
+      "result": "success"
+    },
+    {
+      "name": "resolver freezes group memory and falls back deterministically when it disappears",
+      "result": "success"
+    },
+    {
+      "name": "resolver refuses stale default nodes and removed rule targets",
+      "result": "success"
+    },
+    {
+      "name": "rule moves preserve absolute order and cannot move or remove fallback",
+      "result": "success"
+    },
+    {
+      "name": "cancelling while routing resolves never starts a late core",
+      "result": "success"
+    },
+    {
+      "name": "oversize UTF8 requests fail before opening or corrupting a host channel",
+      "result": "success"
+    },
+    {
+      "name": "TargetPlatform.windows Size(960.0, 640.0) favorites/alias/hide/restore and batch probe never connect (variant: TargetPlatform.windows)",
+      "result": "success"
+    },
+    {
+      "name": "AppDensity.standard AppTheme.dark at Size(960.0, 640.0) fits pages and dialogs (variant: TargetPlatform.windows)",
+      "result": "success"
+    },
+    {
+      "name": "TargetPlatform.windows retains its layout family regardless of width (variant: TargetPlatform.windows)",
+      "result": "success"
+    },
+    {
+      "name": "service installation prevents a concurrent connection attempt",
+      "result": "success"
+    },
+    {
+      "name": "restored Android session can restart its original encrypted request",
+      "result": "success"
+    },
+    {
+      "name": "Android adopts its existing service and enforces system tunnel capture",
+      "result": "success"
+    },
+    {
+      "name": "Android refuses a restored service with an invalid capture receipt",
+      "result": "success"
+    },
+    {
+      "name": "TUN selection, reconnect and settings restart retain the active target",
+      "result": "success"
+    },
+    {
+      "name": "declining TUN restores the previous working session without changing its snapshot",
+      "result": "success"
+    },
+    {
+      "name": "cancelling a pending TUN reconnect cannot revive or roll back behind the user",
+      "result": "success"
+    },
+    {
+      "name": "restart retains target and active mode while applying saved settings",
+      "result": "success"
+    },
+    {
+      "name": "cancelled restart cannot revive a late successful session",
+      "result": "success"
+    },
+    {
+      "name": "telemetry samples remain bounded and survive a mode change",
+      "result": "success"
+    },
+    {
+      "name": "cancellation ignores a late successful connection and performs cleanup",
+      "result": "success"
+    },
+    {
+      "name": "rejected live mode keeps the confirmed selection",
+      "result": "success"
+    },
+    {
+      "name": "statistics persistence failure cannot prevent disconnect",
+      "result": "success"
+    },
+    {
+      "name": "repeated snapshots do not fabricate latency history",
+      "result": "success"
+    },
+    {
+      "name": "late mode and capture acknowledgements cannot revive a disconnected session",
+      "result": "success"
+    },
+    {
+      "name": "statistics failure reports a warning and keeps live observations",
+      "result": "success"
+    },
+    {
+      "name": "subscription paste only fills a draft, persists auto-update choice and ignores a late clipboard reply",
+      "result": "success"
+    },
+    {
+      "name": "TargetPlatform.macOS retains its layout family regardless of width (variant: TargetPlatform.macOS)",
+      "result": "success"
+    },
+    {
+      "name": "TargetPlatform.linux retains its layout family regardless of width (variant: TargetPlatform.linux)",
+      "result": "success"
+    },
+    {
+      "name": "TargetPlatform.android retains its layout family regardless of width (variant: TargetPlatform.android)",
+      "result": "success"
+    },
+    {
+      "name": "an unconfirmed core retains identity for safe disconnect",
+      "result": "success"
+    },
+    {
+      "name": "TUN needs a typed state and an observed interface receipt",
+      "result": "success"
+    },
+    {
+      "name": "unsupported modes and phases cannot become confirmed connections",
+      "result": "success"
+    },
+    {
+      "name": "idle with a recovery error remains actionable failure",
+      "result": "success"
+    },
+    {
+      "name": "AppDensity.standard AppTheme.light at Size(960.0, 640.0) fits pages and dialogs (variant: TargetPlatform.windows)",
+      "result": "success"
+    },
+    {
+      "name": "TargetPlatform.iOS retains its layout family regardless of width (variant: TargetPlatform.iOS)",
+      "result": "success"
+    },
+    {
+      "name": "TargetPlatform.windows Size(640.0, 640.0) favorites/alias/hide/restore and batch probe never connect (variant: TargetPlatform.windows)",
+      "result": "success"
+    },
+    {
+      "name": "filters and adding a normalized rule use real controller commands (variant: TargetPlatform.windows)",
+      "result": "success"
+    },
+    {
+      "name": "TargetPlatform.android keeps node search while rotating (variant: TargetPlatform.android)",
+      "result": "success"
+    },
+    {
+      "name": "VMess editor validates and saves protocol-specific options (variant: TargetPlatform.windows)",
+      "result": "success"
+    },
+    {
+      "name": "failed core validation leaves draft open and saved rules unchanged (variant: TargetPlatform.windows)",
+      "result": "success"
+    },
+    {
+      "name": "TargetPlatform.iOS keeps node search while rotating (variant: TargetPlatform.iOS)",
+      "result": "success"
+    },
+    {
+      "name": "AppDensity.compact AppTheme.dark at Size(393.0, 852.0) fits pages and dialogs (variant: TargetPlatform.iOS)",
+      "result": "success"
+    },
+    {
+      "name": "mobile navigation uses the shared connection state (variant: TargetPlatform.android)",
+      "result": "success"
+    },
+    {
+      "name": "TargetPlatform.android Size(393.0, 852.0) favorites/alias/hide/restore and batch probe never connect (variant: TargetPlatform.android)",
+      "result": "success"
+    },
+    {
+      "name": "rule menu moves and disables without changing the final fallback (variant: TargetPlatform.windows)",
+      "result": "success"
+    },
+    {
+      "name": "TUIC editor validates and saves protocol-specific options (variant: TargetPlatform.android)",
+      "result": "success"
+    },
+    {
+      "name": "rules and modal fit TargetPlatform.windows with large text (variant: TargetPlatform.windows)",
+      "result": "success"
+    },
+    {
+      "name": "rules and modal fit TargetPlatform.android with large text (variant: TargetPlatform.android)",
+      "result": "success"
+    },
+    {
+      "name": "AppDensity.compact AppTheme.light at Size(393.0, 852.0) fits pages and dialogs (variant: TargetPlatform.iOS)",
+      "result": "success"
+    },
+    {
+      "name": "TargetPlatform.android Size(320.0, 740.0) favorites/alias/hide/restore and batch probe never connect (variant: TargetPlatform.android)",
+      "result": "success"
+    },
+    {
+      "name": "mobile heading keeps auxiliary navigation without a brand bar (variant: TargetPlatform.android)",
+      "result": "success"
+    },
+    {
+      "name": "sing-box JSON imports all eight protocols with exact transport and authentication options",
+      "result": "success"
+    },
+    {
+      "name": "sing-box configuration-only outbounds and remote settings require explicit review by original position",
+      "result": "success"
+    },
+    {
+      "name": "unknown nested fields, dialer changes and invalid JSON types cannot be silently translated",
+      "result": "success"
+    },
+    {
+      "name": "ambiguous formats are rejected and large outbound lists retain the same import bound",
+      "result": "success"
+    },
+    {
+      "name": "AppDensity.standard AppTheme.dark at Size(393.0, 852.0) fits pages and dialogs (variant: TargetPlatform.iOS)",
+      "result": "success"
+    },
+    {
+      "name": "per-subscription operations reject overlap and cancellation stops commit",
+      "result": "success"
+    },
+    {
+      "name": "auto update checks due groups once, respects disabled subscriptions and resumes overdue work",
+      "result": "success"
+    },
+    {
+      "name": "expiry boundaries, unknown metadata, manual groups and monotonic stages",
+      "result": "success"
+    },
+    {
+      "name": "old general settings opt out and malformed reminder flags are rejected",
+      "result": "success"
+    },
+    {
+      "name": "density selector applies spacing after save and retains it on failure (variant: TargetPlatform.windows)",
+      "result": "success"
+    },
+    {
+      "name": "aggregates private subscriptions once per term and renews after expiry",
+      "result": "success"
+    },
+    {
+      "name": "disabled reminders and missing expiry never notify or create records",
+      "result": "success"
+    },
+    {
+      "name": "native refusal and unready tray retain eligibility and allow retry",
+      "result": "success"
+    },
+    {
+      "name": "negotiates Meta-compatible node lists instead of provider placeholders",
+      "result": "success"
+    },
+    {
+      "name": "real HTTP fetch handles redirects and subscription response headers",
+      "result": "success"
+    },
+    {
+      "name": "AppDensity.standard AppTheme.light at Size(393.0, 852.0) fits pages and dialogs (variant: TargetPlatform.iOS)",
+      "result": "success"
+    },
+    {
+      "name": "local proxy endpoint is pinned for the download and its redirects",
+      "result": "success"
+    },
+    {
+      "name": "disable during native inspection cancels stale delivery",
+      "result": "success"
+    },
+    {
+      "name": "renew during native inspection cancels stale delivery",
+      "result": "success"
+    },
+    {
+      "name": "delete during native inspection cancels stale delivery",
+      "result": "success"
+    },
+    {
+      "name": "a notice mixed with invalid nodes does not hide the real failures",
+      "result": "success"
+    },
+    {
+      "name": "URI parameters cannot be silently lost or change TLS and transport meaning",
+      "result": "success"
+    },
+    {
+      "name": "documents without any usable nodes retain safe individual diagnostics",
+      "result": "success"
+    },
+    {
+      "name": "incompatible Clash fields and remote configuration produce safe positioned diagnostics",
+      "result": "success"
+    },
+    {
+      "name": "pause during native inspection cancels stale delivery",
+      "result": "success"
+    },
+    {
+      "name": "provider client notices do not become selectable loopback proxies",
+      "result": "success"
+    },
+    {
+      "name": "usage placeholders are skipped while real endpoints stay available",
+      "result": "success"
+    },
+    {
+      "name": "disabling tray also disables tray close and notifications (variant: TargetPlatform.windows)",
+      "result": "success"
+    },
+    {
+      "name": "Clash YAML imports all supported protocols and preserves public transport settings",
+      "result": "success"
+    },
+    {
+      "name": "JSON proxies, unknown protocols and connection-changing extensions are explicit skips",
+      "result": "success"
+    },
+    {
+      "name": "accepted notice is not resent when actual SQLite receipt write fails",
+      "result": "success"
+    },
+    {
+      "name": "SIP002 and legacy SS links, encoded URI lists and native VLESS/Trojan links",
+      "result": "success"
+    },
+    {
+      "name": "Reality and Vision options round trip with validated keys",
+      "result": "success"
+    },
+    {
+      "name": "close awaits an accepted native call and persists it before releasing",
+      "result": "success"
+    },
+    {
+      "name": "missing, malformed and zero metadata never fabricates expiry or capacity",
+      "result": "success"
+    },
+    {
+      "name": "close awaits every pending stream cancellation and prevents resume",
+      "result": "success"
+    },
+    {
+      "name": "invalid, empty, unsupported-only and oversized documents fail without echoing payload",
+      "result": "success"
+    },
+    {
+      "name": "receipt storage prunes deleted groups and refuses corrupt metadata",
+      "result": "success"
+    },
+    {
+      "name": "expiry preference confirms saving and preserves its value on failure (variant: TargetPlatform.windows)",
+      "result": "success"
+    },
+    {
+      "name": "partial import writes nothing until explicit acceptance and never refetches",
+      "result": "success"
+    },
+    {
+      "name": "a preview freezes the exact nodes, transport lists and diagnostics",
+      "result": "success"
+    },
+    {
+      "name": "cancelled, expired, future-dated or foreign previews cannot write secrets or rows",
+      "result": "success"
+    },
+    {
+      "name": "duplicate imported after preview is rejected before any new secret is protected",
+      "result": "success"
+    },
+    {
+      "name": "partial refresh keeps nodes, credentials, overrides, selection and successful metadata until acceptance",
+      "result": "success"
+    },
+    {
+      "name": "renamed, successfully updated and deleted groups reject stale previews",
+      "result": "success"
+    },
+    {
+      "name": "cancellation while protecting accepted nodes rolls back the complete import",
+      "result": "success"
+    },
+    {
+      "name": "only one concurrent acceptance can apply a preview",
+      "result": "success"
+    },
+    {
+      "name": "provider notices do not require confirmation; legacy skip counts still do",
+      "result": "success"
+    },
+    {
+      "name": "expiry notification action uses the app router and detaches on dispose (variant: TargetPlatform.windows)",
+      "result": "success"
+    },
+    {
+      "name": "automatic maintenance keeps old data without repeatedly fetching partial results",
+      "result": "success"
+    },
+    {
+      "name": "controller suspend cancels acceptance and waits for its work",
+      "result": "success"
+    },
+    {
+      "name": "AppDensity.compact AppTheme.dark at Size(320.0, 640.0) fits pages and dialogs (variant: TargetPlatform.android)",
+      "result": "success"
+    },
+    {
+      "name": "schema 6 migrates safely to 7 preserving groups, credentials, overrides and preferences on disk",
+      "result": "success"
+    },
+    {
+      "name": "startup UI confirms the OS value and displays rejected writes (variant: TargetPlatform.windows)",
+      "result": "success"
+    },
+    {
+      "name": "production dependencies resolve each fetch without rebuilding repositories or previews",
+      "result": "success"
+    },
+    {
+      "name": "changing and incomplete sessions refuse to fetch instead of silently going direct",
+      "result": "success"
+    },
+    {
+      "name": "network form validates input and preserves settings on core rejection (variant: TargetPlatform.windows)",
+      "result": "success"
+    },
+    {
+      "name": "AppDensity.compact AppTheme.light at Size(320.0, 640.0) fits pages and dialogs (variant: TargetPlatform.android)",
+      "result": "success"
+    },
+    {
+      "name": "DNS test cancellation ignores late results and supports retry (variant: TargetPlatform.windows)",
+      "result": "success"
+    },
+    {
+      "name": "a failed local proxy never falls back to the reachable direct origin",
+      "result": "success"
+    },
+    {
+      "name": "cancelled and invalid-route requests open no subscription connection",
+      "result": "success"
+    },
+    {
+      "name": "status errors, large responses and redirect loops are bounded and redacted",
+      "result": "success"
+    },
+    {
+      "name": "timeout and cancellation close subscription requests (proxy: false)",
+      "result": "success"
+    },
+    {
+      "name": "timeout and cancellation close subscription requests (proxy: true)",
+      "result": "success"
+    },
+    {
+      "name": "AppDensity.standard AppTheme.dark at Size(320.0, 640.0) fits pages and dialogs (variant: TargetPlatform.android)",
+      "result": "success"
+    },
+    {
+      "name": "advanced editor validates, confirms, exports and restores previous config (variant: TargetPlatform.windows)",
+      "result": "success"
+    },
+    {
+      "name": "overlapping requests persist in order, including the initial theme",
+      "result": "success"
+    },
+    {
+      "name": "theme changes only after a successful persistent write",
+      "result": "success"
+    },
+    {
+      "name": "a failed write does not block a later queued request",
+      "result": "success"
+    },
+    {
+      "name": "disposal prevents late state updates and queued writes",
+      "result": "success"
+    },
+    {
+      "name": "AppDensity.standard AppTheme.light at Size(320.0, 640.0) fits pages and dialogs (variant: TargetPlatform.android)",
+      "result": "success"
+    },
+    {
+      "name": "leaving advanced validation cancels diagnostics and ignores late output (variant: TargetPlatform.windows)",
+      "result": "success"
+    },
+    {
+      "name": "editing during validation cancels the stale check and permits retry (variant: TargetPlatform.windows)",
+      "result": "success"
+    },
+    {
+      "name": "advanced mobile editor fits and returns to core at Size(393.0, 852.0) (variant: TargetPlatform.android)",
+      "result": "success"
+    },
+    {
+      "name": "mobile details return in the upper left and fit Size(393.0, 852.0) (variant: TargetPlatform.android)",
+      "result": "success"
+    },
+    {
+      "name": "/connections at Size(960.0, 640.0) dark fits with working filters (variant: TargetPlatform.macOS)",
+      "result": "success"
+    },
+    {
+      "name": "session checkpoints survive reopen and interleaved late observations",
+      "result": "success"
+    },
+    {
+      "name": "old detailed buckets expire while daily history stays available",
+      "result": "success"
+    },
+    {
+      "name": "recorded zero buckets remain distinct from absent intervals",
+      "result": "success"
+    },
+    {
+      "name": "legacy totals migrate once and earlier days survive restart and rollover",
+      "result": "success"
+    },
+    {
+      "name": "advanced mobile editor fits and returns to core at Size(320.0, 640.0) (variant: TargetPlatform.android)",
+      "result": "success"
+    },
+    {
+      "name": "late and repeated samples do not double count, invalid values do not write",
+      "result": "success"
+    },
+    {
+      "name": "reports use calendar weeks and months and exclude future records",
+      "result": "success"
+    },
+    {
+      "name": "schema 5 and legacy checkpoint migrate without inventing history or attribution",
+      "result": "success"
+    },
+    {
+      "name": "period queries exclude other dates and invalid attribution rolls back",
+      "result": "success"
+    },
+    {
+      "name": "mode and target changes permanently invalidate aggregate attribution for that session",
+      "result": "success"
+    },
+    {
+      "name": "subscription review Size(1440.0, 900.0) dark standard: edit URL, expand, accept and update without connection (variant: TargetPlatform.windows)",
+      "result": "success"
+    },
+    {
+      "name": "CSV contains exact displayed period and neutralizes untrusted names",
+      "result": "success"
+    },
+    {
+      "name": "/logs at Size(960.0, 640.0) dark fits with working filters (variant: TargetPlatform.macOS)",
+      "result": "success"
+    },
+    {
+      "name": "mobile details return in the upper left and fit Size(320.0, 640.0) (variant: TargetPlatform.android)",
+      "result": "success"
+    },
+    {
+      "name": "TargetPlatform.windows Size(1040.0, 720.0) imports subscription in a URL-only dialog and selects group without connecting (variant: TargetPlatform.windows)",
+      "result": "success"
+    },
+    {
+      "name": "appearance preferences actually scale text and disable transitions (variant: TargetPlatform.windows)",
+      "result": "success"
+    },
+    {
+      "name": "/connections at Size(960.0, 640.0) light fits with working filters (variant: TargetPlatform.macOS)",
+      "result": "success"
+    },
+    {
+      "name": "/logs at Size(960.0, 640.0) light fits with working filters (variant: TargetPlatform.macOS)",
+      "result": "success"
+    },
+    {
+      "name": "TargetPlatform.windows Size(640.0, 640.0) imports subscription in a URL-only dialog and selects group without connecting (variant: TargetPlatform.windows)",
+      "result": "success"
+    },
+    {
+      "name": "/connections at Size(1440.0, 900.0) dark fits with working filters (variant: TargetPlatform.macOS)",
+      "result": "success"
+    },
+    {
+      "name": "subscription review Size(1440.0, 900.0) light standard: edit URL, expand, accept and update without connection (variant: TargetPlatform.windows)",
+      "result": "success"
+    },
+    {
+      "name": "/logs at Size(1440.0, 900.0) dark fits with working filters (variant: TargetPlatform.macOS)",
+      "result": "success"
+    },
+    {
+      "name": "exit waits for operation and read-back; refused exit can resume",
+      "result": "success"
+    },
+    {
+      "name": "does not authorize while an active session needs restoration",
+      "result": "success"
+    },
+    {
+      "name": "install only succeeds after confirmed read-back",
+      "result": "success"
+    },
+    {
+      "name": "uninstall only succeeds after confirmed read-back",
+      "result": "success"
+    },
+    {
+      "name": "recover only succeeds after confirmed read-back",
+      "result": "success"
+    },
+    {
+      "name": "a successful reply with unchanged files is not success",
+      "result": "success"
+    },
+    {
+      "name": "cancel acknowledgement keeps the lease until real completion",
+      "result": "success"
+    },
+    {
+      "name": "/connections at Size(1440.0, 900.0) light fits with working filters (variant: TargetPlatform.macOS)",
+      "result": "success"
+    },
+    {
+      "name": "failed read-back cannot reuse a stale ready state",
+      "result": "success"
+    },
+    {
+      "name": "transport validates state and fixed completion/cancel acknowledgements",
+      "result": "success"
+    },
+    {
+      "name": "TargetPlatform.android Size(393.0, 852.0) imports subscription in a URL-only dialog and selects group without connecting (variant: TargetPlatform.android)",
+      "result": "success"
+    },
+    {
+      "name": "/logs at Size(1440.0, 900.0) light fits with working filters (variant: TargetPlatform.macOS)",
+      "result": "success"
+    },
+    {
+      "name": "Linux exit waits for the root operation; refused: false (variant: TargetPlatform.linux)",
+      "result": "success"
+    },
+    {
+      "name": "Linux exit waits for the root operation; refused: true (variant: TargetPlatform.linux)",
+      "result": "success"
+    },
+    {
+      "name": "TargetPlatform.linux closes safely when a saved tray adapter is absent (variant: TargetPlatform.linux)",
+      "result": "success"
+    },
+    {
+      "name": "TargetPlatform.android Size(320.0, 740.0) imports subscription in a URL-only dialog and selects group without connecting (variant: TargetPlatform.android)",
+      "result": "success"
+    },
+    {
+      "name": "TargetPlatform.macOS closes safely when a saved tray adapter is absent (variant: TargetPlatform.macOS)",
+      "result": "success"
+    },
+    {
+      "name": "connection pause, export and close operate on the visible snapshot (variant: TargetPlatform.macOS)",
+      "result": "success"
+    },
+    {
+      "name": "subscription review Size(960.0, 640.0) dark standard: edit URL, expand, accept and update without connection (variant: TargetPlatform.windows)",
+      "result": "success"
+    },
+    {
+      "name": "log pause retains captured events, clear needs confirmation and export is real content (variant: TargetPlatform.macOS)",
+      "result": "success"
+    },
+    {
+      "name": "Hysteria2 editor exposes QUIC credentials without TCP or TLS fingerprint controls (variant: TargetPlatform.android)",
+      "result": "success"
+    },
+    {
+      "name": "other platforms do not expose Linux service controls",
+      "result": "success"
+    },
+    {
+      "name": "traffic period, chart and frozen CSV fit Size(960.0, 640.0) at 1.0 (variant: TargetPlatform.windows)",
+      "result": "success"
+    },
+    {
+      "name": "manual editor exposes protocol-specific fields without losing the shared layout (variant: TargetPlatform.android)",
+      "result": "success"
+    },
+    {
+      "name": "subscription review Size(960.0, 640.0) light standard: edit URL, expand, accept and update without connection (variant: TargetPlatform.windows)",
+      "result": "success"
+    },
+    {
+      "name": "unknown service state does not claim the service is stopped",
+      "result": "success"
+    },
+    {
+      "name": "traffic period, chart and frozen CSV fit Size(393.0, 852.0) at 1.0 (variant: TargetPlatform.android)",
+      "result": "success"
+    },
+    {
+      "name": "service card dark at 320.0 handles large text",
+      "result": "success"
+    },
+    {
+      "name": "VMess Base64 JSON preserves AEAD, TLS, transport and optional flags",
+      "result": "success"
+    },
+    {
+      "name": "TUIC v5 URI retains separately protected UUID and encoded password",
+      "result": "success"
+    },
+    {
+      "name": "service card dark at 640.0 handles large text",
+      "result": "success"
+    },
+    {
+      "name": "Clash YAML imports all eight protocols including VMess and TUIC v5",
+      "result": "success"
+    },
+    {
+      "name": "VMess malformed and unsupported links reject without echoing secrets",
+      "result": "success"
+    },
+    {
+      "name": "TUIC v4, conflicting UDP/TLS flags and invalid extensions reject",
+      "result": "success"
+    },
+    {
+      "name": "new options are backwards compatible while rejecting cross-protocol contamination",
+      "result": "success"
+    },
+    {
+      "name": "traffic period, chart and frozen CSV fit Size(320.0, 740.0) at 1.3 (variant: TargetPlatform.android)",
+      "result": "success"
+    },
+    {
+      "name": "service card light at 320.0 handles large text",
+      "result": "success"
+    },
+    {
+      "name": "service card light at 640.0 handles large text",
+      "result": "success"
+    },
+    {
+      "name": "TUIC persistence keeps UUID/password encrypted; blank edits preserve credentials",
+      "result": "success"
+    },
+    {
+      "name": "subscription refresh retains VMess/TUIC IDs and selection when protocol options are unchanged",
+      "result": "success"
+    },
+    {
+      "name": "subscription review Size(393.0, 852.0) dark standard: edit URL, expand, accept and update without connection (variant: TargetPlatform.android)",
+      "result": "success"
+    },
+    {
+      "name": "mobile telemetry controls and log follow work at Size(393.0, 852.0) AppDensity.compact (variant: TargetPlatform.android)",
+      "result": "success"
+    },
+    {
+      "name": "session sampling continues on nodes/traffic and pauses with app lifecycle (variant: TargetPlatform.windows)",
+      "result": "success"
+    },
+    {
+      "name": "subscription review Size(393.0, 852.0) light standard: edit URL, expand, accept and update without connection (variant: TargetPlatform.android)",
+      "result": "success"
+    },
+    {
+      "name": "populated overview and traffic fit Size(1440.0, 900.0) in AppTheme.dark (variant: TargetPlatform.windows)",
+      "result": "success"
+    },
+    {
+      "name": "mobile telemetry controls and log follow work at Size(320.0, 640.0) AppDensity.standard (variant: TargetPlatform.android)",
+      "result": "success"
+    },
+    {
+      "name": "subscription review Size(320.0, 640.0) dark extraLarge: edit URL, expand, accept and update without connection (variant: TargetPlatform.android)",
+      "result": "success"
+    },
+    {
+      "name": "populated overview and traffic fit Size(1440.0, 900.0) in AppTheme.light (variant: TargetPlatform.windows)",
+      "result": "success"
+    },
+    {
+      "name": "subscription review Size(320.0, 640.0) light extraLarge: edit URL, expand, accept and update without connection (variant: TargetPlatform.android)",
+      "result": "success"
+    },
+    {
+      "name": "populated overview and traffic fit Size(960.0, 640.0) in AppTheme.dark (variant: TargetPlatform.windows)",
+      "result": "success"
+    },
+    {
+      "name": "populated overview and traffic fit Size(960.0, 640.0) in AppTheme.light (variant: TargetPlatform.windows)",
+      "result": "success"
+    },
+    {
+      "name": "populated overview and traffic fit Size(892.0, 632.0) in AppTheme.dark (variant: TargetPlatform.windows)",
+      "result": "success"
+    },
+    {
+      "name": "populated overview and traffic fit Size(892.0, 632.0) in AppTheme.light (variant: TargetPlatform.windows)",
+      "result": "success"
+    },
+    {
+      "name": "populated mobile lists and traffic fit Size(393.0, 852.0) (variant: TargetPlatform.android)",
+      "result": "success"
+    },
+    {
+      "name": "populated mobile lists and traffic fit Size(320.0, 640.0) (variant: TargetPlatform.android)",
+      "result": "success"
+    },
+    {
+      "name": "mobile overview fits including system safe areas: TargetPlatform.android (variant: TargetPlatform.android)",
+      "result": "success"
+    },
+    {
+      "name": "mobile overview fits including system safe areas: TargetPlatform.iOS (variant: TargetPlatform.iOS)",
+      "result": "success"
+    },
+    {
+      "name": "long IPv6 and large text remain readable on narrow mobile (variant: TargetPlatform.android)",
+      "result": "success"
+    }
+  ]
+}

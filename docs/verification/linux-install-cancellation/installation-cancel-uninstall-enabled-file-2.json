@@ -1,0 +1,86 @@
+{
+  "scenario": "uninstall-enabled",
+  "checkpoint": "file-2",
+  "committedBeforeCancel": false,
+  "before": {
+    "version": 1,
+    "files": [
+      {
+        "sha256": "d0c597c02a1670679272bde8f04a57ad3e3f56e32a986347a5b9d280920fccd7",
+        "size": 10688317,
+        "mode": 493
+      },
+      {
+        "sha256": "640e5293d90b94c71318031284e65cf8121d99ee9c06482f021ed77c9f3fa96d",
+        "size": 27218068,
+        "mode": 493
+      },
+      {
+        "sha256": "ce56a26f0b9de0bc8a359075da476d32119771bc3ae0d552879fc376e77c97da",
+        "size": 249,
+        "mode": 420
+      },
+      {
+        "sha256": "f681f247d252b0b53cc639dc6186e850de8690a6c99fc55f66a7da418973c008",
+        "size": 388,
+        "mode": 420
+      },
+      {
+        "sha256": "6d64994e94116d412cb75ef1d152acc0ddf95ba35036d2075a6f411b989a4c24",
+        "size": 787,
+        "mode": 420
+      }
+    ]
+  },
+  "filesAtCancel": [
+    null,
+    null,
+    null,
+    {
+      "sha256": "f681f247d252b0b53cc639dc6186e850de8690a6c99fc55f66a7da418973c008",
+      "size": 388,
+      "mode": 420
+    },
+    {
+      "sha256": "6d64994e94116d412cb75ef1d152acc0ddf95ba35036d2075a6f411b989a4c24",
+      "size": 787,
+      "mode": 420
+    }
+  ],
+  "after": {
+    "version": 1,
+    "files": [
+      {
+        "sha256": "d0c597c02a1670679272bde8f04a57ad3e3f56e32a986347a5b9d280920fccd7",
+        "size": 10688317,
+        "mode": 493
+      },
+      {
+        "sha256": "640e5293d90b94c71318031284e65cf8121d99ee9c06482f021ed77c9f3fa96d",
+        "size": 27218068,
+        "mode": 493
+      },
+      {
+        "sha256": "ce56a26f0b9de0bc8a359075da476d32119771bc3ae0d552879fc376e77c97da",
+        "size": 249,
+        "mode": 420
+      },
+      {
+        "sha256": "f681f247d252b0b53cc639dc6186e850de8690a6c99fc55f66a7da418973c008",
+        "size": 388,
+        "mode": 420
+      },
+      {
+        "sha256": "6d64994e94116d412cb75ef1d152acc0ddf95ba35036d2075a6f411b989a4c24",
+        "size": 787,
+        "mode": 420
+      }
+    ]
+  },
+  "serviceAfter": {
+    "present": true,
+    "enabled": true,
+    "active": true
+  },
+  "returnedCancellation": true
+}

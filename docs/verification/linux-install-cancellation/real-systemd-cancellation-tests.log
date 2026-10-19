@@ -1,0 +1,18 @@
+=== RUN   TestRealSystemdCancellationAtDurableBoundaries
+=== RUN   TestRealSystemdCancellationAtDurableBoundaries/install/file-0
+    cancellation_systemd_linux_test.go:180: actual files changed before file-0 cancellation; original error, manifest and real socket state confirmed
+=== RUN   TestRealSystemdCancellationAtDurableBoundaries/install/manifest
+    cancellation_systemd_linux_test.go:180: actual files changed before manifest cancellation; original error, manifest and real socket state confirmed
+=== RUN   TestRealSystemdCancellationAtDurableBoundaries/upgrade-disabled/file-1
+    cancellation_systemd_linux_test.go:180: actual files changed before file-1 cancellation; original error, manifest and real socket state confirmed
+=== RUN   TestRealSystemdCancellationAtDurableBoundaries/uninstall-enabled/file-2
+    cancellation_systemd_linux_test.go:180: actual files changed before file-2 cancellation; original error, manifest and real socket state confirmed
+=== RUN   TestRealSystemdCancellationAtDurableBoundaries/upgrade-disabled/committed
+    cancellation_systemd_linux_test.go:180: actual files changed before committed cancellation; original error, manifest and real socket state confirmed
+--- PASS: TestRealSystemdCancellationAtDurableBoundaries (244.39s)
+    --- PASS: TestRealSystemdCancellationAtDurableBoundaries/install/file-0 (22.55s)
+    --- PASS: TestRealSystemdCancellationAtDurableBoundaries/install/manifest (35.15s)
+    --- PASS: TestRealSystemdCancellationAtDurableBoundaries/upgrade-disabled/file-1 (68.16s)
+    --- PASS: TestRealSystemdCancellationAtDurableBoundaries/uninstall-enabled/file-2 (57.07s)
+    --- PASS: TestRealSystemdCancellationAtDurableBoundaries/upgrade-disabled/committed (60.79s)
+PASS

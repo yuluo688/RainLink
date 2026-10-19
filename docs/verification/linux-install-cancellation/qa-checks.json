@@ -1,0 +1,16 @@
+{
+  "bashSyntax": {
+    "toolResultChunk": "10ed48",
+    "exitCode": 0,
+    "runner": "Git Bash parser --noprofile --norc -n",
+    "scripts": [
+      "tools/verify_linux_systemd_vm.sh",
+      "tools/fixtures/linux_systemd_management_guest.sh"
+    ]
+  },
+  "downloadCheck": {
+    "toolResultChunk": "69f5f0",
+    "exitCode": 0,
+    "scope": "exact inline Python from generic QA runner; cached image and both locked packages checked; full generic Linux runner not executed"
+  }
+}

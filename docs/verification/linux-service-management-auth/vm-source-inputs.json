@@ -1,0 +1,9 @@
+{
+  "native/host/internal/linuxmanage/elevation_linux.go": "39196e9280eae0fa308c7f234f36bf704f2a206944e1086ad320fba94f2d88aa",
+  "native/host/internal/linuxmanage/elevation_linux_test.go": "276cad3430d82734da51597c1e77248a3d6c5852c1b397b048ad8cd10352f780",
+  "native/host/internal/linuxmanage/authentication_linux_test.go": "99e1e48a4667b2b3c03fac4898cf3b25bdb489f1fdbc87e5d523eb8786c66050",
+  "tools/fixtures/linux_polkit_agent.py": "54555c063d07944a516349d7327c69994293862f4687d6758fa036b124ff7e04",
+  "tools/fixtures/linux_systemd_management_guest.sh": "68b6d139b5b8528b14308a3a622a16cb6d43f46151be11e719f5ffc6ec14e925",
+  "tools/verify_linux_systemd_vm.sh": "9b365b6662b436de5383a3001fb4df56de77451a3d28b3ae2723dd5a689972ca",
+  "tools/linux_systemd_qa.lock.json": "f8958fae3a09cc85dc11e5206d1b389d950da4e278159d354db32a0e328db1eb"
+}

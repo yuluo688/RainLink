@@ -1,0 +1,28 @@
+{
+  "atUtc": "2026-10-19T16:56:33.463647+00:00",
+  "checks": [
+    {
+      "command": [
+        "gofmt",
+        "-l",
+        "internal/linuxmanage/elevation_linux.go",
+        "internal/linuxmanage/elevation_linux_test.go",
+        "internal/linuxmanage/authentication_linux_test.go"
+      ],
+      "exitCode": 0,
+      "passed": true,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "go",
+        "vet",
+        "./internal/linuxmanage",
+        "./internal/linuxinstall"
+      ],
+      "exitCode": 0,
+      "passed": true,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ]
+}

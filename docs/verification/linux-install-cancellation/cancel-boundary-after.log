@@ -1,0 +1,103 @@
+=== RUN   TestCancellationAtEachTransactionBoundary
+=== RUN   TestCancellationAtEachTransactionBoundary/install/journal
+=== RUN   TestCancellationAtEachTransactionBoundary/install/stopped
+=== RUN   TestCancellationAtEachTransactionBoundary/install/file-0
+=== RUN   TestCancellationAtEachTransactionBoundary/install/file-1
+=== RUN   TestCancellationAtEachTransactionBoundary/install/file-2
+=== RUN   TestCancellationAtEachTransactionBoundary/install/file-3
+=== RUN   TestCancellationAtEachTransactionBoundary/install/file-4
+=== RUN   TestCancellationAtEachTransactionBoundary/install/started
+=== RUN   TestCancellationAtEachTransactionBoundary/install/manifest
+=== RUN   TestCancellationAtEachTransactionBoundary/install/committed
+=== RUN   TestCancellationAtEachTransactionBoundary/upgrade-enabled/journal
+=== RUN   TestCancellationAtEachTransactionBoundary/upgrade-enabled/stopped
+=== RUN   TestCancellationAtEachTransactionBoundary/upgrade-enabled/file-0
+=== RUN   TestCancellationAtEachTransactionBoundary/upgrade-enabled/file-1
+=== RUN   TestCancellationAtEachTransactionBoundary/upgrade-enabled/file-2
+=== RUN   TestCancellationAtEachTransactionBoundary/upgrade-enabled/file-3
+=== RUN   TestCancellationAtEachTransactionBoundary/upgrade-enabled/file-4
+=== RUN   TestCancellationAtEachTransactionBoundary/upgrade-enabled/started
+=== RUN   TestCancellationAtEachTransactionBoundary/upgrade-enabled/manifest
+=== RUN   TestCancellationAtEachTransactionBoundary/upgrade-enabled/committed
+=== RUN   TestCancellationAtEachTransactionBoundary/upgrade-disabled/journal
+=== RUN   TestCancellationAtEachTransactionBoundary/upgrade-disabled/stopped
+=== RUN   TestCancellationAtEachTransactionBoundary/upgrade-disabled/file-0
+=== RUN   TestCancellationAtEachTransactionBoundary/upgrade-disabled/file-1
+=== RUN   TestCancellationAtEachTransactionBoundary/upgrade-disabled/file-2
+=== RUN   TestCancellationAtEachTransactionBoundary/upgrade-disabled/file-3
+=== RUN   TestCancellationAtEachTransactionBoundary/upgrade-disabled/file-4
+=== RUN   TestCancellationAtEachTransactionBoundary/upgrade-disabled/started
+=== RUN   TestCancellationAtEachTransactionBoundary/upgrade-disabled/manifest
+=== RUN   TestCancellationAtEachTransactionBoundary/upgrade-disabled/committed
+=== RUN   TestCancellationAtEachTransactionBoundary/uninstall-enabled/journal
+=== RUN   TestCancellationAtEachTransactionBoundary/uninstall-enabled/stopped
+=== RUN   TestCancellationAtEachTransactionBoundary/uninstall-enabled/file-0
+=== RUN   TestCancellationAtEachTransactionBoundary/uninstall-enabled/file-1
+=== RUN   TestCancellationAtEachTransactionBoundary/uninstall-enabled/file-2
+=== RUN   TestCancellationAtEachTransactionBoundary/uninstall-enabled/file-3
+=== RUN   TestCancellationAtEachTransactionBoundary/uninstall-enabled/file-4
+=== RUN   TestCancellationAtEachTransactionBoundary/uninstall-enabled/started
+=== RUN   TestCancellationAtEachTransactionBoundary/uninstall-enabled/manifest
+=== RUN   TestCancellationAtEachTransactionBoundary/uninstall-enabled/committed
+=== RUN   TestCancellationAtEachTransactionBoundary/uninstall-disabled/journal
+=== RUN   TestCancellationAtEachTransactionBoundary/uninstall-disabled/stopped
+=== RUN   TestCancellationAtEachTransactionBoundary/uninstall-disabled/file-0
+=== RUN   TestCancellationAtEachTransactionBoundary/uninstall-disabled/file-1
+=== RUN   TestCancellationAtEachTransactionBoundary/uninstall-disabled/file-2
+=== RUN   TestCancellationAtEachTransactionBoundary/uninstall-disabled/file-3
+=== RUN   TestCancellationAtEachTransactionBoundary/uninstall-disabled/file-4
+=== RUN   TestCancellationAtEachTransactionBoundary/uninstall-disabled/started
+=== RUN   TestCancellationAtEachTransactionBoundary/uninstall-disabled/manifest
+=== RUN   TestCancellationAtEachTransactionBoundary/uninstall-disabled/committed
+--- PASS: TestCancellationAtEachTransactionBoundary (0.11s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/install/journal (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/install/stopped (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/install/file-0 (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/install/file-1 (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/install/file-2 (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/install/file-3 (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/install/file-4 (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/install/started (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/install/manifest (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/install/committed (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/upgrade-enabled/journal (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/upgrade-enabled/stopped (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/upgrade-enabled/file-0 (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/upgrade-enabled/file-1 (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/upgrade-enabled/file-2 (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/upgrade-enabled/file-3 (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/upgrade-enabled/file-4 (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/upgrade-enabled/started (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/upgrade-enabled/manifest (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/upgrade-enabled/committed (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/upgrade-disabled/journal (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/upgrade-disabled/stopped (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/upgrade-disabled/file-0 (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/upgrade-disabled/file-1 (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/upgrade-disabled/file-2 (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/upgrade-disabled/file-3 (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/upgrade-disabled/file-4 (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/upgrade-disabled/started (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/upgrade-disabled/manifest (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/upgrade-disabled/committed (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/uninstall-enabled/journal (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/uninstall-enabled/stopped (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/uninstall-enabled/file-0 (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/uninstall-enabled/file-1 (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/uninstall-enabled/file-2 (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/uninstall-enabled/file-3 (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/uninstall-enabled/file-4 (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/uninstall-enabled/started (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/uninstall-enabled/manifest (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/uninstall-enabled/committed (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/uninstall-disabled/journal (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/uninstall-disabled/stopped (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/uninstall-disabled/file-0 (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/uninstall-disabled/file-1 (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/uninstall-disabled/file-2 (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/uninstall-disabled/file-3 (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/uninstall-disabled/file-4 (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/uninstall-disabled/started (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/uninstall-disabled/manifest (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/uninstall-disabled/committed (0.00s)
+PASS

@@ -1,0 +1,6 @@
+=== RUN   TestCancellationAtEachTransactionBoundary
+=== RUN   TestCancellationAtEachTransactionBoundary/upgrade-disabled/manifest
+    install_linux_test.go:250: cancellation did not retain its original error <nil>
+--- FAIL: TestCancellationAtEachTransactionBoundary (0.01s)
+    --- FAIL: TestCancellationAtEachTransactionBoundary/upgrade-disabled/manifest (0.01s)
+FAIL

@@ -97,6 +97,10 @@ Linux TUN 的公开开关尚未开放。`internal/linuxnet` 提供有界双栈�
 
 ## Linux 权限服务安装管理（开发阶段）
 
+安装器在各持久写入边界检查取消；提交前取消恢复原版本，持久提交后取消保留已确认的版本并完成清理。50 个边界单元场景及五种真实 systemd 私有 checkpoint 场景通过，普通 broker 写入中取消仍待端到端验证，见[取消与恢复](verification/linux-install-cancellation.md)。
+
+2026-10-20 续验已通过普通用户真实 pkexec 的安装、恢复、卸载、不同构建替换、授权后锁等待时取消及 EOF。共享桌面安全退出等待原管理操作及状态回读，退出失败恢复入口。活动桌面认证弹窗、事务写入期间取消与 Linux GUI 实机仍待验收，详见[续验记录](verification/linux-tun-service-management-acceptance.md)；下文原协议描述中的未验收说明属于首次实现检查点。
+
 Linux 设置页使用独立的 `rainlink-host manage-tun-service` 进程，通过 stdin/stdout 交换逐行 JSON；不复用活动网络会话。请求为 `{id,method,payload?}`，`payload` 只能省略或为空对象；ID 必须为递增的正整数，单行最多 4096 字节，拒绝重复字段、大小写别名、额外参数和任意路径。
 
 | 方法 | 结果 / 行为 |
@@ -109,7 +113,7 @@ Linux 设置页使用独立的 `rainlink-host manage-tun-service` 进程，通�
 
 `state` 为 `missing/current/different/incomplete/unavailable`。`incomplete` 或 `unavailable` 时 UI 不显示未确认的启动/开机状态。状态只证明可观察文件及 socket 状态，不证明私有安装事务已经完成。管理动作前必须断开网络会话，操作期间禁止新连接；完成或失败后重新读取状态，不能仅凭完成回执宣称安装成功。
 
-宿主通过固定且已检查的 `/usr/bin/pkexec` 启动当前运行 inode 的 `manage-tun-elevated` 固定动作；认证由系统桌面 agent 负责，应用不处理密码。取消通过关闭控制管道传入 root worker；EOF 取消操作并等待 worker 的有界恢复。读取限 15 秒，操作限 8 分钟，Flutter 请求限 9 分钟。该管理路径真实 `pkexec` 闭环及桌面弹窗尚未验收，详见[阶段记录](verification/linux-tun-service-management.md)，公开 Linux TUN 仍为 false。
+宿主通过固定且已检查的 `/usr/bin/pkexec` 启动当前运行 inode 的 `manage-tun-elevated` 固定动作；认证由系统桌面 agent 负责，应用不处理密码。取消先关闭控制管道，并向待认证进程发送 SIGTERM；切换 root 后的 EPERM 属于预期，worker 继续依靠 EOF 取消并完成有界恢复。不会以 SIGKILL 中断 root 安装。读取限 15 秒，操作限 8 分钟，Flutter 请求限 9 分钟。普通用户真实管理闭环及 AUTH_ADMIN 的取消、EOF、认证代理拒绝已经通过 VM；D-Bus 测试代理不代表图形桌面或密码验收，见[认证取消记录](verification/linux-service-authentication-cancellation.md)。公开 Linux TUN 仍为 false。
 
 ## Linux root 权限服务（内部阶段）
 

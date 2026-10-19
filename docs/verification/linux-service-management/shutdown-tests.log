@@ -1,0 +1,26 @@
+Flutter assets will be downloaded from https://storage.flutter-io.cn. Make sure you trust this source!
+00:00 +0: loading C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/tun_service_test.dart
+00:00 +0: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/tun_service_test.dart: exit waits for operation and read-back; refused exit can resume
+00:00 +1: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/tun_service_test.dart: does not authorize while an active session needs restoration
+00:00 +2: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/tun_service_test.dart: install only succeeds after confirmed read-back
+00:00 +3: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/tun_service_test.dart: uninstall only succeeds after confirmed read-back
+00:00 +4: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/tun_service_test.dart: recover only succeeds after confirmed read-back
+00:00 +5: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/tun_service_test.dart: a successful reply with unchanged files is not success
+00:00 +6: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/tun_service_test.dart: cancel acknowledgement keeps the lease until real completion
+00:00 +7: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/tun_service_test.dart: failed read-back cannot reuse a stale ready state
+00:00 +8: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/tun_service_test.dart: transport validates state and fixed completion/cancel acknowledgements
+00:00 +9: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/tun_service_shutdown_test.dart: Linux exit waits for the root operation; refused: false (variant: TargetPlatform.linux)
+00:00 +10: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/desktop_integration_test.dart: general and connection preferences persist independently with validation
+00:00 +11: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/desktop_integration_test.dart: tray failure preserves preferences and disk failure rolls the tray back
+00:00 +12: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/desktop_integration_test.dart: tray failure preserves preferences and disk failure rolls the tray back
+00:00 +13: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/desktop_integration_test.dart: startup write must pass actual readback before controller confirms
+00:00 +14: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/desktop_integration_test.dart: startup write must pass actual readback before controller confirms
+00:00 +15: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/tun_service_shutdown_test.dart: TargetPlatform.macOS closes safely when a saved tray adapter is absent (variant: TargetPlatform.macOS)
+00:00 +16: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/tun_service_shutdown_test.dart: TargetPlatform.macOS closes safely when a saved tray adapter is absent (variant: TargetPlatform.macOS)
+00:00 +17: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/desktop_integration_test.dart: startup waits for selection and honors cancellation: true
+00:00 +18: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/desktop_integration_test.dart: close to tray preserves connection and explicit quit restores before destroy (variant: TargetPlatform.windows)
+00:01 +19: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/desktop_integration_test.dart: failed restore keeps the window and tray available for retry (variant: TargetPlatform.windows)
+00:01 +20: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/desktop_integration_test.dart: update exit restores network before commit and recovers refused handoff (variant: TargetPlatform.windows)
+00:01 +21: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/desktop_integration_test.dart: Windows adapter rejects invalid receipts and hides native error details
+00:01 +22: C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/test/desktop_integration_test.dart: expiry native boundary sends counts only and rejects invalid values
+00:01 +23: All tests passed!

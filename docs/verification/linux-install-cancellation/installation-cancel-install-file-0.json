@@ -1,0 +1,24 @@
+{
+  "scenario": "install",
+  "checkpoint": "file-0",
+  "committedBeforeCancel": false,
+  "before": null,
+  "filesAtCancel": [
+    {
+      "sha256": "b55082f90dfd275516b47f9e3b663caa9d8c467471cfe67d3e0509dc9a738fad",
+      "size": 10688317,
+      "mode": 493
+    },
+    null,
+    null,
+    null,
+    null
+  ],
+  "after": null,
+  "serviceAfter": {
+    "present": false,
+    "enabled": false,
+    "active": false
+  },
+  "returnedCancellation": true
+}

@@ -1,0 +1,292 @@
+=== RUN   TestRealSystemdCancellationAtDurableBoundaries
+    cancellation_systemd_linux_test.go:36: requires disposable systemd VM
+--- SKIP: TestRealSystemdCancellationAtDurableBoundaries (0.00s)
+=== RUN   TestSystemctlFixtureCommand
+--- PASS: TestSystemctlFixtureCommand (0.00s)
+=== RUN   TestSocketActivationFixture
+--- PASS: TestSocketActivationFixture (0.00s)
+=== RUN   TestInstalledCLIWithLockedCoreAndLiveIdleProtocol
+    cli_fixture_linux_test.go:235: requires disposable chroot with explicit fixture systemctl
+--- SKIP: TestInstalledCLIWithLockedCoreAndLiveIdleProtocol (0.00s)
+=== RUN   TestServiceInspectionPreservesFilesAndDetectsPartialAndDifferentVersions
+--- PASS: TestServiceInspectionPreservesFilesAndDetectsPartialAndDifferentVersions (0.00s)
+=== RUN   TestInstallationUpgradeUninstallPreserveUnmanagedData
+--- PASS: TestInstallationUpgradeUninstallPreserveUnmanagedData (0.01s)
+=== RUN   TestEveryTransactionFailureRollsBack
+=== RUN   TestEveryTransactionFailureRollsBack/install/journal
+=== RUN   TestEveryTransactionFailureRollsBack/install/stopped
+=== RUN   TestEveryTransactionFailureRollsBack/install/file-0
+=== RUN   TestEveryTransactionFailureRollsBack/install/file-1
+=== RUN   TestEveryTransactionFailureRollsBack/install/file-2
+=== RUN   TestEveryTransactionFailureRollsBack/install/file-3
+=== RUN   TestEveryTransactionFailureRollsBack/install/file-4
+=== RUN   TestEveryTransactionFailureRollsBack/install/started
+=== RUN   TestEveryTransactionFailureRollsBack/install/manifest
+=== RUN   TestEveryTransactionFailureRollsBack/install/committed
+=== RUN   TestEveryTransactionFailureRollsBack/upgrade/journal
+=== RUN   TestEveryTransactionFailureRollsBack/upgrade/stopped
+=== RUN   TestEveryTransactionFailureRollsBack/upgrade/file-0
+=== RUN   TestEveryTransactionFailureRollsBack/upgrade/file-1
+=== RUN   TestEveryTransactionFailureRollsBack/upgrade/file-2
+=== RUN   TestEveryTransactionFailureRollsBack/upgrade/file-3
+=== RUN   TestEveryTransactionFailureRollsBack/upgrade/file-4
+=== RUN   TestEveryTransactionFailureRollsBack/upgrade/started
+=== RUN   TestEveryTransactionFailureRollsBack/upgrade/manifest
+=== RUN   TestEveryTransactionFailureRollsBack/upgrade/committed
+=== RUN   TestEveryTransactionFailureRollsBack/uninstall/journal
+=== RUN   TestEveryTransactionFailureRollsBack/uninstall/stopped
+=== RUN   TestEveryTransactionFailureRollsBack/uninstall/file-0
+=== RUN   TestEveryTransactionFailureRollsBack/uninstall/file-1
+=== RUN   TestEveryTransactionFailureRollsBack/uninstall/file-2
+=== RUN   TestEveryTransactionFailureRollsBack/uninstall/file-3
+=== RUN   TestEveryTransactionFailureRollsBack/uninstall/file-4
+=== RUN   TestEveryTransactionFailureRollsBack/uninstall/started
+=== RUN   TestEveryTransactionFailureRollsBack/uninstall/manifest
+=== RUN   TestEveryTransactionFailureRollsBack/uninstall/committed
+--- PASS: TestEveryTransactionFailureRollsBack (0.06s)
+    --- PASS: TestEveryTransactionFailureRollsBack/install/journal (0.00s)
+    --- PASS: TestEveryTransactionFailureRollsBack/install/stopped (0.00s)
+    --- PASS: TestEveryTransactionFailureRollsBack/install/file-0 (0.00s)
+    --- PASS: TestEveryTransactionFailureRollsBack/install/file-1 (0.00s)
+    --- PASS: TestEveryTransactionFailureRollsBack/install/file-2 (0.00s)
+    --- PASS: TestEveryTransactionFailureRollsBack/install/file-3 (0.00s)
+    --- PASS: TestEveryTransactionFailureRollsBack/install/file-4 (0.00s)
+    --- PASS: TestEveryTransactionFailureRollsBack/install/started (0.00s)
+    --- PASS: TestEveryTransactionFailureRollsBack/install/manifest (0.00s)
+    --- PASS: TestEveryTransactionFailureRollsBack/install/committed (0.00s)
+    --- PASS: TestEveryTransactionFailureRollsBack/upgrade/journal (0.00s)
+    --- PASS: TestEveryTransactionFailureRollsBack/upgrade/stopped (0.00s)
+    --- PASS: TestEveryTransactionFailureRollsBack/upgrade/file-0 (0.00s)
+    --- PASS: TestEveryTransactionFailureRollsBack/upgrade/file-1 (0.00s)
+    --- PASS: TestEveryTransactionFailureRollsBack/upgrade/file-2 (0.00s)
+    --- PASS: TestEveryTransactionFailureRollsBack/upgrade/file-3 (0.00s)
+    --- PASS: TestEveryTransactionFailureRollsBack/upgrade/file-4 (0.00s)
+    --- PASS: TestEveryTransactionFailureRollsBack/upgrade/started (0.00s)
+    --- PASS: TestEveryTransactionFailureRollsBack/upgrade/manifest (0.00s)
+    --- PASS: TestEveryTransactionFailureRollsBack/upgrade/committed (0.00s)
+    --- PASS: TestEveryTransactionFailureRollsBack/uninstall/journal (0.00s)
+    --- PASS: TestEveryTransactionFailureRollsBack/uninstall/stopped (0.00s)
+    --- PASS: TestEveryTransactionFailureRollsBack/uninstall/file-0 (0.00s)
+    --- PASS: TestEveryTransactionFailureRollsBack/uninstall/file-1 (0.00s)
+    --- PASS: TestEveryTransactionFailureRollsBack/uninstall/file-2 (0.00s)
+    --- PASS: TestEveryTransactionFailureRollsBack/uninstall/file-3 (0.00s)
+    --- PASS: TestEveryTransactionFailureRollsBack/uninstall/file-4 (0.00s)
+    --- PASS: TestEveryTransactionFailureRollsBack/uninstall/started (0.00s)
+    --- PASS: TestEveryTransactionFailureRollsBack/uninstall/manifest (0.00s)
+    --- PASS: TestEveryTransactionFailureRollsBack/uninstall/committed (0.00s)
+=== RUN   TestCancellationAtEachTransactionBoundary
+=== RUN   TestCancellationAtEachTransactionBoundary/install/journal
+=== RUN   TestCancellationAtEachTransactionBoundary/install/stopped
+=== RUN   TestCancellationAtEachTransactionBoundary/install/file-0
+=== RUN   TestCancellationAtEachTransactionBoundary/install/file-1
+=== RUN   TestCancellationAtEachTransactionBoundary/install/file-2
+=== RUN   TestCancellationAtEachTransactionBoundary/install/file-3
+=== RUN   TestCancellationAtEachTransactionBoundary/install/file-4
+=== RUN   TestCancellationAtEachTransactionBoundary/install/started
+=== RUN   TestCancellationAtEachTransactionBoundary/install/manifest
+=== RUN   TestCancellationAtEachTransactionBoundary/install/committed
+=== RUN   TestCancellationAtEachTransactionBoundary/upgrade-enabled/journal
+=== RUN   TestCancellationAtEachTransactionBoundary/upgrade-enabled/stopped
+=== RUN   TestCancellationAtEachTransactionBoundary/upgrade-enabled/file-0
+=== RUN   TestCancellationAtEachTransactionBoundary/upgrade-enabled/file-1
+=== RUN   TestCancellationAtEachTransactionBoundary/upgrade-enabled/file-2
+=== RUN   TestCancellationAtEachTransactionBoundary/upgrade-enabled/file-3
+=== RUN   TestCancellationAtEachTransactionBoundary/upgrade-enabled/file-4
+=== RUN   TestCancellationAtEachTransactionBoundary/upgrade-enabled/started
+=== RUN   TestCancellationAtEachTransactionBoundary/upgrade-enabled/manifest
+=== RUN   TestCancellationAtEachTransactionBoundary/upgrade-enabled/committed
+=== RUN   TestCancellationAtEachTransactionBoundary/upgrade-disabled/journal
+=== RUN   TestCancellationAtEachTransactionBoundary/upgrade-disabled/stopped
+=== RUN   TestCancellationAtEachTransactionBoundary/upgrade-disabled/file-0
+=== RUN   TestCancellationAtEachTransactionBoundary/upgrade-disabled/file-1
+=== RUN   TestCancellationAtEachTransactionBoundary/upgrade-disabled/file-2
+=== RUN   TestCancellationAtEachTransactionBoundary/upgrade-disabled/file-3
+=== RUN   TestCancellationAtEachTransactionBoundary/upgrade-disabled/file-4
+=== RUN   TestCancellationAtEachTransactionBoundary/upgrade-disabled/started
+=== RUN   TestCancellationAtEachTransactionBoundary/upgrade-disabled/manifest
+=== RUN   TestCancellationAtEachTransactionBoundary/upgrade-disabled/committed
+=== RUN   TestCancellationAtEachTransactionBoundary/uninstall-enabled/journal
+=== RUN   TestCancellationAtEachTransactionBoundary/uninstall-enabled/stopped
+=== RUN   TestCancellationAtEachTransactionBoundary/uninstall-enabled/file-0
+=== RUN   TestCancellationAtEachTransactionBoundary/uninstall-enabled/file-1
+=== RUN   TestCancellationAtEachTransactionBoundary/uninstall-enabled/file-2
+=== RUN   TestCancellationAtEachTransactionBoundary/uninstall-enabled/file-3
+=== RUN   TestCancellationAtEachTransactionBoundary/uninstall-enabled/file-4
+=== RUN   TestCancellationAtEachTransactionBoundary/uninstall-enabled/started
+=== RUN   TestCancellationAtEachTransactionBoundary/uninstall-enabled/manifest
+=== RUN   TestCancellationAtEachTransactionBoundary/uninstall-enabled/committed
+=== RUN   TestCancellationAtEachTransactionBoundary/uninstall-disabled/journal
+=== RUN   TestCancellationAtEachTransactionBoundary/uninstall-disabled/stopped
+=== RUN   TestCancellationAtEachTransactionBoundary/uninstall-disabled/file-0
+=== RUN   TestCancellationAtEachTransactionBoundary/uninstall-disabled/file-1
+=== RUN   TestCancellationAtEachTransactionBoundary/uninstall-disabled/file-2
+=== RUN   TestCancellationAtEachTransactionBoundary/uninstall-disabled/file-3
+=== RUN   TestCancellationAtEachTransactionBoundary/uninstall-disabled/file-4
+=== RUN   TestCancellationAtEachTransactionBoundary/uninstall-disabled/started
+=== RUN   TestCancellationAtEachTransactionBoundary/uninstall-disabled/manifest
+=== RUN   TestCancellationAtEachTransactionBoundary/uninstall-disabled/committed
+--- PASS: TestCancellationAtEachTransactionBoundary (0.10s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/install/journal (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/install/stopped (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/install/file-0 (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/install/file-1 (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/install/file-2 (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/install/file-3 (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/install/file-4 (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/install/started (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/install/manifest (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/install/committed (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/upgrade-enabled/journal (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/upgrade-enabled/stopped (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/upgrade-enabled/file-0 (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/upgrade-enabled/file-1 (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/upgrade-enabled/file-2 (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/upgrade-enabled/file-3 (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/upgrade-enabled/file-4 (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/upgrade-enabled/started (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/upgrade-enabled/manifest (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/upgrade-enabled/committed (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/upgrade-disabled/journal (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/upgrade-disabled/stopped (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/upgrade-disabled/file-0 (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/upgrade-disabled/file-1 (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/upgrade-disabled/file-2 (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/upgrade-disabled/file-3 (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/upgrade-disabled/file-4 (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/upgrade-disabled/started (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/upgrade-disabled/manifest (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/upgrade-disabled/committed (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/uninstall-enabled/journal (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/uninstall-enabled/stopped (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/uninstall-enabled/file-0 (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/uninstall-enabled/file-1 (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/uninstall-enabled/file-2 (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/uninstall-enabled/file-3 (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/uninstall-enabled/file-4 (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/uninstall-enabled/started (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/uninstall-enabled/manifest (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/uninstall-enabled/committed (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/uninstall-disabled/journal (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/uninstall-disabled/stopped (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/uninstall-disabled/file-0 (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/uninstall-disabled/file-1 (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/uninstall-disabled/file-2 (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/uninstall-disabled/file-3 (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/uninstall-disabled/file-4 (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/uninstall-disabled/started (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/uninstall-disabled/manifest (0.00s)
+    --- PASS: TestCancellationAtEachTransactionBoundary/uninstall-disabled/committed (0.00s)
+=== RUN   TestServiceFailureAndCancellationRollBack
+=== RUN   TestServiceFailureAndCancellationRollBack/stop
+=== RUN   TestServiceFailureAndCancellationRollBack/enable-false
+=== RUN   TestServiceFailureAndCancellationRollBack/reload
+=== RUN   TestServiceFailureAndCancellationRollBack/enable-true
+=== RUN   TestServiceFailureAndCancellationRollBack/start
+=== RUN   TestServiceFailureAndCancellationRollBack/ready
+=== RUN   TestServiceFailureAndCancellationRollBack/cancel
+--- PASS: TestServiceFailureAndCancellationRollBack (0.02s)
+    --- PASS: TestServiceFailureAndCancellationRollBack/stop (0.00s)
+    --- PASS: TestServiceFailureAndCancellationRollBack/enable-false (0.00s)
+    --- PASS: TestServiceFailureAndCancellationRollBack/reload (0.00s)
+    --- PASS: TestServiceFailureAndCancellationRollBack/enable-true (0.00s)
+    --- PASS: TestServiceFailureAndCancellationRollBack/start (0.00s)
+    --- PASS: TestServiceFailureAndCancellationRollBack/ready (0.00s)
+    --- PASS: TestServiceFailureAndCancellationRollBack/cancel (0.00s)
+=== RUN   TestUnconfirmedNetworkRecoveryKeepsJournalAndFiles
+--- PASS: TestUnconfirmedNetworkRecoveryKeepsJournalAndFiles (0.00s)
+=== RUN   TestUpgradeAndFailedUpgradePreserveDisabledSocket
+=== RUN   TestUpgradeAndFailedUpgradePreserveDisabledSocket/false
+=== RUN   TestUpgradeAndFailedUpgradePreserveDisabledSocket/true
+--- PASS: TestUpgradeAndFailedUpgradePreserveDisabledSocket (0.00s)
+    --- PASS: TestUpgradeAndFailedUpgradePreserveDisabledSocket/false (0.00s)
+    --- PASS: TestUpgradeAndFailedUpgradePreserveDisabledSocket/true (0.00s)
+=== RUN   TestUnmanagedModifiedOrCorruptInputsArePreserved
+=== RUN   TestUnmanagedModifiedOrCorruptInputsArePreserved/unmanaged
+=== RUN   TestUnmanagedModifiedOrCorruptInputsArePreserved/modified
+=== RUN   TestUnmanagedModifiedOrCorruptInputsArePreserved/corrupt-manifest
+=== RUN   TestUnmanagedModifiedOrCorruptInputsArePreserved/symlink
+--- PASS: TestUnmanagedModifiedOrCorruptInputsArePreserved (0.00s)
+    --- PASS: TestUnmanagedModifiedOrCorruptInputsArePreserved/unmanaged (0.00s)
+    --- PASS: TestUnmanagedModifiedOrCorruptInputsArePreserved/modified (0.00s)
+    --- PASS: TestUnmanagedModifiedOrCorruptInputsArePreserved/corrupt-manifest (0.00s)
+    --- PASS: TestUnmanagedModifiedOrCorruptInputsArePreserved/symlink (0.00s)
+=== RUN   TestRecoveryRefusesMissingBackupsAndForeignChanges
+=== RUN   TestRecoveryRefusesMissingBackupsAndForeignChanges/backup
+=== RUN   TestRecoveryRefusesMissingBackupsAndForeignChanges/destination
+=== RUN   TestRecoveryRefusesMissingBackupsAndForeignChanges/manifest
+--- PASS: TestRecoveryRefusesMissingBackupsAndForeignChanges (0.01s)
+    --- PASS: TestRecoveryRefusesMissingBackupsAndForeignChanges/backup (0.00s)
+    --- PASS: TestRecoveryRefusesMissingBackupsAndForeignChanges/destination (0.00s)
+    --- PASS: TestRecoveryRefusesMissingBackupsAndForeignChanges/manifest (0.00s)
+=== RUN   TestInstallerCrashWorker
+--- PASS: TestInstallerCrashWorker (0.00s)
+=== RUN   TestActualProcessKillIsRecoverableAtEveryCheckpoint
+=== RUN   TestActualProcessKillIsRecoverableAtEveryCheckpoint/install/journal
+=== RUN   TestActualProcessKillIsRecoverableAtEveryCheckpoint/install/stopped
+=== RUN   TestActualProcessKillIsRecoverableAtEveryCheckpoint/install/file-0
+=== RUN   TestActualProcessKillIsRecoverableAtEveryCheckpoint/install/file-1
+=== RUN   TestActualProcessKillIsRecoverableAtEveryCheckpoint/install/file-2
+=== RUN   TestActualProcessKillIsRecoverableAtEveryCheckpoint/install/file-3
+=== RUN   TestActualProcessKillIsRecoverableAtEveryCheckpoint/install/file-4
+=== RUN   TestActualProcessKillIsRecoverableAtEveryCheckpoint/install/started
+=== RUN   TestActualProcessKillIsRecoverableAtEveryCheckpoint/install/manifest
+=== RUN   TestActualProcessKillIsRecoverableAtEveryCheckpoint/install/committed
+=== RUN   TestActualProcessKillIsRecoverableAtEveryCheckpoint/upgrade/journal
+=== RUN   TestActualProcessKillIsRecoverableAtEveryCheckpoint/upgrade/stopped
+=== RUN   TestActualProcessKillIsRecoverableAtEveryCheckpoint/upgrade/file-0
+=== RUN   TestActualProcessKillIsRecoverableAtEveryCheckpoint/upgrade/file-1
+=== RUN   TestActualProcessKillIsRecoverableAtEveryCheckpoint/upgrade/file-2
+=== RUN   TestActualProcessKillIsRecoverableAtEveryCheckpoint/upgrade/file-3
+=== RUN   TestActualProcessKillIsRecoverableAtEveryCheckpoint/upgrade/file-4
+=== RUN   TestActualProcessKillIsRecoverableAtEveryCheckpoint/upgrade/started
+=== RUN   TestActualProcessKillIsRecoverableAtEveryCheckpoint/upgrade/manifest
+=== RUN   TestActualProcessKillIsRecoverableAtEveryCheckpoint/upgrade/committed
+=== RUN   TestActualProcessKillIsRecoverableAtEveryCheckpoint/uninstall/journal
+=== RUN   TestActualProcessKillIsRecoverableAtEveryCheckpoint/uninstall/stopped
+=== RUN   TestActualProcessKillIsRecoverableAtEveryCheckpoint/uninstall/file-0
+=== RUN   TestActualProcessKillIsRecoverableAtEveryCheckpoint/uninstall/file-1
+=== RUN   TestActualProcessKillIsRecoverableAtEveryCheckpoint/uninstall/file-2
+=== RUN   TestActualProcessKillIsRecoverableAtEveryCheckpoint/uninstall/file-3
+=== RUN   TestActualProcessKillIsRecoverableAtEveryCheckpoint/uninstall/file-4
+=== RUN   TestActualProcessKillIsRecoverableAtEveryCheckpoint/uninstall/started
+=== RUN   TestActualProcessKillIsRecoverableAtEveryCheckpoint/uninstall/manifest
+=== RUN   TestActualProcessKillIsRecoverableAtEveryCheckpoint/uninstall/committed
+--- PASS: TestActualProcessKillIsRecoverableAtEveryCheckpoint (0.16s)
+    --- PASS: TestActualProcessKillIsRecoverableAtEveryCheckpoint/install/journal (0.00s)
+    --- PASS: TestActualProcessKillIsRecoverableAtEveryCheckpoint/install/stopped (0.00s)
+    --- PASS: TestActualProcessKillIsRecoverableAtEveryCheckpoint/install/file-0 (0.00s)
+    --- PASS: TestActualProcessKillIsRecoverableAtEveryCheckpoint/install/file-1 (0.00s)
+    --- PASS: TestActualProcessKillIsRecoverableAtEveryCheckpoint/install/file-2 (0.01s)
+    --- PASS: TestActualProcessKillIsRecoverableAtEveryCheckpoint/install/file-3 (0.00s)
+    --- PASS: TestActualProcessKillIsRecoverableAtEveryCheckpoint/install/file-4 (0.00s)
+    --- PASS: TestActualProcessKillIsRecoverableAtEveryCheckpoint/install/started (0.00s)
+    --- PASS: TestActualProcessKillIsRecoverableAtEveryCheckpoint/install/manifest (0.00s)
+    --- PASS: TestActualProcessKillIsRecoverableAtEveryCheckpoint/install/committed (0.01s)
+    --- PASS: TestActualProcessKillIsRecoverableAtEveryCheckpoint/upgrade/journal (0.01s)
+    --- PASS: TestActualProcessKillIsRecoverableAtEveryCheckpoint/upgrade/stopped (0.01s)
+    --- PASS: TestActualProcessKillIsRecoverableAtEveryCheckpoint/upgrade/file-0 (0.01s)
+    --- PASS: TestActualProcessKillIsRecoverableAtEveryCheckpoint/upgrade/file-1 (0.01s)
+    --- PASS: TestActualProcessKillIsRecoverableAtEveryCheckpoint/upgrade/file-2 (0.01s)
+    --- PASS: TestActualProcessKillIsRecoverableAtEveryCheckpoint/upgrade/file-3 (0.01s)
+    --- PASS: TestActualProcessKillIsRecoverableAtEveryCheckpoint/upgrade/file-4 (0.01s)
+    --- PASS: TestActualProcessKillIsRecoverableAtEveryCheckpoint/upgrade/started (0.01s)
+    --- PASS: TestActualProcessKillIsRecoverableAtEveryCheckpoint/upgrade/manifest (0.01s)
+    --- PASS: TestActualProcessKillIsRecoverableAtEveryCheckpoint/upgrade/committed (0.01s)
+    --- PASS: TestActualProcessKillIsRecoverableAtEveryCheckpoint/uninstall/journal (0.01s)
+    --- PASS: TestActualProcessKillIsRecoverableAtEveryCheckpoint/uninstall/stopped (0.01s)
+    --- PASS: TestActualProcessKillIsRecoverableAtEveryCheckpoint/uninstall/file-0 (0.01s)
+    --- PASS: TestActualProcessKillIsRecoverableAtEveryCheckpoint/uninstall/file-1 (0.01s)
+    --- PASS: TestActualProcessKillIsRecoverableAtEveryCheckpoint/uninstall/file-2 (0.01s)
+    --- PASS: TestActualProcessKillIsRecoverableAtEveryCheckpoint/uninstall/file-3 (0.00s)
+    --- PASS: TestActualProcessKillIsRecoverableAtEveryCheckpoint/uninstall/file-4 (0.01s)
+    --- PASS: TestActualProcessKillIsRecoverableAtEveryCheckpoint/uninstall/started (0.01s)
+    --- PASS: TestActualProcessKillIsRecoverableAtEveryCheckpoint/uninstall/manifest (0.01s)
+    --- PASS: TestActualProcessKillIsRecoverableAtEveryCheckpoint/uninstall/committed (0.01s)
+=== RUN   TestSystemdStateRefusesOverridesMasksAndTransitionalUnits
+--- PASS: TestSystemdStateRefusesOverridesMasksAndTransitionalUnits (0.00s)
+=== RUN   TestSystemdInstanceNamesAreBoundedAndCannotSelectOtherServices
+--- PASS: TestSystemdInstanceNamesAreBoundedAndCannotSelectOtherServices (0.00s)
+=== RUN   TestRealSystemdInstallation
+    systemd_integration_linux_test.go:24: requires disposable systemd VM
+--- SKIP: TestRealSystemdInstallation (0.00s)
+PASS

@@ -1,0 +1,7 @@
+Flutter assets will be downloaded from https://storage.flutter-io.cn. Make sure you trust this source!
+00:00 +0: loading C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/integration_test/tun_service_visual_test.dart
+Building Windows application...                                    17.5s
+√ Built build\windows\x64\runner\Debug\rainlink-ui.exe
+00:00 +0: Linux service management desktop states and dialogs
+00:22 +1: (tearDownAll)
+00:22 +1: All tests passed!

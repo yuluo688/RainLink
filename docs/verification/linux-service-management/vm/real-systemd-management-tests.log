@@ -1,0 +1,50 @@
+=== RUN   TestRealSystemdManagementViaOrdinaryBroker
+=== RUN   TestRealSystemdManagementViaOrdinaryBroker/deny
+    systemd_linux_test.go:165: actual pkexec/polkit deny: === RUN   TestOrdinaryManagementClientFixture
+            systemd_linux_test.go:233: status: {"protocolVersion":1,"state":"missing","canManage":true,"enabled":false,"active":false,"message":"尚未安装 TUN 权限服务"}
+            systemd_linux_test.go:288: status: {"protocolVersion":1,"state":"missing","canManage":true,"enabled":false,"active":false,"message":"尚未安装 TUN 权限服务"}
+        real ordinary broker scenario completed: deny
+        --- PASS: TestOrdinaryManagementClientFixture (0.96s)
+        PASS
+=== RUN   TestRealSystemdManagementViaOrdinaryBroker/allow
+    systemd_linux_test.go:165: actual pkexec/polkit allow: === RUN   TestOrdinaryManagementClientFixture
+            systemd_linux_test.go:233: status: {"protocolVersion":1,"state":"missing","canManage":true,"enabled":false,"active":false,"message":"尚未安装 TUN 权限服务"}
+            systemd_linux_test.go:293: status: {"protocolVersion":1,"state":"current","canManage":true,"enabled":true,"active":true,"message":"服务文件与当前应用一致"}
+            systemd_linux_test.go:303: status: {"protocolVersion":1,"state":"current","canManage":true,"enabled":true,"active":true,"message":"服务文件与当前应用一致"}
+            systemd_linux_test.go:303: status: {"protocolVersion":1,"state":"current","canManage":true,"enabled":true,"active":true,"message":"服务文件与当前应用一致"}
+            systemd_linux_test.go:303: status: {"protocolVersion":1,"state":"missing","canManage":true,"enabled":false,"active":false,"message":"尚未安装 TUN 权限服务"}
+        real ordinary broker scenario completed: allow
+        --- PASS: TestOrdinaryManagementClientFixture (69.48s)
+        PASS
+=== RUN   TestRealSystemdManagementViaOrdinaryBroker/upgrade
+    systemd_linux_test.go:165: actual pkexec/polkit upgrade: === RUN   TestOrdinaryManagementClientFixture
+            systemd_linux_test.go:231: status: {"protocolVersion":1,"state":"different","canManage":true,"enabled":false,"active":false,"message":"已安装服务与当前应用不同，可更新服务"}
+            systemd_linux_test.go:293: status: {"protocolVersion":1,"state":"current","canManage":true,"enabled":false,"active":false,"message":"服务文件与当前应用一致"}
+            systemd_linux_test.go:303: status: {"protocolVersion":1,"state":"current","canManage":true,"enabled":false,"active":false,"message":"服务文件与当前应用一致"}
+            systemd_linux_test.go:303: status: {"protocolVersion":1,"state":"current","canManage":true,"enabled":false,"active":false,"message":"服务文件与当前应用一致"}
+            systemd_linux_test.go:303: status: {"protocolVersion":1,"state":"missing","canManage":true,"enabled":false,"active":false,"message":"尚未安装 TUN 权限服务"}
+        real ordinary broker scenario completed: upgrade
+        --- PASS: TestOrdinaryManagementClientFixture (81.51s)
+        PASS
+=== RUN   TestRealSystemdManagementViaOrdinaryBroker/cancel
+    systemd_linux_test.go:163: root worker 1897 exited before the installation lock was released
+    systemd_linux_test.go:165: actual pkexec/polkit cancel: === RUN   TestOrdinaryManagementClientFixture
+            systemd_linux_test.go:233: status: {"protocolVersion":1,"state":"missing","canManage":true,"enabled":false,"active":false,"message":"尚未安装 TUN 权限服务"}
+            systemd_linux_test.go:273: status: {"protocolVersion":1,"state":"missing","canManage":true,"enabled":false,"active":false,"message":"尚未安装 TUN 权限服务"}
+        actual cancel retained original failure and confirmed absent service
+        --- PASS: TestOrdinaryManagementClientFixture (1.73s)
+        PASS
+=== RUN   TestRealSystemdManagementViaOrdinaryBroker/eof
+    systemd_linux_test.go:163: root worker 1946 exited before the installation lock was released
+    systemd_linux_test.go:165: actual pkexec/polkit eof: === RUN   TestOrdinaryManagementClientFixture
+            systemd_linux_test.go:233: status: {"protocolVersion":1,"state":"missing","canManage":true,"enabled":false,"active":false,"message":"尚未安装 TUN 权限服务"}
+        actual EOF cancelled elevated transaction before lock release
+        --- PASS: TestOrdinaryManagementClientFixture (1.45s)
+        PASS
+--- PASS: TestRealSystemdManagementViaOrdinaryBroker (180.71s)
+    --- PASS: TestRealSystemdManagementViaOrdinaryBroker/deny (1.95s)
+    --- PASS: TestRealSystemdManagementViaOrdinaryBroker/allow (70.34s)
+    --- PASS: TestRealSystemdManagementViaOrdinaryBroker/upgrade (102.10s)
+    --- PASS: TestRealSystemdManagementViaOrdinaryBroker/cancel (2.81s)
+    --- PASS: TestRealSystemdManagementViaOrdinaryBroker/eof (2.39s)
+PASS

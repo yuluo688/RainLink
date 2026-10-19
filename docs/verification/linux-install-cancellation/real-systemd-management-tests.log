@@ -1,0 +1,71 @@
+=== RUN   TestRealPolkitManagementAuthenticationCancellation
+=== RUN   TestRealPolkitManagementAuthenticationCancellation/cancel
+    authentication_linux_test.go:65: actual authority/agent cancel: {"event": "registered"}
+        {"event": "began"}
+        original operation error: cancelled
+        {"event": "cancelled"}
+        service remains missing; no installation transaction
+=== RUN   TestRealPolkitManagementAuthenticationCancellation/eof
+    authentication_linux_test.go:65: actual authority/agent eof: {"event": "registered"}
+        {"event": "began"}
+        {"event": "cancelled"}
+        service remains missing; no installation transaction
+=== RUN   TestRealPolkitManagementAuthenticationCancellation/agent-reject
+    authentication_linux_test.go:65: actual authority/agent agent-reject: {"event": "registered"}
+        {"event": "began"}
+        original operation error: authorization_cancelled
+        service remains missing; no installation transaction
+--- PASS: TestRealPolkitManagementAuthenticationCancellation (5.53s)
+    --- PASS: TestRealPolkitManagementAuthenticationCancellation/cancel (1.54s)
+    --- PASS: TestRealPolkitManagementAuthenticationCancellation/eof (1.20s)
+    --- PASS: TestRealPolkitManagementAuthenticationCancellation/agent-reject (1.15s)
+=== RUN   TestRealSystemdManagementViaOrdinaryBroker
+=== RUN   TestRealSystemdManagementViaOrdinaryBroker/deny
+    systemd_linux_test.go:165: actual pkexec/polkit deny: === RUN   TestOrdinaryManagementClientFixture
+            systemd_linux_test.go:233: status: {"protocolVersion":1,"state":"missing","canManage":true,"enabled":false,"active":false,"message":"尚未安装 TUN 权限服务"}
+            systemd_linux_test.go:288: status: {"protocolVersion":1,"state":"missing","canManage":true,"enabled":false,"active":false,"message":"尚未安装 TUN 权限服务"}
+        real ordinary broker scenario completed: deny
+        --- PASS: TestOrdinaryManagementClientFixture (0.67s)
+        PASS
+=== RUN   TestRealSystemdManagementViaOrdinaryBroker/allow
+    systemd_linux_test.go:165: actual pkexec/polkit allow: === RUN   TestOrdinaryManagementClientFixture
+            systemd_linux_test.go:233: status: {"protocolVersion":1,"state":"missing","canManage":true,"enabled":false,"active":false,"message":"尚未安装 TUN 权限服务"}
+            systemd_linux_test.go:293: status: {"protocolVersion":1,"state":"current","canManage":true,"enabled":true,"active":true,"message":"服务文件与当前应用一致"}
+            systemd_linux_test.go:303: status: {"protocolVersion":1,"state":"current","canManage":true,"enabled":true,"active":true,"message":"服务文件与当前应用一致"}
+            systemd_linux_test.go:303: status: {"protocolVersion":1,"state":"current","canManage":true,"enabled":true,"active":true,"message":"服务文件与当前应用一致"}
+            systemd_linux_test.go:303: status: {"protocolVersion":1,"state":"missing","canManage":true,"enabled":false,"active":false,"message":"尚未安装 TUN 权限服务"}
+        real ordinary broker scenario completed: allow
+        --- PASS: TestOrdinaryManagementClientFixture (65.93s)
+        PASS
+=== RUN   TestRealSystemdManagementViaOrdinaryBroker/upgrade
+    systemd_linux_test.go:165: actual pkexec/polkit upgrade: === RUN   TestOrdinaryManagementClientFixture
+            systemd_linux_test.go:231: status: {"protocolVersion":1,"state":"different","canManage":true,"enabled":false,"active":false,"message":"已安装服务与当前应用不同，可更新服务"}
+            systemd_linux_test.go:293: status: {"protocolVersion":1,"state":"current","canManage":true,"enabled":false,"active":false,"message":"服务文件与当前应用一致"}
+            systemd_linux_test.go:303: status: {"protocolVersion":1,"state":"current","canManage":true,"enabled":false,"active":false,"message":"服务文件与当前应用一致"}
+            systemd_linux_test.go:303: status: {"protocolVersion":1,"state":"current","canManage":true,"enabled":false,"active":false,"message":"服务文件与当前应用一致"}
+            systemd_linux_test.go:303: status: {"protocolVersion":1,"state":"missing","canManage":true,"enabled":false,"active":false,"message":"尚未安装 TUN 权限服务"}
+        real ordinary broker scenario completed: upgrade
+        --- PASS: TestOrdinaryManagementClientFixture (76.39s)
+        PASS
+=== RUN   TestRealSystemdManagementViaOrdinaryBroker/cancel
+    systemd_linux_test.go:163: root worker 2055 exited before the installation lock was released
+    systemd_linux_test.go:165: actual pkexec/polkit cancel: === RUN   TestOrdinaryManagementClientFixture
+            systemd_linux_test.go:233: status: {"protocolVersion":1,"state":"missing","canManage":true,"enabled":false,"active":false,"message":"尚未安装 TUN 权限服务"}
+            systemd_linux_test.go:273: status: {"protocolVersion":1,"state":"missing","canManage":true,"enabled":false,"active":false,"message":"尚未安装 TUN 权限服务"}
+        actual cancel retained original failure and confirmed absent service
+        --- PASS: TestOrdinaryManagementClientFixture (1.43s)
+        PASS
+=== RUN   TestRealSystemdManagementViaOrdinaryBroker/eof
+    systemd_linux_test.go:163: root worker 2104 exited before the installation lock was released
+    systemd_linux_test.go:165: actual pkexec/polkit eof: === RUN   TestOrdinaryManagementClientFixture
+            systemd_linux_test.go:233: status: {"protocolVersion":1,"state":"missing","canManage":true,"enabled":false,"active":false,"message":"尚未安装 TUN 权限服务"}
+        actual EOF cancelled elevated transaction before lock release
+        --- PASS: TestOrdinaryManagementClientFixture (1.23s)
+        PASS
+--- PASS: TestRealSystemdManagementViaOrdinaryBroker (170.73s)
+    --- PASS: TestRealSystemdManagementViaOrdinaryBroker/deny (1.45s)
+    --- PASS: TestRealSystemdManagementViaOrdinaryBroker/allow (66.72s)
+    --- PASS: TestRealSystemdManagementViaOrdinaryBroker/upgrade (97.04s)
+    --- PASS: TestRealSystemdManagementViaOrdinaryBroker/cancel (2.38s)
+    --- PASS: TestRealSystemdManagementViaOrdinaryBroker/eof (2.09s)
+PASS

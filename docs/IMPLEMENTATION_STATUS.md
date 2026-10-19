@@ -2,6 +2,12 @@
 
 更新：2026-10-20。依据完整开发方案及实时 Figma，持续更新；“已实现”不等于所有平台均已验收。
 
+安装取消续验：修复版本清单写入后、正式提交前可能漏掉取消的问题，50 个取消边界、原有 30 次 SIGKILL 恢复及整套安装/管理单元通过。真实 systemd 下的安装/升级/卸载写入后取消、提交后版本保持共五项通过，取消由私有测试 checkpoint 注入；同一宿主另通过八种普通用户授权与管理场景。普通 broker 恰好在写入中发出取消仍待端到端验证，图形桌面与分发继续进行；公开 Linux TUN 保持关闭，见[安装取消与恢复](verification/linux-install-cancellation.md)。本轮没有新的 Flutter 或视觉执行。
+
+等待认证取消续验：修复仅关闭输入管道不能撤销挂起 pkexec 的问题；普通用户先撤销管道，再终止尚未切换 root 的授权进程。真实 polkit 的 AUTH_ADMIN 取消、EOF、代理拒绝三项，以及五种服务管理回归通过。证据使用 D-Bus process-subject 测试代理，不代表图形认证窗口或密码验收；写入期间取消、Linux GUI 和分发继续推进，见[等待认证取消](verification/linux-service-authentication-cancellation.md)。公开 Linux TUN 仍关闭，未重新运行 Flutter 或全页面视觉。
+
+最新服务管理续验：普通 UID 65534 经实际 pkexec/polkit 完成拒绝、安装/恢复/重复安装/卸载、不同构建替换并保留禁用状态、授权后锁等待时取消及 EOF，均通过隔离 VM。Linux/macOS 安全退出复用现有流程，并等待管理操作与回读；460 项 Flutter、静态检查和 40 张深浅主题 fixture 通过，44 个 SVG 与已保存的 Figma 导出一致。活动桌面认证弹窗、事务写入期间取消、Linux GUI 实机、正式分发与最新全页面 Figma 核对仍未完成，公开 Linux TUN 保持关闭，详见[服务管理与安全退出续验](verification/linux-tun-service-management-acceptance.md)。下文首次服务管理结果属于 `ff17b10` 检查点。
+
 最新 Linux 服务管理进展：设置页已接入状态、安装/更新、卸载、恢复、取消和连接互斥，新增独立 `manage-tun-service` 通道。Flutter 全量 454 项通过，最后的未知状态显示修正另经 6 项 UI 回归验证；静态检查与 Linux 管理/文件检查单元测试通过。真实 `pkexec` 管理 VM 在下载依赖时失败，未执行管理闭环；活动桌面认证弹窗、取消后的真实恢复及 Linux GUI 视觉仍待验收，公开 TUN 保持关闭。范围与复现见[服务管理阶段记录](verification/linux-tun-service-management.md)。以下各阶段结果及旧摘要保持其当时范围。
 
 最新 Linux 权限日志续验：核心 check / run 的脱敏输出、授权及恢复日志已传回普通宿主，复用原日志 UI；普通宿主增至 15 个场景。Linux 网络 414 个、日志压力 20 轮共 500 个、真实 systemd / polkit 3 个、Windows 164 个 Go 通过事件分别通过，详见[权限日志验收](verification/linux-tun-logs.md)。真实 VM 使用临时 UID / action 的 YES / NO 规则，未验证活动桌面密码弹窗。GUI 管理和分发仍待推进，公开 Linux TUN 保持关闭。本阶段没有 Dart 修改或新 Flutter 执行；此前 440 项结果保留。用户要求暂时收尾并保存代码，检查点见[阶段记录](verification/closeout-20261017.md)。

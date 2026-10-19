@@ -1,0 +1,94 @@
+{
+  "atUtc": "2026-10-19T17:02:35.689820+00:00",
+  "checks": [
+    {
+      "command": [
+        "gofmt",
+        "-l",
+        "$REPO_ROOT\\native\\host\\internal\\linuxinstall\\cancellation_systemd_linux_test.go",
+        "$REPO_ROOT\\native\\host\\internal\\linuxinstall\\cli_fixture_linux_test.go",
+        "$REPO_ROOT\\native\\host\\internal\\linuxinstall\\inspect_linux.go",
+        "$REPO_ROOT\\native\\host\\internal\\linuxinstall\\inspect_linux_test.go",
+        "$REPO_ROOT\\native\\host\\internal\\linuxinstall\\install_linux.go",
+        "$REPO_ROOT\\native\\host\\internal\\linuxinstall\\install_linux_test.go",
+        "$REPO_ROOT\\native\\host\\internal\\linuxinstall\\service_linux.go",
+        "$REPO_ROOT\\native\\host\\internal\\linuxinstall\\service_linux_test.go",
+        "$REPO_ROOT\\native\\host\\internal\\linuxinstall\\state_linux.go",
+        "$REPO_ROOT\\native\\host\\internal\\linuxinstall\\systemd_integration_linux_test.go",
+        "$REPO_ROOT\\native\\host\\internal\\linuxmanage\\authentication_linux_test.go",
+        "$REPO_ROOT\\native\\host\\internal\\linuxmanage\\elevation_linux.go",
+        "$REPO_ROOT\\native\\host\\internal\\linuxmanage\\elevation_linux_test.go",
+        "$REPO_ROOT\\native\\host\\internal\\linuxmanage\\server_linux.go",
+        "$REPO_ROOT\\native\\host\\internal\\linuxmanage\\server_linux_test.go",
+        "$REPO_ROOT\\native\\host\\internal\\linuxmanage\\systemd_linux_test.go"
+      ],
+      "exitCode": 0,
+      "passed": true,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "go",
+        "vet",
+        "./internal/linuxinstall",
+        "./internal/linuxmanage"
+      ],
+      "exitCode": 0,
+      "passed": true,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "go",
+        "test",
+        "-c",
+        "-o",
+        "$REPO_ROOT\\build\\qa\\linux-manage\\write-linuxinstall.test",
+        "./internal/linuxinstall"
+      ],
+      "exitCode": 0,
+      "passed": true,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "go",
+        "test",
+        "-c",
+        "-o",
+        "$REPO_ROOT\\build\\qa\\linux-manage\\write-linuxmanage.test",
+        "./internal/linuxmanage"
+      ],
+      "exitCode": 0,
+      "passed": true,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "go",
+        "build",
+        "-trimpath",
+        "-o",
+        "$REPO_ROOT\\build\\qa\\linux-manage\\write-rainlink-host",
+        "./cmd/rainlink-host"
+      ],
+      "exitCode": 0,
+      "passed": true,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "go",
+        "build",
+        "-trimpath",
+        "-ldflags=-buildid=rainlink-write-previous-qa",
+        "-o",
+        "$REPO_ROOT\\build\\qa\\linux-manage\\write-previous-host",
+        "./cmd/rainlink-host"
+      ],
+      "exitCode": 0,
+      "passed": true,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ]
+}
