@@ -8,6 +8,8 @@ import '../../domain/connection/connection_models.dart';
 import '../../domain/core/core_gateway.dart';
 import '../../domain/core/core_status.dart';
 import '../../domain/core/core_telemetry.dart';
+import '../../domain/core/core_traffic.dart';
+import '../../domain/connection/traffic_accounting.dart';
 import '../../domain/core/runtime_settings.dart';
 import '../../domain/core/session_gateway.dart';
 import '../../domain/nodes/node_probe.dart';
@@ -16,6 +18,7 @@ import '../../domain/routing/route_rules.dart';
 import 'session_protocol.dart';
 import 'session_request_protocol.dart';
 import 'core_telemetry_protocol.dart';
+import 'core_traffic_protocol.dart';
 
 /// Thin transport to the Android service. No native configuration or plaintext
 /// connection credentials are returned to the Flutter presentation layer.
@@ -28,9 +31,10 @@ class AndroidCoreGateway
         NodeTester,
         ChainTester,
         CoreTelemetryGateway,
+        CoreTrafficGateway,
         RuntimeSettingsGateway {
   AndroidCoreGateway({MethodChannel? channel})
-      : _channel = channel ?? const MethodChannel('rainlink/core');
+    : _channel = channel ?? const MethodChannel('rainlink/core');
 
   final MethodChannel _channel;
   bool _disposed = false;
@@ -40,9 +44,11 @@ class AndroidCoreGateway
   int _tests = 0;
   int _dnsGeneration = 0;
 
-  Future<Map<String, Object?>> _request(String method,
-      [Map<String, Object?> arguments = const {},
-      Duration timeout = const Duration(seconds: 15)]) async {
+  Future<Map<String, Object?>> _request(
+    String method, [
+    Map<String, Object?> arguments = const {},
+    Duration timeout = const Duration(seconds: 15),
+  ]) async {
     if (_disposed) {
       throw const CoreGatewayException('disposed', '核心接口已关闭');
     }
@@ -73,15 +79,21 @@ class AndroidCoreGateway
   @override
   Future<CoreStatus> inspect() async {
     final status = await _request('status');
-    if (status case {'coreVersion': String version, 'requiresTun': true}
-        when version.isNotEmpty) {
+    if (status case {
+      'coreVersion': String version,
+      'requiresTun': true,
+    } when version.isNotEmpty) {
       return CoreStatus(
-          hostAvailable: true,
-          hostVersion: 'android-1',
-          coreVersion: version,
-          message: 'Android 网络服务已就绪',
-          capabilities: const CoreCapabilities(
-              connect: true, tun: true, requiresTun: true));
+        hostAvailable: true,
+        hostVersion: 'android-1',
+        coreVersion: version,
+        message: 'Android 网络服务已就绪',
+        capabilities: const CoreCapabilities(
+          connect: true,
+          tun: true,
+          requiresTun: true,
+        ),
+      );
     }
     throw const CoreGatewayException('invalid_response', 'Android 核心能力响应无效');
   }
@@ -89,12 +101,15 @@ class AndroidCoreGateway
   @override
   Future<ConnectionsSnapshot> connections({required String sessionId}) =>
       CoreTelemetryProtocol.readConnections(
-          sessionId: sessionId,
-          loadPage: (arguments) => _request('connections', arguments));
+        sessionId: sessionId,
+        loadPage: (arguments) => _request('connections', arguments),
+      );
 
   @override
-  Future<void> closeConnections(
-      {required String sessionId, String? connectionId}) async {
+  Future<void> closeConnections({
+    required String sessionId,
+    String? connectionId,
+  }) async {
     await _request('closeConnections', {
       'sessionId': sessionId,
       'connectionId': connectionId ?? '',
@@ -103,9 +118,18 @@ class AndroidCoreGateway
   }
 
   @override
+  Future<TrafficAccountingSnapshot> traffic({
+    required String sessionId,
+  }) async => CoreTrafficProtocol.parse(
+    await _request('traffic', {'sessionId': sessionId}),
+    sessionId: sessionId,
+  );
+
+  @override
   Future<CoreLogBatch> logs({String stream = '', int after = 0}) async =>
       CoreTelemetryProtocol.logs(
-          await _request('logs', {'stream': stream, 'after': after}));
+        await _request('logs', {'stream': stream, 'after': after}),
+      );
 
   @override
   Future<CoreLogBatch> clearLogs() async =>
@@ -115,7 +139,9 @@ class AndroidCoreGateway
   Future<ActiveConnectionSnapshot> connect(ConnectRequest request) async {
     if (!request.tun || request.systemProxy) {
       throw const CoreGatewayException(
-          'invalid_capture', 'Android 连接须启用系统隧道，不使用桌面系统代理');
+        'invalid_capture',
+        'Android 连接须启用系统隧道，不使用桌面系统代理',
+      );
     }
     final generation = ++_generation;
     final node = request.node;
@@ -133,18 +159,15 @@ class AndroidCoreGateway
     }
     Map<String, Object?> result;
     try {
-      result = await _request(
-          'connect',
-          {
-            if (node != null) 'node': node.toHost(),
-            if (chain != null) 'chain': chain.toHost(),
-            'mode': request.mode.name,
-            'systemProxy': false,
-            'tun': true,
-            'runtimeSettings': request.runtimeSettings.validated().toJson(),
-            if (request.routing case final plan?) 'routing': plan.toHost(),
-          },
-          const Duration(seconds: 90));
+      result = await _request('connect', {
+        if (node != null) 'node': node.toHost(),
+        if (chain != null) 'chain': chain.toHost(),
+        'mode': request.mode.name,
+        'systemProxy': false,
+        'tun': true,
+        'runtimeSettings': request.runtimeSettings.validated().toJson(),
+        if (request.routing case final plan?) 'routing': plan.toHost(),
+      }, const Duration(seconds: 90));
     } on CoreGatewayException catch (error) {
       if (error.code == 'timeout') await _request('cancel');
       rethrow;
@@ -161,7 +184,9 @@ class AndroidCoreGateway
   }
 
   SessionObservation _verifyReceipt(
-      Map<String, Object?> result, ConnectRequest request) {
+    Map<String, Object?> result,
+    ConnectRequest request,
+  ) {
     final observation = SessionProtocol.decode(result);
     final active = observation.active;
     final rawSettings = result['runtimeSettings'];
@@ -184,15 +209,16 @@ class AndroidCoreGateway
         active.target.kind != request.target.kind ||
         active.target.revision != request.target.revision ||
         active.mode != request.mode ||
-        !request.runtimeSettings
-            .toJson()
-            .entries
-            .every((entry) => settings[entry.key] == entry.value) ||
+        !request.runtimeSettings.toJson().entries.every(
+          (entry) => settings[entry.key] == entry.value,
+        ) ||
         plan != null &&
             (active.ruleRevision != plan.ruleSet.revision ||
                 !plan.matchesBindings(active.routeBindings))) {
       throw const CoreGatewayException(
-          'invalid_response', 'Android 实际连接与请求不一致');
+        'invalid_response',
+        'Android 实际连接与请求不一致',
+      );
     }
     return observation;
   }
@@ -242,13 +268,17 @@ class AndroidCoreGateway
   }
 
   @override
-  Future<String> protect(String nodeId, String username, String password,
-      {String obfsPassword = ''}) async {
+  Future<String> protect(
+    String nodeId,
+    String username,
+    String password, {
+    String obfsPassword = '',
+  }) async {
     final value = await _request('protect', {
       'id': nodeId,
       'username': username,
       'password': password,
-      'obfsPassword': obfsPassword
+      'obfsPassword': obfsPassword,
     });
     if (value case {'cipher': String cipher} when cipher.startsWith('rlk1.')) {
       return cipher;
@@ -259,40 +289,40 @@ class AndroidCoreGateway
   @override
   Future<NodeCredentials> reveal(String id, String cipher) async {
     final value = await _request('reveal', {'id': id, 'cipher': cipher});
-    if (value
-        case {
-          'username': String username,
-          'password': String password,
-          'obfsPassword': String obfs
-        }) {
+    if (value case {
+      'username': String username,
+      'password': String password,
+      'obfsPassword': String obfs,
+    }) {
       return NodeCredentials(
-          username: username, password: password, obfsPassword: obfs);
+        username: username,
+        password: password,
+        obfsPassword: obfs,
+      );
     }
     throw const CoreGatewayException('invalid_response', '安全凭据读取响应无效');
   }
 
-  Map<String, Object?> _temporary(
-          {ProxyNode? node,
-          ChainSnapshot? chain,
-          CoreRuntimeSettings settings = const CoreRuntimeSettings()}) =>
-      {
-        if (node != null) 'node': node.toHost(),
-        if (chain != null) 'chain': chain.toHost(),
-        'mode': 'global',
-        'tun': false,
-        'systemProxy': false,
-        'runtimeSettings': settings.validated().toJson(),
-      };
+  Map<String, Object?> _temporary({
+    ProxyNode? node,
+    ChainSnapshot? chain,
+    CoreRuntimeSettings settings = const CoreRuntimeSettings(),
+  }) => {
+    if (node != null) 'node': node.toHost(),
+    if (chain != null) 'chain': chain.toHost(),
+    'mode': 'global',
+    'tun': false,
+    'systemProxy': false,
+    'runtimeSettings': settings.validated().toJson(),
+  };
   Future<int> _measure({ProxyNode? node, ChainSnapshot? chain}) async {
-    final value = await _request(
-        'measure',
-        {
-          ..._temporary(node: node, chain: chain),
-          'testId': 'probe-${++_testId}'
-        },
-        const Duration(seconds: 25));
-    if (value case {'latency': int latency}
-        when latency >= 0 && latency <= 60000) {
+    final value = await _request('measure', {
+      ..._temporary(node: node, chain: chain),
+      'testId': 'probe-${++_testId}',
+    }, const Duration(seconds: 25));
+    if (value case {
+      'latency': int latency,
+    } when latency >= 0 && latency <= 60000) {
       return latency;
     }
     throw const NodeException('节点测速响应无效');
@@ -309,19 +339,21 @@ class AndroidCoreGateway
         throw const CoreGatewayException('cancelled', '测试已取消');
       }
       return NodeProbeResult(
-          nodeId: node.id,
-          revision: node.revision,
-          checkedAt: DateTime.now(),
-          passed: true,
-          latency: latency);
+        nodeId: node.id,
+        revision: node.revision,
+        checkedAt: DateTime.now(),
+        passed: true,
+        latency: latency,
+      );
     } on CoreGatewayException catch (error) {
       if (generation != _testGeneration || error.code == 'cancelled') rethrow;
       return NodeProbeResult(
-          nodeId: node.id,
-          revision: node.revision,
-          checkedAt: DateTime.now(),
-          passed: false,
-          error: error.message);
+        nodeId: node.id,
+        revision: node.revision,
+        checkedAt: DateTime.now(),
+        passed: false,
+        error: error.message,
+      );
     } finally {
       _tests--;
     }
@@ -349,36 +381,49 @@ class AndroidCoreGateway
       try {
         final prefix = chain.hops.sublist(0, index + 1);
         final latency = await _measure(
-            node: index == 0 ? prefix.first : null,
-            chain: index == 0
-                ? null
-                : ChainSnapshot(
+          node: index == 0 ? prefix.first : null,
+          chain:
+              index == 0
+                  ? null
+                  : ChainSnapshot(
                     ProxyChain(
-                        id: chain.chain.id,
-                        name: chain.chain.name,
-                        revision: chain.chain.revision,
-                        hopIds: prefix.map((node) => node.id).toList()),
-                    prefix));
+                      id: chain.chain.id,
+                      name: chain.chain.name,
+                      revision: chain.chain.revision,
+                      hopIds: prefix.map((node) => node.id).toList(),
+                    ),
+                    prefix,
+                  ),
+        );
         if (generation != _testGeneration) {
           throw const ChainException('链路测试已取消');
         }
-        results
-            .add(ChainHopTest(hop: index + 1, latency: latency, passed: true));
+        results.add(
+          ChainHopTest(hop: index + 1, latency: latency, passed: true),
+        );
       } on CoreGatewayException catch (error) {
         if (generation != _testGeneration) {
           throw const ChainException('链路测试已取消');
         }
-        results.add(ChainHopTest(
-            hop: index + 1, latency: 0, passed: false, error: error.message));
+        results.add(
+          ChainHopTest(
+            hop: index + 1,
+            latency: 0,
+            passed: false,
+            error: error.message,
+          ),
+        );
         break;
       }
     }
     return ChainTestResult(
-        fingerprint: chain.fingerprint,
-        checkedAt: DateTime.now(),
-        passed: results.length == chain.hops.length &&
-            results.every((hop) => hop.passed),
-        hops: results);
+      fingerprint: chain.fingerprint,
+      checkedAt: DateTime.now(),
+      passed:
+          results.length == chain.hops.length &&
+          results.every((hop) => hop.passed),
+      hops: results,
+    );
   }
 
   @override
@@ -391,15 +436,18 @@ class AndroidCoreGateway
   @override
   Future<void> validateRuntime(CoreRuntimeSettings settings) async {
     await _request(
-        'validate',
-        _temporary(
-            settings: settings,
-            node: const ProxyNode(
-                id: 'settings-check',
-                name: '配置校验',
-                protocol: NodeProtocol.http,
-                server: '127.0.0.1',
-                port: 9)));
+      'validate',
+      _temporary(
+        settings: settings,
+        node: const ProxyNode(
+          id: 'settings-check',
+          name: '配置校验',
+          protocol: NodeProtocol.http,
+          server: '127.0.0.1',
+          port: 9,
+        ),
+      ),
+    );
   }
 
   @override

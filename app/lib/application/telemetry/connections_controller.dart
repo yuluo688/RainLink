@@ -7,30 +7,39 @@ import '../connection/session_controller.dart';
 import '../core/core_providers.dart';
 
 class ConnectionsView {
-  const ConnectionsView(
-      {this.snapshot,
-      this.error = '',
-      this.loading = false,
-      this.paused = false,
-      this.closing = false});
+  const ConnectionsView({
+    this.snapshot,
+    this.recent,
+    this.error = '',
+    this.loading = false,
+    this.paused = false,
+    this.closing = false,
+  });
   final ConnectionsSnapshot? snapshot;
+
+  /// Most recently started connection observed in this session, in memory only.
+  final CoreConnection? recent;
   final String error;
   final bool loading;
   final bool paused;
   final bool closing;
 }
 
-final connectionsControllerProvider =
-    StateNotifierProvider.autoDispose<ConnectionsController, ConnectionsView>(
-        (ref) {
+final connectionsControllerProvider = StateNotifierProvider.autoDispose<
+  ConnectionsController,
+  ConnectionsView
+>((ref) {
   final gateway = ref.watch(coreGatewayProvider);
   final controller = ConnectionsController(
-      gateway is CoreTelemetryGateway ? gateway as CoreTelemetryGateway : null);
+    gateway is CoreTelemetryGateway ? gateway as CoreTelemetryGateway : null,
+  );
   ref.listen(
-      sessionControllerProvider
-          .select((state) => state.connected ? state.active?.sessionId : null),
-      (_, session) => controller.setSession(session),
-      fireImmediately: true);
+    sessionControllerProvider.select(
+      (state) => state.connected ? state.active?.sessionId : null,
+    ),
+    (_, session) => controller.setSession(session),
+    fireImmediately: true,
+  );
   return controller;
 });
 
@@ -59,11 +68,14 @@ class ConnectionsController extends StateNotifier<ConnectionsView> {
     _timer?.cancel();
     if (_foreground && _session != null && !state.paused && gateway != null) {
       _timer = Timer.periodic(
-          const Duration(seconds: 1), (_) => unawaited(refresh()));
+        const Duration(seconds: 1),
+        (_) => unawaited(refresh()),
+      );
     }
   }
 
   void setForeground(bool foreground) {
+    if (_foreground == foreground) return;
     _foreground = foreground;
     _schedule();
     if (foreground && !state.paused) unawaited(refresh());
@@ -71,15 +83,18 @@ class ConnectionsController extends StateNotifier<ConnectionsView> {
 
   void togglePaused() {
     state = ConnectionsView(
-        snapshot: state.snapshot,
-        paused: !state.paused,
-        error: state.error,
-        closing: state.closing);
+      snapshot: state.snapshot,
+      recent: state.recent,
+      paused: !state.paused,
+      error: state.error,
+      closing: state.closing,
+    );
     _schedule();
     if (!state.paused) unawaited(refresh());
   }
 
-  Future<void> refresh() => _refreshing ??= _refresh().whenComplete(() {
+  Future<void> refresh() =>
+      _refreshing ??= _refresh().whenComplete(() {
         _refreshing = null;
         // A session change while awaiting a request must not suppress the new read.
         if (mounted &&
@@ -107,20 +122,28 @@ class ConnectionsController extends StateNotifier<ConnectionsView> {
     }
     final generation = _generation;
     state = ConnectionsView(
-        snapshot: state.snapshot,
-        loading: state.snapshot == null,
-        closing: state.closing);
+      snapshot: state.snapshot,
+      recent: state.recent,
+      loading: state.snapshot == null,
+      closing: state.closing,
+    );
     try {
       final snapshot = await source.connections(sessionId: session);
       if (!mounted || generation != _generation || state.paused) return;
-      state = ConnectionsView(snapshot: snapshot, closing: state.closing);
+      state = ConnectionsView(
+        snapshot: snapshot,
+        recent: _mostRecent(snapshot),
+        closing: state.closing,
+      );
     } on Exception catch (error) {
       if (mounted && generation == _generation) {
         state = ConnectionsView(
-            snapshot: state.snapshot,
-            error: error.toString(),
-            paused: state.paused,
-            closing: state.closing);
+          snapshot: state.snapshot,
+          recent: state.recent,
+          error: error.toString(),
+          paused: state.paused,
+          closing: state.closing,
+        );
       }
     }
   }
@@ -136,23 +159,49 @@ class ConnectionsController extends StateNotifier<ConnectionsView> {
     }
     final generation = ++_generation;
     state = ConnectionsView(
-        snapshot: snapshot, paused: state.paused, closing: true);
+      snapshot: snapshot,
+      recent: state.recent,
+      paused: state.paused,
+      closing: true,
+    );
     try {
       await source.closeConnections(
-          sessionId: snapshot.sessionId, connectionId: id);
+        sessionId: snapshot.sessionId,
+        connectionId: id,
+      );
       if (!mounted || generation != _generation) return;
       // Closing is an explicit action, including while the view is paused.
       final refreshed = await source.connections(sessionId: snapshot.sessionId);
       if (!mounted || generation != _generation) return;
-      state = ConnectionsView(snapshot: refreshed, paused: state.paused);
+      state = ConnectionsView(
+        snapshot: refreshed,
+        recent: _mostRecent(refreshed),
+        paused: state.paused,
+      );
     } on Exception catch (error) {
       if (mounted && generation == _generation) {
         state = ConnectionsView(
-            snapshot: state.snapshot,
-            error: error.toString(),
-            paused: state.paused);
+          snapshot: state.snapshot,
+          recent: state.recent,
+          error: error.toString(),
+          paused: state.paused,
+        );
       }
     }
+  }
+
+  CoreConnection? _mostRecent(ConnectionsSnapshot snapshot) {
+    var recent = state.recent;
+    for (final entry in snapshot.entries) {
+      final previous = recent;
+      if (previous == null ||
+          entry.startedAt.isAfter(previous.startedAt) ||
+          entry.startedAt.isAtSameMomentAs(previous.startedAt) &&
+              entry.id.compareTo(previous.id) >= 0) {
+        recent = entry;
+      }
+    }
+    return recent;
   }
 
   @override

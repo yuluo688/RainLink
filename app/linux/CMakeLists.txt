@@ -72,6 +72,18 @@ set_target_properties(${BINARY_NAME}
 
 # Generated plugin build rules, which manage building the plugins and adding
 # them to the application.
+# sqlite3_flutter_libs 0.5.29 otherwise downloads this source without a hash or
+# timeout. The first declaration wins when the plugin includes FetchContent.
+include(FetchContent)
+if(POLICY CMP0135)
+  cmake_policy(SET CMP0135 NEW)
+endif()
+FetchContent_Declare(sqlite3
+  URL https://sqlite.org/2025/sqlite-autoconf-3480000.tar.gz
+  URL_HASH SHA256=ac992f7fca3989de7ed1fe99c16363f848794c8c32a158dafd4eb927a2e02fd5
+  TIMEOUT 120
+  INACTIVITY_TIMEOUT 30
+)
 include(flutter/generated_plugins.cmake)
 
 
@@ -79,7 +91,10 @@ include(flutter/generated_plugins.cmake)
 # By default, "installing" just makes a relocatable bundle in the build
 # directory.
 set(BUILD_BUNDLE_DIR "${PROJECT_BINARY_DIR}/bundle")
-if(CMAKE_INSTALL_PREFIX_INITIALIZED_TO_DEFAULT)
+# A configure failure before this block can leave CMake's default cached, so
+# retries must also replace it rather than installing into a system directory.
+if(CMAKE_INSTALL_PREFIX_INITIALIZED_TO_DEFAULT OR
+   CMAKE_INSTALL_PREFIX STREQUAL "/usr/local")
   set(CMAKE_INSTALL_PREFIX "${BUILD_BUNDLE_DIR}" CACHE PATH "..." FORCE)
 endif()
 
@@ -110,7 +125,12 @@ endforeach(bundled_library)
 set(NATIVE_ASSETS_DIR "${PROJECT_BUILD_DIR}native_assets/linux/")
 install(DIRECTORY "${NATIVE_ASSETS_DIR}"
    DESTINATION "${INSTALL_BUNDLE_LIB_DIR}"
-   COMPONENT Runtime)
+  COMPONENT Runtime
+  PATTERN "native_assets.json" EXCLUDE)
+# Test-only metadata can contain absolute development paths. Flutter tests and
+# release builds share the native-assets directory; keep it out of the bundle.
+install(CODE "file(REMOVE \"${INSTALL_BUNDLE_LIB_DIR}/native_assets.json\")"
+  COMPONENT Runtime)
 
 # Fully re-copy the assets directory on each build to avoid having stale files
 # from a previous install.

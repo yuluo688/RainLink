@@ -12,13 +12,21 @@ class $PreferencesTable extends Preferences
   static const VerificationMeta _keyMeta = const VerificationMeta('key');
   @override
   late final GeneratedColumn<String> key = GeneratedColumn<String>(
-      'key', aliasedName, false,
-      type: DriftSqlType.string, requiredDuringInsert: true);
+    'key',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+  );
   static const VerificationMeta _valueMeta = const VerificationMeta('value');
   @override
   late final GeneratedColumn<String> value = GeneratedColumn<String>(
-      'value', aliasedName, false,
-      type: DriftSqlType.string, requiredDuringInsert: true);
+    'value',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+  );
   @override
   List<GeneratedColumn> get $columns => [key, value];
   @override
@@ -27,19 +35,25 @@ class $PreferencesTable extends Preferences
   String get actualTableName => $name;
   static const String $name = 'preferences';
   @override
-  VerificationContext validateIntegrity(Insertable<Preference> instance,
-      {bool isInserting = false}) {
+  VerificationContext validateIntegrity(
+    Insertable<Preference> instance, {
+    bool isInserting = false,
+  }) {
     final context = VerificationContext();
     final data = instance.toColumns(true);
     if (data.containsKey('key')) {
       context.handle(
-          _keyMeta, key.isAcceptableOrUnknown(data['key']!, _keyMeta));
+        _keyMeta,
+        key.isAcceptableOrUnknown(data['key']!, _keyMeta),
+      );
     } else if (isInserting) {
       context.missing(_keyMeta);
     }
     if (data.containsKey('value')) {
       context.handle(
-          _valueMeta, value.isAcceptableOrUnknown(data['value']!, _valueMeta));
+        _valueMeta,
+        value.isAcceptableOrUnknown(data['value']!, _valueMeta),
+      );
     } else if (isInserting) {
       context.missing(_valueMeta);
     }
@@ -52,10 +66,16 @@ class $PreferencesTable extends Preferences
   Preference map(Map<String, dynamic> data, {String? tablePrefix}) {
     final effectivePrefix = tablePrefix != null ? '$tablePrefix.' : '';
     return Preference(
-      key: attachedDatabase.typeMapping
-          .read(DriftSqlType.string, data['${effectivePrefix}key'])!,
-      value: attachedDatabase.typeMapping
-          .read(DriftSqlType.string, data['${effectivePrefix}value'])!,
+      key:
+          attachedDatabase.typeMapping.read(
+            DriftSqlType.string,
+            data['${effectivePrefix}key'],
+          )!,
+      value:
+          attachedDatabase.typeMapping.read(
+            DriftSqlType.string,
+            data['${effectivePrefix}value'],
+          )!,
     );
   }
 
@@ -78,14 +98,13 @@ class Preference extends DataClass implements Insertable<Preference> {
   }
 
   PreferencesCompanion toCompanion(bool nullToAbsent) {
-    return PreferencesCompanion(
-      key: Value(key),
-      value: Value(value),
-    );
+    return PreferencesCompanion(key: Value(key), value: Value(value));
   }
 
-  factory Preference.fromJson(Map<String, dynamic> json,
-      {ValueSerializer? serializer}) {
+  factory Preference.fromJson(
+    Map<String, dynamic> json, {
+    ValueSerializer? serializer,
+  }) {
     serializer ??= driftRuntimeOptions.defaultSerializer;
     return Preference(
       key: serializer.fromJson<String>(json['key']),
@@ -101,10 +120,8 @@ class Preference extends DataClass implements Insertable<Preference> {
     };
   }
 
-  Preference copyWith({String? key, String? value}) => Preference(
-        key: key ?? this.key,
-        value: value ?? this.value,
-      );
+  Preference copyWith({String? key, String? value}) =>
+      Preference(key: key ?? this.key, value: value ?? this.value);
   Preference copyWithCompanion(PreferencesCompanion data) {
     return Preference(
       key: data.key.present ? data.key.value : this.key,
@@ -144,8 +161,8 @@ class PreferencesCompanion extends UpdateCompanion<Preference> {
     required String key,
     required String value,
     this.rowid = const Value.absent(),
-  })  : key = Value(key),
-        value = Value(value);
+  }) : key = Value(key),
+       value = Value(value);
   static Insertable<Preference> custom({
     Expression<String>? key,
     Expression<String>? value,
@@ -158,8 +175,11 @@ class PreferencesCompanion extends UpdateCompanion<Preference> {
     });
   }
 
-  PreferencesCompanion copyWith(
-      {Value<String>? key, Value<String>? value, Value<int>? rowid}) {
+  PreferencesCompanion copyWith({
+    Value<String>? key,
+    Value<String>? value,
+    Value<int>? rowid,
+  }) {
     return PreferencesCompanion(
       key: key ?? this.key,
       value: value ?? this.value,
@@ -201,98 +221,146 @@ class $NodesTable extends Nodes with TableInfo<$NodesTable, Node> {
   static const VerificationMeta _idMeta = const VerificationMeta('id');
   @override
   late final GeneratedColumn<String> id = GeneratedColumn<String>(
-      'id', aliasedName, false,
-      type: DriftSqlType.string, requiredDuringInsert: true);
+    'id',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+  );
   static const VerificationMeta _nameMeta = const VerificationMeta('name');
   @override
   late final GeneratedColumn<String> name = GeneratedColumn<String>(
-      'name', aliasedName, false,
-      type: DriftSqlType.string, requiredDuringInsert: true);
-  static const VerificationMeta _protocolMeta =
-      const VerificationMeta('protocol');
+    'name',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+  );
+  static const VerificationMeta _protocolMeta = const VerificationMeta(
+    'protocol',
+  );
   @override
   late final GeneratedColumn<String> protocol = GeneratedColumn<String>(
-      'protocol', aliasedName, false,
-      type: DriftSqlType.string, requiredDuringInsert: true);
+    'protocol',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+  );
   static const VerificationMeta _serverMeta = const VerificationMeta('server');
   @override
   late final GeneratedColumn<String> server = GeneratedColumn<String>(
-      'server', aliasedName, false,
-      type: DriftSqlType.string, requiredDuringInsert: true);
+    'server',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+  );
   static const VerificationMeta _portMeta = const VerificationMeta('port');
   @override
   late final GeneratedColumn<int> port = GeneratedColumn<int>(
-      'port', aliasedName, false,
-      type: DriftSqlType.int, requiredDuringInsert: true);
+    'port',
+    aliasedName,
+    false,
+    type: DriftSqlType.int,
+    requiredDuringInsert: true,
+  );
   static const VerificationMeta _tlsMeta = const VerificationMeta('tls');
   @override
   late final GeneratedColumn<bool> tls = GeneratedColumn<bool>(
-      'tls', aliasedName, false,
-      type: DriftSqlType.bool,
-      requiredDuringInsert: false,
-      defaultConstraints:
-          GeneratedColumn.constraintIsAlways('CHECK ("tls" IN (0, 1))'),
-      defaultValue: const Constant(false));
-  static const VerificationMeta _credentialMeta =
-      const VerificationMeta('credential');
+    'tls',
+    aliasedName,
+    false,
+    type: DriftSqlType.bool,
+    requiredDuringInsert: false,
+    defaultConstraints: GeneratedColumn.constraintIsAlways(
+      'CHECK ("tls" IN (0, 1))',
+    ),
+    defaultValue: const Constant(false),
+  );
+  static const VerificationMeta _credentialMeta = const VerificationMeta(
+    'credential',
+  );
   @override
   late final GeneratedColumn<String> credential = GeneratedColumn<String>(
-      'credential', aliasedName, false,
-      type: DriftSqlType.string,
-      requiredDuringInsert: false,
-      defaultValue: const Constant(''));
-  static const VerificationMeta _revisionMeta =
-      const VerificationMeta('revision');
+    'credential',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: false,
+    defaultValue: const Constant(''),
+  );
+  static const VerificationMeta _revisionMeta = const VerificationMeta(
+    'revision',
+  );
   @override
   late final GeneratedColumn<int> revision = GeneratedColumn<int>(
-      'revision', aliasedName, false,
-      type: DriftSqlType.int,
-      requiredDuringInsert: false,
-      defaultValue: const Constant(1));
-  static const VerificationMeta _optionsMeta =
-      const VerificationMeta('options');
+    'revision',
+    aliasedName,
+    false,
+    type: DriftSqlType.int,
+    requiredDuringInsert: false,
+    defaultValue: const Constant(1),
+  );
+  static const VerificationMeta _optionsMeta = const VerificationMeta(
+    'options',
+  );
   @override
   late final GeneratedColumn<String> options = GeneratedColumn<String>(
-      'options', aliasedName, false,
-      type: DriftSqlType.string,
-      requiredDuringInsert: false,
-      defaultValue: const Constant('{}'));
-  static const VerificationMeta _groupIdMeta =
-      const VerificationMeta('groupId');
+    'options',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: false,
+    defaultValue: const Constant('{}'),
+  );
+  static const VerificationMeta _groupIdMeta = const VerificationMeta(
+    'groupId',
+  );
   @override
   late final GeneratedColumn<String> groupId = GeneratedColumn<String>(
-      'group_id', aliasedName, true,
-      type: DriftSqlType.string, requiredDuringInsert: false);
-  static const VerificationMeta _sourceKeyMeta =
-      const VerificationMeta('sourceKey');
+    'group_id',
+    aliasedName,
+    true,
+    type: DriftSqlType.string,
+    requiredDuringInsert: false,
+  );
+  static const VerificationMeta _sourceKeyMeta = const VerificationMeta(
+    'sourceKey',
+  );
   @override
   late final GeneratedColumn<String> sourceKey = GeneratedColumn<String>(
-      'source_key', aliasedName, false,
-      type: DriftSqlType.string,
-      requiredDuringInsert: false,
-      defaultValue: const Constant(''));
+    'source_key',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: false,
+    defaultValue: const Constant(''),
+  );
   @override
   List<GeneratedColumn> get $columns => [
-        id,
-        name,
-        protocol,
-        server,
-        port,
-        tls,
-        credential,
-        revision,
-        options,
-        groupId,
-        sourceKey
-      ];
+    id,
+    name,
+    protocol,
+    server,
+    port,
+    tls,
+    credential,
+    revision,
+    options,
+    groupId,
+    sourceKey,
+  ];
   @override
   String get aliasedName => _alias ?? actualTableName;
   @override
   String get actualTableName => $name;
   static const String $name = 'nodes';
   @override
-  VerificationContext validateIntegrity(Insertable<Node> instance,
-      {bool isInserting = false}) {
+  VerificationContext validateIntegrity(
+    Insertable<Node> instance, {
+    bool isInserting = false,
+  }) {
     final context = VerificationContext();
     final data = instance.toColumns(true);
     if (data.containsKey('id')) {
@@ -302,53 +370,71 @@ class $NodesTable extends Nodes with TableInfo<$NodesTable, Node> {
     }
     if (data.containsKey('name')) {
       context.handle(
-          _nameMeta, name.isAcceptableOrUnknown(data['name']!, _nameMeta));
+        _nameMeta,
+        name.isAcceptableOrUnknown(data['name']!, _nameMeta),
+      );
     } else if (isInserting) {
       context.missing(_nameMeta);
     }
     if (data.containsKey('protocol')) {
-      context.handle(_protocolMeta,
-          protocol.isAcceptableOrUnknown(data['protocol']!, _protocolMeta));
+      context.handle(
+        _protocolMeta,
+        protocol.isAcceptableOrUnknown(data['protocol']!, _protocolMeta),
+      );
     } else if (isInserting) {
       context.missing(_protocolMeta);
     }
     if (data.containsKey('server')) {
-      context.handle(_serverMeta,
-          server.isAcceptableOrUnknown(data['server']!, _serverMeta));
+      context.handle(
+        _serverMeta,
+        server.isAcceptableOrUnknown(data['server']!, _serverMeta),
+      );
     } else if (isInserting) {
       context.missing(_serverMeta);
     }
     if (data.containsKey('port')) {
       context.handle(
-          _portMeta, port.isAcceptableOrUnknown(data['port']!, _portMeta));
+        _portMeta,
+        port.isAcceptableOrUnknown(data['port']!, _portMeta),
+      );
     } else if (isInserting) {
       context.missing(_portMeta);
     }
     if (data.containsKey('tls')) {
       context.handle(
-          _tlsMeta, tls.isAcceptableOrUnknown(data['tls']!, _tlsMeta));
+        _tlsMeta,
+        tls.isAcceptableOrUnknown(data['tls']!, _tlsMeta),
+      );
     }
     if (data.containsKey('credential')) {
       context.handle(
-          _credentialMeta,
-          credential.isAcceptableOrUnknown(
-              data['credential']!, _credentialMeta));
+        _credentialMeta,
+        credential.isAcceptableOrUnknown(data['credential']!, _credentialMeta),
+      );
     }
     if (data.containsKey('revision')) {
-      context.handle(_revisionMeta,
-          revision.isAcceptableOrUnknown(data['revision']!, _revisionMeta));
+      context.handle(
+        _revisionMeta,
+        revision.isAcceptableOrUnknown(data['revision']!, _revisionMeta),
+      );
     }
     if (data.containsKey('options')) {
-      context.handle(_optionsMeta,
-          options.isAcceptableOrUnknown(data['options']!, _optionsMeta));
+      context.handle(
+        _optionsMeta,
+        options.isAcceptableOrUnknown(data['options']!, _optionsMeta),
+      );
     }
     if (data.containsKey('group_id')) {
-      context.handle(_groupIdMeta,
-          groupId.isAcceptableOrUnknown(data['group_id']!, _groupIdMeta));
+      context.handle(
+        _groupIdMeta,
+        groupId.isAcceptableOrUnknown(data['group_id']!, _groupIdMeta),
+      );
     }
     if (data.containsKey('source_key')) {
-      context.handle(_sourceKeyMeta,
-          sourceKey.isAcceptableOrUnknown(data['source_key']!, _sourceKeyMeta));
+      context.handle(
+        _sourceKeyMeta,
+        sourceKey.isAcceptableOrUnknown(data['source_key']!, _sourceKeyMeta),
+      );
     }
     return context;
   }
@@ -359,28 +445,60 @@ class $NodesTable extends Nodes with TableInfo<$NodesTable, Node> {
   Node map(Map<String, dynamic> data, {String? tablePrefix}) {
     final effectivePrefix = tablePrefix != null ? '$tablePrefix.' : '';
     return Node(
-      id: attachedDatabase.typeMapping
-          .read(DriftSqlType.string, data['${effectivePrefix}id'])!,
-      name: attachedDatabase.typeMapping
-          .read(DriftSqlType.string, data['${effectivePrefix}name'])!,
-      protocol: attachedDatabase.typeMapping
-          .read(DriftSqlType.string, data['${effectivePrefix}protocol'])!,
-      server: attachedDatabase.typeMapping
-          .read(DriftSqlType.string, data['${effectivePrefix}server'])!,
-      port: attachedDatabase.typeMapping
-          .read(DriftSqlType.int, data['${effectivePrefix}port'])!,
-      tls: attachedDatabase.typeMapping
-          .read(DriftSqlType.bool, data['${effectivePrefix}tls'])!,
-      credential: attachedDatabase.typeMapping
-          .read(DriftSqlType.string, data['${effectivePrefix}credential'])!,
-      revision: attachedDatabase.typeMapping
-          .read(DriftSqlType.int, data['${effectivePrefix}revision'])!,
-      options: attachedDatabase.typeMapping
-          .read(DriftSqlType.string, data['${effectivePrefix}options'])!,
-      groupId: attachedDatabase.typeMapping
-          .read(DriftSqlType.string, data['${effectivePrefix}group_id']),
-      sourceKey: attachedDatabase.typeMapping
-          .read(DriftSqlType.string, data['${effectivePrefix}source_key'])!,
+      id:
+          attachedDatabase.typeMapping.read(
+            DriftSqlType.string,
+            data['${effectivePrefix}id'],
+          )!,
+      name:
+          attachedDatabase.typeMapping.read(
+            DriftSqlType.string,
+            data['${effectivePrefix}name'],
+          )!,
+      protocol:
+          attachedDatabase.typeMapping.read(
+            DriftSqlType.string,
+            data['${effectivePrefix}protocol'],
+          )!,
+      server:
+          attachedDatabase.typeMapping.read(
+            DriftSqlType.string,
+            data['${effectivePrefix}server'],
+          )!,
+      port:
+          attachedDatabase.typeMapping.read(
+            DriftSqlType.int,
+            data['${effectivePrefix}port'],
+          )!,
+      tls:
+          attachedDatabase.typeMapping.read(
+            DriftSqlType.bool,
+            data['${effectivePrefix}tls'],
+          )!,
+      credential:
+          attachedDatabase.typeMapping.read(
+            DriftSqlType.string,
+            data['${effectivePrefix}credential'],
+          )!,
+      revision:
+          attachedDatabase.typeMapping.read(
+            DriftSqlType.int,
+            data['${effectivePrefix}revision'],
+          )!,
+      options:
+          attachedDatabase.typeMapping.read(
+            DriftSqlType.string,
+            data['${effectivePrefix}options'],
+          )!,
+      groupId: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}group_id'],
+      ),
+      sourceKey:
+          attachedDatabase.typeMapping.read(
+            DriftSqlType.string,
+            data['${effectivePrefix}source_key'],
+          )!,
     );
   }
 
@@ -402,18 +520,19 @@ class Node extends DataClass implements Insertable<Node> {
   final String options;
   final String? groupId;
   final String sourceKey;
-  const Node(
-      {required this.id,
-      required this.name,
-      required this.protocol,
-      required this.server,
-      required this.port,
-      required this.tls,
-      required this.credential,
-      required this.revision,
-      required this.options,
-      this.groupId,
-      required this.sourceKey});
+  const Node({
+    required this.id,
+    required this.name,
+    required this.protocol,
+    required this.server,
+    required this.port,
+    required this.tls,
+    required this.credential,
+    required this.revision,
+    required this.options,
+    this.groupId,
+    required this.sourceKey,
+  });
   @override
   Map<String, Expression> toColumns(bool nullToAbsent) {
     final map = <String, Expression>{};
@@ -444,15 +563,18 @@ class Node extends DataClass implements Insertable<Node> {
       credential: Value(credential),
       revision: Value(revision),
       options: Value(options),
-      groupId: groupId == null && nullToAbsent
-          ? const Value.absent()
-          : Value(groupId),
+      groupId:
+          groupId == null && nullToAbsent
+              ? const Value.absent()
+              : Value(groupId),
       sourceKey: Value(sourceKey),
     );
   }
 
-  factory Node.fromJson(Map<String, dynamic> json,
-      {ValueSerializer? serializer}) {
+  factory Node.fromJson(
+    Map<String, dynamic> json, {
+    ValueSerializer? serializer,
+  }) {
     serializer ??= driftRuntimeOptions.defaultSerializer;
     return Node(
       id: serializer.fromJson<String>(json['id']),
@@ -486,31 +608,31 @@ class Node extends DataClass implements Insertable<Node> {
     };
   }
 
-  Node copyWith(
-          {String? id,
-          String? name,
-          String? protocol,
-          String? server,
-          int? port,
-          bool? tls,
-          String? credential,
-          int? revision,
-          String? options,
-          Value<String?> groupId = const Value.absent(),
-          String? sourceKey}) =>
-      Node(
-        id: id ?? this.id,
-        name: name ?? this.name,
-        protocol: protocol ?? this.protocol,
-        server: server ?? this.server,
-        port: port ?? this.port,
-        tls: tls ?? this.tls,
-        credential: credential ?? this.credential,
-        revision: revision ?? this.revision,
-        options: options ?? this.options,
-        groupId: groupId.present ? groupId.value : this.groupId,
-        sourceKey: sourceKey ?? this.sourceKey,
-      );
+  Node copyWith({
+    String? id,
+    String? name,
+    String? protocol,
+    String? server,
+    int? port,
+    bool? tls,
+    String? credential,
+    int? revision,
+    String? options,
+    Value<String?> groupId = const Value.absent(),
+    String? sourceKey,
+  }) => Node(
+    id: id ?? this.id,
+    name: name ?? this.name,
+    protocol: protocol ?? this.protocol,
+    server: server ?? this.server,
+    port: port ?? this.port,
+    tls: tls ?? this.tls,
+    credential: credential ?? this.credential,
+    revision: revision ?? this.revision,
+    options: options ?? this.options,
+    groupId: groupId.present ? groupId.value : this.groupId,
+    sourceKey: sourceKey ?? this.sourceKey,
+  );
   Node copyWithCompanion(NodesCompanion data) {
     return Node(
       id: data.id.present ? data.id.value : this.id,
@@ -547,8 +669,19 @@ class Node extends DataClass implements Insertable<Node> {
   }
 
   @override
-  int get hashCode => Object.hash(id, name, protocol, server, port, tls,
-      credential, revision, options, groupId, sourceKey);
+  int get hashCode => Object.hash(
+    id,
+    name,
+    protocol,
+    server,
+    port,
+    tls,
+    credential,
+    revision,
+    options,
+    groupId,
+    sourceKey,
+  );
   @override
   bool operator ==(Object other) =>
       identical(this, other) ||
@@ -606,11 +739,11 @@ class NodesCompanion extends UpdateCompanion<Node> {
     this.groupId = const Value.absent(),
     this.sourceKey = const Value.absent(),
     this.rowid = const Value.absent(),
-  })  : id = Value(id),
-        name = Value(name),
-        protocol = Value(protocol),
-        server = Value(server),
-        port = Value(port);
+  }) : id = Value(id),
+       name = Value(name),
+       protocol = Value(protocol),
+       server = Value(server),
+       port = Value(port);
   static Insertable<Node> custom({
     Expression<String>? id,
     Expression<String>? name,
@@ -641,19 +774,20 @@ class NodesCompanion extends UpdateCompanion<Node> {
     });
   }
 
-  NodesCompanion copyWith(
-      {Value<String>? id,
-      Value<String>? name,
-      Value<String>? protocol,
-      Value<String>? server,
-      Value<int>? port,
-      Value<bool>? tls,
-      Value<String>? credential,
-      Value<int>? revision,
-      Value<String>? options,
-      Value<String?>? groupId,
-      Value<String>? sourceKey,
-      Value<int>? rowid}) {
+  NodesCompanion copyWith({
+    Value<String>? id,
+    Value<String>? name,
+    Value<String>? protocol,
+    Value<String>? server,
+    Value<int>? port,
+    Value<bool>? tls,
+    Value<String>? credential,
+    Value<int>? revision,
+    Value<String>? options,
+    Value<String?>? groupId,
+    Value<String>? sourceKey,
+    Value<int>? rowid,
+  }) {
     return NodesCompanion(
       id: id ?? this.id,
       name: name ?? this.name,
@@ -741,165 +875,251 @@ class $NodeGroupsTable extends NodeGroups
   static const VerificationMeta _idMeta = const VerificationMeta('id');
   @override
   late final GeneratedColumn<String> id = GeneratedColumn<String>(
-      'id', aliasedName, false,
-      type: DriftSqlType.string, requiredDuringInsert: true);
+    'id',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+  );
   static const VerificationMeta _nameMeta = const VerificationMeta('name');
   @override
   late final GeneratedColumn<String> name = GeneratedColumn<String>(
-      'name', aliasedName, false,
-      type: DriftSqlType.string, requiredDuringInsert: true);
+    'name',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+  );
   static const VerificationMeta _kindMeta = const VerificationMeta('kind');
   @override
   late final GeneratedColumn<String> kind = GeneratedColumn<String>(
-      'kind', aliasedName, false,
-      type: DriftSqlType.string, requiredDuringInsert: true);
-  static const VerificationMeta _customNameMeta =
-      const VerificationMeta('customName');
+    'kind',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+  );
+  static const VerificationMeta _customNameMeta = const VerificationMeta(
+    'customName',
+  );
   @override
   late final GeneratedColumn<bool> customName = GeneratedColumn<bool>(
-      'custom_name', aliasedName, false,
-      type: DriftSqlType.bool,
-      requiredDuringInsert: false,
-      defaultConstraints:
-          GeneratedColumn.constraintIsAlways('CHECK ("custom_name" IN (0, 1))'),
-      defaultValue: const Constant(false));
-  static const VerificationMeta _urlCipherMeta =
-      const VerificationMeta('urlCipher');
+    'custom_name',
+    aliasedName,
+    false,
+    type: DriftSqlType.bool,
+    requiredDuringInsert: false,
+    defaultConstraints: GeneratedColumn.constraintIsAlways(
+      'CHECK ("custom_name" IN (0, 1))',
+    ),
+    defaultValue: const Constant(false),
+  );
+  static const VerificationMeta _urlCipherMeta = const VerificationMeta(
+    'urlCipher',
+  );
   @override
   late final GeneratedColumn<String> urlCipher = GeneratedColumn<String>(
-      'url_cipher', aliasedName, false,
-      type: DriftSqlType.string,
-      requiredDuringInsert: false,
-      defaultValue: const Constant(''));
-  static const VerificationMeta _urlHashMeta =
-      const VerificationMeta('urlHash');
+    'url_cipher',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: false,
+    defaultValue: const Constant(''),
+  );
+  static const VerificationMeta _urlHashMeta = const VerificationMeta(
+    'urlHash',
+  );
   @override
   late final GeneratedColumn<String> urlHash = GeneratedColumn<String>(
-      'url_hash', aliasedName, false,
-      type: DriftSqlType.string,
-      requiredDuringInsert: false,
-      defaultValue: const Constant(''));
-  static const VerificationMeta _uploadedMeta =
-      const VerificationMeta('uploaded');
+    'url_hash',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: false,
+    defaultValue: const Constant(''),
+  );
+  static const VerificationMeta _uploadedMeta = const VerificationMeta(
+    'uploaded',
+  );
   @override
   late final GeneratedColumn<int> uploaded = GeneratedColumn<int>(
-      'uploaded', aliasedName, true,
-      type: DriftSqlType.int, requiredDuringInsert: false);
-  static const VerificationMeta _downloadedMeta =
-      const VerificationMeta('downloaded');
+    'uploaded',
+    aliasedName,
+    true,
+    type: DriftSqlType.int,
+    requiredDuringInsert: false,
+  );
+  static const VerificationMeta _downloadedMeta = const VerificationMeta(
+    'downloaded',
+  );
   @override
   late final GeneratedColumn<int> downloaded = GeneratedColumn<int>(
-      'downloaded', aliasedName, true,
-      type: DriftSqlType.int, requiredDuringInsert: false);
+    'downloaded',
+    aliasedName,
+    true,
+    type: DriftSqlType.int,
+    requiredDuringInsert: false,
+  );
   static const VerificationMeta _totalMeta = const VerificationMeta('total');
   @override
   late final GeneratedColumn<int> total = GeneratedColumn<int>(
-      'total', aliasedName, true,
-      type: DriftSqlType.int, requiredDuringInsert: false);
-  static const VerificationMeta _expiresAtMeta =
-      const VerificationMeta('expiresAt');
+    'total',
+    aliasedName,
+    true,
+    type: DriftSqlType.int,
+    requiredDuringInsert: false,
+  );
+  static const VerificationMeta _expiresAtMeta = const VerificationMeta(
+    'expiresAt',
+  );
   @override
   late final GeneratedColumn<DateTime> expiresAt = GeneratedColumn<DateTime>(
-      'expires_at', aliasedName, true,
-      type: DriftSqlType.dateTime, requiredDuringInsert: false);
-  static const VerificationMeta _updatedAtMeta =
-      const VerificationMeta('updatedAt');
+    'expires_at',
+    aliasedName,
+    true,
+    type: DriftSqlType.dateTime,
+    requiredDuringInsert: false,
+  );
+  static const VerificationMeta _updatedAtMeta = const VerificationMeta(
+    'updatedAt',
+  );
   @override
   late final GeneratedColumn<DateTime> updatedAt = GeneratedColumn<DateTime>(
-      'updated_at', aliasedName, true,
-      type: DriftSqlType.dateTime, requiredDuringInsert: false);
-  static const VerificationMeta _attemptedAtMeta =
-      const VerificationMeta('attemptedAt');
+    'updated_at',
+    aliasedName,
+    true,
+    type: DriftSqlType.dateTime,
+    requiredDuringInsert: false,
+  );
+  static const VerificationMeta _attemptedAtMeta = const VerificationMeta(
+    'attemptedAt',
+  );
   @override
   late final GeneratedColumn<DateTime> attemptedAt = GeneratedColumn<DateTime>(
-      'attempted_at', aliasedName, true,
-      type: DriftSqlType.dateTime, requiredDuringInsert: false);
-  static const VerificationMeta _updateErrorMeta =
-      const VerificationMeta('updateError');
+    'attempted_at',
+    aliasedName,
+    true,
+    type: DriftSqlType.dateTime,
+    requiredDuringInsert: false,
+  );
+  static const VerificationMeta _updateErrorMeta = const VerificationMeta(
+    'updateError',
+  );
   @override
   late final GeneratedColumn<String> updateError = GeneratedColumn<String>(
-      'update_error', aliasedName, false,
-      type: DriftSqlType.string,
-      requiredDuringInsert: false,
-      defaultValue: const Constant(''));
-  static const VerificationMeta _skippedNodesMeta =
-      const VerificationMeta('skippedNodes');
+    'update_error',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: false,
+    defaultValue: const Constant(''),
+  );
+  static const VerificationMeta _skippedNodesMeta = const VerificationMeta(
+    'skippedNodes',
+  );
   @override
   late final GeneratedColumn<int> skippedNodes = GeneratedColumn<int>(
-      'skipped_nodes', aliasedName, false,
-      type: DriftSqlType.int,
-      requiredDuringInsert: false,
-      defaultValue: const Constant(0));
+    'skipped_nodes',
+    aliasedName,
+    false,
+    type: DriftSqlType.int,
+    requiredDuringInsert: false,
+    defaultValue: const Constant(0),
+  );
   static const VerificationMeta _compatibilityIssuesMeta =
       const VerificationMeta('compatibilityIssues');
   @override
   late final GeneratedColumn<String> compatibilityIssues =
-      GeneratedColumn<String>('compatibility_issues', aliasedName, false,
-          type: DriftSqlType.string,
-          requiredDuringInsert: false,
-          defaultValue: const Constant('[]'));
-  static const VerificationMeta _autoUpdateMeta =
-      const VerificationMeta('autoUpdate');
+      GeneratedColumn<String>(
+        'compatibility_issues',
+        aliasedName,
+        false,
+        type: DriftSqlType.string,
+        requiredDuringInsert: false,
+        defaultValue: const Constant('[]'),
+      );
+  static const VerificationMeta _autoUpdateMeta = const VerificationMeta(
+    'autoUpdate',
+  );
   @override
   late final GeneratedColumn<bool> autoUpdate = GeneratedColumn<bool>(
-      'auto_update', aliasedName, false,
-      type: DriftSqlType.bool,
-      requiredDuringInsert: false,
-      defaultConstraints:
-          GeneratedColumn.constraintIsAlways('CHECK ("auto_update" IN (0, 1))'),
-      defaultValue: const Constant(true));
-  static const VerificationMeta _intervalHoursMeta =
-      const VerificationMeta('intervalHours');
+    'auto_update',
+    aliasedName,
+    false,
+    type: DriftSqlType.bool,
+    requiredDuringInsert: false,
+    defaultConstraints: GeneratedColumn.constraintIsAlways(
+      'CHECK ("auto_update" IN (0, 1))',
+    ),
+    defaultValue: const Constant(true),
+  );
+  static const VerificationMeta _intervalHoursMeta = const VerificationMeta(
+    'intervalHours',
+  );
   @override
   late final GeneratedColumn<int> intervalHours = GeneratedColumn<int>(
-      'interval_hours', aliasedName, false,
-      type: DriftSqlType.int,
-      requiredDuringInsert: false,
-      defaultValue: const Constant(24));
+    'interval_hours',
+    aliasedName,
+    false,
+    type: DriftSqlType.int,
+    requiredDuringInsert: false,
+    defaultValue: const Constant(24),
+  );
   static const VerificationMeta _lastSelectedNodeIdMeta =
       const VerificationMeta('lastSelectedNodeId');
   @override
   late final GeneratedColumn<String> lastSelectedNodeId =
-      GeneratedColumn<String>('last_selected_node_id', aliasedName, true,
-          type: DriftSqlType.string, requiredDuringInsert: false);
-  static const VerificationMeta _revisionMeta =
-      const VerificationMeta('revision');
+      GeneratedColumn<String>(
+        'last_selected_node_id',
+        aliasedName,
+        true,
+        type: DriftSqlType.string,
+        requiredDuringInsert: false,
+      );
+  static const VerificationMeta _revisionMeta = const VerificationMeta(
+    'revision',
+  );
   @override
   late final GeneratedColumn<int> revision = GeneratedColumn<int>(
-      'revision', aliasedName, false,
-      type: DriftSqlType.int,
-      requiredDuringInsert: false,
-      defaultValue: const Constant(1));
+    'revision',
+    aliasedName,
+    false,
+    type: DriftSqlType.int,
+    requiredDuringInsert: false,
+    defaultValue: const Constant(1),
+  );
   @override
   List<GeneratedColumn> get $columns => [
-        id,
-        name,
-        kind,
-        customName,
-        urlCipher,
-        urlHash,
-        uploaded,
-        downloaded,
-        total,
-        expiresAt,
-        updatedAt,
-        attemptedAt,
-        updateError,
-        skippedNodes,
-        compatibilityIssues,
-        autoUpdate,
-        intervalHours,
-        lastSelectedNodeId,
-        revision
-      ];
+    id,
+    name,
+    kind,
+    customName,
+    urlCipher,
+    urlHash,
+    uploaded,
+    downloaded,
+    total,
+    expiresAt,
+    updatedAt,
+    attemptedAt,
+    updateError,
+    skippedNodes,
+    compatibilityIssues,
+    autoUpdate,
+    intervalHours,
+    lastSelectedNodeId,
+    revision,
+  ];
   @override
   String get aliasedName => _alias ?? actualTableName;
   @override
   String get actualTableName => $name;
   static const String $name = 'node_groups';
   @override
-  VerificationContext validateIntegrity(Insertable<NodeGroupRecord> instance,
-      {bool isInserting = false}) {
+  VerificationContext validateIntegrity(
+    Insertable<NodeGroupRecord> instance, {
+    bool isInserting = false,
+  }) {
     final context = VerificationContext();
     final data = instance.toColumns(true);
     if (data.containsKey('id')) {
@@ -909,97 +1129,133 @@ class $NodeGroupsTable extends NodeGroups
     }
     if (data.containsKey('name')) {
       context.handle(
-          _nameMeta, name.isAcceptableOrUnknown(data['name']!, _nameMeta));
+        _nameMeta,
+        name.isAcceptableOrUnknown(data['name']!, _nameMeta),
+      );
     } else if (isInserting) {
       context.missing(_nameMeta);
     }
     if (data.containsKey('kind')) {
       context.handle(
-          _kindMeta, kind.isAcceptableOrUnknown(data['kind']!, _kindMeta));
+        _kindMeta,
+        kind.isAcceptableOrUnknown(data['kind']!, _kindMeta),
+      );
     } else if (isInserting) {
       context.missing(_kindMeta);
     }
     if (data.containsKey('custom_name')) {
       context.handle(
-          _customNameMeta,
-          customName.isAcceptableOrUnknown(
-              data['custom_name']!, _customNameMeta));
+        _customNameMeta,
+        customName.isAcceptableOrUnknown(data['custom_name']!, _customNameMeta),
+      );
     }
     if (data.containsKey('url_cipher')) {
-      context.handle(_urlCipherMeta,
-          urlCipher.isAcceptableOrUnknown(data['url_cipher']!, _urlCipherMeta));
+      context.handle(
+        _urlCipherMeta,
+        urlCipher.isAcceptableOrUnknown(data['url_cipher']!, _urlCipherMeta),
+      );
     }
     if (data.containsKey('url_hash')) {
-      context.handle(_urlHashMeta,
-          urlHash.isAcceptableOrUnknown(data['url_hash']!, _urlHashMeta));
+      context.handle(
+        _urlHashMeta,
+        urlHash.isAcceptableOrUnknown(data['url_hash']!, _urlHashMeta),
+      );
     }
     if (data.containsKey('uploaded')) {
-      context.handle(_uploadedMeta,
-          uploaded.isAcceptableOrUnknown(data['uploaded']!, _uploadedMeta));
+      context.handle(
+        _uploadedMeta,
+        uploaded.isAcceptableOrUnknown(data['uploaded']!, _uploadedMeta),
+      );
     }
     if (data.containsKey('downloaded')) {
       context.handle(
-          _downloadedMeta,
-          downloaded.isAcceptableOrUnknown(
-              data['downloaded']!, _downloadedMeta));
+        _downloadedMeta,
+        downloaded.isAcceptableOrUnknown(data['downloaded']!, _downloadedMeta),
+      );
     }
     if (data.containsKey('total')) {
       context.handle(
-          _totalMeta, total.isAcceptableOrUnknown(data['total']!, _totalMeta));
+        _totalMeta,
+        total.isAcceptableOrUnknown(data['total']!, _totalMeta),
+      );
     }
     if (data.containsKey('expires_at')) {
-      context.handle(_expiresAtMeta,
-          expiresAt.isAcceptableOrUnknown(data['expires_at']!, _expiresAtMeta));
+      context.handle(
+        _expiresAtMeta,
+        expiresAt.isAcceptableOrUnknown(data['expires_at']!, _expiresAtMeta),
+      );
     }
     if (data.containsKey('updated_at')) {
-      context.handle(_updatedAtMeta,
-          updatedAt.isAcceptableOrUnknown(data['updated_at']!, _updatedAtMeta));
+      context.handle(
+        _updatedAtMeta,
+        updatedAt.isAcceptableOrUnknown(data['updated_at']!, _updatedAtMeta),
+      );
     }
     if (data.containsKey('attempted_at')) {
       context.handle(
+        _attemptedAtMeta,
+        attemptedAt.isAcceptableOrUnknown(
+          data['attempted_at']!,
           _attemptedAtMeta,
-          attemptedAt.isAcceptableOrUnknown(
-              data['attempted_at']!, _attemptedAtMeta));
+        ),
+      );
     }
     if (data.containsKey('update_error')) {
       context.handle(
+        _updateErrorMeta,
+        updateError.isAcceptableOrUnknown(
+          data['update_error']!,
           _updateErrorMeta,
-          updateError.isAcceptableOrUnknown(
-              data['update_error']!, _updateErrorMeta));
+        ),
+      );
     }
     if (data.containsKey('skipped_nodes')) {
       context.handle(
+        _skippedNodesMeta,
+        skippedNodes.isAcceptableOrUnknown(
+          data['skipped_nodes']!,
           _skippedNodesMeta,
-          skippedNodes.isAcceptableOrUnknown(
-              data['skipped_nodes']!, _skippedNodesMeta));
+        ),
+      );
     }
     if (data.containsKey('compatibility_issues')) {
       context.handle(
+        _compatibilityIssuesMeta,
+        compatibilityIssues.isAcceptableOrUnknown(
+          data['compatibility_issues']!,
           _compatibilityIssuesMeta,
-          compatibilityIssues.isAcceptableOrUnknown(
-              data['compatibility_issues']!, _compatibilityIssuesMeta));
+        ),
+      );
     }
     if (data.containsKey('auto_update')) {
       context.handle(
-          _autoUpdateMeta,
-          autoUpdate.isAcceptableOrUnknown(
-              data['auto_update']!, _autoUpdateMeta));
+        _autoUpdateMeta,
+        autoUpdate.isAcceptableOrUnknown(data['auto_update']!, _autoUpdateMeta),
+      );
     }
     if (data.containsKey('interval_hours')) {
       context.handle(
+        _intervalHoursMeta,
+        intervalHours.isAcceptableOrUnknown(
+          data['interval_hours']!,
           _intervalHoursMeta,
-          intervalHours.isAcceptableOrUnknown(
-              data['interval_hours']!, _intervalHoursMeta));
+        ),
+      );
     }
     if (data.containsKey('last_selected_node_id')) {
       context.handle(
+        _lastSelectedNodeIdMeta,
+        lastSelectedNodeId.isAcceptableOrUnknown(
+          data['last_selected_node_id']!,
           _lastSelectedNodeIdMeta,
-          lastSelectedNodeId.isAcceptableOrUnknown(
-              data['last_selected_node_id']!, _lastSelectedNodeIdMeta));
+        ),
+      );
     }
     if (data.containsKey('revision')) {
-      context.handle(_revisionMeta,
-          revision.isAcceptableOrUnknown(data['revision']!, _revisionMeta));
+      context.handle(
+        _revisionMeta,
+        revision.isAcceptableOrUnknown(data['revision']!, _revisionMeta),
+      );
     }
     return context;
   }
@@ -1010,44 +1266,94 @@ class $NodeGroupsTable extends NodeGroups
   NodeGroupRecord map(Map<String, dynamic> data, {String? tablePrefix}) {
     final effectivePrefix = tablePrefix != null ? '$tablePrefix.' : '';
     return NodeGroupRecord(
-      id: attachedDatabase.typeMapping
-          .read(DriftSqlType.string, data['${effectivePrefix}id'])!,
-      name: attachedDatabase.typeMapping
-          .read(DriftSqlType.string, data['${effectivePrefix}name'])!,
-      kind: attachedDatabase.typeMapping
-          .read(DriftSqlType.string, data['${effectivePrefix}kind'])!,
-      customName: attachedDatabase.typeMapping
-          .read(DriftSqlType.bool, data['${effectivePrefix}custom_name'])!,
-      urlCipher: attachedDatabase.typeMapping
-          .read(DriftSqlType.string, data['${effectivePrefix}url_cipher'])!,
-      urlHash: attachedDatabase.typeMapping
-          .read(DriftSqlType.string, data['${effectivePrefix}url_hash'])!,
-      uploaded: attachedDatabase.typeMapping
-          .read(DriftSqlType.int, data['${effectivePrefix}uploaded']),
-      downloaded: attachedDatabase.typeMapping
-          .read(DriftSqlType.int, data['${effectivePrefix}downloaded']),
-      total: attachedDatabase.typeMapping
-          .read(DriftSqlType.int, data['${effectivePrefix}total']),
-      expiresAt: attachedDatabase.typeMapping
-          .read(DriftSqlType.dateTime, data['${effectivePrefix}expires_at']),
-      updatedAt: attachedDatabase.typeMapping
-          .read(DriftSqlType.dateTime, data['${effectivePrefix}updated_at']),
-      attemptedAt: attachedDatabase.typeMapping
-          .read(DriftSqlType.dateTime, data['${effectivePrefix}attempted_at']),
-      updateError: attachedDatabase.typeMapping
-          .read(DriftSqlType.string, data['${effectivePrefix}update_error'])!,
-      skippedNodes: attachedDatabase.typeMapping
-          .read(DriftSqlType.int, data['${effectivePrefix}skipped_nodes'])!,
-      compatibilityIssues: attachedDatabase.typeMapping.read(
-          DriftSqlType.string, data['${effectivePrefix}compatibility_issues'])!,
-      autoUpdate: attachedDatabase.typeMapping
-          .read(DriftSqlType.bool, data['${effectivePrefix}auto_update'])!,
-      intervalHours: attachedDatabase.typeMapping
-          .read(DriftSqlType.int, data['${effectivePrefix}interval_hours'])!,
+      id:
+          attachedDatabase.typeMapping.read(
+            DriftSqlType.string,
+            data['${effectivePrefix}id'],
+          )!,
+      name:
+          attachedDatabase.typeMapping.read(
+            DriftSqlType.string,
+            data['${effectivePrefix}name'],
+          )!,
+      kind:
+          attachedDatabase.typeMapping.read(
+            DriftSqlType.string,
+            data['${effectivePrefix}kind'],
+          )!,
+      customName:
+          attachedDatabase.typeMapping.read(
+            DriftSqlType.bool,
+            data['${effectivePrefix}custom_name'],
+          )!,
+      urlCipher:
+          attachedDatabase.typeMapping.read(
+            DriftSqlType.string,
+            data['${effectivePrefix}url_cipher'],
+          )!,
+      urlHash:
+          attachedDatabase.typeMapping.read(
+            DriftSqlType.string,
+            data['${effectivePrefix}url_hash'],
+          )!,
+      uploaded: attachedDatabase.typeMapping.read(
+        DriftSqlType.int,
+        data['${effectivePrefix}uploaded'],
+      ),
+      downloaded: attachedDatabase.typeMapping.read(
+        DriftSqlType.int,
+        data['${effectivePrefix}downloaded'],
+      ),
+      total: attachedDatabase.typeMapping.read(
+        DriftSqlType.int,
+        data['${effectivePrefix}total'],
+      ),
+      expiresAt: attachedDatabase.typeMapping.read(
+        DriftSqlType.dateTime,
+        data['${effectivePrefix}expires_at'],
+      ),
+      updatedAt: attachedDatabase.typeMapping.read(
+        DriftSqlType.dateTime,
+        data['${effectivePrefix}updated_at'],
+      ),
+      attemptedAt: attachedDatabase.typeMapping.read(
+        DriftSqlType.dateTime,
+        data['${effectivePrefix}attempted_at'],
+      ),
+      updateError:
+          attachedDatabase.typeMapping.read(
+            DriftSqlType.string,
+            data['${effectivePrefix}update_error'],
+          )!,
+      skippedNodes:
+          attachedDatabase.typeMapping.read(
+            DriftSqlType.int,
+            data['${effectivePrefix}skipped_nodes'],
+          )!,
+      compatibilityIssues:
+          attachedDatabase.typeMapping.read(
+            DriftSqlType.string,
+            data['${effectivePrefix}compatibility_issues'],
+          )!,
+      autoUpdate:
+          attachedDatabase.typeMapping.read(
+            DriftSqlType.bool,
+            data['${effectivePrefix}auto_update'],
+          )!,
+      intervalHours:
+          attachedDatabase.typeMapping.read(
+            DriftSqlType.int,
+            data['${effectivePrefix}interval_hours'],
+          )!,
       lastSelectedNodeId: attachedDatabase.typeMapping.read(
-          DriftSqlType.string, data['${effectivePrefix}last_selected_node_id']),
-      revision: attachedDatabase.typeMapping
-          .read(DriftSqlType.int, data['${effectivePrefix}revision'])!,
+        DriftSqlType.string,
+        data['${effectivePrefix}last_selected_node_id'],
+      ),
+      revision:
+          attachedDatabase.typeMapping.read(
+            DriftSqlType.int,
+            data['${effectivePrefix}revision'],
+          )!,
     );
   }
 
@@ -1077,26 +1383,27 @@ class NodeGroupRecord extends DataClass implements Insertable<NodeGroupRecord> {
   final int intervalHours;
   final String? lastSelectedNodeId;
   final int revision;
-  const NodeGroupRecord(
-      {required this.id,
-      required this.name,
-      required this.kind,
-      required this.customName,
-      required this.urlCipher,
-      required this.urlHash,
-      this.uploaded,
-      this.downloaded,
-      this.total,
-      this.expiresAt,
-      this.updatedAt,
-      this.attemptedAt,
-      required this.updateError,
-      required this.skippedNodes,
-      required this.compatibilityIssues,
-      required this.autoUpdate,
-      required this.intervalHours,
-      this.lastSelectedNodeId,
-      required this.revision});
+  const NodeGroupRecord({
+    required this.id,
+    required this.name,
+    required this.kind,
+    required this.customName,
+    required this.urlCipher,
+    required this.urlHash,
+    this.uploaded,
+    this.downloaded,
+    this.total,
+    this.expiresAt,
+    this.updatedAt,
+    this.attemptedAt,
+    required this.updateError,
+    required this.skippedNodes,
+    required this.compatibilityIssues,
+    required this.autoUpdate,
+    required this.intervalHours,
+    this.lastSelectedNodeId,
+    required this.revision,
+  });
   @override
   Map<String, Expression> toColumns(bool nullToAbsent) {
     final map = <String, Expression>{};
@@ -1144,37 +1451,45 @@ class NodeGroupRecord extends DataClass implements Insertable<NodeGroupRecord> {
       customName: Value(customName),
       urlCipher: Value(urlCipher),
       urlHash: Value(urlHash),
-      uploaded: uploaded == null && nullToAbsent
-          ? const Value.absent()
-          : Value(uploaded),
-      downloaded: downloaded == null && nullToAbsent
-          ? const Value.absent()
-          : Value(downloaded),
+      uploaded:
+          uploaded == null && nullToAbsent
+              ? const Value.absent()
+              : Value(uploaded),
+      downloaded:
+          downloaded == null && nullToAbsent
+              ? const Value.absent()
+              : Value(downloaded),
       total:
           total == null && nullToAbsent ? const Value.absent() : Value(total),
-      expiresAt: expiresAt == null && nullToAbsent
-          ? const Value.absent()
-          : Value(expiresAt),
-      updatedAt: updatedAt == null && nullToAbsent
-          ? const Value.absent()
-          : Value(updatedAt),
-      attemptedAt: attemptedAt == null && nullToAbsent
-          ? const Value.absent()
-          : Value(attemptedAt),
+      expiresAt:
+          expiresAt == null && nullToAbsent
+              ? const Value.absent()
+              : Value(expiresAt),
+      updatedAt:
+          updatedAt == null && nullToAbsent
+              ? const Value.absent()
+              : Value(updatedAt),
+      attemptedAt:
+          attemptedAt == null && nullToAbsent
+              ? const Value.absent()
+              : Value(attemptedAt),
       updateError: Value(updateError),
       skippedNodes: Value(skippedNodes),
       compatibilityIssues: Value(compatibilityIssues),
       autoUpdate: Value(autoUpdate),
       intervalHours: Value(intervalHours),
-      lastSelectedNodeId: lastSelectedNodeId == null && nullToAbsent
-          ? const Value.absent()
-          : Value(lastSelectedNodeId),
+      lastSelectedNodeId:
+          lastSelectedNodeId == null && nullToAbsent
+              ? const Value.absent()
+              : Value(lastSelectedNodeId),
       revision: Value(revision),
     );
   }
 
-  factory NodeGroupRecord.fromJson(Map<String, dynamic> json,
-      {ValueSerializer? serializer}) {
+  factory NodeGroupRecord.fromJson(
+    Map<String, dynamic> json, {
+    ValueSerializer? serializer,
+  }) {
     serializer ??= driftRuntimeOptions.defaultSerializer;
     return NodeGroupRecord(
       id: serializer.fromJson<String>(json['id']),
@@ -1191,12 +1506,14 @@ class NodeGroupRecord extends DataClass implements Insertable<NodeGroupRecord> {
       attemptedAt: serializer.fromJson<DateTime?>(json['attemptedAt']),
       updateError: serializer.fromJson<String>(json['updateError']),
       skippedNodes: serializer.fromJson<int>(json['skippedNodes']),
-      compatibilityIssues:
-          serializer.fromJson<String>(json['compatibilityIssues']),
+      compatibilityIssues: serializer.fromJson<String>(
+        json['compatibilityIssues'],
+      ),
       autoUpdate: serializer.fromJson<bool>(json['autoUpdate']),
       intervalHours: serializer.fromJson<int>(json['intervalHours']),
-      lastSelectedNodeId:
-          serializer.fromJson<String?>(json['lastSelectedNodeId']),
+      lastSelectedNodeId: serializer.fromJson<String?>(
+        json['lastSelectedNodeId'],
+      ),
       revision: serializer.fromJson<int>(json['revision']),
     );
   }
@@ -1226,49 +1543,50 @@ class NodeGroupRecord extends DataClass implements Insertable<NodeGroupRecord> {
     };
   }
 
-  NodeGroupRecord copyWith(
-          {String? id,
-          String? name,
-          String? kind,
-          bool? customName,
-          String? urlCipher,
-          String? urlHash,
-          Value<int?> uploaded = const Value.absent(),
-          Value<int?> downloaded = const Value.absent(),
-          Value<int?> total = const Value.absent(),
-          Value<DateTime?> expiresAt = const Value.absent(),
-          Value<DateTime?> updatedAt = const Value.absent(),
-          Value<DateTime?> attemptedAt = const Value.absent(),
-          String? updateError,
-          int? skippedNodes,
-          String? compatibilityIssues,
-          bool? autoUpdate,
-          int? intervalHours,
-          Value<String?> lastSelectedNodeId = const Value.absent(),
-          int? revision}) =>
-      NodeGroupRecord(
-        id: id ?? this.id,
-        name: name ?? this.name,
-        kind: kind ?? this.kind,
-        customName: customName ?? this.customName,
-        urlCipher: urlCipher ?? this.urlCipher,
-        urlHash: urlHash ?? this.urlHash,
-        uploaded: uploaded.present ? uploaded.value : this.uploaded,
-        downloaded: downloaded.present ? downloaded.value : this.downloaded,
-        total: total.present ? total.value : this.total,
-        expiresAt: expiresAt.present ? expiresAt.value : this.expiresAt,
-        updatedAt: updatedAt.present ? updatedAt.value : this.updatedAt,
-        attemptedAt: attemptedAt.present ? attemptedAt.value : this.attemptedAt,
-        updateError: updateError ?? this.updateError,
-        skippedNodes: skippedNodes ?? this.skippedNodes,
-        compatibilityIssues: compatibilityIssues ?? this.compatibilityIssues,
-        autoUpdate: autoUpdate ?? this.autoUpdate,
-        intervalHours: intervalHours ?? this.intervalHours,
-        lastSelectedNodeId: lastSelectedNodeId.present
+  NodeGroupRecord copyWith({
+    String? id,
+    String? name,
+    String? kind,
+    bool? customName,
+    String? urlCipher,
+    String? urlHash,
+    Value<int?> uploaded = const Value.absent(),
+    Value<int?> downloaded = const Value.absent(),
+    Value<int?> total = const Value.absent(),
+    Value<DateTime?> expiresAt = const Value.absent(),
+    Value<DateTime?> updatedAt = const Value.absent(),
+    Value<DateTime?> attemptedAt = const Value.absent(),
+    String? updateError,
+    int? skippedNodes,
+    String? compatibilityIssues,
+    bool? autoUpdate,
+    int? intervalHours,
+    Value<String?> lastSelectedNodeId = const Value.absent(),
+    int? revision,
+  }) => NodeGroupRecord(
+    id: id ?? this.id,
+    name: name ?? this.name,
+    kind: kind ?? this.kind,
+    customName: customName ?? this.customName,
+    urlCipher: urlCipher ?? this.urlCipher,
+    urlHash: urlHash ?? this.urlHash,
+    uploaded: uploaded.present ? uploaded.value : this.uploaded,
+    downloaded: downloaded.present ? downloaded.value : this.downloaded,
+    total: total.present ? total.value : this.total,
+    expiresAt: expiresAt.present ? expiresAt.value : this.expiresAt,
+    updatedAt: updatedAt.present ? updatedAt.value : this.updatedAt,
+    attemptedAt: attemptedAt.present ? attemptedAt.value : this.attemptedAt,
+    updateError: updateError ?? this.updateError,
+    skippedNodes: skippedNodes ?? this.skippedNodes,
+    compatibilityIssues: compatibilityIssues ?? this.compatibilityIssues,
+    autoUpdate: autoUpdate ?? this.autoUpdate,
+    intervalHours: intervalHours ?? this.intervalHours,
+    lastSelectedNodeId:
+        lastSelectedNodeId.present
             ? lastSelectedNodeId.value
             : this.lastSelectedNodeId,
-        revision: revision ?? this.revision,
-      );
+    revision: revision ?? this.revision,
+  );
   NodeGroupRecord copyWithCompanion(NodeGroupsCompanion data) {
     return NodeGroupRecord(
       id: data.id.present ? data.id.value : this.id,
@@ -1288,20 +1606,24 @@ class NodeGroupRecord extends DataClass implements Insertable<NodeGroupRecord> {
           data.attemptedAt.present ? data.attemptedAt.value : this.attemptedAt,
       updateError:
           data.updateError.present ? data.updateError.value : this.updateError,
-      skippedNodes: data.skippedNodes.present
-          ? data.skippedNodes.value
-          : this.skippedNodes,
-      compatibilityIssues: data.compatibilityIssues.present
-          ? data.compatibilityIssues.value
-          : this.compatibilityIssues,
+      skippedNodes:
+          data.skippedNodes.present
+              ? data.skippedNodes.value
+              : this.skippedNodes,
+      compatibilityIssues:
+          data.compatibilityIssues.present
+              ? data.compatibilityIssues.value
+              : this.compatibilityIssues,
       autoUpdate:
           data.autoUpdate.present ? data.autoUpdate.value : this.autoUpdate,
-      intervalHours: data.intervalHours.present
-          ? data.intervalHours.value
-          : this.intervalHours,
-      lastSelectedNodeId: data.lastSelectedNodeId.present
-          ? data.lastSelectedNodeId.value
-          : this.lastSelectedNodeId,
+      intervalHours:
+          data.intervalHours.present
+              ? data.intervalHours.value
+              : this.intervalHours,
+      lastSelectedNodeId:
+          data.lastSelectedNodeId.present
+              ? data.lastSelectedNodeId.value
+              : this.lastSelectedNodeId,
       revision: data.revision.present ? data.revision.value : this.revision,
     );
   }
@@ -1334,25 +1656,26 @@ class NodeGroupRecord extends DataClass implements Insertable<NodeGroupRecord> {
 
   @override
   int get hashCode => Object.hash(
-      id,
-      name,
-      kind,
-      customName,
-      urlCipher,
-      urlHash,
-      uploaded,
-      downloaded,
-      total,
-      expiresAt,
-      updatedAt,
-      attemptedAt,
-      updateError,
-      skippedNodes,
-      compatibilityIssues,
-      autoUpdate,
-      intervalHours,
-      lastSelectedNodeId,
-      revision);
+    id,
+    name,
+    kind,
+    customName,
+    urlCipher,
+    urlHash,
+    uploaded,
+    downloaded,
+    total,
+    expiresAt,
+    updatedAt,
+    attemptedAt,
+    updateError,
+    skippedNodes,
+    compatibilityIssues,
+    autoUpdate,
+    intervalHours,
+    lastSelectedNodeId,
+    revision,
+  );
   @override
   bool operator ==(Object other) =>
       identical(this, other) ||
@@ -1442,9 +1765,9 @@ class NodeGroupsCompanion extends UpdateCompanion<NodeGroupRecord> {
     this.lastSelectedNodeId = const Value.absent(),
     this.revision = const Value.absent(),
     this.rowid = const Value.absent(),
-  })  : id = Value(id),
-        name = Value(name),
-        kind = Value(kind);
+  }) : id = Value(id),
+       name = Value(name),
+       kind = Value(kind);
   static Insertable<NodeGroupRecord> custom({
     Expression<String>? id,
     Expression<String>? name,
@@ -1493,27 +1816,28 @@ class NodeGroupsCompanion extends UpdateCompanion<NodeGroupRecord> {
     });
   }
 
-  NodeGroupsCompanion copyWith(
-      {Value<String>? id,
-      Value<String>? name,
-      Value<String>? kind,
-      Value<bool>? customName,
-      Value<String>? urlCipher,
-      Value<String>? urlHash,
-      Value<int?>? uploaded,
-      Value<int?>? downloaded,
-      Value<int?>? total,
-      Value<DateTime?>? expiresAt,
-      Value<DateTime?>? updatedAt,
-      Value<DateTime?>? attemptedAt,
-      Value<String>? updateError,
-      Value<int>? skippedNodes,
-      Value<String>? compatibilityIssues,
-      Value<bool>? autoUpdate,
-      Value<int>? intervalHours,
-      Value<String?>? lastSelectedNodeId,
-      Value<int>? revision,
-      Value<int>? rowid}) {
+  NodeGroupsCompanion copyWith({
+    Value<String>? id,
+    Value<String>? name,
+    Value<String>? kind,
+    Value<bool>? customName,
+    Value<String>? urlCipher,
+    Value<String>? urlHash,
+    Value<int?>? uploaded,
+    Value<int?>? downloaded,
+    Value<int?>? total,
+    Value<DateTime?>? expiresAt,
+    Value<DateTime?>? updatedAt,
+    Value<DateTime?>? attemptedAt,
+    Value<String>? updateError,
+    Value<int>? skippedNodes,
+    Value<String>? compatibilityIssues,
+    Value<bool>? autoUpdate,
+    Value<int>? intervalHours,
+    Value<String?>? lastSelectedNodeId,
+    Value<int>? revision,
+    Value<int>? rowid,
+  }) {
     return NodeGroupsCompanion(
       id: id ?? this.id,
       name: name ?? this.name,
@@ -1641,48 +1965,81 @@ class $CoreLogsTable extends CoreLogs
   static const VerificationMeta _idMeta = const VerificationMeta('id');
   @override
   late final GeneratedColumn<String> id = GeneratedColumn<String>(
-      'id', aliasedName, false,
-      type: DriftSqlType.string, requiredDuringInsert: true);
+    'id',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+  );
   static const VerificationMeta _atMeta = const VerificationMeta('at');
   @override
   late final GeneratedColumn<int> at = GeneratedColumn<int>(
-      'at', aliasedName, false,
-      type: DriftSqlType.int, requiredDuringInsert: true);
-  static const VerificationMeta _sequenceMeta =
-      const VerificationMeta('sequence');
+    'at',
+    aliasedName,
+    false,
+    type: DriftSqlType.int,
+    requiredDuringInsert: true,
+  );
+  static const VerificationMeta _sequenceMeta = const VerificationMeta(
+    'sequence',
+  );
   @override
   late final GeneratedColumn<int> sequence = GeneratedColumn<int>(
-      'sequence', aliasedName, false,
-      type: DriftSqlType.int,
-      requiredDuringInsert: false,
-      defaultValue: const Constant(0));
+    'sequence',
+    aliasedName,
+    false,
+    type: DriftSqlType.int,
+    requiredDuringInsert: false,
+    defaultValue: const Constant(0),
+  );
   static const VerificationMeta _levelMeta = const VerificationMeta('level');
   @override
   late final GeneratedColumn<String> level = GeneratedColumn<String>(
-      'level', aliasedName, false,
-      type: DriftSqlType.string, requiredDuringInsert: true);
+    'level',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+  );
   static const VerificationMeta _sourceMeta = const VerificationMeta('source');
   @override
   late final GeneratedColumn<String> source = GeneratedColumn<String>(
-      'source', aliasedName, false,
-      type: DriftSqlType.string, requiredDuringInsert: true);
-  static const VerificationMeta _messageMeta =
-      const VerificationMeta('message');
+    'source',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+  );
+  static const VerificationMeta _messageMeta = const VerificationMeta(
+    'message',
+  );
   @override
   late final GeneratedColumn<String> message = GeneratedColumn<String>(
-      'message', aliasedName, false,
-      type: DriftSqlType.string, requiredDuringInsert: true);
+    'message',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+  );
   @override
-  List<GeneratedColumn> get $columns =>
-      [id, at, sequence, level, source, message];
+  List<GeneratedColumn> get $columns => [
+    id,
+    at,
+    sequence,
+    level,
+    source,
+    message,
+  ];
   @override
   String get aliasedName => _alias ?? actualTableName;
   @override
   String get actualTableName => $name;
   static const String $name = 'core_logs';
   @override
-  VerificationContext validateIntegrity(Insertable<CoreLogRecord> instance,
-      {bool isInserting = false}) {
+  VerificationContext validateIntegrity(
+    Insertable<CoreLogRecord> instance, {
+    bool isInserting = false,
+  }) {
     final context = VerificationContext();
     final data = instance.toColumns(true);
     if (data.containsKey('id')) {
@@ -1696,24 +2053,32 @@ class $CoreLogsTable extends CoreLogs
       context.missing(_atMeta);
     }
     if (data.containsKey('sequence')) {
-      context.handle(_sequenceMeta,
-          sequence.isAcceptableOrUnknown(data['sequence']!, _sequenceMeta));
+      context.handle(
+        _sequenceMeta,
+        sequence.isAcceptableOrUnknown(data['sequence']!, _sequenceMeta),
+      );
     }
     if (data.containsKey('level')) {
       context.handle(
-          _levelMeta, level.isAcceptableOrUnknown(data['level']!, _levelMeta));
+        _levelMeta,
+        level.isAcceptableOrUnknown(data['level']!, _levelMeta),
+      );
     } else if (isInserting) {
       context.missing(_levelMeta);
     }
     if (data.containsKey('source')) {
-      context.handle(_sourceMeta,
-          source.isAcceptableOrUnknown(data['source']!, _sourceMeta));
+      context.handle(
+        _sourceMeta,
+        source.isAcceptableOrUnknown(data['source']!, _sourceMeta),
+      );
     } else if (isInserting) {
       context.missing(_sourceMeta);
     }
     if (data.containsKey('message')) {
-      context.handle(_messageMeta,
-          message.isAcceptableOrUnknown(data['message']!, _messageMeta));
+      context.handle(
+        _messageMeta,
+        message.isAcceptableOrUnknown(data['message']!, _messageMeta),
+      );
     } else if (isInserting) {
       context.missing(_messageMeta);
     }
@@ -1726,18 +2091,36 @@ class $CoreLogsTable extends CoreLogs
   CoreLogRecord map(Map<String, dynamic> data, {String? tablePrefix}) {
     final effectivePrefix = tablePrefix != null ? '$tablePrefix.' : '';
     return CoreLogRecord(
-      id: attachedDatabase.typeMapping
-          .read(DriftSqlType.string, data['${effectivePrefix}id'])!,
-      at: attachedDatabase.typeMapping
-          .read(DriftSqlType.int, data['${effectivePrefix}at'])!,
-      sequence: attachedDatabase.typeMapping
-          .read(DriftSqlType.int, data['${effectivePrefix}sequence'])!,
-      level: attachedDatabase.typeMapping
-          .read(DriftSqlType.string, data['${effectivePrefix}level'])!,
-      source: attachedDatabase.typeMapping
-          .read(DriftSqlType.string, data['${effectivePrefix}source'])!,
-      message: attachedDatabase.typeMapping
-          .read(DriftSqlType.string, data['${effectivePrefix}message'])!,
+      id:
+          attachedDatabase.typeMapping.read(
+            DriftSqlType.string,
+            data['${effectivePrefix}id'],
+          )!,
+      at:
+          attachedDatabase.typeMapping.read(
+            DriftSqlType.int,
+            data['${effectivePrefix}at'],
+          )!,
+      sequence:
+          attachedDatabase.typeMapping.read(
+            DriftSqlType.int,
+            data['${effectivePrefix}sequence'],
+          )!,
+      level:
+          attachedDatabase.typeMapping.read(
+            DriftSqlType.string,
+            data['${effectivePrefix}level'],
+          )!,
+      source:
+          attachedDatabase.typeMapping.read(
+            DriftSqlType.string,
+            data['${effectivePrefix}source'],
+          )!,
+      message:
+          attachedDatabase.typeMapping.read(
+            DriftSqlType.string,
+            data['${effectivePrefix}message'],
+          )!,
     );
   }
 
@@ -1754,13 +2137,14 @@ class CoreLogRecord extends DataClass implements Insertable<CoreLogRecord> {
   final String level;
   final String source;
   final String message;
-  const CoreLogRecord(
-      {required this.id,
-      required this.at,
-      required this.sequence,
-      required this.level,
-      required this.source,
-      required this.message});
+  const CoreLogRecord({
+    required this.id,
+    required this.at,
+    required this.sequence,
+    required this.level,
+    required this.source,
+    required this.message,
+  });
   @override
   Map<String, Expression> toColumns(bool nullToAbsent) {
     final map = <String, Expression>{};
@@ -1784,8 +2168,10 @@ class CoreLogRecord extends DataClass implements Insertable<CoreLogRecord> {
     );
   }
 
-  factory CoreLogRecord.fromJson(Map<String, dynamic> json,
-      {ValueSerializer? serializer}) {
+  factory CoreLogRecord.fromJson(
+    Map<String, dynamic> json, {
+    ValueSerializer? serializer,
+  }) {
     serializer ??= driftRuntimeOptions.defaultSerializer;
     return CoreLogRecord(
       id: serializer.fromJson<String>(json['id']),
@@ -1809,21 +2195,21 @@ class CoreLogRecord extends DataClass implements Insertable<CoreLogRecord> {
     };
   }
 
-  CoreLogRecord copyWith(
-          {String? id,
-          int? at,
-          int? sequence,
-          String? level,
-          String? source,
-          String? message}) =>
-      CoreLogRecord(
-        id: id ?? this.id,
-        at: at ?? this.at,
-        sequence: sequence ?? this.sequence,
-        level: level ?? this.level,
-        source: source ?? this.source,
-        message: message ?? this.message,
-      );
+  CoreLogRecord copyWith({
+    String? id,
+    int? at,
+    int? sequence,
+    String? level,
+    String? source,
+    String? message,
+  }) => CoreLogRecord(
+    id: id ?? this.id,
+    at: at ?? this.at,
+    sequence: sequence ?? this.sequence,
+    level: level ?? this.level,
+    source: source ?? this.source,
+    message: message ?? this.message,
+  );
   CoreLogRecord copyWithCompanion(CoreLogsCompanion data) {
     return CoreLogRecord(
       id: data.id.present ? data.id.value : this.id,
@@ -1887,11 +2273,11 @@ class CoreLogsCompanion extends UpdateCompanion<CoreLogRecord> {
     required String source,
     required String message,
     this.rowid = const Value.absent(),
-  })  : id = Value(id),
-        at = Value(at),
-        level = Value(level),
-        source = Value(source),
-        message = Value(message);
+  }) : id = Value(id),
+       at = Value(at),
+       level = Value(level),
+       source = Value(source),
+       message = Value(message);
   static Insertable<CoreLogRecord> custom({
     Expression<String>? id,
     Expression<int>? at,
@@ -1912,14 +2298,15 @@ class CoreLogsCompanion extends UpdateCompanion<CoreLogRecord> {
     });
   }
 
-  CoreLogsCompanion copyWith(
-      {Value<String>? id,
-      Value<int>? at,
-      Value<int>? sequence,
-      Value<String>? level,
-      Value<String>? source,
-      Value<String>? message,
-      Value<int>? rowid}) {
+  CoreLogsCompanion copyWith({
+    Value<String>? id,
+    Value<int>? at,
+    Value<int>? sequence,
+    Value<String>? level,
+    Value<String>? source,
+    Value<String>? message,
+    Value<int>? rowid,
+  }) {
     return CoreLogsCompanion(
       id: id ?? this.id,
       at: at ?? this.at,
@@ -1982,37 +2369,53 @@ class $NodeOverridesTable extends NodeOverrides
   static const VerificationMeta _nodeIdMeta = const VerificationMeta('nodeId');
   @override
   late final GeneratedColumn<String> nodeId = GeneratedColumn<String>(
-      'node_id', aliasedName, false,
-      type: DriftSqlType.string,
-      requiredDuringInsert: true,
-      defaultConstraints: GeneratedColumn.constraintIsAlways(
-          'REFERENCES nodes (id) ON DELETE CASCADE'));
+    'node_id',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+    defaultConstraints: GeneratedColumn.constraintIsAlways(
+      'REFERENCES nodes (id) ON DELETE CASCADE',
+    ),
+  );
   static const VerificationMeta _aliasMeta = const VerificationMeta('alias');
   @override
   late final GeneratedColumn<String> alias = GeneratedColumn<String>(
-      'alias', aliasedName, false,
-      type: DriftSqlType.string,
-      requiredDuringInsert: false,
-      defaultValue: const Constant(''));
-  static const VerificationMeta _favoriteMeta =
-      const VerificationMeta('favorite');
+    'alias',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: false,
+    defaultValue: const Constant(''),
+  );
+  static const VerificationMeta _favoriteMeta = const VerificationMeta(
+    'favorite',
+  );
   @override
   late final GeneratedColumn<bool> favorite = GeneratedColumn<bool>(
-      'favorite', aliasedName, false,
-      type: DriftSqlType.bool,
-      requiredDuringInsert: false,
-      defaultConstraints:
-          GeneratedColumn.constraintIsAlways('CHECK ("favorite" IN (0, 1))'),
-      defaultValue: const Constant(false));
+    'favorite',
+    aliasedName,
+    false,
+    type: DriftSqlType.bool,
+    requiredDuringInsert: false,
+    defaultConstraints: GeneratedColumn.constraintIsAlways(
+      'CHECK ("favorite" IN (0, 1))',
+    ),
+    defaultValue: const Constant(false),
+  );
   static const VerificationMeta _hiddenMeta = const VerificationMeta('hidden');
   @override
   late final GeneratedColumn<bool> hidden = GeneratedColumn<bool>(
-      'hidden', aliasedName, false,
-      type: DriftSqlType.bool,
-      requiredDuringInsert: false,
-      defaultConstraints:
-          GeneratedColumn.constraintIsAlways('CHECK ("hidden" IN (0, 1))'),
-      defaultValue: const Constant(false));
+    'hidden',
+    aliasedName,
+    false,
+    type: DriftSqlType.bool,
+    requiredDuringInsert: false,
+    defaultConstraints: GeneratedColumn.constraintIsAlways(
+      'CHECK ("hidden" IN (0, 1))',
+    ),
+    defaultValue: const Constant(false),
+  );
   @override
   List<GeneratedColumn> get $columns => [nodeId, alias, favorite, hidden];
   @override
@@ -2021,27 +2424,37 @@ class $NodeOverridesTable extends NodeOverrides
   String get actualTableName => $name;
   static const String $name = 'node_overrides';
   @override
-  VerificationContext validateIntegrity(Insertable<NodeOverrideRecord> instance,
-      {bool isInserting = false}) {
+  VerificationContext validateIntegrity(
+    Insertable<NodeOverrideRecord> instance, {
+    bool isInserting = false,
+  }) {
     final context = VerificationContext();
     final data = instance.toColumns(true);
     if (data.containsKey('node_id')) {
-      context.handle(_nodeIdMeta,
-          nodeId.isAcceptableOrUnknown(data['node_id']!, _nodeIdMeta));
+      context.handle(
+        _nodeIdMeta,
+        nodeId.isAcceptableOrUnknown(data['node_id']!, _nodeIdMeta),
+      );
     } else if (isInserting) {
       context.missing(_nodeIdMeta);
     }
     if (data.containsKey('alias')) {
       context.handle(
-          _aliasMeta, alias.isAcceptableOrUnknown(data['alias']!, _aliasMeta));
+        _aliasMeta,
+        alias.isAcceptableOrUnknown(data['alias']!, _aliasMeta),
+      );
     }
     if (data.containsKey('favorite')) {
-      context.handle(_favoriteMeta,
-          favorite.isAcceptableOrUnknown(data['favorite']!, _favoriteMeta));
+      context.handle(
+        _favoriteMeta,
+        favorite.isAcceptableOrUnknown(data['favorite']!, _favoriteMeta),
+      );
     }
     if (data.containsKey('hidden')) {
-      context.handle(_hiddenMeta,
-          hidden.isAcceptableOrUnknown(data['hidden']!, _hiddenMeta));
+      context.handle(
+        _hiddenMeta,
+        hidden.isAcceptableOrUnknown(data['hidden']!, _hiddenMeta),
+      );
     }
     return context;
   }
@@ -2052,14 +2465,26 @@ class $NodeOverridesTable extends NodeOverrides
   NodeOverrideRecord map(Map<String, dynamic> data, {String? tablePrefix}) {
     final effectivePrefix = tablePrefix != null ? '$tablePrefix.' : '';
     return NodeOverrideRecord(
-      nodeId: attachedDatabase.typeMapping
-          .read(DriftSqlType.string, data['${effectivePrefix}node_id'])!,
-      alias: attachedDatabase.typeMapping
-          .read(DriftSqlType.string, data['${effectivePrefix}alias'])!,
-      favorite: attachedDatabase.typeMapping
-          .read(DriftSqlType.bool, data['${effectivePrefix}favorite'])!,
-      hidden: attachedDatabase.typeMapping
-          .read(DriftSqlType.bool, data['${effectivePrefix}hidden'])!,
+      nodeId:
+          attachedDatabase.typeMapping.read(
+            DriftSqlType.string,
+            data['${effectivePrefix}node_id'],
+          )!,
+      alias:
+          attachedDatabase.typeMapping.read(
+            DriftSqlType.string,
+            data['${effectivePrefix}alias'],
+          )!,
+      favorite:
+          attachedDatabase.typeMapping.read(
+            DriftSqlType.bool,
+            data['${effectivePrefix}favorite'],
+          )!,
+      hidden:
+          attachedDatabase.typeMapping.read(
+            DriftSqlType.bool,
+            data['${effectivePrefix}hidden'],
+          )!,
     );
   }
 
@@ -2075,11 +2500,12 @@ class NodeOverrideRecord extends DataClass
   final String alias;
   final bool favorite;
   final bool hidden;
-  const NodeOverrideRecord(
-      {required this.nodeId,
-      required this.alias,
-      required this.favorite,
-      required this.hidden});
+  const NodeOverrideRecord({
+    required this.nodeId,
+    required this.alias,
+    required this.favorite,
+    required this.hidden,
+  });
   @override
   Map<String, Expression> toColumns(bool nullToAbsent) {
     final map = <String, Expression>{};
@@ -2099,8 +2525,10 @@ class NodeOverrideRecord extends DataClass
     );
   }
 
-  factory NodeOverrideRecord.fromJson(Map<String, dynamic> json,
-      {ValueSerializer? serializer}) {
+  factory NodeOverrideRecord.fromJson(
+    Map<String, dynamic> json, {
+    ValueSerializer? serializer,
+  }) {
     serializer ??= driftRuntimeOptions.defaultSerializer;
     return NodeOverrideRecord(
       nodeId: serializer.fromJson<String>(json['nodeId']),
@@ -2120,14 +2548,17 @@ class NodeOverrideRecord extends DataClass
     };
   }
 
-  NodeOverrideRecord copyWith(
-          {String? nodeId, String? alias, bool? favorite, bool? hidden}) =>
-      NodeOverrideRecord(
-        nodeId: nodeId ?? this.nodeId,
-        alias: alias ?? this.alias,
-        favorite: favorite ?? this.favorite,
-        hidden: hidden ?? this.hidden,
-      );
+  NodeOverrideRecord copyWith({
+    String? nodeId,
+    String? alias,
+    bool? favorite,
+    bool? hidden,
+  }) => NodeOverrideRecord(
+    nodeId: nodeId ?? this.nodeId,
+    alias: alias ?? this.alias,
+    favorite: favorite ?? this.favorite,
+    hidden: hidden ?? this.hidden,
+  );
   NodeOverrideRecord copyWithCompanion(NodeOverridesCompanion data) {
     return NodeOverrideRecord(
       nodeId: data.nodeId.present ? data.nodeId.value : this.nodeId,
@@ -2196,12 +2627,13 @@ class NodeOverridesCompanion extends UpdateCompanion<NodeOverrideRecord> {
     });
   }
 
-  NodeOverridesCompanion copyWith(
-      {Value<String>? nodeId,
-      Value<String>? alias,
-      Value<bool>? favorite,
-      Value<bool>? hidden,
-      Value<int>? rowid}) {
+  NodeOverridesCompanion copyWith({
+    Value<String>? nodeId,
+    Value<String>? alias,
+    Value<bool>? favorite,
+    Value<bool>? hidden,
+    Value<int>? rowid,
+  }) {
     return NodeOverridesCompanion(
       nodeId: nodeId ?? this.nodeId,
       alias: alias ?? this.alias,
@@ -2254,24 +2686,41 @@ class $TrafficBucketsTable extends TrafficBuckets
   static const VerificationMeta _dayMeta = const VerificationMeta('day');
   @override
   late final GeneratedColumn<String> day = GeneratedColumn<String>(
-      'day', aliasedName, false,
-      type: DriftSqlType.string, requiredDuringInsert: true);
+    'day',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+  );
   static const VerificationMeta _slotMeta = const VerificationMeta('slot');
   @override
   late final GeneratedColumn<int> slot = GeneratedColumn<int>(
-      'slot', aliasedName, false,
-      type: DriftSqlType.int, requiredDuringInsert: true);
+    'slot',
+    aliasedName,
+    false,
+    type: DriftSqlType.int,
+    requiredDuringInsert: true,
+  );
   static const VerificationMeta _uploadMeta = const VerificationMeta('upload');
   @override
   late final GeneratedColumn<int> upload = GeneratedColumn<int>(
-      'upload', aliasedName, false,
-      type: DriftSqlType.int, requiredDuringInsert: true);
-  static const VerificationMeta _downloadMeta =
-      const VerificationMeta('download');
+    'upload',
+    aliasedName,
+    false,
+    type: DriftSqlType.int,
+    requiredDuringInsert: true,
+  );
+  static const VerificationMeta _downloadMeta = const VerificationMeta(
+    'download',
+  );
   @override
   late final GeneratedColumn<int> download = GeneratedColumn<int>(
-      'download', aliasedName, false,
-      type: DriftSqlType.int, requiredDuringInsert: true);
+    'download',
+    aliasedName,
+    false,
+    type: DriftSqlType.int,
+    requiredDuringInsert: true,
+  );
   @override
   List<GeneratedColumn> get $columns => [day, slot, upload, download];
   @override
@@ -2281,31 +2730,40 @@ class $TrafficBucketsTable extends TrafficBuckets
   static const String $name = 'traffic_buckets';
   @override
   VerificationContext validateIntegrity(
-      Insertable<TrafficBucketRecord> instance,
-      {bool isInserting = false}) {
+    Insertable<TrafficBucketRecord> instance, {
+    bool isInserting = false,
+  }) {
     final context = VerificationContext();
     final data = instance.toColumns(true);
     if (data.containsKey('day')) {
       context.handle(
-          _dayMeta, day.isAcceptableOrUnknown(data['day']!, _dayMeta));
+        _dayMeta,
+        day.isAcceptableOrUnknown(data['day']!, _dayMeta),
+      );
     } else if (isInserting) {
       context.missing(_dayMeta);
     }
     if (data.containsKey('slot')) {
       context.handle(
-          _slotMeta, slot.isAcceptableOrUnknown(data['slot']!, _slotMeta));
+        _slotMeta,
+        slot.isAcceptableOrUnknown(data['slot']!, _slotMeta),
+      );
     } else if (isInserting) {
       context.missing(_slotMeta);
     }
     if (data.containsKey('upload')) {
-      context.handle(_uploadMeta,
-          upload.isAcceptableOrUnknown(data['upload']!, _uploadMeta));
+      context.handle(
+        _uploadMeta,
+        upload.isAcceptableOrUnknown(data['upload']!, _uploadMeta),
+      );
     } else if (isInserting) {
       context.missing(_uploadMeta);
     }
     if (data.containsKey('download')) {
-      context.handle(_downloadMeta,
-          download.isAcceptableOrUnknown(data['download']!, _downloadMeta));
+      context.handle(
+        _downloadMeta,
+        download.isAcceptableOrUnknown(data['download']!, _downloadMeta),
+      );
     } else if (isInserting) {
       context.missing(_downloadMeta);
     }
@@ -2318,14 +2776,26 @@ class $TrafficBucketsTable extends TrafficBuckets
   TrafficBucketRecord map(Map<String, dynamic> data, {String? tablePrefix}) {
     final effectivePrefix = tablePrefix != null ? '$tablePrefix.' : '';
     return TrafficBucketRecord(
-      day: attachedDatabase.typeMapping
-          .read(DriftSqlType.string, data['${effectivePrefix}day'])!,
-      slot: attachedDatabase.typeMapping
-          .read(DriftSqlType.int, data['${effectivePrefix}slot'])!,
-      upload: attachedDatabase.typeMapping
-          .read(DriftSqlType.int, data['${effectivePrefix}upload'])!,
-      download: attachedDatabase.typeMapping
-          .read(DriftSqlType.int, data['${effectivePrefix}download'])!,
+      day:
+          attachedDatabase.typeMapping.read(
+            DriftSqlType.string,
+            data['${effectivePrefix}day'],
+          )!,
+      slot:
+          attachedDatabase.typeMapping.read(
+            DriftSqlType.int,
+            data['${effectivePrefix}slot'],
+          )!,
+      upload:
+          attachedDatabase.typeMapping.read(
+            DriftSqlType.int,
+            data['${effectivePrefix}upload'],
+          )!,
+      download:
+          attachedDatabase.typeMapping.read(
+            DriftSqlType.int,
+            data['${effectivePrefix}download'],
+          )!,
     );
   }
 
@@ -2341,11 +2811,12 @@ class TrafficBucketRecord extends DataClass
   final int slot;
   final int upload;
   final int download;
-  const TrafficBucketRecord(
-      {required this.day,
-      required this.slot,
-      required this.upload,
-      required this.download});
+  const TrafficBucketRecord({
+    required this.day,
+    required this.slot,
+    required this.upload,
+    required this.download,
+  });
   @override
   Map<String, Expression> toColumns(bool nullToAbsent) {
     final map = <String, Expression>{};
@@ -2365,8 +2836,10 @@ class TrafficBucketRecord extends DataClass
     );
   }
 
-  factory TrafficBucketRecord.fromJson(Map<String, dynamic> json,
-      {ValueSerializer? serializer}) {
+  factory TrafficBucketRecord.fromJson(
+    Map<String, dynamic> json, {
+    ValueSerializer? serializer,
+  }) {
     serializer ??= driftRuntimeOptions.defaultSerializer;
     return TrafficBucketRecord(
       day: serializer.fromJson<String>(json['day']),
@@ -2386,14 +2859,17 @@ class TrafficBucketRecord extends DataClass
     };
   }
 
-  TrafficBucketRecord copyWith(
-          {String? day, int? slot, int? upload, int? download}) =>
-      TrafficBucketRecord(
-        day: day ?? this.day,
-        slot: slot ?? this.slot,
-        upload: upload ?? this.upload,
-        download: download ?? this.download,
-      );
+  TrafficBucketRecord copyWith({
+    String? day,
+    int? slot,
+    int? upload,
+    int? download,
+  }) => TrafficBucketRecord(
+    day: day ?? this.day,
+    slot: slot ?? this.slot,
+    upload: upload ?? this.upload,
+    download: download ?? this.download,
+  );
   TrafficBucketRecord copyWithCompanion(TrafficBucketsCompanion data) {
     return TrafficBucketRecord(
       day: data.day.present ? data.day.value : this.day,
@@ -2445,10 +2921,10 @@ class TrafficBucketsCompanion extends UpdateCompanion<TrafficBucketRecord> {
     required int upload,
     required int download,
     this.rowid = const Value.absent(),
-  })  : day = Value(day),
-        slot = Value(slot),
-        upload = Value(upload),
-        download = Value(download);
+  }) : day = Value(day),
+       slot = Value(slot),
+       upload = Value(upload),
+       download = Value(download);
   static Insertable<TrafficBucketRecord> custom({
     Expression<String>? day,
     Expression<int>? slot,
@@ -2465,12 +2941,13 @@ class TrafficBucketsCompanion extends UpdateCompanion<TrafficBucketRecord> {
     });
   }
 
-  TrafficBucketsCompanion copyWith(
-      {Value<String>? day,
-      Value<int>? slot,
-      Value<int>? upload,
-      Value<int>? download,
-      Value<int>? rowid}) {
+  TrafficBucketsCompanion copyWith({
+    Value<String>? day,
+    Value<int>? slot,
+    Value<int>? upload,
+    Value<int>? download,
+    Value<int>? rowid,
+  }) {
     return TrafficBucketsCompanion(
       day: day ?? this.day,
       slot: slot ?? this.slot,
@@ -2523,38 +3000,70 @@ class $TrafficSourcesTable extends TrafficSources
   static const VerificationMeta _dayMeta = const VerificationMeta('day');
   @override
   late final GeneratedColumn<String> day = GeneratedColumn<String>(
-      'day', aliasedName, false,
-      type: DriftSqlType.string, requiredDuringInsert: true);
-  static const VerificationMeta _targetIdMeta =
-      const VerificationMeta('targetId');
+    'day',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+  );
+  static const VerificationMeta _targetIdMeta = const VerificationMeta(
+    'targetId',
+  );
   @override
   late final GeneratedColumn<String> targetId = GeneratedColumn<String>(
-      'target_id', aliasedName, false,
-      type: DriftSqlType.string, requiredDuringInsert: true);
+    'target_id',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+  );
   static const VerificationMeta _kindMeta = const VerificationMeta('kind');
   @override
   late final GeneratedColumn<String> kind = GeneratedColumn<String>(
-      'kind', aliasedName, false,
-      type: DriftSqlType.string, requiredDuringInsert: true);
+    'kind',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+  );
   static const VerificationMeta _nameMeta = const VerificationMeta('name');
   @override
   late final GeneratedColumn<String> name = GeneratedColumn<String>(
-      'name', aliasedName, false,
-      type: DriftSqlType.string, requiredDuringInsert: true);
+    'name',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+  );
   static const VerificationMeta _uploadMeta = const VerificationMeta('upload');
   @override
   late final GeneratedColumn<int> upload = GeneratedColumn<int>(
-      'upload', aliasedName, false,
-      type: DriftSqlType.int, requiredDuringInsert: true);
-  static const VerificationMeta _downloadMeta =
-      const VerificationMeta('download');
+    'upload',
+    aliasedName,
+    false,
+    type: DriftSqlType.int,
+    requiredDuringInsert: true,
+  );
+  static const VerificationMeta _downloadMeta = const VerificationMeta(
+    'download',
+  );
   @override
   late final GeneratedColumn<int> download = GeneratedColumn<int>(
-      'download', aliasedName, false,
-      type: DriftSqlType.int, requiredDuringInsert: true);
+    'download',
+    aliasedName,
+    false,
+    type: DriftSqlType.int,
+    requiredDuringInsert: true,
+  );
   @override
-  List<GeneratedColumn> get $columns =>
-      [day, targetId, kind, name, upload, download];
+  List<GeneratedColumn> get $columns => [
+    day,
+    targetId,
+    kind,
+    name,
+    upload,
+    download,
+  ];
   @override
   String get aliasedName => _alias ?? actualTableName;
   @override
@@ -2562,43 +3071,56 @@ class $TrafficSourcesTable extends TrafficSources
   static const String $name = 'traffic_sources';
   @override
   VerificationContext validateIntegrity(
-      Insertable<TrafficSourceRecord> instance,
-      {bool isInserting = false}) {
+    Insertable<TrafficSourceRecord> instance, {
+    bool isInserting = false,
+  }) {
     final context = VerificationContext();
     final data = instance.toColumns(true);
     if (data.containsKey('day')) {
       context.handle(
-          _dayMeta, day.isAcceptableOrUnknown(data['day']!, _dayMeta));
+        _dayMeta,
+        day.isAcceptableOrUnknown(data['day']!, _dayMeta),
+      );
     } else if (isInserting) {
       context.missing(_dayMeta);
     }
     if (data.containsKey('target_id')) {
-      context.handle(_targetIdMeta,
-          targetId.isAcceptableOrUnknown(data['target_id']!, _targetIdMeta));
+      context.handle(
+        _targetIdMeta,
+        targetId.isAcceptableOrUnknown(data['target_id']!, _targetIdMeta),
+      );
     } else if (isInserting) {
       context.missing(_targetIdMeta);
     }
     if (data.containsKey('kind')) {
       context.handle(
-          _kindMeta, kind.isAcceptableOrUnknown(data['kind']!, _kindMeta));
+        _kindMeta,
+        kind.isAcceptableOrUnknown(data['kind']!, _kindMeta),
+      );
     } else if (isInserting) {
       context.missing(_kindMeta);
     }
     if (data.containsKey('name')) {
       context.handle(
-          _nameMeta, name.isAcceptableOrUnknown(data['name']!, _nameMeta));
+        _nameMeta,
+        name.isAcceptableOrUnknown(data['name']!, _nameMeta),
+      );
     } else if (isInserting) {
       context.missing(_nameMeta);
     }
     if (data.containsKey('upload')) {
-      context.handle(_uploadMeta,
-          upload.isAcceptableOrUnknown(data['upload']!, _uploadMeta));
+      context.handle(
+        _uploadMeta,
+        upload.isAcceptableOrUnknown(data['upload']!, _uploadMeta),
+      );
     } else if (isInserting) {
       context.missing(_uploadMeta);
     }
     if (data.containsKey('download')) {
-      context.handle(_downloadMeta,
-          download.isAcceptableOrUnknown(data['download']!, _downloadMeta));
+      context.handle(
+        _downloadMeta,
+        download.isAcceptableOrUnknown(data['download']!, _downloadMeta),
+      );
     } else if (isInserting) {
       context.missing(_downloadMeta);
     }
@@ -2611,18 +3133,36 @@ class $TrafficSourcesTable extends TrafficSources
   TrafficSourceRecord map(Map<String, dynamic> data, {String? tablePrefix}) {
     final effectivePrefix = tablePrefix != null ? '$tablePrefix.' : '';
     return TrafficSourceRecord(
-      day: attachedDatabase.typeMapping
-          .read(DriftSqlType.string, data['${effectivePrefix}day'])!,
-      targetId: attachedDatabase.typeMapping
-          .read(DriftSqlType.string, data['${effectivePrefix}target_id'])!,
-      kind: attachedDatabase.typeMapping
-          .read(DriftSqlType.string, data['${effectivePrefix}kind'])!,
-      name: attachedDatabase.typeMapping
-          .read(DriftSqlType.string, data['${effectivePrefix}name'])!,
-      upload: attachedDatabase.typeMapping
-          .read(DriftSqlType.int, data['${effectivePrefix}upload'])!,
-      download: attachedDatabase.typeMapping
-          .read(DriftSqlType.int, data['${effectivePrefix}download'])!,
+      day:
+          attachedDatabase.typeMapping.read(
+            DriftSqlType.string,
+            data['${effectivePrefix}day'],
+          )!,
+      targetId:
+          attachedDatabase.typeMapping.read(
+            DriftSqlType.string,
+            data['${effectivePrefix}target_id'],
+          )!,
+      kind:
+          attachedDatabase.typeMapping.read(
+            DriftSqlType.string,
+            data['${effectivePrefix}kind'],
+          )!,
+      name:
+          attachedDatabase.typeMapping.read(
+            DriftSqlType.string,
+            data['${effectivePrefix}name'],
+          )!,
+      upload:
+          attachedDatabase.typeMapping.read(
+            DriftSqlType.int,
+            data['${effectivePrefix}upload'],
+          )!,
+      download:
+          attachedDatabase.typeMapping.read(
+            DriftSqlType.int,
+            data['${effectivePrefix}download'],
+          )!,
     );
   }
 
@@ -2640,13 +3180,14 @@ class TrafficSourceRecord extends DataClass
   final String name;
   final int upload;
   final int download;
-  const TrafficSourceRecord(
-      {required this.day,
-      required this.targetId,
-      required this.kind,
-      required this.name,
-      required this.upload,
-      required this.download});
+  const TrafficSourceRecord({
+    required this.day,
+    required this.targetId,
+    required this.kind,
+    required this.name,
+    required this.upload,
+    required this.download,
+  });
   @override
   Map<String, Expression> toColumns(bool nullToAbsent) {
     final map = <String, Expression>{};
@@ -2670,8 +3211,10 @@ class TrafficSourceRecord extends DataClass
     );
   }
 
-  factory TrafficSourceRecord.fromJson(Map<String, dynamic> json,
-      {ValueSerializer? serializer}) {
+  factory TrafficSourceRecord.fromJson(
+    Map<String, dynamic> json, {
+    ValueSerializer? serializer,
+  }) {
     serializer ??= driftRuntimeOptions.defaultSerializer;
     return TrafficSourceRecord(
       day: serializer.fromJson<String>(json['day']),
@@ -2695,21 +3238,21 @@ class TrafficSourceRecord extends DataClass
     };
   }
 
-  TrafficSourceRecord copyWith(
-          {String? day,
-          String? targetId,
-          String? kind,
-          String? name,
-          int? upload,
-          int? download}) =>
-      TrafficSourceRecord(
-        day: day ?? this.day,
-        targetId: targetId ?? this.targetId,
-        kind: kind ?? this.kind,
-        name: name ?? this.name,
-        upload: upload ?? this.upload,
-        download: download ?? this.download,
-      );
+  TrafficSourceRecord copyWith({
+    String? day,
+    String? targetId,
+    String? kind,
+    String? name,
+    int? upload,
+    int? download,
+  }) => TrafficSourceRecord(
+    day: day ?? this.day,
+    targetId: targetId ?? this.targetId,
+    kind: kind ?? this.kind,
+    name: name ?? this.name,
+    upload: upload ?? this.upload,
+    download: download ?? this.download,
+  );
   TrafficSourceRecord copyWithCompanion(TrafficSourcesCompanion data) {
     return TrafficSourceRecord(
       day: data.day.present ? data.day.value : this.day,
@@ -2773,12 +3316,12 @@ class TrafficSourcesCompanion extends UpdateCompanion<TrafficSourceRecord> {
     required int upload,
     required int download,
     this.rowid = const Value.absent(),
-  })  : day = Value(day),
-        targetId = Value(targetId),
-        kind = Value(kind),
-        name = Value(name),
-        upload = Value(upload),
-        download = Value(download);
+  }) : day = Value(day),
+       targetId = Value(targetId),
+       kind = Value(kind),
+       name = Value(name),
+       upload = Value(upload),
+       download = Value(download);
   static Insertable<TrafficSourceRecord> custom({
     Expression<String>? day,
     Expression<String>? targetId,
@@ -2799,14 +3342,15 @@ class TrafficSourcesCompanion extends UpdateCompanion<TrafficSourceRecord> {
     });
   }
 
-  TrafficSourcesCompanion copyWith(
-      {Value<String>? day,
-      Value<String>? targetId,
-      Value<String>? kind,
-      Value<String>? name,
-      Value<int>? upload,
-      Value<int>? download,
-      Value<int>? rowid}) {
+  TrafficSourcesCompanion copyWith({
+    Value<String>? day,
+    Value<String>? targetId,
+    Value<String>? kind,
+    Value<String>? name,
+    Value<int>? upload,
+    Value<int>? download,
+    Value<int>? rowid,
+  }) {
     return TrafficSourcesCompanion(
       day: day ?? this.day,
       targetId: targetId ?? this.targetId,
@@ -2866,25 +3410,67 @@ class $TrafficCheckpointsTable extends TrafficCheckpoints
   final GeneratedDatabase attachedDatabase;
   final String? _alias;
   $TrafficCheckpointsTable(this.attachedDatabase, [this._alias]);
-  static const VerificationMeta _sessionIdMeta =
-      const VerificationMeta('sessionId');
+  static const VerificationMeta _sessionIdMeta = const VerificationMeta(
+    'sessionId',
+  );
   @override
   late final GeneratedColumn<String> sessionId = GeneratedColumn<String>(
-      'session_id', aliasedName, false,
-      type: DriftSqlType.string, requiredDuringInsert: true);
+    'session_id',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+  );
   static const VerificationMeta _uploadMeta = const VerificationMeta('upload');
   @override
   late final GeneratedColumn<int> upload = GeneratedColumn<int>(
-      'upload', aliasedName, false,
-      type: DriftSqlType.int, requiredDuringInsert: true);
-  static const VerificationMeta _downloadMeta =
-      const VerificationMeta('download');
+    'upload',
+    aliasedName,
+    false,
+    type: DriftSqlType.int,
+    requiredDuringInsert: true,
+  );
+  static const VerificationMeta _downloadMeta = const VerificationMeta(
+    'download',
+  );
   @override
   late final GeneratedColumn<int> download = GeneratedColumn<int>(
-      'download', aliasedName, false,
-      type: DriftSqlType.int, requiredDuringInsert: true);
+    'download',
+    aliasedName,
+    false,
+    type: DriftSqlType.int,
+    requiredDuringInsert: true,
+  );
+  static const VerificationMeta _epochMeta = const VerificationMeta('epoch');
   @override
-  List<GeneratedColumn> get $columns => [sessionId, upload, download];
+  late final GeneratedColumn<String> epoch = GeneratedColumn<String>(
+    'epoch',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: false,
+    defaultValue: const Constant(''),
+  );
+  static const VerificationMeta _sampledAtMeta = const VerificationMeta(
+    'sampledAt',
+  );
+  @override
+  late final GeneratedColumn<int> sampledAt = GeneratedColumn<int>(
+    'sampled_at',
+    aliasedName,
+    false,
+    type: DriftSqlType.int,
+    requiredDuringInsert: false,
+    defaultValue: const Constant(0),
+  );
+  @override
+  List<GeneratedColumn> get $columns => [
+    sessionId,
+    upload,
+    download,
+    epoch,
+    sampledAt,
+  ];
   @override
   String get aliasedName => _alias ?? actualTableName;
   @override
@@ -2892,27 +3478,46 @@ class $TrafficCheckpointsTable extends TrafficCheckpoints
   static const String $name = 'traffic_checkpoints';
   @override
   VerificationContext validateIntegrity(
-      Insertable<TrafficCheckpointRecord> instance,
-      {bool isInserting = false}) {
+    Insertable<TrafficCheckpointRecord> instance, {
+    bool isInserting = false,
+  }) {
     final context = VerificationContext();
     final data = instance.toColumns(true);
     if (data.containsKey('session_id')) {
-      context.handle(_sessionIdMeta,
-          sessionId.isAcceptableOrUnknown(data['session_id']!, _sessionIdMeta));
+      context.handle(
+        _sessionIdMeta,
+        sessionId.isAcceptableOrUnknown(data['session_id']!, _sessionIdMeta),
+      );
     } else if (isInserting) {
       context.missing(_sessionIdMeta);
     }
     if (data.containsKey('upload')) {
-      context.handle(_uploadMeta,
-          upload.isAcceptableOrUnknown(data['upload']!, _uploadMeta));
+      context.handle(
+        _uploadMeta,
+        upload.isAcceptableOrUnknown(data['upload']!, _uploadMeta),
+      );
     } else if (isInserting) {
       context.missing(_uploadMeta);
     }
     if (data.containsKey('download')) {
-      context.handle(_downloadMeta,
-          download.isAcceptableOrUnknown(data['download']!, _downloadMeta));
+      context.handle(
+        _downloadMeta,
+        download.isAcceptableOrUnknown(data['download']!, _downloadMeta),
+      );
     } else if (isInserting) {
       context.missing(_downloadMeta);
+    }
+    if (data.containsKey('epoch')) {
+      context.handle(
+        _epochMeta,
+        epoch.isAcceptableOrUnknown(data['epoch']!, _epochMeta),
+      );
+    }
+    if (data.containsKey('sampled_at')) {
+      context.handle(
+        _sampledAtMeta,
+        sampledAt.isAcceptableOrUnknown(data['sampled_at']!, _sampledAtMeta),
+      );
     }
     return context;
   }
@@ -2920,16 +3525,37 @@ class $TrafficCheckpointsTable extends TrafficCheckpoints
   @override
   Set<GeneratedColumn> get $primaryKey => {sessionId};
   @override
-  TrafficCheckpointRecord map(Map<String, dynamic> data,
-      {String? tablePrefix}) {
+  TrafficCheckpointRecord map(
+    Map<String, dynamic> data, {
+    String? tablePrefix,
+  }) {
     final effectivePrefix = tablePrefix != null ? '$tablePrefix.' : '';
     return TrafficCheckpointRecord(
-      sessionId: attachedDatabase.typeMapping
-          .read(DriftSqlType.string, data['${effectivePrefix}session_id'])!,
-      upload: attachedDatabase.typeMapping
-          .read(DriftSqlType.int, data['${effectivePrefix}upload'])!,
-      download: attachedDatabase.typeMapping
-          .read(DriftSqlType.int, data['${effectivePrefix}download'])!,
+      sessionId:
+          attachedDatabase.typeMapping.read(
+            DriftSqlType.string,
+            data['${effectivePrefix}session_id'],
+          )!,
+      upload:
+          attachedDatabase.typeMapping.read(
+            DriftSqlType.int,
+            data['${effectivePrefix}upload'],
+          )!,
+      download:
+          attachedDatabase.typeMapping.read(
+            DriftSqlType.int,
+            data['${effectivePrefix}download'],
+          )!,
+      epoch:
+          attachedDatabase.typeMapping.read(
+            DriftSqlType.string,
+            data['${effectivePrefix}epoch'],
+          )!,
+      sampledAt:
+          attachedDatabase.typeMapping.read(
+            DriftSqlType.int,
+            data['${effectivePrefix}sampled_at'],
+          )!,
     );
   }
 
@@ -2944,14 +3570,23 @@ class TrafficCheckpointRecord extends DataClass
   final String sessionId;
   final int upload;
   final int download;
-  const TrafficCheckpointRecord(
-      {required this.sessionId, required this.upload, required this.download});
+  final String epoch;
+  final int sampledAt;
+  const TrafficCheckpointRecord({
+    required this.sessionId,
+    required this.upload,
+    required this.download,
+    required this.epoch,
+    required this.sampledAt,
+  });
   @override
   Map<String, Expression> toColumns(bool nullToAbsent) {
     final map = <String, Expression>{};
     map['session_id'] = Variable<String>(sessionId);
     map['upload'] = Variable<int>(upload);
     map['download'] = Variable<int>(download);
+    map['epoch'] = Variable<String>(epoch);
+    map['sampled_at'] = Variable<int>(sampledAt);
     return map;
   }
 
@@ -2960,16 +3595,22 @@ class TrafficCheckpointRecord extends DataClass
       sessionId: Value(sessionId),
       upload: Value(upload),
       download: Value(download),
+      epoch: Value(epoch),
+      sampledAt: Value(sampledAt),
     );
   }
 
-  factory TrafficCheckpointRecord.fromJson(Map<String, dynamic> json,
-      {ValueSerializer? serializer}) {
+  factory TrafficCheckpointRecord.fromJson(
+    Map<String, dynamic> json, {
+    ValueSerializer? serializer,
+  }) {
     serializer ??= driftRuntimeOptions.defaultSerializer;
     return TrafficCheckpointRecord(
       sessionId: serializer.fromJson<String>(json['sessionId']),
       upload: serializer.fromJson<int>(json['upload']),
       download: serializer.fromJson<int>(json['download']),
+      epoch: serializer.fromJson<String>(json['epoch']),
+      sampledAt: serializer.fromJson<int>(json['sampledAt']),
     );
   }
   @override
@@ -2979,21 +3620,31 @@ class TrafficCheckpointRecord extends DataClass
       'sessionId': serializer.toJson<String>(sessionId),
       'upload': serializer.toJson<int>(upload),
       'download': serializer.toJson<int>(download),
+      'epoch': serializer.toJson<String>(epoch),
+      'sampledAt': serializer.toJson<int>(sampledAt),
     };
   }
 
-  TrafficCheckpointRecord copyWith(
-          {String? sessionId, int? upload, int? download}) =>
-      TrafficCheckpointRecord(
-        sessionId: sessionId ?? this.sessionId,
-        upload: upload ?? this.upload,
-        download: download ?? this.download,
-      );
+  TrafficCheckpointRecord copyWith({
+    String? sessionId,
+    int? upload,
+    int? download,
+    String? epoch,
+    int? sampledAt,
+  }) => TrafficCheckpointRecord(
+    sessionId: sessionId ?? this.sessionId,
+    upload: upload ?? this.upload,
+    download: download ?? this.download,
+    epoch: epoch ?? this.epoch,
+    sampledAt: sampledAt ?? this.sampledAt,
+  );
   TrafficCheckpointRecord copyWithCompanion(TrafficCheckpointsCompanion data) {
     return TrafficCheckpointRecord(
       sessionId: data.sessionId.present ? data.sessionId.value : this.sessionId,
       upload: data.upload.present ? data.upload.value : this.upload,
       download: data.download.present ? data.download.value : this.download,
+      epoch: data.epoch.present ? data.epoch.value : this.epoch,
+      sampledAt: data.sampledAt.present ? data.sampledAt.value : this.sampledAt,
     );
   }
 
@@ -3002,20 +3653,25 @@ class TrafficCheckpointRecord extends DataClass
     return (StringBuffer('TrafficCheckpointRecord(')
           ..write('sessionId: $sessionId, ')
           ..write('upload: $upload, ')
-          ..write('download: $download')
+          ..write('download: $download, ')
+          ..write('epoch: $epoch, ')
+          ..write('sampledAt: $sampledAt')
           ..write(')'))
         .toString();
   }
 
   @override
-  int get hashCode => Object.hash(sessionId, upload, download);
+  int get hashCode =>
+      Object.hash(sessionId, upload, download, epoch, sampledAt);
   @override
   bool operator ==(Object other) =>
       identical(this, other) ||
       (other is TrafficCheckpointRecord &&
           other.sessionId == this.sessionId &&
           other.upload == this.upload &&
-          other.download == this.download);
+          other.download == this.download &&
+          other.epoch == this.epoch &&
+          other.sampledAt == this.sampledAt);
 }
 
 class TrafficCheckpointsCompanion
@@ -3023,44 +3679,59 @@ class TrafficCheckpointsCompanion
   final Value<String> sessionId;
   final Value<int> upload;
   final Value<int> download;
+  final Value<String> epoch;
+  final Value<int> sampledAt;
   final Value<int> rowid;
   const TrafficCheckpointsCompanion({
     this.sessionId = const Value.absent(),
     this.upload = const Value.absent(),
     this.download = const Value.absent(),
+    this.epoch = const Value.absent(),
+    this.sampledAt = const Value.absent(),
     this.rowid = const Value.absent(),
   });
   TrafficCheckpointsCompanion.insert({
     required String sessionId,
     required int upload,
     required int download,
+    this.epoch = const Value.absent(),
+    this.sampledAt = const Value.absent(),
     this.rowid = const Value.absent(),
-  })  : sessionId = Value(sessionId),
-        upload = Value(upload),
-        download = Value(download);
+  }) : sessionId = Value(sessionId),
+       upload = Value(upload),
+       download = Value(download);
   static Insertable<TrafficCheckpointRecord> custom({
     Expression<String>? sessionId,
     Expression<int>? upload,
     Expression<int>? download,
+    Expression<String>? epoch,
+    Expression<int>? sampledAt,
     Expression<int>? rowid,
   }) {
     return RawValuesInsertable({
       if (sessionId != null) 'session_id': sessionId,
       if (upload != null) 'upload': upload,
       if (download != null) 'download': download,
+      if (epoch != null) 'epoch': epoch,
+      if (sampledAt != null) 'sampled_at': sampledAt,
       if (rowid != null) 'rowid': rowid,
     });
   }
 
-  TrafficCheckpointsCompanion copyWith(
-      {Value<String>? sessionId,
-      Value<int>? upload,
-      Value<int>? download,
-      Value<int>? rowid}) {
+  TrafficCheckpointsCompanion copyWith({
+    Value<String>? sessionId,
+    Value<int>? upload,
+    Value<int>? download,
+    Value<String>? epoch,
+    Value<int>? sampledAt,
+    Value<int>? rowid,
+  }) {
     return TrafficCheckpointsCompanion(
       sessionId: sessionId ?? this.sessionId,
       upload: upload ?? this.upload,
       download: download ?? this.download,
+      epoch: epoch ?? this.epoch,
+      sampledAt: sampledAt ?? this.sampledAt,
       rowid: rowid ?? this.rowid,
     );
   }
@@ -3077,6 +3748,12 @@ class TrafficCheckpointsCompanion
     if (download.present) {
       map['download'] = Variable<int>(download.value);
     }
+    if (epoch.present) {
+      map['epoch'] = Variable<String>(epoch.value);
+    }
+    if (sampledAt.present) {
+      map['sampled_at'] = Variable<int>(sampledAt.value);
+    }
     if (rowid.present) {
       map['rowid'] = Variable<int>(rowid.value);
     }
@@ -3087,6 +3764,387 @@ class TrafficCheckpointsCompanion
   String toString() {
     return (StringBuffer('TrafficCheckpointsCompanion(')
           ..write('sessionId: $sessionId, ')
+          ..write('upload: $upload, ')
+          ..write('download: $download, ')
+          ..write('epoch: $epoch, ')
+          ..write('sampledAt: $sampledAt, ')
+          ..write('rowid: $rowid')
+          ..write(')'))
+        .toString();
+  }
+}
+
+class $TrafficSourceCheckpointsTable extends TrafficSourceCheckpoints
+    with
+        TableInfo<
+          $TrafficSourceCheckpointsTable,
+          TrafficSourceCheckpointRecord
+        > {
+  @override
+  final GeneratedDatabase attachedDatabase;
+  final String? _alias;
+  $TrafficSourceCheckpointsTable(this.attachedDatabase, [this._alias]);
+  static const VerificationMeta _sessionIdMeta = const VerificationMeta(
+    'sessionId',
+  );
+  @override
+  late final GeneratedColumn<String> sessionId = GeneratedColumn<String>(
+    'session_id',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+  );
+  static const VerificationMeta _kindMeta = const VerificationMeta('kind');
+  @override
+  late final GeneratedColumn<String> kind = GeneratedColumn<String>(
+    'kind',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+  );
+  static const VerificationMeta _targetIdMeta = const VerificationMeta(
+    'targetId',
+  );
+  @override
+  late final GeneratedColumn<String> targetId = GeneratedColumn<String>(
+    'target_id',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+  );
+  static const VerificationMeta _uploadMeta = const VerificationMeta('upload');
+  @override
+  late final GeneratedColumn<int> upload = GeneratedColumn<int>(
+    'upload',
+    aliasedName,
+    false,
+    type: DriftSqlType.int,
+    requiredDuringInsert: true,
+  );
+  static const VerificationMeta _downloadMeta = const VerificationMeta(
+    'download',
+  );
+  @override
+  late final GeneratedColumn<int> download = GeneratedColumn<int>(
+    'download',
+    aliasedName,
+    false,
+    type: DriftSqlType.int,
+    requiredDuringInsert: true,
+  );
+  @override
+  List<GeneratedColumn> get $columns => [
+    sessionId,
+    kind,
+    targetId,
+    upload,
+    download,
+  ];
+  @override
+  String get aliasedName => _alias ?? actualTableName;
+  @override
+  String get actualTableName => $name;
+  static const String $name = 'traffic_source_checkpoints';
+  @override
+  VerificationContext validateIntegrity(
+    Insertable<TrafficSourceCheckpointRecord> instance, {
+    bool isInserting = false,
+  }) {
+    final context = VerificationContext();
+    final data = instance.toColumns(true);
+    if (data.containsKey('session_id')) {
+      context.handle(
+        _sessionIdMeta,
+        sessionId.isAcceptableOrUnknown(data['session_id']!, _sessionIdMeta),
+      );
+    } else if (isInserting) {
+      context.missing(_sessionIdMeta);
+    }
+    if (data.containsKey('kind')) {
+      context.handle(
+        _kindMeta,
+        kind.isAcceptableOrUnknown(data['kind']!, _kindMeta),
+      );
+    } else if (isInserting) {
+      context.missing(_kindMeta);
+    }
+    if (data.containsKey('target_id')) {
+      context.handle(
+        _targetIdMeta,
+        targetId.isAcceptableOrUnknown(data['target_id']!, _targetIdMeta),
+      );
+    } else if (isInserting) {
+      context.missing(_targetIdMeta);
+    }
+    if (data.containsKey('upload')) {
+      context.handle(
+        _uploadMeta,
+        upload.isAcceptableOrUnknown(data['upload']!, _uploadMeta),
+      );
+    } else if (isInserting) {
+      context.missing(_uploadMeta);
+    }
+    if (data.containsKey('download')) {
+      context.handle(
+        _downloadMeta,
+        download.isAcceptableOrUnknown(data['download']!, _downloadMeta),
+      );
+    } else if (isInserting) {
+      context.missing(_downloadMeta);
+    }
+    return context;
+  }
+
+  @override
+  Set<GeneratedColumn> get $primaryKey => {sessionId, kind, targetId};
+  @override
+  TrafficSourceCheckpointRecord map(
+    Map<String, dynamic> data, {
+    String? tablePrefix,
+  }) {
+    final effectivePrefix = tablePrefix != null ? '$tablePrefix.' : '';
+    return TrafficSourceCheckpointRecord(
+      sessionId:
+          attachedDatabase.typeMapping.read(
+            DriftSqlType.string,
+            data['${effectivePrefix}session_id'],
+          )!,
+      kind:
+          attachedDatabase.typeMapping.read(
+            DriftSqlType.string,
+            data['${effectivePrefix}kind'],
+          )!,
+      targetId:
+          attachedDatabase.typeMapping.read(
+            DriftSqlType.string,
+            data['${effectivePrefix}target_id'],
+          )!,
+      upload:
+          attachedDatabase.typeMapping.read(
+            DriftSqlType.int,
+            data['${effectivePrefix}upload'],
+          )!,
+      download:
+          attachedDatabase.typeMapping.read(
+            DriftSqlType.int,
+            data['${effectivePrefix}download'],
+          )!,
+    );
+  }
+
+  @override
+  $TrafficSourceCheckpointsTable createAlias(String alias) {
+    return $TrafficSourceCheckpointsTable(attachedDatabase, alias);
+  }
+}
+
+class TrafficSourceCheckpointRecord extends DataClass
+    implements Insertable<TrafficSourceCheckpointRecord> {
+  final String sessionId;
+  final String kind;
+  final String targetId;
+  final int upload;
+  final int download;
+  const TrafficSourceCheckpointRecord({
+    required this.sessionId,
+    required this.kind,
+    required this.targetId,
+    required this.upload,
+    required this.download,
+  });
+  @override
+  Map<String, Expression> toColumns(bool nullToAbsent) {
+    final map = <String, Expression>{};
+    map['session_id'] = Variable<String>(sessionId);
+    map['kind'] = Variable<String>(kind);
+    map['target_id'] = Variable<String>(targetId);
+    map['upload'] = Variable<int>(upload);
+    map['download'] = Variable<int>(download);
+    return map;
+  }
+
+  TrafficSourceCheckpointsCompanion toCompanion(bool nullToAbsent) {
+    return TrafficSourceCheckpointsCompanion(
+      sessionId: Value(sessionId),
+      kind: Value(kind),
+      targetId: Value(targetId),
+      upload: Value(upload),
+      download: Value(download),
+    );
+  }
+
+  factory TrafficSourceCheckpointRecord.fromJson(
+    Map<String, dynamic> json, {
+    ValueSerializer? serializer,
+  }) {
+    serializer ??= driftRuntimeOptions.defaultSerializer;
+    return TrafficSourceCheckpointRecord(
+      sessionId: serializer.fromJson<String>(json['sessionId']),
+      kind: serializer.fromJson<String>(json['kind']),
+      targetId: serializer.fromJson<String>(json['targetId']),
+      upload: serializer.fromJson<int>(json['upload']),
+      download: serializer.fromJson<int>(json['download']),
+    );
+  }
+  @override
+  Map<String, dynamic> toJson({ValueSerializer? serializer}) {
+    serializer ??= driftRuntimeOptions.defaultSerializer;
+    return <String, dynamic>{
+      'sessionId': serializer.toJson<String>(sessionId),
+      'kind': serializer.toJson<String>(kind),
+      'targetId': serializer.toJson<String>(targetId),
+      'upload': serializer.toJson<int>(upload),
+      'download': serializer.toJson<int>(download),
+    };
+  }
+
+  TrafficSourceCheckpointRecord copyWith({
+    String? sessionId,
+    String? kind,
+    String? targetId,
+    int? upload,
+    int? download,
+  }) => TrafficSourceCheckpointRecord(
+    sessionId: sessionId ?? this.sessionId,
+    kind: kind ?? this.kind,
+    targetId: targetId ?? this.targetId,
+    upload: upload ?? this.upload,
+    download: download ?? this.download,
+  );
+  TrafficSourceCheckpointRecord copyWithCompanion(
+    TrafficSourceCheckpointsCompanion data,
+  ) {
+    return TrafficSourceCheckpointRecord(
+      sessionId: data.sessionId.present ? data.sessionId.value : this.sessionId,
+      kind: data.kind.present ? data.kind.value : this.kind,
+      targetId: data.targetId.present ? data.targetId.value : this.targetId,
+      upload: data.upload.present ? data.upload.value : this.upload,
+      download: data.download.present ? data.download.value : this.download,
+    );
+  }
+
+  @override
+  String toString() {
+    return (StringBuffer('TrafficSourceCheckpointRecord(')
+          ..write('sessionId: $sessionId, ')
+          ..write('kind: $kind, ')
+          ..write('targetId: $targetId, ')
+          ..write('upload: $upload, ')
+          ..write('download: $download')
+          ..write(')'))
+        .toString();
+  }
+
+  @override
+  int get hashCode => Object.hash(sessionId, kind, targetId, upload, download);
+  @override
+  bool operator ==(Object other) =>
+      identical(this, other) ||
+      (other is TrafficSourceCheckpointRecord &&
+          other.sessionId == this.sessionId &&
+          other.kind == this.kind &&
+          other.targetId == this.targetId &&
+          other.upload == this.upload &&
+          other.download == this.download);
+}
+
+class TrafficSourceCheckpointsCompanion
+    extends UpdateCompanion<TrafficSourceCheckpointRecord> {
+  final Value<String> sessionId;
+  final Value<String> kind;
+  final Value<String> targetId;
+  final Value<int> upload;
+  final Value<int> download;
+  final Value<int> rowid;
+  const TrafficSourceCheckpointsCompanion({
+    this.sessionId = const Value.absent(),
+    this.kind = const Value.absent(),
+    this.targetId = const Value.absent(),
+    this.upload = const Value.absent(),
+    this.download = const Value.absent(),
+    this.rowid = const Value.absent(),
+  });
+  TrafficSourceCheckpointsCompanion.insert({
+    required String sessionId,
+    required String kind,
+    required String targetId,
+    required int upload,
+    required int download,
+    this.rowid = const Value.absent(),
+  }) : sessionId = Value(sessionId),
+       kind = Value(kind),
+       targetId = Value(targetId),
+       upload = Value(upload),
+       download = Value(download);
+  static Insertable<TrafficSourceCheckpointRecord> custom({
+    Expression<String>? sessionId,
+    Expression<String>? kind,
+    Expression<String>? targetId,
+    Expression<int>? upload,
+    Expression<int>? download,
+    Expression<int>? rowid,
+  }) {
+    return RawValuesInsertable({
+      if (sessionId != null) 'session_id': sessionId,
+      if (kind != null) 'kind': kind,
+      if (targetId != null) 'target_id': targetId,
+      if (upload != null) 'upload': upload,
+      if (download != null) 'download': download,
+      if (rowid != null) 'rowid': rowid,
+    });
+  }
+
+  TrafficSourceCheckpointsCompanion copyWith({
+    Value<String>? sessionId,
+    Value<String>? kind,
+    Value<String>? targetId,
+    Value<int>? upload,
+    Value<int>? download,
+    Value<int>? rowid,
+  }) {
+    return TrafficSourceCheckpointsCompanion(
+      sessionId: sessionId ?? this.sessionId,
+      kind: kind ?? this.kind,
+      targetId: targetId ?? this.targetId,
+      upload: upload ?? this.upload,
+      download: download ?? this.download,
+      rowid: rowid ?? this.rowid,
+    );
+  }
+
+  @override
+  Map<String, Expression> toColumns(bool nullToAbsent) {
+    final map = <String, Expression>{};
+    if (sessionId.present) {
+      map['session_id'] = Variable<String>(sessionId.value);
+    }
+    if (kind.present) {
+      map['kind'] = Variable<String>(kind.value);
+    }
+    if (targetId.present) {
+      map['target_id'] = Variable<String>(targetId.value);
+    }
+    if (upload.present) {
+      map['upload'] = Variable<int>(upload.value);
+    }
+    if (download.present) {
+      map['download'] = Variable<int>(download.value);
+    }
+    if (rowid.present) {
+      map['rowid'] = Variable<int>(rowid.value);
+    }
+    return map;
+  }
+
+  @override
+  String toString() {
+    return (StringBuffer('TrafficSourceCheckpointsCompanion(')
+          ..write('sessionId: $sessionId, ')
+          ..write('kind: $kind, ')
+          ..write('targetId: $targetId, ')
           ..write('upload: $upload, ')
           ..write('download: $download, ')
           ..write('rowid: $rowid')
@@ -3107,46 +4165,47 @@ abstract class _$AppDatabase extends GeneratedDatabase {
   late final $TrafficSourcesTable trafficSources = $TrafficSourcesTable(this);
   late final $TrafficCheckpointsTable trafficCheckpoints =
       $TrafficCheckpointsTable(this);
+  late final $TrafficSourceCheckpointsTable trafficSourceCheckpoints =
+      $TrafficSourceCheckpointsTable(this);
   @override
   Iterable<TableInfo<Table, Object?>> get allTables =>
       allSchemaEntities.whereType<TableInfo<Table, Object?>>();
   @override
   List<DatabaseSchemaEntity> get allSchemaEntities => [
-        preferences,
-        nodes,
-        nodeGroups,
-        coreLogs,
-        nodeOverrides,
-        trafficBuckets,
-        trafficSources,
-        trafficCheckpoints
-      ];
+    preferences,
+    nodes,
+    nodeGroups,
+    coreLogs,
+    nodeOverrides,
+    trafficBuckets,
+    trafficSources,
+    trafficCheckpoints,
+    trafficSourceCheckpoints,
+  ];
   @override
-  StreamQueryUpdateRules get streamUpdateRules => const StreamQueryUpdateRules(
-        [
-          WritePropagation(
-            on: TableUpdateQuery.onTableName('nodes',
-                limitUpdateKind: UpdateKind.delete),
-            result: [
-              TableUpdate('node_overrides', kind: UpdateKind.delete),
-            ],
-          ),
-        ],
-      );
+  StreamQueryUpdateRules get streamUpdateRules => const StreamQueryUpdateRules([
+    WritePropagation(
+      on: TableUpdateQuery.onTableName(
+        'nodes',
+        limitUpdateKind: UpdateKind.delete,
+      ),
+      result: [TableUpdate('node_overrides', kind: UpdateKind.delete)],
+    ),
+  ]);
 }
 
-typedef $$PreferencesTableCreateCompanionBuilder = PreferencesCompanion
-    Function({
-  required String key,
-  required String value,
-  Value<int> rowid,
-});
-typedef $$PreferencesTableUpdateCompanionBuilder = PreferencesCompanion
-    Function({
-  Value<String> key,
-  Value<String> value,
-  Value<int> rowid,
-});
+typedef $$PreferencesTableCreateCompanionBuilder =
+    PreferencesCompanion Function({
+      required String key,
+      required String value,
+      Value<int> rowid,
+    });
+typedef $$PreferencesTableUpdateCompanionBuilder =
+    PreferencesCompanion Function({
+      Value<String> key,
+      Value<String> value,
+      Value<int> rowid,
+    });
 
 class $$PreferencesTableFilterComposer
     extends Composer<_$AppDatabase, $PreferencesTable> {
@@ -3158,10 +4217,14 @@ class $$PreferencesTableFilterComposer
     super.$removeJoinBuilderFromRootComposer,
   });
   ColumnFilters<String> get key => $composableBuilder(
-      column: $table.key, builder: (column) => ColumnFilters(column));
+    column: $table.key,
+    builder: (column) => ColumnFilters(column),
+  );
 
   ColumnFilters<String> get value => $composableBuilder(
-      column: $table.value, builder: (column) => ColumnFilters(column));
+    column: $table.value,
+    builder: (column) => ColumnFilters(column),
+  );
 }
 
 class $$PreferencesTableOrderingComposer
@@ -3174,10 +4237,14 @@ class $$PreferencesTableOrderingComposer
     super.$removeJoinBuilderFromRootComposer,
   });
   ColumnOrderings<String> get key => $composableBuilder(
-      column: $table.key, builder: (column) => ColumnOrderings(column));
+    column: $table.key,
+    builder: (column) => ColumnOrderings(column),
+  );
 
   ColumnOrderings<String> get value => $composableBuilder(
-      column: $table.value, builder: (column) => ColumnOrderings(column));
+    column: $table.value,
+    builder: (column) => ColumnOrderings(column),
+  );
 }
 
 class $$PreferencesTableAnnotationComposer
@@ -3196,113 +4263,135 @@ class $$PreferencesTableAnnotationComposer
       $composableBuilder(column: $table.value, builder: (column) => column);
 }
 
-class $$PreferencesTableTableManager extends RootTableManager<
-    _$AppDatabase,
-    $PreferencesTable,
-    Preference,
-    $$PreferencesTableFilterComposer,
-    $$PreferencesTableOrderingComposer,
-    $$PreferencesTableAnnotationComposer,
-    $$PreferencesTableCreateCompanionBuilder,
-    $$PreferencesTableUpdateCompanionBuilder,
-    (Preference, BaseReferences<_$AppDatabase, $PreferencesTable, Preference>),
-    Preference,
-    PrefetchHooks Function()> {
+class $$PreferencesTableTableManager
+    extends
+        RootTableManager<
+          _$AppDatabase,
+          $PreferencesTable,
+          Preference,
+          $$PreferencesTableFilterComposer,
+          $$PreferencesTableOrderingComposer,
+          $$PreferencesTableAnnotationComposer,
+          $$PreferencesTableCreateCompanionBuilder,
+          $$PreferencesTableUpdateCompanionBuilder,
+          (
+            Preference,
+            BaseReferences<_$AppDatabase, $PreferencesTable, Preference>,
+          ),
+          Preference,
+          PrefetchHooks Function()
+        > {
   $$PreferencesTableTableManager(_$AppDatabase db, $PreferencesTable table)
-      : super(TableManagerState(
+    : super(
+        TableManagerState(
           db: db,
           table: table,
-          createFilteringComposer: () =>
-              $$PreferencesTableFilterComposer($db: db, $table: table),
-          createOrderingComposer: () =>
-              $$PreferencesTableOrderingComposer($db: db, $table: table),
-          createComputedFieldComposer: () =>
-              $$PreferencesTableAnnotationComposer($db: db, $table: table),
-          updateCompanionCallback: ({
-            Value<String> key = const Value.absent(),
-            Value<String> value = const Value.absent(),
-            Value<int> rowid = const Value.absent(),
-          }) =>
-              PreferencesCompanion(
-            key: key,
-            value: value,
-            rowid: rowid,
-          ),
-          createCompanionCallback: ({
-            required String key,
-            required String value,
-            Value<int> rowid = const Value.absent(),
-          }) =>
-              PreferencesCompanion.insert(
-            key: key,
-            value: value,
-            rowid: rowid,
-          ),
-          withReferenceMapper: (p0) => p0
-              .map((e) => (e.readTable(table), BaseReferences(db, table, e)))
-              .toList(),
+          createFilteringComposer:
+              () => $$PreferencesTableFilterComposer($db: db, $table: table),
+          createOrderingComposer:
+              () => $$PreferencesTableOrderingComposer($db: db, $table: table),
+          createComputedFieldComposer:
+              () =>
+                  $$PreferencesTableAnnotationComposer($db: db, $table: table),
+          updateCompanionCallback:
+              ({
+                Value<String> key = const Value.absent(),
+                Value<String> value = const Value.absent(),
+                Value<int> rowid = const Value.absent(),
+              }) => PreferencesCompanion(key: key, value: value, rowid: rowid),
+          createCompanionCallback:
+              ({
+                required String key,
+                required String value,
+                Value<int> rowid = const Value.absent(),
+              }) => PreferencesCompanion.insert(
+                key: key,
+                value: value,
+                rowid: rowid,
+              ),
+          withReferenceMapper:
+              (p0) =>
+                  p0
+                      .map(
+                        (e) => (
+                          e.readTable(table),
+                          BaseReferences(db, table, e),
+                        ),
+                      )
+                      .toList(),
           prefetchHooksCallback: null,
-        ));
+        ),
+      );
 }
 
-typedef $$PreferencesTableProcessedTableManager = ProcessedTableManager<
-    _$AppDatabase,
-    $PreferencesTable,
-    Preference,
-    $$PreferencesTableFilterComposer,
-    $$PreferencesTableOrderingComposer,
-    $$PreferencesTableAnnotationComposer,
-    $$PreferencesTableCreateCompanionBuilder,
-    $$PreferencesTableUpdateCompanionBuilder,
-    (Preference, BaseReferences<_$AppDatabase, $PreferencesTable, Preference>),
-    Preference,
-    PrefetchHooks Function()>;
-typedef $$NodesTableCreateCompanionBuilder = NodesCompanion Function({
-  required String id,
-  required String name,
-  required String protocol,
-  required String server,
-  required int port,
-  Value<bool> tls,
-  Value<String> credential,
-  Value<int> revision,
-  Value<String> options,
-  Value<String?> groupId,
-  Value<String> sourceKey,
-  Value<int> rowid,
-});
-typedef $$NodesTableUpdateCompanionBuilder = NodesCompanion Function({
-  Value<String> id,
-  Value<String> name,
-  Value<String> protocol,
-  Value<String> server,
-  Value<int> port,
-  Value<bool> tls,
-  Value<String> credential,
-  Value<int> revision,
-  Value<String> options,
-  Value<String?> groupId,
-  Value<String> sourceKey,
-  Value<int> rowid,
-});
+typedef $$PreferencesTableProcessedTableManager =
+    ProcessedTableManager<
+      _$AppDatabase,
+      $PreferencesTable,
+      Preference,
+      $$PreferencesTableFilterComposer,
+      $$PreferencesTableOrderingComposer,
+      $$PreferencesTableAnnotationComposer,
+      $$PreferencesTableCreateCompanionBuilder,
+      $$PreferencesTableUpdateCompanionBuilder,
+      (
+        Preference,
+        BaseReferences<_$AppDatabase, $PreferencesTable, Preference>,
+      ),
+      Preference,
+      PrefetchHooks Function()
+    >;
+typedef $$NodesTableCreateCompanionBuilder =
+    NodesCompanion Function({
+      required String id,
+      required String name,
+      required String protocol,
+      required String server,
+      required int port,
+      Value<bool> tls,
+      Value<String> credential,
+      Value<int> revision,
+      Value<String> options,
+      Value<String?> groupId,
+      Value<String> sourceKey,
+      Value<int> rowid,
+    });
+typedef $$NodesTableUpdateCompanionBuilder =
+    NodesCompanion Function({
+      Value<String> id,
+      Value<String> name,
+      Value<String> protocol,
+      Value<String> server,
+      Value<int> port,
+      Value<bool> tls,
+      Value<String> credential,
+      Value<int> revision,
+      Value<String> options,
+      Value<String?> groupId,
+      Value<String> sourceKey,
+      Value<int> rowid,
+    });
 
 final class $$NodesTableReferences
     extends BaseReferences<_$AppDatabase, $NodesTable, Node> {
   $$NodesTableReferences(super.$_db, super.$_table, super.$_typedResult);
 
   static MultiTypedResultKey<$NodeOverridesTable, List<NodeOverrideRecord>>
-      _nodeOverridesRefsTable(_$AppDatabase db) =>
-          MultiTypedResultKey.fromTable(db.nodeOverrides,
-              aliasName:
-                  $_aliasNameGenerator(db.nodes.id, db.nodeOverrides.nodeId));
+  _nodeOverridesRefsTable(_$AppDatabase db) => MultiTypedResultKey.fromTable(
+    db.nodeOverrides,
+    aliasName: $_aliasNameGenerator(db.nodes.id, db.nodeOverrides.nodeId),
+  );
 
   $$NodeOverridesTableProcessedTableManager get nodeOverridesRefs {
-    final manager = $$NodeOverridesTableTableManager($_db, $_db.nodeOverrides)
-        .filter((f) => f.nodeId.id.sqlEquals($_itemColumn<String>('id')!));
+    final manager = $$NodeOverridesTableTableManager(
+      $_db,
+      $_db.nodeOverrides,
+    ).filter((f) => f.nodeId.id.sqlEquals($_itemColumn<String>('id')!));
 
     final cache = $_typedResult.readTableOrNull(_nodeOverridesRefsTable($_db));
     return ProcessedTableManager(
-        manager.$state.copyWith(prefetchedData: cache));
+      manager.$state.copyWith(prefetchedData: cache),
+    );
   }
 }
 
@@ -3315,56 +4404,82 @@ class $$NodesTableFilterComposer extends Composer<_$AppDatabase, $NodesTable> {
     super.$removeJoinBuilderFromRootComposer,
   });
   ColumnFilters<String> get id => $composableBuilder(
-      column: $table.id, builder: (column) => ColumnFilters(column));
+    column: $table.id,
+    builder: (column) => ColumnFilters(column),
+  );
 
   ColumnFilters<String> get name => $composableBuilder(
-      column: $table.name, builder: (column) => ColumnFilters(column));
+    column: $table.name,
+    builder: (column) => ColumnFilters(column),
+  );
 
   ColumnFilters<String> get protocol => $composableBuilder(
-      column: $table.protocol, builder: (column) => ColumnFilters(column));
+    column: $table.protocol,
+    builder: (column) => ColumnFilters(column),
+  );
 
   ColumnFilters<String> get server => $composableBuilder(
-      column: $table.server, builder: (column) => ColumnFilters(column));
+    column: $table.server,
+    builder: (column) => ColumnFilters(column),
+  );
 
   ColumnFilters<int> get port => $composableBuilder(
-      column: $table.port, builder: (column) => ColumnFilters(column));
+    column: $table.port,
+    builder: (column) => ColumnFilters(column),
+  );
 
   ColumnFilters<bool> get tls => $composableBuilder(
-      column: $table.tls, builder: (column) => ColumnFilters(column));
+    column: $table.tls,
+    builder: (column) => ColumnFilters(column),
+  );
 
   ColumnFilters<String> get credential => $composableBuilder(
-      column: $table.credential, builder: (column) => ColumnFilters(column));
+    column: $table.credential,
+    builder: (column) => ColumnFilters(column),
+  );
 
   ColumnFilters<int> get revision => $composableBuilder(
-      column: $table.revision, builder: (column) => ColumnFilters(column));
+    column: $table.revision,
+    builder: (column) => ColumnFilters(column),
+  );
 
   ColumnFilters<String> get options => $composableBuilder(
-      column: $table.options, builder: (column) => ColumnFilters(column));
+    column: $table.options,
+    builder: (column) => ColumnFilters(column),
+  );
 
   ColumnFilters<String> get groupId => $composableBuilder(
-      column: $table.groupId, builder: (column) => ColumnFilters(column));
+    column: $table.groupId,
+    builder: (column) => ColumnFilters(column),
+  );
 
   ColumnFilters<String> get sourceKey => $composableBuilder(
-      column: $table.sourceKey, builder: (column) => ColumnFilters(column));
+    column: $table.sourceKey,
+    builder: (column) => ColumnFilters(column),
+  );
 
   Expression<bool> nodeOverridesRefs(
-      Expression<bool> Function($$NodeOverridesTableFilterComposer f) f) {
+    Expression<bool> Function($$NodeOverridesTableFilterComposer f) f,
+  ) {
     final $$NodeOverridesTableFilterComposer composer = $composerBuilder(
-        composer: this,
-        getCurrentColumn: (t) => t.id,
-        referencedTable: $db.nodeOverrides,
-        getReferencedColumn: (t) => t.nodeId,
-        builder: (joinBuilder,
-                {$addJoinBuilderToRootComposer,
-                $removeJoinBuilderFromRootComposer}) =>
-            $$NodeOverridesTableFilterComposer(
-              $db: $db,
-              $table: $db.nodeOverrides,
-              $addJoinBuilderToRootComposer: $addJoinBuilderToRootComposer,
-              joinBuilder: joinBuilder,
-              $removeJoinBuilderFromRootComposer:
-                  $removeJoinBuilderFromRootComposer,
-            ));
+      composer: this,
+      getCurrentColumn: (t) => t.id,
+      referencedTable: $db.nodeOverrides,
+      getReferencedColumn: (t) => t.nodeId,
+      builder:
+          (
+            joinBuilder, {
+            $addJoinBuilderToRootComposer,
+            $removeJoinBuilderFromRootComposer,
+          }) => $$NodeOverridesTableFilterComposer(
+            $db: $db,
+            $table: $db.nodeOverrides,
+            $addJoinBuilderToRootComposer: $addJoinBuilderToRootComposer,
+            joinBuilder: joinBuilder,
+            $removeJoinBuilderFromRootComposer:
+                $removeJoinBuilderFromRootComposer,
+          ),
+    );
     return f(composer);
   }
 }
@@ -3379,37 +4494,59 @@ class $$NodesTableOrderingComposer
     super.$removeJoinBuilderFromRootComposer,
   });
   ColumnOrderings<String> get id => $composableBuilder(
-      column: $table.id, builder: (column) => ColumnOrderings(column));
+    column: $table.id,
+    builder: (column) => ColumnOrderings(column),
+  );
 
   ColumnOrderings<String> get name => $composableBuilder(
-      column: $table.name, builder: (column) => ColumnOrderings(column));
+    column: $table.name,
+    builder: (column) => ColumnOrderings(column),
+  );
 
   ColumnOrderings<String> get protocol => $composableBuilder(
-      column: $table.protocol, builder: (column) => ColumnOrderings(column));
+    column: $table.protocol,
+    builder: (column) => ColumnOrderings(column),
+  );
 
   ColumnOrderings<String> get server => $composableBuilder(
-      column: $table.server, builder: (column) => ColumnOrderings(column));
+    column: $table.server,
+    builder: (column) => ColumnOrderings(column),
+  );
 
   ColumnOrderings<int> get port => $composableBuilder(
-      column: $table.port, builder: (column) => ColumnOrderings(column));
+    column: $table.port,
+    builder: (column) => ColumnOrderings(column),
+  );
 
   ColumnOrderings<bool> get tls => $composableBuilder(
-      column: $table.tls, builder: (column) => ColumnOrderings(column));
+    column: $table.tls,
+    builder: (column) => ColumnOrderings(column),
+  );
 
   ColumnOrderings<String> get credential => $composableBuilder(
-      column: $table.credential, builder: (column) => ColumnOrderings(column));
+    column: $table.credential,
+    builder: (column) => ColumnOrderings(column),
+  );
 
   ColumnOrderings<int> get revision => $composableBuilder(
-      column: $table.revision, builder: (column) => ColumnOrderings(column));
+    column: $table.revision,
+    builder: (column) => ColumnOrderings(column),
+  );
 
   ColumnOrderings<String> get options => $composableBuilder(
-      column: $table.options, builder: (column) => ColumnOrderings(column));
+    column: $table.options,
+    builder: (column) => ColumnOrderings(column),
+  );
 
   ColumnOrderings<String> get groupId => $composableBuilder(
-      column: $table.groupId, builder: (column) => ColumnOrderings(column));
+    column: $table.groupId,
+    builder: (column) => ColumnOrderings(column),
+  );
 
   ColumnOrderings<String> get sourceKey => $composableBuilder(
-      column: $table.sourceKey, builder: (column) => ColumnOrderings(column));
+    column: $table.sourceKey,
+    builder: (column) => ColumnOrderings(column),
+  );
 }
 
 class $$NodesTableAnnotationComposer
@@ -3440,7 +4577,9 @@ class $$NodesTableAnnotationComposer
       $composableBuilder(column: $table.tls, builder: (column) => column);
 
   GeneratedColumn<String> get credential => $composableBuilder(
-      column: $table.credential, builder: (column) => column);
+    column: $table.credential,
+    builder: (column) => column,
+  );
 
   GeneratedColumn<int> get revision =>
       $composableBuilder(column: $table.revision, builder: (column) => column);
@@ -3455,193 +4594,217 @@ class $$NodesTableAnnotationComposer
       $composableBuilder(column: $table.sourceKey, builder: (column) => column);
 
   Expression<T> nodeOverridesRefs<T extends Object>(
-      Expression<T> Function($$NodeOverridesTableAnnotationComposer a) f) {
+    Expression<T> Function($$NodeOverridesTableAnnotationComposer a) f,
+  ) {
     final $$NodeOverridesTableAnnotationComposer composer = $composerBuilder(
-        composer: this,
-        getCurrentColumn: (t) => t.id,
-        referencedTable: $db.nodeOverrides,
-        getReferencedColumn: (t) => t.nodeId,
-        builder: (joinBuilder,
-                {$addJoinBuilderToRootComposer,
-                $removeJoinBuilderFromRootComposer}) =>
-            $$NodeOverridesTableAnnotationComposer(
-              $db: $db,
-              $table: $db.nodeOverrides,
-              $addJoinBuilderToRootComposer: $addJoinBuilderToRootComposer,
-              joinBuilder: joinBuilder,
-              $removeJoinBuilderFromRootComposer:
-                  $removeJoinBuilderFromRootComposer,
-            ));
+      composer: this,
+      getCurrentColumn: (t) => t.id,
+      referencedTable: $db.nodeOverrides,
+      getReferencedColumn: (t) => t.nodeId,
+      builder:
+          (
+            joinBuilder, {
+            $addJoinBuilderToRootComposer,
+            $removeJoinBuilderFromRootComposer,
+          }) => $$NodeOverridesTableAnnotationComposer(
+            $db: $db,
+            $table: $db.nodeOverrides,
+            $addJoinBuilderToRootComposer: $addJoinBuilderToRootComposer,
+            joinBuilder: joinBuilder,
+            $removeJoinBuilderFromRootComposer:
+                $removeJoinBuilderFromRootComposer,
+          ),
+    );
     return f(composer);
   }
 }
 
-class $$NodesTableTableManager extends RootTableManager<
-    _$AppDatabase,
-    $NodesTable,
-    Node,
-    $$NodesTableFilterComposer,
-    $$NodesTableOrderingComposer,
-    $$NodesTableAnnotationComposer,
-    $$NodesTableCreateCompanionBuilder,
-    $$NodesTableUpdateCompanionBuilder,
-    (Node, $$NodesTableReferences),
-    Node,
-    PrefetchHooks Function({bool nodeOverridesRefs})> {
+class $$NodesTableTableManager
+    extends
+        RootTableManager<
+          _$AppDatabase,
+          $NodesTable,
+          Node,
+          $$NodesTableFilterComposer,
+          $$NodesTableOrderingComposer,
+          $$NodesTableAnnotationComposer,
+          $$NodesTableCreateCompanionBuilder,
+          $$NodesTableUpdateCompanionBuilder,
+          (Node, $$NodesTableReferences),
+          Node,
+          PrefetchHooks Function({bool nodeOverridesRefs})
+        > {
   $$NodesTableTableManager(_$AppDatabase db, $NodesTable table)
-      : super(TableManagerState(
+    : super(
+        TableManagerState(
           db: db,
           table: table,
-          createFilteringComposer: () =>
-              $$NodesTableFilterComposer($db: db, $table: table),
-          createOrderingComposer: () =>
-              $$NodesTableOrderingComposer($db: db, $table: table),
-          createComputedFieldComposer: () =>
-              $$NodesTableAnnotationComposer($db: db, $table: table),
-          updateCompanionCallback: ({
-            Value<String> id = const Value.absent(),
-            Value<String> name = const Value.absent(),
-            Value<String> protocol = const Value.absent(),
-            Value<String> server = const Value.absent(),
-            Value<int> port = const Value.absent(),
-            Value<bool> tls = const Value.absent(),
-            Value<String> credential = const Value.absent(),
-            Value<int> revision = const Value.absent(),
-            Value<String> options = const Value.absent(),
-            Value<String?> groupId = const Value.absent(),
-            Value<String> sourceKey = const Value.absent(),
-            Value<int> rowid = const Value.absent(),
-          }) =>
-              NodesCompanion(
-            id: id,
-            name: name,
-            protocol: protocol,
-            server: server,
-            port: port,
-            tls: tls,
-            credential: credential,
-            revision: revision,
-            options: options,
-            groupId: groupId,
-            sourceKey: sourceKey,
-            rowid: rowid,
-          ),
-          createCompanionCallback: ({
-            required String id,
-            required String name,
-            required String protocol,
-            required String server,
-            required int port,
-            Value<bool> tls = const Value.absent(),
-            Value<String> credential = const Value.absent(),
-            Value<int> revision = const Value.absent(),
-            Value<String> options = const Value.absent(),
-            Value<String?> groupId = const Value.absent(),
-            Value<String> sourceKey = const Value.absent(),
-            Value<int> rowid = const Value.absent(),
-          }) =>
-              NodesCompanion.insert(
-            id: id,
-            name: name,
-            protocol: protocol,
-            server: server,
-            port: port,
-            tls: tls,
-            credential: credential,
-            revision: revision,
-            options: options,
-            groupId: groupId,
-            sourceKey: sourceKey,
-            rowid: rowid,
-          ),
-          withReferenceMapper: (p0) => p0
-              .map((e) =>
-                  (e.readTable(table), $$NodesTableReferences(db, table, e)))
-              .toList(),
+          createFilteringComposer:
+              () => $$NodesTableFilterComposer($db: db, $table: table),
+          createOrderingComposer:
+              () => $$NodesTableOrderingComposer($db: db, $table: table),
+          createComputedFieldComposer:
+              () => $$NodesTableAnnotationComposer($db: db, $table: table),
+          updateCompanionCallback:
+              ({
+                Value<String> id = const Value.absent(),
+                Value<String> name = const Value.absent(),
+                Value<String> protocol = const Value.absent(),
+                Value<String> server = const Value.absent(),
+                Value<int> port = const Value.absent(),
+                Value<bool> tls = const Value.absent(),
+                Value<String> credential = const Value.absent(),
+                Value<int> revision = const Value.absent(),
+                Value<String> options = const Value.absent(),
+                Value<String?> groupId = const Value.absent(),
+                Value<String> sourceKey = const Value.absent(),
+                Value<int> rowid = const Value.absent(),
+              }) => NodesCompanion(
+                id: id,
+                name: name,
+                protocol: protocol,
+                server: server,
+                port: port,
+                tls: tls,
+                credential: credential,
+                revision: revision,
+                options: options,
+                groupId: groupId,
+                sourceKey: sourceKey,
+                rowid: rowid,
+              ),
+          createCompanionCallback:
+              ({
+                required String id,
+                required String name,
+                required String protocol,
+                required String server,
+                required int port,
+                Value<bool> tls = const Value.absent(),
+                Value<String> credential = const Value.absent(),
+                Value<int> revision = const Value.absent(),
+                Value<String> options = const Value.absent(),
+                Value<String?> groupId = const Value.absent(),
+                Value<String> sourceKey = const Value.absent(),
+                Value<int> rowid = const Value.absent(),
+              }) => NodesCompanion.insert(
+                id: id,
+                name: name,
+                protocol: protocol,
+                server: server,
+                port: port,
+                tls: tls,
+                credential: credential,
+                revision: revision,
+                options: options,
+                groupId: groupId,
+                sourceKey: sourceKey,
+                rowid: rowid,
+              ),
+          withReferenceMapper:
+              (p0) =>
+                  p0
+                      .map(
+                        (e) => (
+                          e.readTable(table),
+                          $$NodesTableReferences(db, table, e),
+                        ),
+                      )
+                      .toList(),
           prefetchHooksCallback: ({nodeOverridesRefs = false}) {
             return PrefetchHooks(
               db: db,
               explicitlyWatchedTables: [
-                if (nodeOverridesRefs) db.nodeOverrides
+                if (nodeOverridesRefs) db.nodeOverrides,
               ],
               addJoins: null,
               getPrefetchedDataCallback: (items) async {
                 return [
                   if (nodeOverridesRefs)
                     await $_getPrefetchedData(
-                        currentTable: table,
-                        referencedTable:
-                            $$NodesTableReferences._nodeOverridesRefsTable(db),
-                        managerFromTypedResult: (p0) =>
-                            $$NodesTableReferences(db, table, p0)
-                                .nodeOverridesRefs,
-                        referencedItemsForCurrentItem: (item,
-                                referencedItems) =>
-                            referencedItems.where((e) => e.nodeId == item.id),
-                        typedResults: items)
+                      currentTable: table,
+                      referencedTable: $$NodesTableReferences
+                          ._nodeOverridesRefsTable(db),
+                      managerFromTypedResult:
+                          (p0) =>
+                              $$NodesTableReferences(
+                                db,
+                                table,
+                                p0,
+                              ).nodeOverridesRefs,
+                      referencedItemsForCurrentItem:
+                          (item, referencedItems) =>
+                              referencedItems.where((e) => e.nodeId == item.id),
+                      typedResults: items,
+                    ),
                 ];
               },
             );
           },
-        ));
+        ),
+      );
 }
 
-typedef $$NodesTableProcessedTableManager = ProcessedTableManager<
-    _$AppDatabase,
-    $NodesTable,
-    Node,
-    $$NodesTableFilterComposer,
-    $$NodesTableOrderingComposer,
-    $$NodesTableAnnotationComposer,
-    $$NodesTableCreateCompanionBuilder,
-    $$NodesTableUpdateCompanionBuilder,
-    (Node, $$NodesTableReferences),
-    Node,
-    PrefetchHooks Function({bool nodeOverridesRefs})>;
-typedef $$NodeGroupsTableCreateCompanionBuilder = NodeGroupsCompanion Function({
-  required String id,
-  required String name,
-  required String kind,
-  Value<bool> customName,
-  Value<String> urlCipher,
-  Value<String> urlHash,
-  Value<int?> uploaded,
-  Value<int?> downloaded,
-  Value<int?> total,
-  Value<DateTime?> expiresAt,
-  Value<DateTime?> updatedAt,
-  Value<DateTime?> attemptedAt,
-  Value<String> updateError,
-  Value<int> skippedNodes,
-  Value<String> compatibilityIssues,
-  Value<bool> autoUpdate,
-  Value<int> intervalHours,
-  Value<String?> lastSelectedNodeId,
-  Value<int> revision,
-  Value<int> rowid,
-});
-typedef $$NodeGroupsTableUpdateCompanionBuilder = NodeGroupsCompanion Function({
-  Value<String> id,
-  Value<String> name,
-  Value<String> kind,
-  Value<bool> customName,
-  Value<String> urlCipher,
-  Value<String> urlHash,
-  Value<int?> uploaded,
-  Value<int?> downloaded,
-  Value<int?> total,
-  Value<DateTime?> expiresAt,
-  Value<DateTime?> updatedAt,
-  Value<DateTime?> attemptedAt,
-  Value<String> updateError,
-  Value<int> skippedNodes,
-  Value<String> compatibilityIssues,
-  Value<bool> autoUpdate,
-  Value<int> intervalHours,
-  Value<String?> lastSelectedNodeId,
-  Value<int> revision,
-  Value<int> rowid,
-});
+typedef $$NodesTableProcessedTableManager =
+    ProcessedTableManager<
+      _$AppDatabase,
+      $NodesTable,
+      Node,
+      $$NodesTableFilterComposer,
+      $$NodesTableOrderingComposer,
+      $$NodesTableAnnotationComposer,
+      $$NodesTableCreateCompanionBuilder,
+      $$NodesTableUpdateCompanionBuilder,
+      (Node, $$NodesTableReferences),
+      Node,
+      PrefetchHooks Function({bool nodeOverridesRefs})
+    >;
+typedef $$NodeGroupsTableCreateCompanionBuilder =
+    NodeGroupsCompanion Function({
+      required String id,
+      required String name,
+      required String kind,
+      Value<bool> customName,
+      Value<String> urlCipher,
+      Value<String> urlHash,
+      Value<int?> uploaded,
+      Value<int?> downloaded,
+      Value<int?> total,
+      Value<DateTime?> expiresAt,
+      Value<DateTime?> updatedAt,
+      Value<DateTime?> attemptedAt,
+      Value<String> updateError,
+      Value<int> skippedNodes,
+      Value<String> compatibilityIssues,
+      Value<bool> autoUpdate,
+      Value<int> intervalHours,
+      Value<String?> lastSelectedNodeId,
+      Value<int> revision,
+      Value<int> rowid,
+    });
+typedef $$NodeGroupsTableUpdateCompanionBuilder =
+    NodeGroupsCompanion Function({
+      Value<String> id,
+      Value<String> name,
+      Value<String> kind,
+      Value<bool> customName,
+      Value<String> urlCipher,
+      Value<String> urlHash,
+      Value<int?> uploaded,
+      Value<int?> downloaded,
+      Value<int?> total,
+      Value<DateTime?> expiresAt,
+      Value<DateTime?> updatedAt,
+      Value<DateTime?> attemptedAt,
+      Value<String> updateError,
+      Value<int> skippedNodes,
+      Value<String> compatibilityIssues,
+      Value<bool> autoUpdate,
+      Value<int> intervalHours,
+      Value<String?> lastSelectedNodeId,
+      Value<int> revision,
+      Value<int> rowid,
+    });
 
 class $$NodeGroupsTableFilterComposer
     extends Composer<_$AppDatabase, $NodeGroupsTable> {
@@ -3653,63 +4816,99 @@ class $$NodeGroupsTableFilterComposer
     super.$removeJoinBuilderFromRootComposer,
   });
   ColumnFilters<String> get id => $composableBuilder(
-      column: $table.id, builder: (column) => ColumnFilters(column));
+    column: $table.id,
+    builder: (column) => ColumnFilters(column),
+  );
 
   ColumnFilters<String> get name => $composableBuilder(
-      column: $table.name, builder: (column) => ColumnFilters(column));
+    column: $table.name,
+    builder: (column) => ColumnFilters(column),
+  );
 
   ColumnFilters<String> get kind => $composableBuilder(
-      column: $table.kind, builder: (column) => ColumnFilters(column));
+    column: $table.kind,
+    builder: (column) => ColumnFilters(column),
+  );
 
   ColumnFilters<bool> get customName => $composableBuilder(
-      column: $table.customName, builder: (column) => ColumnFilters(column));
+    column: $table.customName,
+    builder: (column) => ColumnFilters(column),
+  );
 
   ColumnFilters<String> get urlCipher => $composableBuilder(
-      column: $table.urlCipher, builder: (column) => ColumnFilters(column));
+    column: $table.urlCipher,
+    builder: (column) => ColumnFilters(column),
+  );
 
   ColumnFilters<String> get urlHash => $composableBuilder(
-      column: $table.urlHash, builder: (column) => ColumnFilters(column));
+    column: $table.urlHash,
+    builder: (column) => ColumnFilters(column),
+  );
 
   ColumnFilters<int> get uploaded => $composableBuilder(
-      column: $table.uploaded, builder: (column) => ColumnFilters(column));
+    column: $table.uploaded,
+    builder: (column) => ColumnFilters(column),
+  );
 
   ColumnFilters<int> get downloaded => $composableBuilder(
-      column: $table.downloaded, builder: (column) => ColumnFilters(column));
+    column: $table.downloaded,
+    builder: (column) => ColumnFilters(column),
+  );
 
   ColumnFilters<int> get total => $composableBuilder(
-      column: $table.total, builder: (column) => ColumnFilters(column));
+    column: $table.total,
+    builder: (column) => ColumnFilters(column),
+  );
 
   ColumnFilters<DateTime> get expiresAt => $composableBuilder(
-      column: $table.expiresAt, builder: (column) => ColumnFilters(column));
+    column: $table.expiresAt,
+    builder: (column) => ColumnFilters(column),
+  );
 
   ColumnFilters<DateTime> get updatedAt => $composableBuilder(
-      column: $table.updatedAt, builder: (column) => ColumnFilters(column));
+    column: $table.updatedAt,
+    builder: (column) => ColumnFilters(column),
+  );
 
   ColumnFilters<DateTime> get attemptedAt => $composableBuilder(
-      column: $table.attemptedAt, builder: (column) => ColumnFilters(column));
+    column: $table.attemptedAt,
+    builder: (column) => ColumnFilters(column),
+  );
 
   ColumnFilters<String> get updateError => $composableBuilder(
-      column: $table.updateError, builder: (column) => ColumnFilters(column));
+    column: $table.updateError,
+    builder: (column) => ColumnFilters(column),
+  );
 
   ColumnFilters<int> get skippedNodes => $composableBuilder(
-      column: $table.skippedNodes, builder: (column) => ColumnFilters(column));
+    column: $table.skippedNodes,
+    builder: (column) => ColumnFilters(column),
+  );
 
   ColumnFilters<String> get compatibilityIssues => $composableBuilder(
-      column: $table.compatibilityIssues,
-      builder: (column) => ColumnFilters(column));
+    column: $table.compatibilityIssues,
+    builder: (column) => ColumnFilters(column),
+  );
 
   ColumnFilters<bool> get autoUpdate => $composableBuilder(
-      column: $table.autoUpdate, builder: (column) => ColumnFilters(column));
+    column: $table.autoUpdate,
+    builder: (column) => ColumnFilters(column),
+  );
 
   ColumnFilters<int> get intervalHours => $composableBuilder(
-      column: $table.intervalHours, builder: (column) => ColumnFilters(column));
+    column: $table.intervalHours,
+    builder: (column) => ColumnFilters(column),
+  );
 
   ColumnFilters<String> get lastSelectedNodeId => $composableBuilder(
-      column: $table.lastSelectedNodeId,
-      builder: (column) => ColumnFilters(column));
+    column: $table.lastSelectedNodeId,
+    builder: (column) => ColumnFilters(column),
+  );
 
   ColumnFilters<int> get revision => $composableBuilder(
-      column: $table.revision, builder: (column) => ColumnFilters(column));
+    column: $table.revision,
+    builder: (column) => ColumnFilters(column),
+  );
 }
 
 class $$NodeGroupsTableOrderingComposer
@@ -3722,65 +4921,99 @@ class $$NodeGroupsTableOrderingComposer
     super.$removeJoinBuilderFromRootComposer,
   });
   ColumnOrderings<String> get id => $composableBuilder(
-      column: $table.id, builder: (column) => ColumnOrderings(column));
+    column: $table.id,
+    builder: (column) => ColumnOrderings(column),
+  );
 
   ColumnOrderings<String> get name => $composableBuilder(
-      column: $table.name, builder: (column) => ColumnOrderings(column));
+    column: $table.name,
+    builder: (column) => ColumnOrderings(column),
+  );
 
   ColumnOrderings<String> get kind => $composableBuilder(
-      column: $table.kind, builder: (column) => ColumnOrderings(column));
+    column: $table.kind,
+    builder: (column) => ColumnOrderings(column),
+  );
 
   ColumnOrderings<bool> get customName => $composableBuilder(
-      column: $table.customName, builder: (column) => ColumnOrderings(column));
+    column: $table.customName,
+    builder: (column) => ColumnOrderings(column),
+  );
 
   ColumnOrderings<String> get urlCipher => $composableBuilder(
-      column: $table.urlCipher, builder: (column) => ColumnOrderings(column));
+    column: $table.urlCipher,
+    builder: (column) => ColumnOrderings(column),
+  );
 
   ColumnOrderings<String> get urlHash => $composableBuilder(
-      column: $table.urlHash, builder: (column) => ColumnOrderings(column));
+    column: $table.urlHash,
+    builder: (column) => ColumnOrderings(column),
+  );
 
   ColumnOrderings<int> get uploaded => $composableBuilder(
-      column: $table.uploaded, builder: (column) => ColumnOrderings(column));
+    column: $table.uploaded,
+    builder: (column) => ColumnOrderings(column),
+  );
 
   ColumnOrderings<int> get downloaded => $composableBuilder(
-      column: $table.downloaded, builder: (column) => ColumnOrderings(column));
+    column: $table.downloaded,
+    builder: (column) => ColumnOrderings(column),
+  );
 
   ColumnOrderings<int> get total => $composableBuilder(
-      column: $table.total, builder: (column) => ColumnOrderings(column));
+    column: $table.total,
+    builder: (column) => ColumnOrderings(column),
+  );
 
   ColumnOrderings<DateTime> get expiresAt => $composableBuilder(
-      column: $table.expiresAt, builder: (column) => ColumnOrderings(column));
+    column: $table.expiresAt,
+    builder: (column) => ColumnOrderings(column),
+  );
 
   ColumnOrderings<DateTime> get updatedAt => $composableBuilder(
-      column: $table.updatedAt, builder: (column) => ColumnOrderings(column));
+    column: $table.updatedAt,
+    builder: (column) => ColumnOrderings(column),
+  );
 
   ColumnOrderings<DateTime> get attemptedAt => $composableBuilder(
-      column: $table.attemptedAt, builder: (column) => ColumnOrderings(column));
+    column: $table.attemptedAt,
+    builder: (column) => ColumnOrderings(column),
+  );
 
   ColumnOrderings<String> get updateError => $composableBuilder(
-      column: $table.updateError, builder: (column) => ColumnOrderings(column));
+    column: $table.updateError,
+    builder: (column) => ColumnOrderings(column),
+  );
 
   ColumnOrderings<int> get skippedNodes => $composableBuilder(
-      column: $table.skippedNodes,
-      builder: (column) => ColumnOrderings(column));
+    column: $table.skippedNodes,
+    builder: (column) => ColumnOrderings(column),
+  );
 
   ColumnOrderings<String> get compatibilityIssues => $composableBuilder(
-      column: $table.compatibilityIssues,
-      builder: (column) => ColumnOrderings(column));
+    column: $table.compatibilityIssues,
+    builder: (column) => ColumnOrderings(column),
+  );
 
   ColumnOrderings<bool> get autoUpdate => $composableBuilder(
-      column: $table.autoUpdate, builder: (column) => ColumnOrderings(column));
+    column: $table.autoUpdate,
+    builder: (column) => ColumnOrderings(column),
+  );
 
   ColumnOrderings<int> get intervalHours => $composableBuilder(
-      column: $table.intervalHours,
-      builder: (column) => ColumnOrderings(column));
+    column: $table.intervalHours,
+    builder: (column) => ColumnOrderings(column),
+  );
 
   ColumnOrderings<String> get lastSelectedNodeId => $composableBuilder(
-      column: $table.lastSelectedNodeId,
-      builder: (column) => ColumnOrderings(column));
+    column: $table.lastSelectedNodeId,
+    builder: (column) => ColumnOrderings(column),
+  );
 
   ColumnOrderings<int> get revision => $composableBuilder(
-      column: $table.revision, builder: (column) => ColumnOrderings(column));
+    column: $table.revision,
+    builder: (column) => ColumnOrderings(column),
+  );
 }
 
 class $$NodeGroupsTableAnnotationComposer
@@ -3802,7 +5035,9 @@ class $$NodeGroupsTableAnnotationComposer
       $composableBuilder(column: $table.kind, builder: (column) => column);
 
   GeneratedColumn<bool> get customName => $composableBuilder(
-      column: $table.customName, builder: (column) => column);
+    column: $table.customName,
+    builder: (column) => column,
+  );
 
   GeneratedColumn<String> get urlCipher =>
       $composableBuilder(column: $table.urlCipher, builder: (column) => column);
@@ -3814,7 +5049,9 @@ class $$NodeGroupsTableAnnotationComposer
       $composableBuilder(column: $table.uploaded, builder: (column) => column);
 
   GeneratedColumn<int> get downloaded => $composableBuilder(
-      column: $table.downloaded, builder: (column) => column);
+    column: $table.downloaded,
+    builder: (column) => column,
+  );
 
   GeneratedColumn<int> get total =>
       $composableBuilder(column: $table.total, builder: (column) => column);
@@ -3826,183 +5063,213 @@ class $$NodeGroupsTableAnnotationComposer
       $composableBuilder(column: $table.updatedAt, builder: (column) => column);
 
   GeneratedColumn<DateTime> get attemptedAt => $composableBuilder(
-      column: $table.attemptedAt, builder: (column) => column);
+    column: $table.attemptedAt,
+    builder: (column) => column,
+  );
 
   GeneratedColumn<String> get updateError => $composableBuilder(
-      column: $table.updateError, builder: (column) => column);
+    column: $table.updateError,
+    builder: (column) => column,
+  );
 
   GeneratedColumn<int> get skippedNodes => $composableBuilder(
-      column: $table.skippedNodes, builder: (column) => column);
+    column: $table.skippedNodes,
+    builder: (column) => column,
+  );
 
   GeneratedColumn<String> get compatibilityIssues => $composableBuilder(
-      column: $table.compatibilityIssues, builder: (column) => column);
+    column: $table.compatibilityIssues,
+    builder: (column) => column,
+  );
 
   GeneratedColumn<bool> get autoUpdate => $composableBuilder(
-      column: $table.autoUpdate, builder: (column) => column);
+    column: $table.autoUpdate,
+    builder: (column) => column,
+  );
 
   GeneratedColumn<int> get intervalHours => $composableBuilder(
-      column: $table.intervalHours, builder: (column) => column);
+    column: $table.intervalHours,
+    builder: (column) => column,
+  );
 
   GeneratedColumn<String> get lastSelectedNodeId => $composableBuilder(
-      column: $table.lastSelectedNodeId, builder: (column) => column);
+    column: $table.lastSelectedNodeId,
+    builder: (column) => column,
+  );
 
   GeneratedColumn<int> get revision =>
       $composableBuilder(column: $table.revision, builder: (column) => column);
 }
 
-class $$NodeGroupsTableTableManager extends RootTableManager<
-    _$AppDatabase,
-    $NodeGroupsTable,
-    NodeGroupRecord,
-    $$NodeGroupsTableFilterComposer,
-    $$NodeGroupsTableOrderingComposer,
-    $$NodeGroupsTableAnnotationComposer,
-    $$NodeGroupsTableCreateCompanionBuilder,
-    $$NodeGroupsTableUpdateCompanionBuilder,
-    (
-      NodeGroupRecord,
-      BaseReferences<_$AppDatabase, $NodeGroupsTable, NodeGroupRecord>
-    ),
-    NodeGroupRecord,
-    PrefetchHooks Function()> {
+class $$NodeGroupsTableTableManager
+    extends
+        RootTableManager<
+          _$AppDatabase,
+          $NodeGroupsTable,
+          NodeGroupRecord,
+          $$NodeGroupsTableFilterComposer,
+          $$NodeGroupsTableOrderingComposer,
+          $$NodeGroupsTableAnnotationComposer,
+          $$NodeGroupsTableCreateCompanionBuilder,
+          $$NodeGroupsTableUpdateCompanionBuilder,
+          (
+            NodeGroupRecord,
+            BaseReferences<_$AppDatabase, $NodeGroupsTable, NodeGroupRecord>,
+          ),
+          NodeGroupRecord,
+          PrefetchHooks Function()
+        > {
   $$NodeGroupsTableTableManager(_$AppDatabase db, $NodeGroupsTable table)
-      : super(TableManagerState(
+    : super(
+        TableManagerState(
           db: db,
           table: table,
-          createFilteringComposer: () =>
-              $$NodeGroupsTableFilterComposer($db: db, $table: table),
-          createOrderingComposer: () =>
-              $$NodeGroupsTableOrderingComposer($db: db, $table: table),
-          createComputedFieldComposer: () =>
-              $$NodeGroupsTableAnnotationComposer($db: db, $table: table),
-          updateCompanionCallback: ({
-            Value<String> id = const Value.absent(),
-            Value<String> name = const Value.absent(),
-            Value<String> kind = const Value.absent(),
-            Value<bool> customName = const Value.absent(),
-            Value<String> urlCipher = const Value.absent(),
-            Value<String> urlHash = const Value.absent(),
-            Value<int?> uploaded = const Value.absent(),
-            Value<int?> downloaded = const Value.absent(),
-            Value<int?> total = const Value.absent(),
-            Value<DateTime?> expiresAt = const Value.absent(),
-            Value<DateTime?> updatedAt = const Value.absent(),
-            Value<DateTime?> attemptedAt = const Value.absent(),
-            Value<String> updateError = const Value.absent(),
-            Value<int> skippedNodes = const Value.absent(),
-            Value<String> compatibilityIssues = const Value.absent(),
-            Value<bool> autoUpdate = const Value.absent(),
-            Value<int> intervalHours = const Value.absent(),
-            Value<String?> lastSelectedNodeId = const Value.absent(),
-            Value<int> revision = const Value.absent(),
-            Value<int> rowid = const Value.absent(),
-          }) =>
-              NodeGroupsCompanion(
-            id: id,
-            name: name,
-            kind: kind,
-            customName: customName,
-            urlCipher: urlCipher,
-            urlHash: urlHash,
-            uploaded: uploaded,
-            downloaded: downloaded,
-            total: total,
-            expiresAt: expiresAt,
-            updatedAt: updatedAt,
-            attemptedAt: attemptedAt,
-            updateError: updateError,
-            skippedNodes: skippedNodes,
-            compatibilityIssues: compatibilityIssues,
-            autoUpdate: autoUpdate,
-            intervalHours: intervalHours,
-            lastSelectedNodeId: lastSelectedNodeId,
-            revision: revision,
-            rowid: rowid,
-          ),
-          createCompanionCallback: ({
-            required String id,
-            required String name,
-            required String kind,
-            Value<bool> customName = const Value.absent(),
-            Value<String> urlCipher = const Value.absent(),
-            Value<String> urlHash = const Value.absent(),
-            Value<int?> uploaded = const Value.absent(),
-            Value<int?> downloaded = const Value.absent(),
-            Value<int?> total = const Value.absent(),
-            Value<DateTime?> expiresAt = const Value.absent(),
-            Value<DateTime?> updatedAt = const Value.absent(),
-            Value<DateTime?> attemptedAt = const Value.absent(),
-            Value<String> updateError = const Value.absent(),
-            Value<int> skippedNodes = const Value.absent(),
-            Value<String> compatibilityIssues = const Value.absent(),
-            Value<bool> autoUpdate = const Value.absent(),
-            Value<int> intervalHours = const Value.absent(),
-            Value<String?> lastSelectedNodeId = const Value.absent(),
-            Value<int> revision = const Value.absent(),
-            Value<int> rowid = const Value.absent(),
-          }) =>
-              NodeGroupsCompanion.insert(
-            id: id,
-            name: name,
-            kind: kind,
-            customName: customName,
-            urlCipher: urlCipher,
-            urlHash: urlHash,
-            uploaded: uploaded,
-            downloaded: downloaded,
-            total: total,
-            expiresAt: expiresAt,
-            updatedAt: updatedAt,
-            attemptedAt: attemptedAt,
-            updateError: updateError,
-            skippedNodes: skippedNodes,
-            compatibilityIssues: compatibilityIssues,
-            autoUpdate: autoUpdate,
-            intervalHours: intervalHours,
-            lastSelectedNodeId: lastSelectedNodeId,
-            revision: revision,
-            rowid: rowid,
-          ),
-          withReferenceMapper: (p0) => p0
-              .map((e) => (e.readTable(table), BaseReferences(db, table, e)))
-              .toList(),
+          createFilteringComposer:
+              () => $$NodeGroupsTableFilterComposer($db: db, $table: table),
+          createOrderingComposer:
+              () => $$NodeGroupsTableOrderingComposer($db: db, $table: table),
+          createComputedFieldComposer:
+              () => $$NodeGroupsTableAnnotationComposer($db: db, $table: table),
+          updateCompanionCallback:
+              ({
+                Value<String> id = const Value.absent(),
+                Value<String> name = const Value.absent(),
+                Value<String> kind = const Value.absent(),
+                Value<bool> customName = const Value.absent(),
+                Value<String> urlCipher = const Value.absent(),
+                Value<String> urlHash = const Value.absent(),
+                Value<int?> uploaded = const Value.absent(),
+                Value<int?> downloaded = const Value.absent(),
+                Value<int?> total = const Value.absent(),
+                Value<DateTime?> expiresAt = const Value.absent(),
+                Value<DateTime?> updatedAt = const Value.absent(),
+                Value<DateTime?> attemptedAt = const Value.absent(),
+                Value<String> updateError = const Value.absent(),
+                Value<int> skippedNodes = const Value.absent(),
+                Value<String> compatibilityIssues = const Value.absent(),
+                Value<bool> autoUpdate = const Value.absent(),
+                Value<int> intervalHours = const Value.absent(),
+                Value<String?> lastSelectedNodeId = const Value.absent(),
+                Value<int> revision = const Value.absent(),
+                Value<int> rowid = const Value.absent(),
+              }) => NodeGroupsCompanion(
+                id: id,
+                name: name,
+                kind: kind,
+                customName: customName,
+                urlCipher: urlCipher,
+                urlHash: urlHash,
+                uploaded: uploaded,
+                downloaded: downloaded,
+                total: total,
+                expiresAt: expiresAt,
+                updatedAt: updatedAt,
+                attemptedAt: attemptedAt,
+                updateError: updateError,
+                skippedNodes: skippedNodes,
+                compatibilityIssues: compatibilityIssues,
+                autoUpdate: autoUpdate,
+                intervalHours: intervalHours,
+                lastSelectedNodeId: lastSelectedNodeId,
+                revision: revision,
+                rowid: rowid,
+              ),
+          createCompanionCallback:
+              ({
+                required String id,
+                required String name,
+                required String kind,
+                Value<bool> customName = const Value.absent(),
+                Value<String> urlCipher = const Value.absent(),
+                Value<String> urlHash = const Value.absent(),
+                Value<int?> uploaded = const Value.absent(),
+                Value<int?> downloaded = const Value.absent(),
+                Value<int?> total = const Value.absent(),
+                Value<DateTime?> expiresAt = const Value.absent(),
+                Value<DateTime?> updatedAt = const Value.absent(),
+                Value<DateTime?> attemptedAt = const Value.absent(),
+                Value<String> updateError = const Value.absent(),
+                Value<int> skippedNodes = const Value.absent(),
+                Value<String> compatibilityIssues = const Value.absent(),
+                Value<bool> autoUpdate = const Value.absent(),
+                Value<int> intervalHours = const Value.absent(),
+                Value<String?> lastSelectedNodeId = const Value.absent(),
+                Value<int> revision = const Value.absent(),
+                Value<int> rowid = const Value.absent(),
+              }) => NodeGroupsCompanion.insert(
+                id: id,
+                name: name,
+                kind: kind,
+                customName: customName,
+                urlCipher: urlCipher,
+                urlHash: urlHash,
+                uploaded: uploaded,
+                downloaded: downloaded,
+                total: total,
+                expiresAt: expiresAt,
+                updatedAt: updatedAt,
+                attemptedAt: attemptedAt,
+                updateError: updateError,
+                skippedNodes: skippedNodes,
+                compatibilityIssues: compatibilityIssues,
+                autoUpdate: autoUpdate,
+                intervalHours: intervalHours,
+                lastSelectedNodeId: lastSelectedNodeId,
+                revision: revision,
+                rowid: rowid,
+              ),
+          withReferenceMapper:
+              (p0) =>
+                  p0
+                      .map(
+                        (e) => (
+                          e.readTable(table),
+                          BaseReferences(db, table, e),
+                        ),
+                      )
+                      .toList(),
           prefetchHooksCallback: null,
-        ));
+        ),
+      );
 }
 
-typedef $$NodeGroupsTableProcessedTableManager = ProcessedTableManager<
-    _$AppDatabase,
-    $NodeGroupsTable,
-    NodeGroupRecord,
-    $$NodeGroupsTableFilterComposer,
-    $$NodeGroupsTableOrderingComposer,
-    $$NodeGroupsTableAnnotationComposer,
-    $$NodeGroupsTableCreateCompanionBuilder,
-    $$NodeGroupsTableUpdateCompanionBuilder,
-    (
+typedef $$NodeGroupsTableProcessedTableManager =
+    ProcessedTableManager<
+      _$AppDatabase,
+      $NodeGroupsTable,
       NodeGroupRecord,
-      BaseReferences<_$AppDatabase, $NodeGroupsTable, NodeGroupRecord>
-    ),
-    NodeGroupRecord,
-    PrefetchHooks Function()>;
-typedef $$CoreLogsTableCreateCompanionBuilder = CoreLogsCompanion Function({
-  required String id,
-  required int at,
-  Value<int> sequence,
-  required String level,
-  required String source,
-  required String message,
-  Value<int> rowid,
-});
-typedef $$CoreLogsTableUpdateCompanionBuilder = CoreLogsCompanion Function({
-  Value<String> id,
-  Value<int> at,
-  Value<int> sequence,
-  Value<String> level,
-  Value<String> source,
-  Value<String> message,
-  Value<int> rowid,
-});
+      $$NodeGroupsTableFilterComposer,
+      $$NodeGroupsTableOrderingComposer,
+      $$NodeGroupsTableAnnotationComposer,
+      $$NodeGroupsTableCreateCompanionBuilder,
+      $$NodeGroupsTableUpdateCompanionBuilder,
+      (
+        NodeGroupRecord,
+        BaseReferences<_$AppDatabase, $NodeGroupsTable, NodeGroupRecord>,
+      ),
+      NodeGroupRecord,
+      PrefetchHooks Function()
+    >;
+typedef $$CoreLogsTableCreateCompanionBuilder =
+    CoreLogsCompanion Function({
+      required String id,
+      required int at,
+      Value<int> sequence,
+      required String level,
+      required String source,
+      required String message,
+      Value<int> rowid,
+    });
+typedef $$CoreLogsTableUpdateCompanionBuilder =
+    CoreLogsCompanion Function({
+      Value<String> id,
+      Value<int> at,
+      Value<int> sequence,
+      Value<String> level,
+      Value<String> source,
+      Value<String> message,
+      Value<int> rowid,
+    });
 
 class $$CoreLogsTableFilterComposer
     extends Composer<_$AppDatabase, $CoreLogsTable> {
@@ -4014,22 +5281,34 @@ class $$CoreLogsTableFilterComposer
     super.$removeJoinBuilderFromRootComposer,
   });
   ColumnFilters<String> get id => $composableBuilder(
-      column: $table.id, builder: (column) => ColumnFilters(column));
+    column: $table.id,
+    builder: (column) => ColumnFilters(column),
+  );
 
   ColumnFilters<int> get at => $composableBuilder(
-      column: $table.at, builder: (column) => ColumnFilters(column));
+    column: $table.at,
+    builder: (column) => ColumnFilters(column),
+  );
 
   ColumnFilters<int> get sequence => $composableBuilder(
-      column: $table.sequence, builder: (column) => ColumnFilters(column));
+    column: $table.sequence,
+    builder: (column) => ColumnFilters(column),
+  );
 
   ColumnFilters<String> get level => $composableBuilder(
-      column: $table.level, builder: (column) => ColumnFilters(column));
+    column: $table.level,
+    builder: (column) => ColumnFilters(column),
+  );
 
   ColumnFilters<String> get source => $composableBuilder(
-      column: $table.source, builder: (column) => ColumnFilters(column));
+    column: $table.source,
+    builder: (column) => ColumnFilters(column),
+  );
 
   ColumnFilters<String> get message => $composableBuilder(
-      column: $table.message, builder: (column) => ColumnFilters(column));
+    column: $table.message,
+    builder: (column) => ColumnFilters(column),
+  );
 }
 
 class $$CoreLogsTableOrderingComposer
@@ -4042,22 +5321,34 @@ class $$CoreLogsTableOrderingComposer
     super.$removeJoinBuilderFromRootComposer,
   });
   ColumnOrderings<String> get id => $composableBuilder(
-      column: $table.id, builder: (column) => ColumnOrderings(column));
+    column: $table.id,
+    builder: (column) => ColumnOrderings(column),
+  );
 
   ColumnOrderings<int> get at => $composableBuilder(
-      column: $table.at, builder: (column) => ColumnOrderings(column));
+    column: $table.at,
+    builder: (column) => ColumnOrderings(column),
+  );
 
   ColumnOrderings<int> get sequence => $composableBuilder(
-      column: $table.sequence, builder: (column) => ColumnOrderings(column));
+    column: $table.sequence,
+    builder: (column) => ColumnOrderings(column),
+  );
 
   ColumnOrderings<String> get level => $composableBuilder(
-      column: $table.level, builder: (column) => ColumnOrderings(column));
+    column: $table.level,
+    builder: (column) => ColumnOrderings(column),
+  );
 
   ColumnOrderings<String> get source => $composableBuilder(
-      column: $table.source, builder: (column) => ColumnOrderings(column));
+    column: $table.source,
+    builder: (column) => ColumnOrderings(column),
+  );
 
   ColumnOrderings<String> get message => $composableBuilder(
-      column: $table.message, builder: (column) => ColumnOrderings(column));
+    column: $table.message,
+    builder: (column) => ColumnOrderings(column),
+  );
 }
 
 class $$CoreLogsTableAnnotationComposer
@@ -4088,123 +5379,145 @@ class $$CoreLogsTableAnnotationComposer
       $composableBuilder(column: $table.message, builder: (column) => column);
 }
 
-class $$CoreLogsTableTableManager extends RootTableManager<
-    _$AppDatabase,
-    $CoreLogsTable,
-    CoreLogRecord,
-    $$CoreLogsTableFilterComposer,
-    $$CoreLogsTableOrderingComposer,
-    $$CoreLogsTableAnnotationComposer,
-    $$CoreLogsTableCreateCompanionBuilder,
-    $$CoreLogsTableUpdateCompanionBuilder,
-    (
-      CoreLogRecord,
-      BaseReferences<_$AppDatabase, $CoreLogsTable, CoreLogRecord>
-    ),
-    CoreLogRecord,
-    PrefetchHooks Function()> {
+class $$CoreLogsTableTableManager
+    extends
+        RootTableManager<
+          _$AppDatabase,
+          $CoreLogsTable,
+          CoreLogRecord,
+          $$CoreLogsTableFilterComposer,
+          $$CoreLogsTableOrderingComposer,
+          $$CoreLogsTableAnnotationComposer,
+          $$CoreLogsTableCreateCompanionBuilder,
+          $$CoreLogsTableUpdateCompanionBuilder,
+          (
+            CoreLogRecord,
+            BaseReferences<_$AppDatabase, $CoreLogsTable, CoreLogRecord>,
+          ),
+          CoreLogRecord,
+          PrefetchHooks Function()
+        > {
   $$CoreLogsTableTableManager(_$AppDatabase db, $CoreLogsTable table)
-      : super(TableManagerState(
+    : super(
+        TableManagerState(
           db: db,
           table: table,
-          createFilteringComposer: () =>
-              $$CoreLogsTableFilterComposer($db: db, $table: table),
-          createOrderingComposer: () =>
-              $$CoreLogsTableOrderingComposer($db: db, $table: table),
-          createComputedFieldComposer: () =>
-              $$CoreLogsTableAnnotationComposer($db: db, $table: table),
-          updateCompanionCallback: ({
-            Value<String> id = const Value.absent(),
-            Value<int> at = const Value.absent(),
-            Value<int> sequence = const Value.absent(),
-            Value<String> level = const Value.absent(),
-            Value<String> source = const Value.absent(),
-            Value<String> message = const Value.absent(),
-            Value<int> rowid = const Value.absent(),
-          }) =>
-              CoreLogsCompanion(
-            id: id,
-            at: at,
-            sequence: sequence,
-            level: level,
-            source: source,
-            message: message,
-            rowid: rowid,
-          ),
-          createCompanionCallback: ({
-            required String id,
-            required int at,
-            Value<int> sequence = const Value.absent(),
-            required String level,
-            required String source,
-            required String message,
-            Value<int> rowid = const Value.absent(),
-          }) =>
-              CoreLogsCompanion.insert(
-            id: id,
-            at: at,
-            sequence: sequence,
-            level: level,
-            source: source,
-            message: message,
-            rowid: rowid,
-          ),
-          withReferenceMapper: (p0) => p0
-              .map((e) => (e.readTable(table), BaseReferences(db, table, e)))
-              .toList(),
+          createFilteringComposer:
+              () => $$CoreLogsTableFilterComposer($db: db, $table: table),
+          createOrderingComposer:
+              () => $$CoreLogsTableOrderingComposer($db: db, $table: table),
+          createComputedFieldComposer:
+              () => $$CoreLogsTableAnnotationComposer($db: db, $table: table),
+          updateCompanionCallback:
+              ({
+                Value<String> id = const Value.absent(),
+                Value<int> at = const Value.absent(),
+                Value<int> sequence = const Value.absent(),
+                Value<String> level = const Value.absent(),
+                Value<String> source = const Value.absent(),
+                Value<String> message = const Value.absent(),
+                Value<int> rowid = const Value.absent(),
+              }) => CoreLogsCompanion(
+                id: id,
+                at: at,
+                sequence: sequence,
+                level: level,
+                source: source,
+                message: message,
+                rowid: rowid,
+              ),
+          createCompanionCallback:
+              ({
+                required String id,
+                required int at,
+                Value<int> sequence = const Value.absent(),
+                required String level,
+                required String source,
+                required String message,
+                Value<int> rowid = const Value.absent(),
+              }) => CoreLogsCompanion.insert(
+                id: id,
+                at: at,
+                sequence: sequence,
+                level: level,
+                source: source,
+                message: message,
+                rowid: rowid,
+              ),
+          withReferenceMapper:
+              (p0) =>
+                  p0
+                      .map(
+                        (e) => (
+                          e.readTable(table),
+                          BaseReferences(db, table, e),
+                        ),
+                      )
+                      .toList(),
           prefetchHooksCallback: null,
-        ));
+        ),
+      );
 }
 
-typedef $$CoreLogsTableProcessedTableManager = ProcessedTableManager<
-    _$AppDatabase,
-    $CoreLogsTable,
-    CoreLogRecord,
-    $$CoreLogsTableFilterComposer,
-    $$CoreLogsTableOrderingComposer,
-    $$CoreLogsTableAnnotationComposer,
-    $$CoreLogsTableCreateCompanionBuilder,
-    $$CoreLogsTableUpdateCompanionBuilder,
-    (
+typedef $$CoreLogsTableProcessedTableManager =
+    ProcessedTableManager<
+      _$AppDatabase,
+      $CoreLogsTable,
       CoreLogRecord,
-      BaseReferences<_$AppDatabase, $CoreLogsTable, CoreLogRecord>
-    ),
-    CoreLogRecord,
-    PrefetchHooks Function()>;
-typedef $$NodeOverridesTableCreateCompanionBuilder = NodeOverridesCompanion
-    Function({
-  required String nodeId,
-  Value<String> alias,
-  Value<bool> favorite,
-  Value<bool> hidden,
-  Value<int> rowid,
-});
-typedef $$NodeOverridesTableUpdateCompanionBuilder = NodeOverridesCompanion
-    Function({
-  Value<String> nodeId,
-  Value<String> alias,
-  Value<bool> favorite,
-  Value<bool> hidden,
-  Value<int> rowid,
-});
+      $$CoreLogsTableFilterComposer,
+      $$CoreLogsTableOrderingComposer,
+      $$CoreLogsTableAnnotationComposer,
+      $$CoreLogsTableCreateCompanionBuilder,
+      $$CoreLogsTableUpdateCompanionBuilder,
+      (
+        CoreLogRecord,
+        BaseReferences<_$AppDatabase, $CoreLogsTable, CoreLogRecord>,
+      ),
+      CoreLogRecord,
+      PrefetchHooks Function()
+    >;
+typedef $$NodeOverridesTableCreateCompanionBuilder =
+    NodeOverridesCompanion Function({
+      required String nodeId,
+      Value<String> alias,
+      Value<bool> favorite,
+      Value<bool> hidden,
+      Value<int> rowid,
+    });
+typedef $$NodeOverridesTableUpdateCompanionBuilder =
+    NodeOverridesCompanion Function({
+      Value<String> nodeId,
+      Value<String> alias,
+      Value<bool> favorite,
+      Value<bool> hidden,
+      Value<int> rowid,
+    });
 
-final class $$NodeOverridesTableReferences extends BaseReferences<_$AppDatabase,
-    $NodeOverridesTable, NodeOverrideRecord> {
+final class $$NodeOverridesTableReferences
+    extends
+        BaseReferences<_$AppDatabase, $NodeOverridesTable, NodeOverrideRecord> {
   $$NodeOverridesTableReferences(
-      super.$_db, super.$_table, super.$_typedResult);
+    super.$_db,
+    super.$_table,
+    super.$_typedResult,
+  );
 
-  static $NodesTable _nodeIdTable(_$AppDatabase db) => db.nodes
-      .createAlias($_aliasNameGenerator(db.nodeOverrides.nodeId, db.nodes.id));
+  static $NodesTable _nodeIdTable(_$AppDatabase db) => db.nodes.createAlias(
+    $_aliasNameGenerator(db.nodeOverrides.nodeId, db.nodes.id),
+  );
 
   $$NodesTableProcessedTableManager get nodeId {
     final $_column = $_itemColumn<String>('node_id')!;
 
-    final manager = $$NodesTableTableManager($_db, $_db.nodes)
-        .filter((f) => f.id.sqlEquals($_column));
+    final manager = $$NodesTableTableManager(
+      $_db,
+      $_db.nodes,
+    ).filter((f) => f.id.sqlEquals($_column));
     final item = $_typedResult.readTableOrNull(_nodeIdTable($_db));
     if (item == null) return manager;
     return ProcessedTableManager(
-        manager.$state.copyWith(prefetchedData: [item]));
+      manager.$state.copyWith(prefetchedData: [item]),
+    );
   }
 }
 
@@ -4218,31 +5531,40 @@ class $$NodeOverridesTableFilterComposer
     super.$removeJoinBuilderFromRootComposer,
   });
   ColumnFilters<String> get alias => $composableBuilder(
-      column: $table.alias, builder: (column) => ColumnFilters(column));
+    column: $table.alias,
+    builder: (column) => ColumnFilters(column),
+  );
 
   ColumnFilters<bool> get favorite => $composableBuilder(
-      column: $table.favorite, builder: (column) => ColumnFilters(column));
+    column: $table.favorite,
+    builder: (column) => ColumnFilters(column),
+  );
 
   ColumnFilters<bool> get hidden => $composableBuilder(
-      column: $table.hidden, builder: (column) => ColumnFilters(column));
+    column: $table.hidden,
+    builder: (column) => ColumnFilters(column),
+  );
 
   $$NodesTableFilterComposer get nodeId {
     final $$NodesTableFilterComposer composer = $composerBuilder(
-        composer: this,
-        getCurrentColumn: (t) => t.nodeId,
-        referencedTable: $db.nodes,
-        getReferencedColumn: (t) => t.id,
-        builder: (joinBuilder,
-                {$addJoinBuilderToRootComposer,
-                $removeJoinBuilderFromRootComposer}) =>
-            $$NodesTableFilterComposer(
-              $db: $db,
-              $table: $db.nodes,
-              $addJoinBuilderToRootComposer: $addJoinBuilderToRootComposer,
-              joinBuilder: joinBuilder,
-              $removeJoinBuilderFromRootComposer:
-                  $removeJoinBuilderFromRootComposer,
-            ));
+      composer: this,
+      getCurrentColumn: (t) => t.nodeId,
+      referencedTable: $db.nodes,
+      getReferencedColumn: (t) => t.id,
+      builder:
+          (
+            joinBuilder, {
+            $addJoinBuilderToRootComposer,
+            $removeJoinBuilderFromRootComposer,
+          }) => $$NodesTableFilterComposer(
+            $db: $db,
+            $table: $db.nodes,
+            $addJoinBuilderToRootComposer: $addJoinBuilderToRootComposer,
+            joinBuilder: joinBuilder,
+            $removeJoinBuilderFromRootComposer:
+                $removeJoinBuilderFromRootComposer,
+          ),
+    );
     return composer;
   }
 }
@@ -4257,31 +5579,40 @@ class $$NodeOverridesTableOrderingComposer
     super.$removeJoinBuilderFromRootComposer,
   });
   ColumnOrderings<String> get alias => $composableBuilder(
-      column: $table.alias, builder: (column) => ColumnOrderings(column));
+    column: $table.alias,
+    builder: (column) => ColumnOrderings(column),
+  );
 
   ColumnOrderings<bool> get favorite => $composableBuilder(
-      column: $table.favorite, builder: (column) => ColumnOrderings(column));
+    column: $table.favorite,
+    builder: (column) => ColumnOrderings(column),
+  );
 
   ColumnOrderings<bool> get hidden => $composableBuilder(
-      column: $table.hidden, builder: (column) => ColumnOrderings(column));
+    column: $table.hidden,
+    builder: (column) => ColumnOrderings(column),
+  );
 
   $$NodesTableOrderingComposer get nodeId {
     final $$NodesTableOrderingComposer composer = $composerBuilder(
-        composer: this,
-        getCurrentColumn: (t) => t.nodeId,
-        referencedTable: $db.nodes,
-        getReferencedColumn: (t) => t.id,
-        builder: (joinBuilder,
-                {$addJoinBuilderToRootComposer,
-                $removeJoinBuilderFromRootComposer}) =>
-            $$NodesTableOrderingComposer(
-              $db: $db,
-              $table: $db.nodes,
-              $addJoinBuilderToRootComposer: $addJoinBuilderToRootComposer,
-              joinBuilder: joinBuilder,
-              $removeJoinBuilderFromRootComposer:
-                  $removeJoinBuilderFromRootComposer,
-            ));
+      composer: this,
+      getCurrentColumn: (t) => t.nodeId,
+      referencedTable: $db.nodes,
+      getReferencedColumn: (t) => t.id,
+      builder:
+          (
+            joinBuilder, {
+            $addJoinBuilderToRootComposer,
+            $removeJoinBuilderFromRootComposer,
+          }) => $$NodesTableOrderingComposer(
+            $db: $db,
+            $table: $db.nodes,
+            $addJoinBuilderToRootComposer: $addJoinBuilderToRootComposer,
+            joinBuilder: joinBuilder,
+            $removeJoinBuilderFromRootComposer:
+                $removeJoinBuilderFromRootComposer,
+          ),
+    );
     return composer;
   }
 }
@@ -4306,107 +5637,128 @@ class $$NodeOverridesTableAnnotationComposer
 
   $$NodesTableAnnotationComposer get nodeId {
     final $$NodesTableAnnotationComposer composer = $composerBuilder(
-        composer: this,
-        getCurrentColumn: (t) => t.nodeId,
-        referencedTable: $db.nodes,
-        getReferencedColumn: (t) => t.id,
-        builder: (joinBuilder,
-                {$addJoinBuilderToRootComposer,
-                $removeJoinBuilderFromRootComposer}) =>
-            $$NodesTableAnnotationComposer(
-              $db: $db,
-              $table: $db.nodes,
-              $addJoinBuilderToRootComposer: $addJoinBuilderToRootComposer,
-              joinBuilder: joinBuilder,
-              $removeJoinBuilderFromRootComposer:
-                  $removeJoinBuilderFromRootComposer,
-            ));
+      composer: this,
+      getCurrentColumn: (t) => t.nodeId,
+      referencedTable: $db.nodes,
+      getReferencedColumn: (t) => t.id,
+      builder:
+          (
+            joinBuilder, {
+            $addJoinBuilderToRootComposer,
+            $removeJoinBuilderFromRootComposer,
+          }) => $$NodesTableAnnotationComposer(
+            $db: $db,
+            $table: $db.nodes,
+            $addJoinBuilderToRootComposer: $addJoinBuilderToRootComposer,
+            joinBuilder: joinBuilder,
+            $removeJoinBuilderFromRootComposer:
+                $removeJoinBuilderFromRootComposer,
+          ),
+    );
     return composer;
   }
 }
 
-class $$NodeOverridesTableTableManager extends RootTableManager<
-    _$AppDatabase,
-    $NodeOverridesTable,
-    NodeOverrideRecord,
-    $$NodeOverridesTableFilterComposer,
-    $$NodeOverridesTableOrderingComposer,
-    $$NodeOverridesTableAnnotationComposer,
-    $$NodeOverridesTableCreateCompanionBuilder,
-    $$NodeOverridesTableUpdateCompanionBuilder,
-    (NodeOverrideRecord, $$NodeOverridesTableReferences),
-    NodeOverrideRecord,
-    PrefetchHooks Function({bool nodeId})> {
+class $$NodeOverridesTableTableManager
+    extends
+        RootTableManager<
+          _$AppDatabase,
+          $NodeOverridesTable,
+          NodeOverrideRecord,
+          $$NodeOverridesTableFilterComposer,
+          $$NodeOverridesTableOrderingComposer,
+          $$NodeOverridesTableAnnotationComposer,
+          $$NodeOverridesTableCreateCompanionBuilder,
+          $$NodeOverridesTableUpdateCompanionBuilder,
+          (NodeOverrideRecord, $$NodeOverridesTableReferences),
+          NodeOverrideRecord,
+          PrefetchHooks Function({bool nodeId})
+        > {
   $$NodeOverridesTableTableManager(_$AppDatabase db, $NodeOverridesTable table)
-      : super(TableManagerState(
+    : super(
+        TableManagerState(
           db: db,
           table: table,
-          createFilteringComposer: () =>
-              $$NodeOverridesTableFilterComposer($db: db, $table: table),
-          createOrderingComposer: () =>
-              $$NodeOverridesTableOrderingComposer($db: db, $table: table),
-          createComputedFieldComposer: () =>
-              $$NodeOverridesTableAnnotationComposer($db: db, $table: table),
-          updateCompanionCallback: ({
-            Value<String> nodeId = const Value.absent(),
-            Value<String> alias = const Value.absent(),
-            Value<bool> favorite = const Value.absent(),
-            Value<bool> hidden = const Value.absent(),
-            Value<int> rowid = const Value.absent(),
-          }) =>
-              NodeOverridesCompanion(
-            nodeId: nodeId,
-            alias: alias,
-            favorite: favorite,
-            hidden: hidden,
-            rowid: rowid,
-          ),
-          createCompanionCallback: ({
-            required String nodeId,
-            Value<String> alias = const Value.absent(),
-            Value<bool> favorite = const Value.absent(),
-            Value<bool> hidden = const Value.absent(),
-            Value<int> rowid = const Value.absent(),
-          }) =>
-              NodeOverridesCompanion.insert(
-            nodeId: nodeId,
-            alias: alias,
-            favorite: favorite,
-            hidden: hidden,
-            rowid: rowid,
-          ),
-          withReferenceMapper: (p0) => p0
-              .map((e) => (
-                    e.readTable(table),
-                    $$NodeOverridesTableReferences(db, table, e)
-                  ))
-              .toList(),
+          createFilteringComposer:
+              () => $$NodeOverridesTableFilterComposer($db: db, $table: table),
+          createOrderingComposer:
+              () =>
+                  $$NodeOverridesTableOrderingComposer($db: db, $table: table),
+          createComputedFieldComposer:
+              () => $$NodeOverridesTableAnnotationComposer(
+                $db: db,
+                $table: table,
+              ),
+          updateCompanionCallback:
+              ({
+                Value<String> nodeId = const Value.absent(),
+                Value<String> alias = const Value.absent(),
+                Value<bool> favorite = const Value.absent(),
+                Value<bool> hidden = const Value.absent(),
+                Value<int> rowid = const Value.absent(),
+              }) => NodeOverridesCompanion(
+                nodeId: nodeId,
+                alias: alias,
+                favorite: favorite,
+                hidden: hidden,
+                rowid: rowid,
+              ),
+          createCompanionCallback:
+              ({
+                required String nodeId,
+                Value<String> alias = const Value.absent(),
+                Value<bool> favorite = const Value.absent(),
+                Value<bool> hidden = const Value.absent(),
+                Value<int> rowid = const Value.absent(),
+              }) => NodeOverridesCompanion.insert(
+                nodeId: nodeId,
+                alias: alias,
+                favorite: favorite,
+                hidden: hidden,
+                rowid: rowid,
+              ),
+          withReferenceMapper:
+              (p0) =>
+                  p0
+                      .map(
+                        (e) => (
+                          e.readTable(table),
+                          $$NodeOverridesTableReferences(db, table, e),
+                        ),
+                      )
+                      .toList(),
           prefetchHooksCallback: ({nodeId = false}) {
             return PrefetchHooks(
               db: db,
               explicitlyWatchedTables: [],
               addJoins: <
-                  T extends TableManagerState<
-                      dynamic,
-                      dynamic,
-                      dynamic,
-                      dynamic,
-                      dynamic,
-                      dynamic,
-                      dynamic,
-                      dynamic,
-                      dynamic,
-                      dynamic,
-                      dynamic>>(state) {
+                T extends TableManagerState<
+                  dynamic,
+                  dynamic,
+                  dynamic,
+                  dynamic,
+                  dynamic,
+                  dynamic,
+                  dynamic,
+                  dynamic,
+                  dynamic,
+                  dynamic,
+                  dynamic
+                >
+              >(state) {
                 if (nodeId) {
-                  state = state.withJoin(
-                    currentTable: table,
-                    currentColumn: table.nodeId,
-                    referencedTable:
-                        $$NodeOverridesTableReferences._nodeIdTable(db),
-                    referencedColumn:
-                        $$NodeOverridesTableReferences._nodeIdTable(db).id,
-                  ) as T;
+                  state =
+                      state.withJoin(
+                            currentTable: table,
+                            currentColumn: table.nodeId,
+                            referencedTable: $$NodeOverridesTableReferences
+                                ._nodeIdTable(db),
+                            referencedColumn:
+                                $$NodeOverridesTableReferences
+                                    ._nodeIdTable(db)
+                                    .id,
+                          )
+                          as T;
                 }
 
                 return state;
@@ -4416,37 +5768,40 @@ class $$NodeOverridesTableTableManager extends RootTableManager<
               },
             );
           },
-        ));
+        ),
+      );
 }
 
-typedef $$NodeOverridesTableProcessedTableManager = ProcessedTableManager<
-    _$AppDatabase,
-    $NodeOverridesTable,
-    NodeOverrideRecord,
-    $$NodeOverridesTableFilterComposer,
-    $$NodeOverridesTableOrderingComposer,
-    $$NodeOverridesTableAnnotationComposer,
-    $$NodeOverridesTableCreateCompanionBuilder,
-    $$NodeOverridesTableUpdateCompanionBuilder,
-    (NodeOverrideRecord, $$NodeOverridesTableReferences),
-    NodeOverrideRecord,
-    PrefetchHooks Function({bool nodeId})>;
-typedef $$TrafficBucketsTableCreateCompanionBuilder = TrafficBucketsCompanion
-    Function({
-  required String day,
-  required int slot,
-  required int upload,
-  required int download,
-  Value<int> rowid,
-});
-typedef $$TrafficBucketsTableUpdateCompanionBuilder = TrafficBucketsCompanion
-    Function({
-  Value<String> day,
-  Value<int> slot,
-  Value<int> upload,
-  Value<int> download,
-  Value<int> rowid,
-});
+typedef $$NodeOverridesTableProcessedTableManager =
+    ProcessedTableManager<
+      _$AppDatabase,
+      $NodeOverridesTable,
+      NodeOverrideRecord,
+      $$NodeOverridesTableFilterComposer,
+      $$NodeOverridesTableOrderingComposer,
+      $$NodeOverridesTableAnnotationComposer,
+      $$NodeOverridesTableCreateCompanionBuilder,
+      $$NodeOverridesTableUpdateCompanionBuilder,
+      (NodeOverrideRecord, $$NodeOverridesTableReferences),
+      NodeOverrideRecord,
+      PrefetchHooks Function({bool nodeId})
+    >;
+typedef $$TrafficBucketsTableCreateCompanionBuilder =
+    TrafficBucketsCompanion Function({
+      required String day,
+      required int slot,
+      required int upload,
+      required int download,
+      Value<int> rowid,
+    });
+typedef $$TrafficBucketsTableUpdateCompanionBuilder =
+    TrafficBucketsCompanion Function({
+      Value<String> day,
+      Value<int> slot,
+      Value<int> upload,
+      Value<int> download,
+      Value<int> rowid,
+    });
 
 class $$TrafficBucketsTableFilterComposer
     extends Composer<_$AppDatabase, $TrafficBucketsTable> {
@@ -4458,16 +5813,24 @@ class $$TrafficBucketsTableFilterComposer
     super.$removeJoinBuilderFromRootComposer,
   });
   ColumnFilters<String> get day => $composableBuilder(
-      column: $table.day, builder: (column) => ColumnFilters(column));
+    column: $table.day,
+    builder: (column) => ColumnFilters(column),
+  );
 
   ColumnFilters<int> get slot => $composableBuilder(
-      column: $table.slot, builder: (column) => ColumnFilters(column));
+    column: $table.slot,
+    builder: (column) => ColumnFilters(column),
+  );
 
   ColumnFilters<int> get upload => $composableBuilder(
-      column: $table.upload, builder: (column) => ColumnFilters(column));
+    column: $table.upload,
+    builder: (column) => ColumnFilters(column),
+  );
 
   ColumnFilters<int> get download => $composableBuilder(
-      column: $table.download, builder: (column) => ColumnFilters(column));
+    column: $table.download,
+    builder: (column) => ColumnFilters(column),
+  );
 }
 
 class $$TrafficBucketsTableOrderingComposer
@@ -4480,16 +5843,24 @@ class $$TrafficBucketsTableOrderingComposer
     super.$removeJoinBuilderFromRootComposer,
   });
   ColumnOrderings<String> get day => $composableBuilder(
-      column: $table.day, builder: (column) => ColumnOrderings(column));
+    column: $table.day,
+    builder: (column) => ColumnOrderings(column),
+  );
 
   ColumnOrderings<int> get slot => $composableBuilder(
-      column: $table.slot, builder: (column) => ColumnOrderings(column));
+    column: $table.slot,
+    builder: (column) => ColumnOrderings(column),
+  );
 
   ColumnOrderings<int> get upload => $composableBuilder(
-      column: $table.upload, builder: (column) => ColumnOrderings(column));
+    column: $table.upload,
+    builder: (column) => ColumnOrderings(column),
+  );
 
   ColumnOrderings<int> get download => $composableBuilder(
-      column: $table.download, builder: (column) => ColumnOrderings(column));
+    column: $table.download,
+    builder: (column) => ColumnOrderings(column),
+  );
 }
 
 class $$TrafficBucketsTableAnnotationComposer
@@ -4514,102 +5885,129 @@ class $$TrafficBucketsTableAnnotationComposer
       $composableBuilder(column: $table.download, builder: (column) => column);
 }
 
-class $$TrafficBucketsTableTableManager extends RootTableManager<
-    _$AppDatabase,
-    $TrafficBucketsTable,
-    TrafficBucketRecord,
-    $$TrafficBucketsTableFilterComposer,
-    $$TrafficBucketsTableOrderingComposer,
-    $$TrafficBucketsTableAnnotationComposer,
-    $$TrafficBucketsTableCreateCompanionBuilder,
-    $$TrafficBucketsTableUpdateCompanionBuilder,
-    (
-      TrafficBucketRecord,
-      BaseReferences<_$AppDatabase, $TrafficBucketsTable, TrafficBucketRecord>
-    ),
-    TrafficBucketRecord,
-    PrefetchHooks Function()> {
+class $$TrafficBucketsTableTableManager
+    extends
+        RootTableManager<
+          _$AppDatabase,
+          $TrafficBucketsTable,
+          TrafficBucketRecord,
+          $$TrafficBucketsTableFilterComposer,
+          $$TrafficBucketsTableOrderingComposer,
+          $$TrafficBucketsTableAnnotationComposer,
+          $$TrafficBucketsTableCreateCompanionBuilder,
+          $$TrafficBucketsTableUpdateCompanionBuilder,
+          (
+            TrafficBucketRecord,
+            BaseReferences<
+              _$AppDatabase,
+              $TrafficBucketsTable,
+              TrafficBucketRecord
+            >,
+          ),
+          TrafficBucketRecord,
+          PrefetchHooks Function()
+        > {
   $$TrafficBucketsTableTableManager(
-      _$AppDatabase db, $TrafficBucketsTable table)
-      : super(TableManagerState(
+    _$AppDatabase db,
+    $TrafficBucketsTable table,
+  ) : super(
+        TableManagerState(
           db: db,
           table: table,
-          createFilteringComposer: () =>
-              $$TrafficBucketsTableFilterComposer($db: db, $table: table),
-          createOrderingComposer: () =>
-              $$TrafficBucketsTableOrderingComposer($db: db, $table: table),
-          createComputedFieldComposer: () =>
-              $$TrafficBucketsTableAnnotationComposer($db: db, $table: table),
-          updateCompanionCallback: ({
-            Value<String> day = const Value.absent(),
-            Value<int> slot = const Value.absent(),
-            Value<int> upload = const Value.absent(),
-            Value<int> download = const Value.absent(),
-            Value<int> rowid = const Value.absent(),
-          }) =>
-              TrafficBucketsCompanion(
-            day: day,
-            slot: slot,
-            upload: upload,
-            download: download,
-            rowid: rowid,
-          ),
-          createCompanionCallback: ({
-            required String day,
-            required int slot,
-            required int upload,
-            required int download,
-            Value<int> rowid = const Value.absent(),
-          }) =>
-              TrafficBucketsCompanion.insert(
-            day: day,
-            slot: slot,
-            upload: upload,
-            download: download,
-            rowid: rowid,
-          ),
-          withReferenceMapper: (p0) => p0
-              .map((e) => (e.readTable(table), BaseReferences(db, table, e)))
-              .toList(),
+          createFilteringComposer:
+              () => $$TrafficBucketsTableFilterComposer($db: db, $table: table),
+          createOrderingComposer:
+              () =>
+                  $$TrafficBucketsTableOrderingComposer($db: db, $table: table),
+          createComputedFieldComposer:
+              () => $$TrafficBucketsTableAnnotationComposer(
+                $db: db,
+                $table: table,
+              ),
+          updateCompanionCallback:
+              ({
+                Value<String> day = const Value.absent(),
+                Value<int> slot = const Value.absent(),
+                Value<int> upload = const Value.absent(),
+                Value<int> download = const Value.absent(),
+                Value<int> rowid = const Value.absent(),
+              }) => TrafficBucketsCompanion(
+                day: day,
+                slot: slot,
+                upload: upload,
+                download: download,
+                rowid: rowid,
+              ),
+          createCompanionCallback:
+              ({
+                required String day,
+                required int slot,
+                required int upload,
+                required int download,
+                Value<int> rowid = const Value.absent(),
+              }) => TrafficBucketsCompanion.insert(
+                day: day,
+                slot: slot,
+                upload: upload,
+                download: download,
+                rowid: rowid,
+              ),
+          withReferenceMapper:
+              (p0) =>
+                  p0
+                      .map(
+                        (e) => (
+                          e.readTable(table),
+                          BaseReferences(db, table, e),
+                        ),
+                      )
+                      .toList(),
           prefetchHooksCallback: null,
-        ));
+        ),
+      );
 }
 
-typedef $$TrafficBucketsTableProcessedTableManager = ProcessedTableManager<
-    _$AppDatabase,
-    $TrafficBucketsTable,
-    TrafficBucketRecord,
-    $$TrafficBucketsTableFilterComposer,
-    $$TrafficBucketsTableOrderingComposer,
-    $$TrafficBucketsTableAnnotationComposer,
-    $$TrafficBucketsTableCreateCompanionBuilder,
-    $$TrafficBucketsTableUpdateCompanionBuilder,
-    (
+typedef $$TrafficBucketsTableProcessedTableManager =
+    ProcessedTableManager<
+      _$AppDatabase,
+      $TrafficBucketsTable,
       TrafficBucketRecord,
-      BaseReferences<_$AppDatabase, $TrafficBucketsTable, TrafficBucketRecord>
-    ),
-    TrafficBucketRecord,
-    PrefetchHooks Function()>;
-typedef $$TrafficSourcesTableCreateCompanionBuilder = TrafficSourcesCompanion
-    Function({
-  required String day,
-  required String targetId,
-  required String kind,
-  required String name,
-  required int upload,
-  required int download,
-  Value<int> rowid,
-});
-typedef $$TrafficSourcesTableUpdateCompanionBuilder = TrafficSourcesCompanion
-    Function({
-  Value<String> day,
-  Value<String> targetId,
-  Value<String> kind,
-  Value<String> name,
-  Value<int> upload,
-  Value<int> download,
-  Value<int> rowid,
-});
+      $$TrafficBucketsTableFilterComposer,
+      $$TrafficBucketsTableOrderingComposer,
+      $$TrafficBucketsTableAnnotationComposer,
+      $$TrafficBucketsTableCreateCompanionBuilder,
+      $$TrafficBucketsTableUpdateCompanionBuilder,
+      (
+        TrafficBucketRecord,
+        BaseReferences<
+          _$AppDatabase,
+          $TrafficBucketsTable,
+          TrafficBucketRecord
+        >,
+      ),
+      TrafficBucketRecord,
+      PrefetchHooks Function()
+    >;
+typedef $$TrafficSourcesTableCreateCompanionBuilder =
+    TrafficSourcesCompanion Function({
+      required String day,
+      required String targetId,
+      required String kind,
+      required String name,
+      required int upload,
+      required int download,
+      Value<int> rowid,
+    });
+typedef $$TrafficSourcesTableUpdateCompanionBuilder =
+    TrafficSourcesCompanion Function({
+      Value<String> day,
+      Value<String> targetId,
+      Value<String> kind,
+      Value<String> name,
+      Value<int> upload,
+      Value<int> download,
+      Value<int> rowid,
+    });
 
 class $$TrafficSourcesTableFilterComposer
     extends Composer<_$AppDatabase, $TrafficSourcesTable> {
@@ -4621,22 +6019,34 @@ class $$TrafficSourcesTableFilterComposer
     super.$removeJoinBuilderFromRootComposer,
   });
   ColumnFilters<String> get day => $composableBuilder(
-      column: $table.day, builder: (column) => ColumnFilters(column));
+    column: $table.day,
+    builder: (column) => ColumnFilters(column),
+  );
 
   ColumnFilters<String> get targetId => $composableBuilder(
-      column: $table.targetId, builder: (column) => ColumnFilters(column));
+    column: $table.targetId,
+    builder: (column) => ColumnFilters(column),
+  );
 
   ColumnFilters<String> get kind => $composableBuilder(
-      column: $table.kind, builder: (column) => ColumnFilters(column));
+    column: $table.kind,
+    builder: (column) => ColumnFilters(column),
+  );
 
   ColumnFilters<String> get name => $composableBuilder(
-      column: $table.name, builder: (column) => ColumnFilters(column));
+    column: $table.name,
+    builder: (column) => ColumnFilters(column),
+  );
 
   ColumnFilters<int> get upload => $composableBuilder(
-      column: $table.upload, builder: (column) => ColumnFilters(column));
+    column: $table.upload,
+    builder: (column) => ColumnFilters(column),
+  );
 
   ColumnFilters<int> get download => $composableBuilder(
-      column: $table.download, builder: (column) => ColumnFilters(column));
+    column: $table.download,
+    builder: (column) => ColumnFilters(column),
+  );
 }
 
 class $$TrafficSourcesTableOrderingComposer
@@ -4649,22 +6059,34 @@ class $$TrafficSourcesTableOrderingComposer
     super.$removeJoinBuilderFromRootComposer,
   });
   ColumnOrderings<String> get day => $composableBuilder(
-      column: $table.day, builder: (column) => ColumnOrderings(column));
+    column: $table.day,
+    builder: (column) => ColumnOrderings(column),
+  );
 
   ColumnOrderings<String> get targetId => $composableBuilder(
-      column: $table.targetId, builder: (column) => ColumnOrderings(column));
+    column: $table.targetId,
+    builder: (column) => ColumnOrderings(column),
+  );
 
   ColumnOrderings<String> get kind => $composableBuilder(
-      column: $table.kind, builder: (column) => ColumnOrderings(column));
+    column: $table.kind,
+    builder: (column) => ColumnOrderings(column),
+  );
 
   ColumnOrderings<String> get name => $composableBuilder(
-      column: $table.name, builder: (column) => ColumnOrderings(column));
+    column: $table.name,
+    builder: (column) => ColumnOrderings(column),
+  );
 
   ColumnOrderings<int> get upload => $composableBuilder(
-      column: $table.upload, builder: (column) => ColumnOrderings(column));
+    column: $table.upload,
+    builder: (column) => ColumnOrderings(column),
+  );
 
   ColumnOrderings<int> get download => $composableBuilder(
-      column: $table.download, builder: (column) => ColumnOrderings(column));
+    column: $table.download,
+    builder: (column) => ColumnOrderings(column),
+  );
 }
 
 class $$TrafficSourcesTableAnnotationComposer
@@ -4695,104 +6117,135 @@ class $$TrafficSourcesTableAnnotationComposer
       $composableBuilder(column: $table.download, builder: (column) => column);
 }
 
-class $$TrafficSourcesTableTableManager extends RootTableManager<
-    _$AppDatabase,
-    $TrafficSourcesTable,
-    TrafficSourceRecord,
-    $$TrafficSourcesTableFilterComposer,
-    $$TrafficSourcesTableOrderingComposer,
-    $$TrafficSourcesTableAnnotationComposer,
-    $$TrafficSourcesTableCreateCompanionBuilder,
-    $$TrafficSourcesTableUpdateCompanionBuilder,
-    (
-      TrafficSourceRecord,
-      BaseReferences<_$AppDatabase, $TrafficSourcesTable, TrafficSourceRecord>
-    ),
-    TrafficSourceRecord,
-    PrefetchHooks Function()> {
+class $$TrafficSourcesTableTableManager
+    extends
+        RootTableManager<
+          _$AppDatabase,
+          $TrafficSourcesTable,
+          TrafficSourceRecord,
+          $$TrafficSourcesTableFilterComposer,
+          $$TrafficSourcesTableOrderingComposer,
+          $$TrafficSourcesTableAnnotationComposer,
+          $$TrafficSourcesTableCreateCompanionBuilder,
+          $$TrafficSourcesTableUpdateCompanionBuilder,
+          (
+            TrafficSourceRecord,
+            BaseReferences<
+              _$AppDatabase,
+              $TrafficSourcesTable,
+              TrafficSourceRecord
+            >,
+          ),
+          TrafficSourceRecord,
+          PrefetchHooks Function()
+        > {
   $$TrafficSourcesTableTableManager(
-      _$AppDatabase db, $TrafficSourcesTable table)
-      : super(TableManagerState(
+    _$AppDatabase db,
+    $TrafficSourcesTable table,
+  ) : super(
+        TableManagerState(
           db: db,
           table: table,
-          createFilteringComposer: () =>
-              $$TrafficSourcesTableFilterComposer($db: db, $table: table),
-          createOrderingComposer: () =>
-              $$TrafficSourcesTableOrderingComposer($db: db, $table: table),
-          createComputedFieldComposer: () =>
-              $$TrafficSourcesTableAnnotationComposer($db: db, $table: table),
-          updateCompanionCallback: ({
-            Value<String> day = const Value.absent(),
-            Value<String> targetId = const Value.absent(),
-            Value<String> kind = const Value.absent(),
-            Value<String> name = const Value.absent(),
-            Value<int> upload = const Value.absent(),
-            Value<int> download = const Value.absent(),
-            Value<int> rowid = const Value.absent(),
-          }) =>
-              TrafficSourcesCompanion(
-            day: day,
-            targetId: targetId,
-            kind: kind,
-            name: name,
-            upload: upload,
-            download: download,
-            rowid: rowid,
-          ),
-          createCompanionCallback: ({
-            required String day,
-            required String targetId,
-            required String kind,
-            required String name,
-            required int upload,
-            required int download,
-            Value<int> rowid = const Value.absent(),
-          }) =>
-              TrafficSourcesCompanion.insert(
-            day: day,
-            targetId: targetId,
-            kind: kind,
-            name: name,
-            upload: upload,
-            download: download,
-            rowid: rowid,
-          ),
-          withReferenceMapper: (p0) => p0
-              .map((e) => (e.readTable(table), BaseReferences(db, table, e)))
-              .toList(),
+          createFilteringComposer:
+              () => $$TrafficSourcesTableFilterComposer($db: db, $table: table),
+          createOrderingComposer:
+              () =>
+                  $$TrafficSourcesTableOrderingComposer($db: db, $table: table),
+          createComputedFieldComposer:
+              () => $$TrafficSourcesTableAnnotationComposer(
+                $db: db,
+                $table: table,
+              ),
+          updateCompanionCallback:
+              ({
+                Value<String> day = const Value.absent(),
+                Value<String> targetId = const Value.absent(),
+                Value<String> kind = const Value.absent(),
+                Value<String> name = const Value.absent(),
+                Value<int> upload = const Value.absent(),
+                Value<int> download = const Value.absent(),
+                Value<int> rowid = const Value.absent(),
+              }) => TrafficSourcesCompanion(
+                day: day,
+                targetId: targetId,
+                kind: kind,
+                name: name,
+                upload: upload,
+                download: download,
+                rowid: rowid,
+              ),
+          createCompanionCallback:
+              ({
+                required String day,
+                required String targetId,
+                required String kind,
+                required String name,
+                required int upload,
+                required int download,
+                Value<int> rowid = const Value.absent(),
+              }) => TrafficSourcesCompanion.insert(
+                day: day,
+                targetId: targetId,
+                kind: kind,
+                name: name,
+                upload: upload,
+                download: download,
+                rowid: rowid,
+              ),
+          withReferenceMapper:
+              (p0) =>
+                  p0
+                      .map(
+                        (e) => (
+                          e.readTable(table),
+                          BaseReferences(db, table, e),
+                        ),
+                      )
+                      .toList(),
           prefetchHooksCallback: null,
-        ));
+        ),
+      );
 }
 
-typedef $$TrafficSourcesTableProcessedTableManager = ProcessedTableManager<
-    _$AppDatabase,
-    $TrafficSourcesTable,
-    TrafficSourceRecord,
-    $$TrafficSourcesTableFilterComposer,
-    $$TrafficSourcesTableOrderingComposer,
-    $$TrafficSourcesTableAnnotationComposer,
-    $$TrafficSourcesTableCreateCompanionBuilder,
-    $$TrafficSourcesTableUpdateCompanionBuilder,
-    (
+typedef $$TrafficSourcesTableProcessedTableManager =
+    ProcessedTableManager<
+      _$AppDatabase,
+      $TrafficSourcesTable,
       TrafficSourceRecord,
-      BaseReferences<_$AppDatabase, $TrafficSourcesTable, TrafficSourceRecord>
-    ),
-    TrafficSourceRecord,
-    PrefetchHooks Function()>;
-typedef $$TrafficCheckpointsTableCreateCompanionBuilder
-    = TrafficCheckpointsCompanion Function({
-  required String sessionId,
-  required int upload,
-  required int download,
-  Value<int> rowid,
-});
-typedef $$TrafficCheckpointsTableUpdateCompanionBuilder
-    = TrafficCheckpointsCompanion Function({
-  Value<String> sessionId,
-  Value<int> upload,
-  Value<int> download,
-  Value<int> rowid,
-});
+      $$TrafficSourcesTableFilterComposer,
+      $$TrafficSourcesTableOrderingComposer,
+      $$TrafficSourcesTableAnnotationComposer,
+      $$TrafficSourcesTableCreateCompanionBuilder,
+      $$TrafficSourcesTableUpdateCompanionBuilder,
+      (
+        TrafficSourceRecord,
+        BaseReferences<
+          _$AppDatabase,
+          $TrafficSourcesTable,
+          TrafficSourceRecord
+        >,
+      ),
+      TrafficSourceRecord,
+      PrefetchHooks Function()
+    >;
+typedef $$TrafficCheckpointsTableCreateCompanionBuilder =
+    TrafficCheckpointsCompanion Function({
+      required String sessionId,
+      required int upload,
+      required int download,
+      Value<String> epoch,
+      Value<int> sampledAt,
+      Value<int> rowid,
+    });
+typedef $$TrafficCheckpointsTableUpdateCompanionBuilder =
+    TrafficCheckpointsCompanion Function({
+      Value<String> sessionId,
+      Value<int> upload,
+      Value<int> download,
+      Value<String> epoch,
+      Value<int> sampledAt,
+      Value<int> rowid,
+    });
 
 class $$TrafficCheckpointsTableFilterComposer
     extends Composer<_$AppDatabase, $TrafficCheckpointsTable> {
@@ -4804,13 +6257,29 @@ class $$TrafficCheckpointsTableFilterComposer
     super.$removeJoinBuilderFromRootComposer,
   });
   ColumnFilters<String> get sessionId => $composableBuilder(
-      column: $table.sessionId, builder: (column) => ColumnFilters(column));
+    column: $table.sessionId,
+    builder: (column) => ColumnFilters(column),
+  );
 
   ColumnFilters<int> get upload => $composableBuilder(
-      column: $table.upload, builder: (column) => ColumnFilters(column));
+    column: $table.upload,
+    builder: (column) => ColumnFilters(column),
+  );
 
   ColumnFilters<int> get download => $composableBuilder(
-      column: $table.download, builder: (column) => ColumnFilters(column));
+    column: $table.download,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get epoch => $composableBuilder(
+    column: $table.epoch,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<int> get sampledAt => $composableBuilder(
+    column: $table.sampledAt,
+    builder: (column) => ColumnFilters(column),
+  );
 }
 
 class $$TrafficCheckpointsTableOrderingComposer
@@ -4823,13 +6292,29 @@ class $$TrafficCheckpointsTableOrderingComposer
     super.$removeJoinBuilderFromRootComposer,
   });
   ColumnOrderings<String> get sessionId => $composableBuilder(
-      column: $table.sessionId, builder: (column) => ColumnOrderings(column));
+    column: $table.sessionId,
+    builder: (column) => ColumnOrderings(column),
+  );
 
   ColumnOrderings<int> get upload => $composableBuilder(
-      column: $table.upload, builder: (column) => ColumnOrderings(column));
+    column: $table.upload,
+    builder: (column) => ColumnOrderings(column),
+  );
 
   ColumnOrderings<int> get download => $composableBuilder(
-      column: $table.download, builder: (column) => ColumnOrderings(column));
+    column: $table.download,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get epoch => $composableBuilder(
+    column: $table.epoch,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<int> get sampledAt => $composableBuilder(
+    column: $table.sampledAt,
+    builder: (column) => ColumnOrderings(column),
+  );
 }
 
 class $$TrafficCheckpointsTableAnnotationComposer
@@ -4849,83 +6334,352 @@ class $$TrafficCheckpointsTableAnnotationComposer
 
   GeneratedColumn<int> get download =>
       $composableBuilder(column: $table.download, builder: (column) => column);
+
+  GeneratedColumn<String> get epoch =>
+      $composableBuilder(column: $table.epoch, builder: (column) => column);
+
+  GeneratedColumn<int> get sampledAt =>
+      $composableBuilder(column: $table.sampledAt, builder: (column) => column);
 }
 
-class $$TrafficCheckpointsTableTableManager extends RootTableManager<
-    _$AppDatabase,
-    $TrafficCheckpointsTable,
-    TrafficCheckpointRecord,
-    $$TrafficCheckpointsTableFilterComposer,
-    $$TrafficCheckpointsTableOrderingComposer,
-    $$TrafficCheckpointsTableAnnotationComposer,
-    $$TrafficCheckpointsTableCreateCompanionBuilder,
-    $$TrafficCheckpointsTableUpdateCompanionBuilder,
-    (
-      TrafficCheckpointRecord,
-      BaseReferences<_$AppDatabase, $TrafficCheckpointsTable,
-          TrafficCheckpointRecord>
-    ),
-    TrafficCheckpointRecord,
-    PrefetchHooks Function()> {
+class $$TrafficCheckpointsTableTableManager
+    extends
+        RootTableManager<
+          _$AppDatabase,
+          $TrafficCheckpointsTable,
+          TrafficCheckpointRecord,
+          $$TrafficCheckpointsTableFilterComposer,
+          $$TrafficCheckpointsTableOrderingComposer,
+          $$TrafficCheckpointsTableAnnotationComposer,
+          $$TrafficCheckpointsTableCreateCompanionBuilder,
+          $$TrafficCheckpointsTableUpdateCompanionBuilder,
+          (
+            TrafficCheckpointRecord,
+            BaseReferences<
+              _$AppDatabase,
+              $TrafficCheckpointsTable,
+              TrafficCheckpointRecord
+            >,
+          ),
+          TrafficCheckpointRecord,
+          PrefetchHooks Function()
+        > {
   $$TrafficCheckpointsTableTableManager(
-      _$AppDatabase db, $TrafficCheckpointsTable table)
-      : super(TableManagerState(
+    _$AppDatabase db,
+    $TrafficCheckpointsTable table,
+  ) : super(
+        TableManagerState(
           db: db,
           table: table,
-          createFilteringComposer: () =>
-              $$TrafficCheckpointsTableFilterComposer($db: db, $table: table),
-          createOrderingComposer: () =>
-              $$TrafficCheckpointsTableOrderingComposer($db: db, $table: table),
-          createComputedFieldComposer: () =>
-              $$TrafficCheckpointsTableAnnotationComposer(
-                  $db: db, $table: table),
-          updateCompanionCallback: ({
-            Value<String> sessionId = const Value.absent(),
-            Value<int> upload = const Value.absent(),
-            Value<int> download = const Value.absent(),
-            Value<int> rowid = const Value.absent(),
-          }) =>
-              TrafficCheckpointsCompanion(
-            sessionId: sessionId,
-            upload: upload,
-            download: download,
-            rowid: rowid,
-          ),
-          createCompanionCallback: ({
-            required String sessionId,
-            required int upload,
-            required int download,
-            Value<int> rowid = const Value.absent(),
-          }) =>
-              TrafficCheckpointsCompanion.insert(
-            sessionId: sessionId,
-            upload: upload,
-            download: download,
-            rowid: rowid,
-          ),
-          withReferenceMapper: (p0) => p0
-              .map((e) => (e.readTable(table), BaseReferences(db, table, e)))
-              .toList(),
+          createFilteringComposer:
+              () => $$TrafficCheckpointsTableFilterComposer(
+                $db: db,
+                $table: table,
+              ),
+          createOrderingComposer:
+              () => $$TrafficCheckpointsTableOrderingComposer(
+                $db: db,
+                $table: table,
+              ),
+          createComputedFieldComposer:
+              () => $$TrafficCheckpointsTableAnnotationComposer(
+                $db: db,
+                $table: table,
+              ),
+          updateCompanionCallback:
+              ({
+                Value<String> sessionId = const Value.absent(),
+                Value<int> upload = const Value.absent(),
+                Value<int> download = const Value.absent(),
+                Value<String> epoch = const Value.absent(),
+                Value<int> sampledAt = const Value.absent(),
+                Value<int> rowid = const Value.absent(),
+              }) => TrafficCheckpointsCompanion(
+                sessionId: sessionId,
+                upload: upload,
+                download: download,
+                epoch: epoch,
+                sampledAt: sampledAt,
+                rowid: rowid,
+              ),
+          createCompanionCallback:
+              ({
+                required String sessionId,
+                required int upload,
+                required int download,
+                Value<String> epoch = const Value.absent(),
+                Value<int> sampledAt = const Value.absent(),
+                Value<int> rowid = const Value.absent(),
+              }) => TrafficCheckpointsCompanion.insert(
+                sessionId: sessionId,
+                upload: upload,
+                download: download,
+                epoch: epoch,
+                sampledAt: sampledAt,
+                rowid: rowid,
+              ),
+          withReferenceMapper:
+              (p0) =>
+                  p0
+                      .map(
+                        (e) => (
+                          e.readTable(table),
+                          BaseReferences(db, table, e),
+                        ),
+                      )
+                      .toList(),
           prefetchHooksCallback: null,
-        ));
+        ),
+      );
 }
 
-typedef $$TrafficCheckpointsTableProcessedTableManager = ProcessedTableManager<
-    _$AppDatabase,
-    $TrafficCheckpointsTable,
-    TrafficCheckpointRecord,
-    $$TrafficCheckpointsTableFilterComposer,
-    $$TrafficCheckpointsTableOrderingComposer,
-    $$TrafficCheckpointsTableAnnotationComposer,
-    $$TrafficCheckpointsTableCreateCompanionBuilder,
-    $$TrafficCheckpointsTableUpdateCompanionBuilder,
-    (
+typedef $$TrafficCheckpointsTableProcessedTableManager =
+    ProcessedTableManager<
+      _$AppDatabase,
+      $TrafficCheckpointsTable,
       TrafficCheckpointRecord,
-      BaseReferences<_$AppDatabase, $TrafficCheckpointsTable,
-          TrafficCheckpointRecord>
-    ),
-    TrafficCheckpointRecord,
-    PrefetchHooks Function()>;
+      $$TrafficCheckpointsTableFilterComposer,
+      $$TrafficCheckpointsTableOrderingComposer,
+      $$TrafficCheckpointsTableAnnotationComposer,
+      $$TrafficCheckpointsTableCreateCompanionBuilder,
+      $$TrafficCheckpointsTableUpdateCompanionBuilder,
+      (
+        TrafficCheckpointRecord,
+        BaseReferences<
+          _$AppDatabase,
+          $TrafficCheckpointsTable,
+          TrafficCheckpointRecord
+        >,
+      ),
+      TrafficCheckpointRecord,
+      PrefetchHooks Function()
+    >;
+typedef $$TrafficSourceCheckpointsTableCreateCompanionBuilder =
+    TrafficSourceCheckpointsCompanion Function({
+      required String sessionId,
+      required String kind,
+      required String targetId,
+      required int upload,
+      required int download,
+      Value<int> rowid,
+    });
+typedef $$TrafficSourceCheckpointsTableUpdateCompanionBuilder =
+    TrafficSourceCheckpointsCompanion Function({
+      Value<String> sessionId,
+      Value<String> kind,
+      Value<String> targetId,
+      Value<int> upload,
+      Value<int> download,
+      Value<int> rowid,
+    });
+
+class $$TrafficSourceCheckpointsTableFilterComposer
+    extends Composer<_$AppDatabase, $TrafficSourceCheckpointsTable> {
+  $$TrafficSourceCheckpointsTableFilterComposer({
+    required super.$db,
+    required super.$table,
+    super.joinBuilder,
+    super.$addJoinBuilderToRootComposer,
+    super.$removeJoinBuilderFromRootComposer,
+  });
+  ColumnFilters<String> get sessionId => $composableBuilder(
+    column: $table.sessionId,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get kind => $composableBuilder(
+    column: $table.kind,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get targetId => $composableBuilder(
+    column: $table.targetId,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<int> get upload => $composableBuilder(
+    column: $table.upload,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<int> get download => $composableBuilder(
+    column: $table.download,
+    builder: (column) => ColumnFilters(column),
+  );
+}
+
+class $$TrafficSourceCheckpointsTableOrderingComposer
+    extends Composer<_$AppDatabase, $TrafficSourceCheckpointsTable> {
+  $$TrafficSourceCheckpointsTableOrderingComposer({
+    required super.$db,
+    required super.$table,
+    super.joinBuilder,
+    super.$addJoinBuilderToRootComposer,
+    super.$removeJoinBuilderFromRootComposer,
+  });
+  ColumnOrderings<String> get sessionId => $composableBuilder(
+    column: $table.sessionId,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get kind => $composableBuilder(
+    column: $table.kind,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get targetId => $composableBuilder(
+    column: $table.targetId,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<int> get upload => $composableBuilder(
+    column: $table.upload,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<int> get download => $composableBuilder(
+    column: $table.download,
+    builder: (column) => ColumnOrderings(column),
+  );
+}
+
+class $$TrafficSourceCheckpointsTableAnnotationComposer
+    extends Composer<_$AppDatabase, $TrafficSourceCheckpointsTable> {
+  $$TrafficSourceCheckpointsTableAnnotationComposer({
+    required super.$db,
+    required super.$table,
+    super.joinBuilder,
+    super.$addJoinBuilderToRootComposer,
+    super.$removeJoinBuilderFromRootComposer,
+  });
+  GeneratedColumn<String> get sessionId =>
+      $composableBuilder(column: $table.sessionId, builder: (column) => column);
+
+  GeneratedColumn<String> get kind =>
+      $composableBuilder(column: $table.kind, builder: (column) => column);
+
+  GeneratedColumn<String> get targetId =>
+      $composableBuilder(column: $table.targetId, builder: (column) => column);
+
+  GeneratedColumn<int> get upload =>
+      $composableBuilder(column: $table.upload, builder: (column) => column);
+
+  GeneratedColumn<int> get download =>
+      $composableBuilder(column: $table.download, builder: (column) => column);
+}
+
+class $$TrafficSourceCheckpointsTableTableManager
+    extends
+        RootTableManager<
+          _$AppDatabase,
+          $TrafficSourceCheckpointsTable,
+          TrafficSourceCheckpointRecord,
+          $$TrafficSourceCheckpointsTableFilterComposer,
+          $$TrafficSourceCheckpointsTableOrderingComposer,
+          $$TrafficSourceCheckpointsTableAnnotationComposer,
+          $$TrafficSourceCheckpointsTableCreateCompanionBuilder,
+          $$TrafficSourceCheckpointsTableUpdateCompanionBuilder,
+          (
+            TrafficSourceCheckpointRecord,
+            BaseReferences<
+              _$AppDatabase,
+              $TrafficSourceCheckpointsTable,
+              TrafficSourceCheckpointRecord
+            >,
+          ),
+          TrafficSourceCheckpointRecord,
+          PrefetchHooks Function()
+        > {
+  $$TrafficSourceCheckpointsTableTableManager(
+    _$AppDatabase db,
+    $TrafficSourceCheckpointsTable table,
+  ) : super(
+        TableManagerState(
+          db: db,
+          table: table,
+          createFilteringComposer:
+              () => $$TrafficSourceCheckpointsTableFilterComposer(
+                $db: db,
+                $table: table,
+              ),
+          createOrderingComposer:
+              () => $$TrafficSourceCheckpointsTableOrderingComposer(
+                $db: db,
+                $table: table,
+              ),
+          createComputedFieldComposer:
+              () => $$TrafficSourceCheckpointsTableAnnotationComposer(
+                $db: db,
+                $table: table,
+              ),
+          updateCompanionCallback:
+              ({
+                Value<String> sessionId = const Value.absent(),
+                Value<String> kind = const Value.absent(),
+                Value<String> targetId = const Value.absent(),
+                Value<int> upload = const Value.absent(),
+                Value<int> download = const Value.absent(),
+                Value<int> rowid = const Value.absent(),
+              }) => TrafficSourceCheckpointsCompanion(
+                sessionId: sessionId,
+                kind: kind,
+                targetId: targetId,
+                upload: upload,
+                download: download,
+                rowid: rowid,
+              ),
+          createCompanionCallback:
+              ({
+                required String sessionId,
+                required String kind,
+                required String targetId,
+                required int upload,
+                required int download,
+                Value<int> rowid = const Value.absent(),
+              }) => TrafficSourceCheckpointsCompanion.insert(
+                sessionId: sessionId,
+                kind: kind,
+                targetId: targetId,
+                upload: upload,
+                download: download,
+                rowid: rowid,
+              ),
+          withReferenceMapper:
+              (p0) =>
+                  p0
+                      .map(
+                        (e) => (
+                          e.readTable(table),
+                          BaseReferences(db, table, e),
+                        ),
+                      )
+                      .toList(),
+          prefetchHooksCallback: null,
+        ),
+      );
+}
+
+typedef $$TrafficSourceCheckpointsTableProcessedTableManager =
+    ProcessedTableManager<
+      _$AppDatabase,
+      $TrafficSourceCheckpointsTable,
+      TrafficSourceCheckpointRecord,
+      $$TrafficSourceCheckpointsTableFilterComposer,
+      $$TrafficSourceCheckpointsTableOrderingComposer,
+      $$TrafficSourceCheckpointsTableAnnotationComposer,
+      $$TrafficSourceCheckpointsTableCreateCompanionBuilder,
+      $$TrafficSourceCheckpointsTableUpdateCompanionBuilder,
+      (
+        TrafficSourceCheckpointRecord,
+        BaseReferences<
+          _$AppDatabase,
+          $TrafficSourceCheckpointsTable,
+          TrafficSourceCheckpointRecord
+        >,
+      ),
+      TrafficSourceCheckpointRecord,
+      PrefetchHooks Function()
+    >;
 
 class $AppDatabaseManager {
   final _$AppDatabase _db;
@@ -4946,4 +6700,9 @@ class $AppDatabaseManager {
       $$TrafficSourcesTableTableManager(_db, _db.trafficSources);
   $$TrafficCheckpointsTableTableManager get trafficCheckpoints =>
       $$TrafficCheckpointsTableTableManager(_db, _db.trafficCheckpoints);
+  $$TrafficSourceCheckpointsTableTableManager get trafficSourceCheckpoints =>
+      $$TrafficSourceCheckpointsTableTableManager(
+        _db,
+        _db.trafficSourceCheckpoints,
+      );
 }

@@ -5,8 +5,12 @@ import 'package:rainlink/domain/core/runtime_settings.dart';
 
 class FakeDesktopIntegration implements DesktopIntegration {
   @override
-  Future<bool> canNotifySubscriptionExpiry() async =>
-      (await inspect()).trayVisible;
+  Future<bool> canNotifySubscriptionExpiry() async {
+    final status = await inspect();
+    return status.notificationsAvailable &&
+        (!status.notificationsRequireTray || status.trayVisible);
+  }
+
   final events = StreamController<DesktopAction>.broadcast();
   final trayChanges = <bool>[];
   final notices = <String>[];
@@ -40,10 +44,11 @@ class FakeDesktopIntegration implements DesktopIntegration {
   }
 
   @override
-  Future<void> updateTray(
-      {required String label,
-      required String actionLabel,
-      required bool busy}) async {}
+  Future<void> updateTray({
+    required String label,
+    required String actionLabel,
+    required bool busy,
+  }) async {}
   @override
   Future<void> showWindow() async {
     visible = true;
@@ -61,8 +66,10 @@ class FakeDesktopIntegration implements DesktopIntegration {
   }
 
   @override
-  Future<void> notifySubscriptionExpiry(
-      {required int expiringSoon, required int expired}) async {
+  Future<void> notifySubscriptionExpiry({
+    required int expiringSoon,
+    required int expired,
+  }) async {
     await onExpiry?.call(expiringSoon, expired);
     expiryNotices.add((expiringSoon: expiringSoon, expired: expired));
   }

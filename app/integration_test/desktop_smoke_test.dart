@@ -15,27 +15,38 @@ import 'package:rainlink/main.dart' as app;
 void main() {
   IntegrationTestWidgetsFlutterBinding.ensureInitialized();
 
-  testWidgets('desktop host handshake and theme persist to real SQLite',
-      (tester) async {
+  testWidgets('desktop host handshake and theme persist to real SQLite', (
+    tester,
+  ) async {
     await app.main();
     await tester.pumpAndSettle();
     expect(find.byType(RainlinkApp), findsOneWidget);
-    final container =
-        ProviderScope.containerOf(tester.element(find.byType(RainlinkApp)));
+    final container = ProviderScope.containerOf(
+      tester.element(find.byType(RainlinkApp)),
+    );
     final status = await container.read(coreStatusProvider.future);
-    expect(status.hostAvailable, isTrue,
-        reason:
-            'Run tools/dev.ps1 smoke or tools/dev.sh smoke to build and locate the host.');
-    expect(status.capabilities.connect, Platform.isWindows);
-    if (Platform.isWindows) {
+    expect(
+      status.hostAvailable,
+      isTrue,
+      reason:
+          'Run tools/dev.ps1 smoke or tools/dev.sh smoke to build and locate the host.',
+    );
+    expect(status.capabilities.connect, Platform.isWindows || Platform.isLinux);
+    if (Platform.isWindows || Platform.isLinux) {
       expect(status.coreVersion, isNotEmpty);
+    }
+    if (Platform.isWindows) {
       expect(status.capabilities.systemProxy, isTrue);
     }
+    if (Platform.isLinux) {
+      expect(status.capabilities.tun, isFalse);
+    }
     expect(
-        tester
-            .widget<FilledButton>(find.byKey(const ValueKey('connect-button')))
-            .onPressed,
-        isNull);
+      tester
+          .widget<FilledButton>(find.byKey(const ValueKey('connect-button')))
+          .onPressed,
+      isNull,
+    );
 
     final original = container.read(themeControllerProvider);
     final database = container.read(databaseProvider);

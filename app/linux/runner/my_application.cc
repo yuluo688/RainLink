@@ -6,6 +6,7 @@
 #endif
 
 #include "flutter/generated_plugin_registrant.h"
+#include "desktop_channel.h"
 
 struct _MyApplication {
   GtkApplication parent_instance;
@@ -14,11 +15,35 @@ struct _MyApplication {
 
 G_DEFINE_TYPE(MyApplication, my_application, GTK_TYPE_APPLICATION)
 
+// file_selector_linux 0.9.3+2 rebuilds its Pigeon channel during dispose. Release
+// the view-bound handler while the engine is still alive, before GTK destroys
+// the child FlView. Waiting for messenger shutdown registers against a dead
+// engine. Keep this channel name in sync when upgrading file_selector_linux.
+static void release_file_selector(GtkWidget*, FlBinaryMessenger* messenger) {
+  constexpr char kFileChooserChannel[] =
+      "dev.flutter.pigeon.file_selector_linux.FileSelectorApi.showFileChooser";
+  fl_binary_messenger_set_message_handler_on_channel(
+      messenger, kFileChooserChannel, nullptr, nullptr, nullptr);
+}
+
 // Implements GApplication::activate.
 static void my_application_activate(GApplication* application) {
   MyApplication* self = MY_APPLICATION(application);
   GtkWindow* window =
       GTK_WINDOW(gtk_application_window_new(GTK_APPLICATION(application)));
+
+  // A full 512px icon can exceed the X11 property request limit. Keep the
+  // window icon bounded; desktop launchers still receive the original 512px PNG.
+  constexpr int kWindowIconSize = 128;
+  g_autoptr(GError) icon_error = nullptr;
+  g_autoptr(GdkPixbuf) icon = gdk_pixbuf_new_from_resource_at_scale(
+      "/dev/rainlink/rainlink/rainlink.png", kWindowIconSize, kWindowIconSize,
+      TRUE, &icon_error);
+  if (icon != nullptr) {
+    gtk_window_set_icon(window, icon);
+  } else {
+    g_warning("Unable to load RainLink window icon: %s", icon_error->message);
+  }
 
   // Use a header bar when running in GNOME as this is the common style used
   // by applications and is the setup most users will be using (e.g. Ubuntu
@@ -58,6 +83,11 @@ static void my_application_activate(GApplication* application) {
   gtk_container_add(GTK_CONTAINER(window), GTK_WIDGET(view));
 
   fl_register_plugins(FL_PLUGIN_REGISTRY(view));
+  rainlink_register_desktop_channel(
+      window, fl_engine_get_binary_messenger(fl_view_get_engine(view)));
+  g_signal_connect_object(
+      window, "destroy", G_CALLBACK(release_file_selector),
+      fl_engine_get_binary_messenger(fl_view_get_engine(view)), G_CONNECT_DEFAULT);
 
   gtk_widget_grab_focus(GTK_WIDGET(view));
 }

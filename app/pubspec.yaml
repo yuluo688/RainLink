@@ -4,8 +4,8 @@ publish_to: 'none'
 version: 0.1.0+4
 
 environment:
-  sdk: ^3.6.2
-  flutter: '>=3.27.4'
+  sdk: ^3.7.0
+  flutter: '>=3.29.3'
 
 dependencies:
   flutter:
@@ -18,13 +18,14 @@ dependencies:
   drift: 2.24.0
   crypto: 3.0.7
   yaml: 3.1.4
-  path: 1.9.0
+  path: 1.9.1
   path_provider: 2.1.5
   file_selector: 1.0.3
+  mobile_scanner: 7.0.1
   sqlite3_flutter_libs: 0.5.29
   screen_retriever: 0.2.2
   window_manager: 0.4.3
-  stack_trace: 1.12.0
+  stack_trace: 1.12.1
 
 dev_dependencies:
   flutter_test:

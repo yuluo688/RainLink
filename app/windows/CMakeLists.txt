@@ -94,6 +94,12 @@ endif()
 set(NATIVE_ASSETS_DIR "${PROJECT_BUILD_DIR}native_assets/windows/")
 install(DIRECTORY "${NATIVE_ASSETS_DIR}"
    DESTINATION "${INSTALL_BUNDLE_LIB_DIR}"
+   COMPONENT Runtime
+   PATTERN "native_assets.json" EXCLUDE)
+# Flutter tests share this directory and write absolute development paths into
+# native_assets.json. It is test metadata, not a bundled runtime manifest.
+# Also remove a copy left by an older CMake install in the same build directory.
+install(CODE "file(REMOVE \"${INSTALL_BUNDLE_LIB_DIR}/native_assets.json\")"
    COMPONENT Runtime)
 
 # Fully re-copy the assets directory on each build to avoid having stale files

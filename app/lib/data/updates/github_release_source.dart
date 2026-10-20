@@ -10,11 +10,11 @@ const maximumUpdateBytes = 300 * 1024 * 1024;
 /// integration tests without weakening the production HTTPS/redirect policy.
 class ReleaseOrigin {
   ReleaseOrigin()
-      : api = Uri.https('api.github.com', '/repos/yuluo688/RainLink/releases'),
-        web = Uri.https('github.com', '/yuluo688/RainLink/releases');
+    : api = Uri.https('api.github.com', '/repos/yuluo688/RainLink/releases'),
+      web = Uri.https('github.com', '/yuluo688/RainLink/releases');
   ReleaseOrigin.loopback(Uri base)
-      : api = base.resolve('/repos/yuluo688/RainLink/releases'),
-        web = base.resolve('/yuluo688/RainLink/releases') {
+    : api = base.resolve('/repos/yuluo688/RainLink/releases'),
+      web = base.resolve('/yuluo688/RainLink/releases') {
     if (base.scheme != 'http' ||
         !['127.0.0.1', '[::1]', 'localhost'].contains(base.host)) {
       throw ArgumentError('Loopback HTTP origin required');
@@ -42,31 +42,36 @@ class ReleaseOrigin {
 }
 
 class GithubReleaseSource implements AppReleaseSource {
-  GithubReleaseSource(
-      {ReleaseOrigin? origin,
-      this.target = 'windows-x64',
-      this.timeout = const Duration(seconds: 20),
-      HttpClient Function()? createClient})
-      : origin = origin ?? ReleaseOrigin(),
-        _createClient = createClient ?? HttpClient.new;
+  GithubReleaseSource({
+    ReleaseOrigin? origin,
+    this.target = 'windows-x64',
+    this.extension = 'zip',
+    this.timeout = const Duration(seconds: 20),
+    HttpClient Function()? createClient,
+  }) : origin = origin ?? ReleaseOrigin(),
+       _createClient = createClient ?? HttpClient.new;
   final ReleaseOrigin origin;
   final String target;
+  final String extension;
   final Duration timeout;
   final HttpClient Function() _createClient;
   static const _maximumBodyBytes = 4 * 1024 * 1024;
 
   @override
-  Future<AppRelease?> latest(
-      {required bool includePreview,
-      required UpdateCancellation cancellation}) async {
+  Future<AppRelease?> latest({
+    required bool includePreview,
+    required UpdateCancellation cancellation,
+  }) async {
     final client = _createClient()..connectionTimeout = timeout;
     cancellation.bind(() => client.close(force: true));
     try {
-      return await _latest(client, includePreview, cancellation)
-          .timeout(timeout, onTimeout: () {
-        client.close(force: true);
-        throw const UpdateException('检查更新超时，请检查网络后重试');
-      });
+      return await _latest(client, includePreview, cancellation).timeout(
+        timeout,
+        onTimeout: () {
+          client.close(force: true);
+          throw const UpdateException('检查更新超时，请检查网络后重试');
+        },
+      );
     } on UpdateException {
       rethrow;
     } on Exception {
@@ -79,13 +84,18 @@ class GithubReleaseSource implements AppReleaseSource {
   }
 
   Future<AppRelease?> _latest(
-      HttpClient client, bool preview, UpdateCancellation cancellation) async {
+    HttpClient client,
+    bool preview,
+    UpdateCancellation cancellation,
+  ) async {
     cancellation.check();
     final request = await client.getUrl(origin.releasesEndpoint);
     request.followRedirects = false;
     request.headers.set(HttpHeaders.userAgentHeader, 'RainLink-update-check');
-    request.headers
-        .set(HttpHeaders.acceptHeader, 'application/vnd.github+json');
+    request.headers.set(
+      HttpHeaders.acceptHeader,
+      'application/vnd.github+json',
+    );
     request.headers.set('X-GitHub-Api-Version', '2022-11-28');
     final response = await request.close();
     if (response.statusCode == 403 || response.statusCode == 429) {
@@ -132,7 +142,8 @@ class GithubReleaseSource implements AppReleaseSource {
       final isPreview = item['prerelease'] == true || version.isPreview;
       if (isPreview && !preview) continue;
       final page = Uri.tryParse(
-          item['html_url'] is String ? item['html_url'] as String : '');
+        item['html_url'] is String ? item['html_url'] as String : '',
+      );
       final published = item['published_at'];
       final at = published is String ? DateTime.tryParse(published) : null;
       final notes = item['body'];
@@ -147,7 +158,7 @@ class GithubReleaseSource implements AppReleaseSource {
         throw const UpdateException('更新包信息格式无效');
       }
       final expectedName =
-          'RainLink-${tag.startsWith('v') ? tag.substring(1) : tag}-$target.zip';
+          'RainLink-${tag.startsWith('v') ? tag.substring(1) : tag}-$target.$extension';
       ReleaseAsset? asset;
       for (final value in assets) {
         if (value is! Map<String, Object?>) {
@@ -170,21 +181,24 @@ class GithubReleaseSource implements AppReleaseSource {
           throw const UpdateException('更新包地址、大小或校验信息无效');
         }
         asset = ReleaseAsset(
-            name: expectedName,
-            url: url,
-            bytes: bytes,
-            sha256:
-                digest is String ? digest.substring(7).toLowerCase() : null);
+          name: expectedName,
+          url: url,
+          bytes: bytes,
+          sha256: digest is String ? digest.substring(7).toLowerCase() : null,
+        );
       }
       final release = AppRelease(
-          tag: tag,
-          version: version,
-          notes: (notes as String? ?? '')
-              .replaceAll(RegExp(r'[\x00-\x08\x0B\x0C\x0E-\x1F]'), ''),
-          publishedAt: at.toUtc(),
-          preview: isPreview,
-          page: page ?? origin.page(tag),
-          asset: asset);
+        tag: tag,
+        version: version,
+        notes: (notes as String? ?? '').replaceAll(
+          RegExp(r'[\x00-\x08\x0B\x0C\x0E-\x1F]'),
+          '',
+        ),
+        publishedAt: at.toUtc(),
+        preview: isPreview,
+        page: page ?? origin.page(tag),
+        asset: asset,
+      );
       if (best == null || version.compareTo(best.version) > 0) best = release;
     }
     return best;

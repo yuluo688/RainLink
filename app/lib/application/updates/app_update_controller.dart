@@ -6,24 +6,36 @@ import '../../app/build_info.g.dart';
 import '../../domain/updates/app_update.dart';
 
 final appReleaseSourceProvider = Provider<AppReleaseSource?>((ref) => null);
-final updatePreferencesProvider =
-    Provider<UpdatePreferencesRepository?>((ref) => null);
-final updateDownloaderProvider =
-    Provider<UpdatePackageDownloader?>((ref) => null);
+final updatePreferencesProvider = Provider<UpdatePreferencesRepository?>(
+  (ref) => null,
+);
+final updateDownloaderProvider = Provider<UpdatePackageDownloader?>(
+  (ref) => null,
+);
 final updateInstallerProvider = Provider<UpdateInstaller?>((ref) => null);
-final updateReceiptProvider =
-    Provider<Future<String?> Function()?>((ref) => null);
+
+enum UpdateInstallationMode { desktopRestart, androidInstaller }
+
+final updateInstallationModeProvider = Provider<UpdateInstallationMode>(
+  (ref) => UpdateInstallationMode.desktopRestart,
+);
+final updateReceiptProvider = Provider<Future<String?> Function()?>(
+  (ref) => null,
+);
 final startupReadyProvider = Provider<Future<void>>((ref) => Future.value());
 final updateShutdownProvider = Provider((ref) => UpdateShutdownCoordinator());
 final appUpdateControllerProvider =
-    StateNotifierProvider<AppUpdateController, AppUpdateState>((ref) =>
-        AppUpdateController(
-            source: ref.watch(appReleaseSourceProvider),
-            preferences: ref.watch(updatePreferencesProvider),
-            downloader: ref.watch(updateDownloaderProvider),
-            installer: ref.watch(updateInstallerProvider),
-            receipt: ref.watch(updateReceiptProvider),
-            shutdown: ref.watch(updateShutdownProvider)));
+    StateNotifierProvider<AppUpdateController, AppUpdateState>(
+      (ref) => AppUpdateController(
+        source: ref.watch(appReleaseSourceProvider),
+        preferences: ref.watch(updatePreferencesProvider),
+        downloader: ref.watch(updateDownloaderProvider),
+        installer: ref.watch(updateInstallerProvider),
+        installationMode: ref.watch(updateInstallationModeProvider),
+        receipt: ref.watch(updateReceiptProvider),
+        shutdown: ref.watch(updateShutdownProvider),
+      ),
+    );
 
 /// The window owns safe shutdown; the update page does not bypass it.
 class UpdateShutdownCoordinator {
@@ -53,22 +65,24 @@ enum AppUpdatePhase {
   downloaded,
   preparing,
   installing,
-  failed
+  restartRequired,
+  failed,
 }
 
 class AppUpdateState {
-  const AppUpdateState(
-      {this.phase = AppUpdatePhase.idle,
-      this.preferences = const UpdatePreferences(),
-      this.loading = false,
-      this.saving = false,
-      this.error = '',
-      this.notice = '',
-      this.release,
-      this.package,
-      this.checkedAt,
-      this.received = 0,
-      this.total = 0});
+  const AppUpdateState({
+    this.phase = AppUpdatePhase.idle,
+    this.preferences = const UpdatePreferences(),
+    this.loading = false,
+    this.saving = false,
+    this.error = '',
+    this.notice = '',
+    this.release,
+    this.package,
+    this.checkedAt,
+    this.received = 0,
+    this.total = 0,
+  });
   final AppUpdatePhase phase;
   final UpdatePreferences preferences;
   final bool loading;
@@ -80,6 +94,7 @@ class AppUpdateState {
   final DateTime? checkedAt;
   final int received;
   final int total;
+  bool get awaitingRestart => phase == AppUpdatePhase.restartRequired;
   bool get working =>
       loading ||
       saving ||
@@ -87,55 +102,62 @@ class AppUpdateState {
         AppUpdatePhase.checking,
         AppUpdatePhase.downloading,
         AppUpdatePhase.preparing,
-        AppUpdatePhase.installing
+        AppUpdatePhase.installing,
       ].contains(phase);
-  AppUpdateState copyWith(
-          {AppUpdatePhase? phase,
-          UpdatePreferences? preferences,
-          bool? loading,
-          bool? saving,
-          String? error,
-          String? notice,
-          AppRelease? release,
-          DownloadedUpdate? package,
-          DateTime? checkedAt,
-          int? received,
-          int? total,
-          bool clearRelease = false,
-          bool clearPackage = false}) =>
-      AppUpdateState(
-          phase: phase ?? this.phase,
-          preferences: preferences ?? this.preferences,
-          loading: loading ?? this.loading,
-          saving: saving ?? this.saving,
-          error: error ?? this.error,
-          notice: notice ?? this.notice,
-          release: clearRelease ? null : release ?? this.release,
-          package: clearPackage ? null : package ?? this.package,
-          checkedAt: checkedAt ?? this.checkedAt,
-          received: received ?? this.received,
-          total: total ?? this.total);
+  AppUpdateState copyWith({
+    AppUpdatePhase? phase,
+    UpdatePreferences? preferences,
+    bool? loading,
+    bool? saving,
+    String? error,
+    String? notice,
+    AppRelease? release,
+    DownloadedUpdate? package,
+    DateTime? checkedAt,
+    int? received,
+    int? total,
+    bool clearRelease = false,
+    bool clearPackage = false,
+  }) => AppUpdateState(
+    phase: phase ?? this.phase,
+    preferences: preferences ?? this.preferences,
+    loading: loading ?? this.loading,
+    saving: saving ?? this.saving,
+    error: error ?? this.error,
+    notice: notice ?? this.notice,
+    release: clearRelease ? null : release ?? this.release,
+    package: clearPackage ? null : package ?? this.package,
+    checkedAt: checkedAt ?? this.checkedAt,
+    received: received ?? this.received,
+    total: total ?? this.total,
+  );
 }
 
 class AppUpdateController extends StateNotifier<AppUpdateState> {
-  AppUpdateController(
-      {required this.source,
-      required this.preferences,
-      required this.downloader,
-      required this.installer,
-      required this.shutdown,
-      this.receipt,
-      String currentVersion = rainlinkVersion})
-      : current = AppVersion.tryParse(currentVersion),
-        super(AppUpdateState(
-            phase: source == null
-                ? AppUpdatePhase.unavailable
-                : AppUpdatePhase.idle));
+  AppUpdateController({
+    required this.source,
+    required this.preferences,
+    required this.downloader,
+    required this.installer,
+    required this.shutdown,
+    this.installationMode = UpdateInstallationMode.desktopRestart,
+    this.receipt,
+    String currentVersion = rainlinkVersion,
+  }) : current = AppVersion.tryParse(currentVersion),
+       super(
+         AppUpdateState(
+           phase:
+               source == null
+                   ? AppUpdatePhase.unavailable
+                   : AppUpdatePhase.idle,
+         ),
+       );
   final AppReleaseSource? source;
   final UpdatePreferencesRepository? preferences;
   final UpdatePackageDownloader? downloader;
   final UpdateInstaller? installer;
   final UpdateShutdownCoordinator shutdown;
+  final UpdateInstallationMode installationMode;
   final Future<String?> Function()? receipt;
   final AppVersion? current;
   Future<void>? _initializing;
@@ -158,7 +180,10 @@ class AppUpdateController extends StateNotifier<AppUpdateState> {
       if (!mounted || _closing) return;
       _initialized = true;
       state = state.copyWith(
-          preferences: value, loading: false, notice: previousResult ?? '');
+        preferences: value,
+        loading: false,
+        notice: previousResult ?? '',
+      );
     } on Exception {
       if (mounted && !_closing) {
         state = state.copyWith(loading: false, error: '无法读取更新偏好，请检查本地存储后重试');
@@ -179,7 +204,11 @@ class AppUpdateController extends StateNotifier<AppUpdateState> {
   }
 
   Future<void> savePreferences(UpdatePreferences next) {
-    if (!mounted || _closing || state.working || !_initialized) {
+    if (!mounted ||
+        _closing ||
+        state.working ||
+        state.awaitingRestart ||
+        !_initialized) {
       return Future.value();
     }
     final operation = _savePreferences(next);
@@ -197,11 +226,12 @@ class AppUpdateController extends StateNotifier<AppUpdateState> {
       final changed = next.includePreview != state.preferences.includePreview;
       final previousPackage = changed ? state.package : null;
       state = state.copyWith(
-          preferences: next,
-          saving: false,
-          phase: changed ? AppUpdatePhase.idle : null,
-          clearRelease: changed,
-          clearPackage: changed);
+        preferences: next,
+        saving: false,
+        phase: changed ? AppUpdatePhase.idle : null,
+        clearRelease: changed,
+        clearPackage: changed,
+      );
       await _discard(previousPackage);
     } on Exception {
       if (mounted) {
@@ -217,6 +247,7 @@ class AppUpdateController extends StateNotifier<AppUpdateState> {
         _closing ||
         !_initialized ||
         state.working ||
+        state.awaitingRestart ||
         source == null) {
       return;
     }
@@ -228,20 +259,23 @@ class AppUpdateController extends StateNotifier<AppUpdateState> {
     final generation = _generation;
     try {
       final release = await source?.latest(
-          includePreview: state.preferences.includePreview,
-          cancellation: token);
+        includePreview: state.preferences.includePreview,
+        cancellation: token,
+      );
       if (!_current(generation, token)) return;
       final previousPackage = state.package;
       state = state.copyWith(
-          phase: release == null
-              ? AppUpdatePhase.empty
-              : release.version.compareTo(current ?? release.version) > 0
-                  ? AppUpdatePhase.available
-                  : AppUpdatePhase.current,
-          release: release,
-          clearRelease: release == null,
-          clearPackage: true,
-          checkedAt: DateTime.now());
+        phase:
+            release == null
+                ? AppUpdatePhase.empty
+                : release.version.compareTo(current ?? release.version) > 0
+                ? AppUpdatePhase.available
+                : AppUpdatePhase.current,
+        release: release,
+        clearRelease: release == null,
+        clearPackage: true,
+        checkedAt: DateTime.now(),
+      );
       await _discard(previousPackage);
     } on UpdateCancelled {
       if (_current(generation, token)) {
@@ -250,7 +284,9 @@ class AppUpdateController extends StateNotifier<AppUpdateState> {
     } on Exception catch (error) {
       if (_current(generation, token)) {
         state = state.copyWith(
-            phase: AppUpdatePhase.failed, error: _message(error, '检查更新失败，请重试'));
+          phase: AppUpdatePhase.failed,
+          error: _message(error, '检查更新失败，请重试'),
+        );
       }
     } finally {
       if (identical(_cancellation, token)) _cancellation = null;
@@ -264,6 +300,7 @@ class AppUpdateController extends StateNotifier<AppUpdateState> {
     if (!mounted ||
         _closing ||
         state.working ||
+        state.awaitingRestart ||
         release == null ||
         service == null ||
         current == null ||
@@ -274,20 +311,25 @@ class AppUpdateController extends StateNotifier<AppUpdateState> {
     final generation = _generation;
     var previousPercent = -1;
     try {
-      final package =
-          await service.download(release, token, onProgress: (received, total) {
-        if (!_current(generation, token)) return;
-        final percent = total > 0 ? received * 100 ~/ total : 0;
-        if (percent == previousPercent) return;
-        previousPercent = percent;
-        state = state.copyWith(received: received, total: total);
-      });
+      final package = await service.download(
+        release,
+        token,
+        onProgress: (received, total) {
+          if (!_current(generation, token)) return;
+          final percent = total > 0 ? received * 100 ~/ total : 0;
+          if (percent == previousPercent) return;
+          previousPercent = percent;
+          state = state.copyWith(received: received, total: total);
+        },
+      );
       if (!_current(generation, token)) {
         await _discard(package);
         return;
       }
-      state =
-          state.copyWith(phase: AppUpdatePhase.downloaded, package: package);
+      state = state.copyWith(
+        phase: AppUpdatePhase.downloaded,
+        package: package,
+      );
     } on UpdateCancelled {
       if (_current(generation, token)) {
         state = state.copyWith(phase: _settledPhase());
@@ -295,7 +337,9 @@ class AppUpdateController extends StateNotifier<AppUpdateState> {
     } on Exception catch (error) {
       if (_current(generation, token)) {
         state = state.copyWith(
-            phase: AppUpdatePhase.failed, error: _message(error, '下载更新失败，请重试'));
+          phase: AppUpdatePhase.failed,
+          error: _message(error, '下载更新失败，请重试'),
+        );
       }
     } finally {
       if (identical(_cancellation, token)) _cancellation = null;
@@ -335,6 +379,14 @@ class AppUpdateController extends StateNotifier<AppUpdateState> {
       }
       state = state.copyWith(phase: AppUpdatePhase.installing);
       await shutdown.request(prepared);
+      if (installationMode == UpdateInstallationMode.androidInstaller &&
+          _current(generation, token)) {
+        state = state.copyWith(
+          phase: AppUpdatePhase.restartRequired,
+          clearPackage: true,
+        );
+        await _discard(package);
+      }
     } on Exception catch (error) {
       String? cleanupError;
       try {
@@ -344,8 +396,9 @@ class AppUpdateController extends StateNotifier<AppUpdateState> {
       }
       if (_current(generation, token)) {
         state = state.copyWith(
-            phase: AppUpdatePhase.downloaded,
-            error: cleanupError ?? _message(error, '安装交接失败，应用保持打开，请重试'));
+          phase: AppUpdatePhase.downloaded,
+          error: cleanupError ?? _message(error, '安装交接失败，应用保持打开，请重试'),
+        );
       }
     } finally {
       if (identical(_cancellation, token)) _cancellation = null;
@@ -383,7 +436,10 @@ class AppUpdateController extends StateNotifier<AppUpdateState> {
   }
 
   void cancel() {
-    if (!mounted || _closing || state.phase == AppUpdatePhase.installing) {
+    if (!mounted ||
+        _closing ||
+        state.awaitingRestart ||
+        state.phase == AppUpdatePhase.installing) {
       return;
     }
     ++_generation;
@@ -419,10 +475,11 @@ class AppUpdateController extends StateNotifier<AppUpdateState> {
     _cancellation = null;
     if (!_initialized) _initializing = null;
     state = state.copyWith(
-        phase: _settledPhase(),
-        loading: false,
-        saving: false,
-        error: message ?? '安装交接未完成，应用保持打开，可重试');
+      phase: _settledPhase(),
+      loading: false,
+      saving: false,
+      error: message ?? '安装交接未完成，应用保持打开，可重试',
+    );
   }
 
   @override

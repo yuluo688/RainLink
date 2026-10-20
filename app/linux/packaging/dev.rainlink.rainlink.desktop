@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=RainLink
+Comment=多协议网络客户端
+Exec=rainlink
+Icon=dev.rainlink.rainlink
+Terminal=false
+Categories=Network;
+StartupWMClass=dev.rainlink.rainlink

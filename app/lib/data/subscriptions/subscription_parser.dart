@@ -30,11 +30,11 @@ Uri validateSubscriptionUrl(String input) {
 String _decode64(String value) =>
     utf8.decode(base64Url.decode(base64Url.normalize(value.trim())));
 String _string(Object? value, [String fallback = '']) => switch (value) {
-      null => fallback,
-      String() => value,
-      num() => value.toString(),
-      _ => throw const NodeException('节点字段类型无效'),
-    };
+  null => fallback,
+  String() => value,
+  num() => value.toString(),
+  _ => throw const NodeException('节点字段类型无效'),
+};
 Map<String, Object?> _map(Object? value) {
   if (value == null) return const {};
   if (value is! Map || value.keys.any((key) => key is! String)) {
@@ -53,7 +53,10 @@ int _port(Object? value) => int.tryParse(_string(value)) ?? 0;
 
 /// Only imports upstream nodes. Remote rules, scripts and local listeners are never applied.
 SubscriptionDocument parseSubscription(
-    String body, Map<String, String> headers, Uri source) {
+  String body,
+  Map<String, String> headers,
+  Uri source,
+) {
   var text = body.trim().replaceFirst('\uFEFF', '');
   if (text.isEmpty) throw const NodeException('订阅内容为空');
   if (!text.contains('://') &&
@@ -63,7 +66,8 @@ SubscriptionDocument parseSubscription(
       text = _decode64(text.replaceAll(RegExp(r'\s'), ''));
     } on FormatException {
       throw const NodeException(
-          '无法识别订阅格式，请使用 Clash YAML、sing-box JSON 或节点分享链接列表');
+        '无法识别订阅格式，请使用 Clash YAML、sing-box JSON 或节点分享链接列表',
+      );
     }
   }
   final nodes = <NodeDraft>[];
@@ -75,10 +79,13 @@ SubscriptionDocument parseSubscription(
       validateNode(node);
       if (_isProviderNotice(node)) {
         skipped++;
-        issues.add(SubscriptionIssue(
+        issues.add(
+          SubscriptionIssue(
             kind: SubscriptionIssueKind.notice,
             item: item,
-            reason: '服务商提示信息，不是可连接节点'));
+            reason: '服务商提示信息，不是可连接节点',
+          ),
+        );
       } else {
         nodes.add(node);
       }
@@ -86,22 +93,34 @@ SubscriptionDocument parseSubscription(
       skipped++;
       // Parser/validator messages are owned static text; never use the input,
       // decoded URI, YAML exception text or node name as a diagnostic.
-      issues.add(SubscriptionIssue(
-          kind: error.message.contains('不支持')
-              ? SubscriptionIssueKind.unsupported
-              : SubscriptionIssueKind.invalid,
+      issues.add(
+        SubscriptionIssue(
+          kind:
+              error.message.contains('不支持')
+                  ? SubscriptionIssueKind.unsupported
+                  : SubscriptionIssueKind.invalid,
           item: item,
-          reason: error.message));
+          reason: error.message,
+        ),
+      );
     } on FormatException {
       skipped++;
-      issues.add(SubscriptionIssue(
+      issues.add(
+        SubscriptionIssue(
           kind: SubscriptionIssueKind.invalid,
           item: item,
-          reason: '链接编码或字段格式无效'));
+          reason: '链接编码或字段格式无效',
+        ),
+      );
     } on TypeError {
       skipped++;
-      issues.add(SubscriptionIssue(
-          kind: SubscriptionIssueKind.invalid, item: item, reason: '节点字段类型无效'));
+      issues.add(
+        SubscriptionIssue(
+          kind: SubscriptionIssueKind.invalid,
+          item: item,
+          reason: '节点字段类型无效',
+        ),
+      );
     }
   }
 
@@ -125,48 +144,54 @@ SubscriptionDocument parseSubscription(
     }
     for (var index = 0; index < proxies.length; index++) {
       add(
-          index + 1,
-          () => singbox
-              ? parseSingBoxOutbound(_map(proxies[index]))
-              : _clashNode(_map(proxies[index])));
+        index + 1,
+        () =>
+            singbox
+                ? parseSingBoxOutbound(_map(proxies[index]))
+                : _clashNode(_map(proxies[index])),
+      );
     }
-    for (final entry in const {
-      'proxy-groups': '代理策略组',
-      'rules': '分流规则',
-      'proxy-providers': '节点来源',
-      'rule-providers': '规则来源',
-      'script': '脚本',
-      'dns': 'DNS 设置',
-      'tun': 'TUN 设置',
-      'inbounds': '入站与监听设置',
-      'route': '路由设置',
-      'experimental': '实验设置',
-      'endpoints': '端点设置',
-      'log': '日志设置',
-      'services': '服务设置',
-      'port': '本地 HTTP 端口',
-      'socks-port': '本地 SOCKS 端口',
-      'mixed-port': '本地混合端口',
-      'redir-port': '重定向端口',
-      'tproxy-port': '透明代理端口',
-      'external-controller': '外部控制接口',
-      'external-ui': '外部控制界面',
-      'secret': '控制接口认证',
-      'allow-lan': '局域网访问设置',
-      'bind-address': '监听地址',
-      'mode': '代理模式',
-      'log-level': '日志级别',
-      'ipv6': 'IPv6 设置',
-    }.entries) {
+    for (final entry
+        in const {
+          'proxy-groups': '代理策略组',
+          'rules': '分流规则',
+          'proxy-providers': '节点来源',
+          'rule-providers': '规则来源',
+          'script': '脚本',
+          'dns': 'DNS 设置',
+          'tun': 'TUN 设置',
+          'inbounds': '入站与监听设置',
+          'route': '路由设置',
+          'experimental': '实验设置',
+          'endpoints': '端点设置',
+          'log': '日志设置',
+          'services': '服务设置',
+          'port': '本地 HTTP 端口',
+          'socks-port': '本地 SOCKS 端口',
+          'mixed-port': '本地混合端口',
+          'redir-port': '重定向端口',
+          'tproxy-port': '透明代理端口',
+          'external-controller': '外部控制接口',
+          'external-ui': '外部控制界面',
+          'secret': '控制接口认证',
+          'allow-lan': '局域网访问设置',
+          'bind-address': '监听地址',
+          'mode': '代理模式',
+          'log-level': '日志级别',
+          'ipv6': 'IPv6 设置',
+        }.entries) {
       final option = configuration[entry.key];
       if (option != null &&
           option != false &&
           option != '' &&
           !(option is Map && option.isEmpty) &&
           !(option is List && option.isEmpty)) {
-        issues.add(SubscriptionIssue(
+        issues.add(
+          SubscriptionIssue(
             kind: SubscriptionIssueKind.configuration,
-            reason: '${entry.value}不会应用，只导入节点'));
+            reason: '${entry.value}不会应用，只导入节点',
+          ),
+        );
       }
     }
     const recognized = {
@@ -200,15 +225,19 @@ SubscriptionDocument parseSubscription(
       'ipv6',
     };
     if (configuration.keys.any((key) => !recognized.contains(key))) {
-      issues.add(const SubscriptionIssue(
+      issues.add(
+        const SubscriptionIssue(
           kind: SubscriptionIssueKind.configuration,
-          reason: '其他全局配置不会应用，只导入节点'));
+          reason: '其他全局配置不会应用，只导入节点',
+        ),
+      );
     }
   } else {
-    final lines = const LineSplitter()
-        .convert(text)
-        .where((v) => v.trim().isNotEmpty && !v.trimLeft().startsWith('#'))
-        .toList();
+    final lines =
+        const LineSplitter()
+            .convert(text)
+            .where((v) => v.trim().isNotEmpty && !v.trimLeft().startsWith('#'))
+            .toList();
     if (lines.length > maxSubscriptionNodes) {
       throw const NodeException('订阅节点超过 2000 个，请缩小订阅范围');
     }
@@ -248,9 +277,10 @@ SubscriptionDocument parseSubscription(
   }
   if (name.isEmpty) {
     final disposition = headers['content-disposition'] ?? '';
-    final match =
-        RegExp(r'''filename\*?=(?:UTF-8''|"?)([^";]+)''', caseSensitive: false)
-            .firstMatch(disposition);
+    final match = RegExp(
+      r'''filename\*?=(?:UTF-8''|"?)([^";]+)''',
+      caseSensitive: false,
+    ).firstMatch(disposition);
     if (match != null) {
       try {
         name = Uri.decodeComponent(match.group(1) ?? '');
@@ -265,40 +295,44 @@ SubscriptionDocument parseSubscription(
   final expires = metadata['expire'];
   final interval = int.tryParse(headers['profile-update-interval'] ?? '');
   return SubscriptionDocument(
-      name: name,
-      nodes: List.unmodifiable(nodes),
-      skippedNodes: skipped,
-      issues: List.unmodifiable(issues),
-      uploaded: metadata['upload'],
-      downloaded: metadata['download'],
-      total: metadata['total'],
-      expiresAt: expires != null && expires > 0 && expires < 253402300800
-          ? DateTime.fromMillisecondsSinceEpoch(expires * 1000, isUtc: true)
-          : null,
-      intervalHours:
-          interval != null && interval >= 1 && interval <= 168 ? interval : 24);
+    name: name,
+    nodes: List.unmodifiable(nodes),
+    skippedNodes: skipped,
+    issues: List.unmodifiable(issues),
+    uploaded: metadata['upload'],
+    downloaded: metadata['download'],
+    total: metadata['total'],
+    expiresAt:
+        expires != null && expires > 0 && expires < 253402300800
+            ? DateTime.fromMillisecondsSinceEpoch(expires * 1000, isUtc: true)
+            : null,
+    intervalHours:
+        interval != null && interval >= 1 && interval <= 168 ? interval : 24,
+  );
 }
 
 bool _isProviderNotice(NodeDraft node) {
-  final local = node.server.toLowerCase() == 'localhost' ||
+  final local =
+      node.server.toLowerCase() == 'localhost' ||
       (InternetAddress.tryParse(node.server)?.isLoopback ?? false);
   return local &&
-      RegExp(r'不支持.*(?:软件|客户端)|请.*(?:换用|更换).*(?:软件|客户端)|官网地址|(?:剩余|已用|总)流量|(?:套餐|订阅|账户).*(?:到期|过期)|到期时间|下次重置|流量.*(?:重置|用尽)|unsupported.*(?:client|software)',
-              caseSensitive: false)
-          .hasMatch(node.name);
+      RegExp(
+        r'不支持.*(?:软件|客户端)|请.*(?:换用|更换).*(?:软件|客户端)|官网地址|(?:剩余|已用|总)流量|(?:套餐|订阅|账户).*(?:到期|过期)|到期时间|下次重置|流量.*(?:重置|用尽)|unsupported.*(?:client|software)',
+        caseSensitive: false,
+      ).hasMatch(node.name);
 }
 
 NodeProtocol _protocol(String name) => switch (name.toLowerCase()) {
-      'ss' || 'shadowsocks' => NodeProtocol.shadowsocks,
-      'vless' => NodeProtocol.vless,
-      'vmess' => NodeProtocol.vmess,
-      'tuic' => NodeProtocol.tuic,
-      'trojan' => NodeProtocol.trojan,
-      'hysteria2' || 'hy2' => NodeProtocol.hysteria2,
-      'http' || 'https' => NodeProtocol.http,
-      'socks' || 'socks5' => NodeProtocol.socks5,
-      _ => throw const NodeException('暂不支持此协议'),
-    };
+  'ss' || 'shadowsocks' => NodeProtocol.shadowsocks,
+  'vless' => NodeProtocol.vless,
+  'vmess' => NodeProtocol.vmess,
+  'tuic' => NodeProtocol.tuic,
+  'trojan' => NodeProtocol.trojan,
+  'hysteria2' || 'hy2' => NodeProtocol.hysteria2,
+  'http' || 'https' => NodeProtocol.http,
+  'socks' || 'socks5' => NodeProtocol.socks5,
+  _ => throw const NodeException('暂不支持此协议'),
+};
 
 NodeDraft _clashNode(Map<String, Object?> value) {
   final type = _string(value['type']);
@@ -324,48 +358,48 @@ NodeDraft _clashNode(Map<String, Object?> value) {
     NodeProtocol.http || NodeProtocol.socks5 => {'username', 'password'},
     NodeProtocol.shadowsocks => {'cipher', 'password'},
     NodeProtocol.vless => {
-        'uuid',
-        'flow',
-        'encryption',
-        'packet-encoding',
-        'reality-opts',
-        'ws-opts',
-        'grpc-opts'
-      },
+      'uuid',
+      'flow',
+      'encryption',
+      'packet-encoding',
+      'reality-opts',
+      'ws-opts',
+      'grpc-opts',
+    },
     NodeProtocol.vmess => {
-        'uuid',
-        'cipher',
-        'alterId',
-        'global-padding',
-        'authenticated-length',
-        'packet-encoding',
-        'ws-opts',
-        'grpc-opts'
-      },
+      'uuid',
+      'cipher',
+      'alterId',
+      'global-padding',
+      'authenticated-length',
+      'packet-encoding',
+      'ws-opts',
+      'grpc-opts',
+    },
     NodeProtocol.trojan => {'password', 'ws-opts', 'grpc-opts'},
     NodeProtocol.hysteria2 => {
-        'password',
-        'obfs',
-        'obfs-password',
-        'up',
-        'down',
-        'ports',
-        'mport',
-        'hop-interval',
-        'fingerprint'
-      },
+      'password',
+      'obfs',
+      'obfs-password',
+      'up',
+      'down',
+      'ports',
+      'mport',
+      'hop-interval',
+      'fingerprint',
+    },
     NodeProtocol.tuic => {
-        'uuid',
-        'password',
-        'version',
-        'congestion-controller',
-        'udp-relay-mode',
-        'udp-over-stream',
-        'reduce-rtt',
-        'disable-sni',
-        'heartbeat-interval',
-        'fingerprint'
-      },
+      'uuid',
+      'password',
+      'version',
+      'congestion-controller',
+      'udp-relay-mode',
+      'udp-over-stream',
+      'reduce-rtt',
+      'disable-sni',
+      'heartbeat-interval',
+      'fingerprint',
+    },
   };
   const disabledOptions = {
     'plugin',
@@ -376,12 +410,14 @@ NodeDraft _clashNode(Map<String, Object?> value) {
     'h2-opts',
     'udp-over-tcp',
     'tfo',
-    'mptcp'
+    'mptcp',
   };
-  if (value.keys.any((key) =>
-      !common.contains(key) &&
-      !specific.contains(key) &&
-      !disabledOptions.contains(key))) {
+  if (value.keys.any(
+    (key) =>
+        !common.contains(key) &&
+        !specific.contains(key) &&
+        !disabledOptions.contains(key),
+  )) {
     throw const NodeException('节点包含暂不支持的附加字段');
   }
   // Never silently discard parameters that would change the remote connection.
@@ -424,7 +460,7 @@ NodeDraft _clashNode(Map<String, Object?> value) {
       'recv-window-conn',
       'recv-window',
       'disable-mtu-discovery',
-      'fast-open'
+      'fast-open',
     ]) {
       if (value[key] != null && value[key] != false && value[key] != '') {
         throw const NodeException('暂不支持此证书或 QUIC 扩展');
@@ -450,12 +486,15 @@ NodeDraft _clashNode(Map<String, Object?> value) {
     throw const NodeException('暂不支持此 VLESS 加密选项');
   }
   final ws = _map(value['ws-opts']);
-  if (ws.keys.any((key) => !{
-        'path',
-        'headers',
-        'max-early-data',
-        'early-data-header-name'
-      }.contains(key))) {
+  if (ws.keys.any(
+    (key) =>
+        !{
+          'path',
+          'headers',
+          'max-early-data',
+          'early-data-header-name',
+        }.contains(key),
+  )) {
     throw const NodeException('暂不支持此 WebSocket 扩展');
   }
   if ((_port(ws['max-early-data']) != 0) ||
@@ -482,7 +521,9 @@ NodeDraft _clashNode(Map<String, Object?> value) {
     throw const NodeException('附加传输参数与传输方式不匹配');
   }
   final name = _string(
-      value['name'], '${_string(value['server'])}:${_string(value['port'])}');
+    value['name'],
+    '${_string(value['server'])}:${_string(value['port'])}',
+  );
   final explicitTls = value['tls'] == null ? null : _strictBool(value['tls']);
   final requiredTls =
       protocol.usesQuic || protocol == NodeProtocol.trojan || type == 'https';
@@ -516,9 +557,13 @@ NodeDraft _clashNode(Map<String, Object?> value) {
     udpOverStream: tuic && _strictBool(value['udp-over-stream']),
     zeroRttHandshake: tuic && _strictBool(value['reduce-rtt']),
     disableSni: tuic && _strictBool(value['disable-sni']),
-    heartbeatMillis: tuic
-        ? parseTuicHeartbeat(value['heartbeat-interval'], milliseconds: true)
-        : 10000,
+    heartbeatMillis:
+        tuic
+            ? parseTuicHeartbeat(
+              value['heartbeat-interval'],
+              milliseconds: true,
+            )
+            : 10000,
     serverName: _string(value['servername'] ?? value['sni']),
     insecure: _strictBool(value['skip-cert-verify']),
     transport: transport,
@@ -527,9 +572,10 @@ NodeDraft _clashNode(Map<String, Object?> value) {
     serviceName: _string(grpc['grpc-service-name']),
     flow: _string(value['flow']),
     fingerprint: _string(value['client-fingerprint']),
-    certificateSha256: protocol.usesQuic
-        ? normalizeCertificateSha256(_string(value['fingerprint']))
-        : '',
+    certificateSha256:
+        protocol.usesQuic
+            ? normalizeCertificateSha256(_string(value['fingerprint']))
+            : '',
     realityPublicKey: _string(reality['public-key']),
     realityShortId: _string(reality['short-id']),
     alpn: _strings(value['alpn']),
@@ -540,20 +586,24 @@ NodeDraft _clashNode(Map<String, Object?> value) {
     hopIntervalSeconds: hysteria ? _hysteriaInterval(value['hop-interval']) : 0,
   );
   return NodeDraft(
-      name: name,
-      protocol: protocol,
-      server: _string(value['server']),
-      port: _port(value['port']),
-      tls: tls,
-      username: _string(tuic ? value['uuid'] : value['username']),
-      password: _string(protocol == NodeProtocol.vless || vmess
+    name: name,
+    protocol: protocol,
+    server: _string(value['server']),
+    port: _port(value['port']),
+    tls: tls,
+    username: _string(tuic ? value['uuid'] : value['username']),
+    password: _string(
+      protocol == NodeProtocol.vless || vmess
           ? value['uuid']
-          : value['password']),
-      obfsPassword: hysteria ? _string(value['obfs-password']) : '',
-      authenticate: value['username'] != null ||
-          value['password'] != null ||
-          value['uuid'] != null,
-      options: options);
+          : value['password'],
+    ),
+    obfsPassword: hysteria ? _string(value['obfs-password']) : '',
+    authenticate:
+        value['username'] != null ||
+        value['password'] != null ||
+        value['uuid'] != null,
+    options: options,
+  );
 }
 
 NodeDraft parseNodeUri(String input) {
@@ -576,10 +626,17 @@ NodeDraft parseNodeUri(String input) {
   final protocol = _protocol(uri.scheme);
   if (protocol == NodeProtocol.hysteria2) return _hysteriaUri(uri);
   if (protocol == NodeProtocol.tuic) return parseTuicUri(uri);
-  if (!uri.hasPort) throw const NodeException('节点链接地址或端口无效');
+  // Uri normalizes an explicit :80/:443 away. HTTP share links also use the
+  // scheme's default port when omitted; other protocols require a port.
+  if (!uri.hasPort && protocol != NodeProtocol.http) {
+    throw const NodeException('节点链接地址或端口无效');
+  }
   final query = uri.queryParameters;
-  final stream = [NodeProtocol.vless, NodeProtocol.vmess, NodeProtocol.trojan]
-      .contains(protocol);
+  final stream = [
+    NodeProtocol.vless,
+    NodeProtocol.vmess,
+    NodeProtocol.trojan,
+  ].contains(protocol);
   final common = {
     if (stream || protocol == NodeProtocol.http) ...{
       'security',
@@ -588,7 +645,7 @@ NodeDraft parseNodeUri(String input) {
       'allowInsecure',
       'insecure',
       'fp',
-      'alpn'
+      'alpn',
     },
     if (stream) ...{'type', 'path', 'host', 'serviceName'},
     if (protocol == NodeProtocol.vless) ...{
@@ -596,12 +653,12 @@ NodeDraft parseNodeUri(String input) {
       'pbk',
       'sid',
       'encryption',
-      'packetEncoding'
+      'packetEncoding',
     },
     if (protocol == NodeProtocol.vmess) ...{
       'encryption',
       'alterId',
-      'packetEncoding'
+      'packetEncoding',
     },
   };
   if (query.keys.any((k) => !common.contains(k)) ||
@@ -632,7 +689,8 @@ NodeDraft parseNodeUri(String input) {
     username = Uri.decodeComponent(user.first);
     if (user.length > 1) password = Uri.decodeComponent(user.skip(1).join(':'));
   }
-  final security = query['security'] ??
+  final security =
+      query['security'] ??
       (protocol == NodeProtocol.trojan || uri.scheme == 'https'
           ? 'tls'
           : 'none');
@@ -671,35 +729,37 @@ NodeDraft parseNodeUri(String input) {
     throw const NodeException('分享链接路径无效');
   }
   final options = NodeOptions(
-      method: method,
-      vmessSecurity: protocol == NodeProtocol.vmess
-          ? query['encryption'] ?? 'auto'
-          : 'auto',
-      alterId: _strictInt(query['alterId'], 0),
-      packetEncoding: query['packetEncoding'] ?? '',
-      serverName: query['sni'] ?? query['peer'] ?? '',
-      insecure: insecure,
-      transport: transport,
-      path: query['path'] ?? '/',
-      host: query['host'] ?? '',
-      serviceName: query['serviceName'] ?? '',
-      flow: query['flow'] ?? '',
-      fingerprint: query['fp'] ?? '',
-      realityPublicKey: query['pbk'] ?? '',
-      realityShortId: query['sid'] ?? '',
-      alpn: query['alpn']?.split(',') ?? const []);
+    method: method,
+    vmessSecurity:
+        protocol == NodeProtocol.vmess ? query['encryption'] ?? 'auto' : 'auto',
+    alterId: _strictInt(query['alterId'], 0),
+    packetEncoding: query['packetEncoding'] ?? '',
+    serverName: query['sni'] ?? query['peer'] ?? '',
+    insecure: insecure,
+    transport: transport,
+    path: query['path'] ?? '/',
+    host: query['host'] ?? '',
+    serviceName: query['serviceName'] ?? '',
+    flow: query['flow'] ?? '',
+    fingerprint: query['fp'] ?? '',
+    realityPublicKey: query['pbk'] ?? '',
+    realityShortId: query['sid'] ?? '',
+    alpn: query['alpn']?.split(',') ?? const [],
+  );
   final draft = NodeDraft(
-      name: uri.fragment.isEmpty
-          ? '${uri.host}:${uri.port}'
-          : Uri.decodeComponent(uri.fragment),
-      protocol: protocol,
-      server: uri.host,
-      port: uri.port,
-      tls: security != 'none',
-      authenticate: uri.userInfo.isNotEmpty,
-      username: username,
-      password: password,
-      options: options);
+    name:
+        uri.fragment.isEmpty
+            ? '${uri.host}:${uri.port}'
+            : Uri.decodeComponent(uri.fragment),
+    protocol: protocol,
+    server: uri.host,
+    port: uri.port,
+    tls: security != 'none',
+    authenticate: uri.userInfo.isNotEmpty,
+    username: username,
+    password: password,
+    options: options,
+  );
   validateNode(draft);
   return draft;
 }
@@ -712,21 +772,23 @@ int _strictInt(Object? value, int fallback) {
 }
 
 bool _strictBool(Object? value) => switch (value) {
-      null || false || 'false' => false,
-      true || 'true' => true,
-      _ => throw const NodeException('节点开关参数无效'),
-    };
+  null || false || 'false' => false,
+  true || 'true' => true,
+  _ => throw const NodeException('节点开关参数无效'),
+};
 
 bool _uriFlag(String? value) => switch (value) {
-      null || '0' || 'false' => false,
-      '1' || 'true' => true,
-      _ => throw const NodeException('节点链接开关参数无效'),
-    };
+  null || '0' || 'false' => false,
+  '1' || 'true' => true,
+  _ => throw const NodeException('节点链接开关参数无效'),
+};
 
 int _hysteriaBandwidth(Object? value) {
   if (value == null || value == '') return 0;
-  final match = RegExp(r'^(\d+)(?:\s*(?:mbps|m))?$', caseSensitive: false)
-      .firstMatch(_string(value).trim());
+  final match = RegExp(
+    r'^(\d+)(?:\s*(?:mbps|m))?$',
+    caseSensitive: false,
+  ).firstMatch(_string(value).trim());
   final result = match == null ? null : int.tryParse(match.group(1) ?? '');
   if (result == null || result > maxHysteriaBandwidthMbps) {
     throw const NodeException('Hysteria2 带宽应为整数 Mbps');
@@ -735,7 +797,8 @@ int _hysteriaBandwidth(Object? value) {
 }
 
 List<String> _hysteriaPorts(Object? value) => parseHysteriaPorts(
-    value is List ? value.map((v) => _string(v)).join(',') : _string(value));
+  value is List ? value.map((v) => _string(v)).join(',') : _string(value),
+);
 
 List<String> _clashHysteriaPorts(Map<String, Object?> value) {
   final ports = _hysteriaPorts(value['ports']);
@@ -750,8 +813,9 @@ List<String> _clashHysteriaPorts(Map<String, Object?> value) {
 
 int _hysteriaInterval(Object? value) {
   if (value == null || value == '') return 0;
-  final result =
-      int.tryParse(_string(value).trim().replaceFirst(RegExp(r's$'), ''));
+  final result = int.tryParse(
+    _string(value).trim().replaceFirst(RegExp(r's$'), ''),
+  );
   if (result == null) throw const NodeException('端口跳跃间隔应为整数秒');
   return result;
 }
@@ -769,7 +833,7 @@ NodeDraft _hysteriaUri(Uri uri) {
     'up',
     'down',
     'hop-interval',
-    'pinSHA256'
+    'pinSHA256',
   };
   if (query.keys.any((key) => !supported.contains(key)) ||
       uri.queryParametersAll.values.any((values) => values.length != 1) ||
@@ -785,28 +849,30 @@ NodeDraft _hysteriaUri(Uri uri) {
     throw const NodeException('Hysteria2 链接的开关参数冲突');
   }
   final draft = NodeDraft(
-      name: uri.fragment.isEmpty
-          ? '${uri.host}:$port'
-          : Uri.decodeComponent(uri.fragment),
-      protocol: NodeProtocol.hysteria2,
-      server: uri.host,
-      port: port,
-      tls: true,
-      authenticate: true,
-      password: Uri.decodeComponent(uri.userInfo),
-      obfsPassword: query['obfs-password'] ?? '',
-      options: NodeOptions(
-          transport: 'quic',
-          serverName: query['sni'] ?? '',
-          certificateSha256:
-              normalizeCertificateSha256(query['pinSHA256'] ?? ''),
-          insecure: insecure || allowInsecure,
-          alpn: query['alpn']?.split(',') ?? const [],
-          obfs: query['obfs'] ?? '',
-          upMbps: _hysteriaBandwidth(query['up']),
-          downMbps: _hysteriaBandwidth(query['down']),
-          serverPorts: _hysteriaPorts(query['mport']),
-          hopIntervalSeconds: _hysteriaInterval(query['hop-interval'])));
+    name:
+        uri.fragment.isEmpty
+            ? '${uri.host}:$port'
+            : Uri.decodeComponent(uri.fragment),
+    protocol: NodeProtocol.hysteria2,
+    server: uri.host,
+    port: port,
+    tls: true,
+    authenticate: true,
+    password: Uri.decodeComponent(uri.userInfo),
+    obfsPassword: query['obfs-password'] ?? '',
+    options: NodeOptions(
+      transport: 'quic',
+      serverName: query['sni'] ?? '',
+      certificateSha256: normalizeCertificateSha256(query['pinSHA256'] ?? ''),
+      insecure: insecure || allowInsecure,
+      alpn: query['alpn']?.split(',') ?? const [],
+      obfs: query['obfs'] ?? '',
+      upMbps: _hysteriaBandwidth(query['up']),
+      downMbps: _hysteriaBandwidth(query['down']),
+      serverPorts: _hysteriaPorts(query['mport']),
+      hopIntervalSeconds: _hysteriaInterval(query['hop-interval']),
+    ),
+  );
   validateNode(draft);
   return draft;
 }

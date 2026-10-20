@@ -22,10 +22,16 @@ import '../test/support/ui_fixture.dart';
 
 void main() {
   IntegrationTestWidgetsFlutterBinding.ensureInitialized();
-  testWidgets('Linux service management desktop states and dialogs',
-      (tester) async {
+  testWidgets('Linux service management desktop states and dialogs', (
+    tester,
+  ) async {
     await initializeDesktopWindow();
-    final output = Directory('../docs/verification/linux-service-management');
+    final output = Directory(
+      const String.fromEnvironment(
+        'RAINLINK_VISUAL_OUTPUT',
+        defaultValue: '../docs/verification/linux-service-management',
+      ),
+    );
     await output.create(recursive: true);
     debugDefaultTargetPlatformOverride = TargetPlatform.linux;
     try {
@@ -36,34 +42,43 @@ void main() {
           final service = FakeTunService();
           final capture = GlobalKey();
           final router = createRouter(initialLocation: '/settings');
-          await tester.pumpWidget(RepaintBoundary(
+          await tester.pumpWidget(
+            RepaintBoundary(
               key: capture,
-              child: ProviderScope(overrides: [
-                ...visualOverrides(theme: theme, connected: false),
-                tunServiceGatewayProvider.overrideWithValue(service),
-              ], child: RainlinkApp(router: router))));
+              child: ProviderScope(
+                overrides: [
+                  ...visualOverrides(theme: theme, connected: false),
+                  tunServiceGatewayProvider.overrideWithValue(service),
+                ],
+                child: RainlinkApp(router: router),
+              ),
+            ),
+          );
           await tester.pumpAndSettle();
           await tester.tap(find.byKey(const ValueKey('settings-core')));
           await tester.pumpAndSettle();
           expect(
-              Theme.of(tester.element(find.byType(TunServicePanel))).brightness,
-              theme == AppTheme.dark ? Brightness.dark : Brightness.light);
+            Theme.of(tester.element(find.byType(TunServicePanel))).brightness,
+            theme == AppTheme.dark ? Brightness.dark : Brightness.light,
+          );
 
           Future<void> screenshot(String state) async {
             expect(tester.takeException(), isNull);
             await tester.runAsync(() async {
-              final boundary = capture.currentContext?.findRenderObject()
-                  as RenderRepaintBoundary;
+              final boundary =
+                  capture.currentContext?.findRenderObject()
+                      as RenderRepaintBoundary;
               final rendered = await boundary.toImage(pixelRatio: 1);
               try {
-                final data =
-                    await rendered.toByteData(format: ui.ImageByteFormat.png);
+                final data = await rendered.toByteData(
+                  format: ui.ImageByteFormat.png,
+                );
                 if (data == null) {
                   throw StateError('Screenshot encoding failed');
                 }
                 await File(
-                        '${output.path}/service-$state-${size.width.toInt()}-${theme.name}-fixture.png')
-                    .writeAsBytes(data.buffer.asUint8List());
+                  '${output.path}/service-$state-${size.width.toInt()}-${theme.name}-fixture.png',
+                ).writeAsBytes(data.buffer.asUint8List());
               } finally {
                 rendered.dispose();
               }
@@ -71,15 +86,18 @@ void main() {
           }
 
           Future<void> showService() async {
-            await tester
-                .ensureVisible(find.byKey(const ValueKey('tun-service-panel')));
+            await tester.ensureVisible(
+              find.byKey(const ValueKey('tun-service-panel')),
+            );
             await tester.pump(const Duration(milliseconds: 200));
           }
 
           final container = ProviderScope.containerOf(
-              tester.element(find.byType(TunServicePanel)));
-          final controller =
-              container.read(tunServiceControllerProvider.notifier);
+            tester.element(find.byType(TunServicePanel)),
+          );
+          final controller = container.read(
+            tunServiceControllerProvider.notifier,
+          );
           await screenshot('core-page');
           for (final state in TunServiceState.values) {
             service.status = serviceStatus(state);
@@ -109,7 +127,9 @@ void main() {
           await tester.tap(cancel);
           await tester.pump(const Duration(milliseconds: 200));
           expect(
-              container.read(tunServiceControllerProvider).cancelling, isTrue);
+            container.read(tunServiceControllerProvider).cancelling,
+            isTrue,
+          );
           await screenshot('cancelling');
           service.operation!.complete();
           await tester.pumpAndSettle();

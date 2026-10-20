@@ -26,18 +26,23 @@ class _TrafficPageState extends ConsumerState<TrafficPage> {
   Future<void> _export(TrafficPeriodView view) async {
     setState(() => _exporting = true);
     try {
-      final path = await ref.read(dataExportServiceProvider).save(
-          suggestedName:
-              'RainLink-流量-${trafficDayKey(view.report.days.first.day)}-${trafficDayKey(view.report.days.last.day)}.csv',
-          content: trafficCsv(view));
+      final path = await ref
+          .read(dataExportServiceProvider)
+          .save(
+            suggestedName:
+                'RainLink-流量-${trafficDayKey(view.report.days.first.day)}-${trafficDayKey(view.report.days.last.day)}.csv',
+            content: trafficCsv(view),
+          );
       if (mounted && path != null) {
-        ScaffoldMessenger.of(context)
-            .showSnackBar(const SnackBar(content: Text('已导出当前周期流量')));
+        ScaffoldMessenger.of(
+          context,
+        ).showSnackBar(const SnackBar(content: Text('已导出当前周期流量')));
       }
     } on Exception {
       if (mounted) {
-        ScaffoldMessenger.of(context)
-            .showSnackBar(const SnackBar(content: Text('导出失败，请检查保存位置和磁盘空间')));
+        ScaffoldMessenger.of(
+          context,
+        ).showSnackBar(const SnackBar(content: Text('导出失败，请检查保存位置和磁盘空间')));
       }
     } finally {
       if (mounted) setState(() => _exporting = false);
@@ -52,86 +57,131 @@ class _TrafficPageState extends ConsumerState<TrafficPage> {
     final now = DateTime.now();
     final archive = history.valueOrNull ?? const TrafficArchive();
     final view = archive.forPeriod(_period, now);
-    return LayoutBuilder(builder: (context, constraints) {
-      final desktop = AppLayout.current == AppLayout.desktop;
-      final fitted = desktop &&
-          constraints.maxWidth >= 780 &&
-          constraints.maxHeight >= 576 &&
-          MediaQuery.textScalerOf(context).scale(14) <= 16;
-      final compact = constraints.maxHeight < 740;
-      final chart = TrafficChart(
-          key: ValueKey(_period), view: view, period: _period, now: now);
-      final ranking = TrafficRanking(
-          view: view, loading: history.isLoading, error: history.hasError);
-      final exporting = OutlinedButton.icon(
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        final desktop = AppLayout.current == AppLayout.desktop;
+        final fitted =
+            desktop &&
+            constraints.maxWidth >= 780 &&
+            constraints.maxHeight >= 576 &&
+            MediaQuery.textScalerOf(context).scale(14) <= 16;
+        final compact = constraints.maxHeight < 740;
+        final chart = TrafficChart(
+          key: ValueKey(_period),
+          view: view,
+          period: _period,
+          now: now,
+        );
+        final ranking = TrafficRanking(
+          view: view,
+          loading: history.isLoading,
+          error: history.hasError,
+        );
+        final exporting = OutlinedButton.icon(
           key: const ValueKey('export-traffic'),
-          onPressed: _exporting || !history.hasValue || archive.days.isEmpty
-              ? null
-              : () => _export(view),
+          onPressed:
+              _exporting || !history.hasValue || archive.days.isEmpty
+                  ? null
+                  : () => _export(view),
           icon: const RainlinkIcon(RainlinkGlyph.download, size: 16),
-          label: Text(_exporting
-              ? '导出中…'
-              : desktop
-                  ? '导出 CSV'
-                  : '导出'));
-      return PageFrame(
+          label: Text(
+            _exporting
+                ? '导出中…'
+                : desktop
+                ? '导出 CSV'
+                : '导出',
+          ),
+        );
+        return PageFrame(
           title: '流量',
           description: '看清流量，掌握用量。',
           scrollable: !fitted,
-          padding: fitted && compact
-              ? const EdgeInsets.symmetric(horizontal: 20, vertical: 16)
-              : null,
-          child:
-              Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
-            Row(children: [
-              Expanded(
-                  child: Align(
+          padding:
+              fitted && compact
+                  ? const EdgeInsets.symmetric(horizontal: 20, vertical: 16)
+                  : null,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              Row(
+                children: [
+                  Expanded(
+                    child: Align(
                       alignment: Alignment.centerLeft,
                       child: RainlinkSegmentedControl<TrafficPeriod>(
-                          segments: const [
-                            RainlinkSegment(
-                                value: TrafficPeriod.today, label: '今日'),
-                            RainlinkSegment(
-                                value: TrafficPeriod.week, label: '本周'),
-                            RainlinkSegment(
-                                value: TrafficPeriod.month, label: '本月'),
-                          ],
-                          selected: _period,
-                          onChanged: (value) =>
-                              setState(() => _period = value)))),
-              const SizedBox(width: 8),
-              if (desktop)
-                exporting
-              else
-                Tooltip(
-                    message: '导出当前周期 CSV',
-                    child: IconButton(
+                        segments: const [
+                          RainlinkSegment(
+                            value: TrafficPeriod.today,
+                            label: '今日',
+                          ),
+                          RainlinkSegment(
+                            value: TrafficPeriod.week,
+                            label: '本周',
+                          ),
+                          RainlinkSegment(
+                            value: TrafficPeriod.month,
+                            label: '本月',
+                          ),
+                        ],
+                        selected: _period,
+                        onChanged: (value) => setState(() => _period = value),
+                      ),
+                    ),
+                  ),
+                  const SizedBox(width: 8),
+                  if (desktop)
+                    exporting
+                  else
+                    Tooltip(
+                      message: '导出当前周期 CSV',
+                      child: IconButton(
                         key: const ValueKey('export-traffic-mobile'),
-                        onPressed: _exporting ||
-                                !history.hasValue ||
-                                archive.days.isEmpty
-                            ? null
-                            : () => _export(view),
-                        icon: const RainlinkIcon(RainlinkGlyph.download,
-                            size: 20))),
-            ]),
-            const SizedBox(height: 8),
-            TrafficSummary(
+                        onPressed:
+                            _exporting ||
+                                    !history.hasValue ||
+                                    archive.days.isEmpty
+                                ? null
+                                : () => _export(view),
+                        icon: const RainlinkIcon(
+                          RainlinkGlyph.download,
+                          size: 20,
+                        ),
+                      ),
+                    ),
+                ],
+              ),
+              const SizedBox(height: 8),
+              TrafficSummary(
                 report: view.report,
                 unavailable: !history.hasValue,
                 dense: compact,
-                mobile: !desktop),
-            const SizedBox(height: 12),
-            if (fitted) ...[
-              Expanded(flex: 3, child: chart),
+                mobile: !desktop,
+              ),
               const SizedBox(height: 12),
-              Expanded(flex: 2, child: ranking),
-            ] else ...[
-              SizedBox(height: 250, child: chart),
-              const SizedBox(height: 12),
-              SizedBox(height: 230, child: ranking),
+              if (fitted && compact)
+                Expanded(
+                  child: Row(
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: [
+                      Expanded(flex: 3, child: chart),
+                      const SizedBox(width: 12),
+                      Expanded(flex: 2, child: ranking),
+                    ],
+                  ),
+                )
+              else if (fitted) ...[
+                Expanded(flex: 3, child: chart),
+                const SizedBox(height: 12),
+                Expanded(flex: 2, child: ranking),
+              ] else ...[
+                SizedBox(height: 250, child: chart),
+                const SizedBox(height: 12),
+                SizedBox(height: 230, child: ranking),
+              ],
             ],
-          ]));
-    });
+          ),
+        );
+      },
+    );
   }
 }

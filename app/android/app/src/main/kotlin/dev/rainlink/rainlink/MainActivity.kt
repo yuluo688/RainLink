@@ -10,6 +10,7 @@ import android.os.Bundle
 import dev.rainlink.rainlink.core.AndroidCore
 import dev.rainlink.rainlink.core.CoreReply
 import dev.rainlink.rainlink.export.AndroidDocumentExporter
+import dev.rainlink.rainlink.updates.AndroidUpdateInstaller
 import dev.rainlink.rainlink.notifications.AndroidMobileIntegration
 import io.flutter.embedding.android.FlutterActivity
 import io.flutter.embedding.engine.FlutterEngine
@@ -25,6 +26,9 @@ class MainActivity : FlutterActivity() {
     internal var documentExporter: AndroidDocumentExporter? = null
         private set
     private var documentChannel: MethodChannel? = null
+    internal var updateInstaller: AndroidUpdateInstaller? = null
+        private set
+    private var updateChannel: MethodChannel? = null
     internal var mobileIntegration: AndroidMobileIntegration? = null
         private set
     private var mobileChannel: MethodChannel? = null
@@ -59,6 +63,11 @@ class MainActivity : FlutterActivity() {
             setStreamHandler(mobile)
         }
         documentExporter = AndroidDocumentExporter(this)
+        updateInstaller = AndroidUpdateInstaller(this)
+        updateChannel = MethodChannel(flutterEngine.dartExecutor.binaryMessenger, "rainlink/updates").apply {
+            setMethodCallHandler { call, result -> updateInstaller?.handle(call, result)
+                ?: result.error("unavailable", "安装服务已关闭", null) }
+        }
         documentChannel = MethodChannel(flutterEngine.dartExecutor.binaryMessenger, "rainlink/documents").apply {
             setMethodCallHandler { call, result -> documentExporter?.handle(call, result)
                 ?: result.error("unavailable", "文件保存服务已关闭", null) }
@@ -120,6 +129,7 @@ class MainActivity : FlutterActivity() {
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
         if (documentExporter?.onActivityResult(requestCode, resultCode, data) == true) return
+        if (updateInstaller?.onActivityResult(requestCode, resultCode, data) == true) return
         if (requestCode == REQUEST_TUNNEL) {
             if (permissionDialog != requestCode) return
             permissionDialog = null
@@ -168,6 +178,10 @@ class MainActivity : FlutterActivity() {
         mobileActions?.setStreamHandler(null)
         mobileActions = null
         documentExporter?.dispose()
+        updateInstaller?.dispose()
+        updateInstaller = null
+        updateChannel?.setMethodCallHandler(null)
+        updateChannel = null
         documentExporter = null
         documentChannel?.setMethodCallHandler(null)
         documentChannel = null

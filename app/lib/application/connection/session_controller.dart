@@ -2,6 +2,8 @@ import 'dart:async';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../domain/connection/connection_models.dart';
 import '../../domain/connection/traffic_repository.dart';
+import '../../domain/connection/traffic_accounting.dart';
+import '../../domain/core/core_traffic.dart';
 import '../../domain/core/core_gateway.dart';
 import '../../domain/core/session_gateway.dart';
 import '../../domain/nodes/proxy_node.dart';
@@ -16,31 +18,36 @@ import '../../domain/core/runtime_settings.dart';
 import '../preferences/device_settings_controller.dart';
 
 final trafficRepositoryProvider = Provider<TrafficRepository?>((ref) => null);
-final dailyTrafficProvider = StreamProvider<DailyTraffic>((ref) =>
-    ref.watch(trafficRepositoryProvider)?.watchToday() ??
-    Stream.value(const DailyTraffic()));
-final trafficHistoryProvider = StreamProvider<List<TrafficDay>>((ref) =>
-    ref.watch(trafficRepositoryProvider)?.watchHistory() ??
-    Stream.value(const []));
+final dailyTrafficProvider = StreamProvider<DailyTraffic>(
+  (ref) =>
+      ref.watch(trafficRepositoryProvider)?.watchToday() ??
+      Stream.value(const DailyTraffic()),
+);
+final trafficHistoryProvider = StreamProvider<List<TrafficDay>>(
+  (ref) =>
+      ref.watch(trafficRepositoryProvider)?.watchHistory() ??
+      Stream.value(const []),
+);
 final trafficArchiveProvider = StreamProvider.autoDispose
     .family<TrafficArchive, TrafficPeriod>((ref, period) {
-  final repository = ref.watch(trafficRepositoryProvider);
-  return repository is TrafficArchiveRepository
-      ? repository.watchArchive(period)
-      : Stream.value(const TrafficArchive());
-});
+      final repository = ref.watch(trafficRepositoryProvider);
+      return repository is TrafficArchiveRepository
+          ? repository.watchArchive(period)
+          : Stream.value(const TrafficArchive());
+    });
 
 class SessionView {
-  const SessionView(
-      {this.phase = ConnectionPhase.idle,
-      this.active,
-      this.systemProxy = false,
-      this.tun = false,
-      this.error = '',
-      this.telemetry,
-      this.latencies = const [],
-      this.speeds = const [],
-      this.busy = false});
+  const SessionView({
+    this.phase = ConnectionPhase.idle,
+    this.active,
+    this.systemProxy = false,
+    this.tun = false,
+    this.error = '',
+    this.telemetry,
+    this.latencies = const [],
+    this.speeds = const [],
+    this.busy = false,
+  });
   final ConnectionPhase phase;
   final ActiveConnectionSnapshot? active;
   final bool systemProxy;
@@ -52,12 +59,12 @@ class SessionView {
   final bool busy;
   bool get connected => phase == ConnectionPhase.connected;
   String get statusLabel => switch (phase) {
-        ConnectionPhase.idle => '未连接',
-        ConnectionPhase.starting => '正在连接…',
-        ConnectionPhase.connected => '已连接',
-        ConnectionPhase.stopping => '正在断开…',
-        ConnectionPhase.failed => '连接异常',
-      };
+    ConnectionPhase.idle => '未连接',
+    ConnectionPhase.starting => '正在连接…',
+    ConnectionPhase.connected => '已连接',
+    ConnectionPhase.stopping => '正在断开…',
+    ConnectionPhase.failed => '连接异常',
+  };
   bool get working =>
       busy ||
       phase == ConnectionPhase.starting ||
@@ -65,34 +72,42 @@ class SessionView {
 }
 
 final sessionControllerProvider =
-    StateNotifierProvider<SessionController, SessionView>((ref) =>
-        SessionController(ref.watch(coreGatewayProvider),
-            requiresTun: ref.watch(requiredTunnelProvider),
-            initialSystemProxy:
-                ref.read(initialDeviceSettingsProvider).connection.systemProxy,
-            initialTun: ref.read(initialDeviceSettingsProvider).connection.tun,
-            routing: ref.watch(routingResolverProvider),
-            traffic: ref.watch(trafficRepositoryProvider),
-            runtimeSettings: () =>
-                ref.read(deviceSettingsControllerProvider).runtime,
-            serviceBusy: () => ref.read(coreServiceBusyProvider),
-            onMode: (mode) =>
-                ref.read(proxyModeProvider.notifier).state = mode));
+    StateNotifierProvider<SessionController, SessionView>(
+      (ref) => SessionController(
+        ref.watch(coreGatewayProvider),
+        requiresTun: ref.watch(requiredTunnelProvider),
+        initialSystemProxy:
+            ref.read(initialDeviceSettingsProvider).connection.systemProxy,
+        initialTun: ref.read(initialDeviceSettingsProvider).connection.tun,
+        routing: ref.watch(routingResolverProvider),
+        traffic: ref.watch(trafficRepositoryProvider),
+        runtimeSettings:
+            () => ref.read(deviceSettingsControllerProvider).runtime,
+        serviceBusy: () => ref.read(coreServiceBusyProvider),
+        updateHold: () => ref.read(connectionUpdateHoldProvider),
+        onMode: (mode) => ref.read(proxyModeProvider.notifier).state = mode,
+      ),
+    );
 
 class SessionController extends StateNotifier<SessionView> {
-  SessionController(this.gateway,
-      {this.traffic,
-      this.routing,
-      this.runtimeSettings,
-      this.serviceBusy,
-      required this.onMode,
-      this.requiresTun = false,
-      bool initialTun = false,
-      bool initialSystemProxy = false})
-      : super(SessionView(
-            systemProxy: requiresTun ? false : initialSystemProxy,
-            tun: requiresTun || initialTun,
-            busy: requiresTun)) {
+  SessionController(
+    this.gateway, {
+    this.traffic,
+    this.routing,
+    this.runtimeSettings,
+    this.serviceBusy,
+    this.updateHold,
+    required this.onMode,
+    this.requiresTun = false,
+    bool initialTun = false,
+    bool initialSystemProxy = false,
+  }) : super(
+         SessionView(
+           systemProxy: requiresTun ? false : initialSystemProxy,
+           tun: requiresTun || initialTun,
+           busy: requiresTun,
+         ),
+       ) {
     final interactive = gateway;
     if (interactive is SessionGateway) {
       _failures = interactive.failures.listen((error) {
@@ -100,25 +115,28 @@ class SessionController extends StateNotifier<SessionView> {
         ++_generation;
         _timer?.cancel();
         state = SessionView(
-            phase: ConnectionPhase.failed,
-            systemProxy: state.systemProxy,
-            tun: state.tun,
-            error: error.toString());
+          phase: ConnectionPhase.failed,
+          systemProxy: state.systemProxy,
+          tun: state.tun,
+          error: error.toString(),
+        );
       });
       if (requiresTun) _initialized = _restoreSession(interactive);
     }
   }
   final bool requiresTun;
   final bool Function()? serviceBusy;
+  final bool Function()? updateHold;
   Future<void> _initialized = Future<void>.value();
   Future<void> get initialized => _initialized;
 
   Future<void> _restoreSession(SessionGateway interactive) async {
     final generation = _generation;
     try {
-      final recovered = interactive is SessionRecoveryGateway
-          ? await (interactive as SessionRecoveryGateway).recoverSession()
-          : RecoveredSession(await interactive.observe(), null);
+      final recovered =
+          interactive is SessionRecoveryGateway
+              ? await (interactive as SessionRecoveryGateway).recoverSession()
+              : RecoveredSession(await interactive.observe(), null);
       final observation = recovered.observation;
       if (!mounted || generation != _generation) return;
       final active = observation.active;
@@ -132,19 +150,21 @@ class SessionController extends StateNotifier<SessionView> {
         onMode(active.mode);
       }
       state = SessionView(
-          phase: observation.phase,
-          active: active,
-          tun: active == null ? requiresTun : observation.tun,
-          systemProxy: observation.systemProxy,
-          telemetry: observation.telemetry,
-          error: observation.error);
+        phase: observation.phase,
+        active: active,
+        tun: active == null ? requiresTun : observation.tun,
+        systemProxy: observation.systemProxy,
+        telemetry: observation.telemetry,
+        error: observation.error,
+      );
       setObserving(_observing);
     } on Exception catch (error) {
       if (mounted && generation == _generation) {
         state = SessionView(
-            phase: ConnectionPhase.failed,
-            tun: requiresTun,
-            error: error.toString());
+          phase: ConnectionPhase.failed,
+          tun: requiresTun,
+          error: error.toString(),
+        );
       }
     }
   }
@@ -174,7 +194,9 @@ class SessionController extends StateNotifier<SessionView> {
     if (observing && state.connected) {
       unawaited(refresh());
       _timer = Timer.periodic(
-          const Duration(seconds: 2), (_) => unawaited(refresh()));
+        const Duration(seconds: 2),
+        (_) => unawaited(refresh()),
+      );
     }
   }
 
@@ -186,13 +208,25 @@ class SessionController extends StateNotifier<SessionView> {
       _connect(null, chain, mode);
 
   Future<void> _connect(
-      ProxyNode? node, ProxyChain? chain, ProxyMode mode) async {
+    ProxyNode? node,
+    ProxyChain? chain,
+    ProxyMode mode,
+  ) async {
     if (state.working || state.connected || state.active != null) return;
+    if (updateHold?.call() ?? false) {
+      state = SessionView(
+        systemProxy: state.systemProxy,
+        tun: state.tun,
+        error: '正在准备应用更新，请完成或取消安装后连接',
+      );
+      return;
+    }
     if (serviceBusy?.call() ?? false) {
       state = SessionView(
-          systemProxy: state.systemProxy,
-          tun: state.tun,
-          error: '权限服务正在更新，请等待操作完成后连接');
+        systemProxy: state.systemProxy,
+        tun: state.tun,
+        error: '权限服务正在更新，请等待操作完成后连接',
+      );
       return;
     }
     final generation = ++_generation;
@@ -202,7 +236,10 @@ class SessionController extends StateNotifier<SessionView> {
     _lastLatencyAt = 0;
     _lastProbe = DateTime.now();
     state = SessionView(
-        phase: ConnectionPhase.starting, systemProxy: capture, tun: tun);
+      phase: ConnectionPhase.starting,
+      systemProxy: capture,
+      tun: tun,
+    );
     try {
       final plan = await routing?.resolve(node, chain: chain);
       if (!mounted || generation != _generation) return;
@@ -210,26 +247,29 @@ class SessionController extends StateNotifier<SessionView> {
         throw const ChainException('代理链连接尚未接入');
       }
       final request = ConnectRequest(
-          target: ProxyTarget(
-              id: chain?.id ?? node!.id,
-              name: chain?.name ?? node!.name,
-              revision: chain?.revision ?? node!.revision,
-              kind: chain == null ? 'node' : 'chain'),
-          mode: mode,
-          node: node,
-          chain: plan?.primaryChain,
-          routing: plan,
-          runtimeSettings: runtime,
-          tun: tun,
-          systemProxy: capture);
+        target: ProxyTarget(
+          id: chain?.id ?? node!.id,
+          name: chain?.name ?? node!.name,
+          revision: chain?.revision ?? node!.revision,
+          kind: chain == null ? 'node' : 'chain',
+        ),
+        mode: mode,
+        node: node,
+        chain: plan?.primaryChain,
+        routing: plan,
+        runtimeSettings: runtime,
+        tun: tun,
+        systemProxy: capture,
+      );
       await _establish(request, generation);
     } on Exception catch (error) {
       if (mounted && generation == _generation) {
         state = SessionView(
-            phase: ConnectionPhase.failed,
-            error: error.toString(),
-            tun: tun,
-            systemProxy: capture);
+          phase: ConnectionPhase.failed,
+          error: error.toString(),
+          tun: tun,
+          systemProxy: capture,
+        );
       }
     }
   }
@@ -240,10 +280,11 @@ class SessionController extends StateNotifier<SessionView> {
     _lastRequest = request;
     _attribution.start(active);
     state = SessionView(
-        phase: ConnectionPhase.connected,
-        active: active,
-        tun: request.tun,
-        systemProxy: request.systemProxy);
+      phase: ConnectionPhase.connected,
+      active: active,
+      tun: request.tun,
+      systemProxy: request.systemProxy,
+    );
     setObserving(_observing);
   }
 
@@ -257,7 +298,8 @@ class SessionController extends StateNotifier<SessionView> {
   Future<void> applyRuntime(CoreRuntimeSettings settings) async {
     if (!await _restart(runtime: settings)) {
       throw SettingsException(
-          state.error.isEmpty ? '配置应用已取消或连接状态已变化' : state.error);
+        state.error.isEmpty ? '配置应用已取消或连接状态已变化' : state.error,
+      );
     }
   }
 
@@ -267,16 +309,18 @@ class SessionController extends StateNotifier<SessionView> {
     if (!state.connected) {
       if (state.active != null) return;
       state = SessionView(
-          phase: state.phase,
-          systemProxy: state.systemProxy,
-          tun: enabled,
-          error: state.error);
+        phase: state.phase,
+        systemProxy: state.systemProxy,
+        tun: enabled,
+        error: state.error,
+      );
       return;
     }
     await _restart(tun: enabled);
   }
 
   Future<bool> _restart({bool? tun, CoreRuntimeSettings? runtime}) async {
+    if (updateHold?.call() ?? false) return false;
     final original = _lastRequest;
     final active = state.active;
     if (original == null ||
@@ -299,56 +343,64 @@ class SessionController extends StateNotifier<SessionView> {
     _lastLatencyAt = 0;
     _lastProbe = DateTime.now();
     state = SessionView(
-        phase: ConnectionPhase.starting,
-        systemProxy: capture,
-        tun: requestedTun);
+      phase: ConnectionPhase.starting,
+      systemProxy: capture,
+      tun: requestedTun,
+    );
     try {
       await _establish(
-          ConnectRequest(
-              target: original.target,
-              mode: active.mode,
-              node: original.node,
-              chain: original.chain,
-              routing: original.routing,
-              systemProxy: capture,
-              tun: requestedTun,
-              runtimeSettings: runtime ??
-                  (tun == null
-                      ? runtimeSettings?.call() ?? original.runtimeSettings
-                      : original.runtimeSettings)),
-          generation);
+        ConnectRequest(
+          target: original.target,
+          mode: active.mode,
+          node: original.node,
+          chain: original.chain,
+          routing: original.routing,
+          systemProxy: capture,
+          tun: requestedTun,
+          runtimeSettings:
+              runtime ??
+              (tun == null
+                  ? runtimeSettings?.call() ?? original.runtimeSettings
+                  : original.runtimeSettings),
+        ),
+        generation,
+      );
       return mounted && generation == _generation && state.connected;
     } on Exception catch (error) {
       if (mounted && generation == _generation) {
         final action = tun != null ? 'TUN 修改' : '配置应用';
         try {
           await _establish(
-              ConnectRequest(
-                  target: original.target,
-                  mode: active.mode,
-                  node: original.node,
-                  chain: original.chain,
-                  routing: original.routing,
-                  runtimeSettings: original.runtimeSettings,
-                  systemProxy: capture,
-                  tun: previousTun),
-              generation);
+            ConnectRequest(
+              target: original.target,
+              mode: active.mode,
+              node: original.node,
+              chain: original.chain,
+              routing: original.routing,
+              runtimeSettings: original.runtimeSettings,
+              systemProxy: capture,
+              tun: previousTun,
+            ),
+            generation,
+          );
           if (mounted && generation == _generation) {
             state = SessionView(
-                phase: ConnectionPhase.connected,
-                active: state.active,
-                systemProxy: capture,
-                tun: previousTun,
-                error: '$action未完成，已恢复原连接：$error');
+              phase: ConnectionPhase.connected,
+              active: state.active,
+              systemProxy: capture,
+              tun: previousTun,
+              error: '$action未完成，已恢复原连接：$error',
+            );
           }
           return false;
         } on Exception catch (rollbackError) {
           if (!mounted || generation != _generation) return false;
           state = SessionView(
-              phase: ConnectionPhase.failed,
-              systemProxy: capture,
-              tun: previousTun,
-              error: '$action失败，原连接也未能恢复：$rollbackError');
+            phase: ConnectionPhase.failed,
+            systemProxy: capture,
+            tun: previousTun,
+            error: '$action失败，原连接也未能恢复：$rollbackError',
+          );
           return false;
         }
       }
@@ -361,10 +413,11 @@ class SessionController extends StateNotifier<SessionView> {
     _timer?.cancel();
     final previous = state;
     state = SessionView(
-        phase: ConnectionPhase.stopping,
-        active: previous.active,
-        tun: previous.tun,
-        systemProxy: previous.systemProxy);
+      phase: ConnectionPhase.stopping,
+      active: previous.active,
+      tun: previous.tun,
+      systemProxy: previous.systemProxy,
+    );
     try {
       if (previous.phase == ConnectionPhase.starting &&
           gateway is SessionGateway) {
@@ -379,18 +432,20 @@ class SessionController extends StateNotifier<SessionView> {
       await gateway.disconnect();
       if (mounted && generation == _generation) {
         state = SessionView(
-            systemProxy: previous.systemProxy,
-            tun: previous.tun,
-            error: warning);
+          systemProxy: previous.systemProxy,
+          tun: previous.tun,
+          error: warning,
+        );
       }
     } on Exception catch (error) {
       if (mounted && generation == _generation) {
         state = SessionView(
-            phase: ConnectionPhase.failed,
-            active: previous.active,
-            tun: previous.tun,
-            error: error.toString(),
-            systemProxy: previous.systemProxy);
+          phase: ConnectionPhase.failed,
+          active: previous.active,
+          tun: previous.tun,
+          error: error.toString(),
+          systemProxy: previous.systemProxy,
+        );
       }
     }
   }
@@ -401,10 +456,30 @@ class SessionController extends StateNotifier<SessionView> {
     final observation = await interactive.observe();
     final data = observation.telemetry;
     final active = observation.active;
-    if (data != null && active != null) {
-      await traffic?.record(
-          active.sessionId, data.uploadTotal, data.downloadTotal,
-          attribution: _attribution.resolve(active));
+    if (active != null) await _recordTraffic(active, data);
+  }
+
+  Future<void> _recordTraffic(
+    ActiveConnectionSnapshot active,
+    SessionTelemetry? data,
+  ) async {
+    final repository = traffic;
+    if (repository == null) return;
+    final source = gateway;
+    if (repository is TrafficAccountingRepository &&
+        source is CoreTrafficGateway) {
+      final sample = await source.traffic(sessionId: active.sessionId);
+      if (sample.sessionId != active.sessionId) {
+        throw const CoreGatewayException('session_changed', '连接会话已改变，请刷新');
+      }
+      await repository.recordAccounting(sample);
+    } else if (data != null) {
+      await repository.record(
+        active.sessionId,
+        data.uploadTotal,
+        data.downloadTotal,
+        attribution: _attribution.resolve(active),
+      );
     }
   }
 
@@ -419,11 +494,9 @@ class SessionController extends StateNotifier<SessionView> {
       final data = observation.telemetry;
       final active = observation.active;
       var warning = '';
-      if (data != null && active != null) {
+      if (active != null) {
         try {
-          await traffic?.record(
-              active.sessionId, data.uploadTotal, data.downloadTotal,
-              attribution: _attribution.resolve(active));
+          await _recordTraffic(active, data);
         } on Exception {
           warning = '流量统计未能保存，连接仍可使用';
         }
@@ -438,20 +511,26 @@ class SessionController extends StateNotifier<SessionView> {
       if (samples.length > 30) samples.removeAt(0);
       final speeds = [...state.speeds];
       if (data != null) {
-        speeds.add(TrafficRateSample(
-            at: DateTime.now(), upload: data.upload, download: data.download));
+        speeds.add(
+          TrafficRateSample(
+            at: DateTime.now(),
+            upload: data.upload,
+            download: data.download,
+          ),
+        );
         if (speeds.length > 60) speeds.removeAt(0);
       }
       state = SessionView(
-          phase: observation.phase,
-          active: active,
-          systemProxy:
-              active == null ? state.systemProxy : observation.systemProxy,
-          tun: active == null ? state.tun : observation.tun,
-          telemetry: data,
-          error: observation.error.isEmpty ? warning : observation.error,
-          latencies: samples,
-          speeds: List.unmodifiable(speeds));
+        phase: observation.phase,
+        active: active,
+        systemProxy:
+            active == null ? state.systemProxy : observation.systemProxy,
+        tun: active == null ? state.tun : observation.tun,
+        telemetry: data,
+        error: observation.error.isEmpty ? warning : observation.error,
+        latencies: samples,
+        speeds: List.unmodifiable(speeds),
+      );
       if (!state.connected) _timer?.cancel();
       if (state.connected &&
           DateTime.now().difference(_lastProbe) >=
@@ -462,11 +541,12 @@ class SessionController extends StateNotifier<SessionView> {
     } on Exception catch (error) {
       if (mounted && generation == _generation) {
         state = SessionView(
-            phase: ConnectionPhase.failed,
-            active: state.active,
-            systemProxy: state.systemProxy,
-            tun: state.tun,
-            error: error.toString());
+          phase: ConnectionPhase.failed,
+          active: state.active,
+          systemProxy: state.systemProxy,
+          tun: state.tun,
+          error: error.toString(),
+        );
       }
       _timer?.cancel();
     } finally {
@@ -486,14 +566,15 @@ class SessionController extends StateNotifier<SessionView> {
     final generation = _generation;
     if (mode != previous.active?.mode) _attribution.invalidate();
     state = SessionView(
-        phase: previous.phase,
-        active: previous.active,
-        systemProxy: previous.systemProxy,
-        tun: previous.tun,
-        telemetry: previous.telemetry,
-        latencies: previous.latencies,
-        speeds: previous.speeds,
-        busy: true);
+      phase: previous.phase,
+      active: previous.active,
+      systemProxy: previous.systemProxy,
+      tun: previous.tun,
+      telemetry: previous.telemetry,
+      latencies: previous.latencies,
+      speeds: previous.speeds,
+      busy: true,
+    );
     try {
       await interactive.setMode(mode);
       if (!mounted || generation != _generation) return;
@@ -503,14 +584,15 @@ class SessionController extends StateNotifier<SessionView> {
     } on Exception catch (error) {
       if (mounted && generation == _generation) {
         state = SessionView(
-            phase: previous.phase,
-            active: previous.active,
-            systemProxy: previous.systemProxy,
-            tun: previous.tun,
-            telemetry: previous.telemetry,
-            latencies: previous.latencies,
-            speeds: previous.speeds,
-            error: error.toString());
+          phase: previous.phase,
+          active: previous.active,
+          systemProxy: previous.systemProxy,
+          tun: previous.tun,
+          telemetry: previous.telemetry,
+          latencies: previous.latencies,
+          speeds: previous.speeds,
+          error: error.toString(),
+        );
       }
     }
   }
@@ -523,47 +605,51 @@ class SessionController extends StateNotifier<SessionView> {
     if (!state.connected) {
       if (state.active != null) return;
       state = SessionView(
-          phase: state.phase,
-          active: state.active,
-          systemProxy: enabled,
-          tun: state.tun,
-          error: state.error);
+        phase: state.phase,
+        active: state.active,
+        systemProxy: enabled,
+        tun: state.tun,
+        error: state.error,
+      );
       return;
     }
     final interactive = gateway;
     if (interactive is! SessionGateway) return;
     state = SessionView(
-        phase: previous.phase,
-        active: previous.active,
-        systemProxy: previous.systemProxy,
-        tun: previous.tun,
-        telemetry: previous.telemetry,
-        latencies: previous.latencies,
-        speeds: previous.speeds,
-        busy: true);
+      phase: previous.phase,
+      active: previous.active,
+      systemProxy: previous.systemProxy,
+      tun: previous.tun,
+      telemetry: previous.telemetry,
+      latencies: previous.latencies,
+      speeds: previous.speeds,
+      busy: true,
+    );
     try {
       await interactive.setSystemProxy(enabled);
       if (mounted && generation == _generation) {
         state = SessionView(
-            phase: previous.phase,
-            active: previous.active,
-            systemProxy: enabled,
-            tun: previous.tun,
-            telemetry: previous.telemetry,
-            latencies: previous.latencies,
-            speeds: previous.speeds);
+          phase: previous.phase,
+          active: previous.active,
+          systemProxy: enabled,
+          tun: previous.tun,
+          telemetry: previous.telemetry,
+          latencies: previous.latencies,
+          speeds: previous.speeds,
+        );
       }
     } on Exception catch (error) {
       if (mounted && generation == _generation) {
         state = SessionView(
-            phase: previous.phase,
-            active: previous.active,
-            systemProxy: previous.systemProxy,
-            tun: previous.tun,
-            telemetry: previous.telemetry,
-            latencies: previous.latencies,
-            speeds: previous.speeds,
-            error: error.toString());
+          phase: previous.phase,
+          active: previous.active,
+          systemProxy: previous.systemProxy,
+          tun: previous.tun,
+          telemetry: previous.telemetry,
+          latencies: previous.latencies,
+          speeds: previous.speeds,
+          error: error.toString(),
+        );
       }
     }
   }
@@ -577,14 +663,15 @@ class SessionController extends StateNotifier<SessionView> {
     } on Exception catch (error) {
       if (mounted && generation == _generation) {
         state = SessionView(
-            phase: state.phase,
-            active: state.active,
-            systemProxy: state.systemProxy,
-            tun: state.tun,
-            telemetry: state.telemetry,
-            latencies: state.latencies,
-            speeds: state.speeds,
-            error: error.toString());
+          phase: state.phase,
+          active: state.active,
+          systemProxy: state.systemProxy,
+          tun: state.tun,
+          telemetry: state.telemetry,
+          latencies: state.latencies,
+          speeds: state.speeds,
+          error: error.toString(),
+        );
       }
     }
   }

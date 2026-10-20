@@ -33,9 +33,13 @@ class _DesktopSessionGuardState extends ConsumerState<DesktopSessionGuard>
     with WindowListener {
   DesktopIntegration? _integration;
   TunServiceController? _tunService;
-  final _desktop = !kIsWeb &&
-      const {TargetPlatform.windows, TargetPlatform.linux, TargetPlatform.macOS}
-          .contains(defaultTargetPlatform);
+  final _desktop =
+      !kIsWeb &&
+      const {
+        TargetPlatform.windows,
+        TargetPlatform.linux,
+        TargetPlatform.macOS,
+      }.contains(defaultTargetPlatform);
   StreamSubscription<DesktopAction>? _actions;
   bool _closing = false;
   bool _acting = false;
@@ -97,26 +101,49 @@ class _DesktopSessionGuardState extends ConsumerState<DesktopSessionGuard>
             unawaited(_exit());
           } else if (action == DesktopAction.toggleConnection) {
             unawaited(_toggle());
+          } else if (action == DesktopAction.capabilitiesChanged) {
+            unawaited(_synchronizeTray());
           }
         });
-        await integration.setTrayVisible(
-            ref.read(deviceSettingsControllerProvider).general.showTray);
+        await _synchronizeTray();
         if (_disposed) return;
         _updateTray(ref.read(sessionControllerProvider));
       }
       if (ref.read(deviceSettingsControllerProvider).general.autoConnect) {
         await ref.read(connectSelectedProvider)(
-            cancelled: () =>
-                _disposed ||
-                _closing ||
-                !ref
-                    .read(deviceSettingsControllerProvider)
-                    .general
-                    .autoConnect);
+          cancelled:
+              () =>
+                  _disposed ||
+                  _closing ||
+                  !ref
+                      .read(deviceSettingsControllerProvider)
+                      .general
+                      .autoConnect,
+        );
       }
     } on Exception catch (error) {
       _report('$error');
     }
+  }
+
+  Future<void> _synchronizeTray() {
+    _trayUpdate = _trayUpdate
+        .then<void>((_) async {
+          final integration = _integration;
+          if (integration == null || _disposed || _closing) return;
+          final observed = await integration.inspect();
+          if (_disposed || _closing) return;
+          final requested =
+              ref.read(deviceSettingsControllerProvider).general.showTray;
+          if (!requested || observed.trayAvailable) {
+            await integration.setTrayVisible(requested);
+          }
+          if (!_disposed && !_closing) {
+            ref.invalidate(desktopIntegrationStatusProvider);
+          }
+        })
+        .catchError((Object error, StackTrace stack) => _report('$error'));
+    return _trayUpdate;
   }
 
   void _report(String message) {
@@ -129,37 +156,44 @@ class _DesktopSessionGuardState extends ConsumerState<DesktopSessionGuard>
         .read(deviceSettingsControllerProvider.notifier)
         .saveConnection(mode: mode, systemProxy: systemProxy, tun: tun)
         .catchError((Object error, StackTrace stack) {
-      _report('当前连接选项已生效，但下次启动的偏好未能保存。');
-    });
+          _report('当前连接选项已生效，但下次启动的偏好未能保存。');
+        });
   }
 
   void _updateTray(SessionView session) {
     final integration = _integration;
     if (integration == null || _disposed) return;
-    final action = session.connected
-        ? '断开连接'
-        : session.phase == ConnectionPhase.starting
+    final action =
+        session.connected
+            ? '断开连接'
+            : session.phase == ConnectionPhase.starting
             ? '取消连接'
             : session.phase == ConnectionPhase.failed || session.active != null
-                ? '恢复并断开'
-                : '开始连接';
-    _trayUpdate = _trayUpdate.then<void>((_) async {
-      if (_disposed || _closing) return;
-      await integration.updateTray(
-          label: session.statusLabel,
-          actionLabel: action,
-          busy: session.working && session.phase != ConnectionPhase.starting);
-    }).catchError((Object error, StackTrace stack) => _report('$error'));
+            ? '恢复并断开'
+            : '开始连接';
+    _trayUpdate = _trayUpdate
+        .then<void>((_) async {
+          if (_disposed || _closing) return;
+          await integration.updateTray(
+            label: session.statusLabel,
+            actionLabel: action,
+            busy: session.working && session.phase != ConnectionPhase.starting,
+          );
+        })
+        .catchError((Object error, StackTrace stack) => _report('$error'));
   }
 
   void _notify(String message) {
     final integration = _integration;
     if (integration != null) {
-      unawaited(integration
-          .notifyConnection(message)
-          .catchError((Object error, StackTrace stack) {
-        _report('系统未能接收连接通知，可在设置中重试。');
-      }));
+      unawaited(
+        integration.notifyConnection(message).catchError((
+          Object error,
+          StackTrace stack,
+        ) {
+          _report('系统未能接收连接通知，可在设置中重试。');
+        }),
+      );
     }
   }
 
@@ -176,7 +210,8 @@ class _DesktopSessionGuardState extends ConsumerState<DesktopSessionGuard>
         await controller.disconnect();
       } else if (!state.working) {
         await ref.read(connectSelectedProvider)(
-            cancelled: () => _disposed || _closing);
+          cancelled: () => _disposed || _closing,
+        );
       }
     } on Exception catch (error) {
       _report('$error');
@@ -263,7 +298,8 @@ class _DesktopSessionGuardState extends ConsumerState<DesktopSessionGuard>
       setState(() => _closing = false);
       _tunService?.resume();
       updates.resumeAfterFailedExit(
-          message: update == null ? '退出未完成，应用保持打开' : null);
+        message: update == null ? '退出未完成，应用保持打开' : null,
+      );
       subscriptions.resume();
       maintenance?.resume();
       logs.resume();
@@ -271,7 +307,8 @@ class _DesktopSessionGuardState extends ConsumerState<DesktopSessionGuard>
       _report('$error');
       try {
         await _integration?.setTrayVisible(
-            ref.read(deviceSettingsControllerProvider).general.showTray);
+          ref.read(deviceSettingsControllerProvider).general.showTray,
+        );
         await windowManager.show();
       } on Exception catch (showError) {
         _report('$showError');
@@ -293,8 +330,9 @@ class _DesktopSessionGuardState extends ConsumerState<DesktopSessionGuard>
   Widget build(BuildContext context) {
     final enabled = !_desktop || (!_closing && _startupReady);
     return FocusTraversalGroup(
-        descendantsAreFocusable: enabled,
-        child: AbsorbPointer(absorbing: !enabled, child: widget.child));
+      descendantsAreFocusable: enabled,
+      child: AbsorbPointer(absorbing: !enabled, child: widget.child),
+    );
   }
 }
 

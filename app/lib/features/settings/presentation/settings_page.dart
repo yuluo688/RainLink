@@ -11,7 +11,9 @@ import 'widgets/advanced_settings_panel.dart';
 import 'widgets/update_settings_panel.dart';
 
 class SettingsPage extends StatefulWidget {
-  const SettingsPage({super.key});
+  const SettingsPage({this.initialSection, super.key});
+
+  final SettingsSection? initialSection;
 
   @override
   State<SettingsPage> createState() => _SettingsPageState();
@@ -20,6 +22,21 @@ class SettingsPage extends StatefulWidget {
 class _SettingsPageState extends State<SettingsPage> {
   SettingsSection? _section;
   bool _advanced = false;
+
+  @override
+  void initState() {
+    super.initState();
+    _section = widget.initialSection;
+  }
+
+  @override
+  void didUpdateWidget(covariant SettingsPage oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    if (oldWidget.initialSection != widget.initialSection) {
+      _section = widget.initialSection;
+      _advanced = false;
+    }
+  }
 
   void _selectSection(SettingsSection section) {
     setState(() {
@@ -30,36 +47,44 @@ class _SettingsPageState extends State<SettingsPage> {
 
   @override
   Widget build(BuildContext context) {
-    final content = _advanced
-        ? AdvancedSettingsPanel(onBack: () => setState(() => _advanced = false))
-        : switch (_section ?? SettingsSection.general) {
-            SettingsSection.general => GeneralSettingsPanel(
-                onAppearance: () => _selectSection(SettingsSection.appearance)),
-            SettingsSection.appearance => const AppearanceSettingsPanel(),
-            SettingsSection.network => const NetworkSettingsPanel(),
-            SettingsSection.core => CoreSettingsPanel(
-                onAdvanced: () => setState(() => _advanced = true)),
-            SettingsSection.updates => const UpdateSettingsPanel(),
-            SettingsSection.about => const AboutSettingsPanel(),
-          };
+    final content =
+        _advanced
+            ? AdvancedSettingsPanel(
+              onBack: () => setState(() => _advanced = false),
+            )
+            : switch (_section ?? SettingsSection.general) {
+              SettingsSection.general => GeneralSettingsPanel(
+                onAppearance: () => _selectSection(SettingsSection.appearance),
+              ),
+              SettingsSection.appearance => const AppearanceSettingsPanel(),
+              SettingsSection.network => const NetworkSettingsPanel(),
+              SettingsSection.core => CoreSettingsPanel(
+                onAdvanced: () => setState(() => _advanced = true),
+              ),
+              SettingsSection.updates => const UpdateSettingsPanel(),
+              SettingsSection.about => const AboutSettingsPanel(),
+            };
     return switch (AppLayout.current) {
       AppLayout.desktop => DesktopSettings(
-          detail: _advanced,
-          selected: _section ?? SettingsSection.general,
-          onSelected: _selectSection,
-          child: content),
+        detail: _advanced,
+        selected: _section ?? SettingsSection.general,
+        onSelected: _selectSection,
+        child: content,
+      ),
       AppLayout.mobile => MobileSettings(
-          selected: _section,
-          detailTitle: _advanced ? '高级配置' : null,
-          onSelected: _selectSection,
-          onBack: () => setState(() {
-                if (_advanced) {
-                  _advanced = false;
-                } else {
-                  _section = null;
-                }
-              }),
-          child: content),
+        selected: _section,
+        detailTitle: _advanced ? '高级配置' : null,
+        onSelected: _selectSection,
+        onBack:
+            () => setState(() {
+              if (_advanced) {
+                _advanced = false;
+              } else {
+                _section = null;
+              }
+            }),
+        child: content,
+      ),
     };
   }
 }

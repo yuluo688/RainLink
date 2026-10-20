@@ -104,6 +104,7 @@ internal object AndroidCore {
                         "probe" -> { active().probe(); JSONObject() }
                         "connections" -> JSONObject(active().readConnections(input.getString("sessionId"),
                             input.optString("snapshotId", ""), input.getInt("cursor")))
+                        "traffic" -> JSONObject(active().readTraffic(input.getString("sessionId")))
                         "closeConnections" -> {
                             active().closeConnections(input.getString("sessionId"), input.getString("connectionId"), input.getBoolean("all"))
                             JSONObject()
@@ -319,6 +320,7 @@ internal object AndroidCore {
         "validate", "validateRules" -> "配置未通过核心校验，请检查协议和网络设置"
         "snapshot" -> "无法读取网络服务状态，请重试断开"
         "connections" -> "连接列表已失效或无法读取，请刷新"
+        "traffic" -> "无法读取核心流量统计，本次统计未保存"
         "closeConnections" -> "核心未确认关闭连接，请刷新列表"
         "logs", "clearLogs" -> "无法读取或清空核心日志，请重试"
         else -> "原生网络操作失败，请重试"

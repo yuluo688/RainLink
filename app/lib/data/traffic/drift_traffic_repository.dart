@@ -3,20 +3,22 @@ import 'dart:convert';
 import 'package:drift/drift.dart';
 import '../../domain/connection/traffic_repository.dart';
 import '../../domain/connection/traffic_history.dart';
+import '../../domain/connection/traffic_accounting.dart';
 import '../database/app_database.dart';
 
-class DriftTrafficRepository implements TrafficArchiveRepository {
+class DriftTrafficRepository
+    implements TrafficArchiveRepository, TrafficAccountingRepository {
   DriftTrafficRepository(this.database, {DateTime Function()? now})
-      : _now = now ?? DateTime.now;
+    : _now = now ?? DateTime.now;
   final AppDatabase database;
   final DateTime Function() _now;
   static const _key = 'traffic.daily';
   static const _dayPrefix = 'traffic.day.';
   static const _bucketRetentionDays = 400;
   Future<Map<String, Object?>> _load() async {
-    final row = await (database.select(database.preferences)
-          ..where((r) => r.key.equals(_key)))
-        .getSingleOrNull();
+    final row =
+        await (database.select(database.preferences)
+          ..where((r) => r.key.equals(_key))).getSingleOrNull();
     if (row == null) return {};
     final Object? decoded = jsonDecode(row.value);
     if (decoded is Map<String, Object?>) return decoded;
@@ -25,42 +27,44 @@ class DriftTrafficRepository implements TrafficArchiveRepository {
 
   @override
   Stream<DailyTraffic> watchToday() => Stream.multi((controller) {
-        var records = <TrafficDay>[];
-        Timer? timer;
-        void emit() {
-          final now = _now();
-          final today = DateTime(now.year, now.month, now.day);
-          controller.add(
-              records.where((record) => record.day == today).firstOrNull ??
-                  const DailyTraffic());
-        }
+    var records = <TrafficDay>[];
+    Timer? timer;
+    void emit() {
+      final now = _now();
+      final today = DateTime(now.year, now.month, now.day);
+      controller.add(
+        records.where((record) => record.day == today).firstOrNull ??
+            const DailyTraffic(),
+      );
+    }
 
-        void scheduleMidnight() {
-          final now = _now();
-          timer = Timer(
-              DateTime(now.year, now.month, now.day + 1).difference(now), () {
-            emit();
-            scheduleMidnight();
-          });
-        }
-
-        final subscription = watchHistory().listen((value) {
-          records = value;
+    void scheduleMidnight() {
+      final now = _now();
+      timer = Timer(
+        DateTime(now.year, now.month, now.day + 1).difference(now),
+        () {
           emit();
-        }, onError: controller.addError);
-        scheduleMidnight();
-        controller.onCancel = () {
-          timer?.cancel();
-          return subscription.cancel();
-        };
-      });
+          scheduleMidnight();
+        },
+      );
+    }
+
+    final subscription = watchHistory().listen((value) {
+      records = value;
+      emit();
+    }, onError: controller.addError);
+    scheduleMidnight();
+    controller.onCancel = () {
+      timer?.cancel();
+      return subscription.cancel();
+    };
+  });
 
   @override
-  Stream<List<TrafficDay>> watchHistory() => (database
-          .select(database.preferences)
-        ..where((row) => row.key.equals(_key) | row.key.like('$_dayPrefix%')))
-      .watch()
-      .map(_history);
+  Stream<List<TrafficDay>> watchHistory() =>
+      (database.select(database.preferences)..where(
+        (row) => row.key.equals(_key) | row.key.like('$_dayPrefix%'),
+      )).watch().map(_history);
 
   List<TrafficDay> _history(List<Preference> rows) {
     final days = <String, TrafficDay>{};
@@ -68,11 +72,14 @@ class DriftTrafficRepository implements TrafficArchiveRepository {
     // New per-day rows take precedence; migration never doubles old totals.
     for (final row in [
       ...rows.where((row) => row.key == _key),
-      ...rows.where((row) => row.key != _key)
+      ...rows.where((row) => row.key != _key),
     ]) {
       final Object? value = jsonDecode(row.value);
-      if (value
-          case {'day': String day, 'upload': int up, 'download': int down}) {
+      if (value case {
+        'day': String day,
+        'upload': int up,
+        'download': int down,
+      }) {
         final date = DateTime.tryParse(day);
         if (date == null ||
             date.toIso8601String().substring(0, 10) != day ||
@@ -89,65 +96,91 @@ class DriftTrafficRepository implements TrafficArchiveRepository {
   }
 
   @override
-  Stream<TrafficArchive> watchArchive(
-          [TrafficPeriod period = TrafficPeriod.month]) =>
-      database
-          .customSelect('SELECT 1', readsFrom: {
-            database.preferences,
-            database.trafficBuckets,
-            database.trafficSources
-          })
-          .watch()
-          .asyncMap((_) => database.transaction(() async {
-                final now = _now();
-                final start = trafficDayKey(trafficPeriodStart(period, now));
-                final end = trafficDayKey(now);
-                final rows = await (database.select(database.preferences)
-                      ..where((row) =>
-                          row.key.equals(_key) |
-                          (row.key.isBiggerOrEqualValue('$_dayPrefix$start') &
-                              row.key
-                                  .isSmallerOrEqualValue('$_dayPrefix$end'))))
-                    .get();
-                final buckets = await (database.select(database.trafficBuckets)
-                      ..where((r) =>
+  Stream<TrafficArchive> watchArchive([
+    TrafficPeriod period = TrafficPeriod.month,
+  ]) => database
+      .customSelect(
+        'SELECT 1',
+        readsFrom: {
+          database.preferences,
+          database.trafficBuckets,
+          database.trafficSources,
+        },
+      )
+      .watch()
+      .asyncMap(
+        (_) => database.transaction(() async {
+          final now = _now();
+          final start = trafficDayKey(trafficPeriodStart(period, now));
+          final end = trafficDayKey(now);
+          final rows =
+              await (database.select(database.preferences)..where(
+                (row) =>
+                    row.key.equals(_key) |
+                    (row.key.isBiggerOrEqualValue('$_dayPrefix$start') &
+                        row.key.isSmallerOrEqualValue('$_dayPrefix$end')),
+              )).get();
+          final buckets =
+              await (database.select(database.trafficBuckets)
+                    ..where(
+                      (r) =>
                           r.day.isBiggerOrEqualValue(start) &
-                          r.day.isSmallerOrEqualValue(end))
-                      ..orderBy([
-                        (r) => OrderingTerm.asc(r.day),
-                        (r) => OrderingTerm.asc(r.slot)
-                      ]))
-                    .get();
-                final sources = await (database.select(database.trafficSources)
-                      ..where((r) =>
+                          r.day.isSmallerOrEqualValue(end),
+                    )
+                    ..orderBy([
+                      (r) => OrderingTerm.asc(r.day),
+                      (r) => OrderingTerm.asc(r.slot),
+                    ]))
+                  .get();
+          final sources =
+              await (database.select(database.trafficSources)
+                    ..where(
+                      (r) =>
                           r.day.isBiggerOrEqualValue(start) &
-                          r.day.isSmallerOrEqualValue(end))
-                      ..orderBy([(r) => OrderingTerm.asc(r.day)]))
-                    .get();
-                return TrafficArchive(days: _history(rows), buckets: [
-                  for (final b in buckets)
-                    TrafficBucket(
-                        day: b.day,
-                        slot: b.slot,
-                        upload: b.upload,
-                        download: b.download)
-                ], usage: [
-                  for (final s in sources)
-                    TrafficUsage(
-                        day: s.day,
-                        target: TrafficAttribution(
-                            id: s.targetId, name: s.name, kind: s.kind),
-                        upload: s.upload,
-                        download: s.download)
-                ]);
-              }));
+                          r.day.isSmallerOrEqualValue(end),
+                    )
+                    ..orderBy([(r) => OrderingTerm.asc(r.day)]))
+                  .get();
+          return TrafficArchive(
+            days: _history(rows),
+            buckets: [
+              for (final b in buckets)
+                TrafficBucket(
+                  day: b.day,
+                  slot: b.slot,
+                  upload: b.upload,
+                  download: b.download,
+                ),
+            ],
+            usage: [
+              for (final s in sources)
+                TrafficUsage(
+                  day: s.day,
+                  target: TrafficAttribution(
+                    id: s.targetId,
+                    name: s.name,
+                    kind: s.kind,
+                  ),
+                  upload: s.upload,
+                  download: s.download,
+                ),
+            ],
+          );
+        }),
+      );
 
   Future<void> _saveDay(String day, int upload, int download) => database
       .into(database.preferences)
-      .insertOnConflictUpdate(PreferencesCompanion.insert(
+      .insertOnConflictUpdate(
+        PreferencesCompanion.insert(
           key: '$_dayPrefix$day',
-          value:
-              jsonEncode({'day': day, 'upload': upload, 'download': download})))
+          value: jsonEncode({
+            'day': day,
+            'upload': upload,
+            'download': download,
+          }),
+        ),
+      )
       .then((_) {});
   Future<void> _migrateLegacy() async {
     final previous = await _load();
@@ -155,101 +188,269 @@ class DriftTrafficRepository implements TrafficArchiveRepository {
     final encoded = jsonEncode(previous);
     final day = _history([Preference(key: _key, value: encoded)]).single;
     final key = '$_dayPrefix${trafficDayKey(day.day)}';
-    final stored = await (database.select(database.preferences)
-          ..where((r) => r.key.equals(key)))
-        .getSingleOrNull();
+    final stored =
+        await (database.select(database.preferences)
+          ..where((r) => r.key.equals(key))).getSingleOrNull();
     if (stored == null) {
       await _saveDay(trafficDayKey(day.day), day.upload, day.download);
     }
-    if (previous
-        case {
-          'session': String session,
-          'lastUp': int up,
-          'lastDown': int down
-        }) {
+    if (previous case {
+      'session': String session,
+      'lastUp': int up,
+      'lastDown': int down,
+    }) {
       if (up < 0 || down < 0) throw const FormatException('流量计数无效');
-      await database.into(database.trafficCheckpoints).insert(
-          TrafficCheckpointsCompanion.insert(
-              sessionId: session, upload: up, download: down),
-          mode: InsertMode.insertOrIgnore);
+      await database
+          .into(database.trafficCheckpoints)
+          .insert(
+            TrafficCheckpointsCompanion.insert(
+              sessionId: session,
+              upload: up,
+              download: down,
+            ),
+            mode: InsertMode.insertOrIgnore,
+          );
     }
     await (database.delete(database.preferences)
-          ..where((r) => r.key.equals(_key)))
-        .go();
+      ..where((r) => r.key.equals(_key))).go();
   }
 
   @override
-  Future<void> record(String sessionId, int uploadTotal, int downloadTotal,
-          {TrafficAttribution attribution = TrafficAttribution.unassigned}) =>
-      database.transaction(() async {
-        const maximumCounter = 9007199254740991;
-        if (!RegExp(r'^[a-zA-Z0-9_-]{1,128}$').hasMatch(sessionId) ||
-            uploadTotal < 0 ||
-            downloadTotal < 0 ||
-            uploadTotal > maximumCounter ||
-            downloadTotal > maximumCounter ||
-            !{'node', 'chain', 'direct', 'unknown'}
-                .contains(attribution.kind) ||
-            !RegExp(r'^[a-zA-Z0-9_-]{1,128}$').hasMatch(attribution.id) ||
-            attribution.name.trim().isEmpty ||
-            attribution.name.runes.length > 128 ||
-            RegExp(r'[\x00-\x1F\x7F]').hasMatch(attribution.name)) {
-          throw const FormatException('流量计数无效');
+  Future<void> record(
+    String sessionId,
+    int uploadTotal,
+    int downloadTotal, {
+    TrafficAttribution attribution = TrafficAttribution.unassigned,
+  }) => database.transaction(() async {
+    if (!RegExp(r'^[a-zA-Z0-9_-]{1,128}$').hasMatch(sessionId) ||
+        uploadTotal < 0 ||
+        downloadTotal < 0 ||
+        uploadTotal > maximumTrafficCounter ||
+        downloadTotal > maximumTrafficCounter ||
+        !{'node', 'chain', 'direct', 'unknown'}.contains(attribution.kind) ||
+        !RegExp(r'^[a-zA-Z0-9_-]{1,128}$').hasMatch(attribution.id) ||
+        attribution.name.trim().isEmpty ||
+        attribution.name.runes.length > 128 ||
+        RegExp(r'[\x00-\x1F\x7F]').hasMatch(attribution.name)) {
+      throw const FormatException('流量计数无效');
+    }
+    await _migrateLegacy();
+    final previous =
+        await (database.select(database.trafficCheckpoints)
+          ..where((r) => r.sessionId.equals(sessionId))).getSingleOrNull();
+    if (previous != null && previous.epoch.isNotEmpty) {
+      throw const FormatException('不能混用精确统计与旧版计数');
+    }
+    final priorUp = previous?.upload ?? 0, priorDown = previous?.download ?? 0;
+    // An older observation must not turn a later interval into a known zero.
+    if (uploadTotal < priorUp || downloadTotal < priorDown) return;
+    final deltaUp = (uploadTotal - priorUp).clamp(0, uploadTotal);
+    final deltaDown = (downloadTotal - priorDown).clamp(0, downloadTotal);
+    await _appendDelta(deltaUp, deltaDown, [
+      TrafficCounter(target: attribution, upload: deltaUp, download: deltaDown),
+      TrafficCounter(
+        target: TrafficAttribution.unknownApplication,
+        upload: deltaUp,
+        download: deltaDown,
+      ),
+    ]);
+    await database
+        .into(database.trafficCheckpoints)
+        .insertOnConflictUpdate(
+          TrafficCheckpointsCompanion.insert(
+            sessionId: sessionId,
+            upload: uploadTotal < priorUp ? priorUp : uploadTotal,
+            download: downloadTotal < priorDown ? priorDown : downloadTotal,
+          ),
+        );
+  });
+
+  @override
+  Future<void> recordAccounting(
+    TrafficAccountingSnapshot snapshot,
+  ) => database.transaction(() async {
+    snapshot.validate();
+    await _migrateLegacy();
+    final previous =
+        await (database.select(database.trafficCheckpoints)..where(
+          (r) => r.sessionId.equals(snapshot.sessionId),
+        )).getSingleOrNull();
+    if (previous != null &&
+        previous.epoch.isNotEmpty &&
+        previous.epoch != snapshot.epoch) {
+      throw const FormatException('核心统计周期已改变，请重新连接');
+    }
+    final priorUp = previous?.upload ?? 0, priorDown = previous?.download ?? 0;
+    // Cumulative source counters determine order. Wall clocks can move
+    // backwards; rejecting their timestamps would freeze future usage.
+    if (snapshot.upload < priorUp || snapshot.download < priorDown) {
+      return;
+    }
+    final checkpoints =
+        await (database.select(database.trafficSourceCheckpoints)
+          ..where((r) => r.sessionId.equals(snapshot.sessionId))).get();
+    final rows = [...snapshot.targets, ...snapshot.applications];
+    final deltaUp = snapshot.upload - priorUp,
+        deltaDown = snapshot.download - priorDown;
+    final deltas = <TrafficCounter>[];
+    // The first precise sample after a legacy checkpoint has no reliable
+    // per-source baseline. Record that interval as unknown and start exact
+    // source deltas from this sample; never re-label historical bytes.
+    if (previous != null &&
+        previous.epoch.isEmpty &&
+        (priorUp > 0 || priorDown > 0)) {
+      deltas.addAll([
+        TrafficCounter(
+          target: TrafficAttribution.unassigned,
+          upload: deltaUp,
+          download: deltaDown,
+        ),
+        TrafficCounter(
+          target: TrafficAttribution.unknownApplication,
+          upload: deltaUp,
+          download: deltaDown,
+        ),
+      ]);
+    } else {
+      final prior = {
+        for (final row in checkpoints) '${row.kind}:${row.targetId}': row,
+      };
+      final observed = <String>{};
+      for (final row in rows) {
+        final key = '${row.target.kind}:${row.target.id}';
+        observed.add(key);
+        final old = prior[key];
+        final up = row.upload - (old?.upload ?? 0),
+            down = row.download - (old?.download ?? 0);
+        if (up < 0 || down < 0) throw const FormatException('流量来源计数回退');
+        deltas.add(
+          TrafficCounter(target: row.target, upload: up, download: down),
+        );
+      }
+      if (checkpoints.any(
+        (row) =>
+            !observed.contains('${row.kind}:${row.targetId}') &&
+            (row.upload > 0 || row.download > 0),
+      )) {
+        throw const FormatException('流量来源缺失');
+      }
+      for (final application in [false, true]) {
+        final dimension = deltas.where(
+          (r) => (r.target.kind == 'application') == application,
+        );
+        if (dimension.fold(0, (sum, row) => sum + row.upload) != deltaUp ||
+            dimension.fold(0, (sum, row) => sum + row.download) != deltaDown) {
+          throw const FormatException('流量增量与来源不一致');
         }
-        await _migrateLegacy();
-        final now = _now();
-        final day = trafficDayKey(now);
-        final previous = await (database.select(database.trafficCheckpoints)
-              ..where((r) => r.sessionId.equals(sessionId)))
-            .getSingleOrNull();
-        final priorUp = previous?.upload ?? 0,
-            priorDown = previous?.download ?? 0;
-        // An older observation must not turn a later interval into a known zero.
-        if (uploadTotal < priorUp || downloadTotal < priorDown) return;
-        final deltaUp = (uploadTotal - priorUp).clamp(0, uploadTotal);
-        final deltaDown = (downloadTotal - priorDown).clamp(0, downloadTotal);
-        final stored = await (database.select(database.preferences)
-              ..where((r) => r.key.equals('$_dayPrefix$day')))
-            .getSingleOrNull();
-        final totals =
-            stored == null ? const DailyTraffic() : _history([stored]).single;
-        await _saveDay(
-            day, totals.upload + deltaUp, totals.download + deltaDown);
-        await database.into(database.trafficCheckpoints).insertOnConflictUpdate(
-            TrafficCheckpointsCompanion.insert(
-                sessionId: sessionId,
-                upload: uploadTotal < priorUp ? priorUp : uploadTotal,
-                download:
-                    downloadTotal < priorDown ? priorDown : downloadTotal));
-        final slot = (now.hour * 60 + now.minute) ~/ trafficBucketMinutes;
-        final bucket = await (database.select(database.trafficBuckets)
-              ..where((r) => r.day.equals(day) & r.slot.equals(slot)))
-            .getSingleOrNull();
-        await database.into(database.trafficBuckets).insertOnConflictUpdate(
+      }
+    }
+    await _appendDelta(deltaUp, deltaDown, deltas);
+    final priorByKey = {
+      for (final row in checkpoints) '${row.kind}:${row.targetId}': row,
+    };
+    await database.batch((batch) {
+      for (final row in rows) {
+        final prior = priorByKey['${row.target.kind}:${row.target.id}'];
+        if (prior?.upload == row.upload && prior?.download == row.download) {
+          continue;
+        }
+        batch.insert(
+          database.trafficSourceCheckpoints,
+          TrafficSourceCheckpointsCompanion.insert(
+            sessionId: snapshot.sessionId,
+            kind: row.target.kind,
+            targetId: row.target.id,
+            upload: row.upload,
+            download: row.download,
+          ),
+          mode: InsertMode.insertOrReplace,
+        );
+      }
+    });
+    await database
+        .into(database.trafficCheckpoints)
+        .insertOnConflictUpdate(
+          TrafficCheckpointsCompanion.insert(
+            sessionId: snapshot.sessionId,
+            upload: snapshot.upload,
+            download: snapshot.download,
+            epoch: Value(snapshot.epoch),
+            sampledAt: Value(snapshot.sampledAt.millisecondsSinceEpoch),
+          ),
+        );
+  });
+
+  int _add(int current, int delta) {
+    final result = current + delta;
+    if (result < 0 || result > maximumTrafficCounter) {
+      throw const FormatException('流量计数超出范围');
+    }
+    return result;
+  }
+
+  Future<void> _appendDelta(
+    int deltaUp,
+    int deltaDown,
+    List<TrafficCounter> sources,
+  ) async {
+    final now = _now();
+    final day = trafficDayKey(now);
+    final stored =
+        await (database.select(database.preferences)
+          ..where((r) => r.key.equals('$_dayPrefix$day'))).getSingleOrNull();
+    final totals =
+        stored == null ? const DailyTraffic() : _history([stored]).single;
+    if (stored == null || deltaUp > 0 || deltaDown > 0) {
+      await _saveDay(
+        day,
+        _add(totals.upload, deltaUp),
+        _add(totals.download, deltaDown),
+      );
+    }
+    final slot = (now.hour * 60 + now.minute) ~/ trafficBucketMinutes;
+    final bucket =
+        await (database.select(database.trafficBuckets)..where(
+          (r) => r.day.equals(day) & r.slot.equals(slot),
+        )).getSingleOrNull();
+    if (bucket == null || deltaUp > 0 || deltaDown > 0) {
+      await database
+          .into(database.trafficBuckets)
+          .insertOnConflictUpdate(
             TrafficBucketsCompanion.insert(
-                day: day,
-                slot: slot,
-                upload: (bucket?.upload ?? 0) + deltaUp,
-                download: (bucket?.download ?? 0) + deltaDown));
-        final source = await (database.select(database.trafficSources)
-              ..where((r) =>
-                  r.day.equals(day) &
-                  r.kind.equals(attribution.kind) &
-                  r.targetId.equals(attribution.id)))
-            .getSingleOrNull();
-        await database.into(database.trafficSources).insertOnConflictUpdate(
+              day: day,
+              slot: slot,
+              upload: _add(bucket?.upload ?? 0, deltaUp),
+              download: _add(bucket?.download ?? 0, deltaDown),
+            ),
+          );
+    }
+    for (final row in sources.where((r) => r.total > 0)) {
+      final attribution = row.target;
+      final source =
+          await (database.select(database.trafficSources)..where(
+            (r) =>
+                r.day.equals(day) &
+                r.kind.equals(attribution.kind) &
+                r.targetId.equals(attribution.id),
+          )).getSingleOrNull();
+      await database
+          .into(database.trafficSources)
+          .insertOnConflictUpdate(
             TrafficSourcesCompanion.insert(
-                day: day,
-                targetId: attribution.id,
-                kind: attribution.kind,
-                name: attribution.name,
-                upload: (source?.upload ?? 0) + deltaUp,
-                download: (source?.download ?? 0) + deltaDown));
-        // Keep high-resolution rows bounded while retaining inexpensive daily totals.
-        final oldest = trafficDayKey(
-            DateTime(now.year, now.month, now.day - _bucketRetentionDays));
-        await (database.delete(database.trafficBuckets)
-              ..where((r) => r.day.isSmallerThanValue(oldest)))
-            .go();
-      });
+              day: day,
+              targetId: attribution.id,
+              kind: attribution.kind,
+              name: attribution.name,
+              upload: _add(source?.upload ?? 0, row.upload),
+              download: _add(source?.download ?? 0, row.download),
+            ),
+          );
+    }
+    // Keep high-resolution rows bounded while retaining inexpensive daily totals.
+    final oldest = trafficDayKey(
+      DateTime(now.year, now.month, now.day - _bucketRetentionDays),
+    );
+    await (database.delete(database.trafficBuckets)
+      ..where((r) => r.day.isSmallerThanValue(oldest))).go();
+  }
 }

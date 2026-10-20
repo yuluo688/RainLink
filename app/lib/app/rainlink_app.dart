@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
@@ -17,10 +18,13 @@ import '../application/connection/mobile_startup_controller.dart';
 import '../application/preferences/mobile_integration_controller.dart';
 import '../domain/platform/mobile_integration.dart';
 import '../design_system/theme/rainlink_theme.dart';
+import '../design_system/layout/app_layout.dart';
 import '../domain/preferences/app_preferences.dart';
 import '../domain/preferences/device_settings.dart';
 import '../domain/platform/desktop_integration.dart';
 import '../application/updates/app_update_controller.dart';
+import '../domain/updates/app_update.dart';
+import '../domain/connection/connection_models.dart';
 import 'router.dart';
 
 class RainlinkApp extends ConsumerStatefulWidget {
@@ -33,11 +37,12 @@ class RainlinkApp extends ConsumerStatefulWidget {
 
 class _RainlinkAppState extends ConsumerState<RainlinkApp>
     with WidgetsBindingObserver {
-  static final _lightThemes = {
+  // Cache for this app instance; ThemeData captures its native platform.
+  late final _lightThemes = {
     for (final density in AppDensity.values)
       density: buildRainlinkTheme(Brightness.light, density: density),
   };
-  static final _darkThemes = {
+  late final _darkThemes = {
     for (final density in AppDensity.values)
       density: buildRainlinkTheme(Brightness.dark, density: density),
   };
@@ -53,6 +58,8 @@ class _RainlinkAppState extends ConsumerState<RainlinkApp>
   final _messenger = GlobalKey<ScaffoldMessengerState>();
   bool _servicesStarted = false;
   bool _notificationsReady = false;
+  bool _handingOffUpdate = false;
+  void Function()? _detachUpdateHandoff;
 
   @override
   void initState() {
@@ -67,31 +74,38 @@ class _RainlinkAppState extends ConsumerState<RainlinkApp>
     });
     // The window guard lives above MaterialApp. Route with the owned router,
     // rather than looking up a GoRouter from that ancestor's BuildContext.
-    _desktopActions =
-        ref.read(desktopIntegrationProvider)?.actions.listen((action) {
+    _desktopActions = ref.read(desktopIntegrationProvider)?.actions.listen((
+      action,
+    ) {
       if (mounted && action == DesktopAction.showGroups) _router.go('/groups');
     });
     final mobile = ref.read(mobileIntegrationProvider);
     _notificationsReady = mobile == null;
     if (mobile != null) {
-      _mobileActions = mobile.actions.listen((action) {
-        WidgetsBinding.instance.addPostFrameCallback((_) {
-          if (mounted) {
-            _router.go(action == MobileAction.groups ? '/groups' : '/overview');
-          }
-        });
-        WidgetsBinding.instance.scheduleFrame();
-      },
-          onError: (Object error, StackTrace stack) =>
-              _notice('无法打开通知对应的页面，请从底部导航进入'));
+      _mobileActions = mobile.actions.listen(
+        (action) {
+          WidgetsBinding.instance.addPostFrameCallback((_) {
+            if (mounted) {
+              _router.go(
+                action == MobileAction.groups ? '/groups' : '/overview',
+              );
+            }
+          });
+          WidgetsBinding.instance.scheduleFrame();
+        },
+        onError:
+            (Object error, StackTrace stack) => _notice('无法打开通知对应的页面，请从底部导航进入'),
+      );
       ref.listenManual(proxyModeProvider, (previous, next) {
         if (previous == next) return;
-        unawaited(ref
-            .read(deviceSettingsControllerProvider.notifier)
-            .saveConnection(mode: next)
-            .catchError((Object error, StackTrace stack) {
-          _notice('代理模式已生效，但下次启动的偏好未能保存。');
-        }));
+        unawaited(
+          ref
+              .read(deviceSettingsControllerProvider.notifier)
+              .saveConnection(mode: next)
+              .catchError((Object error, StackTrace stack) {
+                _notice('代理模式已生效，但下次启动的偏好未能保存。');
+              }),
+        );
       });
     }
     WidgetsBinding.instance.addObserver(this);
@@ -100,12 +114,19 @@ class _RainlinkAppState extends ConsumerState<RainlinkApp>
     _maintenance = ref.read(subscriptionMaintenanceProvider);
     _expiryMonitor = ref.read(subscriptionExpiryMonitorProvider);
     _logCollector = ref.read(coreLogCollectorProvider.notifier);
+    if (ref.read(updateInstallationModeProvider) ==
+        UpdateInstallationMode.androidInstaller) {
+      _detachUpdateHandoff = ref
+          .read(updateShutdownProvider)
+          .attach(_installAndroidUpdate);
+    }
     ref.listenManual(desktopIntegrationNoticeProvider, (previous, message) {
       if (message == null || message.isEmpty) return;
       WidgetsBinding.instance.addPostFrameCallback((_) {
         if (mounted) {
-          _messenger.currentState
-              ?.showSnackBar(SnackBar(content: Text(message)));
+          _messenger.currentState?.showSnackBar(
+            SnackBar(content: Text(message)),
+          );
         }
       });
     });
@@ -115,8 +136,10 @@ class _RainlinkAppState extends ConsumerState<RainlinkApp>
     await ref.read(startupReadyProvider);
     if (!mounted || _servicesStarted) return;
     _servicesStarted = true;
-    _session.setObserving(WidgetsBinding.instance.lifecycleState == null ||
-        WidgetsBinding.instance.lifecycleState == AppLifecycleState.resumed);
+    _session.setObserving(
+      WidgetsBinding.instance.lifecycleState == null ||
+          WidgetsBinding.instance.lifecycleState == AppLifecycleState.resumed,
+    );
     _maintenance?.resume();
     if (_notificationsReady) _expiryMonitor?.resume();
     _logCollector.resume();
@@ -124,11 +147,13 @@ class _RainlinkAppState extends ConsumerState<RainlinkApp>
     if (!mounted) return;
     try {
       await _mobileStartup.start(
-          isForeground: () =>
-              mounted &&
-              (WidgetsBinding.instance.lifecycleState == null ||
-                  WidgetsBinding.instance.lifecycleState ==
-                      AppLifecycleState.resumed));
+        isForeground:
+            () =>
+                mounted &&
+                (WidgetsBinding.instance.lifecycleState == null ||
+                    WidgetsBinding.instance.lifecycleState ==
+                        AppLifecycleState.resumed),
+      );
     } on Exception {
       _notice('自动连接或系统通知初始化未完成，请在概览和通用设置中检查');
     } finally {
@@ -148,6 +173,42 @@ class _RainlinkAppState extends ConsumerState<RainlinkApp>
     }
   }
 
+  Future<void> _installAndroidUpdate(PreparedUpdate update) async {
+    if (!mounted || _handingOffUpdate) throw const UpdateException('当前安装尚未结束');
+    setState(() => _handingOffUpdate = true);
+    ref.read(connectionUpdateHoldProvider.notifier).state = true;
+    final subscriptions = ref.read(subscriptionControllerProvider.notifier);
+    try {
+      _maintenance?.pause();
+      _expiryMonitor?.pause();
+      await _session.initialized;
+      await _session.disconnect();
+      if (!mounted ||
+          ref.read(sessionControllerProvider).phase != ConnectionPhase.idle) {
+        throw const UpdateException('连接尚未完全断开，请先在概览恢复网络后重试');
+      }
+      await subscriptions.suspend();
+      await _maintenance?.suspend();
+      await _expiryMonitor?.suspend();
+      await _logCollector.suspend();
+      await ref.read(deviceSettingsControllerProvider.notifier).flush();
+      if (!mounted) throw const UpdateCancelled();
+      await update.commit();
+    } finally {
+      subscriptions.resume();
+      if (mounted) {
+        ref.read(connectionUpdateHoldProvider.notifier).state = false;
+        setState(() => _handingOffUpdate = false);
+        final state = WidgetsBinding.instance.lifecycleState;
+        if (state == null || state == AppLifecycleState.resumed) {
+          _maintenance?.resume();
+          if (_notificationsReady) _expiryMonitor?.resume();
+          _logCollector.resume();
+        }
+      }
+    }
+  }
+
   @override
   void didChangeAppLifecycleState(AppLifecycleState state) {
     if (_servicesStarted) {
@@ -157,9 +218,11 @@ class _RainlinkAppState extends ConsumerState<RainlinkApp>
       if (ref.read(mobileIntegrationProvider) != null) {
         ref.invalidate(mobileNotificationStatusProvider);
       }
-      _maintenance?.resume();
-      if (_notificationsReady) _expiryMonitor?.resume();
-      _logCollector.resume();
+      if (!_handingOffUpdate) {
+        _maintenance?.resume();
+        if (_notificationsReady) _expiryMonitor?.resume();
+        _logCollector.resume();
+      }
     } else if (state == AppLifecycleState.paused ||
         state == AppLifecycleState.detached) {
       _maintenance?.pause();
@@ -171,6 +234,7 @@ class _RainlinkAppState extends ConsumerState<RainlinkApp>
   @override
   void dispose() {
     WidgetsBinding.instance.removeObserver(this);
+    _detachUpdateHandoff?.call();
     unawaited(_desktopActions?.cancel());
     unawaited(_mobileActions?.cancel());
     _mobileStartup.dispose();
@@ -185,8 +249,9 @@ class _RainlinkAppState extends ConsumerState<RainlinkApp>
   @override
   Widget build(BuildContext context) {
     final theme = ref.watch(themeControllerProvider);
-    final appearance =
-        ref.watch(deviceSettingsControllerProvider.select((v) => v.appearance));
+    final appearance = ref.watch(
+      deviceSettingsControllerProvider.select((v) => v.appearance),
+    );
     return MaterialApp.router(
       title: 'RainLink',
       scaffoldMessengerKey: _messenger,
@@ -201,18 +266,46 @@ class _RainlinkAppState extends ConsumerState<RainlinkApp>
         AppTheme.dark => ThemeMode.dark,
         AppTheme.light => ThemeMode.light,
       },
-      themeAnimationDuration: appearance.reduceMotion
-          ? Duration.zero
-          : const Duration(milliseconds: 180),
+      themeAnimationDuration:
+          appearance.reduceMotion
+              ? Duration.zero
+              : const Duration(milliseconds: 180),
       builder: (context, child) {
         final media = MediaQuery.of(context);
-        return MediaQuery(
-            data: media.copyWith(
-                textScaler: _SettingsTextScaler(
-                    media.textScaler, appearance.textSize.scale),
-                disableAnimations:
-                    media.disableAnimations || appearance.reduceMotion),
-            child: child ?? const SizedBox.shrink());
+        final content = MediaQuery(
+          data: media.copyWith(
+            textScaler: _SettingsTextScaler(
+              media.textScaler,
+              appearance.textSize.scale,
+            ),
+            disableAnimations:
+                media.disableAnimations || appearance.reduceMotion,
+          ),
+          child: AbsorbPointer(
+            absorbing: _handingOffUpdate,
+            child: child ?? const SizedBox.shrink(),
+          ),
+        );
+        if (AppLayout.current != AppLayout.mobile) return content;
+        // Custom headers have no AppBar to set system-bar contrast. Follow the
+        // rendered theme so light mode never leaves white icons on white.
+        final theme = Theme.of(context);
+        return AnnotatedRegion<SystemUiOverlayStyle>(
+          key: const ValueKey('mobile-system-bars'),
+          value: (theme.brightness == Brightness.dark
+                  ? SystemUiOverlayStyle.light
+                  : SystemUiOverlayStyle.dark)
+              .copyWith(
+                statusBarColor: Colors.transparent,
+                systemNavigationBarColor: theme.scaffoldBackgroundColor,
+                systemNavigationBarDividerColor: Colors.transparent,
+                systemNavigationBarIconBrightness:
+                    theme.brightness == Brightness.dark
+                        ? Brightness.light
+                        : Brightness.dark,
+              ),
+          child: content,
+        );
       },
       routerConfig: _router,
     );

@@ -13,26 +13,37 @@ class TrafficDay extends DailyTraffic {
 enum TrafficPeriod { today, week, month }
 
 class TrafficReport extends DailyTraffic {
-  const TrafficReport(
-      {required this.days, required super.upload, required super.download});
+  const TrafficReport({
+    required this.days,
+    required super.upload,
+    required super.download,
+  });
   final List<TrafficDay> days;
 
   factory TrafficReport.fromDays(
-      List<TrafficDay> records, TrafficPeriod period, DateTime now) {
+    List<TrafficDay> records,
+    TrafficPeriod period,
+    DateTime now,
+  ) {
     final today = DateTime(now.year, now.month, now.day);
     final start = switch (period) {
       TrafficPeriod.today => today,
-      TrafficPeriod.week =>
-        DateTime(now.year, now.month, now.day - now.weekday + 1),
+      TrafficPeriod.week => DateTime(
+        now.year,
+        now.month,
+        now.day - now.weekday + 1,
+      ),
       TrafficPeriod.month => DateTime(now.year, now.month),
     };
     final days = <TrafficDay>[];
     var up = 0;
     var down = 0;
     // Calendar arithmetic avoids 23/25-hour daylight-saving days.
-    for (var day = start;
-        !day.isAfter(today);
-        day = DateTime(day.year, day.month, day.day + 1)) {
+    for (
+      var day = start;
+      !day.isAfter(today);
+      day = DateTime(day.year, day.month, day.day + 1)
+    ) {
       final match = records.where((record) => record.day == day).firstOrNull;
       final item = match ?? TrafficDay(day: day);
       days.add(item);
@@ -40,25 +51,46 @@ class TrafficReport extends DailyTraffic {
       down += item.download;
     }
     return TrafficReport(
-        days: List.unmodifiable(days), upload: up, download: down);
+      days: List.unmodifiable(days),
+      upload: up,
+      download: down,
+    );
   }
 }
 
 abstract interface class TrafficRepository {
   Stream<DailyTraffic> watchToday();
   Stream<List<TrafficDay>> watchHistory();
-  Future<void> record(String sessionId, int uploadTotal, int downloadTotal,
-      {TrafficAttribution attribution = TrafficAttribution.unassigned});
+  Future<void> record(
+    String sessionId,
+    int uploadTotal,
+    int downloadTotal, {
+    TrafficAttribution attribution = TrafficAttribution.unassigned,
+  });
 }
 
 /// Attribution is conservative: unknown traffic is never assigned to a node.
 class TrafficAttribution {
-  const TrafficAttribution(
-      {required this.id, required this.name, required this.kind});
-  static const unassigned =
-      TrafficAttribution(id: 'unassigned', name: '未归属流量', kind: 'unknown');
-  static const direct =
-      TrafficAttribution(id: 'direct', name: '直连', kind: 'direct');
+  const TrafficAttribution({
+    required this.id,
+    required this.name,
+    required this.kind,
+  });
+  static const unassigned = TrafficAttribution(
+    id: 'unassigned',
+    name: '未归属流量',
+    kind: 'unknown',
+  );
+  static const direct = TrafficAttribution(
+    id: 'direct',
+    name: '直连',
+    kind: 'direct',
+  );
+  static const unknownApplication = TrafficAttribution(
+    id: 'unassigned',
+    name: '未识别应用',
+    kind: 'application',
+  );
   final String id;
   final String name;
   final String kind;

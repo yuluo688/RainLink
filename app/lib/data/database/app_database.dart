@@ -104,55 +104,83 @@ class TrafficCheckpoints extends Table {
   TextColumn get sessionId => text()();
   IntColumn get upload => integer()();
   IntColumn get download => integer()();
+  TextColumn get epoch => text().withDefault(const Constant(''))();
+  IntColumn get sampledAt => integer().withDefault(const Constant(0))();
   @override
   Set<Column<Object>> get primaryKey => {sessionId};
 }
 
-@DriftDatabase(tables: [
-  Preferences,
-  Nodes,
-  NodeGroups,
-  CoreLogs,
-  NodeOverrides,
-  TrafficBuckets,
-  TrafficSources,
-  TrafficCheckpoints
-])
+@DataClassName('TrafficSourceCheckpointRecord')
+class TrafficSourceCheckpoints extends Table {
+  TextColumn get sessionId => text()();
+  TextColumn get kind => text()();
+  TextColumn get targetId => text()();
+  IntColumn get upload => integer()();
+  IntColumn get download => integer()();
+  @override
+  Set<Column<Object>> get primaryKey => {sessionId, kind, targetId};
+}
+
+@DriftDatabase(
+  tables: [
+    Preferences,
+    Nodes,
+    NodeGroups,
+    CoreLogs,
+    NodeOverrides,
+    TrafficBuckets,
+    TrafficSources,
+    TrafficCheckpoints,
+    TrafficSourceCheckpoints,
+  ],
+)
 class AppDatabase extends _$AppDatabase {
   AppDatabase(super.executor);
 
   Future<void>? _closing;
 
   @override
-  int get schemaVersion => 7;
+  int get schemaVersion => 8;
 
   @override
   MigrationStrategy get migration => MigrationStrategy(
-        onCreate: (migrator) => migrator.createAll(),
-        onUpgrade: (migrator, from, to) async {
-          if (from < 2) await migrator.createTable(nodes);
-          if (from < 3) {
-            if (from >= 2) {
-              await migrator.addColumn(nodes, nodes.options);
-              await migrator.addColumn(nodes, nodes.groupId);
-              await migrator.addColumn(nodes, nodes.sourceKey);
-            }
-            await migrator.createTable(nodeGroups);
-          }
-          if (from < 4) await migrator.createTable(coreLogs);
-          if (from < 5) await migrator.createTable(nodeOverrides);
-          if (from < 6) {
-            await migrator.createTable(trafficBuckets);
-            await migrator.createTable(trafficSources);
-            await migrator.createTable(trafficCheckpoints);
-          }
-          if (from >= 3 && from < 7) {
-            await migrator.addColumn(
-                nodeGroups, nodeGroups.compatibilityIssues);
-          }
-        },
-        beforeOpen: (_) async => customStatement('PRAGMA foreign_keys = ON'),
-      );
+    onCreate: (migrator) => migrator.createAll(),
+    onUpgrade: (migrator, from, to) async {
+      if (from < 2) await migrator.createTable(nodes);
+      if (from < 3) {
+        if (from >= 2) {
+          await migrator.addColumn(nodes, nodes.options);
+          await migrator.addColumn(nodes, nodes.groupId);
+          await migrator.addColumn(nodes, nodes.sourceKey);
+        }
+        await migrator.createTable(nodeGroups);
+      }
+      if (from < 4) await migrator.createTable(coreLogs);
+      if (from < 5) await migrator.createTable(nodeOverrides);
+      if (from < 6) {
+        await migrator.createTable(trafficBuckets);
+        await migrator.createTable(trafficSources);
+        await migrator.createTable(trafficCheckpoints);
+      }
+      if (from >= 3 && from < 7) {
+        await migrator.addColumn(nodeGroups, nodeGroups.compatibilityIssues);
+      }
+      if (from < 8) {
+        if (from >= 6) {
+          await migrator.addColumn(
+            trafficCheckpoints,
+            trafficCheckpoints.epoch,
+          );
+          await migrator.addColumn(
+            trafficCheckpoints,
+            trafficCheckpoints.sampledAt,
+          );
+        }
+        await migrator.createTable(trafficSourceCheckpoints);
+      }
+    },
+    beforeOpen: (_) async => customStatement('PRAGMA foreign_keys = ON'),
+  );
 
   @override
   Future<void> close() => _closing ??= super.close();

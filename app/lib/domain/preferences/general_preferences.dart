@@ -23,16 +23,15 @@ class GeneralPreferences {
     bool? connectionNotifications,
     bool? subscriptionExpiryNotifications,
     WindowCloseBehavior? closeBehavior,
-  }) =>
-      GeneralPreferences(
-        autoConnect: autoConnect ?? this.autoConnect,
-        showTray: showTray ?? this.showTray,
-        connectionNotifications:
-            connectionNotifications ?? this.connectionNotifications,
-        subscriptionExpiryNotifications: subscriptionExpiryNotifications ??
-            this.subscriptionExpiryNotifications,
-        closeBehavior: closeBehavior ?? this.closeBehavior,
-      );
+  }) => GeneralPreferences(
+    autoConnect: autoConnect ?? this.autoConnect,
+    showTray: showTray ?? this.showTray,
+    connectionNotifications:
+        connectionNotifications ?? this.connectionNotifications,
+    subscriptionExpiryNotifications:
+        subscriptionExpiryNotifications ?? this.subscriptionExpiryNotifications,
+    closeBehavior: closeBehavior ?? this.closeBehavior,
+  );
 
   GeneralPreferences validated() {
     if (!showTray && closeBehavior == WindowCloseBehavior.tray) {
@@ -41,9 +40,12 @@ class GeneralPreferences {
     return this;
   }
 
-  GeneralPreferences validatedForDesktop() {
+  GeneralPreferences validatedForDesktop({
+    bool notificationsRequireTray = true,
+  }) {
     validated();
-    if (!showTray &&
+    if (notificationsRequireTray &&
+        !showTray &&
         (connectionNotifications || subscriptionExpiryNotifications)) {
       throw const SettingsException('系统通知需要开启托盘图标');
     }
@@ -51,34 +53,34 @@ class GeneralPreferences {
   }
 
   Map<String, Object?> toJson() => {
-        'autoConnect': autoConnect,
-        'showTray': showTray,
-        'connectionNotifications': connectionNotifications,
-        'subscriptionExpiryNotifications': subscriptionExpiryNotifications,
-        'closeBehavior': closeBehavior.name,
-      };
+    'autoConnect': autoConnect,
+    'showTray': showTray,
+    'connectionNotifications': connectionNotifications,
+    'subscriptionExpiryNotifications': subscriptionExpiryNotifications,
+    'closeBehavior': closeBehavior.name,
+  };
 
   factory GeneralPreferences.fromJson(Map<String, Object?> value) {
-    if (value
-        case {
-          'autoConnect': bool autoConnect,
-          'showTray': bool showTray,
-          'connectionNotifications': bool notifications,
-          'closeBehavior': String close,
-        }) {
+    if (value case {
+      'autoConnect': bool autoConnect,
+      'showTray': bool showTray,
+      'connectionNotifications': bool notifications,
+      'closeBehavior': String close,
+    }) {
       final behavior =
           WindowCloseBehavior.values.where((v) => v.name == close).firstOrNull;
-      final expiry = value.containsKey('subscriptionExpiryNotifications')
-          ? value['subscriptionExpiryNotifications']
-          : false;
+      final expiry =
+          value.containsKey('subscriptionExpiryNotifications')
+              ? value['subscriptionExpiryNotifications']
+              : false;
       if (behavior != null && expiry is bool) {
         return GeneralPreferences(
-                autoConnect: autoConnect,
-                showTray: showTray,
-                connectionNotifications: notifications,
-                subscriptionExpiryNotifications: expiry,
-                closeBehavior: behavior)
-            .validated();
+          autoConnect: autoConnect,
+          showTray: showTray,
+          connectionNotifications: notifications,
+          subscriptionExpiryNotifications: expiry,
+          closeBehavior: behavior,
+        ).validated();
       }
     }
     throw const SettingsException('通用设置格式无效');
@@ -87,19 +89,28 @@ class GeneralPreferences {
 
 /// Only confirmed mode/capture choices are remembered, never an active session.
 class ConnectionPreferences {
-  const ConnectionPreferences(
-      {this.mode = ProxyMode.rule, this.systemProxy = false, this.tun = false});
+  const ConnectionPreferences({
+    this.mode = ProxyMode.rule,
+    this.systemProxy = false,
+    this.tun = false,
+  });
   final ProxyMode mode;
   final bool systemProxy;
   final bool tun;
-  ConnectionPreferences copyWith(
-          {ProxyMode? mode, bool? systemProxy, bool? tun}) =>
-      ConnectionPreferences(
-          mode: mode ?? this.mode,
-          systemProxy: systemProxy ?? this.systemProxy,
-          tun: tun ?? this.tun);
-  Map<String, Object?> toJson() =>
-      {'mode': mode.name, 'systemProxy': systemProxy, 'tun': tun};
+  ConnectionPreferences copyWith({
+    ProxyMode? mode,
+    bool? systemProxy,
+    bool? tun,
+  }) => ConnectionPreferences(
+    mode: mode ?? this.mode,
+    systemProxy: systemProxy ?? this.systemProxy,
+    tun: tun ?? this.tun,
+  );
+  Map<String, Object?> toJson() => {
+    'mode': mode.name,
+    'systemProxy': systemProxy,
+    'tun': tun,
+  };
   factory ConnectionPreferences.fromJson(Map<String, Object?> value) {
     if (value case {'mode': String name, 'systemProxy': bool proxy}) {
       final mode = ProxyMode.values.where((v) => v.name == name).firstOrNull;

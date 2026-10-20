@@ -9,15 +9,20 @@ import 'core_providers.dart';
 final tunServiceGatewayProvider = Provider<TunServiceGateway?>((ref) => null);
 final tunServiceControllerProvider =
     StateNotifierProvider<TunServiceController, TunServiceView>((ref) {
-  final gateway = ref.watch(tunServiceGatewayProvider);
-  final busy = ref.read(coreServiceBusyProvider.notifier);
-  return TunServiceController(gateway,
-      canChange: () {
-        final session = ref.read(sessionControllerProvider);
-        return !session.working && !session.connected && session.active == null;
-      },
-      onBusy: (value) => busy.state = value);
-});
+      final gateway = ref.watch(tunServiceGatewayProvider);
+      final busy = ref.read(coreServiceBusyProvider.notifier);
+      return TunServiceController(
+        gateway,
+        canChange: () {
+          final session = ref.read(sessionControllerProvider);
+          return !session.working &&
+              !session.connected &&
+              session.active == null;
+        },
+        onBusy: (value) => busy.state = value,
+        onStatusChanged: () => ref.invalidate(coreStatusProvider),
+      );
+    });
 
 class TunServiceView {
   const TunServiceView({
@@ -39,15 +44,19 @@ class TunServiceView {
 }
 
 class TunServiceController extends StateNotifier<TunServiceView> {
-  TunServiceController(this.gateway,
-      {required this.canChange, required this.onBusy})
-      : super(const TunServiceView()) {
+  TunServiceController(
+    this.gateway, {
+    required this.canChange,
+    required this.onBusy,
+    this.onStatusChanged,
+  }) : super(const TunServiceView()) {
     if (gateway != null) unawaited(refresh());
   }
 
   final TunServiceGateway? gateway;
   final bool Function() canChange;
   final void Function(bool) onBusy;
+  final void Function()? onStatusChanged;
   Future<void>? _operation;
   bool _suspended = false;
 
@@ -60,6 +69,8 @@ class TunServiceController extends StateNotifier<TunServiceView> {
       if (mounted) state = TunServiceView(status: status);
     } on Exception catch (error) {
       if (mounted) state = TunServiceView(error: '$error');
+    } finally {
+      if (mounted) onStatusChanged?.call();
     }
   }
 
@@ -107,16 +118,23 @@ class TunServiceController extends StateNotifier<TunServiceView> {
       if (mounted) {
         onBusy(false);
         state = TunServiceView(
-            status: observed,
-            message: error.isEmpty && confirmed ? '服务管理已完成，并已重新检查状态' : '',
-            error: error);
+          status: observed,
+          message: error.isEmpty && confirmed ? '服务管理已完成，并已重新检查状态' : '',
+          error: error,
+        );
+        // Refresh even after cancellation or failed read-back: old readiness
+        // cannot be carried across a transaction that may have changed files.
+        onStatusChanged?.call();
       }
     }
   }
 
   bool _matches(TunServiceAction action, TunServiceStatus observed) =>
       switch (action) {
-        TunServiceAction.install => observed.state == TunServiceState.current,
+        TunServiceAction.install =>
+          observed.state == TunServiceState.current &&
+              observed.enabled &&
+              observed.active,
         TunServiceAction.uninstall => observed.state == TunServiceState.missing,
         TunServiceAction.recover =>
           observed.state != TunServiceState.incomplete &&
@@ -127,7 +145,10 @@ class TunServiceController extends StateNotifier<TunServiceView> {
     final service = gateway;
     if (service == null || !state.busy || state.cancelling) return;
     state = TunServiceView(
-        status: state.status, action: state.action, cancelling: true);
+      status: state.status,
+      action: state.action,
+      cancelling: true,
+    );
     try {
       await service.cancel();
       // Await the original operation and read-back. A cancel acknowledgement
@@ -135,10 +156,11 @@ class TunServiceController extends StateNotifier<TunServiceView> {
     } on Exception catch (error) {
       if (mounted && state.busy) {
         state = TunServiceView(
-            status: state.status,
-            action: state.action,
-            cancelling: true,
-            error: '$error');
+          status: state.status,
+          action: state.action,
+          cancelling: true,
+          error: '$error',
+        );
       }
     }
   }

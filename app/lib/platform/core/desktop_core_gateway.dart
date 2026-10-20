@@ -8,6 +8,8 @@ import '../../domain/core/core_gateway.dart';
 import '../../domain/core/core_status.dart';
 import '../../domain/core/session_gateway.dart';
 import '../../domain/core/core_telemetry.dart';
+import '../../domain/core/core_traffic.dart';
+import '../../domain/connection/traffic_accounting.dart';
 import '../../domain/nodes/proxy_node.dart';
 import '../../domain/routing/route_rules.dart';
 import '../../domain/chains/proxy_chain.dart';
@@ -20,6 +22,7 @@ import 'host_session_client.dart';
 import 'host_status_protocol.dart';
 import 'session_protocol.dart';
 import 'core_telemetry_protocol.dart';
+import 'core_traffic_protocol.dart';
 
 /// Diagnostics are one-shot; connection operations use one owned host session.
 class DesktopCoreGateway
@@ -28,13 +31,18 @@ class DesktopCoreGateway
         SessionGateway,
         SecretStore,
         CoreTelemetryGateway,
+        CoreTrafficGateway,
         RouteRuleValidator,
         ChainTester,
         NodeTester,
         RuntimeSettingsGateway {
   DesktopCoreGateway({String? executablePath, HostCommandRunner? commandRunner})
-      : executablePath = executablePath ?? _defaultExecutable(),
-        _commandRunner = commandRunner ?? ProcessHostCommandRunner();
+    : executablePath = executablePath ?? _defaultExecutable(),
+      // Linux status also verifies the installed host/core and systemd state.
+      // Allow its bounded native inspection to finish after core discovery.
+      _commandRunner =
+          commandRunner ??
+          ProcessHostCommandRunner(timeout: const Duration(seconds: 20));
 
   final String executablePath;
   final HostCommandRunner _commandRunner;
@@ -81,8 +89,10 @@ class DesktopCoreGateway
 
   Future<void> _hello() async {
     final result = await _client.request('hello');
-    if (result case {'protocolVersion': 2, 'coreVersion': String version}
-        when version.isNotEmpty) {
+    if (result case {
+      'protocolVersion': 2,
+      'coreVersion': String version,
+    } when version.isNotEmpty) {
       return;
     }
     throw const CoreGatewayException('invalid_response', '宿主会话版本不兼容');
@@ -154,17 +164,20 @@ class DesktopCoreGateway
         observation.systemProxy != request.systemProxy) {
       await _client.request('disconnect');
       throw const CoreGatewayException(
-          'invalid_response', '核心应用的系统代理或 TUN 状态与请求不一致');
+        'invalid_response',
+        '核心应用的系统代理或 TUN 状态与请求不一致',
+      );
     }
     final appliedSettings = result['runtimeSettings'];
     if (appliedSettings is! Map<String, Object?> ||
-        !request.runtimeSettings
-            .toJson()
-            .entries
-            .every((entry) => appliedSettings[entry.key] == entry.value)) {
+        !request.runtimeSettings.toJson().entries.every(
+          (entry) => appliedSettings[entry.key] == entry.value,
+        )) {
       await _client.request('disconnect');
       throw const CoreGatewayException(
-          'invalid_response', '核心应用的网络设置与保存配置不一致，请更新宿主后重试');
+        'invalid_response',
+        '核心应用的网络设置与保存配置不一致，请更新宿主后重试',
+      );
     }
     if (active == null ||
         active.target.id != request.target.id ||
@@ -253,18 +266,30 @@ class DesktopCoreGateway
   Future<ConnectionsSnapshot> connections({required String sessionId}) async {
     await _ready();
     return CoreTelemetryProtocol.readConnections(
-        sessionId: sessionId,
-        loadPage: (arguments) => _client.request('connections', arguments));
+      sessionId: sessionId,
+      loadPage: (arguments) => _client.request('connections', arguments),
+    );
   }
 
   @override
-  Future<void> closeConnections(
-      {required String sessionId, String? connectionId}) async {
+  Future<TrafficAccountingSnapshot> traffic({required String sessionId}) async {
+    await _ready();
+    return CoreTrafficProtocol.parse(
+      await _client.request('traffic', {'sessionId': sessionId}),
+      sessionId: sessionId,
+    );
+  }
+
+  @override
+  Future<void> closeConnections({
+    required String sessionId,
+    String? connectionId,
+  }) async {
     await _ready();
     await _client.request('closeConnections', {
       'sessionId': sessionId,
       'connectionId': connectionId ?? '',
-      'all': connectionId == null
+      'all': connectionId == null,
     });
   }
 
@@ -272,7 +297,8 @@ class DesktopCoreGateway
   Future<CoreLogBatch> logs({String stream = '', int after = 0}) async {
     await _ready();
     return CoreTelemetryProtocol.logs(
-        await _client.request('logs', {'stream': stream, 'after': after}));
+      await _client.request('logs', {'stream': stream, 'after': after}),
+    );
   }
 
   @override
@@ -288,14 +314,18 @@ class DesktopCoreGateway
   }
 
   @override
-  Future<String> protect(String nodeId, String username, String password,
-      {String obfsPassword = ''}) async {
+  Future<String> protect(
+    String nodeId,
+    String username,
+    String password, {
+    String obfsPassword = '',
+  }) async {
     await _ready();
     final result = await _client.request('protect', {
       'id': nodeId,
       'username': username,
       'password': password,
-      'obfsPassword': obfsPassword
+      'obfsPassword': obfsPassword,
     });
     if (result case {'cipher': String cipher} when cipher.isNotEmpty) {
       return cipher;
@@ -306,18 +336,23 @@ class DesktopCoreGateway
   @override
   Future<NodeCredentials> reveal(String id, String cipher) async {
     await _ready();
-    final result =
-        await _client.request('reveal', {'id': id, 'cipher': cipher});
-    if (result
-        case {'username': String username, 'password': String password}) {
+    final result = await _client.request('reveal', {
+      'id': id,
+      'cipher': cipher,
+    });
+    if (result case {
+      'username': String username,
+      'password': String password,
+    }) {
       final obfs = result['obfsPassword'];
       if (obfs != null && obfs is! String) {
         throw const CoreGatewayException('invalid_response', '凭据读取响应无效');
       }
       return NodeCredentials(
-          username: username,
-          password: password,
-          obfsPassword: obfs as String? ?? '');
+        username: username,
+        password: password,
+        obfsPassword: obfs as String? ?? '',
+      );
     }
     throw const CoreGatewayException('invalid_response', '凭据读取响应无效');
   }

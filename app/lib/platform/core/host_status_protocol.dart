@@ -22,11 +22,7 @@ abstract final class HostStatusProtocol {
           'arch': String arch,
         },
         'core': {'state': 'not_configured', 'version': null},
-        'capabilities': {
-          'connect': false,
-          'systemProxy': false,
-          'tun': false,
-        },
+        'capabilities': {'connect': false, 'systemProxy': false, 'tun': false},
       }
           when protocolVersion == 1 &&
               version.trim().isNotEmpty &&
@@ -42,35 +38,10 @@ abstract final class HostStatusProtocol {
         'host': {
           'version': String version,
           'platform': 'windows',
-          'arch': String arch
-        },
-        'core': {'state': 'ready', 'version': String coreVersion},
-        'capabilities': {'connect': true, 'systemProxy': true, 'tun': bool tun},
-      }
-          when version.trim().isNotEmpty &&
-              arch.trim().isNotEmpty &&
-              coreVersion.trim().isNotEmpty =>
-        CoreStatus(
-            hostAvailable: true,
-            hostVersion: version,
-            coreVersion: coreVersion,
-            message:
-                'sing-box $coreVersion · ${tun ? '系统代理与 TUN 已就绪' : '系统代理已就绪'}',
-            capabilities:
-                CoreCapabilities(connect: true, systemProxy: true, tun: tun)),
-      {
-        'protocolVersion': 1,
-        'host': {
-          'version': String version,
-          'platform': 'linux',
           'arch': String arch,
         },
         'core': {'state': 'ready', 'version': String coreVersion},
-        'capabilities': {
-          'connect': true,
-          'systemProxy': bool systemProxy,
-          'tun': false,
-        },
+        'capabilities': {'connect': true, 'systemProxy': true, 'tun': bool tun},
       }
           when version.trim().isNotEmpty &&
               arch.trim().isNotEmpty &&
@@ -80,9 +51,43 @@ abstract final class HostStatusProtocol {
           hostVersion: version,
           coreVersion: coreVersion,
           message:
-              'sing-box $coreVersion · ${systemProxy ? '系统代理已就绪' : '本地代理端口已就绪'}',
-          capabilities:
-              CoreCapabilities(connect: true, systemProxy: systemProxy),
+              'sing-box $coreVersion · ${tun ? '系统代理与 TUN 已就绪' : '系统代理已就绪'}',
+          capabilities: CoreCapabilities(
+            connect: true,
+            systemProxy: true,
+            tun: tun,
+          ),
+        ),
+      {
+        'protocolVersion': 1,
+        'host': {
+          'version': String version,
+          'platform': String platform,
+          'arch': String arch,
+        },
+        'core': {'state': 'ready', 'version': String coreVersion},
+        'capabilities': {
+          'connect': true,
+          'systemProxy': bool systemProxy,
+          'tun': bool tun,
+        },
+      }
+          when (platform == 'linux' ||
+                  (platform == 'darwin' && !systemProxy && !tun)) &&
+              version.trim().isNotEmpty &&
+              arch.trim().isNotEmpty &&
+              coreVersion.trim().isNotEmpty =>
+        CoreStatus(
+          hostAvailable: true,
+          hostVersion: version,
+          coreVersion: coreVersion,
+          message:
+              'sing-box $coreVersion · ${tun ? (systemProxy ? '系统代理与 TUN 已就绪' : 'TUN 已就绪') : (systemProxy ? '系统代理已就绪' : '本地代理端口已就绪')}',
+          capabilities: CoreCapabilities(
+            connect: true,
+            systemProxy: systemProxy,
+            tun: tun,
+          ),
         ),
       _ => throw const CoreGatewayException('invalid_response', '宿主响应无效或版本不兼容'),
     };
