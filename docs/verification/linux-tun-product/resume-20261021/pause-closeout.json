@@ -1,0 +1,14 @@
+{
+  "developmentStatus": "paused",
+  "instanceId": "rainlink-tun-product-20261021-01",
+  "homeConnectionEstablished": true,
+  "proxiedTrafficValidationCompleted": false,
+  "kernelRestoredAfterDisconnect": true,
+  "kernelRestoredAfterSessionStop": true,
+  "guestCleanupExitCode": 0,
+  "vmPoweredOff": true,
+  "outerLauncherExitCode": 137,
+  "outerLauncherStoppedReason": "Stopped the duplicate guest-result.txt export waiting for overwrite confirmation after evidence had been saved and the VM had powered off.",
+  "bashSyntaxCheckPassed": true,
+  "releasePublished": false
+}

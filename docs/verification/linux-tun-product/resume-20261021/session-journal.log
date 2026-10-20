@@ -1,0 +1,5 @@
+Oct 20 16:12:05 rainlink-disposable-qa systemd[1]: Started rainlink-tun-product-qa.service - RainLink isolated product TUN QA.
+Oct 20 16:12:05 rainlink-disposable-qa (-session)[775]: pam_unix(login:session): session opened for user rainlinktun(uid=2200) by rainlinktun(uid=0)
+Oct 20 16:21:19 rainlink-disposable-qa systemd[1]: Stopping rainlink-tun-product-qa.service - RainLink isolated product TUN QA...
+Oct 20 16:21:19 rainlink-disposable-qa systemd[1]: rainlink-tun-product-qa.service: Deactivated successfully.
+Oct 20 16:21:19 rainlink-disposable-qa systemd[1]: Stopped rainlink-tun-product-qa.service - RainLink isolated product TUN QA.

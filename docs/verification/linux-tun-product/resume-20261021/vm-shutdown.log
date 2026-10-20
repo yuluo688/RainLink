@@ -1,0 +1,7 @@
+[  636.397430] systemd-shutdown[1]: All DM devices detached.
+[  636.404018] systemd-shutdown[1]: All filesystems, swaps, loop devices, MD devices and DM devices detached.
+[  636.419313] systemd-shutdown[1]: Syncing filesystems and block devices.
+[  636.431064] systemd-shutdown[1]: Powering off.
+[  636.440732] ACPI: PM: Preparing to enter system sleep state S5
+[  636.450405] kvm: exiting hardware virtualization
+[  636.456497] reboot: Power down

@@ -40,7 +40,7 @@ useradd --uid 2201 --create-home --shell /bin/bash rainlinktraffic
 install -d -m 755 -o rainlinktun -g rainlinktun "$evidence"
 trap finish EXIT
 tar -xf /mnt/qa-seed/rainlink-preview.tar.xz -C "$application"
-cp /mnt/qa-seed/linux_tun_product_{network.py,session.sh} "$application/"
+cp /mnt/qa-seed/linux_tun_product_{network.py,session.sh,snapshot.py} "$application/"
 chmod 755 "$application/linux_tun_product_session.sh"
 sha256sum "$application/RainLink/"{rainlink,rainlink-host,sing-box} > "$evidence/product-inputs.log"
 systemctl restart qemu-guest-agent.service

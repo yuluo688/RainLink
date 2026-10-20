@@ -1,0 +1,15 @@
+Oct 20 16:12:05 rainlink-disposable-qa systemd[1]: Started rainlink-tun-product-qa.service - RainLink isolated product TUN QA.
+Oct 20 16:12:05 rainlink-disposable-qa (-session)[775]: pam_unix(login:session): session opened for user rainlinktun(uid=2200) by rainlinktun(uid=0)
+Oct 20 16:14:06 rainlink-disposable-qa systemd[1]: Listening on rainlink-tun.socket - RainLink privileged network session socket.
+Oct 20 16:14:06 rainlink-disposable-qa systemd[1]: Starting rainlink-tun@0-1089-0.service - RainLink privileged network session (PID 1089/UID 0)...
+Oct 20 16:14:06 rainlink-disposable-qa systemd[1]: Started rainlink-tun@0-1089-0.service - RainLink privileged network session (PID 1089/UID 0).
+Oct 20 16:14:07 rainlink-disposable-qa systemd[1]: rainlink-tun@0-1089-0.service: Deactivated successfully.
+Oct 20 16:18:02 rainlink-disposable-qa systemd[1]: Starting rainlink-tun@1-931-2200.service - RainLink privileged network session (PID 931/UID 2200)...
+Oct 20 16:18:02 rainlink-disposable-qa systemd[1]: Started rainlink-tun@1-931-2200.service - RainLink privileged network session (PID 931/UID 2200).
+Oct 20 16:21:12 rainlink-disposable-qa systemd[1]: rainlink-tun@1-931-2200.service: Deactivated successfully.
+Oct 20 16:21:12 rainlink-disposable-qa systemd[1]: rainlink-tun@1-931-2200.service: Consumed 11.600s CPU time, 24.7M memory peak.
+Oct 20 16:21:19 rainlink-disposable-qa systemd[1]: Stopping rainlink-tun-product-qa.service - RainLink isolated product TUN QA...
+Oct 20 16:21:19 rainlink-disposable-qa systemd[1]: rainlink-tun-product-qa.service: Deactivated successfully.
+Oct 20 16:21:19 rainlink-disposable-qa systemd[1]: Stopped rainlink-tun-product-qa.service - RainLink isolated product TUN QA.
+Oct 20 16:21:27 rainlink-disposable-qa systemd[1]: rainlink-tun.socket: Deactivated successfully.
+Oct 20 16:21:27 rainlink-disposable-qa systemd[1]: Closed rainlink-tun.socket - RainLink privileged network session socket.

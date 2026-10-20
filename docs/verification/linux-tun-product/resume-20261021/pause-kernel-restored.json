@@ -1,0 +1,536 @@
+{
+  "kernel": {
+    "links": [
+      {
+        "ifindex": 1,
+        "ifname": "lo",
+        "flags": [
+          "LOOPBACK",
+          "UP",
+          "LOWER_UP"
+        ],
+        "mtu": 65536,
+        "qdisc": "noqueue",
+        "operstate": "UNKNOWN",
+        "linkmode": "DEFAULT",
+        "group": "default",
+        "txqlen": 1000,
+        "link_type": "loopback",
+        "address": "00:00:00:00:00:00",
+        "broadcast": "00:00:00:00:00:00",
+        "promiscuity": 0,
+        "allmulti": 0,
+        "min_mtu": 0,
+        "max_mtu": 0,
+        "inet6_addr_gen_mode": "eui64",
+        "num_tx_queues": 1,
+        "num_rx_queues": 1,
+        "gso_max_size": 65536,
+        "gso_max_segs": 65535,
+        "tso_max_size": 524280,
+        "tso_max_segs": 65535,
+        "gro_max_size": 65536,
+        "gso_ipv4_max_size": 65536,
+        "gro_ipv4_max_size": 65536
+      },
+      {
+        "ifindex": 2,
+        "ifname": "ens2",
+        "flags": [
+          "BROADCAST",
+          "MULTICAST",
+          "UP",
+          "LOWER_UP"
+        ],
+        "mtu": 1500,
+        "qdisc": "fq_codel",
+        "operstate": "UP",
+        "linkmode": "DEFAULT",
+        "group": "default",
+        "txqlen": 1000,
+        "link_type": "ether",
+        "address": "52:54:00:12:34:56",
+        "broadcast": "ff:ff:ff:ff:ff:ff",
+        "promiscuity": 0,
+        "allmulti": 0,
+        "min_mtu": 68,
+        "max_mtu": 65535,
+        "inet6_addr_gen_mode": "eui64",
+        "num_tx_queues": 1,
+        "num_rx_queues": 1,
+        "gso_max_size": 65536,
+        "gso_max_segs": 65535,
+        "tso_max_size": 65536,
+        "tso_max_segs": 65535,
+        "gro_max_size": 65536,
+        "gso_ipv4_max_size": 65536,
+        "gro_ipv4_max_size": 65536,
+        "parentbus": "virtio",
+        "parentdev": "virtio1",
+        "altnames": [
+          "enp0s4",
+          "enx525400123456"
+        ]
+      },
+      {
+        "ifindex": 4,
+        "link_index": 3,
+        "ifname": "rqa0",
+        "flags": [
+          "BROADCAST",
+          "MULTICAST",
+          "UP",
+          "LOWER_UP"
+        ],
+        "mtu": 1500,
+        "qdisc": "noqueue",
+        "operstate": "UP",
+        "linkmode": "DEFAULT",
+        "group": "default",
+        "txqlen": 1000,
+        "link_type": "ether",
+        "address": "c6:3d:33:bf:de:07",
+        "broadcast": "ff:ff:ff:ff:ff:ff",
+        "link_netnsid": 0,
+        "promiscuity": 0,
+        "allmulti": 0,
+        "min_mtu": 68,
+        "max_mtu": 65535,
+        "linkinfo": {
+          "info_kind": "veth"
+        },
+        "inet6_addr_gen_mode": "eui64",
+        "num_tx_queues": 2,
+        "num_rx_queues": 2,
+        "gso_max_size": 65536,
+        "gso_max_segs": 65535,
+        "tso_max_size": 524280,
+        "tso_max_segs": 65535,
+        "gro_max_size": 65536,
+        "gso_ipv4_max_size": 65536,
+        "gro_ipv4_max_size": 65536
+      }
+    ],
+    "addresses": [
+      {
+        "ifindex": 1,
+        "ifname": "lo",
+        "flags": [
+          "LOOPBACK",
+          "UP",
+          "LOWER_UP"
+        ],
+        "mtu": 65536,
+        "qdisc": "noqueue",
+        "operstate": "UNKNOWN",
+        "group": "default",
+        "txqlen": 1000,
+        "link_type": "loopback",
+        "address": "00:00:00:00:00:00",
+        "broadcast": "00:00:00:00:00:00",
+        "addr_info": [
+          {
+            "family": "inet",
+            "local": "127.0.0.1",
+            "prefixlen": 8,
+            "scope": "host",
+            "label": "lo",
+            "valid_life_time": 4294967295,
+            "preferred_life_time": 4294967295
+          },
+          {
+            "family": "inet6",
+            "local": "::1",
+            "prefixlen": 128,
+            "scope": "host",
+            "noprefixroute": true,
+            "valid_life_time": 4294967295,
+            "preferred_life_time": 4294967295
+          }
+        ]
+      },
+      {
+        "ifindex": 2,
+        "ifname": "ens2",
+        "flags": [
+          "BROADCAST",
+          "MULTICAST",
+          "UP",
+          "LOWER_UP"
+        ],
+        "mtu": 1500,
+        "qdisc": "fq_codel",
+        "operstate": "UP",
+        "group": "default",
+        "txqlen": 1000,
+        "link_type": "ether",
+        "address": "52:54:00:12:34:56",
+        "broadcast": "ff:ff:ff:ff:ff:ff",
+        "altnames": [
+          "enp0s4",
+          "enx525400123456"
+        ],
+        "addr_info": [
+          {
+            "family": "inet",
+            "local": "10.0.2.15",
+            "prefixlen": 24,
+            "metric": 100,
+            "broadcast": "10.0.2.255",
+            "scope": "global",
+            "dynamic": true,
+            "label": "ens2",
+            "valid_life_time": 85820,
+            "preferred_life_time": 85820
+          },
+          {
+            "family": "inet6",
+            "local": "fec0::5054:ff:fe12:3456",
+            "prefixlen": 64,
+            "scope": "site",
+            "dynamic": true,
+            "mngtmpaddr": true,
+            "noprefixroute": true,
+            "valid_life_time": 86323,
+            "preferred_life_time": 14323
+          },
+          {
+            "family": "inet6",
+            "local": "fe80::5054:ff:fe12:3456",
+            "prefixlen": 64,
+            "scope": "link",
+            "protocol": "kernel_ll",
+            "valid_life_time": 4294967295,
+            "preferred_life_time": 4294967295
+          }
+        ]
+      },
+      {
+        "ifindex": 4,
+        "link_index": 3,
+        "ifname": "rqa0",
+        "flags": [
+          "BROADCAST",
+          "MULTICAST",
+          "UP",
+          "LOWER_UP"
+        ],
+        "mtu": 1500,
+        "qdisc": "noqueue",
+        "operstate": "UP",
+        "group": "default",
+        "txqlen": 1000,
+        "link_type": "ether",
+        "address": "c6:3d:33:bf:de:07",
+        "broadcast": "ff:ff:ff:ff:ff:ff",
+        "link_netnsid": 0,
+        "addr_info": [
+          {
+            "family": "inet",
+            "local": "10.77.0.1",
+            "prefixlen": 24,
+            "scope": "global",
+            "label": "rqa0",
+            "valid_life_time": 4294967295,
+            "preferred_life_time": 4294967295
+          },
+          {
+            "family": "inet6",
+            "local": "fd77::1",
+            "prefixlen": 64,
+            "scope": "global",
+            "nodad": true,
+            "valid_life_time": 4294967295,
+            "preferred_life_time": 4294967295
+          },
+          {
+            "family": "inet6",
+            "local": "fe80::c43d:33ff:febf:de07",
+            "prefixlen": 64,
+            "scope": "link",
+            "protocol": "kernel_ll",
+            "valid_life_time": 4294967295,
+            "preferred_life_time": 4294967295
+          }
+        ]
+      }
+    ],
+    "routes-4": [
+      {
+        "dst": "default",
+        "gateway": "10.77.0.2",
+        "dev": "rqa0",
+        "flags": []
+      },
+      {
+        "dst": "default",
+        "gateway": "10.0.2.2",
+        "dev": "ens2",
+        "protocol": "dhcp",
+        "prefsrc": "10.0.2.15",
+        "metric": 100,
+        "flags": []
+      },
+      {
+        "dst": "10.0.2.0/24",
+        "dev": "ens2",
+        "protocol": "kernel",
+        "scope": "link",
+        "prefsrc": "10.0.2.15",
+        "metric": 100,
+        "flags": []
+      },
+      {
+        "dst": "10.0.2.2",
+        "dev": "ens2",
+        "protocol": "dhcp",
+        "scope": "link",
+        "prefsrc": "10.0.2.15",
+        "metric": 100,
+        "flags": []
+      },
+      {
+        "dst": "10.0.2.3",
+        "dev": "ens2",
+        "protocol": "dhcp",
+        "scope": "link",
+        "prefsrc": "10.0.2.15",
+        "metric": 100,
+        "flags": []
+      },
+      {
+        "dst": "10.77.0.0/24",
+        "dev": "rqa0",
+        "protocol": "kernel",
+        "scope": "link",
+        "prefsrc": "10.77.0.1",
+        "flags": []
+      },
+      {
+        "type": "local",
+        "dst": "10.0.2.15",
+        "dev": "ens2",
+        "table": "local",
+        "protocol": "kernel",
+        "scope": "host",
+        "prefsrc": "10.0.2.15",
+        "flags": []
+      },
+      {
+        "type": "broadcast",
+        "dst": "10.0.2.255",
+        "dev": "ens2",
+        "table": "local",
+        "protocol": "kernel",
+        "scope": "link",
+        "prefsrc": "10.0.2.15",
+        "flags": []
+      },
+      {
+        "type": "local",
+        "dst": "10.77.0.1",
+        "dev": "rqa0",
+        "table": "local",
+        "protocol": "kernel",
+        "scope": "host",
+        "prefsrc": "10.77.0.1",
+        "flags": []
+      },
+      {
+        "type": "broadcast",
+        "dst": "10.77.0.255",
+        "dev": "rqa0",
+        "table": "local",
+        "protocol": "kernel",
+        "scope": "link",
+        "prefsrc": "10.77.0.1",
+        "flags": []
+      },
+      {
+        "type": "local",
+        "dst": "127.0.0.0/8",
+        "dev": "lo",
+        "table": "local",
+        "protocol": "kernel",
+        "scope": "host",
+        "prefsrc": "127.0.0.1",
+        "flags": []
+      },
+      {
+        "type": "local",
+        "dst": "127.0.0.1",
+        "dev": "lo",
+        "table": "local",
+        "protocol": "kernel",
+        "scope": "host",
+        "prefsrc": "127.0.0.1",
+        "flags": []
+      },
+      {
+        "type": "broadcast",
+        "dst": "127.255.255.255",
+        "dev": "lo",
+        "table": "local",
+        "protocol": "kernel",
+        "scope": "link",
+        "prefsrc": "127.0.0.1",
+        "flags": []
+      }
+    ],
+    "rules-4": [
+      {
+        "priority": 0,
+        "src": "all",
+        "table": "local"
+      },
+      {
+        "priority": 32766,
+        "src": "all",
+        "table": "main"
+      },
+      {
+        "priority": 32767,
+        "src": "all",
+        "table": "default"
+      }
+    ],
+    "routes-6": [
+      {
+        "dst": "fd77::/64",
+        "dev": "rqa0",
+        "protocol": "kernel",
+        "metric": 256,
+        "flags": [],
+        "pref": "medium"
+      },
+      {
+        "dst": "fe80::/64",
+        "dev": "ens2",
+        "protocol": "kernel",
+        "metric": 256,
+        "flags": [],
+        "pref": "medium"
+      },
+      {
+        "dst": "fe80::/64",
+        "dev": "rqa0",
+        "protocol": "kernel",
+        "metric": 256,
+        "flags": [],
+        "pref": "medium"
+      },
+      {
+        "dst": "fec0::/64",
+        "dev": "ens2",
+        "protocol": "ra",
+        "metric": 100,
+        "flags": [],
+        "expires": 86322,
+        "pref": "medium"
+      },
+      {
+        "dst": "default",
+        "nhid": 3549419079,
+        "gateway": "fe80::2",
+        "dev": "ens2",
+        "protocol": "ra",
+        "metric": 100,
+        "flags": [],
+        "expires": 1722,
+        "pref": "medium"
+      },
+      {
+        "dst": "default",
+        "gateway": "fd77::2",
+        "dev": "rqa0",
+        "metric": 1024,
+        "flags": [],
+        "pref": "medium"
+      },
+      {
+        "type": "local",
+        "dst": "::1",
+        "dev": "lo",
+        "table": "local",
+        "protocol": "kernel",
+        "metric": 0,
+        "flags": [],
+        "pref": "medium"
+      },
+      {
+        "type": "local",
+        "dst": "fd77::1",
+        "dev": "rqa0",
+        "table": "local",
+        "protocol": "kernel",
+        "metric": 0,
+        "flags": [],
+        "pref": "medium"
+      },
+      {
+        "type": "local",
+        "dst": "fe80::5054:ff:fe12:3456",
+        "dev": "ens2",
+        "table": "local",
+        "protocol": "kernel",
+        "metric": 0,
+        "flags": [],
+        "pref": "medium"
+      },
+      {
+        "type": "local",
+        "dst": "fe80::c43d:33ff:febf:de07",
+        "dev": "rqa0",
+        "table": "local",
+        "protocol": "kernel",
+        "metric": 0,
+        "flags": [],
+        "pref": "medium"
+      },
+      {
+        "type": "local",
+        "dst": "fec0::5054:ff:fe12:3456",
+        "dev": "ens2",
+        "table": "local",
+        "protocol": "kernel",
+        "metric": 0,
+        "flags": [],
+        "pref": "medium"
+      },
+      {
+        "type": "multicast",
+        "dst": "ff00::/8",
+        "dev": "ens2",
+        "table": "local",
+        "protocol": "kernel",
+        "metric": 256,
+        "flags": [],
+        "pref": "medium"
+      },
+      {
+        "type": "multicast",
+        "dst": "ff00::/8",
+        "dev": "rqa0",
+        "table": "local",
+        "protocol": "kernel",
+        "metric": 256,
+        "flags": [],
+        "pref": "medium"
+      }
+    ],
+    "rules-6": [
+      {
+        "priority": 0,
+        "src": "all",
+        "table": "local"
+      },
+      {
+        "priority": 32766,
+        "src": "all",
+        "table": "main"
+      }
+    ]
+  },
+  "restored": true,
+  "differences": []
+}

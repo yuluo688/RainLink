@@ -1,0 +1,16 @@
+{"kind": "tcp", "nonce": "before-tun-AF_INET-tcp-90931e32", "source": "10.77.0.1"}
+{"kind": "udp", "nonce": "before-tun-AF_INET-udp-f7019ec6", "source": "10.77.0.1"}
+{"kind": "tcp", "nonce": "before-tun-AF_INET6-tcp-02a6a3ce", "source": "fd77::1"}
+{"kind": "udp", "nonce": "before-tun-AF_INET6-udp-7d9295e0", "source": "fd77::1"}
+{"kind": "dns", "name": "2.debian.pool.ntp.org", "queryType": 1, "source": "10.77.0.1"}
+{"kind": "dns", "name": "2.debian.pool.ntp.org", "queryType": 28, "source": "10.77.0.1"}
+{"kind": "dns", "name": "3.debian.pool.ntp.org", "queryType": 28, "source": "10.77.0.1"}
+{"kind": "dns", "name": "3.debian.pool.ntp.org", "queryType": 1, "source": "10.77.0.1"}
+{"kind": "dns", "name": "0.debian.pool.ntp.org", "queryType": 1, "source": "10.77.0.1"}
+{"kind": "dns", "name": "0.debian.pool.ntp.org", "queryType": 28, "source": "10.77.0.1"}
+{"kind": "dns", "name": "1.debian.pool.ntp.org", "queryType": 28, "source": "10.77.0.1"}
+{"kind": "dns", "name": "1.debian.pool.ntp.org", "queryType": 1, "source": "10.77.0.1"}
+{"kind": "dns", "name": "2.debian.pool.ntp.org", "queryType": 1, "source": "10.77.0.1"}
+{"kind": "dns", "name": "2.debian.pool.ntp.org", "queryType": 28, "source": "10.77.0.1"}
+{"kind": "dns", "name": "3.debian.pool.ntp.org", "queryType": 28, "source": "10.77.0.1"}
+{"kind": "dns", "name": "3.debian.pool.ntp.org", "queryType": 1, "source": "10.77.0.1"}
