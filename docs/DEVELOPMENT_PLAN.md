@@ -2,7 +2,7 @@
 
 日期：2026-10-15。目标平台：Windows、macOS、Linux、Android、iOS。首期交付前三种桌面平台，移动端在桌面内测稳定后推进。
 
-2026-10-20 暂停：按用户要求保存并推送当前进度，完整目标未完成。恢复时从[检查点](verification/closeout-20261020.md)继续，优先完成[Linux 首页 TUN](verification/linux-tun-product.md)接受授权后的连接、三模式双栈/DNS、开关与退出恢复及最终视觉。条件能力代码已开放，默认包未替换；下列关闭状态属于历史阶段。用户暂无 Mac，Apple 原生仍待环境。
+2026-10-21 暂停：按用户要求保存并推送当前进度，完整目标未完成。Linux 首页 TUN 的三模式、规则重连、连接中开关和退出已有 64 个源站匹配回执及七次内核恢复通过，见[最新检查点](verification/linux-tun-product-modes.md)。恢复后优先验收服务失效后的能力刷新与修复、AT-SPI/GTK 警告、两种尺寸与深浅主题及全页面视觉。默认包未替换；下列关闭状态属于历史阶段。用户暂无 Mac，Apple 原生仍待环境。
 
 2026-10-20 Android 流量续验：新增实际系统隧道 → 已结束连接累计 → SQLite → 排行/CSV 的独立验收，三模式 36 次请求和服务端回执通过，识别实际 shell 包名，重开及去重通过。当前 Figma 七个使用 SVG 一致，五张实际 Android 渲染截图保留；生产统计代码不变，见[Android 流量验收](verification/android-traffic-accounting.md)。用户暂无 Mac，继续可验证平台；Apple 原生、真机/第三方应用、分发与完整目标仍未完成，公开 Linux TUN 保持关闭。
 

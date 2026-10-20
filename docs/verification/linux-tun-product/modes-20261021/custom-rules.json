@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "receipts": [
+    {
+      "kind": "tcp",
+      "nonce": "custom-rules-AF_INET-tcp-e4cf1bf5",
+      "source": "10.78.0.2"
+    },
+    {
+      "kind": "udp",
+      "nonce": "custom-rules-AF_INET-udp-7667cf55",
+      "source": "10.78.0.2"
+    },
+    {
+      "kind": "tcp",
+      "nonce": "custom-rules-AF_INET6-tcp-53181ea0",
+      "source": "fd78::2"
+    },
+    {
+      "kind": "udp",
+      "nonce": "custom-rules-AF_INET6-udp-1274db69",
+      "source": "fd78::2"
+    },
+    {
+      "kind": "dns",
+      "name": "custom-rules-4edf3e5b.rainlink.test",
+      "queryType": 1,
+      "answer": "10.78.0.2"
+    },
+    {
+      "kind": "dns",
+      "name": "custom-rules-18dfd25a.rainlink.test",
+      "queryType": 28,
+      "answer": "fd78::2"
+    }
+  ]
+}

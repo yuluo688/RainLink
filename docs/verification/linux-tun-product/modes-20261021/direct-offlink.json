@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "receipts": [
+    {
+      "kind": "tcp",
+      "nonce": "direct-offlink-AF_INET-tcp-8543916c",
+      "source": "10.77.0.1"
+    },
+    {
+      "kind": "udp",
+      "nonce": "direct-offlink-AF_INET-udp-80bbdd12",
+      "source": "10.77.0.1"
+    },
+    {
+      "kind": "tcp",
+      "nonce": "direct-offlink-AF_INET6-tcp-6819db1f",
+      "source": "fd77::1"
+    },
+    {
+      "kind": "udp",
+      "nonce": "direct-offlink-AF_INET6-udp-8aa3d47b",
+      "source": "fd77::1"
+    },
+    {
+      "kind": "dns",
+      "name": "direct-offlink-b350c406.rainlink.test",
+      "queryType": 1,
+      "answer": "10.78.0.2"
+    },
+    {
+      "kind": "dns",
+      "name": "direct-offlink-4af8a50f.rainlink.test",
+      "queryType": 28,
+      "answer": "fd78::2"
+    }
+  ]
+}

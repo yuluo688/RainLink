@@ -1,0 +1,186 @@
+{
+  "tokens": [
+    {
+      "theme": "dark",
+      "token": "背景",
+      "expected": "FF0F1011",
+      "actual": "FF0F1011",
+      "matched": true
+    },
+    {
+      "theme": "dark",
+      "token": "界面表层",
+      "expected": "FF151617",
+      "actual": "FF151617",
+      "matched": true
+    },
+    {
+      "theme": "dark",
+      "token": "浮起表层",
+      "expected": "FF1B1C1E",
+      "actual": "FF1B1C1E",
+      "matched": true
+    },
+    {
+      "theme": "dark",
+      "token": "悬停",
+      "expected": "FF242528",
+      "actual": "FF242528",
+      "matched": true
+    },
+    {
+      "theme": "dark",
+      "token": "边框",
+      "expected": "FF2B2D31",
+      "actual": "FF2B2D31",
+      "matched": true
+    },
+    {
+      "theme": "dark",
+      "token": "主要文字",
+      "expected": "FFF4F4F6",
+      "actual": "FFF4F4F6",
+      "matched": true
+    },
+    {
+      "theme": "dark",
+      "token": "次要文字",
+      "expected": "FFC0C2C8",
+      "actual": "FFC0C2C8",
+      "matched": true
+    },
+    {
+      "theme": "dark",
+      "token": "弱化文字",
+      "expected": "FF969AA3",
+      "actual": "FF969AA3",
+      "matched": true
+    },
+    {
+      "theme": "dark",
+      "token": "主色",
+      "expected": "FF8ADCBF",
+      "actual": "FF8ADCBF",
+      "matched": true
+    },
+    {
+      "theme": "dark",
+      "token": "主色表层",
+      "expected": "FF1B2B25",
+      "actual": "FF1B2B25",
+      "matched": true
+    },
+    {
+      "theme": "dark",
+      "token": "主色上文字",
+      "expected": "FF10241C",
+      "actual": "FF10241C",
+      "matched": true
+    },
+    {
+      "theme": "dark",
+      "token": "警告",
+      "expected": "FFE8BC78",
+      "actual": "FFE8BC78",
+      "matched": true
+    },
+    {
+      "theme": "dark",
+      "token": "错误",
+      "expected": "FFF28B96",
+      "actual": "FFF28B96",
+      "matched": true
+    },
+    {
+      "theme": "light",
+      "token": "背景",
+      "expected": "FFFAFAFA",
+      "actual": "FFFAFAFA",
+      "matched": true
+    },
+    {
+      "theme": "light",
+      "token": "界面表层",
+      "expected": "FFFFFFFF",
+      "actual": "FFFFFFFF",
+      "matched": true
+    },
+    {
+      "theme": "light",
+      "token": "浮起表层",
+      "expected": "FFF4F4F5",
+      "actual": "FFF4F4F5",
+      "matched": true
+    },
+    {
+      "theme": "light",
+      "token": "悬停",
+      "expected": "FFECECEE",
+      "actual": "FFECECEE",
+      "matched": true
+    },
+    {
+      "theme": "light",
+      "token": "边框",
+      "expected": "FFE4E4E7",
+      "actual": "FFE4E4E7",
+      "matched": true
+    },
+    {
+      "theme": "light",
+      "token": "主要文字",
+      "expected": "FF18191B",
+      "actual": "FF18191B",
+      "matched": true
+    },
+    {
+      "theme": "light",
+      "token": "次要文字",
+      "expected": "FF55585F",
+      "actual": "FF55585F",
+      "matched": true
+    },
+    {
+      "theme": "light",
+      "token": "弱化文字",
+      "expected": "FF696D75",
+      "actual": "FF696D75",
+      "matched": true
+    },
+    {
+      "theme": "light",
+      "token": "主色",
+      "expected": "FF08795C",
+      "actual": "FF08795C",
+      "matched": true
+    },
+    {
+      "theme": "light",
+      "token": "主色表层",
+      "expected": "FFE7F5EE",
+      "actual": "FFE7F5EE",
+      "matched": true
+    },
+    {
+      "theme": "light",
+      "token": "主色上文字",
+      "expected": "FFFFFFFF",
+      "actual": "FFFFFFFF",
+      "matched": true
+    },
+    {
+      "theme": "light",
+      "token": "警告",
+      "expected": "FF955F0D",
+      "actual": "FF955F0D",
+      "matched": true
+    },
+    {
+      "theme": "light",
+      "token": "错误",
+      "expected": "FFBD354A",
+      "actual": "FFBD354A",
+      "matched": true
+    }
+  ]
+}

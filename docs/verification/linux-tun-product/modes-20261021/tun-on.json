@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "receipts": [
+    {
+      "kind": "tcp",
+      "nonce": "tun-on-AF_INET-tcp-8cb62ea4",
+      "source": "10.78.0.2"
+    },
+    {
+      "kind": "udp",
+      "nonce": "tun-on-AF_INET-udp-d816a1ff",
+      "source": "10.78.0.2"
+    },
+    {
+      "kind": "tcp",
+      "nonce": "tun-on-AF_INET6-tcp-f7371133",
+      "source": "fd78::2"
+    },
+    {
+      "kind": "udp",
+      "nonce": "tun-on-AF_INET6-udp-d95909fd",
+      "source": "fd78::2"
+    },
+    {
+      "kind": "dns",
+      "name": "tun-on-fa5bbfa7.rainlink.test",
+      "queryType": 1,
+      "answer": "10.78.0.2"
+    },
+    {
+      "kind": "dns",
+      "name": "tun-on-c33878e3.rainlink.test",
+      "queryType": 28,
+      "answer": "fd78::2"
+    }
+  ]
+}

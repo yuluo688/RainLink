@@ -1,8 +1,8 @@
 # RainLink 实现与验收清单
 
-更新：2026-10-20。依据完整开发方案及实时 Figma，持续更新；“已实现”不等于所有平台均已验收。
+更新：2026-10-21。依据完整开发方案及实时 Figma，持续更新；“已实现”不等于所有平台均已验收。
 
-按用户要求暂停开发并保存、推送，见[暂停检查点](verification/closeout-20261020.md)。Linux 首页 TUN 条件能力、刷新与设置入口已实现；真实安装、授权取消、四种直连回执和内核恢复通过，接受授权后的完整产品连接仍待续验，默认包未替换。最新 Flutter 546 项及静态分析通过，44 个 SVG 与当前 Figma 一致，见[Linux TUN 阶段范围](verification/linux-tun-product.md)。下列关闭状态属于历史阶段。
+按用户要求暂停开发并保存、推送，见[最新暂停检查点](verification/linux-tun-product-modes.md)。修正 Linux 产品 TUN 测试源站拓扑及双栈默认路由后，三模式、规则重连、连接中开关、正常断开和活动退出共 64 个回执与源站匹配，七次内核恢复通过；44 个当前 Figma SVG、26 个颜色映射一致。本轮只修改 QA fixture，Bash/Python 检查通过，未重跑 Dart/Go 全量测试。服务失效修复、AT-SPI/GTK 警告及完整视觉待续验，默认包未替换；下列关闭状态属于历史阶段。
 
 Android 流量续验：专用 AVD 的真实系统隧道中，同一会话三模式各完成 12 次独立 UID 请求，36 个完整正文回执、24 次代理与 12 次直连均回读。已结束连接、真实包名、SQLite 重开、重复采样去重、两个排行分区及页面 CSV 通过；五张实际 Android 渲染截图和当前 Figma 七个使用 SVG 已核对。详见[Android 流量与应用归属](verification/android-traffic-accounting.md)。此阶段新增验收代码，不改变生产统计口径；正式第三方应用/真机、Apple 原生和完整五平台继续推进，公开 Linux TUN 仍关闭。
 

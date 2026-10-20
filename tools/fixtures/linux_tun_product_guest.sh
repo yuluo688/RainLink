@@ -8,6 +8,7 @@ for tool in ip python3 Xvfb openbox xdotool lxpolkit gnome-keyring-daemon secret
 done
 evidence=/var/tmp/rainlink-tun-product
 application=/opt/rainlink-tun-product
+fixture_route_metric=1
 mkdir -p /mnt/qa-seed "$application"
 mount -t vfat -o rw /dev/disk/by-label/CIDATA /mnt/qa-seed
 finish() {
@@ -47,12 +48,13 @@ systemctl restart qemu-guest-agent.service
 ip -j -d link show > "$evidence/initial-links.json"
 ip -j -4 rule show > "$evidence/initial-rules4.json"
 ip -j -6 rule show > "$evidence/initial-rules6.json"
-python3 - <<'PY'
-import json, subprocess
+python3 - "$fixture_route_metric" <<'PY'
+import json, subprocess, sys
+metric = int(sys.argv[1])
 for family in ('-4', '-6'):
     routes = json.loads(subprocess.check_output(['ip', '-j', family, 'route', 'show', 'table', 'main']))
-    if any(route.get('dst') == 'default' and route.get('metric', 0) == 0 for route in routes):
-        raise SystemExit('QA requires a free metric-0 default route; existing defaults will not be replaced.')
+    if any(route.get('dst') == 'default' and route.get('metric', 0) <= metric for route in routes):
+        raise SystemExit('QA requires a higher-priority default route; existing defaults will not be replaced.')
 PY
 ip netns add rainlink-origin
 ip link add rqa0 type veth peer name rqa1
@@ -64,8 +66,12 @@ ip netns exec rainlink-origin ip addr add 10.77.0.2/24 dev rqa1
 ip netns exec rainlink-origin ip -6 addr add fd77::2/64 dev rqa1 nodad
 ip netns exec rainlink-origin ip link set rqa1 up
 ip netns exec rainlink-origin ip link set lo up
-ip route add default via 10.77.0.2 dev rqa0 metric 0
-ip -6 route add default via fd77::2 dev rqa0 metric 0
+ip netns exec rainlink-origin ip addr add 10.78.0.2/32 dev lo
+ip netns exec rainlink-origin ip -6 addr add fd78::2/128 dev lo nodad
+# IPv6 coerces metric 0 to 1024, which loses to the VM's metric-100 RA route.
+# Metric 1 keeps both families on the private fixture without replacing routes.
+ip route add default via 10.77.0.2 dev rqa0 metric "$fixture_route_metric"
+ip -6 route add default via fd77::2 dev rqa0 metric "$fixture_route_metric"
 python3 - "$application" <<'PY'
 import json, os, secrets, subprocess, sys
 from pathlib import Path

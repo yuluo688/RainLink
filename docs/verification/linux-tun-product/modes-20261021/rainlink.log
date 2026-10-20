@@ -1,0 +1,5 @@
+
+(dev.rainlink.rainlink:3839): dbind-WARNING **: 17:04:07.142: AT-SPI: Error retrieving accessibility bus address: org.freedesktop.DBus.Error.ServiceUnknown: The name org.a11y.Bus was not provided by any .service files
+
+(dev.rainlink.rainlink:3839): Atk-CRITICAL **: 17:04:08.370: atk_socket_embed: assertion 'plug_id != NULL' failed
+embedder.cc (2519): 'FlutterEngineRemoveView' returned 'kInvalidArguments'. Remove view info was invalid. The implicit view cannot be removed.

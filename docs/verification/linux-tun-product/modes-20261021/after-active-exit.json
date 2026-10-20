@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "receipts": [
+    {
+      "kind": "tcp",
+      "nonce": "after-active-exit-AF_INET-tcp-9e596c23",
+      "source": "10.77.0.1"
+    },
+    {
+      "kind": "udp",
+      "nonce": "after-active-exit-AF_INET-udp-43014e38",
+      "source": "10.77.0.1"
+    },
+    {
+      "kind": "tcp",
+      "nonce": "after-active-exit-AF_INET6-tcp-6790b6ae",
+      "source": "fd77::1"
+    },
+    {
+      "kind": "udp",
+      "nonce": "after-active-exit-AF_INET6-udp-e7dbde10",
+      "source": "fd77::1"
+    }
+  ]
+}

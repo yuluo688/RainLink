@@ -1,0 +1,721 @@
+{
+  "fileKey": "unsaved-mvgvw9rd-ie8ndp4y",
+  "collections": [
+    {
+      "id": "VariableCollectionId:2:16412",
+      "name": "RainLink / 颜色 / 深色",
+      "modes": [
+        {
+          "modeId": "2:8",
+          "name": "深色"
+        }
+      ],
+      "variables": [
+        {
+          "id": "VariableID:2:16414",
+          "name": "背景",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "2:8": {
+              "type": "COLOR",
+              "r": 0.05882352963089943,
+              "g": 0.062745101749897,
+              "b": 0.06666667014360428,
+              "a": 1
+            }
+          }
+        },
+        {
+          "id": "VariableID:2:16416",
+          "name": "界面表层",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "2:8": {
+              "type": "COLOR",
+              "r": 0.08235294371843338,
+              "g": 0.08627451211214066,
+              "b": 0.09019608050584793,
+              "a": 1
+            }
+          }
+        },
+        {
+          "id": "VariableID:2:16418",
+          "name": "浮起表层",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "2:8": {
+              "type": "COLOR",
+              "r": 0.10588235408067703,
+              "g": 0.10980392247438431,
+              "b": 0.11764705926179886,
+              "a": 1
+            }
+          }
+        },
+        {
+          "id": "VariableID:2:16420",
+          "name": "悬停",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "2:8": {
+              "type": "COLOR",
+              "r": 0.1411764770746231,
+              "g": 0.14509804546833038,
+              "b": 0.1568627506494522,
+              "a": 1
+            }
+          }
+        },
+        {
+          "id": "VariableID:2:16422",
+          "name": "边框",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "2:8": {
+              "type": "COLOR",
+              "r": 0.16862745583057404,
+              "g": 0.1764705926179886,
+              "b": 0.1921568661928177,
+              "a": 1
+            }
+          }
+        },
+        {
+          "id": "VariableID:2:16424",
+          "name": "主要文字",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "2:8": {
+              "type": "COLOR",
+              "r": 0.95686274766922,
+              "g": 0.95686274766922,
+              "b": 0.9647058844566345,
+              "a": 1
+            }
+          }
+        },
+        {
+          "id": "VariableID:2:16426",
+          "name": "次要文字",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "2:8": {
+              "type": "COLOR",
+              "r": 0.7529411911964417,
+              "g": 0.7607843279838562,
+              "b": 0.7843137383460999,
+              "a": 1
+            }
+          }
+        },
+        {
+          "id": "VariableID:2:16428",
+          "name": "弱化文字",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "2:8": {
+              "type": "COLOR",
+              "r": 0.5882353186607361,
+              "g": 0.6039215922355652,
+              "b": 0.6392157077789307,
+              "a": 1
+            }
+          }
+        },
+        {
+          "id": "VariableID:2:16430",
+          "name": "主色",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "2:8": {
+              "type": "COLOR",
+              "r": 0.5411764979362488,
+              "g": 0.8627451062202454,
+              "b": 0.7490196228027344,
+              "a": 1
+            }
+          }
+        },
+        {
+          "id": "VariableID:2:16432",
+          "name": "主色表层",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "2:8": {
+              "type": "COLOR",
+              "r": 0.10588235408067703,
+              "g": 0.16862745583057404,
+              "b": 0.14509804546833038,
+              "a": 1
+            }
+          }
+        },
+        {
+          "id": "VariableID:2:16434",
+          "name": "主色上文字",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "2:8": {
+              "type": "COLOR",
+              "r": 0.062745101749897,
+              "g": 0.1411764770746231,
+              "b": 0.10980392247438431,
+              "a": 1
+            }
+          }
+        },
+        {
+          "id": "VariableID:2:16436",
+          "name": "成功",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "2:8": {
+              "type": "COLOR",
+              "r": 0.5411764979362488,
+              "g": 0.8627451062202454,
+              "b": 0.7490196228027344,
+              "a": 1
+            }
+          }
+        },
+        {
+          "id": "VariableID:2:16438",
+          "name": "警告",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "2:8": {
+              "type": "COLOR",
+              "r": 0.9098039269447327,
+              "g": 0.7372549176216125,
+              "b": 0.47058823704719543,
+              "a": 1
+            }
+          }
+        },
+        {
+          "id": "VariableID:2:16440",
+          "name": "警告表层",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "2:8": {
+              "type": "COLOR",
+              "r": 0.1882352977991104,
+              "g": 0.1568627506494522,
+              "b": 0.11372549086809158,
+              "a": 1
+            }
+          }
+        },
+        {
+          "id": "VariableID:2:16442",
+          "name": "错误",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "2:8": {
+              "type": "COLOR",
+              "r": 0.9490196108818054,
+              "g": 0.545098066329956,
+              "b": 0.5882353186607361,
+              "a": 1
+            }
+          }
+        },
+        {
+          "id": "VariableID:2:16444",
+          "name": "错误表层",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "2:8": {
+              "type": "COLOR",
+              "r": 0.1882352977991104,
+              "g": 0.12941177189350128,
+              "b": 0.14509804546833038,
+              "a": 1
+            }
+          }
+        },
+        {
+          "id": "VariableID:2:16446",
+          "name": "信息",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "2:8": {
+              "type": "COLOR",
+              "r": 0.6470588445663452,
+              "g": 0.7411764860153198,
+              "b": 0.9686274528503418,
+              "a": 1
+            }
+          }
+        },
+        {
+          "id": "VariableID:2:16448",
+          "name": "信息表层",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "2:8": {
+              "type": "COLOR",
+              "r": 0.125490203499794,
+              "g": 0.15294118225574493,
+              "b": 0.21568627655506134,
+              "a": 1
+            }
+          }
+        },
+        {
+          "id": "VariableID:2:16450",
+          "name": "图表辅助色",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "2:8": {
+              "type": "COLOR",
+              "r": 0.615686297416687,
+              "g": 0.6666666865348816,
+              "b": 0.9450980424880981,
+              "a": 1
+            }
+          }
+        },
+        {
+          "id": "VariableID:2:16452",
+          "name": "透明",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "2:8": {
+              "type": "COLOR",
+              "r": 0.05882352963089943,
+              "g": 0.062745101749897,
+              "b": 0.06666667014360428,
+              "a": 1
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "VariableCollectionId:2:16413",
+      "name": "RainLink / 颜色 / 浅色",
+      "modes": [
+        {
+          "modeId": "2:9",
+          "name": "浅色"
+        }
+      ],
+      "variables": [
+        {
+          "id": "VariableID:2:16415",
+          "name": "背景",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "2:9": {
+              "type": "COLOR",
+              "r": 0.9803921580314636,
+              "g": 0.9803921580314636,
+              "b": 0.9803921580314636,
+              "a": 1
+            }
+          }
+        },
+        {
+          "id": "VariableID:2:16417",
+          "name": "界面表层",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "2:9": {
+              "type": "COLOR",
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 1
+            }
+          }
+        },
+        {
+          "id": "VariableID:2:16419",
+          "name": "浮起表层",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "2:9": {
+              "type": "COLOR",
+              "r": 0.95686274766922,
+              "g": 0.95686274766922,
+              "b": 0.9607843160629272,
+              "a": 1
+            }
+          }
+        },
+        {
+          "id": "VariableID:2:16421",
+          "name": "悬停",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "2:9": {
+              "type": "COLOR",
+              "r": 0.9254902005195618,
+              "g": 0.9254902005195618,
+              "b": 0.9333333373069763,
+              "a": 1
+            }
+          }
+        },
+        {
+          "id": "VariableID:2:16423",
+          "name": "边框",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "2:9": {
+              "type": "COLOR",
+              "r": 0.8941176533699036,
+              "g": 0.8941176533699036,
+              "b": 0.9058823585510254,
+              "a": 1
+            }
+          }
+        },
+        {
+          "id": "VariableID:2:16425",
+          "name": "主要文字",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "2:9": {
+              "type": "COLOR",
+              "r": 0.0941176488995552,
+              "g": 0.09803921729326248,
+              "b": 0.10588235408067703,
+              "a": 1
+            }
+          }
+        },
+        {
+          "id": "VariableID:2:16427",
+          "name": "次要文字",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "2:9": {
+              "type": "COLOR",
+              "r": 0.3333333432674408,
+              "g": 0.3450980484485626,
+              "b": 0.37254902720451355,
+              "a": 1
+            }
+          }
+        },
+        {
+          "id": "VariableID:2:16429",
+          "name": "弱化文字",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "2:9": {
+              "type": "COLOR",
+              "r": 0.4117647111415863,
+              "g": 0.4274509847164154,
+              "b": 0.4588235318660736,
+              "a": 1
+            }
+          }
+        },
+        {
+          "id": "VariableID:2:16431",
+          "name": "主色",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "2:9": {
+              "type": "COLOR",
+              "r": 0.0313725508749485,
+              "g": 0.4745098054409027,
+              "b": 0.3607843220233917,
+              "a": 1
+            }
+          }
+        },
+        {
+          "id": "VariableID:2:16433",
+          "name": "主色表层",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "2:9": {
+              "type": "COLOR",
+              "r": 0.9058823585510254,
+              "g": 0.9607843160629272,
+              "b": 0.9333333373069763,
+              "a": 1
+            }
+          }
+        },
+        {
+          "id": "VariableID:2:16435",
+          "name": "主色上文字",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "2:9": {
+              "type": "COLOR",
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 1
+            }
+          }
+        },
+        {
+          "id": "VariableID:2:16437",
+          "name": "成功",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "2:9": {
+              "type": "COLOR",
+              "r": 0.0313725508749485,
+              "g": 0.4745098054409027,
+              "b": 0.3607843220233917,
+              "a": 1
+            }
+          }
+        },
+        {
+          "id": "VariableID:2:16439",
+          "name": "警告",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "2:9": {
+              "type": "COLOR",
+              "r": 0.5843137502670288,
+              "g": 0.37254902720451355,
+              "b": 0.05098039284348488,
+              "a": 1
+            }
+          }
+        },
+        {
+          "id": "VariableID:2:16441",
+          "name": "警告表层",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "2:9": {
+              "type": "COLOR",
+              "r": 1,
+              "g": 0.9529411792755127,
+              "b": 0.8705882430076599,
+              "a": 1
+            }
+          }
+        },
+        {
+          "id": "VariableID:2:16443",
+          "name": "错误",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "2:9": {
+              "type": "COLOR",
+              "r": 0.7411764860153198,
+              "g": 0.2078431397676468,
+              "b": 0.29019609093666077,
+              "a": 1
+            }
+          }
+        },
+        {
+          "id": "VariableID:2:16445",
+          "name": "错误表层",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "2:9": {
+              "type": "COLOR",
+              "r": 1,
+              "g": 0.9176470637321472,
+              "b": 0.9372549057006836,
+              "a": 1
+            }
+          }
+        },
+        {
+          "id": "VariableID:2:16447",
+          "name": "信息",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "2:9": {
+              "type": "COLOR",
+              "r": 0.1921568661928177,
+              "g": 0.41960784792900085,
+              "b": 0.7568627595901489,
+              "a": 1
+            }
+          }
+        },
+        {
+          "id": "VariableID:2:16449",
+          "name": "信息表层",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "2:9": {
+              "type": "COLOR",
+              "r": 0.9215686321258545,
+              "g": 0.9450980424880981,
+              "b": 0.9921568632125854,
+              "a": 1
+            }
+          }
+        },
+        {
+          "id": "VariableID:2:16451",
+          "name": "图表辅助色",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "2:9": {
+              "type": "COLOR",
+              "r": 0.40784314274787903,
+              "g": 0.4627451002597809,
+              "b": 0.7843137383460999,
+              "a": 1
+            }
+          }
+        },
+        {
+          "id": "VariableID:2:16453",
+          "name": "透明",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "2:9": {
+              "type": "COLOR",
+              "r": 0.9803921580314636,
+              "g": 0.9803921580314636,
+              "b": 0.9803921580314636,
+              "a": 1
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "VariableCollectionId:2:16462",
+      "name": "RainLink / 间距与圆角",
+      "modes": [
+        {
+          "modeId": "2:10",
+          "name": "默认"
+        }
+      ],
+      "variables": [
+        {
+          "id": "VariableID:2:16463",
+          "name": "间距/4",
+          "resolvedType": "FLOAT",
+          "valuesByMode": {
+            "2:10": 4
+          }
+        },
+        {
+          "id": "VariableID:2:16464",
+          "name": "间距/8",
+          "resolvedType": "FLOAT",
+          "valuesByMode": {
+            "2:10": 8
+          }
+        },
+        {
+          "id": "VariableID:2:16465",
+          "name": "间距/12",
+          "resolvedType": "FLOAT",
+          "valuesByMode": {
+            "2:10": 12
+          }
+        },
+        {
+          "id": "VariableID:2:16466",
+          "name": "间距/16",
+          "resolvedType": "FLOAT",
+          "valuesByMode": {
+            "2:10": 16
+          }
+        },
+        {
+          "id": "VariableID:2:16467",
+          "name": "间距/20",
+          "resolvedType": "FLOAT",
+          "valuesByMode": {
+            "2:10": 20
+          }
+        },
+        {
+          "id": "VariableID:2:16468",
+          "name": "间距/24",
+          "resolvedType": "FLOAT",
+          "valuesByMode": {
+            "2:10": 24
+          }
+        },
+        {
+          "id": "VariableID:2:16469",
+          "name": "间距/32",
+          "resolvedType": "FLOAT",
+          "valuesByMode": {
+            "2:10": 32
+          }
+        },
+        {
+          "id": "VariableID:2:16470",
+          "name": "间距/40",
+          "resolvedType": "FLOAT",
+          "valuesByMode": {
+            "2:10": 40
+          }
+        },
+        {
+          "id": "VariableID:2:16471",
+          "name": "间距/48",
+          "resolvedType": "FLOAT",
+          "valuesByMode": {
+            "2:10": 48
+          }
+        },
+        {
+          "id": "VariableID:2:16472",
+          "name": "间距/64",
+          "resolvedType": "FLOAT",
+          "valuesByMode": {
+            "2:10": 64
+          }
+        },
+        {
+          "id": "VariableID:2:16473",
+          "name": "圆角/8",
+          "resolvedType": "FLOAT",
+          "valuesByMode": {
+            "2:10": 8
+          }
+        },
+        {
+          "id": "VariableID:2:16474",
+          "name": "圆角/10",
+          "resolvedType": "FLOAT",
+          "valuesByMode": {
+            "2:10": 10
+          }
+        },
+        {
+          "id": "VariableID:2:16475",
+          "name": "圆角/12",
+          "resolvedType": "FLOAT",
+          "valuesByMode": {
+            "2:10": 12
+          }
+        },
+        {
+          "id": "VariableID:2:16476",
+          "name": "圆角/16",
+          "resolvedType": "FLOAT",
+          "valuesByMode": {
+            "2:10": 16
+          }
+        },
+        {
+          "id": "VariableID:2:16477",
+          "name": "圆角/24",
+          "resolvedType": "FLOAT",
+          "valuesByMode": {
+            "2:10": 24
+          }
+        }
+      ]
+    }
+  ]
+}

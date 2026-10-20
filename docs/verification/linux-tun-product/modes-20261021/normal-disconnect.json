@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "receipts": [
+    {
+      "kind": "tcp",
+      "nonce": "normal-disconnect-AF_INET-tcp-3f2b1529",
+      "source": "10.77.0.1"
+    },
+    {
+      "kind": "udp",
+      "nonce": "normal-disconnect-AF_INET-udp-7f215fc1",
+      "source": "10.77.0.1"
+    },
+    {
+      "kind": "tcp",
+      "nonce": "normal-disconnect-AF_INET6-tcp-b161191b",
+      "source": "fd77::1"
+    },
+    {
+      "kind": "udp",
+      "nonce": "normal-disconnect-AF_INET6-udp-60a1a6be",
+      "source": "fd77::1"
+    }
+  ]
+}

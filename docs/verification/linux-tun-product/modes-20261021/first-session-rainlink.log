@@ -1,0 +1,3 @@
+
+(dev.rainlink.rainlink:854): Atk-CRITICAL **: 16:40:32.386: atk_socket_embed: assertion 'plug_id != NULL' failed
+embedder.cc (2519): 'FlutterEngineRemoveView' returned 'kInvalidArguments'. Remove view info was invalid. The implicit view cannot be removed.

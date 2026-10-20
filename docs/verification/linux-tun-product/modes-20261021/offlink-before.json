@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "receipts": [
+    {
+      "kind": "tcp",
+      "nonce": "offlink-before-AF_INET-tcp-bfee9846",
+      "source": "10.77.0.1"
+    },
+    {
+      "kind": "udp",
+      "nonce": "offlink-before-AF_INET-udp-68c944df",
+      "source": "10.77.0.1"
+    },
+    {
+      "kind": "tcp",
+      "nonce": "offlink-before-AF_INET6-tcp-d1dd0d8f",
+      "source": "fd77::1"
+    },
+    {
+      "kind": "udp",
+      "nonce": "offlink-before-AF_INET6-udp-c335b8f3",
+      "source": "fd77::1"
+    }
+  ]
+}

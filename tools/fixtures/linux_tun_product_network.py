@@ -16,8 +16,13 @@ import struct
 import threading
 
 
-IPV4 = "10.77.0.2"
-IPV6 = "fd77::2"
+# Keep the proxy/DNS entry on-link and the origin off-link. Locked sing-tun
+# preserves connected routes, so an on-link origin would bypass TUN in every
+# mode and could never prove whether the selected proxy mode is working.
+ENTRY_IPV4 = "10.77.0.2"
+ENTRY_IPV6 = "fd77::2"
+IPV4 = "10.78.0.2"
+IPV6 = "fd78::2"
 PORT = 18080
 SOCKET_TIMEOUT = 8
 MAX_REQUEST = 2048
@@ -78,13 +83,14 @@ def serve(log: Path):
             endpoint.sendto(response, self.client_address)
 
     servers = []
-    for family, address in [(socket.AF_INET, IPV4), (socket.AF_INET6, IPV6)]:
-        for base, handler, port in [(socketserver.ThreadingTCPServer, TCP, PORT),
-                                    (socketserver.ThreadingUDPServer, UDP, PORT),
-                                    (socketserver.ThreadingUDPServer, DNS, 53)]:
+    for family, address, entry in [(socket.AF_INET, IPV4, ENTRY_IPV4),
+                                    (socket.AF_INET6, IPV6, ENTRY_IPV6)]:
+        for base, handler, port, listen in [(socketserver.ThreadingTCPServer, TCP, PORT, address),
+                                           (socketserver.ThreadingUDPServer, UDP, PORT, address),
+                                           (socketserver.ThreadingUDPServer, DNS, 53, entry)]:
             server_type = type("QAServer", (base,), {"address_family": family,
                 "allow_reuse_address": True, "daemon_threads": True})
-            server = server_type((address, port), handler)
+            server = server_type((listen, port), handler)
             servers.append(server)
             threading.Thread(target=server.serve_forever, daemon=True).start()
     print("ORIGIN_RECEIPTS_READY", flush=True)

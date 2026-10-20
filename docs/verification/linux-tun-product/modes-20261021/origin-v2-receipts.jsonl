@@ -1,0 +1,92 @@
+{"kind": "tcp", "nonce": "offlink-before-AF_INET-tcp-bfee9846", "source": "10.77.0.1"}
+{"kind": "udp", "nonce": "offlink-before-AF_INET-udp-68c944df", "source": "10.77.0.1"}
+{"kind": "tcp", "nonce": "offlink-before-AF_INET6-tcp-d1dd0d8f", "source": "fd77::1"}
+{"kind": "udp", "nonce": "offlink-before-AF_INET6-udp-c335b8f3", "source": "fd77::1"}
+{"kind": "dns", "name": "0.debian.pool.ntp.org", "queryType": 1, "source": "10.77.0.1"}
+{"kind": "dns", "name": "0.debian.pool.ntp.org", "queryType": 28, "source": "10.77.0.1"}
+{"kind": "dns", "name": "1.debian.pool.ntp.org", "queryType": 1, "source": "10.77.0.1"}
+{"kind": "dns", "name": "1.debian.pool.ntp.org", "queryType": 28, "source": "10.77.0.1"}
+{"kind": "dns", "name": "2.debian.pool.ntp.org", "queryType": 1, "source": "10.77.0.1"}
+{"kind": "dns", "name": "2.debian.pool.ntp.org", "queryType": 28, "source": "10.77.0.1"}
+{"kind": "dns", "name": "3.debian.pool.ntp.org", "queryType": 1, "source": "10.77.0.1"}
+{"kind": "dns", "name": "3.debian.pool.ntp.org", "queryType": 28, "source": "10.77.0.1"}
+{"kind": "tcp", "nonce": "rule-offlink-AF_INET-tcp-cd5c42f9", "source": "10.77.0.1"}
+{"kind": "udp", "nonce": "rule-offlink-AF_INET-udp-38a59768", "source": "10.77.0.1"}
+{"kind": "tcp", "nonce": "rule-offlink-AF_INET6-tcp-db23a292", "source": "fd77::1"}
+{"kind": "udp", "nonce": "rule-offlink-AF_INET6-udp-1d30f1ba", "source": "fd77::1"}
+{"kind": "dns", "name": "rule-offlink-3a893065.rainlink.test", "queryType": 1, "source": "10.77.0.1"}
+{"kind": "dns", "name": "rule-offlink-df017599.rainlink.test", "queryType": 28, "source": "10.77.0.1"}
+{"kind": "tcp", "nonce": "global-offlink-AF_INET-tcp-40fec4c3", "source": "10.78.0.2"}
+{"kind": "udp", "nonce": "global-offlink-AF_INET-udp-c869594a", "source": "10.78.0.2"}
+{"kind": "tcp", "nonce": "global-offlink-AF_INET6-tcp-90df752d", "source": "fd78::2"}
+{"kind": "udp", "nonce": "global-offlink-AF_INET6-udp-5467d45d", "source": "fd78::2"}
+{"kind": "dns", "name": "global-offlink-988811c7.rainlink.test", "queryType": 1, "source": "10.77.0.1"}
+{"kind": "dns", "name": "global-offlink-46aee5db.rainlink.test", "queryType": 28, "source": "10.77.0.1"}
+{"kind": "tcp", "nonce": "direct-offlink-AF_INET-tcp-8543916c", "source": "10.77.0.1"}
+{"kind": "udp", "nonce": "direct-offlink-AF_INET-udp-80bbdd12", "source": "10.77.0.1"}
+{"kind": "tcp", "nonce": "direct-offlink-AF_INET6-tcp-6819db1f", "source": "fd77::1"}
+{"kind": "udp", "nonce": "direct-offlink-AF_INET6-udp-8aa3d47b", "source": "fd77::1"}
+{"kind": "dns", "name": "direct-offlink-b350c406.rainlink.test", "queryType": 1, "source": "10.77.0.1"}
+{"kind": "dns", "name": "direct-offlink-4af8a50f.rainlink.test", "queryType": 28, "source": "10.77.0.1"}
+{"kind": "tcp", "nonce": "pending-rules-AF_INET-tcp-fb32a5e5", "source": "10.77.0.1"}
+{"kind": "udp", "nonce": "pending-rules-AF_INET-udp-32283a67", "source": "10.77.0.1"}
+{"kind": "tcp", "nonce": "pending-rules-AF_INET6-tcp-18c224e2", "source": "fd77::1"}
+{"kind": "udp", "nonce": "pending-rules-AF_INET6-udp-fc011561", "source": "fd77::1"}
+{"kind": "dns", "name": "pending-rules-1908a6d3.rainlink.test", "queryType": 1, "source": "10.77.0.1"}
+{"kind": "dns", "name": "pending-rules-3df3d2b1.rainlink.test", "queryType": 28, "source": "10.77.0.1"}
+{"kind": "dns", "name": "0.debian.pool.ntp.org", "queryType": 1, "source": "10.77.0.1"}
+{"kind": "dns", "name": "0.debian.pool.ntp.org", "queryType": 28, "source": "10.77.0.1"}
+{"kind": "dns", "name": "1.debian.pool.ntp.org", "queryType": 1, "source": "10.77.0.1"}
+{"kind": "dns", "name": "1.debian.pool.ntp.org", "queryType": 28, "source": "10.77.0.1"}
+{"kind": "dns", "name": "2.debian.pool.ntp.org", "queryType": 28, "source": "10.77.0.1"}
+{"kind": "dns", "name": "2.debian.pool.ntp.org", "queryType": 1, "source": "10.77.0.1"}
+{"kind": "dns", "name": "3.debian.pool.ntp.org", "queryType": 1, "source": "10.77.0.1"}
+{"kind": "dns", "name": "3.debian.pool.ntp.org", "queryType": 28, "source": "10.77.0.1"}
+{"kind": "tcp", "nonce": "pending-rules-both-AF_INET-tcp-d10542e1", "source": "10.77.0.1"}
+{"kind": "udp", "nonce": "pending-rules-both-AF_INET-udp-88b600db", "source": "10.77.0.1"}
+{"kind": "tcp", "nonce": "pending-rules-both-AF_INET6-tcp-7a443836", "source": "fd77::1"}
+{"kind": "udp", "nonce": "pending-rules-both-AF_INET6-udp-67b86016", "source": "fd77::1"}
+{"kind": "dns", "name": "pending-rules-both-e2a3ce9c.rainlink.test", "queryType": 1, "source": "10.77.0.1"}
+{"kind": "dns", "name": "pending-rules-both-15a7c9f5.rainlink.test", "queryType": 28, "source": "10.77.0.1"}
+{"kind": "dns", "name": "0.debian.pool.ntp.org", "queryType": 28, "source": "10.77.0.1"}
+{"kind": "dns", "name": "0.debian.pool.ntp.org", "queryType": 1, "source": "10.77.0.1"}
+{"kind": "tcp", "nonce": "custom-rules-AF_INET-tcp-e4cf1bf5", "source": "10.78.0.2"}
+{"kind": "udp", "nonce": "custom-rules-AF_INET-udp-7667cf55", "source": "10.78.0.2"}
+{"kind": "tcp", "nonce": "custom-rules-AF_INET6-tcp-53181ea0", "source": "fd78::2"}
+{"kind": "udp", "nonce": "custom-rules-AF_INET6-udp-1274db69", "source": "fd78::2"}
+{"kind": "dns", "name": "custom-rules-4edf3e5b.rainlink.test", "queryType": 1, "source": "10.77.0.1"}
+{"kind": "dns", "name": "custom-rules-18dfd25a.rainlink.test", "queryType": 28, "source": "10.77.0.1"}
+{"kind": "dns", "name": "1.debian.pool.ntp.org", "queryType": 28, "source": "10.77.0.1"}
+{"kind": "dns", "name": "1.debian.pool.ntp.org", "queryType": 1, "source": "10.77.0.1"}
+{"kind": "dns", "name": "2.debian.pool.ntp.org", "queryType": 28, "source": "10.77.0.1"}
+{"kind": "dns", "name": "2.debian.pool.ntp.org", "queryType": 1, "source": "10.77.0.1"}
+{"kind": "dns", "name": "3.debian.pool.ntp.org", "queryType": 1, "source": "10.77.0.1"}
+{"kind": "dns", "name": "3.debian.pool.ntp.org", "queryType": 28, "source": "10.77.0.1"}
+{"kind": "tcp", "nonce": "tun-off-AF_INET-tcp-0d2b15fe", "source": "10.77.0.1"}
+{"kind": "udp", "nonce": "tun-off-AF_INET-udp-94f42ace", "source": "10.77.0.1"}
+{"kind": "tcp", "nonce": "tun-off-AF_INET6-tcp-717ccf2a", "source": "fd77::1"}
+{"kind": "udp", "nonce": "tun-off-AF_INET6-udp-2b7c685d", "source": "fd77::1"}
+{"kind": "dns", "name": "0.debian.pool.ntp.org", "queryType": 1, "source": "10.77.0.1"}
+{"kind": "dns", "name": "0.debian.pool.ntp.org", "queryType": 28, "source": "10.77.0.1"}
+{"kind": "tcp", "nonce": "tun-on-AF_INET-tcp-8cb62ea4", "source": "10.78.0.2"}
+{"kind": "udp", "nonce": "tun-on-AF_INET-udp-d816a1ff", "source": "10.78.0.2"}
+{"kind": "tcp", "nonce": "tun-on-AF_INET6-tcp-f7371133", "source": "fd78::2"}
+{"kind": "udp", "nonce": "tun-on-AF_INET6-udp-d95909fd", "source": "fd78::2"}
+{"kind": "dns", "name": "tun-on-fa5bbfa7.rainlink.test", "queryType": 1, "source": "10.77.0.1"}
+{"kind": "dns", "name": "tun-on-c33878e3.rainlink.test", "queryType": 28, "source": "10.77.0.1"}
+{"kind": "tcp", "nonce": "normal-disconnect-AF_INET-tcp-3f2b1529", "source": "10.77.0.1"}
+{"kind": "udp", "nonce": "normal-disconnect-AF_INET-udp-7f215fc1", "source": "10.77.0.1"}
+{"kind": "tcp", "nonce": "normal-disconnect-AF_INET6-tcp-b161191b", "source": "fd77::1"}
+{"kind": "udp", "nonce": "normal-disconnect-AF_INET6-udp-60a1a6be", "source": "fd77::1"}
+{"kind": "dns", "name": "0.debian.pool.ntp.org", "queryType": 1, "source": "10.77.0.1"}
+{"kind": "dns", "name": "0.debian.pool.ntp.org", "queryType": 28, "source": "10.77.0.1"}
+{"kind": "tcp", "nonce": "before-active-exit-AF_INET-tcp-26dd20e0", "source": "10.78.0.2"}
+{"kind": "udp", "nonce": "before-active-exit-AF_INET-udp-13ed9d97", "source": "10.78.0.2"}
+{"kind": "tcp", "nonce": "before-active-exit-AF_INET6-tcp-12530f22", "source": "fd78::2"}
+{"kind": "udp", "nonce": "before-active-exit-AF_INET6-udp-08c4736c", "source": "fd78::2"}
+{"kind": "dns", "name": "before-active-exit-100e631e.rainlink.test", "queryType": 1, "source": "10.77.0.1"}
+{"kind": "dns", "name": "before-active-exit-db0479e3.rainlink.test", "queryType": 28, "source": "10.77.0.1"}
+{"kind": "tcp", "nonce": "after-active-exit-AF_INET-tcp-9e596c23", "source": "10.77.0.1"}
+{"kind": "udp", "nonce": "after-active-exit-AF_INET-udp-43014e38", "source": "10.77.0.1"}
+{"kind": "tcp", "nonce": "after-active-exit-AF_INET6-tcp-6790b6ae", "source": "fd77::1"}
+{"kind": "udp", "nonce": "after-active-exit-AF_INET6-udp-e7dbde10", "source": "fd77::1"}

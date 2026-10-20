@@ -1,0 +1,120 @@
+{
+  "date": "2026-10-21",
+  "instanceId": "rainlink-tun-product-20261021-02",
+  "developmentPaused": true,
+  "productSourceChanged": false,
+  "probeGroups": [
+    {
+      "file": "offlink-before.json",
+      "receipts": 4,
+      "tcpUdpProxied": false,
+      "originMatched": true
+    },
+    {
+      "file": "rule-offlink.json",
+      "receipts": 6,
+      "tcpUdpProxied": false,
+      "originMatched": true
+    },
+    {
+      "file": "global-offlink.json",
+      "receipts": 6,
+      "tcpUdpProxied": true,
+      "originMatched": true
+    },
+    {
+      "file": "direct-offlink.json",
+      "receipts": 6,
+      "tcpUdpProxied": false,
+      "originMatched": true
+    },
+    {
+      "file": "pending-rules.json",
+      "receipts": 6,
+      "tcpUdpProxied": false,
+      "originMatched": true
+    },
+    {
+      "file": "pending-rules-both.json",
+      "receipts": 6,
+      "tcpUdpProxied": false,
+      "originMatched": true
+    },
+    {
+      "file": "custom-rules.json",
+      "receipts": 6,
+      "tcpUdpProxied": true,
+      "originMatched": true
+    },
+    {
+      "file": "tun-off.json",
+      "receipts": 4,
+      "tcpUdpProxied": false,
+      "originMatched": true
+    },
+    {
+      "file": "tun-on.json",
+      "receipts": 6,
+      "tcpUdpProxied": true,
+      "originMatched": true
+    },
+    {
+      "file": "normal-disconnect.json",
+      "receipts": 4,
+      "tcpUdpProxied": false,
+      "originMatched": true
+    },
+    {
+      "file": "before-active-exit.json",
+      "receipts": 6,
+      "tcpUdpProxied": true,
+      "originMatched": true
+    },
+    {
+      "file": "after-active-exit.json",
+      "receipts": 4,
+      "tcpUdpProxied": false,
+      "originMatched": true
+    }
+  ],
+  "clientReceipts": 64,
+  "originMatched": true,
+  "kernelRestorations": [
+    "rule-reconnect-restored",
+    "tun-off-restored",
+    "normal-disconnect-restored",
+    "active-exit-restored",
+    "pause-kernel-restored",
+    "pause-exit-restored",
+    "pause-session-stopped"
+  ],
+  "figmaSvgAssetsMatched": 44,
+  "figmaColorMappingsMatched": 26,
+  "guestCleanupExitCode": 0,
+  "outerVmExitCode": 0,
+  "checks": [
+    "git diff --check",
+    "python py_compile",
+    "bash -n",
+    "saved evidence reconciliation"
+  ],
+  "notRerun": [
+    "Flutter tests",
+    "Go tests",
+    "fresh VM boot using modified guest fixture"
+  ],
+  "pending": [
+    "service disable/stop repair in product UI",
+    "AT-SPI dependency and GTK warning investigation",
+    "1440x900/light-theme/all-page rendering comparison",
+    "Apple native verification"
+  ],
+  "package": {
+    "path": "build/qa/linux-gui/tun-product-acceptance/rainlink-preview.tar.xz",
+    "version": "0.1.0+4",
+    "bytes": 32508860,
+    "sha256": "b2d6c34cfed17d7d37051ea371b08ef2ea8e000c5edc5963ceebc290083987b7",
+    "defaultPackageReplaced": false,
+    "releasePublished": false
+  }
+}

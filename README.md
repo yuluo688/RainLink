@@ -2,7 +2,7 @@
 
 桌面优先的五平台客户端。Flutter 负责界面与业务，Go Host 负责桌面核心边界，Android 使用 Kotlin 前台网络服务与嵌入式 libbox。
 
-2026-10-20 暂停检查点：按用户要求暂停并保存、推送当前进度，见[保存范围与待办](docs/verification/closeout-20261020.md)。最新 Flutter 546 项及静态分析通过；扫码、Android 更新/流量、Linux 桌面集成与 macOS 基础代码一并保留。Linux 源码现按可信且启用、活动的匹配服务开放首页 TUN，真实安装/取消与恢复通过，但接受授权后的完整产品连接尚未验收，默认包未替换；见[Linux TUN 待续验](docs/verification/linux-tun-product.md)。五平台目标未完成，下列记录保留各阶段范围。
+2026-10-21 暂停检查点：按用户要求暂停开发、提交并推送当前进度，见[本轮保存范围与待办](docs/verification/linux-tun-product-modes.md)。修正 Linux TUN 验收网络后，完整产品三模式、规则重连、连接中开关与退出的 64 个双栈 TCP/UDP/DNS 回执及七次内核恢复通过；44 个当前 Figma SVG 与 26 个颜色映射一致。服务失效修复、GTK 警告和全页面视觉仍待续验，默认包未替换。上一检查点的 Flutter 546 项与静态分析结果保留，本轮只修改 QA fixture，未重跑 Dart/Go 全量测试。五平台目标未完成，下列记录保留各阶段范围。
 
 2026-10-20 生命周期续验：基线升至 Flutter 3.29.3 / Dart 3.7.2，修复 Linux GTK 退出时的光标、弱引用与文件选择通道失效。473 项 Flutter、真实保存弹窗/托盘/通知流程及两套渲染器共 108 张布局通过；Linux 成品在致命 GTK 警告模式下三次退出、四次托盘恢复均通过。Windows Release 与 Android 0.1.0+4 Debug 包已重新构建，后者完成签名、16 KB 对齐及核心摘要检查。最新 Linux 包仍为 `build/RainLink-linux-x64-preview.tar.xz`，本轮副本为 `build/RainLink-linux-x64-lifecycle.tar.xz`；Android 包为 `build/RainLink-0.1.0+4-android-debug-preview.apk`。一条上游隐式视图诊断仍保留；实际范围、摘要与未完成项见[生命周期与 SDK 升级](docs/verification/linux-flutter-lifecycle.md)。以下保留历史检查点。
 
