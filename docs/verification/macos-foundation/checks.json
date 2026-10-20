@@ -1,0 +1,45 @@
+{
+  "windowsGo": {
+    "passedEvents": 126,
+    "skippedEvents": 27,
+    "failedEvents": 0
+  },
+  "windowsCore": {
+    "passedEvents": 2,
+    "skippedEvents": 0,
+    "failedEvents": 0
+  },
+  "flutter": {
+    "passedTests": 474,
+    "success": true
+  },
+  "linuxSecurestore": {
+    "passedEvents": 59,
+    "skippedEvents": 2,
+    "realSecretServiceUsed": false
+  },
+  "python": {
+    "totalTests": 23,
+    "passedTests": 21,
+    "skippedTests": 2,
+    "macosBuilderFixtures": 8,
+    "nativeMacToolsExecuted": false
+  },
+  "analysis": {
+    "flutterAnalyze": "No issues found; 56.7s",
+    "dartFormatFiles": 284,
+    "dartFormatChanges": 0,
+    "windowsGoVet": "passed",
+    "darwinGoVetArchitectures": [
+      "arm64",
+      "amd64"
+    ],
+    "bashSyntax": "passed"
+  },
+  "entitlements": {
+    "plistParsing": "passed",
+    "distribution": "direct-distribution-preview",
+    "sandbox": false,
+    "nativeAuthorizationVerified": false
+  }
+}

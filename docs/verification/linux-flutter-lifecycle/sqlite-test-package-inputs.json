@@ -1,0 +1,10 @@
+[
+  {
+    "package": "libsqlite3-dev",
+    "version": "3.46.1-7+deb13u2",
+    "url": "https://deb.debian.org/debian/pool/main/s/sqlite3/libsqlite3-dev_3.46.1-7%2bdeb13u2_amd64.deb",
+    "filename": "libsqlite3-dev_3.46.1-7+deb13u2_amd64.deb",
+    "bytes": 1109400,
+    "sha256": "56e1945d52292b506c1f0bcb77543fea289ccee857c478dcddded40226e1594d"
+  }
+]

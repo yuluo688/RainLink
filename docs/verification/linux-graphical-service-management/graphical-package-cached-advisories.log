@@ -1,0 +1,29 @@
+Flutter assets will be downloaded from https://storage.flutter-io.cn. Make sure you trust this source!
+Resolving dependencies...
+Downloading packages...
+Got dependencies!
+Flutter assets will be downloaded from https://storage.flutter-io.cn. Make sure you trust this source!
+
+Building Linux application...                                   
+✓ Built build/linux/x64/release/bundle/rainlink
+{
+  "version": "0.1.0+4",
+  "manifest": "/work/RainLink/app/build/linux/x64/release/bundle/rainlink-bundle.json",
+  "entries": 77,
+  "coreVersion": "1.12.25-rainlink.2",
+  "coreSha256": "640e5293d90b94c71318031284e65cf8121d99ee9c06482f021ed77c9f3fa96d",
+  "hostSha256": "3c94988871e41f58fcfa486b7c58ce749b1b2cac6a217ffa9c1cf586f46394e4",
+  "applicationSha256": "1132119281eaa2e28f473aaa6f60c1fb181f903c655c1fd44d43aa21a6717a6f",
+  "aotSha256": "4f12ef34e699dd934c081935ef14bbdf8d5d9219a14626fe25693e099dea203c",
+  "engineSha256": "2c9c1bae6de13a5dde00e4870b83ec4895830867bfcd2cc519ad54c312a9bfb2",
+  "releaseEngineVerified": true,
+  "packagedAssetsVerified": 55,
+  "kdeHelperIncluded": true,
+  "archive": "/work/RainLink/build/RainLink-linux-x64-preview.tar.xz",
+  "bytes": 32206576,
+  "sha256": "aaea75eee68c564655864cd9b0b191cf440958d88b67b7feb9af5ec2f6488e7e",
+  "perFileDigestVerified": true,
+  "permissionsVerified": true,
+  "userDatabaseIncluded": false
+}
+OFFLINE_LINUX_PACKAGE_COMPLETED

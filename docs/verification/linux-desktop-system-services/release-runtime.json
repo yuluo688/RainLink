@@ -1,0 +1,32 @@
+{
+  "isolatedRoot": "/tmp/rainlink-desktop-release-k580wh7d",
+  "archiveSha256": "dbd9e195d92842d0bdb8134f8d75b27bc1b03054aacf5b88b44fb4796749659d",
+  "exitCodes": [
+    0,
+    0
+  ],
+  "preferences": [
+    {
+      "autoConnect": false,
+      "showTray": false,
+      "connectionNotifications": true,
+      "subscriptionExpiryNotifications": true,
+      "closeBehavior": "exit"
+    },
+    {
+      "autoConnect": false,
+      "showTray": false,
+      "connectionNotifications": true,
+      "subscriptionExpiryNotifications": true,
+      "closeBehavior": "exit"
+    }
+  ],
+  "screenshots": [
+    "release-initial-compact",
+    "release-general-before",
+    "release-autostart-enabled",
+    "release-independent-notifications",
+    "release-reopened",
+    "release-general-reopened"
+  ]
+}

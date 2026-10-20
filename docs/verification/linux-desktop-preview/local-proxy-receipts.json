@@ -1,0 +1,161 @@
+{
+  "kind": "isolated local fixture",
+  "receipts": [
+    {
+      "method": "CONNECT",
+      "target": "www.gstatic.com:443",
+      "authenticated": true,
+      "allowed": false
+    },
+    {
+      "method": "CONNECT",
+      "target": "api.ip.sb:443",
+      "authenticated": true,
+      "allowed": false
+    },
+    {
+      "method": "CONNECT",
+      "target": "www.cloudflare.com:443",
+      "authenticated": true,
+      "allowed": false
+    },
+    {
+      "method": "CONNECT",
+      "target": "ipwho.is:443",
+      "authenticated": true,
+      "allowed": false
+    },
+    {
+      "method": "CONNECT",
+      "target": "www.gstatic.com:443",
+      "authenticated": true,
+      "allowed": false
+    },
+    {
+      "method": "CONNECT",
+      "target": "api.ip.sb:443",
+      "authenticated": true,
+      "allowed": false
+    },
+    {
+      "method": "CONNECT",
+      "target": "www.cloudflare.com:443",
+      "authenticated": true,
+      "allowed": false
+    },
+    {
+      "method": "CONNECT",
+      "target": "ipwho.is:443",
+      "authenticated": true,
+      "allowed": false
+    },
+    {
+      "method": "CONNECT",
+      "target": "www.gstatic.com:443",
+      "authenticated": true,
+      "allowed": false
+    },
+    {
+      "method": "CONNECT",
+      "target": "api.ip.sb:443",
+      "authenticated": true,
+      "allowed": false
+    },
+    {
+      "method": "CONNECT",
+      "target": "www.cloudflare.com:443",
+      "authenticated": true,
+      "allowed": false
+    },
+    {
+      "method": "CONNECT",
+      "target": "ipwho.is:443",
+      "authenticated": true,
+      "allowed": false
+    },
+    {
+      "method": "CONNECT",
+      "target": "198.51.100.20:18881",
+      "authenticated": true,
+      "allowed": true
+    },
+    {
+      "method": "CONNECT",
+      "target": "www.gstatic.com:443",
+      "authenticated": true,
+      "allowed": false
+    },
+    {
+      "method": "CONNECT",
+      "target": "api.ip.sb:443",
+      "authenticated": true,
+      "allowed": false
+    },
+    {
+      "method": "CONNECT",
+      "target": "www.cloudflare.com:443",
+      "authenticated": true,
+      "allowed": false
+    },
+    {
+      "method": "CONNECT",
+      "target": "ipwho.is:443",
+      "authenticated": true,
+      "allowed": false
+    },
+    {
+      "method": "CONNECT",
+      "target": "198.51.100.20:18881",
+      "authenticated": true,
+      "allowed": true
+    },
+    {
+      "method": "CONNECT",
+      "target": "www.gstatic.com:443",
+      "authenticated": true,
+      "allowed": false
+    },
+    {
+      "method": "CONNECT",
+      "target": "api.ip.sb:443",
+      "authenticated": true,
+      "allowed": false
+    },
+    {
+      "method": "CONNECT",
+      "target": "www.cloudflare.com:443",
+      "authenticated": true,
+      "allowed": false
+    },
+    {
+      "method": "CONNECT",
+      "target": "ipwho.is:443",
+      "authenticated": true,
+      "allowed": false
+    },
+    {
+      "method": "CONNECT",
+      "target": "www.gstatic.com:443",
+      "authenticated": true,
+      "allowed": false
+    },
+    {
+      "method": "CONNECT",
+      "target": "api.ip.sb:443",
+      "authenticated": true,
+      "allowed": false
+    },
+    {
+      "method": "CONNECT",
+      "target": "www.cloudflare.com:443",
+      "authenticated": true,
+      "allowed": false
+    },
+    {
+      "method": "CONNECT",
+      "target": "ipwho.is:443",
+      "authenticated": true,
+      "allowed": false
+    }
+  ]
+}

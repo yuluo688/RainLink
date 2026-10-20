@@ -1,0 +1,10 @@
+[
+  {
+    "package": "at-spi2-core",
+    "version": "2.56.2-1+deb13u2",
+    "url": "https://deb.debian.org/debian/pool/main/a/at-spi2-core/at-spi2-core_2.56.2-1%2bdeb13u2_amd64.deb",
+    "filename": "at-spi2-core_2.56.2-1+deb13u2_amd64.deb",
+    "bytes": 62124,
+    "sha256": "5378aee8237adb78c0c523b74ec90dff71a52d31f20bb86fdd55841ae3200a21"
+  }
+]

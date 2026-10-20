@@ -1,0 +1,32 @@
+{
+  "flutter": {
+    "log": "build/traffic-accounting-flutter-final-tests.jsonl",
+    "sha256": "3327612660b84d1c1ad3b14c70433f80b57f27357ee257a682ebe513f2ab49fe",
+    "counts": {
+      "success": 482
+    },
+    "passed": true,
+    "hitTestWarnings": 0
+  },
+  "windowsGo": {
+    "log": "build/traffic-accounting-go-windows.jsonl",
+    "sha256": "4263ef3c3be1242db6cc38990d8f0174151b7100d5c9d40b6d407d0b9e0824d5",
+    "counts": {
+      "pass": 200,
+      "skip": 3
+    },
+    "passed": true,
+    "passEventsIncludeSubtests": true
+  },
+  "android": {
+    "unit": {
+      "tests": 5,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "lint": {
+      "Warning": 4
+    }
+  }
+}

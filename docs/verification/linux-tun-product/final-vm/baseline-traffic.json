@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "receipts": [
+    {
+      "kind": "tcp",
+      "nonce": "before-tun-AF_INET-tcp-03f92eee",
+      "source": "10.77.0.1"
+    },
+    {
+      "kind": "udp",
+      "nonce": "before-tun-AF_INET-udp-37e3a1e8",
+      "source": "10.77.0.1"
+    },
+    {
+      "kind": "tcp",
+      "nonce": "before-tun-AF_INET6-tcp-06ae81a2",
+      "source": "fd77::1"
+    },
+    {
+      "kind": "udp",
+      "nonce": "before-tun-AF_INET6-udp-68bb9e87",
+      "source": "fd77::1"
+    }
+  ]
+}

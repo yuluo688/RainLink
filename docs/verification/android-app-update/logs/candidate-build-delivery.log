@@ -1,0 +1,270 @@
+Flutter assets will be downloaded from https://storage.flutter-io.cn. Make sure you trust this source!
+Resolving dependencies...
+Downloading packages...
+  async 2.12.0 (2.13.0 available)
+  characters 1.4.0 (1.4.1 available)
+  checked_yaml 2.0.3 (2.0.4 available)
+  cross_file 0.3.4+2 (0.3.5 available)
+  dart_style 3.0.1 (3.1.0 available)
+  fake_async 1.3.2 (1.3.3 available)
+  ffi 2.1.3 (2.1.4 available)
+  file_selector_linux 0.9.3+2 (0.9.4 available)
+  file_selector_macos 0.9.4+3 (0.9.5 available)
+  file_selector_platform_interface 2.6.2 (2.7.0 available)
+  file_selector_windows 0.9.3+4 (0.9.3+5 available)
+  flutter_lints 5.0.0 (6.0.0 available)
+  flutter_svg 2.0.17 (2.2.3 available)
+  go_router 14.8.1 (17.0.0 available)
+  intl 0.19.0 (0.20.2 available)
+  js 0.7.1 (0.7.2 available)
+  json_annotation 4.9.0 (4.10.0 available)
+  leak_tracker 10.0.8 (11.0.2 available)
+  leak_tracker_flutter_testing 3.0.9 (3.0.10 available)
+  leak_tracker_testing 3.0.1 (3.0.2 available)
+  lints 5.1.1 (6.0.0 available)
+  meta 1.16.0 (1.17.0 available)
+  path_provider_android 2.2.17 (2.2.20 available)
+  path_provider_foundation 2.4.1 (2.4.3 available)
+  petitparser 6.0.2 (7.0.1 available)
+  process 5.0.3 (5.0.5 available)
+  test_api 0.7.4 (0.7.7 available)
+  vector_graphics_compiler 1.1.18 (1.1.20 available)
+  vector_math 2.1.4 (2.2.0 available)
+  vm_service 14.3.1 (15.0.2 available)
+  webdriver 3.0.4 (3.1.0 available)
+  xml 6.5.0 (6.6.1 available)
+Got dependencies!
+32 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+Starting a Gradle Daemon, 1 busy and 2 stopped Daemons could not be reused, use --status for details
+> Task :gradle:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :gradle:compileKotlin UP-TO-DATE
+> Task :gradle:compileJava NO-SOURCE
+> Task :gradle:compileGroovy UP-TO-DATE
+> Task :gradle:pluginDescriptors UP-TO-DATE
+> Task :gradle:processResources UP-TO-DATE
+> Task :gradle:classes UP-TO-DATE
+> Task :gradle:jar UP-TO-DATE
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+
+> Task :app:compileFlutterBuildDebug
+Flutter assets will be downloaded from https://storage.flutter-io.cn. Make sure you trust this source!
+
+> Task :app:packJniLibsflutterBuildDebug
+> Task :file_selector_android:preBuild UP-TO-DATE
+> Task :file_selector_android:preDebugBuild UP-TO-DATE
+> Task :integration_test:preBuild UP-TO-DATE
+> Task :integration_test:preDebugBuild UP-TO-DATE
+> Task :file_selector_android:writeDebugAarMetadata
+> Task :mobile_scanner:preBuild UP-TO-DATE
+> Task :mobile_scanner:preDebugBuild UP-TO-DATE
+> Task :integration_test:writeDebugAarMetadata
+> Task :path_provider_android:preBuild UP-TO-DATE
+> Task :path_provider_android:preDebugBuild UP-TO-DATE
+> Task :mobile_scanner:writeDebugAarMetadata
+> Task :sqlite3_flutter_libs:preBuild UP-TO-DATE
+> Task :sqlite3_flutter_libs:preDebugBuild UP-TO-DATE
+> Task :path_provider_android:writeDebugAarMetadata
+> Task :sqlite3_flutter_libs:writeDebugAarMetadata
+> Task :file_selector_android:processDebugNavigationResources
+> Task :integration_test:processDebugNavigationResources
+> Task :mobile_scanner:processDebugNavigationResources
+> Task :app:checkDebugAarMetadata
+> Task :path_provider_android:processDebugNavigationResources
+> Task :sqlite3_flutter_libs:processDebugNavigationResources
+> Task :app:processDebugNavigationResources
+> Task :app:cleanMergeDebugAssets UP-TO-DATE
+> Task :app:compileDebugNavigationResources
+> Task :app:mergeDebugShaders
+> Task :app:compileDebugShaders NO-SOURCE
+> Task :app:generateDebugAssets UP-TO-DATE
+> Task :file_selector_android:mergeDebugShaders
+> Task :file_selector_android:compileDebugShaders NO-SOURCE
+> Task :file_selector_android:generateDebugAssets UP-TO-DATE
+> Task :file_selector_android:mergeDebugAssets
+> Task :integration_test:mergeDebugShaders
+> Task :integration_test:compileDebugShaders NO-SOURCE
+> Task :integration_test:generateDebugAssets UP-TO-DATE
+> Task :integration_test:mergeDebugAssets
+> Task :mobile_scanner:mergeDebugShaders
+> Task :mobile_scanner:compileDebugShaders NO-SOURCE
+> Task :mobile_scanner:generateDebugAssets UP-TO-DATE
+> Task :mobile_scanner:mergeDebugAssets
+> Task :path_provider_android:mergeDebugShaders
+> Task :path_provider_android:compileDebugShaders NO-SOURCE
+> Task :path_provider_android:generateDebugAssets UP-TO-DATE
+> Task :path_provider_android:mergeDebugAssets
+> Task :sqlite3_flutter_libs:mergeDebugShaders
+> Task :sqlite3_flutter_libs:compileDebugShaders NO-SOURCE
+> Task :sqlite3_flutter_libs:generateDebugAssets UP-TO-DATE
+> Task :sqlite3_flutter_libs:mergeDebugAssets
+> Task :app:mergeDebugAssets
+> Task :app:copyFlutterAssetsDebug
+> Task :app:generateDebugResValues
+> Task :file_selector_android:generateDebugResValues
+> Task :file_selector_android:generateDebugResources
+> Task :file_selector_android:packageDebugResources
+> Task :integration_test:generateDebugResValues
+> Task :integration_test:generateDebugResources
+> Task :integration_test:packageDebugResources
+> Task :mobile_scanner:generateDebugResValues
+> Task :mobile_scanner:generateDebugResources
+> Task :mobile_scanner:packageDebugResources
+> Task :path_provider_android:generateDebugResValues
+> Task :path_provider_android:generateDebugResources
+> Task :path_provider_android:packageDebugResources
+> Task :sqlite3_flutter_libs:generateDebugResValues
+> Task :sqlite3_flutter_libs:generateDebugResources
+> Task :sqlite3_flutter_libs:packageDebugResources
+> Task :app:mapDebugSourceSetPaths
+> Task :app:generateDebugResources
+> Task :app:packageDebugResources
+> Task :app:createDebugCompatibleScreenManifests
+> Task :app:extractDeepLinksDebug
+> Task :file_selector_android:extractDeepLinksDebug
+> Task :integration_test:extractDeepLinksDebug
+> Task :mobile_scanner:extractDeepLinksDebug
+> Task :path_provider_android:extractDeepLinksDebug
+> Task :app:parseDebugLocalResources
+> Task :sqlite3_flutter_libs:extractDeepLinksDebug
+
+> Task :path_provider_android:processDebugManifest
+package="io.flutter.plugins.pathprovider" found in source AndroidManifest.xml: C:\Users\FalingFliff\AppData\Local\Pub\Cache\hosted\pub.flutter-io.cn\path_provider_android-2.2.17\android\src\main\AndroidManifest.xml.
+Setting the namespace via the package attribute in the source AndroidManifest.xml is no longer supported, and the value is ignored.
+Recommendation: remove package="io.flutter.plugins.pathprovider" from the source AndroidManifest.xml: C:\Users\FalingFliff\AppData\Local\Pub\Cache\hosted\pub.flutter-io.cn\path_provider_android-2.2.17\android\src\main\AndroidManifest.xml.
+
+> Task :mobile_scanner:processDebugManifest
+package="dev.steenbakker.mobile_scanner" found in source AndroidManifest.xml: C:\Users\FalingFliff\AppData\Local\Pub\Cache\hosted\pub.flutter-io.cn\mobile_scanner-7.0.1\android\src\main\AndroidManifest.xml.
+Setting the namespace via the package attribute in the source AndroidManifest.xml is no longer supported, and the value is ignored.
+Recommendation: remove package="dev.steenbakker.mobile_scanner" from the source AndroidManifest.xml: C:\Users\FalingFliff\AppData\Local\Pub\Cache\hosted\pub.flutter-io.cn\mobile_scanner-7.0.1\android\src\main\AndroidManifest.xml.
+
+> Task :integration_test:processDebugManifest
+package="dev.flutter.integration_test" found in source AndroidManifest.xml: C:\Users\FalingFliff\Documents\ChatGPT\RainLink\.toolchains\flutter\packages\integration_test\android\src\main\AndroidManifest.xml.
+Setting the namespace via the package attribute in the source AndroidManifest.xml is no longer supported, and the value is ignored.
+Recommendation: remove package="dev.flutter.integration_test" from the source AndroidManifest.xml: C:\Users\FalingFliff\Documents\ChatGPT\RainLink\.toolchains\flutter\packages\integration_test\android\src\main\AndroidManifest.xml.
+
+> Task :file_selector_android:processDebugManifest
+package="dev.flutter.packages.file_selector_android" found in source AndroidManifest.xml: C:\Users\FalingFliff\AppData\Local\Pub\Cache\hosted\pub.flutter-io.cn\file_selector_android-0.5.1+15\android\src\main\AndroidManifest.xml.
+Setting the namespace via the package attribute in the source AndroidManifest.xml is no longer supported, and the value is ignored.
+Recommendation: remove package="dev.flutter.packages.file_selector_android" from the source AndroidManifest.xml: C:\Users\FalingFliff\AppData\Local\Pub\Cache\hosted\pub.flutter-io.cn\file_selector_android-0.5.1+15\android\src\main\AndroidManifest.xml.
+
+> Task :sqlite3_flutter_libs:processDebugManifest
+package="eu.simonbinder.sqlite3_flutter_libs" found in source AndroidManifest.xml: C:\Users\FalingFliff\AppData\Local\Pub\Cache\hosted\pub.flutter-io.cn\sqlite3_flutter_libs-0.5.29\android\src\main\AndroidManifest.xml.
+Setting the namespace via the package attribute in the source AndroidManifest.xml is no longer supported, and the value is ignored.
+Recommendation: remove package="eu.simonbinder.sqlite3_flutter_libs" from the source AndroidManifest.xml: C:\Users\FalingFliff\AppData\Local\Pub\Cache\hosted\pub.flutter-io.cn\sqlite3_flutter_libs-0.5.29\android\src\main\AndroidManifest.xml.
+
+> Task :file_selector_android:compileDebugLibraryResources
+> Task :app:mergeDebugResources
+> Task :app:processDebugMainManifest
+> Task :app:processDebugManifest
+> Task :integration_test:compileDebugLibraryResources
+> Task :app:processDebugManifestForPackage
+> Task :file_selector_android:parseDebugLocalResources
+> Task :integration_test:parseDebugLocalResources
+> Task :mobile_scanner:compileDebugLibraryResources
+> Task :file_selector_android:generateDebugRFile
+> Task :integration_test:generateDebugRFile
+> Task :mobile_scanner:parseDebugLocalResources
+> Task :path_provider_android:compileDebugLibraryResources
+> Task :mobile_scanner:generateDebugRFile
+> Task :path_provider_android:parseDebugLocalResources
+> Task :sqlite3_flutter_libs:compileDebugLibraryResources
+> Task :sqlite3_flutter_libs:parseDebugLocalResources
+> Task :path_provider_android:generateDebugRFile
+> Task :file_selector_android:javaPreCompileDebug
+> Task :sqlite3_flutter_libs:generateDebugRFile
+> Task :file_selector_android:compileDebugJavaWithJavac
+> Task :mobile_scanner:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :integration_test:javaPreCompileDebug
+> Task :file_selector_android:bundleLibCompileToJarDebug
+> Task :app:processDebugResources
+> Task :integration_test:compileDebugJavaWithJavac
+> Task :integration_test:bundleLibCompileToJarDebug
+> Task :mobile_scanner:javaPreCompileDebug
+> Task :path_provider_android:javaPreCompileDebug
+> Task :sqlite3_flutter_libs:javaPreCompileDebug
+> Task :path_provider_android:compileDebugJavaWithJavac
+> Task :path_provider_android:bundleLibCompileToJarDebug
+> Task :sqlite3_flutter_libs:compileDebugJavaWithJavac
+> Task :sqlite3_flutter_libs:bundleLibCompileToJarDebug
+> Task :app:javaPreCompileDebug
+> Task :file_selector_android:processDebugJavaRes NO-SOURCE
+> Task :integration_test:processDebugJavaRes NO-SOURCE
+> Task :path_provider_android:processDebugJavaRes NO-SOURCE
+> Task :sqlite3_flutter_libs:processDebugJavaRes NO-SOURCE
+> Task :app:checkDebugDuplicateClasses
+> Task :app:preProfileBuild UP-TO-DATE
+> Task :integration_test:bundleLibRuntimeToDirDebug
+> Task :sqlite3_flutter_libs:bundleLibRuntimeToDirDebug
+> Task :path_provider_android:bundleLibRuntimeToDirDebug
+> Task :file_selector_android:bundleLibRuntimeToDirDebug
+
+> Task :mobile_scanner:compileDebugKotlin
+w: file:///C:/Users/FalingFliff/AppData/Local/Pub/Cache/hosted/pub.flutter-io.cn/mobile_scanner-7.0.1/android/src/main/kotlin/dev/steenbakker/mobile_scanner/utils/YuvToRgbConverter.kt:8:8 'class Allocation : BaseObj' is deprecated. Deprecated in Java.
+w: file:///C:/Users/FalingFliff/AppData/Local/Pub/Cache/hosted/pub.flutter-io.cn/mobile_scanner-7.0.1/android/src/main/kotlin/dev/steenbakker/mobile_scanner/utils/YuvToRgbConverter.kt:9:8 'class Element : BaseObj' is deprecated. Deprecated in Java.
+w: file:///C:/Users/FalingFliff/AppData/Local/Pub/Cache/hosted/pub.flutter-io.cn/mobile_scanner-7.0.1/android/src/main/kotlin/dev/steenbakker/mobile_scanner/utils/YuvToRgbConverter.kt:10:8 'class RenderScript : Any' is deprecated. Deprecated in Java.
+w: file:///C:/Users/FalingFliff/AppData/Local/Pub/Cache/hosted/pub.flutter-io.cn/mobile_scanner-7.0.1/android/src/main/kotlin/dev/steenbakker/mobile_scanner/utils/YuvToRgbConverter.kt:11:8 'class ScriptIntrinsicYuvToRGB : ScriptIntrinsic' is deprecated. Deprecated in Java.
+w: file:///C:/Users/FalingFliff/AppData/Local/Pub/Cache/hosted/pub.flutter-io.cn/mobile_scanner-7.0.1/android/src/main/kotlin/dev/steenbakker/mobile_scanner/utils/YuvToRgbConverter.kt:12:8 'class Type : BaseObj' is deprecated. Deprecated in Java.
+
+> Task :app:compressDebugAssets
+> Task :app:desugarDebugFileDependencies
+> Task :app:configureCMakeDebug[arm64-v8a]
+> Task :mobile_scanner:compileDebugJavaWithJavac NO-SOURCE
+> Task :mobile_scanner:bundleLibCompileToJarDebug
+> Task :mobile_scanner:processDebugJavaRes
+> Task :app:buildCMakeDebug[arm64-v8a]
+> Task :mobile_scanner:bundleLibRuntimeToDirDebug
+
+> Task :app:compileDebugKotlin
+w: file:///C:/Users/FalingFliff/Documents/ChatGPT/RainLink/build/qa/android-app-update/attempt-delivery/candidate-source/app/android/app/src/main/kotlin/dev/rainlink/rainlink/core/AndroidPlatform.kt:46:39 'val allNetworks: Array<(out) Network!>' is deprecated. Deprecated in Java.
+w: file:///C:/Users/FalingFliff/Documents/ChatGPT/RainLink/build/qa/android-app-update/attempt-delivery/candidate-source/app/android/app/src/main/kotlin/dev/rainlink/rainlink/core/AndroidPlatform.kt:81:30 'val allNetworks: Array<(out) Network!>' is deprecated. Deprecated in Java.
+w: file:///C:/Users/FalingFliff/Documents/ChatGPT/RainLink/build/qa/android-app-update/attempt-delivery/candidate-source/app/android/app/src/main/kotlin/dev/rainlink/rainlink/core/AndroidPlatform.kt:133:40 'val allNetworks: Array<(out) Network!>' is deprecated. Deprecated in Java.
+
+> Task :app:configureCMakeDebug[x86_64]
+> Task :app:compileDebugJavaWithJavac
+> Task :app:processDebugJavaRes
+> Task :app:dexBuilderDebug
+> Task :app:buildCMakeDebug[x86_64]
+> Task :app:mergeDebugJniLibFolders
+> Task :file_selector_android:mergeDebugJniLibFolders
+> Task :file_selector_android:mergeDebugNativeLibs NO-SOURCE
+> Task :app:mergeLibDexDebug
+> Task :app:mergeProjectDexDebug
+> Task :file_selector_android:copyDebugJniLibsProjectOnly
+> Task :integration_test:mergeDebugJniLibFolders
+> Task :integration_test:mergeDebugNativeLibs NO-SOURCE
+> Task :integration_test:copyDebugJniLibsProjectOnly
+> Task :mobile_scanner:mergeDebugJniLibFolders
+> Task :mobile_scanner:mergeDebugNativeLibs NO-SOURCE
+> Task :mobile_scanner:copyDebugJniLibsProjectOnly
+> Task :path_provider_android:mergeDebugJniLibFolders
+> Task :path_provider_android:mergeDebugNativeLibs NO-SOURCE
+> Task :path_provider_android:copyDebugJniLibsProjectOnly
+> Task :sqlite3_flutter_libs:mergeDebugJniLibFolders
+> Task :sqlite3_flutter_libs:mergeDebugNativeLibs NO-SOURCE
+> Task :sqlite3_flutter_libs:copyDebugJniLibsProjectOnly
+> Task :app:mergeExtDexDebug
+> Task :app:validateSigningDebug
+> Task :app:writeDebugAppMetadata
+> Task :app:writeDebugSigningConfigVersions
+> Task :app:mergeDebugJavaResource
+> Task :app:mergeDebugNativeLibs
+> Task :app:stripDebugDebugSymbols
+> Task :app:packageDebug
+> Task :app:createDebugApkListingFileRedirect
+> Task :app:assembleDebug
+
+[Incubating] Problems report is available at: file:///C:/Users/FalingFliff/Documents/ChatGPT/RainLink/build/qa/android-app-update/attempt-delivery/candidate-source/app/build/reports/problems/problems-report.html
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.14.3/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 1m 39s
+142 actionable tasks: 136 executed, 6 up-to-date
+{"scope": "Unpublished QA-only full normal app, copied inputs; version increment only", "versionName": "0.1.0", "versionCode": 5, "apk": "build/qa/android-app-update/attempt-delivery/RainLink-0.1.0+5-android-universal.apk", "bytes": 231077532, "sha256": "bc81b7ff7abb274a6ef34f6b28b1e8916365e08c1134b77b463d1c43227609ad"}

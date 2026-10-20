@@ -1,0 +1,10 @@
+C:\Users\FalingFliff\Documents\ChatGPT\RainLink\build\host\darwin-arm64\rainlink-host: go1.25.5
+	path	rainlink.local/host/cmd/rainlink-host
+	mod	rainlink.local/host	(devel)	
+	build	-buildmode=exe
+	build	-compiler=gc
+	build	-trimpath=true
+	build	CGO_ENABLED=0
+	build	GOARCH=arm64
+	build	GOOS=darwin
+	build	GOARM64=v8.0

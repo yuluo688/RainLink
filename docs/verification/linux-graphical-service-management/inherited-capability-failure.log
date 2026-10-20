@@ -1,0 +1,16 @@
+session_capability_diagnostic
+/opt/rainlink-gui/RainLink/rainlink-host
+readlink_exit=0
+Uid:	2000	2000	2000	2000
+Gid:	2000	2000	2000	2000
+CapInh:	0000000800000000
+CapPrm:	0000000800000000
+CapEff:	0000000800000000
+CapBnd:	000001ffffffffff
+CapAmb:	0000000800000000
+NoNewPrivs:	0
+path_pkexec_exit 127
+stdout 
+stderr Error accessing /proc/4998/exe: Permission denied
+
+command_exit=0

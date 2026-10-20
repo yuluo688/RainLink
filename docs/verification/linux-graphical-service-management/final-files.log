@@ -1,0 +1,4 @@
+755 root:root /var/lib/rainlink
+700 root:root /var/lib/rainlink/tun-install
+600 root:root /var/lib/rainlink/tun-install/install.lock
+755 root:root /usr/libexec/rainlink

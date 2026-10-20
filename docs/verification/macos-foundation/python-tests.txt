@@ -1,0 +1,28 @@
+test_bundle_preserves_exact_native_bytes_and_assets (test_build_macos.MacBuildTest.test_bundle_preserves_exact_native_bytes_and_assets) ... ok
+test_macho_architecture_and_truncation (test_build_macos.MacBuildTest.test_macho_architecture_and_truncation) ... ok
+test_non_mac_host_is_rejected_before_any_mutation (test_build_macos.MacBuildTest.test_non_mac_host_is_rejected_before_any_mutation) ... ok
+test_sign_before_pin_and_keep_unsigned_source_locked (test_build_macos.MacBuildTest.test_sign_before_pin_and_keep_unsigned_source_locked) ... ok
+test_signing_failure_prevents_runtime_and_success_evidence (test_build_macos.MacBuildTest.test_signing_failure_prevents_runtime_and_success_evidence) ... ok
+test_stale_bundle_asset_and_external_bundle_are_refused (test_build_macos.MacBuildTest.test_stale_bundle_asset_and_external_bundle_are_refused) ... ok
+test_stale_host_helper_signed_core_and_source_are_refused (test_build_macos.MacBuildTest.test_stale_host_helper_signed_core_and_source_are_refused) ... ok
+test_wrong_unsigned_core_is_refused_before_signing (test_build_macos.MacBuildTest.test_wrong_unsigned_core_is_refused_before_signing) ... ok
+test_read_only_module_can_receive_local_dependencies_and_patches (test_core_sources.ModuleSourceTest.test_read_only_module_can_receive_local_dependencies_and_patches) ... ok
+test_retry_restores_upstream_files_and_keeps_directories_writable (test_core_sources.ModuleSourceTest.test_retry_restores_upstream_files_and_keeps_directories_writable) ... ok
+test_archive_has_identical_bytes_modes_and_repeatable_digest (test_package_linux.LinuxPackageTest.test_archive_has_identical_bytes_modes_and_repeatable_digest) ... ok
+test_debug_engine_stale_host_core_and_assets_are_refused (test_package_linux.LinuxPackageTest.test_debug_engine_stale_host_core_and_assets_are_refused) ... ok
+test_failed_verification_preserves_an_existing_archive (test_package_linux.LinuxPackageTest.test_failed_verification_preserves_an_existing_archive) ... ok
+test_foreign_architecture_is_refused_even_with_a_matching_sdk (test_package_linux.LinuxPackageTest.test_foreign_architecture_is_refused_even_with_a_matching_sdk) ... ok
+test_missing_executable_permission_is_refused (test_package_linux.LinuxPackageTest.test_missing_executable_permission_is_refused) ... skipped 'POSIX executable bits require Linux'
+test_output_inside_bundle_is_refused (test_package_linux.LinuxPackageTest.test_output_inside_bundle_is_refused) ... ok
+test_private_data_unknown_roots_and_missing_runtime_are_refused (test_package_linux.LinuxPackageTest.test_private_data_unknown_roots_and_missing_runtime_are_refused) ... ok
+test_symlinks_are_refused (test_package_linux.LinuxPackageTest.test_symlinks_are_refused) ... skipped 'Unprivileged symlink test requires POSIX'
+test_digest_streams_more_than_one_chunk_on_python_38 (test_package_windows.WindowsPackageTest.test_digest_streams_more_than_one_chunk_on_python_38) ... ok
+test_live_transaction_state_cannot_be_packaged (test_package_windows.WindowsPackageTest.test_live_transaction_state_cannot_be_packaged) ... ok
+test_manifest_native_assets_and_identical_package_content (test_package_windows.WindowsPackageTest.test_manifest_native_assets_and_identical_package_content) ... ok
+test_missing_updater_and_private_data_are_refused (test_package_windows.WindowsPackageTest.test_missing_updater_and_private_data_are_refused) ... ok
+test_runtime_rejects_debug_engine_and_stale_native_binaries (test_package_windows.WindowsPackageTest.test_runtime_rejects_debug_engine_and_stale_native_binaries) ... ok
+
+----------------------------------------------------------------------
+Ran 23 tests in 2.398s
+
+OK (skipped=2)

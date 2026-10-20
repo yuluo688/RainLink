@@ -1,0 +1,40 @@
+{
+  "passed": true,
+  "avd": "RainLink_Traffic_QA",
+  "run": "26691074ff41dad7",
+  "scope": "Local fixtures on dedicated AVD; no real upstream accounts or user data",
+  "flows": {
+    "global": {
+      "completedRequests": 12,
+      "payloadBytes": 393600
+    },
+    "direct": {
+      "completedRequests": 12,
+      "payloadBytes": 393600
+    },
+    "rule": {
+      "completedRequests": 12,
+      "payloadBytes": 393600
+    }
+  },
+  "testApkSha256": "d628e51c40e7b66915c4ef4a1dc3a7eb0917ae2b6b5ec7bfdc0cbab82ca5e654",
+  "requestScriptSha256": "e3142ac7c44a90174608fdbb0aac485cd63debd1565ecc6eb7b195a57fc3086c",
+  "sourceSha256": {
+    "app/integration_test/android_traffic_accounting_test.dart": "6d1d4ccfc87ff844909924d0e4504f0f6a4789d5dce1fe2d827e4a19294a71c8",
+    "app/test_driver/android_traffic_accounting_driver.dart": "e7a283e96df88f8400a2d2fd1d843d59b4cfe57a5b4854d38baa4c982725dcc0",
+    "app/android/app/src/androidTest/java/dev/rainlink/rainlink/core/TunnelRequest.java": "1216a42036be6e7107eda79ddade3cad4e75c97317aa2542084b2cbfa4acad87",
+    "tools/verify_android_traffic.py": "1adfd4584cf530f06d7798a0c80b340ab2c8407ddb99075c912656af5e1ee8a2",
+    "tools/verify_android.py": "caf768bdc639a8a5d6a64afa6768ca1c7089fc51e1526fab5e946cd7ad4d31d0"
+  },
+  "nativeDataCopied": true,
+  "targetRequests": 36,
+  "proxyRequests": 24,
+  "sqliteSha256": "5673f0e738e8f437899f8e780c5b9b7e0a58c3df706b015a4987ffd6644f89b8",
+  "csvSha256": "8916ad37757f52bb19d4533e6ef6391212e710b5bb9b15a2560a06b3c8e06957",
+  "flutterEvidence": "flutter-evidence.json",
+  "independentSqliteCheck": true,
+  "completeBodyAcknowledgements": 36,
+  "fixtureTargetRequests": 36,
+  "fixtureProxyRequests": 24,
+  "completedAt": "2026-10-20T19:33:42+0800"
+}

@@ -1,0 +1,35 @@
+=== RUN   TestRealCoreTrafficAccountingAcrossModesAndClosedFlows
+    traffic_accounting_core_test.go:232: public targets=3 applications=2 identifiedApplicationBytes=299576
+    traffic_accounting_core_test.go:243: closedFlows=1050 totals=121006/178614; global/direct/rule and live TCP+UDP verified
+--- PASS: TestRealCoreTrafficAccountingAcrossModesAndClosedFlows (5.07s)
+=== RUN   TestTrafficPartitionsActualTargetsApplicationsAndUnknown
+--- PASS: TestTrafficPartitionsActualTargetsApplicationsAndUnknown (0.00s)
+=== RUN   TestTrafficRejectsInvalidSnapshotsWithoutLeakingCoreBody
+=== RUN   TestTrafficRejectsInvalidSnapshotsWithoutLeakingCoreBody/control
+=== RUN   TestTrafficRejectsInvalidSnapshotsWithoutLeakingCoreBody/rows
+=== RUN   TestTrafficRejectsInvalidSnapshotsWithoutLeakingCoreBody/epoch
+=== RUN   TestTrafficRejectsInvalidSnapshotsWithoutLeakingCoreBody/missing_bytes
+=== RUN   TestTrafficRejectsInvalidSnapshotsWithoutLeakingCoreBody/invented_bytes
+=== RUN   TestTrafficRejectsInvalidSnapshotsWithoutLeakingCoreBody/private_path
+=== RUN   TestTrafficRejectsInvalidSnapshotsWithoutLeakingCoreBody/version
+=== RUN   TestTrafficRejectsInvalidSnapshotsWithoutLeakingCoreBody/negative
+=== RUN   TestTrafficRejectsInvalidSnapshotsWithoutLeakingCoreBody/overflow
+=== RUN   TestTrafficRejectsInvalidSnapshotsWithoutLeakingCoreBody/duplicate
+--- PASS: TestTrafficRejectsInvalidSnapshotsWithoutLeakingCoreBody (0.02s)
+    --- PASS: TestTrafficRejectsInvalidSnapshotsWithoutLeakingCoreBody/control (0.00s)
+    --- PASS: TestTrafficRejectsInvalidSnapshotsWithoutLeakingCoreBody/rows (0.00s)
+    --- PASS: TestTrafficRejectsInvalidSnapshotsWithoutLeakingCoreBody/epoch (0.00s)
+    --- PASS: TestTrafficRejectsInvalidSnapshotsWithoutLeakingCoreBody/missing_bytes (0.00s)
+    --- PASS: TestTrafficRejectsInvalidSnapshotsWithoutLeakingCoreBody/invented_bytes (0.00s)
+    --- PASS: TestTrafficRejectsInvalidSnapshotsWithoutLeakingCoreBody/private_path (0.00s)
+    --- PASS: TestTrafficRejectsInvalidSnapshotsWithoutLeakingCoreBody/version (0.00s)
+    --- PASS: TestTrafficRejectsInvalidSnapshotsWithoutLeakingCoreBody/negative (0.00s)
+    --- PASS: TestTrafficRejectsInvalidSnapshotsWithoutLeakingCoreBody/overflow (0.00s)
+    --- PASS: TestTrafficRejectsInvalidSnapshotsWithoutLeakingCoreBody/duplicate (0.00s)
+=== RUN   TestTrafficMaximumPublicSnapshotFitsPrivateIPC
+    traffic_test.go:135: maximum escaped public frame: 94006 bytes
+--- PASS: TestTrafficMaximumPublicSnapshotFitsPrivateIPC (0.00s)
+=== RUN   TestTrafficTargetsUseFrozenNodeAndChainIdentities
+--- PASS: TestTrafficTargetsUseFrozenNodeAndChainIdentities (0.00s)
+PASS
+ok  	rainlink.local/host/internal/session	6.075s

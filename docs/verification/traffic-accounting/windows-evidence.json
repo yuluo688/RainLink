@@ -1,0 +1,26 @@
+{
+  "at": "2026-10-20T16:23:12.655465",
+  "scope": "actual windows core, private IPC, controller, SQLite and CSV; all network fixtures local",
+  "payloadBytes": 1179648,
+  "originRequests": 36,
+  "proxyRequests": 12,
+  "upload": 4392,
+  "download": 1187388,
+  "targets": 2,
+  "applications": [
+    {
+      "name": "rainlink-ui.exe",
+      "upload": 4392,
+      "download": 1187388
+    }
+  ],
+  "closedFlowsCounted": true,
+  "sameSessionAcrossModes": true,
+  "bothPartitionsConserved": true,
+  "duplicateSamplesIgnored": true,
+  "databaseReopened": true,
+  "csvReadBack": true,
+  "userDatabaseModified": false,
+  "systemProxyRequested": false,
+  "tunRequested": false
+}

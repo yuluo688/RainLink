@@ -1,0 +1,290 @@
+{
+  "date": "2026-10-20",
+  "files": [
+    {
+      "path": "checks.json",
+      "bytes": 986,
+      "sha256": "02bc2911e330b69634ea71dece3630075fe552e1d5f701ac10b134c4b3e61f1e"
+    },
+    {
+      "path": "core-amd64-build.json",
+      "bytes": 638,
+      "sha256": "a4bd37ca3a0050b8f16cc0ad13c2e479c800e577a8d3bbff29bef8913d128a69"
+    },
+    {
+      "path": "core-arm64-build.json",
+      "bytes": 638,
+      "sha256": "2a5e4044e03b5554b04de51f1aa7376d9a6fe82d0fc0c8e3bef1d2a2c949c716"
+    },
+    {
+      "path": "cross-compilation.json",
+      "bytes": 2912,
+      "sha256": "9322650714ee43ad994a18a28c6459ebac2f8abecb979e315245806fe03cff22"
+    },
+    {
+      "path": "figma/app_assets_brand_mark.svg",
+      "bytes": 1274,
+      "sha256": "ba9f8fdd784e5c7cdc3f603943c3db05e027be6896e1442c8f240c426873ce15"
+    },
+    {
+      "path": "figma/app_assets_flags_cn.svg",
+      "bytes": 1326,
+      "sha256": "e92e178ff143a98e6bb9bf1e4237f02625ac97b34603bf4807db144568865a01"
+    },
+    {
+      "path": "figma/app_assets_flags_de.svg",
+      "bytes": 546,
+      "sha256": "e13d0a45ad4cbbc1602fa5092fe3f629cfb281ec89ba7b441b3c2bbf8ee74938"
+    },
+    {
+      "path": "figma/app_assets_flags_gb.svg",
+      "bytes": 862,
+      "sha256": "e266acfbc26e1cd1f9f40d55ebcd74a528b0fb78ad48cc2f0412069599ae7fd2"
+    },
+    {
+      "path": "figma/app_assets_flags_jp.svg",
+      "bytes": 653,
+      "sha256": "963b279a9f8c41c0045876f98c9577631225d763f07825e00a18f01b26510400"
+    },
+    {
+      "path": "figma/app_assets_flags_nl.svg",
+      "bytes": 546,
+      "sha256": "0e9f93c87774cd48f184d4ec774bda3f2afb5f24c2dba6f4140af8e5af918858"
+    },
+    {
+      "path": "figma/app_assets_flags_sg.svg",
+      "bytes": 1840,
+      "sha256": "8e68845cf583c074e7f2f5e2dda466c70385c70061b4104685ea050137d125fc"
+    },
+    {
+      "path": "figma/app_assets_flags_us.svg",
+      "bytes": 4622,
+      "sha256": "63d1a2c77d3e35e7ddb68da1f0e3d70c4b11cbf37f604e70aadbb1d777692827"
+    },
+    {
+      "path": "figma/app_assets_icons_arrow_right.svg",
+      "bytes": 224,
+      "sha256": "7feae3042432015a36e2251d033513f819a239af3fbc6004335f0f2b63b6ce66"
+    },
+    {
+      "path": "figma/app_assets_icons_back.svg",
+      "bytes": 215,
+      "sha256": "801e21c14d9d6d6ac54115a081ad0aced2428311ad8a843c5929957086858564"
+    },
+    {
+      "path": "figma/app_assets_icons_bell.svg",
+      "bytes": 379,
+      "sha256": "761ec69516ea6688b9bf0b1cf79ccda75bf92971541b381aa56dedc00cd6ff3b"
+    },
+    {
+      "path": "figma/app_assets_icons_chart.svg",
+      "bytes": 231,
+      "sha256": "7df3d561072cc64d4b165243b0177d900f6bd86acc8c8eb6686d0dfceb875c79"
+    },
+    {
+      "path": "figma/app_assets_icons_check.svg",
+      "bytes": 214,
+      "sha256": "791e32fd0799693feeb2c788f895e196888b2475445c115cf4b1f2191cc4d1ad"
+    },
+    {
+      "path": "figma/app_assets_icons_chevron_down.svg",
+      "bytes": 214,
+      "sha256": "d3701ce3d8443a6cf2b2752adbf09382dfaf18d7713933d75f4f1400cee9ea39"
+    },
+    {
+      "path": "figma/app_assets_icons_chevron_right.svg",
+      "bytes": 214,
+      "sha256": "8461762bf55faed5c8570652e6a471821a4eeb06f0ef6c40b5669edefa375b52"
+    },
+    {
+      "path": "figma/app_assets_icons_clock.svg",
+      "bytes": 422,
+      "sha256": "073f9e636b873d122c6ffd75c56601ef41937766ea6668588b645ce07008b1e9"
+    },
+    {
+      "path": "figma/app_assets_icons_close.svg",
+      "bytes": 243,
+      "sha256": "0e44cfeb04317ecbd0216199b61cf940650cc394937714712f23e9b0be30e32d"
+    },
+    {
+      "path": "figma/app_assets_icons_connections.svg",
+      "bytes": 245,
+      "sha256": "7830dfed420dc04ec455f3c6e54fee8c361077ef528e4bb565f4fd38cdbe4cde"
+    },
+    {
+      "path": "figma/app_assets_icons_copy.svg",
+      "bytes": 433,
+      "sha256": "9a4b70d01a1a808ac7b39c1853af9a84bde7414a40fb0108fc24a49320b7c654"
+    },
+    {
+      "path": "figma/app_assets_icons_download.svg",
+      "bytes": 238,
+      "sha256": "541315177cfb8c35a8325e14c0f9c7ae696e377c099ab366fd77cda424dbe84d"
+    },
+    {
+      "path": "figma/app_assets_icons_folder.svg",
+      "bytes": 224,
+      "sha256": "5ba08b799a7a72ce1675e0eb49ef89cc42569b71489d01feb43630fe87f98817"
+    },
+    {
+      "path": "figma/app_assets_icons_globe.svg",
+      "bytes": 569,
+      "sha256": "330d3b0685e8526cea71a977e3f7ad34dc9534c58db7991b12b9943fb74d2c26"
+    },
+    {
+      "path": "figma/app_assets_icons_grid.svg",
+      "bytes": 1051,
+      "sha256": "3c742af2ba5c4319e58284723edabf1b7651e48b856cbfc8a8f6b5a1627a30c5"
+    },
+    {
+      "path": "figma/app_assets_icons_laptop.svg",
+      "bytes": 436,
+      "sha256": "f5bedf0546745b973e8556d9f98cd4f832f3b6c66e095d80cdf3cef245a1ee1b"
+    },
+    {
+      "path": "figma/app_assets_icons_link.svg",
+      "bytes": 1048,
+      "sha256": "f7caba95d08f1f9796d4d4f186d4e433a45a14a687e6427d90e550b30bdd6796"
+    },
+    {
+      "path": "figma/app_assets_icons_moon.svg",
+      "bytes": 757,
+      "sha256": "41d8ce698a4f70958db0e66343652a6977c6e11e1233aa323039fd476ff5c7c2"
+    },
+    {
+      "path": "figma/app_assets_icons_more.svg",
+      "bytes": 739,
+      "sha256": "7413c14ad2dd4a768796ca789ac9db5356df3583396c6d0897a083167028f349"
+    },
+    {
+      "path": "figma/app_assets_icons_nodes.svg",
+      "bytes": 982,
+      "sha256": "1322bc073b06a643f472d201b5a4e299523084968bd22fc2647c833b081ff0cb"
+    },
+    {
+      "path": "figma/app_assets_icons_plus.svg",
+      "bytes": 233,
+      "sha256": "d0754e215bec82b30ed71eb77db8176fe73498b2bfd1c1599ba371c86355abde"
+    },
+    {
+      "path": "figma/app_assets_icons_power.svg",
+      "bytes": 581,
+      "sha256": "7bdfc9859858a6679bcd4c66315e269947a50f4e23ed3e6ce287110521320ebf"
+    },
+    {
+      "path": "figma/app_assets_icons_profile.svg",
+      "bytes": 343,
+      "sha256": "ed87cd05a3313e28bcc1ce05024808dfa865b4358798f6785841f60ff9e7137d"
+    },
+    {
+      "path": "figma/app_assets_icons_qr.svg",
+      "bytes": 281,
+      "sha256": "2c99ae98883ca67056bb82efd2006575a4ae7bb693bb353245d0b38b3ee10235"
+    },
+    {
+      "path": "figma/app_assets_icons_rain.svg",
+      "bytes": 1030,
+      "sha256": "c68253560af537ce1df009fa4fdaabdc210c8355a8e764c2283da9c8fc9cea8c"
+    },
+    {
+      "path": "figma/app_assets_icons_refresh.svg",
+      "bytes": 612,
+      "sha256": "05ee43f1ede9f058df6cff763afa9b1810a21829920529ca0d65c415539209e8"
+    },
+    {
+      "path": "figma/app_assets_icons_rules.svg",
+      "bytes": 894,
+      "sha256": "5123d0bb735adc0ae548c680033cf3506d4e96927f93681540213d45000807a2"
+    },
+    {
+      "path": "figma/app_assets_icons_search.svg",
+      "bytes": 430,
+      "sha256": "bbaf43a8562f89f526d3457864089d3084c8c5fb94289e96ba9f5acbc375d6f9"
+    },
+    {
+      "path": "figma/app_assets_icons_settings.svg",
+      "bytes": 588,
+      "sha256": "98c3560ee32a3a9fd321b3e709865500f93e8b464e52661b9015e99603cfc428"
+    },
+    {
+      "path": "figma/app_assets_icons_shield.svg",
+      "bytes": 366,
+      "sha256": "b310ca7c4045f37180da9edb016e5ac30efded5e560346890b9f32c0ac6d1d46"
+    },
+    {
+      "path": "figma/app_assets_icons_speed.svg",
+      "bytes": 830,
+      "sha256": "027ab4ed348b4c421ca9ac1020e470969a83d7b4984f06bcdf62896bebcf74d9"
+    },
+    {
+      "path": "figma/app_assets_icons_star.svg",
+      "bytes": 282,
+      "sha256": "292e8e3f06a882537616d73e0bd63025111e3347bf067c5dc33fdc3e839918b2"
+    },
+    {
+      "path": "figma/app_assets_icons_sun.svg",
+      "bytes": 496,
+      "sha256": "eff8943446a80324e4c24fc6be5d618d106a362859b59e3f92d64353dfb5edae"
+    },
+    {
+      "path": "figma/app_assets_icons_terminal.svg",
+      "bytes": 438,
+      "sha256": "c0c7cb1e7069c55bbc6a408809e71e1c426e41cbc1f4e52e21ed8c9db2868322"
+    },
+    {
+      "path": "figma/app_assets_icons_upload.svg",
+      "bytes": 235,
+      "sha256": "180537c624023c1f773ceda41dee3ed55c76fd480b9c2a44fa5f0adf0b4cf90c"
+    },
+    {
+      "path": "figma/app_assets_icons_wifi.svg",
+      "bytes": 678,
+      "sha256": "10f33922993e24c6db4b93fa7313554c5d4adee5d3379a053ab369f89975198a"
+    },
+    {
+      "path": "figma-assets.json",
+      "bytes": 7704,
+      "sha256": "7f06072876220966e4ba401b9a623c4925a3b43ff03c704f661bda6dc792a519"
+    },
+    {
+      "path": "flutter-tests.jsonl",
+      "bytes": 261707,
+      "sha256": "3f7d26ac74159407416687fbf8906a6228d334a88a6c15f38a090d8cbb994067"
+    },
+    {
+      "path": "host-amd64-build-info.txt",
+      "bytes": 326,
+      "sha256": "889e9674e44291ae9d2257dc753f1e719262300b262e69dbe78b16c8f6e52841"
+    },
+    {
+      "path": "host-arm64-build-info.txt",
+      "bytes": 328,
+      "sha256": "e3a7c733a0c48dbf3cd0929a407a1bd293ae252675abee96c71a735f8cfffa65"
+    },
+    {
+      "path": "linux-securestore-tests.log",
+      "bytes": 7325,
+      "sha256": "fef3f5079dd7a6ea4f340df90210e666f04911b581816d8b935957f71f09c5da"
+    },
+    {
+      "path": "python-tests.txt",
+      "bytes": 3685,
+      "sha256": "1a96812ec40853adfb8964732185aaec43e6f43d7c73215d9b4148e2388054aa"
+    },
+    {
+      "path": "source-inputs.json",
+      "bytes": 31691,
+      "sha256": "32fc18016055c5d037fc5f563c58bcd5f9dae04891217ba7f50cecb4b63ae823"
+    },
+    {
+      "path": "windows-core-tests.jsonl",
+      "bytes": 2662,
+      "sha256": "1470f53023113b66d35bb9fec06bc0ff4d40c13f1a4b22e3a11047c2186096df"
+    },
+    {
+      "path": "windows-go-tests.jsonl",
+      "bytes": 140223,
+      "sha256": "b1a20d259decca0554b65dfd0b1091248fb054a046c11d6b5e80d4aac3da7c37"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "module": "golang.org/toolchain@v0.0.1-go1.25.5.linux-amd64",
+  "sum": "h1:IkknVKy/4hLMR+ZwWfP4Oqhjz2sKqNtEXz1meP8P3Nc=",
+  "sha256": "8cea6783dab64d68b38f5b81ecd38d45155a3c06638991acc6af19e0fca80edb",
+  "verifiedBy": "go mod download with GOSUMDB=sum.golang.org; GOPROXY=https://goproxy.cn"
+}

@@ -1,0 +1,9 @@
+{
+  "reason": "Read-only QA snapshot fixture added after the 652 build inputs were verified",
+  "files": [
+    {
+      "path": "tools/fixtures/linux_tun_product_snapshot.py",
+      "sha256": "a6ff43f01a7642c4d7c8ed06b11594afe8d99010be5211d2f12cfbec1c3a118a"
+    }
+  ]
+}

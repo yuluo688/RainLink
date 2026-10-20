@@ -1,0 +1,314 @@
+{
+  "fileKey": "unsaved-mvfj9942-5y6aivnm",
+  "assets": [
+    {
+      "path": "app/assets/icons/grid.svg",
+      "nodeId": "2:16478",
+      "sha256": "3c742af2ba5c4319e58284723edabf1b7651e48b856cbfc8a8f6b5a1627a30c5",
+      "figmaSha256": "3c742af2ba5c4319e58284723edabf1b7651e48b856cbfc8a8f6b5a1627a30c5",
+      "matched": true
+    },
+    {
+      "path": "app/assets/icons/nodes.svg",
+      "nodeId": "2:16484",
+      "sha256": "1322bc073b06a643f472d201b5a4e299523084968bd22fc2647c833b081ff0cb",
+      "figmaSha256": "1322bc073b06a643f472d201b5a4e299523084968bd22fc2647c833b081ff0cb",
+      "matched": true
+    },
+    {
+      "path": "app/assets/icons/profile.svg",
+      "nodeId": "2:16490",
+      "sha256": "ed87cd05a3313e28bcc1ce05024808dfa865b4358798f6785841f60ff9e7137d",
+      "figmaSha256": "ed87cd05a3313e28bcc1ce05024808dfa865b4358798f6785841f60ff9e7137d",
+      "matched": true
+    },
+    {
+      "path": "app/assets/icons/rules.svg",
+      "nodeId": "2:16494",
+      "sha256": "5123d0bb735adc0ae548c680033cf3506d4e96927f93681540213d45000807a2",
+      "figmaSha256": "5123d0bb735adc0ae548c680033cf3506d4e96927f93681540213d45000807a2",
+      "matched": true
+    },
+    {
+      "path": "app/assets/icons/connections.svg",
+      "nodeId": "2:16500",
+      "sha256": "7830dfed420dc04ec455f3c6e54fee8c361077ef528e4bb565f4fd38cdbe4cde",
+      "figmaSha256": "7830dfed420dc04ec455f3c6e54fee8c361077ef528e4bb565f4fd38cdbe4cde",
+      "matched": true
+    },
+    {
+      "path": "app/assets/icons/chart.svg",
+      "nodeId": "2:16503",
+      "sha256": "7df3d561072cc64d4b165243b0177d900f6bd86acc8c8eb6686d0dfceb875c79",
+      "figmaSha256": "7df3d561072cc64d4b165243b0177d900f6bd86acc8c8eb6686d0dfceb875c79",
+      "matched": true
+    },
+    {
+      "path": "app/assets/icons/terminal.svg",
+      "nodeId": "2:16506",
+      "sha256": "c0c7cb1e7069c55bbc6a408809e71e1c426e41cbc1f4e52e21ed8c9db2868322",
+      "figmaSha256": "c0c7cb1e7069c55bbc6a408809e71e1c426e41cbc1f4e52e21ed8c9db2868322",
+      "matched": true
+    },
+    {
+      "path": "app/assets/icons/settings.svg",
+      "nodeId": "2:16510",
+      "sha256": "98c3560ee32a3a9fd321b3e709865500f93e8b464e52661b9015e99603cfc428",
+      "figmaSha256": "98c3560ee32a3a9fd321b3e709865500f93e8b464e52661b9015e99603cfc428",
+      "matched": true
+    },
+    {
+      "path": "app/assets/icons/search.svg",
+      "nodeId": "2:16514",
+      "sha256": "bbaf43a8562f89f526d3457864089d3084c8c5fb94289e96ba9f5acbc375d6f9",
+      "figmaSha256": "bbaf43a8562f89f526d3457864089d3084c8c5fb94289e96ba9f5acbc375d6f9",
+      "matched": true
+    },
+    {
+      "path": "app/assets/icons/chevron_right.svg",
+      "nodeId": "2:16518",
+      "sha256": "8461762bf55faed5c8570652e6a471821a4eeb06f0ef6c40b5669edefa375b52",
+      "figmaSha256": "8461762bf55faed5c8570652e6a471821a4eeb06f0ef6c40b5669edefa375b52",
+      "matched": true
+    },
+    {
+      "path": "app/assets/icons/chevron_down.svg",
+      "nodeId": "2:16521",
+      "sha256": "d3701ce3d8443a6cf2b2752adbf09382dfaf18d7713933d75f4f1400cee9ea39",
+      "figmaSha256": "d3701ce3d8443a6cf2b2752adbf09382dfaf18d7713933d75f4f1400cee9ea39",
+      "matched": true
+    },
+    {
+      "path": "app/assets/icons/plus.svg",
+      "nodeId": "2:16524",
+      "sha256": "d0754e215bec82b30ed71eb77db8176fe73498b2bfd1c1599ba371c86355abde",
+      "figmaSha256": "d0754e215bec82b30ed71eb77db8176fe73498b2bfd1c1599ba371c86355abde",
+      "matched": true
+    },
+    {
+      "path": "app/assets/icons/check.svg",
+      "nodeId": "2:16527",
+      "sha256": "791e32fd0799693feeb2c788f895e196888b2475445c115cf4b1f2191cc4d1ad",
+      "figmaSha256": "791e32fd0799693feeb2c788f895e196888b2475445c115cf4b1f2191cc4d1ad",
+      "matched": true
+    },
+    {
+      "path": "app/assets/icons/close.svg",
+      "nodeId": "2:16530",
+      "sha256": "0e44cfeb04317ecbd0216199b61cf940650cc394937714712f23e9b0be30e32d",
+      "figmaSha256": "0e44cfeb04317ecbd0216199b61cf940650cc394937714712f23e9b0be30e32d",
+      "matched": true
+    },
+    {
+      "path": "app/assets/icons/star.svg",
+      "nodeId": "2:16533",
+      "sha256": "292e8e3f06a882537616d73e0bd63025111e3347bf067c5dc33fdc3e839918b2",
+      "figmaSha256": "292e8e3f06a882537616d73e0bd63025111e3347bf067c5dc33fdc3e839918b2",
+      "matched": true
+    },
+    {
+      "path": "app/assets/icons/power.svg",
+      "nodeId": "2:16536",
+      "sha256": "7bdfc9859858a6679bcd4c66315e269947a50f4e23ed3e6ce287110521320ebf",
+      "figmaSha256": "7bdfc9859858a6679bcd4c66315e269947a50f4e23ed3e6ce287110521320ebf",
+      "matched": true
+    },
+    {
+      "path": "app/assets/icons/download.svg",
+      "nodeId": "2:16539",
+      "sha256": "541315177cfb8c35a8325e14c0f9c7ae696e377c099ab366fd77cda424dbe84d",
+      "figmaSha256": "541315177cfb8c35a8325e14c0f9c7ae696e377c099ab366fd77cda424dbe84d",
+      "matched": true
+    },
+    {
+      "path": "app/assets/icons/upload.svg",
+      "nodeId": "2:16542",
+      "sha256": "180537c624023c1f773ceda41dee3ed55c76fd480b9c2a44fa5f0adf0b4cf90c",
+      "figmaSha256": "180537c624023c1f773ceda41dee3ed55c76fd480b9c2a44fa5f0adf0b4cf90c",
+      "matched": true
+    },
+    {
+      "path": "app/assets/icons/speed.svg",
+      "nodeId": "2:16545",
+      "sha256": "027ab4ed348b4c421ca9ac1020e470969a83d7b4984f06bcdf62896bebcf74d9",
+      "figmaSha256": "027ab4ed348b4c421ca9ac1020e470969a83d7b4984f06bcdf62896bebcf74d9",
+      "matched": true
+    },
+    {
+      "path": "app/assets/icons/globe.svg",
+      "nodeId": "2:16549",
+      "sha256": "330d3b0685e8526cea71a977e3f7ad34dc9534c58db7991b12b9943fb74d2c26",
+      "figmaSha256": "330d3b0685e8526cea71a977e3f7ad34dc9534c58db7991b12b9943fb74d2c26",
+      "matched": true
+    },
+    {
+      "path": "app/assets/icons/shield.svg",
+      "nodeId": "2:16553",
+      "sha256": "b310ca7c4045f37180da9edb016e5ac30efded5e560346890b9f32c0ac6d1d46",
+      "figmaSha256": "b310ca7c4045f37180da9edb016e5ac30efded5e560346890b9f32c0ac6d1d46",
+      "matched": true
+    },
+    {
+      "path": "app/assets/icons/bell.svg",
+      "nodeId": "2:16557",
+      "sha256": "761ec69516ea6688b9bf0b1cf79ccda75bf92971541b381aa56dedc00cd6ff3b",
+      "figmaSha256": "761ec69516ea6688b9bf0b1cf79ccda75bf92971541b381aa56dedc00cd6ff3b",
+      "matched": true
+    },
+    {
+      "path": "app/assets/icons/sun.svg",
+      "nodeId": "2:16560",
+      "sha256": "eff8943446a80324e4c24fc6be5d618d106a362859b59e3f92d64353dfb5edae",
+      "figmaSha256": "eff8943446a80324e4c24fc6be5d618d106a362859b59e3f92d64353dfb5edae",
+      "matched": true
+    },
+    {
+      "path": "app/assets/icons/moon.svg",
+      "nodeId": "2:16564",
+      "sha256": "41d8ce698a4f70958db0e66343652a6977c6e11e1233aa323039fd476ff5c7c2",
+      "figmaSha256": "41d8ce698a4f70958db0e66343652a6977c6e11e1233aa323039fd476ff5c7c2",
+      "matched": true
+    },
+    {
+      "path": "app/assets/icons/refresh.svg",
+      "nodeId": "2:16567",
+      "sha256": "05ee43f1ede9f058df6cff763afa9b1810a21829920529ca0d65c415539209e8",
+      "figmaSha256": "05ee43f1ede9f058df6cff763afa9b1810a21829920529ca0d65c415539209e8",
+      "matched": true
+    },
+    {
+      "path": "app/assets/icons/qr.svg",
+      "nodeId": "2:16570",
+      "sha256": "2c99ae98883ca67056bb82efd2006575a4ae7bb693bb353245d0b38b3ee10235",
+      "figmaSha256": "2c99ae98883ca67056bb82efd2006575a4ae7bb693bb353245d0b38b3ee10235",
+      "matched": true
+    },
+    {
+      "path": "app/assets/icons/link.svg",
+      "nodeId": "2:16573",
+      "sha256": "f7caba95d08f1f9796d4d4f186d4e433a45a14a687e6427d90e550b30bdd6796",
+      "figmaSha256": "f7caba95d08f1f9796d4d4f186d4e433a45a14a687e6427d90e550b30bdd6796",
+      "matched": true
+    },
+    {
+      "path": "app/assets/icons/copy.svg",
+      "nodeId": "2:16576",
+      "sha256": "9a4b70d01a1a808ac7b39c1853af9a84bde7414a40fb0108fc24a49320b7c654",
+      "figmaSha256": "9a4b70d01a1a808ac7b39c1853af9a84bde7414a40fb0108fc24a49320b7c654",
+      "matched": true
+    },
+    {
+      "path": "app/assets/icons/more.svg",
+      "nodeId": "2:16580",
+      "sha256": "7413c14ad2dd4a768796ca789ac9db5356df3583396c6d0897a083167028f349",
+      "figmaSha256": "7413c14ad2dd4a768796ca789ac9db5356df3583396c6d0897a083167028f349",
+      "matched": true
+    },
+    {
+      "path": "app/assets/icons/clock.svg",
+      "nodeId": "2:16585",
+      "sha256": "073f9e636b873d122c6ffd75c56601ef41937766ea6668588b645ce07008b1e9",
+      "figmaSha256": "073f9e636b873d122c6ffd75c56601ef41937766ea6668588b645ce07008b1e9",
+      "matched": true
+    },
+    {
+      "path": "app/assets/icons/folder.svg",
+      "nodeId": "2:16589",
+      "sha256": "5ba08b799a7a72ce1675e0eb49ef89cc42569b71489d01feb43630fe87f98817",
+      "figmaSha256": "5ba08b799a7a72ce1675e0eb49ef89cc42569b71489d01feb43630fe87f98817",
+      "matched": true
+    },
+    {
+      "path": "app/assets/icons/arrow_right.svg",
+      "nodeId": "2:16592",
+      "sha256": "7feae3042432015a36e2251d033513f819a239af3fbc6004335f0f2b63b6ce66",
+      "figmaSha256": "7feae3042432015a36e2251d033513f819a239af3fbc6004335f0f2b63b6ce66",
+      "matched": true
+    },
+    {
+      "path": "app/assets/icons/laptop.svg",
+      "nodeId": "2:16595",
+      "sha256": "f5bedf0546745b973e8556d9f98cd4f832f3b6c66e095d80cdf3cef245a1ee1b",
+      "figmaSha256": "f5bedf0546745b973e8556d9f98cd4f832f3b6c66e095d80cdf3cef245a1ee1b",
+      "matched": true
+    },
+    {
+      "path": "app/assets/icons/wifi.svg",
+      "nodeId": "2:16599",
+      "sha256": "10f33922993e24c6db4b93fa7313554c5d4adee5d3379a053ab369f89975198a",
+      "figmaSha256": "10f33922993e24c6db4b93fa7313554c5d4adee5d3379a053ab369f89975198a",
+      "matched": true
+    },
+    {
+      "path": "app/assets/icons/rain.svg",
+      "nodeId": "2:16603",
+      "sha256": "c68253560af537ce1df009fa4fdaabdc210c8355a8e764c2283da9c8fc9cea8c",
+      "figmaSha256": "c68253560af537ce1df009fa4fdaabdc210c8355a8e764c2283da9c8fc9cea8c",
+      "matched": true
+    },
+    {
+      "path": "app/assets/brand/mark.svg",
+      "nodeId": "2:16609",
+      "sha256": "ba9f8fdd784e5c7cdc3f603943c3db05e027be6896e1442c8f240c426873ce15",
+      "figmaSha256": "ba9f8fdd784e5c7cdc3f603943c3db05e027be6896e1442c8f240c426873ce15",
+      "matched": true
+    },
+    {
+      "path": "app/assets/flags/cn.svg",
+      "nodeId": "25:57527",
+      "sha256": "e92e178ff143a98e6bb9bf1e4237f02625ac97b34603bf4807db144568865a01",
+      "figmaSha256": "e92e178ff143a98e6bb9bf1e4237f02625ac97b34603bf4807db144568865a01",
+      "matched": true
+    },
+    {
+      "path": "app/assets/flags/jp.svg",
+      "nodeId": "25:57535",
+      "sha256": "963b279a9f8c41c0045876f98c9577631225d763f07825e00a18f01b26510400",
+      "figmaSha256": "963b279a9f8c41c0045876f98c9577631225d763f07825e00a18f01b26510400",
+      "matched": true
+    },
+    {
+      "path": "app/assets/flags/sg.svg",
+      "nodeId": "25:57539",
+      "sha256": "8e68845cf583c074e7f2f5e2dda466c70385c70061b4104685ea050137d125fc",
+      "figmaSha256": "8e68845cf583c074e7f2f5e2dda466c70385c70061b4104685ea050137d125fc",
+      "matched": true
+    },
+    {
+      "path": "app/assets/flags/us.svg",
+      "nodeId": "25:57550",
+      "sha256": "63d1a2c77d3e35e7ddb68da1f0e3d70c4b11cbf37f604e70aadbb1d777692827",
+      "figmaSha256": "63d1a2c77d3e35e7ddb68da1f0e3d70c4b11cbf37f604e70aadbb1d777692827",
+      "matched": true
+    },
+    {
+      "path": "app/assets/flags/gb.svg",
+      "nodeId": "25:57581",
+      "sha256": "e266acfbc26e1cd1f9f40d55ebcd74a528b0fb78ad48cc2f0412069599ae7fd2",
+      "figmaSha256": "e266acfbc26e1cd1f9f40d55ebcd74a528b0fb78ad48cc2f0412069599ae7fd2",
+      "matched": true
+    },
+    {
+      "path": "app/assets/flags/de.svg",
+      "nodeId": "25:57588",
+      "sha256": "e13d0a45ad4cbbc1602fa5092fe3f629cfb281ec89ba7b441b3c2bbf8ee74938",
+      "figmaSha256": "e13d0a45ad4cbbc1602fa5092fe3f629cfb281ec89ba7b441b3c2bbf8ee74938",
+      "matched": true
+    },
+    {
+      "path": "app/assets/flags/nl.svg",
+      "nodeId": "25:57593",
+      "sha256": "0e9f93c87774cd48f184d4ec774bda3f2afb5f24c2dba6f4140af8e5af918858",
+      "figmaSha256": "0e9f93c87774cd48f184d4ec774bda3f2afb5f24c2dba6f4140af8e5af918858",
+      "matched": true
+    },
+    {
+      "path": "app/assets/icons/back.svg",
+      "nodeId": "59:44535",
+      "sha256": "801e21c14d9d6d6ac54115a081ad0aced2428311ad8a843c5929957086858564",
+      "figmaSha256": "801e21c14d9d6d6ac54115a081ad0aced2428311ad8a843c5929957086858564",
+      "matched": true
+    }
+  ],
+  "allMatched": true
+}

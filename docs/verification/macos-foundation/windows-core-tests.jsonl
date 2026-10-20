@@ -1,0 +1,16 @@
+{"Time":"2026-10-20T15:14:16.5799001+08:00","Action":"start","Package":"rainlink.local/host/internal/coreprocess"}
+{"Time":"2026-10-20T15:14:17.1789756+08:00","Action":"run","Package":"rainlink.local/host/internal/coreprocess","Test":"TestLockedCoreMatchesCurrentPlatform"}
+{"Time":"2026-10-20T15:14:17.1789756+08:00","Action":"output","Package":"rainlink.local/host/internal/coreprocess","Test":"TestLockedCoreMatchesCurrentPlatform","Output":"=== RUN   TestLockedCoreMatchesCurrentPlatform\n"}
+{"Time":"2026-10-20T15:14:17.2278803+08:00","Action":"output","Package":"rainlink.local/host/internal/coreprocess","Test":"TestLockedCoreMatchesCurrentPlatform","Output":"--- PASS: TestLockedCoreMatchesCurrentPlatform (0.05s)\n"}
+{"Time":"2026-10-20T15:14:17.2285812+08:00","Action":"pass","Package":"rainlink.local/host/internal/coreprocess","Test":"TestLockedCoreMatchesCurrentPlatform","Elapsed":0.05}
+{"Time":"2026-10-20T15:14:17.2285812+08:00","Action":"output","Package":"rainlink.local/host/internal/coreprocess","Output":"PASS\n"}
+{"Time":"2026-10-20T15:14:17.2304623+08:00","Action":"output","Package":"rainlink.local/host/internal/coreprocess","Output":"ok  \trainlink.local/host/internal/coreprocess\t0.651s\n"}
+{"Time":"2026-10-20T15:14:17.2304623+08:00","Action":"pass","Package":"rainlink.local/host/internal/coreprocess","Elapsed":0.651}
+{"Time":"2026-10-20T15:14:17.3934981+08:00","Action":"start","Package":"rainlink.local/host/internal/session"}
+{"Time":"2026-10-20T15:14:18.3741221+08:00","Action":"run","Package":"rainlink.local/host/internal/session","Test":"TestRealCoreRoutesAndLiveModeChanges"}
+{"Time":"2026-10-20T15:14:18.3741221+08:00","Action":"output","Package":"rainlink.local/host/internal/session","Test":"TestRealCoreRoutesAndLiveModeChanges","Output":"=== RUN   TestRealCoreRoutesAndLiveModeChanges\n"}
+{"Time":"2026-10-20T15:14:18.7163679+08:00","Action":"output","Package":"rainlink.local/host/internal/session","Test":"TestRealCoreRoutesAndLiveModeChanges","Output":"--- PASS: TestRealCoreRoutesAndLiveModeChanges (0.34s)\n"}
+{"Time":"2026-10-20T15:14:18.7163679+08:00","Action":"pass","Package":"rainlink.local/host/internal/session","Test":"TestRealCoreRoutesAndLiveModeChanges","Elapsed":0.34}
+{"Time":"2026-10-20T15:14:18.7163679+08:00","Action":"output","Package":"rainlink.local/host/internal/session","Output":"PASS\n"}
+{"Time":"2026-10-20T15:14:18.7199281+08:00","Action":"output","Package":"rainlink.local/host/internal/session","Output":"ok  \trainlink.local/host/internal/session\t1.326s\n"}
+{"Time":"2026-10-20T15:14:18.7199281+08:00","Action":"pass","Package":"rainlink.local/host/internal/session","Elapsed":1.326}

@@ -1,0 +1,203 @@
+{
+  "date": "2026-10-20",
+  "baseCommit": "0f80987cac940518e77f23816c5490223debff76",
+  "workingTree": "uncommitted changes",
+  "nativePlatformTested": "linux-x64",
+  "environment": "Debian 13 user space, WSL kernel, UID 1000, Xvfb/Openbox, isolated D-Bus/keyring and loopback network namespace",
+  "package": {
+    "version": "0.1.0+4",
+    "manifest": "/work/RainLink/app/build/linux/x64/release/bundle/rainlink-bundle.json",
+    "entries": 77,
+    "coreVersion": "1.12.25-rainlink.2",
+    "coreSha256": "640e5293d90b94c71318031284e65cf8121d99ee9c06482f021ed77c9f3fa96d",
+    "hostSha256": "4bf88326baed0609ec52f39b40c1859654ff9fc795ab3a325c816fe3d6eef432",
+    "applicationSha256": "1132119281eaa2e28f473aaa6f60c1fb181f903c655c1fd44d43aa21a6717a6f",
+    "aotSha256": "2da9d687f1d63b13dc6de0b4e3a8ecaea402ccbaa47455c258323e1391e20931",
+    "engineSha256": "2c9c1bae6de13a5dde00e4870b83ec4895830867bfcd2cc519ad54c312a9bfb2",
+    "releaseEngineVerified": true,
+    "packagedAssetsVerified": 55,
+    "kdeHelperIncluded": true,
+    "archive": "/work/RainLink/build/RainLink-linux-x64-preview.tar.xz",
+    "bytes": 32201584,
+    "sha256": "0adfc45d544a1b16272c83765b318f23e290004840bde1306016820bfd2b8cb8",
+    "perFileDigestVerified": true,
+    "permissionsVerified": true,
+    "userDatabaseIncluded": false
+  },
+  "artifact": "build/RainLink-linux-x64-preview.tar.xz",
+  "sourceManifestSha256": "5af75002c80c2b9a4e3871300531ee8d0f560feb93e6c02cb8c0b2cb1e795fa0",
+  "sourceFilesMatched": 726,
+  "checks": {
+    "pythonCoreSources": 2,
+    "pythonLinuxPackaging": 8,
+    "pythonWindowsPackaging": 5,
+    "flutterAssets": 3,
+    "nativeSmoke": 1,
+    "layoutIntegration": 3,
+    "serviceVisualIntegration": 1,
+    "layoutFixturePngs": 38,
+    "serviceFixturePngs": 40,
+    "svgNativeExportMatches": 44,
+    "nativeIconPixelsMatch": true,
+    "captionButtons": true,
+    "realAuthenticatedHttp": true,
+    "systemProxyRestorationExact": true
+  },
+  "publicLinuxTunEnabled": false,
+  "remaining": [
+    "active graphical authentication",
+    "GUI service installation end to end",
+    "ordinary broker cancellation during writes",
+    "full GNOME/Plasma/Wayland and distribution ABI compatibility",
+    "system installer and online updates",
+    "macOS host and iOS network extension",
+    "Android physical-device acceptance"
+  ],
+  "files": [
+    {
+      "path": "bundle-manifest.json",
+      "bytes": 15469,
+      "sha256": "8dcb99af25874de4af4ebc29048d8453aacffc54cb6f0599c64d1e18cc036587"
+    },
+    {
+      "path": "desktop-smoke.log",
+      "bytes": 5417,
+      "sha256": "f454f5f6a7edd3112e175f88288db344da6f45fbf290c743eb6455b25b552388"
+    },
+    {
+      "path": "environment.log",
+      "bytes": 1351,
+      "sha256": "7de396e0473c4f54105eedf607940b06dac3c1f9b07ae0cea439e9d9b229e470"
+    },
+    {
+      "path": "figma-assets-audit.json",
+      "bytes": 9512,
+      "sha256": "d4e72fc85b1861dbb5f2f73bb871c8fa913dd9da2f9fa31761a78e6e395e5eab"
+    },
+    {
+      "path": "figma-linux-comparison.png",
+      "bytes": 150718,
+      "sha256": "a12a9854af9581f5b4db54d8702e75064d58e6084ec8129b05ab24416a512e14"
+    },
+    {
+      "path": "fixture-inventory.json",
+      "bytes": 22716,
+      "sha256": "55a00caceb7f7b67defadf426d893999af68874c1578909ccb3e025eaf7aa9f8"
+    },
+    {
+      "path": "flutter-source-input.json",
+      "bytes": 232,
+      "sha256": "bfe6ee0b4ec4bd468e5dd1e87abed4580298ae05085a3605ae0d1089278e9d0b"
+    },
+    {
+      "path": "go1.25.5-linux-amd64.json",
+      "bytes": 304,
+      "sha256": "07c185c789e52913e6e455484a27500a8f4c2f6f30151dabf9e189a80ebe933e"
+    },
+    {
+      "path": "host-status.json",
+      "bytes": 202,
+      "sha256": "be5f9118d7e98270fb2757d8be911df3f758e3d3e1af156ba9e6f016be243286"
+    },
+    {
+      "path": "kde-helper-dependencies.log",
+      "bytes": 1788,
+      "sha256": "98217d13f5d1f9cc75027ec938f983f4af5a0266215d53836f90ba6dcf3dc146"
+    },
+    {
+      "path": "layout-integration.log",
+      "bytes": 9217,
+      "sha256": "a9a51bfd013fcd104aa05f081e53c56ad2b6134ad5130d4e47029ef66713ea23"
+    },
+    {
+      "path": "local-proxy-receipts.json",
+      "bytes": 3403,
+      "sha256": "f38170de808010655f7d4e38a30f8bfad8f431b1e124c71a2bac8f5843bb3cb4"
+    },
+    {
+      "path": "native-icon-audit.json",
+      "bytes": 161,
+      "sha256": "a0d414ee83ff1a7ad2d5693162899bd60788edc7e319ed8e77124ae0730d59c9"
+    },
+    {
+      "path": "native-window-controls.json",
+      "bytes": 534,
+      "sha256": "2b8049397487392d1898b4fe934e0fa18bc740c743829a7479a1382a8031467c"
+    },
+    {
+      "path": "native-window-icon.png",
+      "bytes": 6149,
+      "sha256": "66d837566e44a2441a61734f904e6aca283a7c3183f14064294db32dd2a93d15"
+    },
+    {
+      "path": "package-build.log",
+      "bytes": 4922,
+      "sha256": "565878e05410f3bfa67129d3571a9c01952bfefb516d1b9a5bf2838437f21865"
+    },
+    {
+      "path": "release-add-node-dialog.png",
+      "bytes": 48185,
+      "sha256": "badcdc42001df87e9eb01c199d9a9ff80e4770699c60490bba7b6080ce4e5fd0"
+    },
+    {
+      "path": "release-close-evidence.json",
+      "bytes": 268,
+      "sha256": "b947dd26eb8bb9ed87f3dbf50bbd6118e75f2ff4f0298c1fd85413d18b99cb65"
+    },
+    {
+      "path": "release-connection-evidence.json",
+      "bytes": 295,
+      "sha256": "740ba8dcb35ac9336a365eceb70cb2ae5cb802c2625c5cc44d7d9948b7c8be20"
+    },
+    {
+      "path": "release-overview-960.png",
+      "bytes": 84066,
+      "sha256": "f4a7b81ba71d85420046a8b1a7e95795e5179b90d02cf1bf15ca2b1ae61f9648"
+    },
+    {
+      "path": "release-runtime.log",
+      "bytes": 542,
+      "sha256": "004a53a22573d0b7a2ac46f387eb0fd8f9ce55e282b9692fb80d28bdeb42b6ad"
+    },
+    {
+      "path": "release-system-proxy-active.png",
+      "bytes": 74954,
+      "sha256": "1f6af501b57713071b3d23a70fe4b4468cce79f90b78e9ade1888753f8e1c9c6"
+    },
+    {
+      "path": "runner-dependencies.log",
+      "bytes": 5891,
+      "sha256": "fca7e2c7134abef6e84c66601b2798c594b4bf711c21f9170f38b2bb03f5516b"
+    },
+    {
+      "path": "service-current-960-dark-fixture.png",
+      "bytes": 74297,
+      "sha256": "76a8502ddfb8f129be6a76162248ae1173dc0175af0f4f3cf6bdbfda93ce661f"
+    },
+    {
+      "path": "service-visual.log",
+      "bytes": 9417,
+      "sha256": "77d3dddb992635ab5b446bb140e7977db825657ee5571c35e831d1888453aa95"
+    },
+    {
+      "path": "source-input-audit.json",
+      "bytes": 156,
+      "sha256": "d97913ca4491967ff01542f1d913fc54291758ee778d4d7cb391694c325c5259"
+    },
+    {
+      "path": "source-inputs.json",
+      "bytes": 118272,
+      "sha256": "5af75002c80c2b9a4e3871300531ee8d0f560feb93e6c02cb8c0b2cb1e795fa0"
+    },
+    {
+      "path": "sqlite-cache-input.json",
+      "bytes": 342,
+      "sha256": "02bc36a886c849bf43ddb8abe6b4a1b8626c2d8f10d5aa638a47776118845e48"
+    },
+    {
+      "path": "static-validation.log",
+      "bytes": 3704,
+      "sha256": "9ba1bd9fb24edda886a5516d9664881219ea7593bb042404f2d9525592eeb232"
+    }
+  ]
+}

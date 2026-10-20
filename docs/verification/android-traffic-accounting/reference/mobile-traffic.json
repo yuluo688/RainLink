@@ -1,0 +1,54 @@
+{
+  "fileKey": "unsaved-mvfj9942-5y6aivnm",
+  "nodeId": "2:23007",
+  "name": "移动端 / 流量",
+  "bounds": {
+    "x": 1467,
+    "y": 80,
+    "width": 393,
+    "height": 852
+  },
+  "source": "Current Figma Bridge read and native PNG export",
+  "topLevel": [
+    {
+      "id": "2:23021",
+      "name": "状态栏 / 安全区域",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 393,
+        "height": 54
+      }
+    },
+    {
+      "id": "2:23008",
+      "name": "页面标题栏",
+      "bounds": {
+        "x": 0,
+        "y": 54,
+        "width": 393,
+        "height": 68
+      }
+    },
+    {
+      "id": "2:23019",
+      "name": "可滚动内容",
+      "bounds": {
+        "x": 0,
+        "y": 122,
+        "width": 393,
+        "height": 650
+      }
+    },
+    {
+      "id": "2:23030",
+      "name": "移动端 / 底部导航",
+      "bounds": {
+        "x": 0,
+        "y": 772,
+        "width": 393,
+        "height": 80
+      }
+    }
+  ]
+}

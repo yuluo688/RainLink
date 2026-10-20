@@ -1,0 +1,20 @@
+{
+  "method": "live Figma native SVG export",
+  "icons": [
+    {
+      "name": "qr",
+      "identical": true,
+      "sha256": "2c99ae98883ca67056bb82efd2006575a4ae7bb693bb353245d0b38b3ee10235"
+    },
+    {
+      "name": "back",
+      "identical": true,
+      "sha256": "801e21c14d9d6d6ac54115a081ad0aced2428311ad8a843c5929957086858564"
+    },
+    {
+      "name": "copy",
+      "identical": true,
+      "sha256": "9a4b70d01a1a808ac7b39c1853af9a84bde7414a40fb0108fc24a49320b7c654"
+    }
+  ]
+}

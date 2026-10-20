@@ -1,0 +1,87 @@
+{
+  "actualAndroid": {
+    "integrationScenarios": 1,
+    "completedRequests": 36,
+    "serverBodyAcknowledgements": 36,
+    "baselineNativeTests": 5,
+    "allPassed": true,
+    "device": "Isolated API 36 x86_64 AVD; no physical device",
+    "evidence": {
+      "path": "docs/verification/android-traffic-accounting/verified/native-evidence.json",
+      "sha256": "b7b119c83b463bb774c64790d9a35ef236631bb0b21f3c1b38c7fc9d4d378a3a"
+    },
+    "baseline": {
+      "path": "docs/verification/android-traffic-accounting/baseline/evidence.json",
+      "sha256": "1a3cede882c523a0f9abcb1f080ed77a0e5354d4ec56cc2da47158de5e51c751"
+    }
+  },
+  "flutterAnalyze": {
+    "issues": 0,
+    "log": {
+      "path": "docs/verification/android-traffic-accounting/logs/analyze-final.log",
+      "sha256": "092b006baad371a603efbcc3f96aaedd69c52714d7a7c40861f149057814694b"
+    }
+  },
+  "nativeBuild": {
+    "ordinaryApk": true,
+    "androidTestApk": true,
+    "kotlinUnitTests": 5,
+    "unitFailures": 0,
+    "unitSkipped": 0,
+    "lintErrors": 0,
+    "lintWarnings": 7,
+    "log": {
+      "path": "docs/verification/android-traffic-accounting/logs/native-final-build.log",
+      "sha256": "a6f3b084d1cd8d3e655d21c269a842e8129b5d8aab8c9195465d1e649d9b1f2f"
+    }
+  },
+  "pythonSyntax": {
+    "files": 2,
+    "passed": true
+  },
+  "visual": {
+    "actualAndroidCaptures": 5,
+    "currentFigmaSvgsIdentical": 7,
+    "figmaMutated": false
+  },
+  "sharedPreviousRegression": {
+    "flutterPassed": 539,
+    "newFullRunThisStage": false,
+    "productionInputsUnchanged": true,
+    "reference": "docs/verification/android-app-update/tests.json"
+  },
+  "cleanup": {
+    "path": "docs/verification/android-traffic-accounting/cleanup.json",
+    "sha256": "9c020f4354fbe6a90c9aea1dfcfe4e3be45b4bbbc0758d5826a88e79772ef6d7"
+  },
+  "logs": {
+    "acceptance-verified.log": {
+      "path": "docs/verification/android-traffic-accounting/logs/acceptance-verified.log",
+      "sha256": "f379413de114045bd097ec77cd4bf0b0c7a9295fef2d1e404b0b4bd22d8b0418"
+    },
+    "analyze-final.log": {
+      "path": "docs/verification/android-traffic-accounting/logs/analyze-final.log",
+      "sha256": "092b006baad371a603efbcc3f96aaedd69c52714d7a7c40861f149057814694b"
+    },
+    "native-baseline.log": {
+      "path": "docs/verification/android-traffic-accounting/logs/native-baseline.log",
+      "sha256": "1a3cede882c523a0f9abcb1f080ed77a0e5354d4ec56cc2da47158de5e51c751"
+    },
+    "native-final-build.log": {
+      "path": "docs/verification/android-traffic-accounting/logs/native-final-build.log",
+      "sha256": "a6f3b084d1cd8d3e655d21c269a842e8129b5d8aab8c9195465d1e649d9b1f2f"
+    },
+    "format-final.log": {
+      "path": "docs/verification/android-traffic-accounting/logs/format-final.log",
+      "sha256": "c38cca73f58eeab8c76e06d40d5540e4216cbbdd0a58680dea31f1a651138c3f"
+    }
+  },
+  "dartFormat": {
+    "files": 2,
+    "changed": 0,
+    "log": {
+      "path": "docs/verification/android-traffic-accounting/logs/format-final.log",
+      "sha256": "c38cca73f58eeab8c76e06d40d5540e4216cbbdd0a58680dea31f1a651138c3f"
+    }
+  }
+}

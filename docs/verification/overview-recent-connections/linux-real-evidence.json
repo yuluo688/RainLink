@@ -1,0 +1,22 @@
+{
+  "platform": "linux",
+  "coreVersion": "1.12.25-rainlink.2",
+  "viewport": {
+    "width": 960,
+    "height": 640
+  },
+  "systemProxyChanged": false,
+  "tunChanged": false,
+  "inMemoryDatabase": true,
+  "proxyOnlyForLoopback": true,
+  "receipt": "RainLink overview connection receipt\n",
+  "observed": {
+    "destination": "127.0.0.1:33633",
+    "outbound": "本机概览验收",
+    "direct": false,
+    "startedAt": "2026-10-19T19:08:38.288"
+  },
+  "requestClosedFromConnectionsUi": true,
+  "recentClearedAfterDisconnect": true,
+  "at": "2026-10-19T19:08:40.049303"
+}

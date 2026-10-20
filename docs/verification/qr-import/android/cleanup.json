@@ -1,0 +1,9 @@
+{
+  "avd": "RainLink_QR_QA",
+  "applicationStoppedBeforeEmulatorExit": true,
+  "cameraReleasedBeforeEmulatorExit": true,
+  "qaEmulatorConsoleClosed": true,
+  "privateAdbServer5047Closed": true,
+  "defaultAdb5037Changed": false,
+  "otherAvdsChanged": false
+}

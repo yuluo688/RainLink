@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "receipts": [
+    {
+      "kind": "tcp",
+      "nonce": "authorization-cancel-AF_INET-tcp-aa4747a9",
+      "source": "10.77.0.1"
+    },
+    {
+      "kind": "udp",
+      "nonce": "authorization-cancel-AF_INET-udp-d8aba30c",
+      "source": "10.77.0.1"
+    },
+    {
+      "kind": "tcp",
+      "nonce": "authorization-cancel-AF_INET6-tcp-91abf900",
+      "source": "fd77::1"
+    },
+    {
+      "kind": "udp",
+      "nonce": "authorization-cancel-AF_INET6-udp-d9648ac7",
+      "source": "fd77::1"
+    }
+  ]
+}

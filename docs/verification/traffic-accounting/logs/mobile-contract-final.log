@@ -1,0 +1,4 @@
+=== RUN   TestMobileTrafficUsesTheDesktopAccountingContract
+--- PASS: TestMobileTrafficUsesTheDesktopAccountingContract (0.00s)
+PASS
+ok  	rainlink.local/host/internal/session	0.932s

@@ -1,0 +1,476 @@
+Flutter assets will be downloaded from https://storage.flutter-io.cn. Make sure you trust this source!
+00:00 +0: loading /work/RainLink/app/test/node_probe_test.dart
+00:00 +0: /work/RainLink/app/test/node_probe_test.dart: batch limits concurrency, deduplicates and omits hidden nodes
+00:00 +1: /work/RainLink/app/test/node_probe_test.dart: cancel keeps completed results and ignores late success before the next batch
+00:00 +2: /work/RainLink/app/test/node_probe_test.dart: cleanup failure keeps cancellation available and prevents a new batch
+00:00 +3: /work/RainLink/app/test/node_probe_test.dart: wrong revision and exceptions become failures rather than stale latency
+00:00 +4: /work/RainLink/app/test/node_probe_test.dart: malformed results and invalid batches are rejected
+00:01 +5: /work/RainLink/app/test/android_telemetry_test.dart: Android joins stable connection pages without inventing processes
+00:01 +6: /work/RainLink/app/test/android_telemetry_test.dart: Android rejects moving page field sessionId
+00:01 +7: /work/RainLink/app/test/android_telemetry_test.dart: Android rejects moving page field snapshotId
+00:01 +8: /work/RainLink/app/test/android_telemetry_test.dart: Android rejects moving page field sampledAt
+00:01 +9: /work/RainLink/app/test/android_telemetry_test.dart: Android rejects moving page field total
+00:01 +10: /work/RainLink/app/test/android_telemetry_test.dart: Android rejects moving page field uploadTotal
+00:01 +11: /work/RainLink/app/test/android_telemetry_test.dart: Android rejects moving page field downloadTotal
+00:01 +12: /work/RainLink/app/test/android_telemetry_test.dart: Android rejects moving page field next
+00:01 +13: /work/RainLink/app/test/android_telemetry_test.dart: Android rejects moving page field entries
+00:01 +14: /work/RainLink/app/test/android_telemetry_test.dart: Android rejects stale first page and bounds snapshot size
+00:01 +15: /work/RainLink/app/test/android_telemetry_test.dart: Android rejects repeated IDs across connection pages
+00:01 +16: /work/RainLink/app/test/android_telemetry_test.dart: Android scopes close commands and propagates unconfirmed failure
+00:01 +17: /work/RainLink/app/test/android_telemetry_test.dart: Android logs and clearing work without a connected UI session
+00:01 +18: /work/RainLink/app/test/android_telemetry_test.dart: Android rejects malformed log checkpoints
+00:01 +19: /work/RainLink/app/test/android_telemetry_test.dart: disposing the UI stops telemetry requests without stopping the service
+00:03 +20: /work/RainLink/app/test/settings_ui_test.dart: Linux keeps independent notifications usable without a tray (variant: TargetPlatform.linux)
+00:04 +21: /work/RainLink/app/test/rules_ui_test.dart: filters and adding a normalized rule use real controller commands (variant: TargetPlatform.windows)
+00:05 +22: /work/RainLink/app/test/rules_ui_test.dart: filters and adding a normalized rule use real controller commands (variant: TargetPlatform.windows)
+00:06 +23: /work/RainLink/app/test/rules_ui_test.dart: filters and adding a normalized rule use real controller commands (variant: TargetPlatform.windows)
+00:06 +24: /work/RainLink/app/test/settings_ui_test.dart: expiry preference confirms saving and preserves its value on failure (variant: TargetPlatform.windows)
+00:06 +25: /work/RainLink/app/test/rules_ui_test.dart: failed core validation leaves draft open and saved rules unchanged (variant: TargetPlatform.windows)
+00:06 +26: /work/RainLink/app/test/rules_ui_test.dart: failed core validation leaves draft open and saved rules unchanged (variant: TargetPlatform.windows)
+00:06 +27: /work/RainLink/app/test/settings_ui_test.dart: startup UI confirms the OS value and displays rejected writes (variant: TargetPlatform.windows)
+00:06 +28: /work/RainLink/app/test/rules_ui_test.dart: rule menu moves and disables without changing the final fallback (variant: TargetPlatform.windows)
+00:07 +29: /work/RainLink/app/test/settings_ui_test.dart: network form validates input and preserves settings on core rejection (variant: TargetPlatform.windows)
+00:07 +30: /work/RainLink/app/test/rules_ui_test.dart: rules and modal fit TargetPlatform.windows with large text (variant: TargetPlatform.windows)
+00:07 +31: /work/RainLink/app/test/settings_ui_test.dart: DNS test cancellation ignores late results and supports retry (variant: TargetPlatform.windows)
+00:07 +32: /work/RainLink/app/test/settings_ui_test.dart: DNS test cancellation ignores late results and supports retry (variant: TargetPlatform.windows)
+00:07 +33: /work/RainLink/app/test/settings_ui_test.dart: DNS test cancellation ignores late results and supports retry (variant: TargetPlatform.windows)
+00:07 +34: /work/RainLink/app/test/rules_ui_test.dart: rules and modal fit TargetPlatform.android with large text (variant: TargetPlatform.android)
+00:07 +35: /work/RainLink/app/test/rules_ui_test.dart: rules and modal fit TargetPlatform.android with large text (variant: TargetPlatform.android)
+00:07 +36: /work/RainLink/app/test/rules_ui_test.dart: rules and modal fit TargetPlatform.android with large text (variant: TargetPlatform.android)
+00:07 +37: /work/RainLink/app/test/settings_ui_test.dart: advanced editor validates, confirms, exports and restores previous config (variant: TargetPlatform.windows)
+00:07 +38: /work/RainLink/app/test/settings_ui_test.dart: advanced editor validates, confirms, exports and restores previous config (variant: TargetPlatform.windows)
+00:07 +39: /work/RainLink/app/test/settings_ui_test.dart: advanced editor validates, confirms, exports and restores previous config (variant: TargetPlatform.windows)
+00:08 +40: /work/RainLink/app/test/settings_ui_test.dart: advanced editor validates, confirms, exports and restores previous config (variant: TargetPlatform.windows)
+00:08 +41: /work/RainLink/app/test/settings_ui_test.dart: advanced editor validates, confirms, exports and restores previous config (variant: TargetPlatform.windows)
+00:08 +42: /work/RainLink/app/test/settings_ui_test.dart: leaving advanced validation cancels diagnostics and ignores late output (variant: TargetPlatform.windows)
+00:08 +43: /work/RainLink/app/test/settings_ui_test.dart: editing during validation cancels the stale check and permits retry (variant: TargetPlatform.windows)
+00:09 +44: /work/RainLink/app/test/settings_ui_test.dart: advanced mobile editor fits and returns to core at Size(393.0, 852.0) (variant: TargetPlatform.android)
+00:09 +45: /work/RainLink/app/test/settings_ui_test.dart: mobile details return in the upper left and fit Size(393.0, 852.0) (variant: TargetPlatform.android)
+00:09 +46: /work/RainLink/app/test/settings_ui_test.dart: advanced mobile editor fits and returns to core at Size(320.0, 640.0) (variant: TargetPlatform.android)
+00:09 +47: /work/RainLink/app/test/settings_ui_test.dart: mobile details return in the upper left and fit Size(320.0, 640.0) (variant: TargetPlatform.android)
+00:09 +48: /work/RainLink/app/test/settings_ui_test.dart: appearance preferences actually scale text and disable transitions (variant: TargetPlatform.windows)
+00:10 +49: /work/RainLink/app/test/traffic_history_test.dart: session checkpoints survive reopen and interleaved late observations
+00:13 +50: /work/RainLink/app/test/traffic_history_test.dart: session checkpoints survive reopen and interleaved late observations
+00:14 +51: /work/RainLink/app/test/traffic_history_test.dart: session checkpoints survive reopen and interleaved late observations
+00:14 +52: /work/RainLink/app/test/traffic_history_test.dart: session checkpoints survive reopen and interleaved late observations
+00:14 +53: /work/RainLink/app/test/traffic_history_test.dart: session checkpoints survive reopen and interleaved late observations
+00:14 +54: /work/RainLink/app/test/traffic_history_test.dart: session checkpoints survive reopen and interleaved late observations
+00:15 +55: /work/RainLink/app/test/traffic_history_test.dart: session checkpoints survive reopen and interleaved late observations
+00:15 +56: /work/RainLink/app/test/traffic_history_test.dart: session checkpoints survive reopen and interleaved late observations
+00:15 +57: /work/RainLink/app/test/traffic_history_test.dart: session checkpoints survive reopen and interleaved late observations
+00:16 +58: /work/RainLink/app/test/traffic_history_test.dart: session checkpoints survive reopen and interleaved late observations
+00:16 +59: /work/RainLink/app/test/traffic_history_test.dart: session checkpoints survive reopen and interleaved late observations
+00:16 +60: /work/RainLink/app/test/traffic_history_test.dart: session checkpoints survive reopen and interleaved late observations
+00:16 +61: /work/RainLink/app/test/traffic_history_test.dart: session checkpoints survive reopen and interleaved late observations
+00:17 +62: /work/RainLink/app/test/traffic_history_test.dart: session checkpoints survive reopen and interleaved late observations
+00:17 +63: /work/RainLink/app/test/traffic_history_test.dart: session checkpoints survive reopen and interleaved late observations
+00:17 +64: /work/RainLink/app/test/traffic_history_test.dart: session checkpoints survive reopen and interleaved late observations
+00:17 +65: /work/RainLink/app/test/traffic_history_test.dart: session checkpoints survive reopen and interleaved late observations
+00:18 +66: /work/RainLink/app/test/traffic_history_test.dart: session checkpoints survive reopen and interleaved late observations
+00:18 +67: /work/RainLink/app/test/traffic_history_test.dart: session checkpoints survive reopen and interleaved late observations
+00:18 +68: /work/RainLink/app/test/traffic_history_test.dart: session checkpoints survive reopen and interleaved late observations
+00:18 +69: /work/RainLink/app/test/traffic_history_test.dart: session checkpoints survive reopen and interleaved late observations
+00:18 +70: /work/RainLink/app/test/traffic_history_test.dart: session checkpoints survive reopen and interleaved late observations
+00:19 +71: /work/RainLink/app/test/traffic_history_test.dart: session checkpoints survive reopen and interleaved late observations
+00:19 +72: /work/RainLink/app/test/traffic_history_test.dart: session checkpoints survive reopen and interleaved late observations
+00:19 +73: /work/RainLink/app/test/traffic_history_test.dart: session checkpoints survive reopen and interleaved late observations
+00:19 +74: /work/RainLink/app/test/traffic_history_test.dart: session checkpoints survive reopen and interleaved late observations
+00:19 +75: /work/RainLink/app/test/traffic_history_test.dart: session checkpoints survive reopen and interleaved late observations
+00:19 +76: /work/RainLink/app/test/traffic_history_test.dart: session checkpoints survive reopen and interleaved late observations
+00:20 +77: /work/RainLink/app/test/traffic_history_test.dart: session checkpoints survive reopen and interleaved late observations
+00:20 +78: /work/RainLink/app/test/traffic_history_test.dart: session checkpoints survive reopen and interleaved late observations
+00:20 +79: /work/RainLink/app/test/traffic_history_test.dart: session checkpoints survive reopen and interleaved late observations
+00:20 +80: /work/RainLink/app/test/traffic_history_test.dart: session checkpoints survive reopen and interleaved late observations
+00:21 +81: /work/RainLink/app/test/traffic_history_test.dart: session checkpoints survive reopen and interleaved late observations
+00:21 +82: /work/RainLink/app/test/traffic_history_test.dart: session checkpoints survive reopen and interleaved late observations
+00:21 +83: /work/RainLink/app/test/traffic_history_test.dart: session checkpoints survive reopen and interleaved late observations
+00:21 +84: /work/RainLink/app/test/traffic_history_test.dart: session checkpoints survive reopen and interleaved late observations
+00:21 +85: /work/RainLink/app/test/traffic_history_test.dart: session checkpoints survive reopen and interleaved late observations
+00:21 +86: /work/RainLink/app/test/traffic_history_test.dart: session checkpoints survive reopen and interleaved late observations
+00:21 +87: /work/RainLink/app/test/traffic_history_test.dart: session checkpoints survive reopen and interleaved late observations
+00:22 +88: /work/RainLink/app/test/traffic_history_test.dart: session checkpoints survive reopen and interleaved late observations
+00:22 +89: /work/RainLink/app/test/traffic_history_test.dart: session checkpoints survive reopen and interleaved late observations
+00:22 +90: /work/RainLink/app/test/traffic_history_test.dart: session checkpoints survive reopen and interleaved late observations
+00:22 +91: /work/RainLink/app/test/traffic_history_test.dart: session checkpoints survive reopen and interleaved late observations
+00:22 +92: /work/RainLink/app/test/traffic_history_test.dart: session checkpoints survive reopen and interleaved late observations
+00:22 +93: /work/RainLink/app/test/traffic_history_test.dart: session checkpoints survive reopen and interleaved late observations
+00:22 +94: /work/RainLink/app/test/traffic_history_test.dart: session checkpoints survive reopen and interleaved late observations
+00:25 +95: /work/RainLink/app/test/traffic_history_test.dart: session checkpoints survive reopen and interleaved late observations
+00:26 +96: /work/RainLink/app/test/traffic_history_test.dart: session checkpoints survive reopen and interleaved late observations
+00:26 +97: /work/RainLink/app/test/traffic_history_test.dart: session checkpoints survive reopen and interleaved late observations
+00:26 +98: /work/RainLink/app/test/traffic_history_test.dart: session checkpoints survive reopen and interleaved late observations
+00:26 +99: /work/RainLink/app/test/traffic_history_test.dart: session checkpoints survive reopen and interleaved late observations
+00:26 +100: /work/RainLink/app/test/traffic_history_test.dart: session checkpoints survive reopen and interleaved late observations
+00:26 +101: /work/RainLink/app/test/traffic_history_test.dart: session checkpoints survive reopen and interleaved late observations
+00:26 +102: /work/RainLink/app/test/traffic_history_test.dart: session checkpoints survive reopen and interleaved late observations
+00:26 +103: /work/RainLink/app/test/traffic_history_test.dart: session checkpoints survive reopen and interleaved late observations
+00:26 +104: /work/RainLink/app/test/traffic_history_test.dart: session checkpoints survive reopen and interleaved late observations
+00:26 +105: /work/RainLink/app/test/traffic_history_test.dart: session checkpoints survive reopen and interleaved late observations
+00:26 +106: /work/RainLink/app/test/traffic_history_test.dart: session checkpoints survive reopen and interleaved late observations
+00:26 +107: /work/RainLink/app/test/traffic_history_test.dart: session checkpoints survive reopen and interleaved late observations
+00:27 +108: /work/RainLink/app/test/traffic_history_test.dart: session checkpoints survive reopen and interleaved late observations
+00:27 +109: /work/RainLink/app/test/traffic_history_test.dart: session checkpoints survive reopen and interleaved late observations
+00:27 +110: /work/RainLink/app/test/traffic_history_test.dart: session checkpoints survive reopen and interleaved late observations
+00:27 +111: /work/RainLink/app/test/traffic_history_test.dart: session checkpoints survive reopen and interleaved late observations
+00:27 +112: /work/RainLink/app/test/traffic_history_test.dart: session checkpoints survive reopen and interleaved late observations
+00:27 +113: /work/RainLink/app/test/traffic_history_test.dart: session checkpoints survive reopen and interleaved late observations
+00:27 +114: /work/RainLink/app/test/traffic_history_test.dart: session checkpoints survive reopen and interleaved late observations
+00:27 +115: /work/RainLink/app/test/traffic_history_test.dart: session checkpoints survive reopen and interleaved late observations
+00:27 +116: /work/RainLink/app/test/traffic_history_test.dart: session checkpoints survive reopen and interleaved late observations
+00:27 +117: /work/RainLink/app/test/traffic_history_test.dart: session checkpoints survive reopen and interleaved late observations
+00:27 +118: /work/RainLink/app/test/traffic_history_test.dart: session checkpoints survive reopen and interleaved late observations
+00:27 +119: /work/RainLink/app/test/traffic_history_test.dart: session checkpoints survive reopen and interleaved late observations
+00:27 +120: /work/RainLink/app/test/traffic_history_test.dart: session checkpoints survive reopen and interleaved late observations
+00:28 +121: /work/RainLink/app/test/traffic_history_test.dart: session checkpoints survive reopen and interleaved late observations
+00:28 +122: /work/RainLink/app/test/traffic_history_test.dart: session checkpoints survive reopen and interleaved late observations
+00:28 +123: /work/RainLink/app/test/traffic_history_test.dart: session checkpoints survive reopen and interleaved late observations
+00:28 +124: /work/RainLink/app/test/traffic_history_test.dart: session checkpoints survive reopen and interleaved late observations
+00:28 +125: /work/RainLink/app/test/traffic_history_test.dart: session checkpoints survive reopen and interleaved late observations
+00:29 +126: /work/RainLink/app/test/traffic_history_test.dart: session checkpoints survive reopen and interleaved late observations
+00:30 +127: /work/RainLink/app/test/traffic_history_test.dart: session checkpoints survive reopen and interleaved late observations
+00:30 +128: /work/RainLink/app/test/traffic_history_test.dart: session checkpoints survive reopen and interleaved late observations
+00:30 +129: /work/RainLink/app/test/traffic_history_test.dart: session checkpoints survive reopen and interleaved late observations
+00:30 +130: /work/RainLink/app/test/traffic_history_test.dart: session checkpoints survive reopen and interleaved late observations
+00:32 +131: /work/RainLink/app/test/node_overrides_test.dart: v4 migration keeps nodes, selection and encrypted credentials on reopen
+00:32 +132: /work/RainLink/app/test/node_overrides_test.dart: v4 migration keeps nodes, selection and encrypted credentials on reopen
+00:32 +133: /work/RainLink/app/test/node_overrides_test.dart: v4 migration keeps nodes, selection and encrypted credentials on reopen
+00:33 +134: /work/RainLink/app/test/node_overrides_test.dart: v4 migration keeps nodes, selection and encrypted credentials on reopen
+00:33 +135: /work/RainLink/app/test/node_overrides_test.dart: v4 migration keeps nodes, selection and encrypted credentials on reopen
+00:33 +136: /work/RainLink/app/test/node_overrides_test.dart: v4 migration keeps nodes, selection and encrypted credentials on reopen
+00:33 +137: /work/RainLink/app/test/node_overrides_test.dart: v4 migration keeps nodes, selection and encrypted credentials on reopen
+00:33 +138: /work/RainLink/app/test/node_overrides_test.dart: v4 migration keeps nodes, selection and encrypted credentials on reopen
+00:33 +139: /work/RainLink/app/test/node_overrides_test.dart: v4 migration keeps nodes, selection and encrypted credentials on reopen
+00:33 +140: /work/RainLink/app/test/node_overrides_test.dart: v4 migration keeps nodes, selection and encrypted credentials on reopen
+00:33 +141: /work/RainLink/app/test/node_overrides_test.dart: v4 migration keeps nodes, selection and encrypted credentials on reopen
+00:33 +142: /work/RainLink/app/test/node_overrides_test.dart: v4 migration keeps nodes, selection and encrypted credentials on reopen
+00:33 +143: /work/RainLink/app/test/node_overrides_test.dart: v4 migration keeps nodes, selection and encrypted credentials on reopen
+00:33 +144: /work/RainLink/app/test/node_overrides_test.dart: v4 migration keeps nodes, selection and encrypted credentials on reopen
+00:34 +145: /work/RainLink/app/test/node_overrides_test.dart: v4 migration keeps nodes, selection and encrypted credentials on reopen
+00:34 +146: /work/RainLink/app/test/node_overrides_test.dart: v4 migration keeps nodes, selection and encrypted credentials on reopen
+00:34 +147: /work/RainLink/app/test/node_overrides_test.dart: v4 migration keeps nodes, selection and encrypted credentials on reopen
+00:34 +148: /work/RainLink/app/test/node_overrides_test.dart: v4 migration keeps nodes, selection and encrypted credentials on reopen
+00:34 +149: /work/RainLink/app/test/node_overrides_test.dart: v4 migration keeps nodes, selection and encrypted credentials on reopen
+00:34 +150: /work/RainLink/app/test/node_overrides_test.dart: v4 migration keeps nodes, selection and encrypted credentials on reopen
+00:34 +151: /work/RainLink/app/test/node_overrides_test.dart: v4 migration keeps nodes, selection and encrypted credentials on reopen
+00:34 +152: /work/RainLink/app/test/node_overrides_test.dart: v4 migration keeps nodes, selection and encrypted credentials on reopen
+00:37 +153: /work/RainLink/app/test/node_overrides_test.dart: v4 migration keeps nodes, selection and encrypted credentials on reopen
+00:37 +154: /work/RainLink/app/test/node_overrides_test.dart: v4 migration keeps nodes, selection and encrypted credentials on reopen
+00:38 +155: /work/RainLink/app/test/node_overrides_test.dart: v4 migration keeps nodes, selection and encrypted credentials on reopen
+00:38 +156: /work/RainLink/app/test/node_overrides_test.dart: v4 migration keeps nodes, selection and encrypted credentials on reopen
+00:38 +157: /work/RainLink/app/test/node_overrides_test.dart: v4 migration keeps nodes, selection and encrypted credentials on reopen
+00:38 +158: /work/RainLink/app/test/node_overrides_test.dart: v4 migration keeps nodes, selection and encrypted credentials on reopen
+00:38 +159: /work/RainLink/app/test/node_overrides_test.dart: v4 migration keeps nodes, selection and encrypted credentials on reopen
+00:38 +160: /work/RainLink/app/test/node_overrides_test.dart: v4 migration keeps nodes, selection and encrypted credentials on reopen
+00:38 +161: /work/RainLink/app/test/node_overrides_test.dart: v4 migration keeps nodes, selection and encrypted credentials on reopen
+00:38 +162: /work/RainLink/app/test/node_overrides_test.dart: v4 migration keeps nodes, selection and encrypted credentials on reopen
+00:38 +163: /work/RainLink/app/test/node_overrides_test.dart: v4 migration keeps nodes, selection and encrypted credentials on reopen
+00:38 +164: /work/RainLink/app/test/overview_connections_test.dart: recent connection fits Size(960.0, 640.0) dark and opens full list (variant: TargetPlatform.linux)
+00:38 +165: /work/RainLink/app/test/overview_connections_test.dart: recent connection fits Size(960.0, 640.0) dark and opens full list (variant: TargetPlatform.linux)
+00:38 +166: /work/RainLink/app/test/overview_connections_test.dart: recent connection fits Size(960.0, 640.0) dark and opens full list (variant: TargetPlatform.linux)
+00:38 +167: /work/RainLink/app/test/overview_connections_test.dart: recent connection fits Size(960.0, 640.0) dark and opens full list (variant: TargetPlatform.linux)
+00:38 +168: /work/RainLink/app/test/overview_connections_test.dart: recent connection fits Size(960.0, 640.0) dark and opens full list (variant: TargetPlatform.linux)
+00:38 +169: /work/RainLink/app/test/overview_connections_test.dart: recent connection fits Size(960.0, 640.0) dark and opens full list (variant: TargetPlatform.linux)
+00:38 +170: /work/RainLink/app/test/overview_connections_test.dart: recent connection fits Size(960.0, 640.0) dark and opens full list (variant: TargetPlatform.linux)
+00:38 +171: /work/RainLink/app/test/overview_connections_test.dart: recent connection fits Size(960.0, 640.0) dark and opens full list (variant: TargetPlatform.linux)
+00:39 +172: /work/RainLink/app/test/overview_connections_test.dart: recent connection fits Size(960.0, 640.0) dark and opens full list (variant: TargetPlatform.linux)
+00:39 +173: /work/RainLink/app/test/mobile_settings_ui_test.dart: denied notification authorization leaves the preference off and explains how to retry
+00:39 +174: /work/RainLink/app/test/mobile_settings_ui_test.dart: denied notification authorization leaves the preference off and explains how to retry
+00:40 +175: /work/RainLink/app/test/overview_connections_test.dart: recent connection fits Size(1440.0, 900.0) dark and opens full list (variant: TargetPlatform.linux)
+00:40 +176: /work/RainLink/app/test/overview_connections_test.dart: recent connection fits Size(1440.0, 900.0) dark and opens full list (variant: TargetPlatform.linux)
+00:40 +177: /work/RainLink/app/test/mobile_settings_ui_test.dart: disabled Android channel cannot be mistaken for enabled delivery
+00:40 +178: /work/RainLink/app/test/overview_connections_test.dart: recent connection fits Size(1440.0, 900.0) light and opens full list (variant: TargetPlatform.linux)
+00:40 +179: /work/RainLink/app/test/overview_connections_test.dart: recent connection fits Size(1440.0, 900.0) light and opens full list (variant: TargetPlatform.linux)
+00:40 +180: /work/RainLink/app/test/mobile_settings_ui_test.dart: a mobile notification action routes through the app-owned router
+00:41 +181: /work/RainLink/app/test/mobile_settings_ui_test.dart: a mobile notification action routes through the app-owned router
+00:41 +182: /work/RainLink/app/test/mobile_settings_ui_test.dart: a mobile notification action routes through the app-owned router
+00:41 +183: /work/RainLink/app/test/android_document_export_test.dart: system export receives an exact UTF-8 file and returns its content URI
+00:42 +184: /work/RainLink/app/test/android_document_export_test.dart: system export receives an exact UTF-8 file and returns its content URI
+00:42 +185: /work/RainLink/app/test/android_document_export_test.dart: system export receives an exact UTF-8 file and returns its content URI
+00:42 +186: /work/RainLink/app/test/android_document_export_test.dart: system export receives an exact UTF-8 file and returns its content URI
+00:42 +187: /work/RainLink/app/test/android_document_export_test.dart: system export receives an exact UTF-8 file and returns its content URI
+00:43 +188: /work/RainLink/app/test/android_document_export_test.dart: picker cancellation returns null and removes temporary content
+00:44 +189: /work/RainLink/app/test/android_document_export_test.dart: malformed saved URI is not reported as success: file:///private/secret
+00:44 +190: /work/RainLink/app/test/android_document_export_test.dart: malformed saved URI is not reported as success: 
+00:44 +191: /work/RainLink/app/test/android_document_export_test.dart: malformed saved URI is not reported as success: content:/missing-authority
+00:44 +192: /work/RainLink/app/test/android_document_export_test.dart: native busy errors keep failure visible and release temporary files
+00:44 +193: /work/RainLink/app/test/android_document_export_test.dart: native busy errors keep failure visible and release temporary files
+00:44 +194: /work/RainLink/app/test/android_document_export_test.dart: native busy errors keep failure visible and release temporary files
+00:44 +195: /work/RainLink/app/test/android_document_export_test.dart: native busy errors keep failure visible and release temporary files
+00:44 +196: /work/RainLink/app/test/android_document_export_test.dart: native busy errors keep failure visible and release temporary files
+00:44 +197: /work/RainLink/app/test/android_document_export_test.dart: native busy errors keep failure visible and release temporary files
+00:44 +198: /work/RainLink/app/test/android_document_export_test.dart: native busy errors keep failure visible and release temporary files
+00:45 +199: /work/RainLink/app/test/android_document_export_test.dart: native busy errors keep failure visible and release temporary files
+00:45 +200: /work/RainLink/app/test/android_document_export_test.dart: native busy errors keep failure visible and release temporary files
+00:45 +201: /work/RainLink/app/test/android_document_export_test.dart: native busy errors keep failure visible and release temporary files
+00:45 +202: /work/RainLink/app/test/android_document_export_test.dart: native busy errors keep failure visible and release temporary files
+00:45 +203: /work/RainLink/app/test/android_document_export_test.dart: native busy errors keep failure visible and release temporary files
+00:45 +204: /work/RainLink/app/test/android_document_export_test.dart: native busy errors keep failure visible and release temporary files
+00:45 +205: /work/RainLink/app/test/android_document_export_test.dart: native busy errors keep failure visible and release temporary files
+00:45 +206: /work/RainLink/app/test/android_document_export_test.dart: native busy errors keep failure visible and release temporary files
+00:45 +207: /work/RainLink/app/test/android_document_export_test.dart: native busy errors keep failure visible and release temporary files
+00:45 +208: /work/RainLink/app/test/android_document_export_test.dart: native write_failed errors keep failure visible and release temporary files
+00:45 +209: /work/RainLink/app/test/android_document_export_test.dart: native unavailable errors keep failure visible and release temporary files
+00:46 +210: /work/RainLink/app/test/android_document_export_test.dart: native unavailable errors keep failure visible and release temporary files
+00:46 +211: /work/RainLink/app/test/android_document_export_test.dart: native unavailable errors keep failure visible and release temporary files
+00:46 +212: /work/RainLink/app/test/android_document_export_test.dart: native unavailable errors keep failure visible and release temporary files
+00:47 +213: /work/RainLink/app/test/android_document_export_test.dart: native unavailable errors keep failure visible and release temporary files
+00:47 +214: /work/RainLink/app/test/app_update_transport_test.dart: actual HTTP release metadata and file downloads metadata cancellation closes an in-flight request and timeout is bounded
+00:47 +215: /work/RainLink/app/test/android_document_export_test.dart: timeout cancels only its request and ignores late provider completion
+00:47 +216: /work/RainLink/app/test/app_update_transport_test.dart: actual HTTP release metadata and file downloads downloads actual bytes and returns a file only after SHA256 verification
+00:47 +217: /work/RainLink/app/test/app_update_transport_test.dart: actual HTTP release metadata and file downloads downloads actual bytes and returns a file only after SHA256 verification
+00:47 +218: /work/RainLink/app/test/app_update_transport_test.dart: actual HTTP release metadata and file downloads mismatched digest, oversized and truncated files are discarded
+00:47 +219: /work/RainLink/app/test/app_update_transport_test.dart: actual HTTP release metadata and file downloads missing digest disables download and untrusted redirects are refused
+00:47 +220: /work/RainLink/app/test/app_update_transport_test.dart: actual HTTP release metadata and file downloads cancel and timeout wait for file handles before cleaning temporary downloads
+00:47 +221: /work/RainLink/app/test/app_update_transport_test.dart: update preferences use real SQLite and failed writes preserve old values
+00:47 +222: /work/RainLink/app/test/hysteria2_test.dart: Clash Hysteria2 nodes are imported with QUIC options and two secrets
+00:47 +223: /work/RainLink/app/test/hysteria2_test.dart: hy2 and hysteria2 URI aliases preserve encoded auth and default TLS
+00:47 +224: /work/RainLink/app/test/hysteria2_test.dart: provider certificate pins and duplicate port aliases retain semantics
+00:47 +225: /work/RainLink/app/test/hysteria2_test.dart: invalid or unsupported Hysteria2 settings fail without leaking secrets
+00:47 +226: /work/RainLink/app/test/hysteria2_test.dart: subscription refresh adds HY2 while preserving previous selection and encrypted secrets
+00:47 +227: /work/RainLink/app/test/hysteria2_test.dart: manual editing preserves both encrypted secrets only when left together
+00:48 +228: /work/RainLink/app/test/protocol_editor_test.dart: subscription paste only fills a draft, persists auto-update choice and ignores a late clipboard reply
+00:50 +229: /work/RainLink/app/test/device_settings_test.dart: default settings migrate without changing schema and survive reopen
+00:51 +230: /work/RainLink/app/test/device_settings_test.dart: default settings migrate without changing schema and survive reopen
+00:51 +231: /work/RainLink/app/test/device_settings_test.dart: default settings migrate without changing schema and survive reopen
+00:53 +232: /work/RainLink/app/test/device_settings_test.dart: default settings migrate without changing schema and survive reopen
+00:53 +233: /work/RainLink/app/test/device_settings_test.dart: default settings migrate without changing schema and survive reopen
+00:53 +234: /work/RainLink/app/test/device_settings_test.dart: default settings migrate without changing schema and survive reopen
+00:53 +235: /work/RainLink/app/test/device_settings_test.dart: default settings migrate without changing schema and survive reopen
+00:53 +236: /work/RainLink/app/test/device_settings_test.dart: default settings migrate without changing schema and survive reopen
+00:53 +237: /work/RainLink/app/test/device_settings_test.dart: default settings migrate without changing schema and survive reopen
+00:53 +238: /work/RainLink/app/test/device_settings_test.dart: default settings migrate without changing schema and survive reopen
+00:53 +239: /work/RainLink/app/test/device_settings_test.dart: default settings migrate without changing schema and survive reopen
+00:54 +240: /work/RainLink/app/test/device_settings_test.dart: default settings migrate without changing schema and survive reopen
+00:54 +241: /work/RainLink/app/test/device_settings_test.dart: default settings migrate without changing schema and survive reopen
+00:55 +242: /work/RainLink/app/test/device_settings_test.dart: default settings migrate without changing schema and survive reopen
+00:55 +243: /work/RainLink/app/test/device_settings_test.dart: default settings migrate without changing schema and survive reopen
+00:56 +244: /work/RainLink/app/test/device_settings_test.dart: default settings migrate without changing schema and survive reopen
+00:56 +245: /work/RainLink/app/test/device_settings_test.dart: default settings migrate without changing schema and survive reopen
+00:56 +246: /work/RainLink/app/test/device_settings_test.dart: default settings migrate without changing schema and survive reopen
+00:56 +247: /work/RainLink/app/test/device_settings_test.dart: default settings migrate without changing schema and survive reopen
+00:56 +248: /work/RainLink/app/test/device_settings_test.dart: default settings migrate without changing schema and survive reopen
+00:56 +249: /work/RainLink/app/test/device_settings_test.dart: default settings migrate without changing schema and survive reopen
+00:56 +250: /work/RainLink/app/test/device_settings_test.dart: default settings migrate without changing schema and survive reopen
+00:56 +251: /work/RainLink/app/test/device_settings_test.dart: default settings migrate without changing schema and survive reopen
+00:56 +252: /work/RainLink/app/test/device_settings_test.dart: default settings migrate without changing schema and survive reopen
+00:56 +253: /work/RainLink/app/test/device_settings_test.dart: default settings migrate without changing schema and survive reopen
+00:56 +254: /work/RainLink/app/test/device_settings_test.dart: default settings migrate without changing schema and survive reopen
+00:56 +255: /work/RainLink/app/test/device_settings_test.dart: default settings migrate without changing schema and survive reopen
+00:57 +256: /work/RainLink/app/test/device_settings_test.dart: default settings migrate without changing schema and survive reopen
+00:58 +257: /work/RainLink/app/test/device_settings_test.dart: default settings migrate without changing schema and survive reopen
+00:58 +258: /work/RainLink/app/test/device_settings_test.dart: default settings migrate without changing schema and survive reopen
+00:58 +259: /work/RainLink/app/test/device_settings_test.dart: default settings migrate without changing schema and survive reopen
+00:59 +260: /work/RainLink/app/test/device_settings_test.dart: default settings migrate without changing schema and survive reopen
+00:59 +261: /work/RainLink/app/test/device_settings_test.dart: default settings migrate without changing schema and survive reopen
+00:59 +262: /work/RainLink/app/test/device_settings_test.dart: default settings migrate without changing schema and survive reopen
+00:59 +263: /work/RainLink/app/test/device_settings_test.dart: default settings migrate without changing schema and survive reopen
+00:59 +264: /work/RainLink/app/test/device_settings_test.dart: default settings migrate without changing schema and survive reopen
+00:59 +265: /work/RainLink/app/test/device_settings_test.dart: default settings migrate without changing schema and survive reopen
+00:59 +266: /work/RainLink/app/test/device_settings_test.dart: default settings migrate without changing schema and survive reopen
+00:59 +267: /work/RainLink/app/test/device_settings_test.dart: default settings migrate without changing schema and survive reopen
+00:59 +268: /work/RainLink/app/test/device_settings_test.dart: default settings migrate without changing schema and survive reopen
+00:59 +269: /work/RainLink/app/test/device_settings_test.dart: default settings migrate without changing schema and survive reopen
+00:59 +270: /work/RainLink/app/test/device_settings_test.dart: default settings migrate without changing schema and survive reopen
+01:00 +271: /work/RainLink/app/test/device_settings_test.dart: default settings migrate without changing schema and survive reopen
+01:00 +272: /work/RainLink/app/test/device_settings_test.dart: default settings migrate without changing schema and survive reopen
+01:00 +273: /work/RainLink/app/test/device_settings_test.dart: default settings migrate without changing schema and survive reopen
+01:00 +274: /work/RainLink/app/test/device_settings_test.dart: default settings migrate without changing schema and survive reopen
+01:00 +275: /work/RainLink/app/test/device_settings_test.dart: default settings migrate without changing schema and survive reopen
+01:00 +276: /work/RainLink/app/test/device_settings_test.dart: default settings migrate without changing schema and survive reopen
+01:00 +277: /work/RainLink/app/test/device_settings_test.dart: default settings migrate without changing schema and survive reopen
+01:00 +278: /work/RainLink/app/test/device_settings_test.dart: default settings migrate without changing schema and survive reopen
+01:00 +279: /work/RainLink/app/test/device_settings_test.dart: default settings migrate without changing schema and survive reopen
+01:00 +280: /work/RainLink/app/test/device_settings_test.dart: default settings migrate without changing schema and survive reopen
+01:00 +281: /work/RainLink/app/test/device_settings_test.dart: default settings migrate without changing schema and survive reopen
+01:00 +282: /work/RainLink/app/test/device_settings_test.dart: default settings migrate without changing schema and survive reopen
+01:00 +283: /work/RainLink/app/test/device_settings_test.dart: default settings migrate without changing schema and survive reopen
+01:01 +284: /work/RainLink/app/test/device_settings_test.dart: default settings migrate without changing schema and survive reopen
+01:01 +285: /work/RainLink/app/test/device_settings_test.dart: default settings migrate without changing schema and survive reopen
+01:01 +286: /work/RainLink/app/test/device_settings_test.dart: default settings migrate without changing schema and survive reopen
+01:01 +287: /work/RainLink/app/test/device_settings_test.dart: default settings migrate without changing schema and survive reopen
+01:01 +288: /work/RainLink/app/test/device_settings_test.dart: default settings migrate without changing schema and survive reopen
+01:02 +289: /work/RainLink/app/test/device_settings_test.dart: default settings migrate without changing schema and survive reopen
+01:03 +290: /work/RainLink/app/test/device_settings_test.dart: default settings migrate without changing schema and survive reopen
+01:03 +291: /work/RainLink/app/test/device_settings_test.dart: default settings migrate without changing schema and survive reopen
+01:03 +292: /work/RainLink/app/test/device_settings_test.dart: default settings migrate without changing schema and survive reopen
+01:03 +293: /work/RainLink/app/test/device_settings_test.dart: default settings migrate without changing schema and survive reopen
+01:03 +294: /work/RainLink/app/test/device_settings_test.dart: default settings migrate without changing schema and survive reopen
+01:03 +295: /work/RainLink/app/test/device_settings_test.dart: default settings migrate without changing schema and survive reopen
+01:03 +296: /work/RainLink/app/test/device_settings_test.dart: default settings migrate without changing schema and survive reopen
+01:04 +297: /work/RainLink/app/test/device_settings_test.dart: default settings migrate without changing schema and survive reopen
+01:04 +298: /work/RainLink/app/test/device_settings_test.dart: default settings migrate without changing schema and survive reopen
+01:04 +299: /work/RainLink/app/test/device_settings_test.dart: default settings migrate without changing schema and survive reopen
+01:04 +300: /work/RainLink/app/test/device_settings_test.dart: default settings migrate without changing schema and survive reopen
+01:04 +301: /work/RainLink/app/test/device_settings_test.dart: default settings migrate without changing schema and survive reopen
+01:04 +302: /work/RainLink/app/test/device_settings_test.dart: default settings migrate without changing schema and survive reopen
+01:04 +303: /work/RainLink/app/test/device_settings_test.dart: default settings migrate without changing schema and survive reopen
+01:04 +304: /work/RainLink/app/test/device_settings_test.dart: default settings migrate without changing schema and survive reopen
+01:04 +305: /work/RainLink/app/test/group_repository_test.dart: group metadata and node settings survive reopening the database
+01:04 +306: /work/RainLink/app/test/density_ui_test.dart: AppDensity.compact AppTheme.light at Size(960.0, 640.0) fits pages and dialogs (variant: TargetPlatform.windows)
+01:04 +307: /work/RainLink/app/test/density_ui_test.dart: AppDensity.compact AppTheme.light at Size(960.0, 640.0) fits pages and dialogs (variant: TargetPlatform.windows)
+01:04 +308: /work/RainLink/app/test/density_ui_test.dart: AppDensity.compact AppTheme.light at Size(960.0, 640.0) fits pages and dialogs (variant: TargetPlatform.windows)
+01:04 +309: /work/RainLink/app/test/density_ui_test.dart: AppDensity.compact AppTheme.light at Size(960.0, 640.0) fits pages and dialogs (variant: TargetPlatform.windows)
+01:05 +310: /work/RainLink/app/test/density_ui_test.dart: AppDensity.compact AppTheme.light at Size(960.0, 640.0) fits pages and dialogs (variant: TargetPlatform.windows)
+01:05 +311: /work/RainLink/app/test/density_ui_test.dart: AppDensity.compact AppTheme.light at Size(960.0, 640.0) fits pages and dialogs (variant: TargetPlatform.windows)
+01:05 +312: /work/RainLink/app/test/density_ui_test.dart: AppDensity.standard AppTheme.dark at Size(960.0, 640.0) fits pages and dialogs (variant: TargetPlatform.windows)
+01:05 +313: /work/RainLink/app/test/density_ui_test.dart: AppDensity.standard AppTheme.dark at Size(960.0, 640.0) fits pages and dialogs (variant: TargetPlatform.windows)
+01:05 +314: /work/RainLink/app/test/density_ui_test.dart: AppDensity.standard AppTheme.dark at Size(960.0, 640.0) fits pages and dialogs (variant: TargetPlatform.windows)
+01:05 +315: /work/RainLink/app/test/density_ui_test.dart: AppDensity.standard AppTheme.dark at Size(960.0, 640.0) fits pages and dialogs (variant: TargetPlatform.windows)
+01:05 +316: /work/RainLink/app/test/density_ui_test.dart: AppDensity.standard AppTheme.dark at Size(960.0, 640.0) fits pages and dialogs (variant: TargetPlatform.windows)
+01:06 +317: /work/RainLink/app/test/density_ui_test.dart: AppDensity.standard AppTheme.light at Size(960.0, 640.0) fits pages and dialogs (variant: TargetPlatform.windows)
+01:06 +318: /work/RainLink/app/test/core_telemetry_test.dart: pause preserves the view, explicit close uses the core and failure preserves rows
+01:06 +319: /work/RainLink/app/test/density_ui_test.dart: AppDensity.compact AppTheme.dark at Size(393.0, 852.0) fits pages and dialogs (variant: TargetPlatform.iOS)
+01:06 +320: /work/RainLink/app/test/density_ui_test.dart: AppDensity.compact AppTheme.dark at Size(393.0, 852.0) fits pages and dialogs (variant: TargetPlatform.iOS)
+01:06 +321: /work/RainLink/app/test/density_ui_test.dart: AppDensity.compact AppTheme.dark at Size(393.0, 852.0) fits pages and dialogs (variant: TargetPlatform.iOS)
+01:06 +322: /work/RainLink/app/test/density_ui_test.dart: AppDensity.compact AppTheme.dark at Size(393.0, 852.0) fits pages and dialogs (variant: TargetPlatform.iOS)
+01:07 +323: /work/RainLink/app/test/density_ui_test.dart: AppDensity.compact AppTheme.dark at Size(393.0, 852.0) fits pages and dialogs (variant: TargetPlatform.iOS)
+01:07 +324: /work/RainLink/app/test/core_telemetry_test.dart: schema 3 migrates without losing nodes or preferences; logs survive reopen
+01:08 +325: /work/RainLink/app/test/core_telemetry_test.dart: schema 3 migrates without losing nodes or preferences; logs survive reopen
+01:08 +326: /work/RainLink/app/test/core_telemetry_test.dart: schema 3 migrates without losing nodes or preferences; logs survive reopen
+01:08 +327: /work/RainLink/app/test/core_telemetry_test.dart: schema 3 migrates without losing nodes or preferences; logs survive reopen
+01:08 +328: /work/RainLink/app/test/core_telemetry_test.dart: schema 3 migrates without losing nodes or preferences; logs survive reopen
+01:08 +329: /work/RainLink/app/test/core_telemetry_test.dart: schema 3 migrates without losing nodes or preferences; logs survive reopen
+01:08 +330: /work/RainLink/app/test/core_telemetry_test.dart: schema 3 migrates without losing nodes or preferences; logs survive reopen
+01:08 +331: /work/RainLink/app/test/core_telemetry_test.dart: schema 3 migrates without losing nodes or preferences; logs survive reopen
+01:08 +332: /work/RainLink/app/test/core_telemetry_test.dart: schema 3 migrates without losing nodes or preferences; logs survive reopen
+01:08 +333: /work/RainLink/app/test/core_telemetry_test.dart: schema 3 migrates without losing nodes or preferences; logs survive reopen
+01:08 +334: /work/RainLink/app/test/core_telemetry_test.dart: schema 3 migrates without losing nodes or preferences; logs survive reopen
+01:08 +335: /work/RainLink/app/test/core_telemetry_test.dart: schema 3 migrates without losing nodes or preferences; logs survive reopen
+01:08 +336: /work/RainLink/app/test/core_telemetry_test.dart: schema 3 migrates without losing nodes or preferences; logs survive reopen
+01:08 +337: /work/RainLink/app/test/core_telemetry_test.dart: schema 3 migrates without losing nodes or preferences; logs survive reopen
+01:08 +338: /work/RainLink/app/test/core_telemetry_test.dart: schema 3 migrates without losing nodes or preferences; logs survive reopen
+01:08 +339: /work/RainLink/app/test/core_telemetry_test.dart: schema 3 migrates without losing nodes or preferences; logs survive reopen
+01:08 +340: /work/RainLink/app/test/core_telemetry_test.dart: schema 3 migrates without losing nodes or preferences; logs survive reopen
+01:08 +341: /work/RainLink/app/test/core_telemetry_test.dart: schema 3 migrates without losing nodes or preferences; logs survive reopen
+01:09 +342: /work/RainLink/app/test/core_telemetry_test.dart: schema 3 migrates without losing nodes or preferences; logs survive reopen
+01:10 +343: /work/RainLink/app/test/core_telemetry_test.dart: schema 3 migrates without losing nodes or preferences; logs survive reopen
+01:10 +344: /work/RainLink/app/test/core_telemetry_test.dart: schema 3 migrates without losing nodes or preferences; logs survive reopen
+01:10 +345: /work/RainLink/app/test/core_telemetry_test.dart: schema 3 migrates without losing nodes or preferences; logs survive reopen
+01:10 +346: /work/RainLink/app/test/core_telemetry_test.dart: schema 3 migrates without losing nodes or preferences; logs survive reopen
+01:10 +347: /work/RainLink/app/test/core_telemetry_test.dart: schema 3 migrates without losing nodes or preferences; logs survive reopen
+01:10 +348: /work/RainLink/app/test/core_telemetry_test.dart: schema 3 migrates without losing nodes or preferences; logs survive reopen
+01:10 +349: /work/RainLink/app/test/core_telemetry_test.dart: schema 3 migrates without losing nodes or preferences; logs survive reopen
+01:10 +350: /work/RainLink/app/test/core_telemetry_test.dart: schema 3 migrates without losing nodes or preferences; logs survive reopen
+01:10 +351: /work/RainLink/app/test/core_telemetry_test.dart: schema 3 migrates without losing nodes or preferences; logs survive reopen
+01:11 +352: /work/RainLink/app/test/core_telemetry_test.dart: schema 3 migrates without losing nodes or preferences; logs survive reopen
+01:11 +353: /work/RainLink/app/test/core_telemetry_test.dart: schema 3 migrates without losing nodes or preferences; logs survive reopen
+01:12 +354: /work/RainLink/app/test/core_telemetry_test.dart: schema 3 migrates without losing nodes or preferences; logs survive reopen
+01:13 +355: /work/RainLink/app/test/core_telemetry_test.dart: schema 3 migrates without losing nodes or preferences; logs survive reopen
+01:13 +356: /work/RainLink/app/test/core_telemetry_test.dart: schema 3 migrates without losing nodes or preferences; logs survive reopen
+01:13 +357: /work/RainLink/app/test/core_telemetry_test.dart: schema 3 migrates without losing nodes or preferences; logs survive reopen
+01:13 +358: /work/RainLink/app/test/core_telemetry_test.dart: schema 3 migrates without losing nodes or preferences; logs survive reopen
+01:13 +359: /work/RainLink/app/test/core_telemetry_test.dart: schema 3 migrates without losing nodes or preferences; logs survive reopen
+01:13 +360: /work/RainLink/app/test/core_telemetry_test.dart: schema 3 migrates without losing nodes or preferences; logs survive reopen
+01:13 +361: /work/RainLink/app/test/core_telemetry_test.dart: schema 3 migrates without losing nodes or preferences; logs survive reopen
+01:13 +362: /work/RainLink/app/test/core_telemetry_test.dart: schema 3 migrates without losing nodes or preferences; logs survive reopen
+01:13 +363: /work/RainLink/app/test/core_telemetry_test.dart: schema 3 migrates without losing nodes or preferences; logs survive reopen
+01:13 +364: /work/RainLink/app/test/core_telemetry_test.dart: schema 3 migrates without losing nodes or preferences; logs survive reopen
+01:13 +365: /work/RainLink/app/test/core_telemetry_test.dart: schema 3 migrates without losing nodes or preferences; logs survive reopen
+01:13 +366: /work/RainLink/app/test/core_telemetry_test.dart: schema 3 migrates without losing nodes or preferences; logs survive reopen
+01:13 +367: /work/RainLink/app/test/core_telemetry_test.dart: schema 3 migrates without losing nodes or preferences; logs survive reopen
+01:14 +368: /work/RainLink/app/test/core_telemetry_test.dart: schema 3 migrates without losing nodes or preferences; logs survive reopen
+01:14 +369: /work/RainLink/app/test/core_telemetry_test.dart: schema 3 migrates without losing nodes or preferences; logs survive reopen
+01:14 +370: /work/RainLink/app/test/core_telemetry_test.dart: schema 3 migrates without losing nodes or preferences; logs survive reopen
+01:14 +371: /work/RainLink/app/test/core_telemetry_test.dart: schema 3 migrates without losing nodes or preferences; logs survive reopen
+01:14 +372: /work/RainLink/app/test/core_telemetry_test.dart: schema 3 migrates without losing nodes or preferences; logs survive reopen
+01:14 +373: /work/RainLink/app/test/core_telemetry_test.dart: schema 3 migrates without losing nodes or preferences; logs survive reopen
+01:14 +374: /work/RainLink/app/test/core_telemetry_test.dart: schema 3 migrates without losing nodes or preferences; logs survive reopen
+01:14 +375: /work/RainLink/app/test/core_telemetry_test.dart: schema 3 migrates without losing nodes or preferences; logs survive reopen
+01:14 +376: /work/RainLink/app/test/core_telemetry_test.dart: schema 3 migrates without losing nodes or preferences; logs survive reopen
+01:14 +377: /work/RainLink/app/test/core_telemetry_test.dart: schema 3 migrates without losing nodes or preferences; logs survive reopen
+01:14 +378: /work/RainLink/app/test/core_telemetry_test.dart: schema 3 migrates without losing nodes or preferences; logs survive reopen
+01:14 +379: /work/RainLink/app/test/core_telemetry_test.dart: schema 3 migrates without losing nodes or preferences; logs survive reopen
+01:14 +380: /work/RainLink/app/test/core_telemetry_test.dart: schema 3 migrates without losing nodes or preferences; logs survive reopen
+01:14 +381: /work/RainLink/app/test/core_telemetry_test.dart: schema 3 migrates without losing nodes or preferences; logs survive reopen
+01:15 +382: /work/RainLink/app/test/core_telemetry_test.dart: schema 3 migrates without losing nodes or preferences; logs survive reopen
+01:16 +383: /work/RainLink/app/test/core_telemetry_test.dart: schema 3 migrates without losing nodes or preferences; logs survive reopen
+01:16 +384: /work/RainLink/app/test/core_telemetry_test.dart: schema 3 migrates without losing nodes or preferences; logs survive reopen
+01:17 +385: /work/RainLink/app/test/core_telemetry_test.dart: schema 3 migrates without losing nodes or preferences; logs survive reopen
+01:17 +386: /work/RainLink/app/test/core_telemetry_test.dart: schema 3 migrates without losing nodes or preferences; logs survive reopen
+01:17 +387: /work/RainLink/app/test/core_telemetry_test.dart: schema 3 migrates without losing nodes or preferences; logs survive reopen
+01:17 +388: /work/RainLink/app/test/core_telemetry_test.dart: schema 3 migrates without losing nodes or preferences; logs survive reopen
+01:18 +389: /work/RainLink/app/test/core_telemetry_test.dart: schema 3 migrates without losing nodes or preferences; logs survive reopen
+01:18 +390: /work/RainLink/app/test/core_telemetry_test.dart: schema 3 migrates without losing nodes or preferences; logs survive reopen
+01:18 +391: /work/RainLink/app/test/core_telemetry_test.dart: schema 3 migrates without losing nodes or preferences; logs survive reopen
+01:18 +392: /work/RainLink/app/test/core_telemetry_test.dart: schema 3 migrates without losing nodes or preferences; logs survive reopen
+01:18 +393: /work/RainLink/app/test/core_telemetry_test.dart: schema 3 migrates without losing nodes or preferences; logs survive reopen
+01:18 +394: /work/RainLink/app/test/core_telemetry_test.dart: schema 3 migrates without losing nodes or preferences; logs survive reopen
+01:18 +395: /work/RainLink/app/test/core_telemetry_test.dart: schema 3 migrates without losing nodes or preferences; logs survive reopen
+01:18 +396: /work/RainLink/app/test/core_telemetry_test.dart: schema 3 migrates without losing nodes or preferences; logs survive reopen
+01:18 +397: /work/RainLink/app/test/core_telemetry_test.dart: schema 3 migrates without losing nodes or preferences; logs survive reopen
+01:18 +398: /work/RainLink/app/test/core_telemetry_test.dart: schema 3 migrates without losing nodes or preferences; logs survive reopen
+01:18 +399: /work/RainLink/app/test/core_telemetry_test.dart: schema 3 migrates without losing nodes or preferences; logs survive reopen
+01:19 +400: /work/RainLink/app/test/subscription_review_ui_test.dart: subscription review Size(320.0, 640.0) dark extraLarge: edit URL, expand, accept and update without connection (variant: TargetPlatform.android)
+01:19 +401: /work/RainLink/app/test/subscription_review_ui_test.dart: subscription review Size(320.0, 640.0) dark extraLarge: edit URL, expand, accept and update without connection (variant: TargetPlatform.android)
+01:19 +402: /work/RainLink/app/test/subscription_review_ui_test.dart: subscription review Size(320.0, 640.0) dark extraLarge: edit URL, expand, accept and update without connection (variant: TargetPlatform.android)
+01:19 +403: /work/RainLink/app/test/subscription_review_ui_test.dart: subscription review Size(320.0, 640.0) dark extraLarge: edit URL, expand, accept and update without connection (variant: TargetPlatform.android)
+01:19 +404: /work/RainLink/app/test/subscription_review_ui_test.dart: subscription review Size(320.0, 640.0) dark extraLarge: edit URL, expand, accept and update without connection (variant: TargetPlatform.android)
+01:19 +405: /work/RainLink/app/test/host_command_runner_test.dart: an unresponsive child reports failed shutdown
+01:19 +406: /work/RainLink/app/test/subscription_ui_test.dart: TargetPlatform.android Size(320.0, 740.0) imports subscription in a URL-only dialog and selects group without connecting (variant: TargetPlatform.android)
+01:19 +407: /work/RainLink/app/test/subscription_review_ui_test.dart: subscription review Size(320.0, 640.0) light extraLarge: edit URL, expand, accept and update without connection (variant: TargetPlatform.android)
+01:20 +408: /work/RainLink/app/test/telemetry_ui_test.dart: /connections at Size(960.0, 640.0) dark fits with working filters (variant: TargetPlatform.macOS)
+01:20 +409: /work/RainLink/app/test/telemetry_ui_test.dart: /connections at Size(960.0, 640.0) dark fits with working filters (variant: TargetPlatform.macOS)
+01:20 +410: /work/RainLink/app/test/telemetry_ui_test.dart: /connections at Size(960.0, 640.0) dark fits with working filters (variant: TargetPlatform.macOS)
+01:21 +411: /work/RainLink/app/test/telemetry_ui_test.dart: /connections at Size(960.0, 640.0) dark fits with working filters (variant: TargetPlatform.macOS)
+01:21 +412: /work/RainLink/app/test/telemetry_ui_test.dart: /connections at Size(960.0, 640.0) dark fits with working filters (variant: TargetPlatform.macOS)
+01:21 +413: /work/RainLink/app/test/telemetry_ui_test.dart: /connections at Size(960.0, 640.0) dark fits with working filters (variant: TargetPlatform.macOS)
+01:21 +414: /work/RainLink/app/test/telemetry_ui_test.dart: /connections at Size(960.0, 640.0) dark fits with working filters (variant: TargetPlatform.macOS)
+01:21 +415: /work/RainLink/app/test/telemetry_ui_test.dart: /connections at Size(960.0, 640.0) dark fits with working filters (variant: TargetPlatform.macOS)
+01:21 +416: /work/RainLink/app/test/telemetry_ui_test.dart: /connections at Size(960.0, 640.0) dark fits with working filters (variant: TargetPlatform.macOS)
+01:21 +417: /work/RainLink/app/test/telemetry_ui_test.dart: /connections at Size(960.0, 640.0) dark fits with working filters (variant: TargetPlatform.macOS)
+01:21 +418: /work/RainLink/app/test/telemetry_ui_test.dart: /connections at Size(960.0, 640.0) dark fits with working filters (variant: TargetPlatform.macOS)
+01:21 +419: /work/RainLink/app/test/telemetry_ui_test.dart: /connections at Size(960.0, 640.0) dark fits with working filters (variant: TargetPlatform.macOS)
+01:21 +420: /work/RainLink/app/test/telemetry_ui_test.dart: /logs at Size(960.0, 640.0) dark fits with working filters (variant: TargetPlatform.macOS)
+01:21 +421: /work/RainLink/app/test/telemetry_ui_test.dart: /connections at Size(960.0, 640.0) light fits with working filters (variant: TargetPlatform.macOS)
+01:22 +422: /work/RainLink/app/test/telemetry_ui_test.dart: /logs at Size(960.0, 640.0) light fits with working filters (variant: TargetPlatform.macOS)
+01:22 +423: /work/RainLink/app/test/telemetry_ui_test.dart: /connections at Size(1440.0, 900.0) dark fits with working filters (variant: TargetPlatform.macOS)
+01:22 +424: /work/RainLink/app/test/telemetry_ui_test.dart: /logs at Size(1440.0, 900.0) dark fits with working filters (variant: TargetPlatform.macOS)
+01:22 +425: /work/RainLink/app/test/telemetry_ui_test.dart: /connections at Size(1440.0, 900.0) light fits with working filters (variant: TargetPlatform.macOS)
+01:22 +426: /work/RainLink/app/test/platform_layout_test.dart: TargetPlatform.windows retains its layout family regardless of width (variant: TargetPlatform.windows)
+01:23 +427: /work/RainLink/app/test/platform_layout_test.dart: TargetPlatform.windows retains its layout family regardless of width (variant: TargetPlatform.windows)
+01:23 +428: /work/RainLink/app/test/platform_layout_test.dart: TargetPlatform.windows retains its layout family regardless of width (variant: TargetPlatform.windows)
+01:23 +429: /work/RainLink/app/test/platform_layout_test.dart: TargetPlatform.windows retains its layout family regardless of width (variant: TargetPlatform.windows)
+01:24 +430: /work/RainLink/app/test/platform_layout_test.dart: TargetPlatform.windows retains its layout family regardless of width (variant: TargetPlatform.windows)
+01:24 +431: /work/RainLink/app/test/platform_layout_test.dart: TargetPlatform.windows retains its layout family regardless of width (variant: TargetPlatform.windows)
+01:24 +432: /work/RainLink/app/test/platform_layout_test.dart: TargetPlatform.windows retains its layout family regardless of width (variant: TargetPlatform.windows)
+01:24 +433: /work/RainLink/app/test/platform_layout_test.dart: TargetPlatform.windows retains its layout family regardless of width (variant: TargetPlatform.windows)
+01:26 +434: /work/RainLink/app/test/telemetry_ui_test.dart: mobile telemetry controls and log follow work at Size(393.0, 852.0) AppDensity.compact (variant: TargetPlatform.android)
+01:26 +435: /work/RainLink/app/test/platform_layout_test.dart: TargetPlatform.macOS retains its layout family regardless of width (variant: TargetPlatform.macOS)
+01:26 +436: /work/RainLink/app/test/telemetry_ui_test.dart: mobile telemetry controls and log follow work at Size(320.0, 640.0) AppDensity.standard (variant: TargetPlatform.android)
+01:27 +437: /work/RainLink/app/test/telemetry_ui_test.dart: mobile telemetry controls and log follow work at Size(320.0, 640.0) AppDensity.standard (variant: TargetPlatform.android)
+01:27 +438: /work/RainLink/app/test/telemetry_ui_test.dart: mobile telemetry controls and log follow work at Size(320.0, 640.0) AppDensity.standard (variant: TargetPlatform.android)
+01:27 +439: /work/RainLink/app/test/telemetry_ui_test.dart: mobile telemetry controls and log follow work at Size(320.0, 640.0) AppDensity.standard (variant: TargetPlatform.android)
+01:27 +440: /work/RainLink/app/test/chain_ui_test.dart: node search, duplicate prevention, order and save persist the visible chain (variant: TargetPlatform.windows)
+01:27 +441: /work/RainLink/app/test/chain_ui_test.dart: node search, duplicate prevention, order and save persist the visible chain (variant: TargetPlatform.windows)
+01:28 +442: /work/RainLink/app/test/chain_ui_test.dart: node search, duplicate prevention, order and save persist the visible chain (variant: TargetPlatform.windows)
+01:28 +443: /work/RainLink/app/test/chain_ui_test.dart: node search, duplicate prevention, order and save persist the visible chain (variant: TargetPlatform.windows)
+01:29 +444: /work/RainLink/app/test/chain_ui_test.dart: node search, duplicate prevention, order and save persist the visible chain (variant: TargetPlatform.windows)
+01:29 +445: /work/RainLink/app/test/chain_ui_test.dart: node search, duplicate prevention, order and save persist the visible chain (variant: TargetPlatform.windows)
+01:29 +446: /work/RainLink/app/test/chain_ui_test.dart: node search, duplicate prevention, order and save persist the visible chain (variant: TargetPlatform.windows)
+01:29 +447: /work/RainLink/app/test/chain_ui_test.dart: node search, duplicate prevention, order and save persist the visible chain (variant: TargetPlatform.windows)
+01:29 +448: /work/RainLink/app/test/chain_ui_test.dart: node search, duplicate prevention, order and save persist the visible chain (variant: TargetPlatform.windows)
+01:29 +449: /work/RainLink/app/test/chain_ui_test.dart: core rejection preserves the editable draft and reports the failure (variant: TargetPlatform.windows)
+01:30 +450: /work/RainLink/app/test/chain_ui_test.dart: mobile editor remains compact and usable with enlarged Chinese text (variant: TargetPlatform.android)
+01:32 +451: /work/RainLink/app/test/routing_test.dart: rules normalize domain, IPv4 and IPv6 at the boundary
+01:32 +452: /work/RainLink/app/test/routing_test.dart: unique enabled final fallback and bounded rule/target count are enforced
+01:32 +453: /work/RainLink/app/test/routing_test.dart: rules persist, normalize and reject stale or failed writes without replacing data
+01:34 +454: /work/RainLink/app/test/routing_test.dart: rules persist, normalize and reject stale or failed writes without replacing data
+01:34 +455: /work/RainLink/app/test/routing_test.dart: rules persist, normalize and reject stale or failed writes without replacing data
+01:34 +456: /work/RainLink/app/test/routing_test.dart: rules persist, normalize and reject stale or failed writes without replacing data
+01:34 +457: /work/RainLink/app/test/routing_test.dart: rules persist, normalize and reject stale or failed writes without replacing data
+01:34 +458: /work/RainLink/app/test/routing_test.dart: rules persist, normalize and reject stale or failed writes without replacing data
+01:34 +459: /work/RainLink/app/test/routing_test.dart: rules persist, normalize and reject stale or failed writes without replacing data
+01:34 +460: /work/RainLink/app/test/routing_test.dart: rules persist, normalize and reject stale or failed writes without replacing data
+01:34 +461: /work/RainLink/app/test/routing_test.dart: rules persist, normalize and reject stale or failed writes without replacing data
+01:34 +462: /work/RainLink/app/test/routing_test.dart: rules persist, normalize and reject stale or failed writes without replacing data
+01:34 +463: /work/RainLink/app/test/routing_test.dart: rules persist, normalize and reject stale or failed writes without replacing data
+01:36 +464: /work/RainLink/app/test/routing_test.dart: rules persist, normalize and reject stale or failed writes without replacing data
+01:36 +465: /work/RainLink/app/test/routing_test.dart: rules persist, normalize and reject stale or failed writes without replacing data
+01:37 +466: /work/RainLink/app/test/routing_test.dart: references are checked after async validation and invalid writes roll back
+01:37 +467: /work/RainLink/app/test/routing_test.dart: corrupt stored rules surface an error instead of silently resetting routing
+01:37 +468: /work/RainLink/app/test/routing_test.dart: resolver freezes group memory and falls back deterministically when it disappears
+01:37 +469: /work/RainLink/app/test/routing_test.dart: resolver refuses stale default nodes and removed rule targets
+01:37 +470: /work/RainLink/app/test/routing_test.dart: rule moves preserve absolute order and cannot move or remove fallback
+01:37 +471: /work/RainLink/app/test/routing_test.dart: cancelling while routing resolves never starts a late core
+01:37 +472: /work/RainLink/app/test/routing_test.dart: oversize UTF8 requests fail before opening or corrupting a host channel
+01:37 +473: All tests passed!

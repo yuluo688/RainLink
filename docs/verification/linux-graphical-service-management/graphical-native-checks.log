@@ -1,0 +1,11 @@
+/work/RainLink/build/host/linux-amd64/rainlink-host: go1.25.5
+	path	rainlink.local/host/cmd/rainlink-host
+	mod	rainlink.local/host	(devel)	
+	dep	golang.org/x/sys	v0.38.0	h1:3yZWxaJjBmCWXqhN1qh02AkOnCQ1poK6oF+a7xWL6Gc=
+	build	-buildmode=exe
+	build	-compiler=gc
+	build	-trimpath=true
+	build	CGO_ENABLED=0
+	build	GOARCH=amd64
+	build	GOOS=linux
+	build	GOAMD64=v1

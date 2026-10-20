@@ -1,0 +1,11 @@
+{
+  "id": 1,
+  "result": {
+    "protocolVersion": 1,
+    "state": "missing",
+    "canManage": true,
+    "enabled": false,
+    "active": false,
+    "message": "尚未安装 TUN 权限服务"
+  }
+}

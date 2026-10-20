@@ -2,7 +2,7 @@
 
 ## 状态协议 1
 
-`rainlink-host status` 返回单次 JSON；退出码 0 表示读取成功。stdout 只写协议，stderr 不向界面转发。Flutter 将进程启动和读取限为 5 秒，stdout/stderr 各限 64 KiB；失败或销毁时回收子进程。同一 Gateway 只共享正在执行的检查，后续刷新不缓存旧状态。
+`rainlink-host status` 返回单次 JSON；退出码 0 表示读取成功。stdout 只写协议，stderr 不向界面转发。桌面 Gateway 将启动和读取限为 20 秒，以容纳 Linux 有界的 10 秒服务检查及核心发现；通用 runner 默认仍为 5 秒。stdout/stderr 各限 64 KiB，失败或销毁时回收子进程。同一 Gateway 只共享正在执行的检查，后续刷新不缓存旧状态。
 
 Windows 下发现旁边可运行的 sing-box 时返回：
 
@@ -10,35 +10,38 @@ Windows 下发现旁边可运行的 sing-box 时返回：
 {
   "protocolVersion": 1,
   "host": { "version": "0.1.0", "platform": "windows", "arch": "amd64" },
-  "core": { "state": "ready", "version": "1.12.25-rainlink.1" },
+  "core": { "state": "ready", "version": "1.12.25-rainlink.3" },
   "capabilities": { "connect": true, "systemProxy": true, "tun": true }
 }
 ```
 
 没有核心或平台尚未适配时，`core.state` 为 `not_configured`，`core.version` 为 null，能力全部 false。状态检查不会启动会话或修改代理。TUN 能力还要求核心 SHA-256 与宿主锁定版本一致。
 
-Linux amd64 在找到旁置核心时返回 `core.state=ready`、`connect=true`、`tun=false`。`systemProxy` 根据实际环境返回：GNOME（包含 `ubuntu:GNOME`）需要 dconf、可写代理 schema 和匹配的配置环境；KDE 需要旁置且通过检查的 Qt6 / KF6 ConfigCore 辅助程序。两者均需可用会话总线与 pidfd 监控。未知桌面或无法验证的环境为 false，继续提供本地代理端口。凭据依赖已安装并可解锁的 Secret Service，失败返回明确错误；不支持的接管请求不会启动核心或修改系统。KDE 的验收范围见 [KDE 系统代理](verification/linux-kde-proxy.md)。
+Linux amd64 在找到旁置核心时返回 `core.state=ready`、`connect=true`。`tun` 仅在核心可信、已安装权限服务与当前构建一致、socket 已启用且活动时为 true；检查只读，不请求授权。安装/卸载/失败/取消回读后刷新能力，刷新中不沿用旧开关状态；完整产品连接仍待验收，见[暂停检查点](verification/linux-tun-product.md)。`systemProxy` 根据实际环境返回：GNOME（包含 `ubuntu:GNOME`）需要 dconf、可写代理 schema 和匹配配置；KDE 需要旁置且通过检查的 Qt6 / KF6 ConfigCore 辅助程序。两者均需可用会话总线与 pidfd 监控，未知或无法验证的环境为 false。凭据依赖已安装且可解锁的 Secret Service，不支持的接管请求不会启动核心或修改系统。KDE 范围见[KDE 系统代理](verification/linux-kde-proxy.md)。
+
+macOS 使用 `host.platform=darwin`，当前只允许 `connect=true, systemProxy=false, tun=false` 的就绪响应。代码使用同一私有会话与旁置核心，凭据通过旁置 `rainlink-keychain` 的私有管道请求 Security.framework；不会把节点密码或主密钥放入进程参数。Go 双架构交叉编译和跨平台回归已通过，Swift/Keychain/系统代理及原生运行仍需 Mac 验收，见[基础接入](verification/macos-foundation.md)。本地签名改变核心文件字节时，构建器先核对原始源码锁，再将签名后摘要在链接时固定到宿主；运行时没有摘要覆盖入口。
 
 ## 桌面会话协议 2
 
-Flutter 启动自己拥有的 `rainlink-host serve`，通过继承的 stdin / stdout 交换逐行 UTF-8 JSON。GUI 与宿主之间没有公开控制端口或任意命令入口；核心路径固定为宿主旁的 `sing-box.exe`（Windows）或 `sing-box`（Linux）。私有 stdio 替代开发方案中尚未实现的 Named Pipe 传输。
+Flutter 启动自己拥有的 `rainlink-host serve`，通过继承的 stdin / stdout 交换逐行 UTF-8 JSON。GUI 与宿主之间没有公开控制端口或任意命令入口；核心路径固定为宿主旁的 `sing-box.exe`（Windows）或 `sing-box`（Linux/macOS）。macOS `.app` 的宿主、核心和 Keychain helper 位于 `Contents/MacOS`。私有 stdio 替代开发方案中尚未实现的 Named Pipe 传输。
 
 每条消息限 128 KiB。请求 ID 为正整数；响应回传相同 ID。正常结果为对象或省略，无错误时 UI 才提交状态。公共错误只有脱敏的 `code` 和中文 `message`。普通宿主操作期限 20 秒、Flutter 请求期限 25 秒；连接为管理员授权预留宿主 90 秒、Flutter 95 秒，仍可随时取消。多个 UI 请求可同时等待，stdin 的写入与 flush 按帧串行。
 
 ```json
 {"id":1,"method":"hello","payload":{}}
-{"id":1,"result":{"protocolVersion":2,"coreVersion":"1.12.25-rainlink.1"}}
+{"id":1,"result":{"protocolVersion":2,"coreVersion":"1.12.25-rainlink.3"}}
 ```
 
 | 方法 | payload | 结果 / 行为 |
 | --- | --- | --- |
 | hello | 无 | 版本握手；恢复已退出宿主遗留的代理记录 |
 | validateRules | revision、rules | 校验并通过 bundled core check 验证受控路由，不替换活动会话；失败保留原配置 |
-| protect | id、username、password、可选 obfsPassword | 返回绑定用户和记录 ID 的密文；Windows 用 DPAPI，Linux 用 Secret Service 主密钥与 AES-GCM；混淆密码与认证一起加密 |
+| protect | id、username、password、可选 obfsPassword | 返回绑定用户和记录 ID 的密文；Windows 用 DPAPI，Linux/macOS 分别用 Secret Service/Keychain 主密钥与 AES-GCM；macOS 原生实现待验收；混淆密码与认证一起加密 |
 | reveal | id、cipher | 通过私有会话解密同一 ID 的凭据；仅用于订阅地址读取和更新时复用认证，不提供公开解密端口 |
 | connect | node 或 chain、mode、systemProxy、tun、可选 routing / runtimeSettings | 恰好一个主目标；冻结全部出站及网络设置，核心校验、启动、API 就绪、TUN 网卡和双栈路由确认、系统代理回读完成后返回会话快照 |
 | snapshot | 无 | 当前会话与核心真实计数；控制 API 失败返回 failed 并保留会话标识以便断开 |
 | connections | sessionId、可选 snapshotId / cursor | 获取实际连接的稳定快照，每页最多 32 条；next=-1 表示结束，快照有效期 30 秒 |
+| traffic | sessionId | 当前核心周期的累计字节及独立的实际出站、应用归属分区，包含已结束连接；不返回目的地址和完整进程路径 |
 | closeConnections | sessionId、connectionId 或 all=true | 校验活动会话；关闭后回读确认目标 ID 消失，不能用旧会话关闭新连接 |
 | logs | stream、after | 有界增量脱敏日志；返回宿主流标识、游标、more、dropped 和每批最多 16 条事件 |
 | clearLogs | 无 | 清空宿主日志并返回清空时游标；UI 串行提交后清理本地历史 |
@@ -70,7 +73,21 @@ telemetry 的 upload / download 为采样间隔计算的字节每秒，uploadTot
 
 出口查询为 `api.ip.sb/geoip`，失败后尝试 Cloudflare `cdn-cgi/trace` 和 `ipwho.is`；延迟请求为 `www.gstatic.com/generate_204`。单次请求限 5 秒，整轮探测限 20 秒。整轮期限耗尽时也提交失败结果；断开、旧会话或被新探测取消的结果不再提交。DNS 默认使用系统解析器，Hysteria2 / TUIC 的上游例外见上文。应用在前台且连接时每 2 秒采样、30 秒发起探测，切换页面继续采样，进入后台停止 UI 轮询，核心连接继续运行。流量在同一 SQLite 事务更新日汇总、15 分钟时段、归属及每会话检查点；累计计数迟到或重复不重复入账。后台、休眠、跨日的未采样间隔在下次观测时记入当前时段，不推测真实分布。
 
-流量归属采用保守规则：持续保持初始全局模式的会话归属主节点或代理链，持续直连的会话归属直连；规则模式与任何在线模式切换后均为未归属，避免把仍存活的旧路由连接算给新模式或节点。旧版日汇总没有时段和归属信息，保留总量但不生成虚假历史。详细时段保留 400 天，日汇总与会话检查点继续保留；活动页面只查询所选周期。
+### 流量归属接口 1
+
+`traffic` 只接受活动的 `sessionId`。Windows/macOS/Android 使用 `1.12.25-rainlink.3`，Linux 使用 `1.12.25-rainlink.4`；核心扩展在现有鉴权组内提供 `/rainlink/traffic`。公共响应如下，数值均为累计字节，`sampledAt` 为宿主 Unix 毫秒：
+
+```json
+{"version":1,"sessionId":"session-1","epoch":"core-epoch-1","sampledAt":1792483200000,"uploadTotal":100,"downloadTotal":300,"limited":false,"targets":[{"id":"node-1","kind":"node","name":"东京节点","upload":100,"download":300}],"applications":[{"id":"app-example","kind":"application","name":"chrome.exe","upload":100,"download":300}]}
+```
+
+`targets` 与 `applications` 是同一总流量的两种独立划分，每个分区的上下行分别等于总计，不能把两个排行相加。核心在 TCP/UDP 字节回调累计，并为每条流固定实际出站和应用计数器；已结束连接继续保留，在线切模式不会改变旧连接归属。宿主在连接时冻结标签与节点/代理链身份，分组规则归属实际节点。应用优先使用 Android package，否则只保留进程 basename，公共应用 ID 为该名称的 SHA-256；不会返回 PID、用户名或完整进程路径。进程查找不可用时继续统计为未知。
+
+未知出站为 `kind=unknown,id=unassigned,name=未归属流量`，未知应用为 `kind=application,id=unassigned,name=未识别应用`。核心每周期最多 2,048 个出站/应用组合及一个溢出计数器、127 个已识别应用，超限不丢字节而归入未知并返回 `limited=true`。公共响应最多 35 个出站、128 个应用。接口故障、版本不符、分区不守恒或身份无效均报错，本次不入账，不能降级为当前选中节点的推测。隔离测速宿主 `serve-test` 不开放此命令。
+
+SQLite schema 8 将日汇总、15 分钟时段、出站/应用归属、核心 epoch 和每个来源的累计检查点在同一事务保存。累计字节判定样本顺序；重复或较旧样本不重复入账，系统时钟回拨不冻结后续统计。单个来源计数回退/缺失、同一 session 更换 epoch、分区不守恒或数值溢出整笔回滚。旧版聚合检查点升级后的首个精确样本缺少来源基线，该间隔只记为未知，后续才按来源增量记录，不重写历史。
+
+每日归属按实际持久采样时刻的本地日历日记账；跨日、休眠或后台间隔不按秒推测分布。正常断开尝试最后采样；核心/宿主突然退出前尚未采集的字节无法补回。旧版日汇总保留总量，在两个排行中各自补足未知，不生成虚假时段。详细时段保留 400 天，日汇总和检查点继续保留；页面只查询所选周期。CSV 的“周期归属”与“周期应用归属”也是独立分区，见[真实流量归属验收](verification/traffic-accounting.md)。
 
 ## 退出与恢复
 
@@ -92,7 +109,7 @@ Flutter 超时会关闭管道，宿主在 EOF 时取消连接并清理；强制�
 
 GNOME 接管通过一次 dconf changeset 提交，恢复保留未设置项目，逐项 reset 前持久保存目标。宿主核对 dconf 服务身份和配置目录，拒绝 memory backend、客户端/服务配置目录不一致等无法可靠回读的环境。KDE 通过 KConfig 保留默认和未设置项，提交后独立回读并发出配置变更通知；不支持的字段修饰和锁定项拒绝接管。跨桌面恢复按日志中的后端执行，配置目录变化会保留日志并报错。
 
-Linux TUN 的公开开关尚未开放。`internal/linuxnet` 提供有界双栈观察、上游选择及歧义拒绝的规则删除；`internal/linuxtun` 提供 root 租约、持久记录与精确恢复。Linux 核心 `.2` 的显式 `rainlink_managed=true` 使用独占网卡及协议 242，避免上游区间删除；16 条规则由 guardian 恢复，version 2 记录兼容 version 1，见[托管核心验收](verification/linux-managed-tun-core.md)。内部 `watch-tun` 仅供 root 通过继承管道启动，pidfd 就绪后监控原进程死亡；恢复先停止绑定核心。普通 Manager 已接入真实密钥环、连接、遥测、模式、日志和确认恢复；真实 systemd 安装 / 升级 / 卸载及 VM 中 polkit 允许 / 拒绝通过，活动桌面弹窗、GUI 管理与分发仍待完成，见[权限日志验收](verification/linux-tun-logs.md)。macOS 宿主与 iOS 扩展尚未完成；Android 使用独立原生通道，范围见[Android 验收](verification/android.md)。
+Linux TUN 条件能力代码已接入首页，完整产品连接仍待验收，见[当前检查点](verification/linux-tun-product.md)。`internal/linuxnet` 提供有界双栈观察、上游选择及歧义拒绝的规则删除；`internal/linuxtun` 提供 root 租约、持久记录与精确恢复。Linux 核心自 `.2` 的显式 `rainlink_managed=true` 使用独占网卡及协议 242，避免上游区间删除；16 条规则由 guardian 恢复，version 2 记录兼容 version 1，见[托管核心验收](verification/linux-managed-tun-core.md)。内部 `watch-tun` 仅供 root 通过继承管道启动，pidfd 就绪后监控原进程死亡，恢复先停止绑定核心。普通 Manager 已接入真实密钥环、连接、遥测、模式、日志与确认恢复；此前原生验收见[权限日志](verification/linux-tun-logs.md)，后续活动桌面授权安装见[图形授权](verification/linux-graphical-service-management.md)。macOS 原生运行及 iOS 扩展仍未完成，Android 使用独立原生通道，见[Android 验收](verification/android.md)。
 
 
 ## Linux 权限服务安装管理（开发阶段）

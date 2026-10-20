@@ -1,0 +1,271 @@
+{
+  "fileKey": "unsaved-mvfj9942-5y6aivnm",
+  "source": "saved native SVG exports from the preceding Linux GUI stage, unchanged this stage",
+  "matched": 44,
+  "assets": [
+    {
+      "nodeId": "2:16478",
+      "path": "app/assets/icons/grid.svg",
+      "sha256": "3c742af2ba5c4319e58284723edabf1b7651e48b856cbfc8a8f6b5a1627a30c5",
+      "savedNativeExportMatch": true
+    },
+    {
+      "nodeId": "2:16484",
+      "path": "app/assets/icons/nodes.svg",
+      "sha256": "1322bc073b06a643f472d201b5a4e299523084968bd22fc2647c833b081ff0cb",
+      "savedNativeExportMatch": true
+    },
+    {
+      "nodeId": "2:16490",
+      "path": "app/assets/icons/profile.svg",
+      "sha256": "ed87cd05a3313e28bcc1ce05024808dfa865b4358798f6785841f60ff9e7137d",
+      "savedNativeExportMatch": true
+    },
+    {
+      "nodeId": "2:16494",
+      "path": "app/assets/icons/rules.svg",
+      "sha256": "5123d0bb735adc0ae548c680033cf3506d4e96927f93681540213d45000807a2",
+      "savedNativeExportMatch": true
+    },
+    {
+      "nodeId": "2:16500",
+      "path": "app/assets/icons/connections.svg",
+      "sha256": "7830dfed420dc04ec455f3c6e54fee8c361077ef528e4bb565f4fd38cdbe4cde",
+      "savedNativeExportMatch": true
+    },
+    {
+      "nodeId": "2:16503",
+      "path": "app/assets/icons/chart.svg",
+      "sha256": "7df3d561072cc64d4b165243b0177d900f6bd86acc8c8eb6686d0dfceb875c79",
+      "savedNativeExportMatch": true
+    },
+    {
+      "nodeId": "2:16506",
+      "path": "app/assets/icons/terminal.svg",
+      "sha256": "c0c7cb1e7069c55bbc6a408809e71e1c426e41cbc1f4e52e21ed8c9db2868322",
+      "savedNativeExportMatch": true
+    },
+    {
+      "nodeId": "2:16510",
+      "path": "app/assets/icons/settings.svg",
+      "sha256": "98c3560ee32a3a9fd321b3e709865500f93e8b464e52661b9015e99603cfc428",
+      "savedNativeExportMatch": true
+    },
+    {
+      "nodeId": "2:16514",
+      "path": "app/assets/icons/search.svg",
+      "sha256": "bbaf43a8562f89f526d3457864089d3084c8c5fb94289e96ba9f5acbc375d6f9",
+      "savedNativeExportMatch": true
+    },
+    {
+      "nodeId": "2:16518",
+      "path": "app/assets/icons/chevron_right.svg",
+      "sha256": "8461762bf55faed5c8570652e6a471821a4eeb06f0ef6c40b5669edefa375b52",
+      "savedNativeExportMatch": true
+    },
+    {
+      "nodeId": "2:16521",
+      "path": "app/assets/icons/chevron_down.svg",
+      "sha256": "d3701ce3d8443a6cf2b2752adbf09382dfaf18d7713933d75f4f1400cee9ea39",
+      "savedNativeExportMatch": true
+    },
+    {
+      "nodeId": "2:16524",
+      "path": "app/assets/icons/plus.svg",
+      "sha256": "d0754e215bec82b30ed71eb77db8176fe73498b2bfd1c1599ba371c86355abde",
+      "savedNativeExportMatch": true
+    },
+    {
+      "nodeId": "2:16527",
+      "path": "app/assets/icons/check.svg",
+      "sha256": "791e32fd0799693feeb2c788f895e196888b2475445c115cf4b1f2191cc4d1ad",
+      "savedNativeExportMatch": true
+    },
+    {
+      "nodeId": "2:16530",
+      "path": "app/assets/icons/close.svg",
+      "sha256": "0e44cfeb04317ecbd0216199b61cf940650cc394937714712f23e9b0be30e32d",
+      "savedNativeExportMatch": true
+    },
+    {
+      "nodeId": "2:16533",
+      "path": "app/assets/icons/star.svg",
+      "sha256": "292e8e3f06a882537616d73e0bd63025111e3347bf067c5dc33fdc3e839918b2",
+      "savedNativeExportMatch": true
+    },
+    {
+      "nodeId": "2:16536",
+      "path": "app/assets/icons/power.svg",
+      "sha256": "7bdfc9859858a6679bcd4c66315e269947a50f4e23ed3e6ce287110521320ebf",
+      "savedNativeExportMatch": true
+    },
+    {
+      "nodeId": "2:16539",
+      "path": "app/assets/icons/download.svg",
+      "sha256": "541315177cfb8c35a8325e14c0f9c7ae696e377c099ab366fd77cda424dbe84d",
+      "savedNativeExportMatch": true
+    },
+    {
+      "nodeId": "2:16542",
+      "path": "app/assets/icons/upload.svg",
+      "sha256": "180537c624023c1f773ceda41dee3ed55c76fd480b9c2a44fa5f0adf0b4cf90c",
+      "savedNativeExportMatch": true
+    },
+    {
+      "nodeId": "2:16545",
+      "path": "app/assets/icons/speed.svg",
+      "sha256": "027ab4ed348b4c421ca9ac1020e470969a83d7b4984f06bcdf62896bebcf74d9",
+      "savedNativeExportMatch": true
+    },
+    {
+      "nodeId": "2:16549",
+      "path": "app/assets/icons/globe.svg",
+      "sha256": "330d3b0685e8526cea71a977e3f7ad34dc9534c58db7991b12b9943fb74d2c26",
+      "savedNativeExportMatch": true
+    },
+    {
+      "nodeId": "2:16553",
+      "path": "app/assets/icons/shield.svg",
+      "sha256": "b310ca7c4045f37180da9edb016e5ac30efded5e560346890b9f32c0ac6d1d46",
+      "savedNativeExportMatch": true
+    },
+    {
+      "nodeId": "2:16557",
+      "path": "app/assets/icons/bell.svg",
+      "sha256": "761ec69516ea6688b9bf0b1cf79ccda75bf92971541b381aa56dedc00cd6ff3b",
+      "savedNativeExportMatch": true
+    },
+    {
+      "nodeId": "2:16560",
+      "path": "app/assets/icons/sun.svg",
+      "sha256": "eff8943446a80324e4c24fc6be5d618d106a362859b59e3f92d64353dfb5edae",
+      "savedNativeExportMatch": true
+    },
+    {
+      "nodeId": "2:16564",
+      "path": "app/assets/icons/moon.svg",
+      "sha256": "41d8ce698a4f70958db0e66343652a6977c6e11e1233aa323039fd476ff5c7c2",
+      "savedNativeExportMatch": true
+    },
+    {
+      "nodeId": "2:16567",
+      "path": "app/assets/icons/refresh.svg",
+      "sha256": "05ee43f1ede9f058df6cff763afa9b1810a21829920529ca0d65c415539209e8",
+      "savedNativeExportMatch": true
+    },
+    {
+      "nodeId": "2:16570",
+      "path": "app/assets/icons/qr.svg",
+      "sha256": "2c99ae98883ca67056bb82efd2006575a4ae7bb693bb353245d0b38b3ee10235",
+      "savedNativeExportMatch": true
+    },
+    {
+      "nodeId": "2:16573",
+      "path": "app/assets/icons/link.svg",
+      "sha256": "f7caba95d08f1f9796d4d4f186d4e433a45a14a687e6427d90e550b30bdd6796",
+      "savedNativeExportMatch": true
+    },
+    {
+      "nodeId": "2:16576",
+      "path": "app/assets/icons/copy.svg",
+      "sha256": "9a4b70d01a1a808ac7b39c1853af9a84bde7414a40fb0108fc24a49320b7c654",
+      "savedNativeExportMatch": true
+    },
+    {
+      "nodeId": "2:16580",
+      "path": "app/assets/icons/more.svg",
+      "sha256": "7413c14ad2dd4a768796ca789ac9db5356df3583396c6d0897a083167028f349",
+      "savedNativeExportMatch": true
+    },
+    {
+      "nodeId": "2:16585",
+      "path": "app/assets/icons/clock.svg",
+      "sha256": "073f9e636b873d122c6ffd75c56601ef41937766ea6668588b645ce07008b1e9",
+      "savedNativeExportMatch": true
+    },
+    {
+      "nodeId": "2:16589",
+      "path": "app/assets/icons/folder.svg",
+      "sha256": "5ba08b799a7a72ce1675e0eb49ef89cc42569b71489d01feb43630fe87f98817",
+      "savedNativeExportMatch": true
+    },
+    {
+      "nodeId": "2:16592",
+      "path": "app/assets/icons/arrow_right.svg",
+      "sha256": "7feae3042432015a36e2251d033513f819a239af3fbc6004335f0f2b63b6ce66",
+      "savedNativeExportMatch": true
+    },
+    {
+      "nodeId": "2:16595",
+      "path": "app/assets/icons/laptop.svg",
+      "sha256": "f5bedf0546745b973e8556d9f98cd4f832f3b6c66e095d80cdf3cef245a1ee1b",
+      "savedNativeExportMatch": true
+    },
+    {
+      "nodeId": "2:16599",
+      "path": "app/assets/icons/wifi.svg",
+      "sha256": "10f33922993e24c6db4b93fa7313554c5d4adee5d3379a053ab369f89975198a",
+      "savedNativeExportMatch": true
+    },
+    {
+      "nodeId": "2:16603",
+      "path": "app/assets/icons/rain.svg",
+      "sha256": "c68253560af537ce1df009fa4fdaabdc210c8355a8e764c2283da9c8fc9cea8c",
+      "savedNativeExportMatch": true
+    },
+    {
+      "nodeId": "2:16609",
+      "path": "app/assets/brand/mark.svg",
+      "sha256": "ba9f8fdd784e5c7cdc3f603943c3db05e027be6896e1442c8f240c426873ce15",
+      "savedNativeExportMatch": true
+    },
+    {
+      "nodeId": "25:57527",
+      "path": "app/assets/flags/cn.svg",
+      "sha256": "e92e178ff143a98e6bb9bf1e4237f02625ac97b34603bf4807db144568865a01",
+      "savedNativeExportMatch": true
+    },
+    {
+      "nodeId": "25:57535",
+      "path": "app/assets/flags/jp.svg",
+      "sha256": "963b279a9f8c41c0045876f98c9577631225d763f07825e00a18f01b26510400",
+      "savedNativeExportMatch": true
+    },
+    {
+      "nodeId": "25:57539",
+      "path": "app/assets/flags/sg.svg",
+      "sha256": "8e68845cf583c074e7f2f5e2dda466c70385c70061b4104685ea050137d125fc",
+      "savedNativeExportMatch": true
+    },
+    {
+      "nodeId": "25:57550",
+      "path": "app/assets/flags/us.svg",
+      "sha256": "63d1a2c77d3e35e7ddb68da1f0e3d70c4b11cbf37f604e70aadbb1d777692827",
+      "savedNativeExportMatch": true
+    },
+    {
+      "nodeId": "25:57581",
+      "path": "app/assets/flags/gb.svg",
+      "sha256": "e266acfbc26e1cd1f9f40d55ebcd74a528b0fb78ad48cc2f0412069599ae7fd2",
+      "savedNativeExportMatch": true
+    },
+    {
+      "nodeId": "25:57588",
+      "path": "app/assets/flags/de.svg",
+      "sha256": "e13d0a45ad4cbbc1602fa5092fe3f629cfb281ec89ba7b441b3c2bbf8ee74938",
+      "savedNativeExportMatch": true
+    },
+    {
+      "nodeId": "25:57593",
+      "path": "app/assets/flags/nl.svg",
+      "sha256": "0e9f93c87774cd48f184d4ec774bda3f2afb5f24c2dba6f4140af8e5af918858",
+      "savedNativeExportMatch": true
+    },
+    {
+      "nodeId": "59:44535",
+      "path": "app/assets/icons/back.svg",
+      "sha256": "801e21c14d9d6d6ac54115a081ad0aced2428311ad8a843c5929957086858564",
+      "savedNativeExportMatch": true
+    }
+  ]
+}

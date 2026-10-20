@@ -1,0 +1,11 @@
+{
+  "artifacts": [
+    {
+      "path": "build/RainLink-0.1.0+4-android-qr-import-debug-preview.apk",
+      "sha256": "cd0b904463eeefe8265320f0a52b110bc1fde777a5c13091e2be75c9f3523008",
+      "bytes": 268934428,
+      "scope": "Android debug-signed dual ABI preview; exact normal APK used in camera acceptance"
+    }
+  ],
+  "visualFixtures": 32
+}

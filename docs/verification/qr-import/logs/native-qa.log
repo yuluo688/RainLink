@@ -1,0 +1,8 @@
+installing_final_normal_apk_on_disposable_avd
+native_permission_denied_returns_to_form
+real_camera_decodes_invalid_qr_with_safe_error
+camera_pauses_in_background_and_resumes
+real_http_qr_previews_then_persists_ungrouped_with_encrypted_credentials
+real_subscription_qr_fetches_once_after_confirm_and_retains_metadata
+normal_app_restart_retains_subscription_and_grouping
+{"passed": true, "avd": "RainLink_QR_QA", "serial": "127.0.0.1:5585", "apk": "app/build/app/outputs/apk/debug/app-debug.apk", "apkSha256": "cd0b904463eeefe8265320f0a52b110bc1fde777a5c13091e2be75c9f3523008", "scope": "normal main.dart app; actual CameraX/MLKit virtualscene frames; disposable AVD", "realDevice": false, "events": ["native_permission_denied_returns_to_form", "real_camera_decodes_invalid_qr_with_safe_error", "camera_pauses_in_background_and_resumes", "real_http_qr_previews_then_persists_ungrouped_with_encrypted_credentials", "real_subscription_qr_fetches_once_after_confirm_and_retains_metadata", "normal_app_restart_retains_subscription_and_grouping"], "localSubscriptionRequests": 1, "cameraReleased": true, "applicationStopped": true}

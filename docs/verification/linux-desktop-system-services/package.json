@@ -1,0 +1,20 @@
+{
+  "version": "0.1.0+4",
+  "manifest": "/work/RainLink/app/build/linux/x64/release/bundle/rainlink-bundle.json",
+  "entries": 77,
+  "coreVersion": "1.12.25-rainlink.2",
+  "coreSha256": "640e5293d90b94c71318031284e65cf8121d99ee9c06482f021ed77c9f3fa96d",
+  "hostSha256": "3c94988871e41f58fcfa486b7c58ce749b1b2cac6a217ffa9c1cf586f46394e4",
+  "applicationSha256": "c5d02646e64f0bec9eaf8275353d8d259197978287dcd6c3bf55e76391b5b24a",
+  "aotSha256": "cc33eed2b3ec495a3cd2906666cd483f058b95f03bc71cd71dee7acb2658b4a2",
+  "engineSha256": "2c9c1bae6de13a5dde00e4870b83ec4895830867bfcd2cc519ad54c312a9bfb2",
+  "releaseEngineVerified": true,
+  "packagedAssetsVerified": 55,
+  "kdeHelperIncluded": true,
+  "archive": "/work/RainLink/build/RainLink-linux-x64-desktop-services.tar.xz",
+  "bytes": 32237392,
+  "sha256": "dbd9e195d92842d0bdb8134f8d75b27bc1b03054aacf5b88b44fb4796749659d",
+  "perFileDigestVerified": true,
+  "permissionsVerified": true,
+  "userDatabaseIncluded": false
+}

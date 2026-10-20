@@ -1,0 +1,49 @@
+{
+  "fileKey": "unsaved-mvfj9942-5y6aivnm",
+  "figmaMutated": false,
+  "nativeSvgExportsIdentical": 7,
+  "assets": [
+    {
+      "name": "grid",
+      "runtime": "app/assets/icons/grid.svg",
+      "identical": true,
+      "sha256": "3c742af2ba5c4319e58284723edabf1b7651e48b856cbfc8a8f6b5a1627a30c5"
+    },
+    {
+      "name": "nodes",
+      "runtime": "app/assets/icons/nodes.svg",
+      "identical": true,
+      "sha256": "1322bc073b06a643f472d201b5a4e299523084968bd22fc2647c833b081ff0cb"
+    },
+    {
+      "name": "profile",
+      "runtime": "app/assets/icons/profile.svg",
+      "identical": true,
+      "sha256": "ed87cd05a3313e28bcc1ce05024808dfa865b4358798f6785841f60ff9e7137d"
+    },
+    {
+      "name": "chart",
+      "runtime": "app/assets/icons/chart.svg",
+      "identical": true,
+      "sha256": "7df3d561072cc64d4b165243b0177d900f6bd86acc8c8eb6686d0dfceb875c79"
+    },
+    {
+      "name": "settings",
+      "runtime": "app/assets/icons/settings.svg",
+      "identical": true,
+      "sha256": "98c3560ee32a3a9fd321b3e709865500f93e8b464e52661b9015e99603cfc428"
+    },
+    {
+      "name": "download",
+      "runtime": "app/assets/icons/download.svg",
+      "identical": true,
+      "sha256": "541315177cfb8c35a8325e14c0f9c7ae696e377c099ab366fd77cda424dbe84d"
+    },
+    {
+      "name": "mark",
+      "runtime": "app/assets/brand/mark.svg",
+      "identical": true,
+      "sha256": "ba9f8fdd784e5c7cdc3f603943c3db05e027be6896e1442c8f240c426873ce15"
+    }
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "apk": "app\\build\\app\\outputs\\apk\\debug\\app-debug.apk",
+  "bytes": 213510959,
+  "sha256": "9be22c402dc7930a519c8e7e93a93920c50df4e5b501bef273637d31815438db",
+  "scope": "local debug preview; not a production signed release",
+  "libraries": {
+    "lib/arm64-v8a/libVkLayer_khronos_validation.so": {
+      "sha256": "3a1ea1df30a95879c3033ba7f29ae2c2bf5b9210ee7606cdf452eb1a9d935fff",
+      "loadAlignments": [
+        65536,
+        65536,
+        65536,
+        65536
+      ],
+      "compressed": false
+    },
+    "lib/arm64-v8a/libflutter.so": {
+      "sha256": "5f156ee7b1c9769fbb552055185b66101b20a7a1b6d6df0013985945a7dcabcb",
+      "loadAlignments": [
+        65536,
+        65536,
+        65536,
+        65536
+      ],
+      "compressed": false
+    },
+    "lib/arm64-v8a/librainlink.so": {
+      "sha256": "a792f4cba22552437eec66d40a9a5ff940a268ce1054fce830f9b3b622645775",
+      "loadAlignments": [
+        16384,
+        16384,
+        16384,
+        16384
+      ],
+      "compressed": false
+    },
+    "lib/arm64-v8a/libsqlite3.so": {
+      "sha256": "33714d2b2c3522759e636cc999bb4b9080aacdf35eb261a39e68bb09197e4fc7",
+      "loadAlignments": [
+        16384,
+        16384,
+        16384
+      ],
+      "compressed": false
+    },
+    "lib/x86_64/libflutter.so": {
+      "sha256": "8909ac1ff101eb7de670d0aff542002055af1d590c9083d75487c151eee1a1a2",
+      "loadAlignments": [
+        65536,
+        65536,
+        65536,
+        65536
+      ],
+      "compressed": false
+    },
+    "lib/x86_64/librainlink.so": {
+      "sha256": "83c22697c6eb93ce3b3447c5157bb897536c66bcb299a4dd95d350bc3b567922",
+      "loadAlignments": [
+        16384,
+        16384,
+        16384,
+        16384
+      ],
+      "compressed": false
+    },
+    "lib/x86_64/libsqlite3.so": {
+      "sha256": "e4370ad80787c115ed1daede018854b73bc47a774312a0e8be4ece4900a65cb9",
+      "loadAlignments": [
+        16384,
+        16384,
+        16384
+      ],
+      "compressed": false
+    }
+  },
+  "coreBuild": {
+    "coreVersion": "1.12.25-rainlink.1",
+    "sourceSum": "h1:zg7RV4CCRsSelCfMTlQWiFvZE4gVyCVgwQWkfQWXggs=",
+    "toolchain": "go1.25.5",
+    "recipe": {
+      "schema": 1,
+      "gomobileVersion": "v0.1.8",
+      "gomobileSum": "h1:vXgoN0pjsMONAaYCTdsKBX2T1kxuS7sbT/mZ7PElGoo=",
+      "ndkVersion": "27.0.12077973",
+      "androidApi": 29,
+      "cgoAlignment": {
+        "source": "src/cmd/cgo/out.go",
+        "sourceSha256": "3d05dfcfebb4ee9d3b04e08a3ff6b45401abab1ce8140673f35485a190ce8948"
+      },
+      "targets": [
+        "android/arm64",
+        "android/amd64"
+      ],
+      "tags": [
+        "with_gvisor",
+        "with_quic",
+        "with_utls",
+        "with_clash_api",
+        "with_conntrack"
+      ]
+    },
+    "cgo": {
+      "recipe": {
+        "toolchain": "go1.25.5",
+        "sourceSha256": "3d05dfcfebb4ee9d3b04e08a3ff6b45401abab1ce8140673f35485a190ce8948",
+        "patchedSourceSha256": "540c6c534c447d9172c83ac31307b94808fcdfffbfc3e24325f3c3391d4a6067",
+        "wrapperSourceSha256": "c3adafccd382d1aaad0b7af3d53fb627fed3c015f556782f2db8d3a6177bdc4b"
+      },
+      "compilerSha256": "f027b53f8707e3620bfbcef992d211d322d8483178d2cd2e3442bf133dcd4d8c",
+      "wrapperSha256": "60061067d84a972abf05c4107f54af79755e90f812bb8151237b6afa10d142d3"
+    },
+    "aarSha256": "8659fc680fdd4ddcd6bd76e89b0c2ce1b4bc17a2988b70b9f669896fed75a856",
+    "libraries": {
+      "jni/arm64-v8a/librainlink.so": {
+        "sha256": "b0274643f151233b874004674cef1e959a07e53df39029620e124a245390ba28",
+        "loadAlignments": [
+          16384,
+          16384,
+          16384,
+          16384
+        ]
+      },
+      "jni/x86_64/librainlink.so": {
+        "sha256": "8084fabeca5cbcc5af1eebc4e4c1e13aa4498b3eb599ba9508d41612b6c8f6e8",
+        "loadAlignments": [
+          16384,
+          16384,
+          16384,
+          16384
+        ]
+      }
+    }
+  },
+  "strippedCoreSha256": {
+    "lib/arm64-v8a/librainlink.so": "a792f4cba22552437eec66d40a9a5ff940a268ce1054fce830f9b3b622645775",
+    "lib/x86_64/librainlink.so": "83c22697c6eb93ce3b3447c5157bb897536c66bcb299a4dd95d350bc3b567922"
+  },
+  "stripToolSha256": "59895baccad99045955082080b018ae21fca4d520be918609d5dadcffbc2500f",
+  "embeddedCoreMatchesBuild": true,
+  "versionName": "0.1.0",
+  "versionCode": 4,
+  "crcVerified": true,
+  "zip16KBAligned": true,
+  "allLibraries16KBAligned": true,
+  "signatureVerified": true,
+  "debugSigned": true,
+  "debuggable": true,
+  "passed": true
+}

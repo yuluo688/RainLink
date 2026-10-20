@@ -1,0 +1,35 @@
+Oct 20 03:26:17 rainlink-disposable-qa systemd[1]: Starting polkit.service - Authorization Manager...
+Oct 20 03:26:17 rainlink-disposable-qa polkitd[785]: Started polkitd version 126
+Oct 20 03:26:18 rainlink-disposable-qa polkitd[785]: Loading rules from directory /etc/polkit-1/rules.d
+Oct 20 03:26:18 rainlink-disposable-qa polkitd[785]: Loading rules from directory /run/polkit-1/rules.d
+Oct 20 03:26:18 rainlink-disposable-qa polkitd[785]: Error opening rules directory: Error opening directory “/run/polkit-1/rules.d”: No such file or directory (g-file-error-quark, 4)
+Oct 20 03:26:18 rainlink-disposable-qa polkitd[785]: Loading rules from directory /usr/local/share/polkit-1/rules.d
+Oct 20 03:26:18 rainlink-disposable-qa polkitd[785]: Error opening rules directory: Error opening directory “/usr/local/share/polkit-1/rules.d”: No such file or directory (g-file-error-quark, 4)
+Oct 20 03:26:18 rainlink-disposable-qa polkitd[785]: Loading rules from directory /usr/share/polkit-1/rules.d
+Oct 20 03:26:18 rainlink-disposable-qa polkitd[785]: Finished loading, compiling and executing 3 rules
+Oct 20 03:26:18 rainlink-disposable-qa systemd[1]: Started polkit.service - Authorization Manager.
+Oct 20 03:26:18 rainlink-disposable-qa polkitd[785]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+Oct 20 03:30:09 rainlink-disposable-qa polkitd[785]: Reloading rules
+Oct 20 03:30:09 rainlink-disposable-qa polkitd[785]: Collecting garbage unconditionally...
+Oct 20 03:30:09 rainlink-disposable-qa polkitd[785]: Loading rules from directory /etc/polkit-1/rules.d
+Oct 20 03:30:09 rainlink-disposable-qa polkitd[785]: Loading rules from directory /run/polkit-1/rules.d
+Oct 20 03:30:09 rainlink-disposable-qa polkitd[785]: Error opening rules directory: Error opening directory “/run/polkit-1/rules.d”: No such file or directory (g-file-error-quark, 4)
+Oct 20 03:30:09 rainlink-disposable-qa polkitd[785]: Loading rules from directory /usr/local/share/polkit-1/rules.d
+Oct 20 03:30:09 rainlink-disposable-qa polkitd[785]: Error opening rules directory: Error opening directory “/usr/local/share/polkit-1/rules.d”: No such file or directory (g-file-error-quark, 4)
+Oct 20 03:30:09 rainlink-disposable-qa polkitd[785]: Loading rules from directory /usr/share/polkit-1/rules.d
+Oct 20 03:30:09 rainlink-disposable-qa polkitd[785]: Finished loading, compiling and executing 2 rules
+Oct 20 03:30:09 rainlink-disposable-qa systemd[1]: Stopping polkit.service - Authorization Manager...
+Oct 20 03:30:09 rainlink-disposable-qa systemd[1]: polkit.service: Deactivated successfully.
+Oct 20 03:30:09 rainlink-disposable-qa systemd[1]: Stopped polkit.service - Authorization Manager.
+Oct 20 03:30:09 rainlink-disposable-qa systemd[1]: polkit.service: Consumed 1.086s CPU time, 4.1M memory peak.
+Oct 20 03:30:09 rainlink-disposable-qa systemd[1]: Starting polkit.service - Authorization Manager...
+Oct 20 03:30:10 rainlink-disposable-qa polkitd[1977]: Started polkitd version 126
+Oct 20 03:30:10 rainlink-disposable-qa polkitd[1977]: Loading rules from directory /etc/polkit-1/rules.d
+Oct 20 03:30:10 rainlink-disposable-qa polkitd[1977]: Loading rules from directory /run/polkit-1/rules.d
+Oct 20 03:30:10 rainlink-disposable-qa polkitd[1977]: Error opening rules directory: Error opening directory “/run/polkit-1/rules.d”: No such file or directory (g-file-error-quark, 4)
+Oct 20 03:30:10 rainlink-disposable-qa polkitd[1977]: Loading rules from directory /usr/local/share/polkit-1/rules.d
+Oct 20 03:30:10 rainlink-disposable-qa polkitd[1977]: Error opening rules directory: Error opening directory “/usr/local/share/polkit-1/rules.d”: No such file or directory (g-file-error-quark, 4)
+Oct 20 03:30:10 rainlink-disposable-qa polkitd[1977]: Loading rules from directory /usr/share/polkit-1/rules.d
+Oct 20 03:30:10 rainlink-disposable-qa polkitd[1977]: Finished loading, compiling and executing 2 rules
+Oct 20 03:30:10 rainlink-disposable-qa systemd[1]: Started polkit.service - Authorization Manager.
+Oct 20 03:30:10 rainlink-disposable-qa polkitd[1977]: Acquired the name org.freedesktop.PolicyKit1 on the system bus

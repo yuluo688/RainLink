@@ -1,0 +1,171 @@
+{
+  "date": "2026-10-20",
+  "sourceInputs": 745,
+  "files": [
+    {
+      "path": "desktop-autostart-test.log",
+      "bytes": 377,
+      "sha256": "0e67ce418fbf628fc4b2a042915171db7f7ae90d30d1114cedfc9e3fada8b7a8"
+    },
+    {
+      "path": "desktop-stage-dpkg-audit.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "desktop-stage-dpkg-install.log",
+      "bytes": 6714,
+      "sha256": "5f29194729858fe755a945cbe58ef5f82aa6e2927df86a534d93a3f25c54cf2f"
+    },
+    {
+      "path": "desktop-stage-package-inputs.json",
+      "bytes": 10356,
+      "sha256": "50d567c13dbed3ee2b2d30febdd7dc9c9544e654d6796392832c06e153f512c6"
+    },
+    {
+      "path": "figma-assets.json",
+      "bytes": 7677,
+      "sha256": "f23e60e6cee9b2d02e24fc083630a96b0b071d4135c9de4f9ccf9669b8e95441"
+    },
+    {
+      "path": "figma-desktop-general.png",
+      "bytes": 79702,
+      "sha256": "f4173c9a0581b9442011febd5d2d128c3569ce1d92fb144f22a52c9d595f5631"
+    },
+    {
+      "path": "flutter-analyze.log",
+      "bytes": 202,
+      "sha256": "04caa794a869a2cf81d73fd20e172c42d61f0c21a01ed66cc78b5b864f6c6b21"
+    },
+    {
+      "path": "flutter-format.log",
+      "bytes": 50,
+      "sha256": "77e4c85c7157caa22ef2a5c90cf9f6432f922ef01701d98ad58ba6332729f431"
+    },
+    {
+      "path": "flutter-unit-tests.log",
+      "bytes": 92319,
+      "sha256": "9aad680acefabbb97b04a2263388a9e4cf1147fd351902ed2adb4c405746b315"
+    },
+    {
+      "path": "general-dark-panel.png",
+      "bytes": 109415,
+      "sha256": "4840d07c729c974a6b2644c7a3d92266452b4f630758d5bf4e1a8997c2423c55"
+    },
+    {
+      "path": "general-light-panel.png",
+      "bytes": 107999,
+      "sha256": "929e7572b5861713c2e8e2866b3b3a13f8ef345513bbf19dcc9e87dcb3072106"
+    },
+    {
+      "path": "general-no-panel.png",
+      "bytes": 111372,
+      "sha256": "96716ce0c9ff427dae9a857d69b8be8dda646f4c3970d0f54458f818144ea377"
+    },
+    {
+      "path": "integration-visual-final.log",
+      "bytes": 433,
+      "sha256": "fbe5b716bc65456590aa1046432e390ac944b1d6ebabf02c3cf1afbcdb053390"
+    },
+    {
+      "path": "native-before-fix.log",
+      "bytes": 716,
+      "sha256": "459efbd2b910df640e229516e081a15009df7b1acc0f1fadaa48479deb4ccbb1"
+    },
+    {
+      "path": "native-integration.json",
+      "bytes": 522,
+      "sha256": "eec1fbbd8ef2ba832c2e0256763dfe32e6627f6882b4e6c16ee73e4fffe12b6b"
+    },
+    {
+      "path": "native-no-bus.log",
+      "bytes": 254,
+      "sha256": "82c7f56dbecc019198faa28e34753d2928d85f8f8cc3ce3a651b4601055d26e8"
+    },
+    {
+      "path": "native-tests.log",
+      "bytes": 343,
+      "sha256": "6b99e6be70eaf4eaff6fec75330e61ec3a57db396c1deb62357e096b6c25acd0"
+    },
+    {
+      "path": "package.json",
+      "bytes": 971,
+      "sha256": "e2d4c522d621f31fe1e89f95d2dc706f50749b27d2b61c688b291dcf2cbcc492"
+    },
+    {
+      "path": "release-autostart-enabled.png",
+      "bytes": 109959,
+      "sha256": "e71c38eddc9e4ff15f0404dca82b940afa9ba3a77c20227c9f68a6569622ea39"
+    },
+    {
+      "path": "release-build.log",
+      "bytes": 219,
+      "sha256": "1aa2de712da0156ce6582a00557cbf7380164247ab29b0c5d620db0aa3c527eb"
+    },
+    {
+      "path": "release-general-before.png",
+      "bytes": 109543,
+      "sha256": "36f7d9fd8bde71b704983e249d0678b08152ba11ac6e452f53f3fa35954c15d0"
+    },
+    {
+      "path": "release-general-reopened.png",
+      "bytes": 108815,
+      "sha256": "8be1d3895a0c6b23f88d90548ccf74b327b46807820d02a977ca7673fab07b6e"
+    },
+    {
+      "path": "release-independent-notifications.png",
+      "bytes": 108812,
+      "sha256": "0d3315733eca3349253c8b30af4556a355152559ea2bc88a2f00c7b4f69662ab"
+    },
+    {
+      "path": "release-initial-compact.png",
+      "bytes": 97764,
+      "sha256": "c3b11b1b160c1ab3a3b41240e1cd5988966d725f046e335cff523ae54d62eb29"
+    },
+    {
+      "path": "release-launch-1.log",
+      "bytes": 1329,
+      "sha256": "a6cad4151c949b7874db35cdf9147796f6d720c1a5bc03e043e4ce7013bdc455"
+    },
+    {
+      "path": "release-launch-2.log",
+      "bytes": 539,
+      "sha256": "eadc847f9dc98327b724a666a7081896ef25b8c5cd7b2096d90a69060dff92ff"
+    },
+    {
+      "path": "release-reopened.png",
+      "bytes": 96929,
+      "sha256": "387ed8ec5a7ba7ae6f46faeee42fc5ed23f5e990c67587d8ba08614e45654741"
+    },
+    {
+      "path": "release-runtime.json",
+      "bytes": 786,
+      "sha256": "46ed7f3ad68e88d3b94499047e9d4daa2429b6ff866b6d5ee46ea437950e553d"
+    },
+    {
+      "path": "source-inputs.json",
+      "bytes": 121316,
+      "sha256": "9c1abb790d007a6ab4a87acbd64ed4fb0d093414dd8ba4323beaad699a653a57"
+    },
+    {
+      "path": "source-verification.json",
+      "bytes": 47,
+      "sha256": "5e902b8e931df8c3413eda17311bf50e70cc514377e746fca99b2af73458bbea"
+    },
+    {
+      "path": "system-notifications.png",
+      "bytes": 125991,
+      "sha256": "7562474d8b6666176a743f024303aad5f6c83e871a5868757bb41ae70628213c"
+    },
+    {
+      "path": "namespace-before-exit.log",
+      "bytes": 43,
+      "sha256": "fddb1d23d7de7c916df42b0b19ef62de61c322559c2bb0f8d23c9cdb93466518"
+    },
+    {
+      "path": "desktop_release_stage.py",
+      "bytes": 4266,
+      "sha256": "e4cf18a19b8563a635595eda43d6068d21c09e05fa1792bb9ef63f8b02dce663"
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "flutter": {
+    "passed": 539,
+    "failed": 0,
+    "skipped": 0,
+    "updateSuites": {
+      "android_update_installer_test.dart": 11,
+      "app_update_transport_test.dart": 11,
+      "android_update_handoff_test.dart": 3
+    },
+    "rawLog": {
+      "path": "build/qa/android-app-update/flutter-tests-delivery.jsonl",
+      "sha256": "2832b37aa17f426a556f0e2691da893a6351a8e87754bd6a0a045757d3f0f7ec"
+    }
+  },
+  "analyze": {
+    "issues": 0,
+    "log": {
+      "path": "docs/verification/android-app-update/logs/analyze-delivery.log",
+      "sha256": "5260dbb5aac9f2e5ce9ba767d12891d34114658b76566f13e118a888e720d3b1"
+    }
+  },
+  "format": {
+    "files": 15,
+    "changed": 0,
+    "log": {
+      "path": "docs/verification/android-app-update/logs/format-delivery.log",
+      "sha256": "bda54d48b16e016768bd3d174b2e4afdc4d6bf6503df4d5be5b7c864e0d32222"
+    }
+  },
+  "python": {
+    "syntaxFiles": 3
+  },
+  "visual": {
+    "runner": "Windows Flutter native debug runner",
+    "fixtureScreenshots": 44,
+    "mobileHardware": false,
+    "log": {
+      "path": "docs/verification/android-app-update/logs/visual-test-delivery.log",
+      "sha256": "93fc9edfe8a43a45430a2eecae135c2748e762419d2c6c25a1d9f0bfa82b7bb4"
+    }
+  },
+  "android": {
+    "kotlinUnitTests": 5,
+    "lintErrors": 0,
+    "lintWarnings": 7,
+    "warningIds": [
+      "GradleDependency",
+      "ObsoleteSdkInt",
+      "OldTargetApi",
+      "UseKtx"
+    ],
+    "nativeSafetyJUnitTests": 3,
+    "systemConsentJUnitTests": 2,
+    "realUpgradeScenarios": 1,
+    "realDevice": false,
+    "controlledDataPreserved": true,
+    "lightSystemBarsVerified": true,
+    "installEvidence": {
+      "path": "docs/verification/android-app-update/android/install-evidence.json",
+      "sha256": "5b4174192844045c7fdac2530e4b17870d19099adf42c6d23f8cff3c998480fe"
+    },
+    "build": {
+      "path": "docs/verification/android-app-update/logs/android-build-delivery.log",
+      "sha256": "09501aa4a755ab9ed93ebe12a1a6f928a9a4eff43058464fda6a13ef0d787871"
+    },
+    "qaLogs": {
+      "qa-cancel-delivery.log": {
+        "path": "docs/verification/android-app-update/logs/qa-cancel-delivery.log",
+        "sha256": "6557137d9fbb960c29c1dd49362dbaa271dff36a9c40c42f13da485336327512"
+      },
+      "qa-install-delivery.log": {
+        "path": "docs/verification/android-app-update/logs/qa-install-delivery.log",
+        "sha256": "97274da8048fc251b0d35b26b086b4cbfbc90e6317d65752bb6805ff985551a6"
+      },
+      "qa-permission-delivery.log": {
+        "path": "docs/verification/android-app-update/logs/qa-permission-delivery.log",
+        "sha256": "b4c3e5daf974a5269174d62c38732f9c1ea2d2a2bfd0ede12f29d58603749e72"
+      },
+      "qa-provision-delivery.log": {
+        "path": "docs/verification/android-app-update/logs/qa-provision-delivery.log",
+        "sha256": "e1e84a397c31704e4600a25a35cf661728ed0d3ec08fc5442deb6d19aedcefbf"
+      },
+      "qa-safety-delivery.log": {
+        "path": "docs/verification/android-app-update/logs/qa-safety-delivery.log",
+        "sha256": "bed11f3c0b930e7adea089b89e5c0beaae0603f00475da220733be933b9428d3"
+      }
+    }
+  },
+  "figma": {
+    "nativeSvgExportsIdentical": 4,
+    "figmaMutated": false
+  },
+  "apple": {
+    "nativeBuildVerified": false,
+    "reason": "No Mac environment available; iOS widget tests do not establish native behavior"
+  },
+  "linux": {
+    "publicTunEnabled": false
+  }
+}

@@ -1,0 +1,3 @@
+Hit:1 https://deb.debian.org/debian trixie InRelease
+Hit:2 https://deb.debian.org/debian-security trixie-security InRelease
+Reading package lists...

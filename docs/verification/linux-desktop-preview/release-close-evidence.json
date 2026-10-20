@@ -1,0 +1,11 @@
+{
+  "releaseExitCode": 0,
+  "proxySnapshotRestoredExactly": true,
+  "proxyMode": "'none'",
+  "windowClosedBy": "in-app top-right close button while connected",
+  "leftoverProcesses": {
+    "rainlink-host": [],
+    "sing-box": []
+  },
+  "coreListenersReleased": true
+}

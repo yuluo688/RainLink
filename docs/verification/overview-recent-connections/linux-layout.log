@@ -1,0 +1,9 @@
+Flutter assets will be downloaded from https://storage.flutter-io.cn. Make sure you trust this source!
+00:00 +0: loading /work/RainLink/app/integration_test/ui_alignment_test.dart
+Building Linux application...                                   
+✓ Built build/linux/x64/debug/bundle/rainlink
+00:00 +0: desktop renderer captures Figma and compact layouts with isolated fixtures
+00:21 +1: mobile primary pages render compactly with isolated fixtures
+00:30 +2: mobile enlarged IPv6 and statistics remain accessible
+00:31 +3: (tearDownAll)
+00:31 +3: All tests passed!

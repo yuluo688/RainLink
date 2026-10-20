@@ -1,0 +1,10 @@
+{
+  "executable": "unpacked Linux release",
+  "mode": "'manual'",
+  "proxyHost": "127.0.0.1",
+  "proxyPort": 34863,
+  "httpStatus": 200,
+  "responseBody": "RainLink Linux release GUI receipt",
+  "newAuthenticatedUpstreamReceipt": true,
+  "externalNetwork": "disabled; loopback namespace only"
+}

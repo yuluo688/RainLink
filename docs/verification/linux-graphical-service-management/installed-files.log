@@ -1,0 +1,7 @@
+755 root:root /var/lib/rainlink
+700 root:root /var/lib/rainlink/tun-install
+600 root:root /var/lib/rainlink/tun-install/manifest.json
+600 root:root /var/lib/rainlink/tun-install/install.lock
+755 root:root /usr/libexec/rainlink
+755 root:root /usr/libexec/rainlink/sing-box
+755 root:root /usr/libexec/rainlink/rainlink-host

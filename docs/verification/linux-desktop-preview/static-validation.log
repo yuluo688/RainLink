@@ -1,0 +1,22 @@
+..
+----------------------------------------------------------------------
+Ran 2 tests in 0.005s
+
+OK
+........
+----------------------------------------------------------------------
+Ran 8 tests in 0.080s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.029s
+
+OK
+Formatted 3 files (0 changed) in 0.23 seconds.
+Flutter assets will be downloaded from https://storage.flutter-io.cn. Make sure you trust this source!
+Analyzing app...                                                
+No issues found! (ran in 19.1s)
+Flutter assets will be downloaded from https://storage.flutter-io.cn. Make sure you trust this source!
+00:00 +0: loading /work/RainLink/app/test/design_assets_test.dart                                                                                                                                      00:01 +0: loading /work/RainLink/app/test/design_assets_test.dart                                                                                                                                      00:02 +0: loading /work/RainLink/app/test/design_assets_test.dart                                                                                                                                      00:03 +0: loading /work/RainLink/app/test/design_assets_test.dart                                                                                                                                      00:04 +0: loading /work/RainLink/app/test/design_assets_test.dart                                                                                                                                      00:05 +0: loading /work/RainLink/app/test/design_assets_test.dart                                                                                                                                      00:06 +0: loading /work/RainLink/app/test/design_assets_test.dart                                                                                                                                      00:07 +0: loading /work/RainLink/app/test/design_assets_test.dart                                                                                                                                      00:07 +0: every bundled Figma SVG decodes and paints visible pixels                                                                                                                                    00:07 +1: every bundled Figma SVG decodes and paints visible pixels                                                                                                                                    00:07 +1: compact switch preserves hit target, keyboard and semantics                                                                                                                                  00:07 +2: compact switch preserves hit target, keyboard and semantics                                                                                                                                  00:07 +2: unavailable capture switch cannot toggle by pointer or semantics                                                                                                                             00:07 +3: unavailable capture switch cannot toggle by pointer or semantics                                                                                                                             00:07 +3: All tests passed!                                                                                                                                                                            
+LINUX_STATIC_AND_ASSET_VALIDATION_COMPLETED

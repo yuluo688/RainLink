@@ -1,0 +1,20 @@
+{
+  "preview": {
+    "path": "build/RainLink-0.1.0+4-android-app-update-ui-debug-preview.apk",
+    "bytes": 268946375,
+    "sha256": "d85a514c3f3b15f0801b733c602643e354d6aee298602a5bb5602c12f97dd460",
+    "version": "0.1.0+4",
+    "debugSigned": true
+  },
+  "qaOnlyCandidate": {
+    "versionName": "0.1.0",
+    "versionCode": 5,
+    "apk": "build/qa/android-app-update/attempt-delivery/RainLink-0.1.0+5-android-universal.apk",
+    "bytes": 231077532,
+    "sha256": "bc81b7ff7abb274a6ef34f6b28b1e8916365e08c1134b77b463d1c43227609ad"
+  },
+  "copiedProductInputsVerified": 294,
+  "normalProductVersionUnchanged": true,
+  "productionReleasePublished": false,
+  "historicalPreviewsPreserved": true
+}

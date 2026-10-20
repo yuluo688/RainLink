@@ -1,0 +1,19 @@
+{
+  "version": "0.1.0+4",
+  "archive": "build/RainLink-windows-x64-traffic-accounting-preview.zip",
+  "entries": 79,
+  "bytes": 47121246,
+  "sha256": "0b431b00724502f9c8c91c5d863ae8f1e459c94e75ac84836eff9dd52b5a1eb8",
+  "zipCrcVerified": true,
+  "perFileDigestVerified": true,
+  "userDatabaseIncluded": false,
+  "coreSha256": "b80c854474ae697ddcd2b543dcda5c1aec5c2d56f971a8c1b1b0b5ceace074db",
+  "engineSha256": "78fa8913ccb75361b1976a62c1b6af6a066133450081a61e0d4d13028eb53bbb",
+  "hostSha256": "ee558ff3e6019fabbefcdb22576b9646ade09b797bd56707c6ba3b0af4b2dcaf",
+  "updaterSha256": "a36561e829d92e962fd48c1ab506a57dc0bed6372850b471ea0f313e5cf0a363",
+  "launcherSha256": "add6f18df433a5c93953ab94e2eb8578ae5aa66f751416ecc59b0baefbb1c935",
+  "releaseEngineVerified": true,
+  "coreVersion": "1.12.25-rainlink.3",
+  "applicationSha256": "789fb0ef2c46e85ef0116c495af008c1db101597595b28535bacf9a563ea8c98",
+  "aotSha256": "f4ad551ec088a651754cd2a75bbaae8134efd21cbc3711a589d83194a924e393"
+}

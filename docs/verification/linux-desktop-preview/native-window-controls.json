@@ -1,0 +1,29 @@
+{
+  "initial": {
+    "WINDOW": "4194307",
+    "X": "160",
+    "Y": "140",
+    "WIDTH": "960",
+    "HEIGHT": "640",
+    "SCREEN": "0"
+  },
+  "maximized": {
+    "WINDOW": "4194307",
+    "X": "0",
+    "Y": "0",
+    "WIDTH": "1600",
+    "HEIGHT": "1000",
+    "SCREEN": "0"
+  },
+  "restored": {
+    "WINDOW": "4194307",
+    "X": "160",
+    "Y": "140",
+    "WIDTH": "960",
+    "HEIGHT": "640",
+    "SCREEN": "0"
+  },
+  "minimizedState": "_NET_WM_STATE(ATOM) = _NET_WM_STATE_HIDDEN",
+  "captionButtonsVerified": true,
+  "pagesCaptured": 8
+}

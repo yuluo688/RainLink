@@ -1,0 +1,12 @@
+{
+  "reference": "build/qa/android-app-update/attempt-delivery/candidate-build.json",
+  "referenceInputCount": 294,
+  "checkedOriginalProductInputs": 292,
+  "productInputsUnchanged": true,
+  "differences": [],
+  "excludedFromProductComparison": {
+    "android/local.properties": "Generated SDK/build environment file; not a product source input",
+    "android/app/src/androidTest/java/dev/rainlink/rainlink/core/TunnelRequest.java": "Updated QA-only network client; source digest recorded in the new native evidence"
+  },
+  "newAccountingCodeScope": "integration/driver/native test client/host verification only"
+}

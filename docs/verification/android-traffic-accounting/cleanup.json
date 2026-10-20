@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "completedAtUtc": "2026-10-20T11:37:16.4195454Z",
+  "avdName": "RainLink_Traffic_QA",
+  "serial": "127.0.0.1:5593",
+  "privateAdbPort": 5047,
+  "emulatorExited": true,
+  "privateAdbExited": true,
+  "diskAndEvidencePreserved": true,
+  "defaultAdbAndOtherDevicesUntouched": true
+}

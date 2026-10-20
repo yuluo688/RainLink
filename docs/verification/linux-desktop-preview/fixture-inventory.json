@@ -1,0 +1,782 @@
+[
+  {
+    "path": "build/qa/linux-gui/output/layout-fixtures/groups-1440-dark-fixture.png",
+    "size": [
+      1440,
+      900
+    ],
+    "sha256": "9bf6a3d4d04957e45e9c0d9dadc1ce302348808daab33afb3147f994d2ebe9ff",
+    "data": "fixture",
+    "nativeRenderer": "linux"
+  },
+  {
+    "path": "build/qa/linux-gui/output/layout-fixtures/groups-960-dark-fixture.png",
+    "size": [
+      960,
+      640
+    ],
+    "sha256": "83847cbdd6dbdbccb6f705f5d885d7509f667c63a0074b40c8b80c3b6fce4a36",
+    "data": "fixture",
+    "nativeRenderer": "linux"
+  },
+  {
+    "path": "build/qa/linux-gui/output/layout-fixtures/groups-mobile-320-dark-fixture.png",
+    "size": [
+      320,
+      640
+    ],
+    "sha256": "93ee8470e37883806152ed4f11fe7a7de88063e3746ac42cf94b7fbc63ceb31c",
+    "data": "fixture",
+    "nativeRenderer": "linux"
+  },
+  {
+    "path": "build/qa/linux-gui/output/layout-fixtures/groups-mobile-320-light-fixture.png",
+    "size": [
+      320,
+      640
+    ],
+    "sha256": "b154d65d427f8be72b74925d5baa05b94fea380deb6050b94ee80caf6d77addc",
+    "data": "fixture",
+    "nativeRenderer": "linux"
+  },
+  {
+    "path": "build/qa/linux-gui/output/layout-fixtures/groups-mobile-393-dark-fixture.png",
+    "size": [
+      393,
+      852
+    ],
+    "sha256": "1d26c7295c18750bacb700ef416bb1a9c6e15ec078bb2a24fd4beca2adbfdaff",
+    "data": "fixture",
+    "nativeRenderer": "linux"
+  },
+  {
+    "path": "build/qa/linux-gui/output/layout-fixtures/groups-mobile-393-light-fixture.png",
+    "size": [
+      393,
+      852
+    ],
+    "sha256": "f3a834347b38beba556550d7c1a2a99e721559bdbf6a71f676e37a9f8da97b25",
+    "data": "fixture",
+    "nativeRenderer": "linux"
+  },
+  {
+    "path": "build/qa/linux-gui/output/layout-fixtures/nodes-1440-dark-fixture.png",
+    "size": [
+      1440,
+      900
+    ],
+    "sha256": "fdf26f70eb3991f1a1418ebe295793d045302de3f8e57a472de84ec84377e368",
+    "data": "fixture",
+    "nativeRenderer": "linux"
+  },
+  {
+    "path": "build/qa/linux-gui/output/layout-fixtures/nodes-1440-light-fixture.png",
+    "size": [
+      1440,
+      900
+    ],
+    "sha256": "9280f200521d8c97f48b2a2e663ce2aaed4fe7e575a8e8b5deb4d83551f2b674",
+    "data": "fixture",
+    "nativeRenderer": "linux"
+  },
+  {
+    "path": "build/qa/linux-gui/output/layout-fixtures/nodes-960-dark-fixture.png",
+    "size": [
+      960,
+      640
+    ],
+    "sha256": "94b98b6cea524c0647d8c405f34208c39dee53e3bc2adb56418fcb6bdf6f80bd",
+    "data": "fixture",
+    "nativeRenderer": "linux"
+  },
+  {
+    "path": "build/qa/linux-gui/output/layout-fixtures/nodes-960-light-fixture.png",
+    "size": [
+      960,
+      640
+    ],
+    "sha256": "bde45e906cf711aa787d6f73f29bc41df849104a4725e099ff9be1ac707ec614",
+    "data": "fixture",
+    "nativeRenderer": "linux"
+  },
+  {
+    "path": "build/qa/linux-gui/output/layout-fixtures/nodes-mobile-320-dark-fixture.png",
+    "size": [
+      320,
+      640
+    ],
+    "sha256": "f73bd45ea309d55dbc5f101f32805fcc9725c747864814c5376a434b3156fe10",
+    "data": "fixture",
+    "nativeRenderer": "linux"
+  },
+  {
+    "path": "build/qa/linux-gui/output/layout-fixtures/nodes-mobile-320-light-fixture.png",
+    "size": [
+      320,
+      640
+    ],
+    "sha256": "2ba6ec40bdb88187ed105f43f597dcb3e4672e433c5e048e9226ad5d92e39a86",
+    "data": "fixture",
+    "nativeRenderer": "linux"
+  },
+  {
+    "path": "build/qa/linux-gui/output/layout-fixtures/nodes-mobile-393-dark-fixture.png",
+    "size": [
+      393,
+      852
+    ],
+    "sha256": "a8a14717b3153109893cb7124b50a456cd0972c3e4fbee0cefe01bf7f394351a",
+    "data": "fixture",
+    "nativeRenderer": "linux"
+  },
+  {
+    "path": "build/qa/linux-gui/output/layout-fixtures/nodes-mobile-393-light-fixture.png",
+    "size": [
+      393,
+      852
+    ],
+    "sha256": "69017d894b3a4ac4bb30fefe19b24c9538a1e6577ddbd2f19a96f559914b90c7",
+    "data": "fixture",
+    "nativeRenderer": "linux"
+  },
+  {
+    "path": "build/qa/linux-gui/output/layout-fixtures/overview-1440-dark-fixture.png",
+    "size": [
+      1440,
+      900
+    ],
+    "sha256": "a2d3712c765ddd8be6b633dade17d9fecfc078668c055fc06038dee0cfa16850",
+    "data": "fixture",
+    "nativeRenderer": "linux"
+  },
+  {
+    "path": "build/qa/linux-gui/output/layout-fixtures/overview-1440-light-fixture.png",
+    "size": [
+      1440,
+      900
+    ],
+    "sha256": "64c548c6e07d398f66eef24a66d559721c4d1e36d9ade402fefec1194acf2e8d",
+    "data": "fixture",
+    "nativeRenderer": "linux"
+  },
+  {
+    "path": "build/qa/linux-gui/output/layout-fixtures/overview-960-dark-fixture.png",
+    "size": [
+      960,
+      640
+    ],
+    "sha256": "769eb30bc18f24cece5569d01f42a1a76a213acd2d38c78aad0956b67229fa5b",
+    "data": "fixture",
+    "nativeRenderer": "linux"
+  },
+  {
+    "path": "build/qa/linux-gui/output/layout-fixtures/overview-960-light-fixture.png",
+    "size": [
+      960,
+      640
+    ],
+    "sha256": "b6dcabe74587155942863b2530a64a58fd26de0e4dcc1f4bb496eadc8635a369",
+    "data": "fixture",
+    "nativeRenderer": "linux"
+  },
+  {
+    "path": "build/qa/linux-gui/output/layout-fixtures/overview-mobile-320-dark-fixture.png",
+    "size": [
+      320,
+      640
+    ],
+    "sha256": "13dccef10ea96fee03b3c02ad5bfd830bac1bdae8fd6ab6aac206823f6d4f6cb",
+    "data": "fixture",
+    "nativeRenderer": "linux"
+  },
+  {
+    "path": "build/qa/linux-gui/output/layout-fixtures/overview-mobile-320-large-ipv6-fixture.png",
+    "size": [
+      320,
+      640
+    ],
+    "sha256": "d78721c559925b1fdb22fecbe00bedd808e847eae4326744525cab2bbee18779",
+    "data": "fixture",
+    "nativeRenderer": "linux"
+  },
+  {
+    "path": "build/qa/linux-gui/output/layout-fixtures/overview-mobile-320-large-summary-fixture.png",
+    "size": [
+      320,
+      640
+    ],
+    "sha256": "d78721c559925b1fdb22fecbe00bedd808e847eae4326744525cab2bbee18779",
+    "data": "fixture",
+    "nativeRenderer": "linux"
+  },
+  {
+    "path": "build/qa/linux-gui/output/layout-fixtures/overview-mobile-320-light-fixture.png",
+    "size": [
+      320,
+      640
+    ],
+    "sha256": "fd7961982f3fc3d255de26646848d3be75742370883a654826992eb2230c8142",
+    "data": "fixture",
+    "nativeRenderer": "linux"
+  },
+  {
+    "path": "build/qa/linux-gui/output/layout-fixtures/overview-mobile-393-dark-fixture.png",
+    "size": [
+      393,
+      852
+    ],
+    "sha256": "7cba094b685256e5eebad55b2152e4540449817819570361ec226a2dffd3a926",
+    "data": "fixture",
+    "nativeRenderer": "linux"
+  },
+  {
+    "path": "build/qa/linux-gui/output/layout-fixtures/overview-mobile-393-light-fixture.png",
+    "size": [
+      393,
+      852
+    ],
+    "sha256": "4538d60b4f4cf299e7455c20c423e01cf25e5cc3dcaf6fad6f3b286effe6a2b9",
+    "data": "fixture",
+    "nativeRenderer": "linux"
+  },
+  {
+    "path": "build/qa/linux-gui/output/layout-fixtures/settings-1440-dark-fixture.png",
+    "size": [
+      1440,
+      900
+    ],
+    "sha256": "dc5321f401579572179e26d57f3b683d122b7d86ea2b7b916db43884b6151b0b",
+    "data": "fixture",
+    "nativeRenderer": "linux"
+  },
+  {
+    "path": "build/qa/linux-gui/output/layout-fixtures/settings-960-dark-fixture.png",
+    "size": [
+      960,
+      640
+    ],
+    "sha256": "85b492cca05b4034a312a697c70b1f8a55b5e74a17d17c90140d6dc132688c05",
+    "data": "fixture",
+    "nativeRenderer": "linux"
+  },
+  {
+    "path": "build/qa/linux-gui/output/layout-fixtures/settings-mobile-320-dark-fixture.png",
+    "size": [
+      320,
+      640
+    ],
+    "sha256": "7249fac9773f719855e6164933c5e66a350e7098240d0d78e71801ebcdaaded8",
+    "data": "fixture",
+    "nativeRenderer": "linux"
+  },
+  {
+    "path": "build/qa/linux-gui/output/layout-fixtures/settings-mobile-320-light-fixture.png",
+    "size": [
+      320,
+      640
+    ],
+    "sha256": "3c6ceb2d36abda0275184457fc3323f56c196f5294449f2b6f8b235cbdb84a11",
+    "data": "fixture",
+    "nativeRenderer": "linux"
+  },
+  {
+    "path": "build/qa/linux-gui/output/layout-fixtures/settings-mobile-393-dark-fixture.png",
+    "size": [
+      393,
+      852
+    ],
+    "sha256": "d2366f1e4a328ec8a372991b89d713a86b4dd2774db89645ad8eee1dcba061bf",
+    "data": "fixture",
+    "nativeRenderer": "linux"
+  },
+  {
+    "path": "build/qa/linux-gui/output/layout-fixtures/settings-mobile-393-light-fixture.png",
+    "size": [
+      393,
+      852
+    ],
+    "sha256": "c14c065fe64cb9f08357270138e894293c7f5978eb77e32dfa050a68353a8c99",
+    "data": "fixture",
+    "nativeRenderer": "linux"
+  },
+  {
+    "path": "build/qa/linux-gui/output/layout-fixtures/traffic-1440-dark-fixture.png",
+    "size": [
+      1440,
+      900
+    ],
+    "sha256": "d4589186b8df00fa3600e842f35fc935fac30a785e798df13c9c94fe6a518d03",
+    "data": "fixture",
+    "nativeRenderer": "linux"
+  },
+  {
+    "path": "build/qa/linux-gui/output/layout-fixtures/traffic-1440-light-fixture.png",
+    "size": [
+      1440,
+      900
+    ],
+    "sha256": "50d531e3c458b0788fa9903b9d4bb53779c3251f10278f2a3938f982416fc884",
+    "data": "fixture",
+    "nativeRenderer": "linux"
+  },
+  {
+    "path": "build/qa/linux-gui/output/layout-fixtures/traffic-960-dark-fixture.png",
+    "size": [
+      960,
+      640
+    ],
+    "sha256": "277d23b30367873d279d614c0607d4770c06e5d49973adc5d8404a56eff985cd",
+    "data": "fixture",
+    "nativeRenderer": "linux"
+  },
+  {
+    "path": "build/qa/linux-gui/output/layout-fixtures/traffic-960-light-fixture.png",
+    "size": [
+      960,
+      640
+    ],
+    "sha256": "65db4eb9c4675145a829abd23f146aeb09f50228cadfe6e9c46cd3d5ca2dc060",
+    "data": "fixture",
+    "nativeRenderer": "linux"
+  },
+  {
+    "path": "build/qa/linux-gui/output/layout-fixtures/traffic-mobile-320-dark-fixture.png",
+    "size": [
+      320,
+      640
+    ],
+    "sha256": "68d503bafd5ff165c52e479b6849ec8c6edaf12c8b14993a2202496dee81944e",
+    "data": "fixture",
+    "nativeRenderer": "linux"
+  },
+  {
+    "path": "build/qa/linux-gui/output/layout-fixtures/traffic-mobile-320-light-fixture.png",
+    "size": [
+      320,
+      640
+    ],
+    "sha256": "35dedc338a91effa8c2e84918fffb9679b8929bc076512e39e1b7283fd221d9a",
+    "data": "fixture",
+    "nativeRenderer": "linux"
+  },
+  {
+    "path": "build/qa/linux-gui/output/layout-fixtures/traffic-mobile-393-dark-fixture.png",
+    "size": [
+      393,
+      852
+    ],
+    "sha256": "932949dfe45ed2eaad5a69723e3506e7d974b1bc983d4e0d2d07080e5521b539",
+    "data": "fixture",
+    "nativeRenderer": "linux"
+  },
+  {
+    "path": "build/qa/linux-gui/output/layout-fixtures/traffic-mobile-393-light-fixture.png",
+    "size": [
+      393,
+      852
+    ],
+    "sha256": "42c7af80e4c67e3864cf3df3c383bdfe6ead2597035e8e9942574bb45c7a17bf",
+    "data": "fixture",
+    "nativeRenderer": "linux"
+  },
+  {
+    "path": "build/qa/linux-gui/output/service-fixtures/service-authorizing-1440-dark-fixture.png",
+    "size": [
+      1440,
+      900
+    ],
+    "sha256": "8572d208842fbd2a54d150bcb54be4040d25fe884a4b2605845ddaff617c49f3",
+    "data": "fixture",
+    "nativeRenderer": "linux"
+  },
+  {
+    "path": "build/qa/linux-gui/output/service-fixtures/service-authorizing-1440-light-fixture.png",
+    "size": [
+      1440,
+      900
+    ],
+    "sha256": "8c3f7c780c2c46d41a8ad42c5dede6557296f35018c64208ba8c0745bc074235",
+    "data": "fixture",
+    "nativeRenderer": "linux"
+  },
+  {
+    "path": "build/qa/linux-gui/output/service-fixtures/service-authorizing-960-dark-fixture.png",
+    "size": [
+      960,
+      640
+    ],
+    "sha256": "74959c9a3b48c1558392a6b48d55a48b5cb9139fdc83fe1ed50451a5a27347a9",
+    "data": "fixture",
+    "nativeRenderer": "linux"
+  },
+  {
+    "path": "build/qa/linux-gui/output/service-fixtures/service-authorizing-960-light-fixture.png",
+    "size": [
+      960,
+      640
+    ],
+    "sha256": "dbd68b49c98ce80cb35ba0abb44ab28db4c0dc3f24df97988cf9722e87305ce4",
+    "data": "fixture",
+    "nativeRenderer": "linux"
+  },
+  {
+    "path": "build/qa/linux-gui/output/service-fixtures/service-cancelled-1440-dark-fixture.png",
+    "size": [
+      1440,
+      900
+    ],
+    "sha256": "c3068af9db8b651e1265db7e120c1350956b82eca7868a9ac38483a7c945568d",
+    "data": "fixture",
+    "nativeRenderer": "linux"
+  },
+  {
+    "path": "build/qa/linux-gui/output/service-fixtures/service-cancelled-1440-light-fixture.png",
+    "size": [
+      1440,
+      900
+    ],
+    "sha256": "aa7f4c47f35ab1d7bbd1ca547a4a02053360366703b1139350709f8862fb0a1b",
+    "data": "fixture",
+    "nativeRenderer": "linux"
+  },
+  {
+    "path": "build/qa/linux-gui/output/service-fixtures/service-cancelled-960-dark-fixture.png",
+    "size": [
+      960,
+      640
+    ],
+    "sha256": "1daa00ed1122b3a557403c839c536e2f266138c88e5de55a4514ea44d461db0c",
+    "data": "fixture",
+    "nativeRenderer": "linux"
+  },
+  {
+    "path": "build/qa/linux-gui/output/service-fixtures/service-cancelled-960-light-fixture.png",
+    "size": [
+      960,
+      640
+    ],
+    "sha256": "4bc4eed52fbbb47304a89588a875ba868ebe02a368c595431fc6d3c1ca8bd5d3",
+    "data": "fixture",
+    "nativeRenderer": "linux"
+  },
+  {
+    "path": "build/qa/linux-gui/output/service-fixtures/service-cancelling-1440-dark-fixture.png",
+    "size": [
+      1440,
+      900
+    ],
+    "sha256": "fd9b5d17b6f61e82d1ad42f8773ad7766f1b47516fe30b60099ab31fce5605ed",
+    "data": "fixture",
+    "nativeRenderer": "linux"
+  },
+  {
+    "path": "build/qa/linux-gui/output/service-fixtures/service-cancelling-1440-light-fixture.png",
+    "size": [
+      1440,
+      900
+    ],
+    "sha256": "9f2faf7f78ca858fed3ea0120d4dfdbd6d82c1a7e12adbe6b75586cb72a25daa",
+    "data": "fixture",
+    "nativeRenderer": "linux"
+  },
+  {
+    "path": "build/qa/linux-gui/output/service-fixtures/service-cancelling-960-dark-fixture.png",
+    "size": [
+      960,
+      640
+    ],
+    "sha256": "fed4620d301fc592103ea1f70a8699998cc6f71fcb534db9d23d2d0fbe78b3dc",
+    "data": "fixture",
+    "nativeRenderer": "linux"
+  },
+  {
+    "path": "build/qa/linux-gui/output/service-fixtures/service-cancelling-960-light-fixture.png",
+    "size": [
+      960,
+      640
+    ],
+    "sha256": "9ab5bbe6c7f8313581cd4f5b4b7cf0cc658ee320a3fb280fefe6d259e8e83086",
+    "data": "fixture",
+    "nativeRenderer": "linux"
+  },
+  {
+    "path": "build/qa/linux-gui/output/service-fixtures/service-confirmation-1440-dark-fixture.png",
+    "size": [
+      1440,
+      900
+    ],
+    "sha256": "e79ec2af2af3d20b5269ef1aaec5bf945f5176cf46b6dab4908ee35ce4045e05",
+    "data": "fixture",
+    "nativeRenderer": "linux"
+  },
+  {
+    "path": "build/qa/linux-gui/output/service-fixtures/service-confirmation-1440-light-fixture.png",
+    "size": [
+      1440,
+      900
+    ],
+    "sha256": "88e66c2a98bd9a75382176eb3c4f4e12cf076805071f56c2c017ce5d9bd169ce",
+    "data": "fixture",
+    "nativeRenderer": "linux"
+  },
+  {
+    "path": "build/qa/linux-gui/output/service-fixtures/service-confirmation-960-dark-fixture.png",
+    "size": [
+      960,
+      640
+    ],
+    "sha256": "a4ecea0ee4850154a630dfe940677f9bf517e9eb4b0a0abe81b274bb38cdf643",
+    "data": "fixture",
+    "nativeRenderer": "linux"
+  },
+  {
+    "path": "build/qa/linux-gui/output/service-fixtures/service-confirmation-960-light-fixture.png",
+    "size": [
+      960,
+      640
+    ],
+    "sha256": "ef1ba6849f5090a606b68a228248c5b0128bedd6776b916bf660de40708c0de4",
+    "data": "fixture",
+    "nativeRenderer": "linux"
+  },
+  {
+    "path": "build/qa/linux-gui/output/service-fixtures/service-core-page-1440-dark-fixture.png",
+    "size": [
+      1440,
+      900
+    ],
+    "sha256": "e09fdce741068b651f97f99ca713aeb2ce04c794930d87376aa8be941599c446",
+    "data": "fixture",
+    "nativeRenderer": "linux"
+  },
+  {
+    "path": "build/qa/linux-gui/output/service-fixtures/service-core-page-1440-light-fixture.png",
+    "size": [
+      1440,
+      900
+    ],
+    "sha256": "8c0b39738a95640fc462831768e1e8569a91bea5422685a2ed1c313e3891f91f",
+    "data": "fixture",
+    "nativeRenderer": "linux"
+  },
+  {
+    "path": "build/qa/linux-gui/output/service-fixtures/service-core-page-960-dark-fixture.png",
+    "size": [
+      960,
+      640
+    ],
+    "sha256": "d422dbb6e0604a04c19635c3ec7c348496a6d7690e2fd63001c7c6b3063157d6",
+    "data": "fixture",
+    "nativeRenderer": "linux"
+  },
+  {
+    "path": "build/qa/linux-gui/output/service-fixtures/service-core-page-960-light-fixture.png",
+    "size": [
+      960,
+      640
+    ],
+    "sha256": "41c29ce80a197f337707d65a729e1d700157021ad29ef5e078d4e2f4fa222f64",
+    "data": "fixture",
+    "nativeRenderer": "linux"
+  },
+  {
+    "path": "build/qa/linux-gui/output/service-fixtures/service-current-1440-dark-fixture.png",
+    "size": [
+      1440,
+      900
+    ],
+    "sha256": "04af0cfed5cfd7e663b21abe58037fe9becef2db2d8dc5e4cd0826c506044559",
+    "data": "fixture",
+    "nativeRenderer": "linux"
+  },
+  {
+    "path": "build/qa/linux-gui/output/service-fixtures/service-current-1440-light-fixture.png",
+    "size": [
+      1440,
+      900
+    ],
+    "sha256": "f9a06d69122bec4156a93d67d71b116d152eef293c171c1a4430b61d50f9a1b9",
+    "data": "fixture",
+    "nativeRenderer": "linux"
+  },
+  {
+    "path": "build/qa/linux-gui/output/service-fixtures/service-current-960-dark-fixture.png",
+    "size": [
+      960,
+      640
+    ],
+    "sha256": "76a8502ddfb8f129be6a76162248ae1173dc0175af0f4f3cf6bdbfda93ce661f",
+    "data": "fixture",
+    "nativeRenderer": "linux"
+  },
+  {
+    "path": "build/qa/linux-gui/output/service-fixtures/service-current-960-light-fixture.png",
+    "size": [
+      960,
+      640
+    ],
+    "sha256": "ed26ee139ee1743df090a3e0dab03e3b3760f5fd1323a7d5f825488ef547d4bb",
+    "data": "fixture",
+    "nativeRenderer": "linux"
+  },
+  {
+    "path": "build/qa/linux-gui/output/service-fixtures/service-different-1440-dark-fixture.png",
+    "size": [
+      1440,
+      900
+    ],
+    "sha256": "0b821df7feb747fe67499f823ab846d77495fc476b13b3fffa31453243446408",
+    "data": "fixture",
+    "nativeRenderer": "linux"
+  },
+  {
+    "path": "build/qa/linux-gui/output/service-fixtures/service-different-1440-light-fixture.png",
+    "size": [
+      1440,
+      900
+    ],
+    "sha256": "1158b6024b6892c56aac7a896a620de7719d01ac07c8020f4cd781219677999a",
+    "data": "fixture",
+    "nativeRenderer": "linux"
+  },
+  {
+    "path": "build/qa/linux-gui/output/service-fixtures/service-different-960-dark-fixture.png",
+    "size": [
+      960,
+      640
+    ],
+    "sha256": "2e66c2eb6020d3351bb0af339bd7e8ea7553ec95ab98ff475c206ab856b7f55f",
+    "data": "fixture",
+    "nativeRenderer": "linux"
+  },
+  {
+    "path": "build/qa/linux-gui/output/service-fixtures/service-different-960-light-fixture.png",
+    "size": [
+      960,
+      640
+    ],
+    "sha256": "a8530f87ca234559107a400b993fc6b13aa98fbc58dbc4265afbc1f3bbc9bf55",
+    "data": "fixture",
+    "nativeRenderer": "linux"
+  },
+  {
+    "path": "build/qa/linux-gui/output/service-fixtures/service-incomplete-1440-dark-fixture.png",
+    "size": [
+      1440,
+      900
+    ],
+    "sha256": "ec2e4a3a0b0c4cd9f51a7961da20c74d16eea5c58f4696a1a8e20a43db6f8440",
+    "data": "fixture",
+    "nativeRenderer": "linux"
+  },
+  {
+    "path": "build/qa/linux-gui/output/service-fixtures/service-incomplete-1440-light-fixture.png",
+    "size": [
+      1440,
+      900
+    ],
+    "sha256": "310d4c02ed7370408fde769842ac0d8884a4a0a29124d39a18d204e7e35b7bb1",
+    "data": "fixture",
+    "nativeRenderer": "linux"
+  },
+  {
+    "path": "build/qa/linux-gui/output/service-fixtures/service-incomplete-960-dark-fixture.png",
+    "size": [
+      960,
+      640
+    ],
+    "sha256": "b77efffc97d092c88e980a00c99e8bf0feb1d37dd23206c0a0da4fbd3e052de0",
+    "data": "fixture",
+    "nativeRenderer": "linux"
+  },
+  {
+    "path": "build/qa/linux-gui/output/service-fixtures/service-incomplete-960-light-fixture.png",
+    "size": [
+      960,
+      640
+    ],
+    "sha256": "19bf985a44f069056dca64a5b9a856156a22ecacf8f4065148d6fed8859b9e35",
+    "data": "fixture",
+    "nativeRenderer": "linux"
+  },
+  {
+    "path": "build/qa/linux-gui/output/service-fixtures/service-missing-1440-dark-fixture.png",
+    "size": [
+      1440,
+      900
+    ],
+    "sha256": "e09fdce741068b651f97f99ca713aeb2ce04c794930d87376aa8be941599c446",
+    "data": "fixture",
+    "nativeRenderer": "linux"
+  },
+  {
+    "path": "build/qa/linux-gui/output/service-fixtures/service-missing-1440-light-fixture.png",
+    "size": [
+      1440,
+      900
+    ],
+    "sha256": "8c0b39738a95640fc462831768e1e8569a91bea5422685a2ed1c313e3891f91f",
+    "data": "fixture",
+    "nativeRenderer": "linux"
+  },
+  {
+    "path": "build/qa/linux-gui/output/service-fixtures/service-missing-960-dark-fixture.png",
+    "size": [
+      960,
+      640
+    ],
+    "sha256": "fbe85aac0a835788a9555a52712867c25cc9759994cae3160148a8d016134696",
+    "data": "fixture",
+    "nativeRenderer": "linux"
+  },
+  {
+    "path": "build/qa/linux-gui/output/service-fixtures/service-missing-960-light-fixture.png",
+    "size": [
+      960,
+      640
+    ],
+    "sha256": "5ad300e3bb2d0838048e4986800a1af2ed385802199a062c0cd766c00b901b5e",
+    "data": "fixture",
+    "nativeRenderer": "linux"
+  },
+  {
+    "path": "build/qa/linux-gui/output/service-fixtures/service-unavailable-1440-dark-fixture.png",
+    "size": [
+      1440,
+      900
+    ],
+    "sha256": "c8db31102a6cbd1c0d7c09381634124bbf254bbc1890da18954e4b8ed95bdf77",
+    "data": "fixture",
+    "nativeRenderer": "linux"
+  },
+  {
+    "path": "build/qa/linux-gui/output/service-fixtures/service-unavailable-1440-light-fixture.png",
+    "size": [
+      1440,
+      900
+    ],
+    "sha256": "8dd9f98497aca07c8f1052900c4c8885633c33802dbc2ed1adb86361c7873e95",
+    "data": "fixture",
+    "nativeRenderer": "linux"
+  },
+  {
+    "path": "build/qa/linux-gui/output/service-fixtures/service-unavailable-960-dark-fixture.png",
+    "size": [
+      960,
+      640
+    ],
+    "sha256": "495d74c0053ee818de1121e0e1c29bdc025e207902fbe46ea592ec23d1b29268",
+    "data": "fixture",
+    "nativeRenderer": "linux"
+  },
+  {
+    "path": "build/qa/linux-gui/output/service-fixtures/service-unavailable-960-light-fixture.png",
+    "size": [
+      960,
+      640
+    ],
+    "sha256": "8189b98ff8d01c5d4b42f1109a4cd069a621da474cc9408c709bb7f1a24c8551",
+    "data": "fixture",
+    "nativeRenderer": "linux"
+  }
+]

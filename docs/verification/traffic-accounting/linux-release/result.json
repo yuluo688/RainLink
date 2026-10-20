@@ -1,0 +1,19 @@
+{
+  "archiveSha256": "0ce8bf4254bfddfd73f43a7005ef7c31f94705022ebc7a11dc9bee6fdd9ccc90",
+  "isolatedRoot": "/tmp/rainlink-accounting-release-f3nwhl9t",
+  "exitCodes": [
+    0,
+    0
+  ],
+  "packageBytesVerified": true,
+  "testMetadataExcluded": true,
+  "storedDataIsFixtureFromActualIntegrationCSV": true,
+  "linuxPublicTun": false,
+  "schema": 8,
+  "gtkCriticalOrWarning": false,
+  "implicitViewDiagnosticRetained": [
+    true,
+    true
+  ],
+  "completed": true
+}

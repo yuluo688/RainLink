@@ -1,0 +1,45 @@
+{
+  "scope": "Paused by user before product TUN connection acceptance",
+  "flutter": {
+    "success": 546
+  },
+  "linuxGo": {
+    "testEvents": {
+      "pass": 393,
+      "skip": 209
+    },
+    "packages": {
+      "skip": 5,
+      "pass": 14
+    }
+  },
+  "windowsGo": {
+    "testEvents": {
+      "pass": 141,
+      "skip": 28
+    },
+    "packages": {
+      "skip": 7,
+      "pass": 5
+    }
+  },
+  "linuxRelease": {
+    "path": "build/qa/linux-gui/tun-product/rainlink-preview.tar.xz",
+    "bytes": 32505460,
+    "sha256": "d3e9ea558ebec43fb187148f3bc2582fbbcbe4b1b5d34fb0c1f55359dcbb2683",
+    "defaultPreviewReplaced": false
+  },
+  "finalVmCleanupExitCode": 0,
+  "tunConnectedThroughProductUi": false,
+  "authorizationCancellationKernelRestored": true,
+  "pauseKernelRestored": true,
+  "afterFormatting": {
+    "flutterPassed": 546,
+    "flutterFailed": 0,
+    "analyzeIssues": 0,
+    "formatFiles": 84,
+    "formatChangedOnCheck": 0,
+    "driftRegenerated": true,
+    "releaseRebuilt": false
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "version": "1.12.25-rainlink.1",
+  "platform": "darwin-arm64",
+  "extensionTestsPlatform": "windows-amd64",
+  "moduleSum": "h1:zg7RV4CCRsSelCfMTlQWiFvZE4gVyCVgwQWkfQWXggs=",
+  "managedTun": false,
+  "managedTunTests": "not applicable",
+  "managedTunTestSha256": null,
+  "sourceArchiveSha256": "25914d25ebd4652779c041b9352959ad37e507026ba8e166bdc5448d23a2779a",
+  "licenseSha256": "650d5e3b99a446fb38e820fa87a49562e0c79eab868fff58618ac487a58e554c",
+  "recipeSha256": "8701b60eff66545638073d6c42d04c3d86a4ac716842f73396710685be3a1bd6",
+  "binarySha256": "18269e2b48ba8e1f3119af7b42b1827ca0348aa06b342cbbe0e9a53762e8b8e9"
+}

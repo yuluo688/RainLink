@@ -1,0 +1,21 @@
+{
+  "artifacts": [
+    {
+      "path": "build/RainLink-windows-x64-traffic-accounting-preview.zip",
+      "sha256": "0b431b00724502f9c8c91c5d863ae8f1e459c94e75ac84836eff9dd52b5a1eb8",
+      "bytes": 47121246
+    },
+    {
+      "path": "build/RainLink-linux-x64-traffic-accounting-preview.tar.xz",
+      "sha256": "0ce8bf4254bfddfd73f43a7005ef7c31f94705022ebc7a11dc9bee6fdd9ccc90",
+      "bytes": 32492968
+    },
+    {
+      "path": "build/RainLink-0.1.0+4-android-traffic-accounting-debug-preview.apk",
+      "sha256": "5947330c79ebb5fd5b537c4337e58dfd963371e9b4c3a5d52cb5c5b5d2733dc3",
+      "bytes": 249315217
+    }
+  ],
+  "visualFixtures": 48,
+  "linuxSourceInputsMatchedOnBothSides": 625
+}

@@ -1,0 +1,88 @@
+{
+  "go": "go1.25.5",
+  "buildHost": "windows-amd64",
+  "files": [
+    {
+      "platform": "darwin-arm64",
+      "path": "build\\host\\darwin-arm64\\rainlink-host",
+      "bytes": 9135778,
+      "sha256": "63aabe684edc243eaa3086e707f94a946b02931a9cf4f51e48b27fa52eeec13c",
+      "machoCPUType": 16777228,
+      "executed": false
+    },
+    {
+      "platform": "darwin-arm64",
+      "path": "build\\host\\darwin-arm64\\sing-box",
+      "bytes": 21279666,
+      "sha256": "18269e2b48ba8e1f3119af7b42b1827ca0348aa06b342cbbe0e9a53762e8b8e9",
+      "machoCPUType": 16777228,
+      "executed": false
+    },
+    {
+      "platform": "darwin-arm64",
+      "path": "build\\host\\darwin-arm64\\securestore.test",
+      "bytes": 4752098,
+      "sha256": "7847a5171e6dea80bf1b69ff19c2822cb3eb15ba2871f8c600f7f6e8687cb161",
+      "machoCPUType": 16777228,
+      "executed": false
+    },
+    {
+      "platform": "darwin-arm64",
+      "path": "build\\host\\darwin-arm64\\session.test",
+      "bytes": 11565618,
+      "sha256": "891acd834ba54ca4fade96d0cba6416adc012b10fbcfd327762658cf2baa4edb",
+      "machoCPUType": 16777228,
+      "executed": false
+    },
+    {
+      "platform": "darwin-arm64",
+      "path": "build\\host\\darwin-arm64\\coreprocess.test",
+      "bytes": 4167570,
+      "sha256": "6e0d7fd9416a8459d1576ca44c6a898afb771083d63b87754b5c4560b67f8d7b",
+      "machoCPUType": 16777228,
+      "executed": false
+    },
+    {
+      "platform": "darwin-amd64",
+      "path": "build\\host\\darwin-amd64\\rainlink-host",
+      "bytes": 9683392,
+      "sha256": "4d7b21e79aa632d8a220dd2a8b590d0e88390d8d73525dc317965bbd95c25511",
+      "machoCPUType": 16777223,
+      "executed": false
+    },
+    {
+      "platform": "darwin-amd64",
+      "path": "build\\host\\darwin-amd64\\sing-box",
+      "bytes": 22807008,
+      "sha256": "3fc3cb6443b82e5bc115e57228544dc461ca6e01f5567c28a4b3a24d5d45b35f",
+      "machoCPUType": 16777223,
+      "executed": false
+    },
+    {
+      "platform": "darwin-amd64",
+      "path": "build\\host\\darwin-amd64\\securestore.test",
+      "bytes": 4973872,
+      "sha256": "14a3159cf1673d82a75d8a7d5f20f145ff6c2bd2519d80ee0a32478a648d380f",
+      "machoCPUType": 16777223,
+      "executed": false
+    },
+    {
+      "platform": "darwin-amd64",
+      "path": "build\\host\\darwin-amd64\\session.test",
+      "bytes": 12274592,
+      "sha256": "4a9839e7368402bd635e7e97abb4d9c9374534ac36aa0b31083149448b8c8c94",
+      "machoCPUType": 16777223,
+      "executed": false
+    },
+    {
+      "platform": "darwin-amd64",
+      "path": "build\\host\\darwin-amd64\\coreprocess.test",
+      "bytes": 4311840,
+      "sha256": "c56429deeb3b764e201c7db8d5583b7dc97e2f91d4f8109354b0117f732510df",
+      "machoCPUType": 16777223,
+      "executed": false
+    }
+  ],
+  "nativeSwiftCompiled": false,
+  "macOSExecuted": false
+}

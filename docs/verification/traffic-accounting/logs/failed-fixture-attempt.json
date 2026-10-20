@@ -1,0 +1,45 @@
+{
+  "errorType": "HttpException",
+  "requests": [
+    {
+      "method": "CONNECT",
+      "uri": "www.gstatic.com:443",
+      "host": "www.gstatic.com:443"
+    },
+    {
+      "method": "CONNECT",
+      "uri": "api.ip.sb:443",
+      "host": "api.ip.sb:443"
+    },
+    {
+      "method": "CONNECT",
+      "uri": "www.cloudflare.com:443",
+      "host": "www.cloudflare.com:443"
+    },
+    {
+      "method": "CONNECT",
+      "uri": "ipwho.is:443",
+      "host": "ipwho.is:443"
+    }
+  ],
+  "originRequests": 0,
+  "proxyRequests": 0,
+  "coreLogs": [
+    "network: updated default interface WLAN, index 61",
+    "inbound/mixed[mixed-in]: tcp server started at 127.0.0.1:64341",
+    "clash-api: restful api listening at 127.0.0.1:64342",
+    "sing-box started (0.100s)",
+    "网络核心已连接",
+    "[3437649353 0ms] inbound/mixed[mixed-in]: inbound connection from 127.0.0.1:64345",
+    "[3437649353 0ms] inbound/mixed[mixed-in]: inbound connection to www.gstatic.com:443",
+    "[3437649353 1ms] router: found process path: C:\\Users\\FalingFliff\\Documents\\ChatGPT\\RainLink\\build\\host\\rainlink-host.exe",
+    "[3437649353 1ms] outbound/http[proxy]: outbound connection to www.gstatic.com:443",
+    "[3437649353 24ms] connection: open connection to www.gstatic.com:443 using outbound/http[proxy]: unexpected status: 403 Forbidden",
+    "[2825064051 0ms] inbound/mixed[mixed-in]: inbound connection from 127.0.0.1:64347",
+    "[2825064051 0ms] inbound/mixed[mixed-in]: inbound connection to api.ip.sb:443",
+    "[2825064051 1ms] router: found process path: C:\\Users\\FalingFliff\\Documents\\ChatGPT\\RainLink\\build\\host\\rainlink-host.exe",
+    "[2825064051 1ms] outbound/http[proxy]: outbound connection to api.ip.sb:443",
+    "[2825064051 4ms] connection: open connection to api.ip.sb:443 using outbound/http[proxy]: unexpected status: 403 Forbidden",
+    "[115107982 0ms] inbound/mixed[mixed-in]: inbound connection from 127.0.0.1:64349"
+  ]
+}

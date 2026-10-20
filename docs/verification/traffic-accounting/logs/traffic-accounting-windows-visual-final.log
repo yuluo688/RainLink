@@ -1,0 +1,7 @@
+Flutter assets will be downloaded from https://storage.flutter-io.cn. Make sure you trust this source!
+00:00 +0: loading C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/integration_test/traffic_accounting_visual_test.dart
+Building Windows application...                                    19.8s
+√ Built build\windows\x64\runner\Debug\rainlink-ui.exe
+00:00 +0: accounting partitions fit both themes, small desktop and large-text mobile
+00:13 +1: (tearDownAll)
+00:13 +1: All tests passed!

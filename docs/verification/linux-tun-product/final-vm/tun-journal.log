@@ -1,0 +1,22 @@
+Oct 20 12:27:10 rainlink-disposable-qa systemd[1]: Started rainlink-tun-product-qa.service - RainLink isolated product TUN QA.
+Oct 20 12:27:10 rainlink-disposable-qa (-session)[767]: pam_unix(login:session): session opened for user rainlinktun(uid=2200) by rainlinktun(uid=0)
+Oct 20 12:29:58 rainlink-disposable-qa systemd[1]: Listening on rainlink-tun.socket - RainLink privileged network session socket.
+Oct 20 12:29:59 rainlink-disposable-qa systemd[1]: Starting rainlink-tun@0-1074-0.service - RainLink privileged network session (PID 1074/UID 0)...
+Oct 20 12:29:59 rainlink-disposable-qa systemd[1]: Started rainlink-tun@0-1074-0.service - RainLink privileged network session (PID 1074/UID 0).
+Oct 20 12:29:59 rainlink-disposable-qa systemd[1]: rainlink-tun@0-1074-0.service: Deactivated successfully.
+Oct 20 12:40:11 rainlink-disposable-qa systemd[1]: Starting rainlink-tun@1-907-2200.service - RainLink privileged network session (PID 907/UID 2200)...
+Oct 20 12:40:11 rainlink-disposable-qa systemd[1]: Started rainlink-tun@1-907-2200.service - RainLink privileged network session (PID 907/UID 2200).
+Oct 20 12:40:36 rainlink-disposable-qa rainlink-host[2474]: TUN permission setup failed at authorization
+Oct 20 12:40:36 rainlink-disposable-qa systemd[1]: Starting rainlink-tun@2-907-2200.service - RainLink privileged network session (PID 907/UID 2200)...
+Oct 20 12:40:37 rainlink-disposable-qa systemd[1]: rainlink-tun@1-907-2200.service: Deactivated successfully.
+Oct 20 12:40:37 rainlink-disposable-qa systemd[1]: Started rainlink-tun@2-907-2200.service - RainLink privileged network session (PID 907/UID 2200).
+Oct 20 12:40:37 rainlink-disposable-qa systemd[1]: rainlink-tun@2-907-2200.service: Deactivated successfully.
+Oct 20 12:41:47 rainlink-disposable-qa systemd[1]: Starting rainlink-tun@3-2552-2200.service - RainLink privileged network session (PID 2552/UID 2200)...
+Oct 20 12:41:47 rainlink-disposable-qa systemd[1]: Started rainlink-tun@3-2552-2200.service - RainLink privileged network session (PID 2552/UID 2200).
+Oct 20 12:41:49 rainlink-disposable-qa rainlink-host[2764]: TUN permission setup failed at authorization
+Oct 20 12:41:49 rainlink-disposable-qa systemd[1]: rainlink-tun@3-2552-2200.service: Deactivated successfully.
+Oct 20 12:43:01 rainlink-disposable-qa systemd[1]: Stopping rainlink-tun-product-qa.service - RainLink isolated product TUN QA...
+Oct 20 12:43:01 rainlink-disposable-qa systemd[1]: rainlink-tun-product-qa.service: Deactivated successfully.
+Oct 20 12:43:01 rainlink-disposable-qa systemd[1]: Stopped rainlink-tun-product-qa.service - RainLink isolated product TUN QA.
+Oct 20 12:43:07 rainlink-disposable-qa systemd[1]: rainlink-tun.socket: Deactivated successfully.
+Oct 20 12:43:07 rainlink-disposable-qa systemd[1]: Closed rainlink-tun.socket - RainLink privileged network session socket.

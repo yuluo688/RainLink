@@ -1,0 +1,20 @@
+{
+  "version": "0.1.0+4",
+  "manifest": "/work/RainLink/app/build/linux/x64/release/bundle/rainlink-bundle.json",
+  "entries": 78,
+  "coreVersion": "1.12.25-rainlink.4",
+  "coreSha256": "37a7e31533c7250f2117b50f945c3926959d0d736ee4a9569d815ba2cea04c9f",
+  "hostSha256": "ba9108e52fbffd250ffe0867d68fb271b936be877e2b04875caaf4c751598990",
+  "applicationSha256": "42caed719c7bd3be90f6e846b2ae69c748d45278f2d00efd5effb3c3b06cf7e1",
+  "aotSha256": "e6d0a80f39f2f7e72bb9812d08f57999d4f785bfb4c0768f996b6ea8e243676d",
+  "engineSha256": "8c6601a9d00e8bfa955d2ca4b328f5068b0198104f37e877d0ebe29d25ecb958",
+  "releaseEngineVerified": true,
+  "packagedAssetsVerified": 55,
+  "kdeHelperIncluded": true,
+  "archive": "/work/RainLink/build/RainLink-linux-x64-traffic-accounting-preview.tar.xz",
+  "bytes": 32492968,
+  "sha256": "0ce8bf4254bfddfd73f43a7005ef7c31f94705022ebc7a11dc9bee6fdd9ccc90",
+  "perFileDigestVerified": true,
+  "permissionsVerified": true,
+  "userDatabaseIncluded": false
+}

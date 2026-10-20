@@ -1,0 +1,6 @@
+pkexec_diagnostic
+Error executing command as another user: Not authorized
+
+This incident has been reported.
+pkexec_exit=127
+command_exit=0

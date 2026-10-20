@@ -1,0 +1,7 @@
+Flutter assets will be downloaded from https://storage.flutter-io.cn. Make sure you trust this source!
+00:00 +0: loading C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/integration_test/overview_connection_test.dart
+Building Windows application...                                    19.4s
+√ Built build\windows\x64\runner\Debug\rainlink-ui.exe
+00:00 +0: overview shows a real proxied request and opens its close control
+00:04 +1: (tearDownAll)
+00:04 +1: All tests passed!

@@ -1,0 +1,773 @@
+{
+  "baseCommit": "0f80987cac940518e77f23816c5490223debff76",
+  "inputs": [
+    {
+      "path": "app/lib/platform/core/host_status_protocol.dart",
+      "sha256": "3ccb4e4f12cc13035039afd00e2de6e55de06201ed27b494123c3768282b0389"
+    },
+    {
+      "path": "app/macos/Podfile",
+      "sha256": "e8e0e6754b67a1fd5140f4f10d343bba24eb504209341b1fa74b5fb1962b0e53"
+    },
+    {
+      "path": "app/macos/Runner/DebugProfile.entitlements",
+      "sha256": "0ae2295ebba466b7e8bd51bd0d4ffd8b166819a2d11a84c77ca329836a735433"
+    },
+    {
+      "path": "app/macos/Runner/Release.entitlements",
+      "sha256": "2f775718c9f4d3ef2939d8bb5489ca131f51752d749eadb958efcbcbe023887f"
+    },
+    {
+      "path": "app/macos/Runner.xcodeproj/project.pbxproj",
+      "sha256": "14d92ea4e610da0d5ef0230e0d87c75851d86adf4b2ace482fa2741057dc5246"
+    },
+    {
+      "path": "app/test/core_gateway_test.dart",
+      "sha256": "8174fe07473287e897e47377e4ac5a39168320d942d9e6ffef949467afe947f2"
+    },
+    {
+      "path": "native/host/cmd/rainlink-host/install_linux.go",
+      "sha256": "1b010381f7b48b85bdb2ee8794788fd8872d08ffd7d3d80cd1cac2e29a79d16b"
+    },
+    {
+      "path": "native/host/cmd/rainlink-host/install_other.go",
+      "sha256": "9451c971b6e1b1e62c21945760a3d91c493e2d6aff6f2406770f00c0e779b4f2"
+    },
+    {
+      "path": "native/host/cmd/rainlink-host/main.go",
+      "sha256": "1ce35b1c373f863bd26efe1a67d7326db91d158f63dc0ebe94b873ff17045ea4"
+    },
+    {
+      "path": "native/host/cmd/rainlink-host/manage_linux.go",
+      "sha256": "5bd1b2a5321c5376d8d2a1dbe3c6d67e304809213d7159f9df03df2907b78a3a"
+    },
+    {
+      "path": "native/host/cmd/rainlink-host/manage_other.go",
+      "sha256": "c89a2e30d9774ddb4d6feff02fde07b399b201184fe8c33f353d36f1e1e39919"
+    },
+    {
+      "path": "native/host/cmd/rainlink-host/tun_service_linux.go",
+      "sha256": "215c586a202fa03263c1106bb01e79b7ce7c34ab180d2ff369b8a08904f85c1e"
+    },
+    {
+      "path": "native/host/cmd/rainlink-host/tun_service_other.go",
+      "sha256": "4fd810cdd7d475ddaf73cc6f5025fa1b68abf1c7a3a60f109d0a820a79745325"
+    },
+    {
+      "path": "native/host/cmd/rainlink-host/watch_tun_linux.go",
+      "sha256": "0eb3069acbdd23c9f8383b7c589682e305707ed13f0497aaa55b2471edcf12be"
+    },
+    {
+      "path": "native/host/cmd/rainlink-host/watch_tun_other.go",
+      "sha256": "af5424cd5e4556bcb8e802a56f96e0f64f9640f3ebe64147cf80f8f91ed0c01c"
+    },
+    {
+      "path": "native/host/cmd/rainlink-launcher/main_windows.go",
+      "sha256": "91e75f1428d9ebf91be0f378f45b53a2662e19eaa42e527047bb3ef7ad3cc36d"
+    },
+    {
+      "path": "native/host/cmd/rainlink-updater/main_windows.go",
+      "sha256": "9298e2efa6763b9f7deafb1e0748c5a86eb759e8b7d9326ac2a3a833a77bb3c8"
+    },
+    {
+      "path": "native/host/go.mod",
+      "sha256": "6cbd3d4bc03cd42d48ed429f097f0bae25b0c56b666def197f4ef419069d9275"
+    },
+    {
+      "path": "native/host/go.sum",
+      "sha256": "680565d6c0cb938b328e363959a68f8671f6222b5c717adfff72a3621dcaa632"
+    },
+    {
+      "path": "native/host/internal/cli/run.go",
+      "sha256": "568274ea1531a6666e84e02aaa74cdb21df429352911b4101203aa8344e3959e"
+    },
+    {
+      "path": "native/host/internal/cli/run_test.go",
+      "sha256": "4907a520e3e3fe1b3a0f90041f2ca2752543d13e4da8b34c7796bb888c1c0493"
+    },
+    {
+      "path": "native/host/internal/coreprocess/core_hash_generated.go",
+      "sha256": "4a9e33a170286d77735be291765c702dbb03cbdcfbf75b196ba4a4b511727c82"
+    },
+    {
+      "path": "native/host/internal/coreprocess/elevation_windows.go",
+      "sha256": "42509e6ea72758fa4fadb77f6483d21a17d7ee33eed6a51d7bf5158fb22a0e73"
+    },
+    {
+      "path": "native/host/internal/coreprocess/platform_other.go",
+      "sha256": "d2c8c409ed178e393f374e4dc325db436b53d357d927c80f2073e81f2a8f73ed"
+    },
+    {
+      "path": "native/host/internal/coreprocess/platform_windows.go",
+      "sha256": "eca74dac264c6a862aa326106ed48db53345efe92720b76470686ab4b37adc7a"
+    },
+    {
+      "path": "native/host/internal/coreprocess/process.go",
+      "sha256": "c2216bbff70f6191987170b2ba2ab4b8c16b037fed2d7be33f5b170e8d274b54"
+    },
+    {
+      "path": "native/host/internal/coreprocess/process_test.go",
+      "sha256": "4b67b03f96175a516e7055881e687f84cbb741f3e94663794ce452c6cda41a34"
+    },
+    {
+      "path": "native/host/internal/coreprocess/signed_hash_test.go",
+      "sha256": "f3df1b2ed789a8d071d946ed36310f9777fb2ad022ee7bc7447e7c2620e23fec"
+    },
+    {
+      "path": "native/host/internal/coreprocess/start_linux.go",
+      "sha256": "405f471dcc9de0a467b77cbf1faac051ef780f4950b1c8cc21e22c8d55708a53"
+    },
+    {
+      "path": "native/host/internal/coreprocess/start_linux_test.go",
+      "sha256": "ac1b2291826184ade7f37755c2ef073300aada27cef14da3cd34743134a9846a"
+    },
+    {
+      "path": "native/host/internal/coreprocess/start_other.go",
+      "sha256": "bc54add526848fe4a7e2e76c55f2b67d7a979fe0511a14ca2b0fb9e4d2929c23"
+    },
+    {
+      "path": "native/host/internal/host/status.go",
+      "sha256": "7a9db008f8dd1830114af6577e5df8d1c017704e715ec186964a78a6d5ee24d9"
+    },
+    {
+      "path": "native/host/internal/linuxinstall/cancellation_systemd_linux_test.go",
+      "sha256": "7d032cfff7321b808d36964a92e81618bb6d38a3f9d8e35443c59d269fae6b5f"
+    },
+    {
+      "path": "native/host/internal/linuxinstall/cli_fixture_linux_test.go",
+      "sha256": "5ec7b5e79f22f8f1a1f2e1094c64820de0fd8406a1ba4e02688a56fc4f1ae121"
+    },
+    {
+      "path": "native/host/internal/linuxinstall/inspect_linux.go",
+      "sha256": "b152d1395bd1c5a2a9d4944bbe7c42ab4567874583ddb9692d14fb5f952b6029"
+    },
+    {
+      "path": "native/host/internal/linuxinstall/inspect_linux_test.go",
+      "sha256": "a94905bec3a30f8bb4b89cc43f9b1a2031fd5df6e5fa9ee501bca96dedcb8226"
+    },
+    {
+      "path": "native/host/internal/linuxinstall/install_linux.go",
+      "sha256": "83c1b57b83fa8ed1fd2bdbd8094ec06d7c342fc8c1d056f1ab561b27041ce09a"
+    },
+    {
+      "path": "native/host/internal/linuxinstall/install_linux_test.go",
+      "sha256": "5eff96ba9689e784987c026c56cf952623ed82095b109cc7ce10db167016be18"
+    },
+    {
+      "path": "native/host/internal/linuxinstall/service_linux.go",
+      "sha256": "980862fe1568957f81945400e02353970fd5ea283dd18bbdb4640df73c3e1b36"
+    },
+    {
+      "path": "native/host/internal/linuxinstall/service_linux_test.go",
+      "sha256": "0fde335f45fe332a38f1ba4da8badf27c74eafb873d0ae029f60197df9cb90e3"
+    },
+    {
+      "path": "native/host/internal/linuxinstall/state_linux.go",
+      "sha256": "2f15e2eef8bbff6c3b1604e52d66d045dd0c40b38cd6ffdfcc6c795463ba08e0"
+    },
+    {
+      "path": "native/host/internal/linuxinstall/systemd_integration_linux_test.go",
+      "sha256": "796392d2dbd9ffdf1220525cdb74ae0f77a74424412030ae59cdcaa3e0f7c64d"
+    },
+    {
+      "path": "native/host/internal/linuxipc/authorization_linux.go",
+      "sha256": "2c85b77045985fd90b7ddf95dd6719064361f7597bc48afe2a1ffa159e914586"
+    },
+    {
+      "path": "native/host/internal/linuxipc/authorization_linux_test.go",
+      "sha256": "9f78b53097e0dc4414ada1fd47413c01d10426dd2d43f9396a72413e85448962"
+    },
+    {
+      "path": "native/host/internal/linuxipc/command_linux.go",
+      "sha256": "baf506cee7077c23cc093c5c6fd08777ceae6a7bbeb7eca21105888ab913fdca"
+    },
+    {
+      "path": "native/host/internal/linuxipc/command_linux_test.go",
+      "sha256": "ddf823f2ffdb389c956f48e08c109164eb33d1d1fc8c25d72e85716741fd880d"
+    },
+    {
+      "path": "native/host/internal/linuxipc/dial_linux.go",
+      "sha256": "0fba7c05f296c5edd81cafb7b69d9a6ae04e950b2d843bdbc8b67dcb57e80fb6"
+    },
+    {
+      "path": "native/host/internal/linuxipc/dial_linux_test.go",
+      "sha256": "89e4d8e02685187300c8425f6175156126565bfa94abd7543f11910d9aedad5b"
+    },
+    {
+      "path": "native/host/internal/linuxipc/frame_linux.go",
+      "sha256": "761720951bd56dea9494f08a711f51c24c9113ff00bfb274e905397966582379"
+    },
+    {
+      "path": "native/host/internal/linuxipc/frame_linux_test.go",
+      "sha256": "31f71e1c29555a6e2e60583f24577bc3043882b6824b5ee2a95278315bd841bd"
+    },
+    {
+      "path": "native/host/internal/linuxipc/peer_linux.go",
+      "sha256": "48b3ce5b7f900f43f32800c313fb98b7645e5712f134651fa810b2c573e92a2f"
+    },
+    {
+      "path": "native/host/internal/linuxipc/peer_linux_test.go",
+      "sha256": "e7048cfc76417809119b25a5d44a623e497f9e27c17f0221ab1b3c84624de947"
+    },
+    {
+      "path": "native/host/internal/linuxipc/trusted_linux.go",
+      "sha256": "8c4bdc1811c4e763758cb6d933cb40dfc4567124e36cab31735b385740b2926f"
+    },
+    {
+      "path": "native/host/internal/linuxmanage/authentication_linux_test.go",
+      "sha256": "99e1e48a4667b2b3c03fac4898cf3b25bdb489f1fdbc87e5d523eb8786c66050"
+    },
+    {
+      "path": "native/host/internal/linuxmanage/capabilities_linux.go",
+      "sha256": "8ebaa7058ad3b91faeb3f94db2995fd3bab4e46eda0f37ee793e223818c96591"
+    },
+    {
+      "path": "native/host/internal/linuxmanage/capabilities_linux_test.go",
+      "sha256": "967c379005316c7597d00c6c267d986dcbfec609594e6028ad405b867d4e5c94"
+    },
+    {
+      "path": "native/host/internal/linuxmanage/elevation_linux.go",
+      "sha256": "ba574df9b6af10dd89082295cda4366e854c76bd883139eac1b2bd1d0f69467f"
+    },
+    {
+      "path": "native/host/internal/linuxmanage/elevation_linux_test.go",
+      "sha256": "6d6e1846648b866843148edf909c70070ea1b952be8da49994407408cb3bbcff"
+    },
+    {
+      "path": "native/host/internal/linuxmanage/replacement_systemd_linux_test.go",
+      "sha256": "fef059c3403bd1cd896857a3a168fa1c2c762e45e7da09be28635b3874d1ff8a"
+    },
+    {
+      "path": "native/host/internal/linuxmanage/server_linux.go",
+      "sha256": "6eb7c672ba49b90e9741db84055648534eab813e0198fc63b4038f4e067177ce"
+    },
+    {
+      "path": "native/host/internal/linuxmanage/server_linux_test.go",
+      "sha256": "8fee1561064d01acc028e5de81cde868529d07ffda5630f4fe257c6dd4a01e2a"
+    },
+    {
+      "path": "native/host/internal/linuxmanage/systemd_linux_test.go",
+      "sha256": "58026d670f7e464f54b8c892c84de6fff0cbdd01cee8b7bfb22a68e824675816"
+    },
+    {
+      "path": "native/host/internal/linuxnet/kernel_core_linux_test.go",
+      "sha256": "f06aaa545b1e1965f6dd1b54a0c032d0fb085123cc8c2ae1defbda94252323d2"
+    },
+    {
+      "path": "native/host/internal/linuxnet/kernel_linux_test.go",
+      "sha256": "85bc6830be47f9a46fad68ee27a2e34c3f81c04dc690307128a3b019bad02603"
+    },
+    {
+      "path": "native/host/internal/linuxnet/netlink_linux.go",
+      "sha256": "98d2b535003e6507a000705a238477691fdf37af7f9e290071d16394c12ccaa8"
+    },
+    {
+      "path": "native/host/internal/linuxnet/netlink_linux_test.go",
+      "sha256": "107b12e02073d161871c52bdd7d4eef11fb90e851c738e0eeeb3cae24473fa0a"
+    },
+    {
+      "path": "native/host/internal/linuxnet/rule_kernel_linux_test.go",
+      "sha256": "25d40cde54f4291f1c1dc7cc465cdb2f330712039c02992355a0a9406e0d5a1c"
+    },
+    {
+      "path": "native/host/internal/linuxnet/rule_linux.go",
+      "sha256": "df2a899fc8f8347a9b74032a687070ebde85d9946c4b4c94912127521596574b"
+    },
+    {
+      "path": "native/host/internal/linuxnet/rule_linux_test.go",
+      "sha256": "4d16142b76b54c17d181e27fec8e9ec97b4a70a0d0d51b5bdd004e4299df5c87"
+    },
+    {
+      "path": "native/host/internal/linuxnet/state_linux.go",
+      "sha256": "3f6a7aaabe2d36730e4df7710bd39504a0c9ce45f46d4d014a9996217bd44251"
+    },
+    {
+      "path": "native/host/internal/linuxnet/state_linux_test.go",
+      "sha256": "057cc90ab186e8dc9ebc0dd3d956cb6184d1ff89c9b33325370cb5a34705fe25"
+    },
+    {
+      "path": "native/host/internal/linuxnet/tun_holder_linux_test.go",
+      "sha256": "478e180ce4d0ef2bfecf284bc6dc174e46b60733ca7dec75cbb3c75a7d4b2fb6"
+    },
+    {
+      "path": "native/host/internal/linuxnet/upstream_linux.go",
+      "sha256": "c2a8f95ee9be70fafa789f747360bbe9b108adeb9f0d0cf3c94710d21ca74ce0"
+    },
+    {
+      "path": "native/host/internal/linuxnet/upstream_linux_test.go",
+      "sha256": "bcaf6ec1a16f9399df55b455abad3a56274e44c2120b6632523ab21ec4fa7100"
+    },
+    {
+      "path": "native/host/internal/linuxprocess/credentials_linux.go",
+      "sha256": "a15417814ee855117f5b11310b5b903f77502751c9eded9e03d49a72c61b4f9e"
+    },
+    {
+      "path": "native/host/internal/linuxprocess/credentials_linux_test.go",
+      "sha256": "de1b90808cc65f40ebbddee40d14a624c2bef4b748ee8c0a0ff87b86748e8282"
+    },
+    {
+      "path": "native/host/internal/linuxprocess/handle_linux.go",
+      "sha256": "16c3c6b077a7daf298955c30d6c049217aa8160a4fd5c3ca7c043b58fc6ee779"
+    },
+    {
+      "path": "native/host/internal/linuxprocess/handle_linux_test.go",
+      "sha256": "b25edb07b25c81d76220f1ba534b49dbef9be86c09c2884424c917c94b75de42"
+    },
+    {
+      "path": "native/host/internal/linuxprocess/identity_linux.go",
+      "sha256": "a6dafb5913f34142b6228f3f6a4781a92b2cd4881e8bb5fab444f112854ce99b"
+    },
+    {
+      "path": "native/host/internal/linuxprocess/identity_linux_test.go",
+      "sha256": "f609cf6048bd7b2496352107231505d567598dac9e99f86ce5697d6c9be3acee"
+    },
+    {
+      "path": "native/host/internal/linuxproxy/configuration_linux.go",
+      "sha256": "49dcc8789e1f923cb7de5fc2feb07cfee2ef9846a4ed780c080d16ba5795e39f"
+    },
+    {
+      "path": "native/host/internal/linuxproxy/controller_linux.go",
+      "sha256": "b20a416a756339646ce4de0f5cffa9b7ae5da8dd7bdfd052eb20febbb2f462a0"
+    },
+    {
+      "path": "native/host/internal/linuxproxy/controller_linux_test.go",
+      "sha256": "078916b952c508f6ed01df70b6a3057ec7ec6e735f1a821486986e15624e0885"
+    },
+    {
+      "path": "native/host/internal/linuxproxy/gnome_environment_linux.go",
+      "sha256": "fc957e4a5dc6c2e3f109598a32acf537be75cbd5ba5f02c804218d19d51d47fb"
+    },
+    {
+      "path": "native/host/internal/linuxproxy/gnome_linux.go",
+      "sha256": "22fc1b322dab7249f3e4816d84b028f3a424e59ad0b610af6deb9a768ef90ac6"
+    },
+    {
+      "path": "native/host/internal/linuxproxy/kde_linux.go",
+      "sha256": "31be49c7b7e173bfe9e151672f22ee87e65c8cd54d2f526122071763d51a7b14"
+    },
+    {
+      "path": "native/host/internal/linuxproxy/kde_linux_test.go",
+      "sha256": "b38ff4b1ab9c1cf15942d5a8678a8779fe3e13ccfb8a0699aaf832366614996a"
+    },
+    {
+      "path": "native/host/internal/linuxtun/controller_linux.go",
+      "sha256": "a5c4b5baa3dd217f4b9b85de53cec8e06558026cb3c308bc046bdd8d8627cf10"
+    },
+    {
+      "path": "native/host/internal/linuxtun/controller_linux_test.go",
+      "sha256": "ca2bf2a62bd6361d8305452d1a6fa4234780fa322742505d225fc1e2ebb0faf5"
+    },
+    {
+      "path": "native/host/internal/linuxtun/kernel_linux_test.go",
+      "sha256": "38977b4d99b58f58c70a928440daf3495f5275033a73b89f91d8b1a66db61536"
+    },
+    {
+      "path": "native/host/internal/linuxtun/managed_core_linux_test.go",
+      "sha256": "38e1ee573bbeb14998236533f0a99e2b7f023ba9ea15240dd4a8d5cda5ba9e62"
+    },
+    {
+      "path": "native/host/internal/linuxtun/policy_linux.go",
+      "sha256": "3a61cd1f5826de8955da1cbf04ebcdbe9d53ce9e8c44f9892314e9f63d3f908c"
+    },
+    {
+      "path": "native/host/internal/linuxtun/watcher_linux.go",
+      "sha256": "0360825e0c2e5cc26c48817d49a3054afa803be31618de8ef968930aa4d7d4d0"
+    },
+    {
+      "path": "native/host/internal/linuxtun/watcher_linux_test.go",
+      "sha256": "a78dc874135c67c859a3922ca736f7d98b38627ae9e734e7aab5cdd5db00093b"
+    },
+    {
+      "path": "native/host/internal/privatefs/directory_linux.go",
+      "sha256": "dc49eeb4bd2e8c562b1c06dc2fcbdfff5b1be6023aab5420560b52eeca778319"
+    },
+    {
+      "path": "native/host/internal/privatefs/directory_linux_test.go",
+      "sha256": "4d8601fff28d1214f40c37d071101f2f98ff8d4c03973f0ba5a8ce8c4179bd56"
+    },
+    {
+      "path": "native/host/internal/rootfs/directory_linux.go",
+      "sha256": "9eb6c4f76491c38a841ddc2daba9fa0a387d8d832cfcf3d23bdb4f2d0b1a3589"
+    },
+    {
+      "path": "native/host/internal/rootfs/directory_linux_test.go",
+      "sha256": "78ef47b82921ac13b23c1aaba50b9fe4fbeef4238edd3720f9985addbff0996b"
+    },
+    {
+      "path": "native/host/internal/securestore/bounded_output.go",
+      "sha256": "807bd66d6761e11479ba75ab89218b9cae5a5fd45b2f149b65160733bdd174a2"
+    },
+    {
+      "path": "native/host/internal/securestore/envelope.go",
+      "sha256": "f9a8349f5c422e1ee7c39e47a598dc409a420732e7a8aba91d8359f07626a35b"
+    },
+    {
+      "path": "native/host/internal/securestore/envelope_test.go",
+      "sha256": "cbc7c279c92844924347c195c00a7f452399a4effdecc5b3fdb2b6cabf0e8e8e"
+    },
+    {
+      "path": "native/host/internal/securestore/key_service_linux.go",
+      "sha256": "4397a5a388742e7faeba5dbfb697822005b8413dd1c7d361825dcd42fcdcb1ae"
+    },
+    {
+      "path": "native/host/internal/securestore/key_service_linux_test.go",
+      "sha256": "1faaa668058b4785324ceb98dc6c6b0d340167387f3badabd2235597e3e0b338"
+    },
+    {
+      "path": "native/host/internal/securestore/key_service_mac.go",
+      "sha256": "45ce5656a2084c3c1324d17d9b4344323ab975e40d2e39178d5993553a4068c4"
+    },
+    {
+      "path": "native/host/internal/securestore/key_service_mac_test.go",
+      "sha256": "1ef4df3fee13502889a8bc8d8beec0be9d52db957191251b314d74c41b30b151"
+    },
+    {
+      "path": "native/host/internal/session/advanced.go",
+      "sha256": "343800fdd9a07a24bb6ad1e40b065a4f104c9cc26ef36dc966fb852fa22ed6c1"
+    },
+    {
+      "path": "native/host/internal/session/advanced_test.go",
+      "sha256": "66ee6b2ddd973d002e3a9cb06c94da64b6e45ab85586b72760e5e57b3766c218"
+    },
+    {
+      "path": "native/host/internal/session/chains.go",
+      "sha256": "adaff643df19c082ec0b2fba0faa3ed31859a692fad714bc26a1f4c6da94eb97"
+    },
+    {
+      "path": "native/host/internal/session/chains_test.go",
+      "sha256": "7f68e8515ba41492e4212d07fa31afcf8b4e389cfb20f927ea22f6ba93a73d69"
+    },
+    {
+      "path": "native/host/internal/session/config.go",
+      "sha256": "8388bfd0d78f85dbf4887022f927dc66f2b248cfe8031442e65bbe7940354a25"
+    },
+    {
+      "path": "native/host/internal/session/connections.go",
+      "sha256": "2bf4dc0786c6e0cf38c8fb560215b912294d1206401ef4ecdcfa253b96455185"
+    },
+    {
+      "path": "native/host/internal/session/credentials.go",
+      "sha256": "f9f279e12490bc8f20a3d1dfaccb655ed895c0559808d7f4fb5b8f6569667b1e"
+    },
+    {
+      "path": "native/host/internal/session/credentials_darwin.go",
+      "sha256": "e48669f1db7b6c87c2693d328904e8a4d773ccce4af478285a0332e3421df0cf"
+    },
+    {
+      "path": "native/host/internal/session/credentials_linux.go",
+      "sha256": "0d4da892d58a703466b58e131a13f0c9dfb358e06599a24782aebbe5efe7c962"
+    },
+    {
+      "path": "native/host/internal/session/credentials_other.go",
+      "sha256": "051185f7cf38b0f4c9f44168b6d5ae2c617bf934734301d32f190be523c12a91"
+    },
+    {
+      "path": "native/host/internal/session/credentials_test.go",
+      "sha256": "55c2abe7b751431fa760f7197fde6e4436de1cb95ccc9846ccbfcb2994c51eee"
+    },
+    {
+      "path": "native/host/internal/session/hysteria2_test.go",
+      "sha256": "66a88050451dc9b73fa8cd7ccdf4c860323fd194f0690ee21255f97b10394cdb"
+    },
+    {
+      "path": "native/host/internal/session/log_clock_linux.go",
+      "sha256": "a9a3d21d2c1ae66aea74996db4c9ed39f2c68f84cd6de3c313cd72a569ce8ab5"
+    },
+    {
+      "path": "native/host/internal/session/log_clock_other.go",
+      "sha256": "733a71f65be58d1097e5163b03a0f11606d167add1a55c598b6be884ca4da08f"
+    },
+    {
+      "path": "native/host/internal/session/logs.go",
+      "sha256": "e5d0ce61a34795b57354cb48a9ce73fb6be6f6de800366394460055084a89d3c"
+    },
+    {
+      "path": "native/host/internal/session/managed_tun_linux.go",
+      "sha256": "78f50db7c6009332334ed6ac6d6fc1d61b940e8f3426aeff64947ed3f65d9211"
+    },
+    {
+      "path": "native/host/internal/session/managed_tun_linux_test.go",
+      "sha256": "4ebd9ffbcce659f4de73e0c14c02c2a1cb7735a9f475d47202d74824077cf8b0"
+    },
+    {
+      "path": "native/host/internal/session/managed_tun_other.go",
+      "sha256": "fafc07baf331ee434641b46df49cb2483fe017bd9e5c23a3b51840b761ae37fc"
+    },
+    {
+      "path": "native/host/internal/session/manager.go",
+      "sha256": "fdd26696ca9de81bd67ca7ab04bfc003188d1df00fcdcfbb187daf7fe6f1a23c"
+    },
+    {
+      "path": "native/host/internal/session/manager_test.go",
+      "sha256": "046949706f966dc9af9ce7f7687ef321e213cbf4f5b4fc98504599c0f16b0e18"
+    },
+    {
+      "path": "native/host/internal/session/mobile.go",
+      "sha256": "dbbe71af3338e0521188e545b3a132829e52450c14acf90bfaff4ede1847a98f"
+    },
+    {
+      "path": "native/host/internal/session/mobile_connections.go",
+      "sha256": "a28f5612980547097f6628d47149cc8d626c193715b2034deef68dad5b343a22"
+    },
+    {
+      "path": "native/host/internal/session/mobile_connections_test.go",
+      "sha256": "5f0ea9fb6a48b2ef5b961abde59a4ad1c9cc5e3d2ae21521679b60bb77f4fedf"
+    },
+    {
+      "path": "native/host/internal/session/mobile_test.go",
+      "sha256": "1b17ed7d39827111895ea239bbf5830da11df5f7bec9de85af272587250a1c21"
+    },
+    {
+      "path": "native/host/internal/session/node_probe.go",
+      "sha256": "e64c931e3c9c0defe6c0df9ff8f5abe4c929bb211657d90bbb45d728290920b1"
+    },
+    {
+      "path": "native/host/internal/session/node_probe_test.go",
+      "sha256": "6fb3b02e90c197f81f1793805cc216ea20f38faf51d27869b377a266b3a950ba"
+    },
+    {
+      "path": "native/host/internal/session/platform_other.go",
+      "sha256": "65b7137c4f028917150c5ba38f606e4deaaedf006bcf85e686e3ce6325dd776c"
+    },
+    {
+      "path": "native/host/internal/session/platform_windows.go",
+      "sha256": "b229e32532f0ba6bba8932fd759faa95a87c616759a2c420317a7635a8fed52f"
+    },
+    {
+      "path": "native/host/internal/session/probe_test.go",
+      "sha256": "315916723d79fbe48a2bd8feda113a97c53b0826611c9906f5d35bdd50807e47"
+    },
+    {
+      "path": "native/host/internal/session/protocols_test.go",
+      "sha256": "27e4a207eadeb85ffe92161eae5fc1d4f52f6f5b892fe1ec3dabec395525d10f"
+    },
+    {
+      "path": "native/host/internal/session/proxy_linux.go",
+      "sha256": "da7fa4d4a97e78acd8ce41035e410e59e6c048292b73b0c2fb60166842feb017"
+    },
+    {
+      "path": "native/host/internal/session/proxy_linux_test.go",
+      "sha256": "74c0b6b5908112dbb22eaec16fa39010bcd4bf79a057b182a5317170a4c0f632"
+    },
+    {
+      "path": "native/host/internal/session/proxy_other.go",
+      "sha256": "800574a66b575d0334a7432e35dc9b02972babb787fc58e198a035dca0555219"
+    },
+    {
+      "path": "native/host/internal/session/proxy_windows_test.go",
+      "sha256": "ebeda076d51f30f706141923698726287f5d30009ea913b7acb5683017198706"
+    },
+    {
+      "path": "native/host/internal/session/routing.go",
+      "sha256": "2f6282451c7cb37a9d5c02c13092141a3b5429ff01f3a3e83e9866fd3fccd83b"
+    },
+    {
+      "path": "native/host/internal/session/routing_test.go",
+      "sha256": "58cdfd7c0fde3941da552261227cee485d8bcb54bf751502474531753cb72b30"
+    },
+    {
+      "path": "native/host/internal/session/serve.go",
+      "sha256": "6788a67635cdc2cbeaae8b65433bc6a06d4cadacfe1c075175c980e1ca037e43"
+    },
+    {
+      "path": "native/host/internal/session/serve_linux_test.go",
+      "sha256": "5341fb935ab5eeadc59770fb9831bea0dd165ca27df5d4177c05248d53c54165"
+    },
+    {
+      "path": "native/host/internal/session/settings.go",
+      "sha256": "eeb0bfb65cf783acba54f9acb240ed4776aa4f8b5bc8a358c70370787f475106"
+    },
+    {
+      "path": "native/host/internal/session/settings_test.go",
+      "sha256": "4b27eb1280440fd332f8b92350f7d3c4a837e6edf272017317bcf079211cd98b"
+    },
+    {
+      "path": "native/host/internal/session/telemetry_test.go",
+      "sha256": "807eefd5ae83668f2e75d27fdfbca8085dd6893430ea6500f4dd9a69b16778e2"
+    },
+    {
+      "path": "native/host/internal/session/tun.go",
+      "sha256": "a9b7ac2d9160c0f1f04e3a448bfb22d438e3830917506dcd6db2a41e0c3081b6"
+    },
+    {
+      "path": "native/host/internal/session/tun_client_linux.go",
+      "sha256": "91d4c88df5944df5fd7a03ceb3f0526c1d0d7982900da185086046ad4553b459"
+    },
+    {
+      "path": "native/host/internal/session/tun_client_linux_test.go",
+      "sha256": "1d30332b4ffec032f0cc264cd5f5f2dc8ebcb47169485788fbb1bf87c81d1c84"
+    },
+    {
+      "path": "native/host/internal/session/tun_compile_linux.go",
+      "sha256": "ca497b6d663e3892e0621e7ad720a1d8fbe5fcec30a558c1586dee29d1f973f3"
+    },
+    {
+      "path": "native/host/internal/session/tun_compile_linux_test.go",
+      "sha256": "57d919624abeba50ff3f2acdae513c7493fb331174ed615c51eeb7f7e2c875e9"
+    },
+    {
+      "path": "native/host/internal/session/tun_forward_linux_test.go",
+      "sha256": "7dda60dc023c08126f5a2bebfec04bbedc113e624ce1330edecac701beb508c1"
+    },
+    {
+      "path": "native/host/internal/session/tun_forward_server_linux_test.go",
+      "sha256": "68116a01c640f237680846df8e2f38972d8cc8aafbbb1903a676f4a1b5d40f54"
+    },
+    {
+      "path": "native/host/internal/session/tun_logged_client_linux_test.go",
+      "sha256": "af3fdfb14bd53994db12442a0fa4dce73fc0e22365f9a085ddaa68452b7837ec"
+    },
+    {
+      "path": "native/host/internal/session/tun_logs_linux.go",
+      "sha256": "156389b7ff6b27c039650600ee14fdee0ff46a430b515faa19a5621ef6989555"
+    },
+    {
+      "path": "native/host/internal/session/tun_logs_linux_test.go",
+      "sha256": "e3bdbf512c0ad09820e7b02bedbda6647c58e28728ad349b6bed1b8b07037211"
+    },
+    {
+      "path": "native/host/internal/session/tun_other.go",
+      "sha256": "e28e38283215e364a89f3b113809fd8a08c2abaf9d1e8cc4298dbaaa643e534a"
+    },
+    {
+      "path": "native/host/internal/session/tun_service_linux.go",
+      "sha256": "be7e810561b009c4c1138b0084fd89b229c932a1736f79023ef8a50a067f7ef8"
+    },
+    {
+      "path": "native/host/internal/session/tun_service_linux_test.go",
+      "sha256": "facf7d4af5a41a8fa0c4f221c14eb2371a4b64337e70c225e316ee69e522c52a"
+    },
+    {
+      "path": "native/host/internal/session/tun_systemd_logs_linux_test.go",
+      "sha256": "20142f4a94d5d96c109d0f66300ace608a4d9f0c8fac99b32d95a697ad1baa9d"
+    },
+    {
+      "path": "native/host/internal/session/tun_test.go",
+      "sha256": "3c1ddeb4a44b38ef67719f77f49df4da32fc6d84e902884cba21495b0ff9d6e5"
+    },
+    {
+      "path": "native/host/internal/session/tun_windows.go",
+      "sha256": "5b22f129e3c7d56b736f926bd1752c08e400490b748c440c039878c2bcd551fb"
+    },
+    {
+      "path": "native/host/internal/session/upstream.go",
+      "sha256": "15e286e5233e030597bcac49510f89aa50bfaf67a24b45868c3165a9d14e2567"
+    },
+    {
+      "path": "native/host/internal/session/upstream_linux.go",
+      "sha256": "9a878b2eb87b595052dcacf17139e3320126273fa5cab95b1bc68e0cfd36edcd"
+    },
+    {
+      "path": "native/host/internal/session/upstream_linux_test.go",
+      "sha256": "5d4017650ed2bb8ad564d9a4db52fe49a79d4cae3700ebf56aaa016a64ab3a0d"
+    },
+    {
+      "path": "native/host/internal/session/upstream_other.go",
+      "sha256": "2ed6733818bfa10b7a8154f157527973fa761942d64b9854d41edb9ceb4d8c71"
+    },
+    {
+      "path": "native/host/internal/session/upstream_test.go",
+      "sha256": "1112859708ff59888024239a77da660e633d6e1e6ff81725f5fe1e581851ddee"
+    },
+    {
+      "path": "native/host/internal/session/upstream_windows.go",
+      "sha256": "d7fd951a29eda63b80fb47ed08cc1198c49ea5f39b614cee96a70c9760f2035b"
+    },
+    {
+      "path": "native/host/internal/session/upstream_windows_test.go",
+      "sha256": "59d80ee8061b736d0e754812f1be3f2529d5078108f392d390e7d9642bca97d4"
+    },
+    {
+      "path": "native/host/internal/session/vmess_tuic_test.go",
+      "sha256": "6fd1807831823c93014617f03b4ce551a4ce00880ccd7dd1980817c48f8d5ffb"
+    },
+    {
+      "path": "native/host/internal/tunconfig/addresses.go",
+      "sha256": "c7948397392d293209087db5b02641811884ff03cbd8eaab7ad1c0ef536e11e6"
+    },
+    {
+      "path": "native/host/internal/update/archive.go",
+      "sha256": "8757edf5d7822c63d88762f5103db8e0fdea2e0a137cd08e152bf08e363aaf49"
+    },
+    {
+      "path": "native/host/internal/update/journal.go",
+      "sha256": "4111dafd615805457b580c0444dccaa41aeec763f9a99fe5b96571a355324882"
+    },
+    {
+      "path": "native/host/internal/update/journal_test.go",
+      "sha256": "d01363f1c17420838c76bc07e958eabc1e9a800624679bb3be548ae062d98e50"
+    },
+    {
+      "path": "native/host/internal/update/process_windows_test.go",
+      "sha256": "db4a25c557346c2e8ba9d2736492cc1c1009a3cf6e6d0c0076c78402525d24fb"
+    },
+    {
+      "path": "native/host/internal/update/recovery_windows.go",
+      "sha256": "f09ef55ea0b1621b034592e10e19241e120af73095ef6854303548381c4e0f20"
+    },
+    {
+      "path": "native/host/internal/update/recovery_windows_test.go",
+      "sha256": "91d24d7d218c6ab7d06718c3ff5d5f997a34ee50189df776177b6f790601b5d3"
+    },
+    {
+      "path": "native/host/internal/update/runtime_windows.go",
+      "sha256": "f7fb100e00e52306055196682bf3220065ba5aed2182c79d4fc7956e35ef4391"
+    },
+    {
+      "path": "native/host/internal/update/safety_other.go",
+      "sha256": "62a4875f2e97972183b03234751997ec319d6621c9d4e526d59de3a903595383"
+    },
+    {
+      "path": "native/host/internal/update/testdata/fixture.go",
+      "sha256": "92d3f8d16b3afc8b010fac09241584ea629993a5f9237b201909ee955a12bcee"
+    },
+    {
+      "path": "native/host/internal/update/testdata/offline_host.go",
+      "sha256": "f0abf542793eb7f706fb3562147170181013c2a02932ba57624c253e34141070"
+    },
+    {
+      "path": "native/host/internal/update/transaction.go",
+      "sha256": "05491ed19a3bc01172dcd3b307f9012af4465d2d19c2eff72e2ef73aadd35c8b"
+    },
+    {
+      "path": "native/host/internal/update/transaction_test.go",
+      "sha256": "7fe13b806ea7cfb028ff72360a876670a0c113c6bafa008069e6201d9933c2cb"
+    },
+    {
+      "path": "native/host/mobileconfig/config.go",
+      "sha256": "d934a6dc8ce887bde9fe3166733cc501b3c6be48b63a4fe445eb0164ae25d611"
+    },
+    {
+      "path": "native/host/packaging/linux/assets.go",
+      "sha256": "a49a0e4ccc677b6fb4102e672544bf9612540998305649b18a7c38dce4765747"
+    },
+    {
+      "path": "native/macos/keychain/main.swift",
+      "sha256": "cc5ea16d1fbe3c5070bd73b11d16ec3aa2def69398dcf694d47c30d67f2a32db"
+    },
+    {
+      "path": "tools/build_macos.py",
+      "sha256": "d9bdd9ccc53cc130968d53f6c27bb066b5f053e1e85028e868d4a1ccb10d40a9"
+    },
+    {
+      "path": "tools/core.lock.json",
+      "sha256": "007348beae2240aaea4fe6718742609c735e486015811abc4ad03e44f612d592"
+    },
+    {
+      "path": "tools/dev.ps1",
+      "sha256": "f55f27009341bc7225b40d26b84776f4188dbca2d1e7ca1621239bd634ddc9c3"
+    },
+    {
+      "path": "tools/dev.sh",
+      "sha256": "546e9fcc549e90915768b4e3f3cf4d87b2984fefd332bf85dc4fa24c42de97fb"
+    },
+    {
+      "path": "tools/setup_core.py",
+      "sha256": "22a1d40fa08338ade5fc60294a802191bbb69f433b1e78cc352a57c427ff36a4"
+    },
+    {
+      "path": "tools/test_build_macos.py",
+      "sha256": "e29dc5b5b3d71dc8bb940e33f5977e16ca45e46fa92cba6f17de9ddb4af4dda1"
+    }
+  ]
+}

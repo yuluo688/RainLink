@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "completedAtUtc": "2026-10-20T11:02:31.6832740Z",
+  "avdName": "RainLink_Update_QA",
+  "serial": "127.0.0.1:5591",
+  "privateAdbPort": 5047,
+  "shutdownMethod": "Authenticated local emulator console; disconnected stale QA TCP transport; then stopped unused private ADB",
+  "emulatorExited": true,
+  "privateAdbExited": true,
+  "qaDiskAndEvidencePreserved": true,
+  "scope": "Only RainLink_Update_QA and private ADB 5047; default 5037, other devices and FlClash untouched."
+}

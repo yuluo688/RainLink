@@ -1,0 +1,16 @@
+FINAL_LINUX_OVERVIEW_CONNECTION_PASSED
+FINAL_LINUX_54_LAYOUT_FIXTURES_PASSED
+{
+  "window": "4194307",
+  "geometry": {
+    "WINDOW": "4194307",
+    "X": "160",
+    "Y": "140",
+    "WIDTH": "960",
+    "HEIGHT": "640",
+    "SCREEN": "0"
+  },
+  "properties": "WM_CLASS(STRING) = \"dev.rainlink.rainlink\", \"Dev.rainlink.rainlink\"\n_NET_FRAME_EXTENTS(CARDINAL) = 0, 0, 0, 0\n_NET_WM_STATE(ATOM) = \n",
+  "image": "overview-final-release-960.png"
+}
+FINAL_LINUX_AOT_WINDOW_AND_CLOSE_PASSED

@@ -1,0 +1,15 @@
+Oct 20 04:18:48 rainlink-disposable-qa systemd[1]: Starting polkit.service - Authorization Manager...
+Oct 20 04:18:49 rainlink-disposable-qa polkitd[680]: Started polkitd version 126
+Oct 20 04:18:49 rainlink-disposable-qa polkitd[680]: Loading rules from directory /etc/polkit-1/rules.d
+Oct 20 04:18:49 rainlink-disposable-qa polkitd[680]: Loading rules from directory /run/polkit-1/rules.d
+Oct 20 04:18:49 rainlink-disposable-qa polkitd[680]: Error opening rules directory: Error opening directory “/run/polkit-1/rules.d”: No such file or directory (g-file-error-quark, 4)
+Oct 20 04:18:49 rainlink-disposable-qa polkitd[680]: Loading rules from directory /usr/local/share/polkit-1/rules.d
+Oct 20 04:18:49 rainlink-disposable-qa polkitd[680]: Error opening rules directory: Error opening directory “/usr/local/share/polkit-1/rules.d”: No such file or directory (g-file-error-quark, 4)
+Oct 20 04:18:49 rainlink-disposable-qa polkitd[680]: Loading rules from directory /usr/share/polkit-1/rules.d
+Oct 20 04:18:49 rainlink-disposable-qa polkitd[680]: Finished loading, compiling and executing 3 rules
+Oct 20 04:18:49 rainlink-disposable-qa systemd[1]: Started polkit.service - Authorization Manager.
+Oct 20 04:18:49 rainlink-disposable-qa polkitd[680]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+Oct 20 04:18:57 rainlink-disposable-qa polkitd[680]: Registered Authentication Agent for unix-session:1 (system bus name :1.12 [/usr/bin/lxpolkit], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale C.UTF-8)
+Oct 20 04:23:33 rainlink-disposable-qa polkitd[680]: Operator of unix-session:1 successfully authenticated as unix-user:rainlinkpkg to gain ONE-SHOT authorization for action org.freedesktop.policykit.exec for unix-process:833:8044 [/opt/rainlink-gui/RainLink/rainlink-host manage-tun-service] (owned by unix-user:rainlinkpkg)
+Oct 20 04:26:40 rainlink-disposable-qa polkitd[680]: Operator of unix-session:1 successfully authenticated as unix-user:rainlinkpkg to gain ONE-SHOT authorization for action org.freedesktop.policykit.exec for unix-process:833:8044 [/opt/rainlink-gui/RainLink/rainlink-host manage-tun-service] (owned by unix-user:rainlinkpkg)
+Oct 20 04:27:44 rainlink-disposable-qa polkitd[680]: Unregistered Authentication Agent for unix-session:1 (system bus name :1.12, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale C.UTF-8) (disconnected from bus)

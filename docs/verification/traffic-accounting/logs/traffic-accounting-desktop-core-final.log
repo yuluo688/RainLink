@@ -1,0 +1,16 @@
+ok  	github.com/sagernet/sing-box/common/tls	0.894s
+ok  	github.com/sagernet/sing-box/experimental/clashapi/trafficontrol	0.519s
+ok  	github.com/sagernet/sing-box/experimental/clashapi	0.985s
+sing-box 1.12.25-rainlink.3 built and verified: b80c854474ae697ddcd2b543dcda5c1aec5c2d56f971a8c1b1b0b5ceace074db
+ok  	github.com/sagernet/sing-box/common/tls	0.871s
+ok  	github.com/sagernet/sing-box/experimental/clashapi/trafficontrol	0.505s
+ok  	github.com/sagernet/sing-box/experimental/clashapi	0.971s
+sing-box 1.12.25-rainlink.4 built and verified: 37a7e31533c7250f2117b50f945c3926959d0d736ee4a9569d815ba2cea04c9f
+ok  	github.com/sagernet/sing-box/common/tls	0.963s
+ok  	github.com/sagernet/sing-box/experimental/clashapi/trafficontrol	0.557s
+ok  	github.com/sagernet/sing-box/experimental/clashapi	1.064s
+sing-box 1.12.25-rainlink.3 built and verified: bb7672b03949a27b86d9d5a2460bc0039fa5203d1800a4b1f09a7e1e2224f054
+ok  	github.com/sagernet/sing-box/common/tls	0.853s
+ok  	github.com/sagernet/sing-box/experimental/clashapi/trafficontrol	0.486s
+ok  	github.com/sagernet/sing-box/experimental/clashapi	0.967s
+sing-box 1.12.25-rainlink.3 built and verified: fa6abfba874c522b50ad7cada342aabfa84a711961a339a4bf6887fd3fec9794

@@ -1,0 +1,42 @@
+[
+  {
+    "package": "http",
+    "url": "https://pub.flutter-io.cn/api/packages/http/advisories",
+    "bytes": 3092,
+    "sha256": "9d73aea84780266e7c12358ddbd327427efc9af93df93b4e9aca354f2fe731c9",
+    "keys": [
+      "advisories",
+      "advisoriesUpdated"
+    ]
+  },
+  {
+    "package": "dio",
+    "url": "https://pub.flutter-io.cn/api/packages/dio/advisories",
+    "bytes": 6286,
+    "sha256": "807f02fd1598b52d10ac0da88b9c0e932ac0555cebe3863618505a5ccaa07b8b",
+    "keys": [
+      "advisories",
+      "advisoriesUpdated"
+    ]
+  },
+  {
+    "package": "archive",
+    "url": "https://pub.flutter-io.cn/api/packages/archive/advisories",
+    "bytes": 4894,
+    "sha256": "b92340d0aca26ca6d0465c91438581c931db957e4d49ea79d28167ad6ac1d17c",
+    "keys": [
+      "advisories",
+      "advisoriesUpdated"
+    ]
+  },
+  {
+    "package": "shared_preferences_android",
+    "url": "https://pub.flutter-io.cn/api/packages/shared_preferences_android/advisories",
+    "bytes": 2318,
+    "sha256": "f9f785cbbe92d437be547458b9493d56c0251d2f1f484eda4dfff8538025b8cc",
+    "keys": [
+      "advisories",
+      "advisoriesUpdated"
+    ]
+  }
+]

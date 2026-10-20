@@ -1,0 +1,9 @@
+TAP version 14
+# random seed: R02S644912ba18d3436784b3cf853e397ab9
+1..3
+# Start of desktop tests
+# GLib-GIO-DEBUG: _g_io_module_get_default: Found default implementation local (GLocalVfs) for ?gio-vfs?
+**
+ERROR:../tools/fixtures/linux_desktop_integration_test.cc:69:void (anonymous namespace)::OffCancelsPendingEnable(): assertion failed (enable_error.c_str() == "tray_registration_cancelled"): ("" == "tray_registration_cancelled")
+not ok /desktop/off-cancels-pending-enable - ERROR:../tools/fixtures/linux_desktop_integration_test.cc:69:void (anonymous namespace)::OffCancelsPendingEnable(): assertion failed (enable_error.c_str() == "tray_registration_cancelled"): ("" == "tray_registration_cancelled")
+Bail out!

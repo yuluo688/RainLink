@@ -1,0 +1,125 @@
+=== RUN   TestEnvelopeRoundTripAndBinding
+--- PASS: TestEnvelopeRoundTripAndBinding (0.00s)
+=== RUN   TestEnvelopeValidationBeforeKeyAccess
+=== RUN   TestEnvelopeValidationBeforeKeyAccess/empty-id
+=== RUN   TestEnvelopeValidationBeforeKeyAccess/long-id
+=== RUN   TestEnvelopeValidationBeforeKeyAccess/empty-plain
+=== RUN   TestEnvelopeValidationBeforeKeyAccess/large-plain
+--- PASS: TestEnvelopeValidationBeforeKeyAccess (0.00s)
+    --- PASS: TestEnvelopeValidationBeforeKeyAccess/empty-id (0.00s)
+    --- PASS: TestEnvelopeValidationBeforeKeyAccess/long-id (0.00s)
+    --- PASS: TestEnvelopeValidationBeforeKeyAccess/empty-plain (0.00s)
+    --- PASS: TestEnvelopeValidationBeforeKeyAccess/large-plain (0.00s)
+=== RUN   TestEnvelopeKeyFailuresAndCancellation
+--- PASS: TestEnvelopeKeyFailuresAndCancellation (0.00s)
+=== RUN   TestLinuxKeyCreationSerialized
+--- PASS: TestLinuxKeyCreationSerialized (0.08s)
+=== RUN   TestLinuxKeyFailures
+=== RUN   TestLinuxKeyFailures/missing
+=== RUN   TestLinuxKeyFailures/locked
+=== RUN   TestLinuxKeyFailures/locked-silent
+=== RUN   TestLinuxKeyFailures/search-failed
+=== RUN   TestLinuxKeyFailures/malformed
+=== RUN   TestLinuxKeyFailures/wrong-length
+=== RUN   TestLinuxKeyFailures/store-failed
+=== RUN   TestLinuxKeyFailures/store-missing
+=== RUN   TestLinuxKeyFailures/readback-missing
+=== RUN   TestLinuxKeyFailures/readback-different
+=== RUN   TestLinuxKeyFailures/cancelled
+--- PASS: TestLinuxKeyFailures (0.09s)
+    --- PASS: TestLinuxKeyFailures/missing (0.00s)
+    --- PASS: TestLinuxKeyFailures/locked (0.00s)
+    --- PASS: TestLinuxKeyFailures/locked-silent (0.00s)
+    --- PASS: TestLinuxKeyFailures/search-failed (0.00s)
+    --- PASS: TestLinuxKeyFailures/malformed (0.00s)
+    --- PASS: TestLinuxKeyFailures/wrong-length (0.00s)
+    --- PASS: TestLinuxKeyFailures/store-failed (0.00s)
+    --- PASS: TestLinuxKeyFailures/store-missing (0.00s)
+    --- PASS: TestLinuxKeyFailures/readback-missing (0.00s)
+    --- PASS: TestLinuxKeyFailures/readback-different (0.00s)
+    --- PASS: TestLinuxKeyFailures/cancelled (0.08s)
+=== RUN   TestLinuxKeyLockSecurityAndCancellation
+=== RUN   TestLinuxKeyLockSecurityAndCancellation/public-directory
+=== RUN   TestLinuxKeyLockSecurityAndCancellation/directory-symlink
+=== RUN   TestLinuxKeyLockSecurityAndCancellation/file-symlink
+=== RUN   TestLinuxKeyLockSecurityAndCancellation/public-file
+=== RUN   TestLinuxKeyLockSecurityAndCancellation/hard-link
+=== RUN   TestLinuxKeyLockSecurityAndCancellation/fifo
+=== RUN   TestLinuxKeyLockSecurityAndCancellation/cancelled
+--- PASS: TestLinuxKeyLockSecurityAndCancellation (0.08s)
+    --- PASS: TestLinuxKeyLockSecurityAndCancellation/public-directory (0.00s)
+    --- PASS: TestLinuxKeyLockSecurityAndCancellation/directory-symlink (0.00s)
+    --- PASS: TestLinuxKeyLockSecurityAndCancellation/file-symlink (0.00s)
+    --- PASS: TestLinuxKeyLockSecurityAndCancellation/public-file (0.00s)
+    --- PASS: TestLinuxKeyLockSecurityAndCancellation/hard-link (0.00s)
+    --- PASS: TestLinuxKeyLockSecurityAndCancellation/fifo (0.00s)
+    --- PASS: TestLinuxKeyLockSecurityAndCancellation/cancelled (0.08s)
+=== RUN   TestKeyLockDirectory
+--- PASS: TestKeyLockDirectory (0.00s)
+=== RUN   TestKeyLockAcrossProcesses
+--- PASS: TestKeyLockAcrossProcesses (0.11s)
+=== RUN   TestBoundedOutputReaderFromCannotBypassLimit
+--- PASS: TestBoundedOutputReaderFromCannotBypassLimit (0.00s)
+=== RUN   TestRunSecretCommand
+=== RUN   TestRunSecretCommand/stdin-only
+=== RUN   TestRunSecretCommand/missing
+=== RUN   TestRunSecretCommand/failed-store
+=== RUN   TestRunSecretCommand/locked
+=== RUN   TestRunSecretCommand/stdout-limit
+=== RUN   TestRunSecretCommand/stderr-limit
+=== RUN   TestRunSecretCommand/timeout
+--- PASS: TestRunSecretCommand (0.26s)
+    --- PASS: TestRunSecretCommand/stdin-only (0.00s)
+    --- PASS: TestRunSecretCommand/missing (0.00s)
+    --- PASS: TestRunSecretCommand/failed-store (0.00s)
+    --- PASS: TestRunSecretCommand/locked (0.00s)
+    --- PASS: TestRunSecretCommand/stdout-limit (0.00s)
+    --- PASS: TestRunSecretCommand/stderr-limit (0.00s)
+    --- PASS: TestRunSecretCommand/timeout (0.25s)
+=== RUN   TestLinuxSecretServiceIntegration
+    key_service_linux_test.go:326: requires a disposable, unlocked Secret Service and isolated HOME/XDG_STATE_HOME
+--- SKIP: TestLinuxSecretServiceIntegration (0.00s)
+=== RUN   TestLinuxLockedSecretService
+    key_service_linux_test.go:364: run only after explicitly locking a disposable Secret Service
+--- SKIP: TestLinuxLockedSecretService (0.00s)
+=== RUN   TestMacKeyEnvelopeAndPrivateProtocol
+--- PASS: TestMacKeyEnvelopeAndPrivateProtocol (0.00s)
+=== RUN   TestMacKeyRejectsMalformedOrUnavailableResponses
+=== RUN   TestMacKeyRejectsMalformedOrUnavailableResponses/missing
+=== RUN   TestMacKeyRejectsMalformedOrUnavailableResponses/missing-after-create
+=== RUN   TestMacKeyRejectsMalformedOrUnavailableResponses/denied
+=== RUN   TestMacKeyRejectsMalformedOrUnavailableResponses/cancelled
+=== RUN   TestMacKeyRejectsMalformedOrUnavailableResponses/future
+=== RUN   TestMacKeyRejectsMalformedOrUnavailableResponses/unknown-field
+=== RUN   TestMacKeyRejectsMalformedOrUnavailableResponses/multiple-values
+=== RUN   TestMacKeyRejectsMalformedOrUnavailableResponses/empty-key
+=== RUN   TestMacKeyRejectsMalformedOrUnavailableResponses/bad-key
+=== RUN   TestMacKeyRejectsMalformedOrUnavailableResponses/short-key
+=== RUN   TestMacKeyRejectsMalformedOrUnavailableResponses/unexpected-key
+=== RUN   TestMacKeyRejectsMalformedOrUnavailableResponses/oversize
+--- PASS: TestMacKeyRejectsMalformedOrUnavailableResponses (0.00s)
+    --- PASS: TestMacKeyRejectsMalformedOrUnavailableResponses/missing (0.00s)
+    --- PASS: TestMacKeyRejectsMalformedOrUnavailableResponses/missing-after-create (0.00s)
+    --- PASS: TestMacKeyRejectsMalformedOrUnavailableResponses/denied (0.00s)
+    --- PASS: TestMacKeyRejectsMalformedOrUnavailableResponses/cancelled (0.00s)
+    --- PASS: TestMacKeyRejectsMalformedOrUnavailableResponses/future (0.00s)
+    --- PASS: TestMacKeyRejectsMalformedOrUnavailableResponses/unknown-field (0.00s)
+    --- PASS: TestMacKeyRejectsMalformedOrUnavailableResponses/multiple-values (0.00s)
+    --- PASS: TestMacKeyRejectsMalformedOrUnavailableResponses/empty-key (0.00s)
+    --- PASS: TestMacKeyRejectsMalformedOrUnavailableResponses/bad-key (0.00s)
+    --- PASS: TestMacKeyRejectsMalformedOrUnavailableResponses/short-key (0.00s)
+    --- PASS: TestMacKeyRejectsMalformedOrUnavailableResponses/unexpected-key (0.00s)
+    --- PASS: TestMacKeyRejectsMalformedOrUnavailableResponses/oversize (0.00s)
+=== RUN   TestMacKeyCancellationAndMissingHelper
+--- PASS: TestMacKeyCancellationAndMissingHelper (0.02s)
+=== RUN   TestMacKeyRealCommandPipesAndCancellation
+=== RUN   TestMacKeyRealCommandPipesAndCancellation/pipe
+=== RUN   TestMacKeyRealCommandPipesAndCancellation/oversize
+=== RUN   TestMacKeyRealCommandPipesAndCancellation/stderr
+=== RUN   TestMacKeyRealCommandPipesAndCancellation/hang
+--- PASS: TestMacKeyRealCommandPipesAndCancellation (0.11s)
+    --- PASS: TestMacKeyRealCommandPipesAndCancellation/pipe (0.00s)
+    --- PASS: TestMacKeyRealCommandPipesAndCancellation/oversize (0.00s)
+    --- PASS: TestMacKeyRealCommandPipesAndCancellation/stderr (0.00s)
+    --- PASS: TestMacKeyRealCommandPipesAndCancellation/hang (0.10s)
+PASS

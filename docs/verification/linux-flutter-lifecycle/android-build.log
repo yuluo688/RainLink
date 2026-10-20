@@ -1,0 +1,361 @@
+Starting a Gradle Daemon (subsequent builds will be faster)
+> Task :gradle:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :gradle:pluginDescriptors
+> Task :gradle:processResources
+> Task :gradle:compileKotlin
+> Task :gradle:compileJava NO-SOURCE
+> Task :gradle:compileGroovy
+> Task :gradle:classes
+> Task :gradle:jar
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+
+> Task :app:compileFlutterBuildDebug
+Flutter assets will be downloaded from https://storage.flutter-io.cn. Make sure you trust this source!
+
+> Task :app:packJniLibsflutterBuildDebug UP-TO-DATE
+> Task :file_selector_android:preBuild UP-TO-DATE
+> Task :file_selector_android:preDebugBuild UP-TO-DATE
+> Task :integration_test:preBuild UP-TO-DATE
+> Task :integration_test:preDebugBuild UP-TO-DATE
+> Task :file_selector_android:writeDebugAarMetadata
+> Task :path_provider_android:preBuild UP-TO-DATE
+> Task :path_provider_android:preDebugBuild UP-TO-DATE
+> Task :integration_test:writeDebugAarMetadata
+> Task :sqlite3_flutter_libs:preBuild UP-TO-DATE
+> Task :sqlite3_flutter_libs:preDebugBuild UP-TO-DATE
+> Task :path_provider_android:writeDebugAarMetadata
+> Task :sqlite3_flutter_libs:writeDebugAarMetadata
+> Task :file_selector_android:processDebugNavigationResources
+> Task :integration_test:processDebugNavigationResources
+> Task :path_provider_android:processDebugNavigationResources
+> Task :app:checkDebugAarMetadata
+> Task :sqlite3_flutter_libs:processDebugNavigationResources
+> Task :app:processDebugNavigationResources
+> Task :app:compileDebugNavigationResources
+> Task :app:cleanMergeDebugAssets
+> Task :app:mergeDebugShaders
+> Task :app:compileDebugShaders NO-SOURCE
+> Task :app:generateDebugAssets UP-TO-DATE
+> Task :file_selector_android:mergeDebugShaders
+> Task :file_selector_android:compileDebugShaders NO-SOURCE
+> Task :file_selector_android:generateDebugAssets UP-TO-DATE
+> Task :file_selector_android:mergeDebugAssets
+> Task :integration_test:mergeDebugShaders
+> Task :integration_test:compileDebugShaders NO-SOURCE
+> Task :integration_test:generateDebugAssets UP-TO-DATE
+> Task :integration_test:mergeDebugAssets
+> Task :path_provider_android:mergeDebugShaders
+> Task :path_provider_android:compileDebugShaders NO-SOURCE
+> Task :path_provider_android:generateDebugAssets UP-TO-DATE
+> Task :path_provider_android:mergeDebugAssets
+> Task :sqlite3_flutter_libs:mergeDebugShaders
+> Task :sqlite3_flutter_libs:compileDebugShaders NO-SOURCE
+> Task :sqlite3_flutter_libs:generateDebugAssets UP-TO-DATE
+> Task :sqlite3_flutter_libs:mergeDebugAssets
+> Task :app:mergeDebugAssets
+> Task :app:copyFlutterAssetsDebug
+> Task :app:generateDebugResValues
+> Task :file_selector_android:generateDebugResValues
+> Task :file_selector_android:generateDebugResources
+> Task :file_selector_android:packageDebugResources
+> Task :integration_test:generateDebugResValues
+> Task :integration_test:generateDebugResources
+> Task :integration_test:packageDebugResources
+> Task :path_provider_android:generateDebugResValues
+> Task :path_provider_android:generateDebugResources
+> Task :path_provider_android:packageDebugResources
+> Task :sqlite3_flutter_libs:generateDebugResValues
+> Task :sqlite3_flutter_libs:generateDebugResources
+> Task :sqlite3_flutter_libs:packageDebugResources
+> Task :app:mapDebugSourceSetPaths
+> Task :app:generateDebugResources
+> Task :app:packageDebugResources
+> Task :app:mergeDebugResources
+> Task :app:createDebugCompatibleScreenManifests
+> Task :app:extractDeepLinksDebug
+> Task :file_selector_android:extractDeepLinksDebug
+> Task :integration_test:extractDeepLinksDebug
+> Task :path_provider_android:extractDeepLinksDebug
+> Task :sqlite3_flutter_libs:extractDeepLinksDebug
+> Task :app:parseDebugLocalResources
+> Task :file_selector_android:compileDebugLibraryResources
+> Task :integration_test:compileDebugLibraryResources
+> Task :file_selector_android:parseDebugLocalResources
+> Task :integration_test:parseDebugLocalResources
+
+> Task :sqlite3_flutter_libs:processDebugManifest
+package="eu.simonbinder.sqlite3_flutter_libs" found in source AndroidManifest.xml: C:\Users\FalingFliff\AppData\Local\Pub\Cache\hosted\pub.flutter-io.cn\sqlite3_flutter_libs-0.5.29\android\src\main\AndroidManifest.xml.
+Setting the namespace via the package attribute in the source AndroidManifest.xml is no longer supported, and the value is ignored.
+Recommendation: remove package="eu.simonbinder.sqlite3_flutter_libs" from the source AndroidManifest.xml: C:\Users\FalingFliff\AppData\Local\Pub\Cache\hosted\pub.flutter-io.cn\sqlite3_flutter_libs-0.5.29\android\src\main\AndroidManifest.xml.
+
+> Task :path_provider_android:processDebugManifest
+package="io.flutter.plugins.pathprovider" found in source AndroidManifest.xml: C:\Users\FalingFliff\AppData\Local\Pub\Cache\hosted\pub.flutter-io.cn\path_provider_android-2.2.17\android\src\main\AndroidManifest.xml.
+Setting the namespace via the package attribute in the source AndroidManifest.xml is no longer supported, and the value is ignored.
+Recommendation: remove package="io.flutter.plugins.pathprovider" from the source AndroidManifest.xml: C:\Users\FalingFliff\AppData\Local\Pub\Cache\hosted\pub.flutter-io.cn\path_provider_android-2.2.17\android\src\main\AndroidManifest.xml.
+
+> Task :file_selector_android:processDebugManifest
+package="dev.flutter.packages.file_selector_android" found in source AndroidManifest.xml: C:\Users\FalingFliff\AppData\Local\Pub\Cache\hosted\pub.flutter-io.cn\file_selector_android-0.5.1+15\android\src\main\AndroidManifest.xml.
+Setting the namespace via the package attribute in the source AndroidManifest.xml is no longer supported, and the value is ignored.
+Recommendation: remove package="dev.flutter.packages.file_selector_android" from the source AndroidManifest.xml: C:\Users\FalingFliff\AppData\Local\Pub\Cache\hosted\pub.flutter-io.cn\file_selector_android-0.5.1+15\android\src\main\AndroidManifest.xml.
+
+> Task :integration_test:processDebugManifest
+package="dev.flutter.integration_test" found in source AndroidManifest.xml: C:\Users\FalingFliff\Documents\ChatGPT\RainLink\.toolchains\flutter\packages\integration_test\android\src\main\AndroidManifest.xml.
+Setting the namespace via the package attribute in the source AndroidManifest.xml is no longer supported, and the value is ignored.
+Recommendation: remove package="dev.flutter.integration_test" from the source AndroidManifest.xml: C:\Users\FalingFliff\Documents\ChatGPT\RainLink\.toolchains\flutter\packages\integration_test\android\src\main\AndroidManifest.xml.
+
+> Task :file_selector_android:generateDebugRFile
+> Task :integration_test:generateDebugRFile
+> Task :app:processDebugMainManifest
+> Task :app:processDebugManifest
+> Task :path_provider_android:compileDebugLibraryResources
+> Task :sqlite3_flutter_libs:compileDebugLibraryResources
+> Task :app:processDebugManifestForPackage
+> Task :path_provider_android:parseDebugLocalResources
+> Task :sqlite3_flutter_libs:parseDebugLocalResources
+> Task :path_provider_android:generateDebugRFile
+> Task :file_selector_android:javaPreCompileDebug
+> Task :sqlite3_flutter_libs:generateDebugRFile
+> Task :file_selector_android:compileDebugJavaWithJavac
+> Task :integration_test:javaPreCompileDebug
+> Task :path_provider_android:javaPreCompileDebug
+> Task :file_selector_android:bundleLibCompileToJarDebug
+> Task :app:processDebugResources
+> Task :integration_test:compileDebugJavaWithJavac
+> Task :integration_test:bundleLibCompileToJarDebug
+> Task :path_provider_android:compileDebugJavaWithJavac
+> Task :path_provider_android:bundleLibCompileToJarDebug
+> Task :sqlite3_flutter_libs:javaPreCompileDebug
+> Task :app:javaPreCompileDebug
+> Task :sqlite3_flutter_libs:compileDebugJavaWithJavac
+> Task :sqlite3_flutter_libs:bundleLibCompileToJarDebug
+> Task :app:compressDebugAssets
+> Task :file_selector_android:processDebugJavaRes NO-SOURCE
+> Task :integration_test:processDebugJavaRes NO-SOURCE
+> Task :path_provider_android:processDebugJavaRes NO-SOURCE
+> Task :sqlite3_flutter_libs:processDebugJavaRes NO-SOURCE
+> Task :app:checkDebugDuplicateClasses
+> Task :integration_test:bundleLibRuntimeToDirDebug
+> Task :sqlite3_flutter_libs:bundleLibRuntimeToDirDebug
+> Task :path_provider_android:bundleLibRuntimeToDirDebug
+> Task :file_selector_android:bundleLibRuntimeToDirDebug
+
+> Task :app:compileFlutterBuildProfile
+Flutter assets will be downloaded from https://storage.flutter-io.cn. Make sure you trust this source!
+
+> Task :app:desugarDebugFileDependencies
+
+> Task :app:compileDebugKotlin
+w: file:///C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/android/app/src/main/kotlin/dev/rainlink/rainlink/core/AndroidPlatform.kt:46:39 'val allNetworks: Array<(out) Network!>' is deprecated. Deprecated in Java.
+w: file:///C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/android/app/src/main/kotlin/dev/rainlink/rainlink/core/AndroidPlatform.kt:81:30 'val allNetworks: Array<(out) Network!>' is deprecated. Deprecated in Java.
+w: file:///C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/android/app/src/main/kotlin/dev/rainlink/rainlink/core/AndroidPlatform.kt:133:40 'val allNetworks: Array<(out) Network!>' is deprecated. Deprecated in Java.
+
+> Task :app:compileDebugJavaWithJavac
+> Task :app:processDebugJavaRes
+> Task :app:mergeDebugJavaResource
+> Task :app:mergeLibDexDebug
+> Task :app:dexBuilderDebug
+> Task :app:mergeProjectDexDebug
+> Task :app:packJniLibsflutterBuildProfile
+> Task :app:preProfileBuild UP-TO-DATE
+> Task :app:mergeExtDexDebug
+> Task :app:configureCMakeDebug[arm64-v8a]
+> Task :app:buildCMakeDebug[arm64-v8a]
+> Task :app:configureCMakeDebug[x86_64]
+> Task :app:buildCMakeDebug[x86_64]
+> Task :app:mergeDebugJniLibFolders
+> Task :file_selector_android:mergeDebugJniLibFolders
+> Task :file_selector_android:mergeDebugNativeLibs NO-SOURCE
+> Task :file_selector_android:copyDebugJniLibsProjectOnly
+> Task :integration_test:mergeDebugJniLibFolders
+> Task :integration_test:mergeDebugNativeLibs NO-SOURCE
+> Task :integration_test:copyDebugJniLibsProjectOnly
+> Task :path_provider_android:mergeDebugJniLibFolders
+> Task :path_provider_android:mergeDebugNativeLibs NO-SOURCE
+> Task :path_provider_android:copyDebugJniLibsProjectOnly
+> Task :sqlite3_flutter_libs:mergeDebugJniLibFolders
+> Task :sqlite3_flutter_libs:mergeDebugNativeLibs NO-SOURCE
+> Task :sqlite3_flutter_libs:copyDebugJniLibsProjectOnly
+> Task :app:validateSigningDebug
+> Task :app:writeDebugAppMetadata
+> Task :app:writeDebugSigningConfigVersions
+> Task :app:preDebugAndroidTestBuild SKIPPED
+> Task :app:checkDebugAndroidTestAarMetadata
+> Task :app:processDebugAndroidTestNavigationResources
+> Task :app:bundleDebugClassesToCompileJar
+> Task :app:compileDebugAndroidTestNavigationResources
+> Task :app:generateDebugAndroidTestResValues
+> Task :app:mapDebugAndroidTestSourceSetPaths
+> Task :app:generateDebugAndroidTestResources
+> Task :app:mergeDebugAndroidTestResources
+> Task :app:processDebugAndroidTestManifest
+> Task :app:javaPreCompileDebugAndroidTest
+> Task :app:mergeDebugAndroidTestShaders
+> Task :app:compileDebugAndroidTestShaders NO-SOURCE
+> Task :app:generateDebugAndroidTestAssets UP-TO-DATE
+> Task :app:mergeDebugAndroidTestAssets
+> Task :app:compressDebugAndroidTestAssets
+> Task :app:checkDebugAndroidTestDuplicateClasses
+> Task :app:desugarDebugAndroidTestFileDependencies
+> Task :app:mergeExtDexDebugAndroidTest
+> Task :app:mergeDebugAndroidTestJniLibFolders
+> Task :app:mergeLibDexDebugAndroidTest
+> Task :app:validateSigningDebugAndroidTest
+> Task :app:writeDebugAndroidTestSigningConfigVersions
+> Task :app:bundleDebugClassesToRuntimeJar
+> Task :app:processDebugAndroidTestResources
+> Task :app:preDebugUnitTestBuild UP-TO-DATE
+> Task :app:javaPreCompileDebugUnitTest
+> Task :integration_test:bundleLibRuntimeToJarDebug
+> Task :file_selector_android:bundleLibRuntimeToJarDebug
+> Task :path_provider_android:bundleLibRuntimeToJarDebug
+> Task :sqlite3_flutter_libs:bundleLibRuntimeToJarDebug
+> Task :file_selector_android:stripDebugDebugSymbols NO-SOURCE
+> Task :file_selector_android:checkDebugAarMetadata
+> Task :file_selector_android:copyDebugJniLibsProjectAndLocalJars
+> Task :app:mergeDebugNativeLibs
+> Task :file_selector_android:extractDebugAnnotations
+> Task :app:mergeDebugAndroidTestNativeLibs NO-SOURCE
+> Task :app:stripDebugAndroidTestDebugSymbols NO-SOURCE
+> Task :file_selector_android:extractDeepLinksForAarDebug
+> Task :file_selector_android:mergeDebugGeneratedProguardFiles
+> Task :file_selector_android:mergeDebugConsumerProguardFiles
+> Task :file_selector_android:prepareDebugArtProfile
+> Task :file_selector_android:prepareLintJarForPublish
+> Task :file_selector_android:mergeDebugJavaResource
+> Task :integration_test:checkDebugAarMetadata
+> Task :file_selector_android:syncDebugLibJars
+> Task :file_selector_android:bundleDebugLocalLintAar
+> Task :integration_test:stripDebugDebugSymbols NO-SOURCE
+> Task :integration_test:copyDebugJniLibsProjectAndLocalJars
+> Task :integration_test:extractDebugAnnotations
+> Task :integration_test:extractDeepLinksForAarDebug
+> Task :integration_test:mergeDebugGeneratedProguardFiles
+> Task :integration_test:mergeDebugConsumerProguardFiles
+> Task :integration_test:prepareDebugArtProfile
+> Task :integration_test:prepareLintJarForPublish
+> Task :integration_test:mergeDebugJavaResource
+> Task :path_provider_android:checkDebugAarMetadata
+> Task :integration_test:syncDebugLibJars
+> Task :integration_test:bundleDebugLocalLintAar
+> Task :path_provider_android:stripDebugDebugSymbols NO-SOURCE
+> Task :path_provider_android:copyDebugJniLibsProjectAndLocalJars
+> Task :path_provider_android:extractDebugAnnotations
+> Task :app:compileDebugUnitTestKotlin
+> Task :app:stripDebugDebugSymbols
+> Task :path_provider_android:extractDeepLinksForAarDebug
+> Task :app:compileDebugUnitTestJavaWithJavac NO-SOURCE
+> Task :app:processDebugUnitTestJavaRes
+
+> Task :app:compileDebugAndroidTestKotlin
+w: file:///C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/android/app/src/androidTest/kotlin/dev/rainlink/rainlink/core/AndroidCoreTest.kt:112:34 'val allNetworks: Array<(out) Network!>' is deprecated. Deprecated in Java.
+w: file:///C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/android/app/src/androidTest/kotlin/dev/rainlink/rainlink/core/AndroidCoreTest.kt:218:50 'val allNetworks: Array<(out) Network!>' is deprecated. Deprecated in Java.
+w: file:///C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/android/app/src/androidTest/kotlin/dev/rainlink/rainlink/core/AndroidNetworkHandoverTest.kt:43:39 'val allNetworks: Array<(out) Network!>' is deprecated. Deprecated in Java.
+w: file:///C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/android/app/src/androidTest/kotlin/dev/rainlink/rainlink/core/AndroidNetworkHandoverTest.kt:94:38 'val allNetworks: Array<(out) Network!>' is deprecated. Deprecated in Java.
+w: file:///C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/android/app/src/androidTest/kotlin/dev/rainlink/rainlink/core/AndroidNetworkHandoverTest.kt:110:43 'val allNetworks: Array<(out) Network!>' is deprecated. Deprecated in Java.
+w: file:///C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/android/app/src/androidTest/kotlin/dev/rainlink/rainlink/core/AndroidNetworkHandoverTest.kt:129:80 'val allNetworks: Array<(out) Network!>' is deprecated. Deprecated in Java.
+
+> Task :app:testDebugUnitTest
+> Task :app:compileDebugAndroidTestJavaWithJavac
+> Task :app:processDebugAndroidTestJavaRes
+> Task :app:mergeDebugAndroidTestJavaResource
+> Task :app:dexBuilderDebugAndroidTest
+> Task :path_provider_android:mergeDebugGeneratedProguardFiles
+> Task :path_provider_android:mergeDebugConsumerProguardFiles
+> Task :path_provider_android:prepareDebugArtProfile
+> Task :path_provider_android:prepareLintJarForPublish
+> Task :path_provider_android:mergeDebugJavaResource
+> Task :app:mergeProjectDexDebugAndroidTest
+> Task :sqlite3_flutter_libs:checkDebugAarMetadata
+> Task :path_provider_android:syncDebugLibJars
+> Task :path_provider_android:bundleDebugLocalLintAar
+> Task :sqlite3_flutter_libs:stripDebugDebugSymbols NO-SOURCE
+> Task :sqlite3_flutter_libs:copyDebugJniLibsProjectAndLocalJars
+> Task :sqlite3_flutter_libs:extractDebugAnnotations
+> Task :sqlite3_flutter_libs:extractDeepLinksForAarDebug
+> Task :sqlite3_flutter_libs:mergeDebugGeneratedProguardFiles
+> Task :sqlite3_flutter_libs:mergeDebugConsumerProguardFiles
+> Task :sqlite3_flutter_libs:prepareDebugArtProfile
+> Task :sqlite3_flutter_libs:prepareLintJarForPublish
+> Task :sqlite3_flutter_libs:mergeDebugJavaResource
+> Task :file_selector_android:createFullJarDebug
+> Task :sqlite3_flutter_libs:syncDebugLibJars
+> Task :sqlite3_flutter_libs:bundleDebugLocalLintAar
+> Task :file_selector_android:writeDebugLintModelMetadata
+> Task :integration_test:createFullJarDebug
+> Task :integration_test:writeDebugLintModelMetadata
+> Task :path_provider_android:createFullJarDebug
+> Task :path_provider_android:writeDebugLintModelMetadata
+> Task :sqlite3_flutter_libs:createFullJarDebug
+> Task :sqlite3_flutter_libs:writeDebugLintModelMetadata
+> Task :app:packageDebugAndroidTest
+> Task :app:createDebugAndroidTestApkListingFileRedirect
+> Task :app:assembleDebugAndroidTest
+> Task :app:generateDebugAndroidTestLintModel
+> Task :app:extractProguardFiles
+> Task :file_selector_android:extractProguardFiles
+> Task :file_selector_android:generateDebugLintModel
+> Task :integration_test:extractProguardFiles
+> Task :integration_test:generateDebugLintModel
+> Task :path_provider_android:extractProguardFiles
+> Task :path_provider_android:generateDebugLintModel
+> Task :sqlite3_flutter_libs:extractProguardFiles
+> Task :sqlite3_flutter_libs:generateDebugLintModel
+> Task :app:generateDebugLintReportModel
+> Task :app:generateDebugUnitTestLintModel
+> Task :app:packageDebug
+> Task :app:createDebugApkListingFileRedirect
+> Task :app:assembleDebug
+> Task :file_selector_android:preDebugAndroidTestBuild UP-TO-DATE
+> Task :file_selector_android:generateDebugAndroidTestResValues
+> Task :file_selector_android:generateDebugAndroidTestLintModel
+> Task :file_selector_android:preDebugUnitTestBuild UP-TO-DATE
+> Task :file_selector_android:generateDebugUnitTestLintModel
+> Task :integration_test:preDebugAndroidTestBuild UP-TO-DATE
+> Task :integration_test:generateDebugAndroidTestResValues
+> Task :integration_test:generateDebugAndroidTestLintModel
+> Task :integration_test:preDebugUnitTestBuild UP-TO-DATE
+> Task :integration_test:generateDebugUnitTestLintModel
+> Task :path_provider_android:preDebugAndroidTestBuild UP-TO-DATE
+> Task :path_provider_android:generateDebugAndroidTestResValues
+> Task :path_provider_android:generateDebugAndroidTestLintModel
+> Task :path_provider_android:preDebugUnitTestBuild UP-TO-DATE
+> Task :path_provider_android:generateDebugUnitTestLintModel
+> Task :sqlite3_flutter_libs:preDebugAndroidTestBuild UP-TO-DATE
+> Task :sqlite3_flutter_libs:generateDebugAndroidTestResValues
+> Task :sqlite3_flutter_libs:generateDebugAndroidTestLintModel
+> Task :sqlite3_flutter_libs:preDebugUnitTestBuild UP-TO-DATE
+> Task :sqlite3_flutter_libs:generateDebugUnitTestLintModel
+> Task :app:lintAnalyzeDebugUnitTest
+> Task :file_selector_android:lintAnalyzeDebugAndroidTest
+> Task :file_selector_android:lintAnalyzeDebugUnitTest
+> Task :integration_test:lintAnalyzeDebugAndroidTest
+> Task :integration_test:lintAnalyzeDebugUnitTest
+> Task :path_provider_android:lintAnalyzeDebugAndroidTest
+> Task :path_provider_android:lintAnalyzeDebugUnitTest
+> Task :sqlite3_flutter_libs:lintAnalyzeDebugAndroidTest
+> Task :sqlite3_flutter_libs:lintAnalyzeDebugUnitTest
+> Task :app:lintAnalyzeDebugAndroidTest
+> Task :sqlite3_flutter_libs:lintAnalyzeDebug
+> Task :path_provider_android:lintAnalyzeDebug
+> Task :integration_test:lintAnalyzeDebug
+> Task :file_selector_android:lintAnalyzeDebug
+> Task :app:lintAnalyzeDebug
+
+> Task :app:lintReportDebug
+Wrote HTML report to file:///C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/build/app/reports/lint-results-debug.html
+
+> Task :app:lintDebug
+
+[Incubating] Problems report is available at: file:///C:/Users/FalingFliff/Documents/ChatGPT/RainLink/app/build/reports/problems/problems-report.html
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.14.3/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 4m 32s
+256 actionable tasks: 255 executed, 1 up-to-date

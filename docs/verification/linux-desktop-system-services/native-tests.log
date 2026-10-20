@@ -1,0 +1,9 @@
+TAP version 14
+# random seed: R02S20ac6aa02154c43ad10dc309e97eb4f4
+1..3
+# Start of desktop tests
+# GLib-GIO-DEBUG: _g_io_module_get_default: Found default implementation local (GLocalVfs) for ?gio-vfs?
+ok 1 /desktop/off-cancels-pending-enable
+ok 2 /desktop/release-removes-item
+ok 3 /desktop/destroy-pending-bus-request
+# End of desktop tests

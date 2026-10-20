@@ -1,0 +1,31 @@
+{
+  "kotlinUnit": {
+    "tests": "5",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0"
+  },
+  "lint": [
+    {
+      "id": "OldTargetApi",
+      "severity": "Warning",
+      "message": "Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the `android.os.Build.VERSION_CODES` javadoc for details."
+    },
+    {
+      "id": "GradleDependency",
+      "severity": "Warning",
+      "message": "A newer version of `compileSdkVersion` than 35 is available: 36"
+    },
+    {
+      "id": "ObsoleteSdkInt",
+      "severity": "Warning",
+      "message": "This folder configuration (`v21`) is unnecessary; `minSdkVersion` is 29. Merge all the resources in this folder into `drawable`."
+    },
+    {
+      "id": "UseKtx",
+      "severity": "Warning",
+      "message": "Use the KTX extension function `SharedPreferences.edit` instead?"
+    }
+  ],
+  "pythonSyntaxFiles": 2
+}

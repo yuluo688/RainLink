@@ -1,0 +1,38 @@
+[INFO] Generating build script...
+[INFO] Generating build script completed, took 307ms
+
+[WARNING] Invalidated precompiled build script due to missing asset graph.
+[INFO] Precompiling build script......
+[INFO] Precompiling build script... completed, took 883ms
+
+[INFO] Initializing inputs
+[INFO] Building new asset graph...
+[INFO] Building new asset graph completed, took 1.0s
+
+[INFO] Checking for unexpected pre-existing outputs....
+[INFO] Deleting 1 declared outputs which already existed on disk.
+[INFO] Checking for unexpected pre-existing outputs. completed, took 1ms
+
+[INFO] Running build...
+[INFO] 1.0s elapsed, 2/47 actions completed.
+[INFO] 2.0s elapsed, 33/64 actions completed.
+[INFO] 3.1s elapsed, 54/81 actions completed.
+[INFO] 13.7s elapsed, 88/109 actions completed.
+[INFO] 14.8s elapsed, 88/109 actions completed.
+[INFO] 15.8s elapsed, 101/121 actions completed.
+[INFO] 17.4s elapsed, 122/138 actions completed.
+[INFO] 18.4s elapsed, 122/138 actions completed.
+[INFO] 19.5s elapsed, 159/175 actions completed.
+[INFO] 20.5s elapsed, 193/209 actions completed.
+[INFO] 21.5s elapsed, 259/275 actions completed.
+[INFO] 22.5s elapsed, 356/372 actions completed.
+[INFO] 23.6s elapsed, 560/574 actions completed.
+[INFO] 24.6s elapsed, 619/634 actions completed.
+[INFO] 25.7s elapsed, 1159/1159 actions completed.
+[INFO] Running build completed, took 26.3s
+
+[INFO] Caching finalized dependency graph...
+[INFO] Caching finalized dependency graph completed, took 93ms
+
+[INFO] Succeeded after 26.5s with 405 outputs (1418 actions)
+

@@ -1,0 +1,464 @@
+{
+  "schema": 1,
+  "product": "RainLink",
+  "platform": "linux-x64",
+  "version": "0.1.0+4",
+  "files": [
+    {
+      "path": "data/flutter_assets/AssetManifest.bin",
+      "bytes": 3287,
+      "sha256": "197cc1fc886dd49ddc4b32092c0205cebbec888a112ddf0b43e6fa76510dcef8",
+      "mode": "0644"
+    },
+    {
+      "path": "data/flutter_assets/AssetManifest.json",
+      "bytes": 2915,
+      "sha256": "ce46419ac117c744e4e7f05b3a0e15504c818810ea1bf2dfc060b0de2a49eca5",
+      "mode": "0644"
+    },
+    {
+      "path": "data/flutter_assets/FontManifest.json",
+      "bytes": 591,
+      "sha256": "786acca5dc5c5647b4017f7c7c21b5629368243334e5bd58e3b075795dab6294",
+      "mode": "0644"
+    },
+    {
+      "path": "data/flutter_assets/NOTICES.Z",
+      "bytes": 10957,
+      "sha256": "e46ebf7174941a8e87f0a17c9094fd48f6398bfbacb199dff878d5b2405b5bfe",
+      "mode": "0644"
+    },
+    {
+      "path": "data/flutter_assets/assets/brand/mark.svg",
+      "bytes": 1274,
+      "sha256": "ba9f8fdd784e5c7cdc3f603943c3db05e027be6896e1442c8f240c426873ce15",
+      "mode": "0644"
+    },
+    {
+      "path": "data/flutter_assets/assets/flags/cn.svg",
+      "bytes": 1326,
+      "sha256": "e92e178ff143a98e6bb9bf1e4237f02625ac97b34603bf4807db144568865a01",
+      "mode": "0644"
+    },
+    {
+      "path": "data/flutter_assets/assets/flags/de.svg",
+      "bytes": 546,
+      "sha256": "e13d0a45ad4cbbc1602fa5092fe3f629cfb281ec89ba7b441b3c2bbf8ee74938",
+      "mode": "0644"
+    },
+    {
+      "path": "data/flutter_assets/assets/flags/gb.svg",
+      "bytes": 862,
+      "sha256": "e266acfbc26e1cd1f9f40d55ebcd74a528b0fb78ad48cc2f0412069599ae7fd2",
+      "mode": "0644"
+    },
+    {
+      "path": "data/flutter_assets/assets/flags/jp.svg",
+      "bytes": 653,
+      "sha256": "963b279a9f8c41c0045876f98c9577631225d763f07825e00a18f01b26510400",
+      "mode": "0644"
+    },
+    {
+      "path": "data/flutter_assets/assets/flags/nl.svg",
+      "bytes": 546,
+      "sha256": "0e9f93c87774cd48f184d4ec774bda3f2afb5f24c2dba6f4140af8e5af918858",
+      "mode": "0644"
+    },
+    {
+      "path": "data/flutter_assets/assets/flags/sg.svg",
+      "bytes": 1840,
+      "sha256": "8e68845cf583c074e7f2f5e2dda466c70385c70061b4104685ea050137d125fc",
+      "mode": "0644"
+    },
+    {
+      "path": "data/flutter_assets/assets/flags/us.svg",
+      "bytes": 4622,
+      "sha256": "63d1a2c77d3e35e7ddb68da1f0e3d70c4b11cbf37f604e70aadbb1d777692827",
+      "mode": "0644"
+    },
+    {
+      "path": "data/flutter_assets/assets/fonts/Inter-OFL.txt",
+      "bytes": 4377,
+      "sha256": "5b9321a4298cfeb6b34354164a1c3afc3db114569984c502b9b35d988fd58c57",
+      "mode": "0644"
+    },
+    {
+      "path": "data/flutter_assets/assets/fonts/Inter.ttf",
+      "bytes": 876576,
+      "sha256": "29160a80ff49ddcab2c97711247e08b1fab27a484a329ce8b813d820dc559031",
+      "mode": "0644"
+    },
+    {
+      "path": "data/flutter_assets/assets/fonts/NotoSansSC-OFL.txt",
+      "bytes": 4388,
+      "sha256": "1c05c68c34f9708415aada51f17e1b0092d2cea709bf4a94cd38114f9e73d7d9",
+      "mode": "0644"
+    },
+    {
+      "path": "data/flutter_assets/assets/fonts/NotoSansSC.ttf",
+      "bytes": 17773244,
+      "sha256": "763146584cf0710223441356b4395e279021b0806c196614377a7a0174ae074a",
+      "mode": "0644"
+    },
+    {
+      "path": "data/flutter_assets/assets/fonts/RobotoMono-OFL.txt",
+      "bytes": 4395,
+      "sha256": "50ab8dd54680d3473f649c9db86fece88434d097c7834475c1c72d2f8c429215",
+      "mode": "0644"
+    },
+    {
+      "path": "data/flutter_assets/assets/fonts/RobotoMono.ttf",
+      "bytes": 183700,
+      "sha256": "66a80e79d17e4c7cabd162e2916578a4cc08fd19eef6e2a643305eae9c567b2b",
+      "mode": "0644"
+    },
+    {
+      "path": "data/flutter_assets/assets/icons/arrow_right.svg",
+      "bytes": 224,
+      "sha256": "7feae3042432015a36e2251d033513f819a239af3fbc6004335f0f2b63b6ce66",
+      "mode": "0644"
+    },
+    {
+      "path": "data/flutter_assets/assets/icons/back.svg",
+      "bytes": 215,
+      "sha256": "801e21c14d9d6d6ac54115a081ad0aced2428311ad8a843c5929957086858564",
+      "mode": "0644"
+    },
+    {
+      "path": "data/flutter_assets/assets/icons/bell.svg",
+      "bytes": 379,
+      "sha256": "761ec69516ea6688b9bf0b1cf79ccda75bf92971541b381aa56dedc00cd6ff3b",
+      "mode": "0644"
+    },
+    {
+      "path": "data/flutter_assets/assets/icons/chart.svg",
+      "bytes": 231,
+      "sha256": "7df3d561072cc64d4b165243b0177d900f6bd86acc8c8eb6686d0dfceb875c79",
+      "mode": "0644"
+    },
+    {
+      "path": "data/flutter_assets/assets/icons/check.svg",
+      "bytes": 214,
+      "sha256": "791e32fd0799693feeb2c788f895e196888b2475445c115cf4b1f2191cc4d1ad",
+      "mode": "0644"
+    },
+    {
+      "path": "data/flutter_assets/assets/icons/chevron_down.svg",
+      "bytes": 214,
+      "sha256": "d3701ce3d8443a6cf2b2752adbf09382dfaf18d7713933d75f4f1400cee9ea39",
+      "mode": "0644"
+    },
+    {
+      "path": "data/flutter_assets/assets/icons/chevron_right.svg",
+      "bytes": 214,
+      "sha256": "8461762bf55faed5c8570652e6a471821a4eeb06f0ef6c40b5669edefa375b52",
+      "mode": "0644"
+    },
+    {
+      "path": "data/flutter_assets/assets/icons/clock.svg",
+      "bytes": 422,
+      "sha256": "073f9e636b873d122c6ffd75c56601ef41937766ea6668588b645ce07008b1e9",
+      "mode": "0644"
+    },
+    {
+      "path": "data/flutter_assets/assets/icons/close.svg",
+      "bytes": 243,
+      "sha256": "0e44cfeb04317ecbd0216199b61cf940650cc394937714712f23e9b0be30e32d",
+      "mode": "0644"
+    },
+    {
+      "path": "data/flutter_assets/assets/icons/connections.svg",
+      "bytes": 245,
+      "sha256": "7830dfed420dc04ec455f3c6e54fee8c361077ef528e4bb565f4fd38cdbe4cde",
+      "mode": "0644"
+    },
+    {
+      "path": "data/flutter_assets/assets/icons/copy.svg",
+      "bytes": 433,
+      "sha256": "9a4b70d01a1a808ac7b39c1853af9a84bde7414a40fb0108fc24a49320b7c654",
+      "mode": "0644"
+    },
+    {
+      "path": "data/flutter_assets/assets/icons/download.svg",
+      "bytes": 238,
+      "sha256": "541315177cfb8c35a8325e14c0f9c7ae696e377c099ab366fd77cda424dbe84d",
+      "mode": "0644"
+    },
+    {
+      "path": "data/flutter_assets/assets/icons/folder.svg",
+      "bytes": 224,
+      "sha256": "5ba08b799a7a72ce1675e0eb49ef89cc42569b71489d01feb43630fe87f98817",
+      "mode": "0644"
+    },
+    {
+      "path": "data/flutter_assets/assets/icons/globe.svg",
+      "bytes": 569,
+      "sha256": "330d3b0685e8526cea71a977e3f7ad34dc9534c58db7991b12b9943fb74d2c26",
+      "mode": "0644"
+    },
+    {
+      "path": "data/flutter_assets/assets/icons/grid.svg",
+      "bytes": 1051,
+      "sha256": "3c742af2ba5c4319e58284723edabf1b7651e48b856cbfc8a8f6b5a1627a30c5",
+      "mode": "0644"
+    },
+    {
+      "path": "data/flutter_assets/assets/icons/laptop.svg",
+      "bytes": 436,
+      "sha256": "f5bedf0546745b973e8556d9f98cd4f832f3b6c66e095d80cdf3cef245a1ee1b",
+      "mode": "0644"
+    },
+    {
+      "path": "data/flutter_assets/assets/icons/link.svg",
+      "bytes": 1048,
+      "sha256": "f7caba95d08f1f9796d4d4f186d4e433a45a14a687e6427d90e550b30bdd6796",
+      "mode": "0644"
+    },
+    {
+      "path": "data/flutter_assets/assets/icons/moon.svg",
+      "bytes": 757,
+      "sha256": "41d8ce698a4f70958db0e66343652a6977c6e11e1233aa323039fd476ff5c7c2",
+      "mode": "0644"
+    },
+    {
+      "path": "data/flutter_assets/assets/icons/more.svg",
+      "bytes": 739,
+      "sha256": "7413c14ad2dd4a768796ca789ac9db5356df3583396c6d0897a083167028f349",
+      "mode": "0644"
+    },
+    {
+      "path": "data/flutter_assets/assets/icons/nodes.svg",
+      "bytes": 982,
+      "sha256": "1322bc073b06a643f472d201b5a4e299523084968bd22fc2647c833b081ff0cb",
+      "mode": "0644"
+    },
+    {
+      "path": "data/flutter_assets/assets/icons/plus.svg",
+      "bytes": 233,
+      "sha256": "d0754e215bec82b30ed71eb77db8176fe73498b2bfd1c1599ba371c86355abde",
+      "mode": "0644"
+    },
+    {
+      "path": "data/flutter_assets/assets/icons/power.svg",
+      "bytes": 581,
+      "sha256": "7bdfc9859858a6679bcd4c66315e269947a50f4e23ed3e6ce287110521320ebf",
+      "mode": "0644"
+    },
+    {
+      "path": "data/flutter_assets/assets/icons/profile.svg",
+      "bytes": 343,
+      "sha256": "ed87cd05a3313e28bcc1ce05024808dfa865b4358798f6785841f60ff9e7137d",
+      "mode": "0644"
+    },
+    {
+      "path": "data/flutter_assets/assets/icons/qr.svg",
+      "bytes": 281,
+      "sha256": "2c99ae98883ca67056bb82efd2006575a4ae7bb693bb353245d0b38b3ee10235",
+      "mode": "0644"
+    },
+    {
+      "path": "data/flutter_assets/assets/icons/rain.svg",
+      "bytes": 1030,
+      "sha256": "c68253560af537ce1df009fa4fdaabdc210c8355a8e764c2283da9c8fc9cea8c",
+      "mode": "0644"
+    },
+    {
+      "path": "data/flutter_assets/assets/icons/refresh.svg",
+      "bytes": 612,
+      "sha256": "05ee43f1ede9f058df6cff763afa9b1810a21829920529ca0d65c415539209e8",
+      "mode": "0644"
+    },
+    {
+      "path": "data/flutter_assets/assets/icons/rules.svg",
+      "bytes": 894,
+      "sha256": "5123d0bb735adc0ae548c680033cf3506d4e96927f93681540213d45000807a2",
+      "mode": "0644"
+    },
+    {
+      "path": "data/flutter_assets/assets/icons/search.svg",
+      "bytes": 430,
+      "sha256": "bbaf43a8562f89f526d3457864089d3084c8c5fb94289e96ba9f5acbc375d6f9",
+      "mode": "0644"
+    },
+    {
+      "path": "data/flutter_assets/assets/icons/settings.svg",
+      "bytes": 588,
+      "sha256": "98c3560ee32a3a9fd321b3e709865500f93e8b464e52661b9015e99603cfc428",
+      "mode": "0644"
+    },
+    {
+      "path": "data/flutter_assets/assets/icons/shield.svg",
+      "bytes": 366,
+      "sha256": "b310ca7c4045f37180da9edb016e5ac30efded5e560346890b9f32c0ac6d1d46",
+      "mode": "0644"
+    },
+    {
+      "path": "data/flutter_assets/assets/icons/speed.svg",
+      "bytes": 830,
+      "sha256": "027ab4ed348b4c421ca9ac1020e470969a83d7b4984f06bcdf62896bebcf74d9",
+      "mode": "0644"
+    },
+    {
+      "path": "data/flutter_assets/assets/icons/star.svg",
+      "bytes": 282,
+      "sha256": "292e8e3f06a882537616d73e0bd63025111e3347bf067c5dc33fdc3e839918b2",
+      "mode": "0644"
+    },
+    {
+      "path": "data/flutter_assets/assets/icons/sun.svg",
+      "bytes": 496,
+      "sha256": "eff8943446a80324e4c24fc6be5d618d106a362859b59e3f92d64353dfb5edae",
+      "mode": "0644"
+    },
+    {
+      "path": "data/flutter_assets/assets/icons/terminal.svg",
+      "bytes": 438,
+      "sha256": "c0c7cb1e7069c55bbc6a408809e71e1c426e41cbc1f4e52e21ed8c9db2868322",
+      "mode": "0644"
+    },
+    {
+      "path": "data/flutter_assets/assets/icons/upload.svg",
+      "bytes": 235,
+      "sha256": "180537c624023c1f773ceda41dee3ed55c76fd480b9c2a44fa5f0adf0b4cf90c",
+      "mode": "0644"
+    },
+    {
+      "path": "data/flutter_assets/assets/icons/wifi.svg",
+      "bytes": 678,
+      "sha256": "10f33922993e24c6db4b93fa7313554c5d4adee5d3379a053ab369f89975198a",
+      "mode": "0644"
+    },
+    {
+      "path": "data/flutter_assets/assets/licenses/go-winio-LICENSE.txt",
+      "bytes": 1077,
+      "sha256": "cf248820bf1178370bb4f1670a59f8748d46bc96d0f64080cd631511c6046409",
+      "mode": "0644"
+    },
+    {
+      "path": "data/flutter_assets/assets/licenses/sing-box-LICENSE.txt",
+      "bytes": 791,
+      "sha256": "650d5e3b99a446fb38e820fa87a49562e0c79eab868fff58618ac487a58e554c",
+      "mode": "0644"
+    },
+    {
+      "path": "data/flutter_assets/assets/licenses/wintun-LICENSE.txt",
+      "bytes": 5347,
+      "sha256": "9aaf948856ce8845a762121306039ef09d0eeb4d9e4f4c355647d4081e818087",
+      "mode": "0644"
+    },
+    {
+      "path": "data/flutter_assets/fonts/MaterialIcons-Regular.otf",
+      "bytes": 1645184,
+      "sha256": "d9865b671a09d683d13a863089d8825e0f61a37696ce5d7d448bc8023aa62453",
+      "mode": "0644"
+    },
+    {
+      "path": "data/flutter_assets/shaders/ink_sparkle.frag",
+      "bytes": 17304,
+      "sha256": "3aa09424d1dc391fd59a9735efe986ff43302b5e5bc310926afe11c68626c3b2",
+      "mode": "0644"
+    },
+    {
+      "path": "data/flutter_assets/version.json",
+      "bytes": 86,
+      "sha256": "362b21a7f61602677fe7d39f177ed336cdcc100d42a2e3d3dcc606eba30cacbd",
+      "mode": "0644"
+    },
+    {
+      "path": "data/icons/hicolor/512x512/apps/dev.rainlink.rainlink.png",
+      "bytes": 40401,
+      "sha256": "5819b5d2e0b47653685a072f5d9579d2eb08fcdda5bf77fb667390554de964cb",
+      "mode": "0644"
+    },
+    {
+      "path": "data/icudtl.dat",
+      "bytes": 778864,
+      "sha256": "c12537022ef818991a7bfed41a76d8d6ae962ffbc0e6511ac762a5d0845e7f7c",
+      "mode": "0644"
+    },
+    {
+      "path": "dev.rainlink.rainlink.desktop",
+      "bytes": 205,
+      "sha256": "6f049299a0648753db815f5768724fd4448289070b19e305b8c526ef41a3da3d",
+      "mode": "0644"
+    },
+    {
+      "path": "lib/libapp.so",
+      "bytes": 9896864,
+      "sha256": "4f12ef34e699dd934c081935ef14bbdf8d5d9219a14626fe25693e099dea203c",
+      "mode": "0644"
+    },
+    {
+      "path": "lib/libfile_selector_linux_plugin.so",
+      "bytes": 41664,
+      "sha256": "0e2ac7077d84f04ed7248a28b827fdee6907eff47d40b6c4392458d36d547681",
+      "mode": "0644"
+    },
+    {
+      "path": "lib/libflutter_linux_gtk.so",
+      "bytes": 15083944,
+      "sha256": "2c9c1bae6de13a5dde00e4870b83ec4895830867bfcd2cc519ad54c312a9bfb2",
+      "mode": "0644"
+    },
+    {
+      "path": "lib/libscreen_retriever_linux_plugin.so",
+      "bytes": 23864,
+      "sha256": "f2d7f90930f863e421296ae16413da18c287bf0ac85f262308de16dda6a2074e",
+      "mode": "0644"
+    },
+    {
+      "path": "lib/libsqlite3_flutter_libs_plugin.so",
+      "bytes": 1683624,
+      "sha256": "c2f619841c735770c95dc7a42a3ecc7852126f8bcff455c7926f3d80d7cf2d0a",
+      "mode": "0644"
+    },
+    {
+      "path": "lib/libwindow_manager_plugin.so",
+      "bytes": 63120,
+      "sha256": "23968341d654e50cc5e591c162701db9f2f73f48ce7cb1c51de54382d14ff452",
+      "mode": "0644"
+    },
+    {
+      "path": "lib/native_assets.yaml",
+      "bytes": 51,
+      "sha256": "b436be16ba59725cd801de21e287563571dc35d3ffd8e381a20929e7ced40896",
+      "mode": "0644"
+    },
+    {
+      "path": "rainlink",
+      "bytes": 65560,
+      "sha256": "1132119281eaa2e28f473aaa6f60c1fb181f903c655c1fd44d43aa21a6717a6f",
+      "mode": "0755"
+    },
+    {
+      "path": "rainlink-host",
+      "bytes": 10695206,
+      "sha256": "3c94988871e41f58fcfa486b7c58ce749b1b2cac6a217ffa9c1cf586f46394e4",
+      "mode": "0755"
+    },
+    {
+      "path": "rainlink-kde-proxy",
+      "bytes": 51392,
+      "sha256": "d647ce749a50be60254d48fe6cc117114fb7178107230f320e5176ebfc61d89e",
+      "mode": "0755"
+    },
+    {
+      "path": "sing-box",
+      "bytes": 27218068,
+      "sha256": "640e5293d90b94c71318031284e65cf8121d99ee9c06482f021ed77c9f3fa96d",
+      "mode": "0755"
+    },
+    {
+      "path": "sing-box-LICENSE.txt",
+      "bytes": 791,
+      "sha256": "650d5e3b99a446fb38e820fa87a49562e0c79eab868fff58618ac487a58e554c",
+      "mode": "0644"
+    },
+    {
+      "path": "sing-box-source.zip",
+      "bytes": 2242480,
+      "sha256": "8bbd0af8930c003fb001b0e8e6fb53be319651ad231754b3e36b23c95e92ed1b",
+      "mode": "0644"
+    }
+  ]
+}

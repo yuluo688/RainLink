@@ -1,0 +1,758 @@
+[
+  {
+    "renderer": "windows",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/windows-layout/connections-1440-dark-fixture.png",
+    "width": 1440,
+    "height": 900,
+    "sha256": "1754d4dd9a29f6a5377b0eed0b3a01fb8b6f3af4e7d8621b8db4b93174ee5bfe"
+  },
+  {
+    "renderer": "windows",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/windows-layout/connections-1440-light-fixture.png",
+    "width": 1440,
+    "height": 900,
+    "sha256": "cec03fcef7b4499b5fc1fb2a643d215a0e52238b12cb7434f2c57a380d8b8262"
+  },
+  {
+    "renderer": "windows",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/windows-layout/connections-960-dark-fixture.png",
+    "width": 960,
+    "height": 640,
+    "sha256": "f70027bd79826f8a7ceee2a25401f8762db86260d2143a8f72f11cf77543c5c9"
+  },
+  {
+    "renderer": "windows",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/windows-layout/connections-960-light-fixture.png",
+    "width": 960,
+    "height": 640,
+    "sha256": "4d84882150b729f2ba4c59cf3a1290d1106148a5f3babb31fc74c1fb6c881ac6"
+  },
+  {
+    "renderer": "windows",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/windows-layout/groups-1440-dark-fixture.png",
+    "width": 1440,
+    "height": 900,
+    "sha256": "ab949a07956c0fd280d2c4b8041661e7b69c97cd26818dc0744d008477c1cbed"
+  },
+  {
+    "renderer": "windows",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/windows-layout/groups-1440-light-fixture.png",
+    "width": 1440,
+    "height": 900,
+    "sha256": "dcd91c9d51bbe7ed96729869c1dff3fc5c722e2d52e41a91a3e47769550754e8"
+  },
+  {
+    "renderer": "windows",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/windows-layout/groups-960-dark-fixture.png",
+    "width": 960,
+    "height": 640,
+    "sha256": "81cd7880fcab43c45b1f62b85df72d745a054b9e0b625beabd062ecfcc879d52"
+  },
+  {
+    "renderer": "windows",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/windows-layout/groups-960-light-fixture.png",
+    "width": 960,
+    "height": 640,
+    "sha256": "c11c068530e9e3c01fb9169a26247abac950c27cf0cf3b5403bd36365e28b590"
+  },
+  {
+    "renderer": "windows",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/windows-layout/groups-mobile-320-dark-fixture.png",
+    "width": 320,
+    "height": 640,
+    "sha256": "4980e59d0c8a23d346226b9667fa9f603e40c532f112e7fa7ab537ca1f8aea09"
+  },
+  {
+    "renderer": "windows",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/windows-layout/groups-mobile-320-light-fixture.png",
+    "width": 320,
+    "height": 640,
+    "sha256": "08ebeaf27ffd8509710eca73dc12d10961111969412b4bef79debe4fe89c61ec"
+  },
+  {
+    "renderer": "windows",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/windows-layout/groups-mobile-393-dark-fixture.png",
+    "width": 393,
+    "height": 852,
+    "sha256": "47c604c15f5c2ca309f46f29359e4c106d16373a511f6dc8e733ba30acfc05c9"
+  },
+  {
+    "renderer": "windows",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/windows-layout/groups-mobile-393-light-fixture.png",
+    "width": 393,
+    "height": 852,
+    "sha256": "f11b4c568bb3f0ee278e6149de38aa8314de1756007242176ef2a14c143c69bf"
+  },
+  {
+    "renderer": "windows",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/windows-layout/logs-1440-dark-fixture.png",
+    "width": 1440,
+    "height": 900,
+    "sha256": "efd7cd12798737133c3f0d85bedd09760f3102f172ef095a02ca043bad78f4ff"
+  },
+  {
+    "renderer": "windows",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/windows-layout/logs-1440-light-fixture.png",
+    "width": 1440,
+    "height": 900,
+    "sha256": "849bc47016980983cf975416138f10fd5e0664d4304d981cffce8ba8880c2a48"
+  },
+  {
+    "renderer": "windows",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/windows-layout/logs-960-dark-fixture.png",
+    "width": 960,
+    "height": 640,
+    "sha256": "0f3e31004f88655800e642cf49908ff02116c785af3fc9e72231b96c80dce660"
+  },
+  {
+    "renderer": "windows",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/windows-layout/logs-960-light-fixture.png",
+    "width": 960,
+    "height": 640,
+    "sha256": "1c0ca4de7deac27b6cd0875983d4784851a6be977b1a81accb22b74e53ce210d"
+  },
+  {
+    "renderer": "windows",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/windows-layout/nodes-1440-dark-fixture.png",
+    "width": 1440,
+    "height": 900,
+    "sha256": "745234d880062e29c2932d3d1365e1ebf46c4d3807cee87305f159cabd314639"
+  },
+  {
+    "renderer": "windows",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/windows-layout/nodes-1440-light-fixture.png",
+    "width": 1440,
+    "height": 900,
+    "sha256": "8a73b99bbfe418de44e50f256618142bed5cdaa333cb1be92b80b9854eca0d55"
+  },
+  {
+    "renderer": "windows",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/windows-layout/nodes-960-dark-fixture.png",
+    "width": 960,
+    "height": 640,
+    "sha256": "f716ab681ebc4535e5fb212507214b92b8ce8021d5b7a289bd2c288d3b1e6fe0"
+  },
+  {
+    "renderer": "windows",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/windows-layout/nodes-960-light-fixture.png",
+    "width": 960,
+    "height": 640,
+    "sha256": "e171f58bad428a853597d2a63552512ed4bc9b05720044bd81106d0117ee5173"
+  },
+  {
+    "renderer": "windows",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/windows-layout/nodes-mobile-320-dark-fixture.png",
+    "width": 320,
+    "height": 640,
+    "sha256": "9e22838d30b74b4548c30e3b714695df2abd35f49ac8616651119b982b5be005"
+  },
+  {
+    "renderer": "windows",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/windows-layout/nodes-mobile-320-light-fixture.png",
+    "width": 320,
+    "height": 640,
+    "sha256": "9ebd7c04ccd8ab5fc1db48bd6249a9a344a48d2263f0a24359cb918ffad3b130"
+  },
+  {
+    "renderer": "windows",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/windows-layout/nodes-mobile-393-dark-fixture.png",
+    "width": 393,
+    "height": 852,
+    "sha256": "fb17114364e12dbc7128aa9a1ee2c9206b69fc91b65945fc8532687924a4a495"
+  },
+  {
+    "renderer": "windows",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/windows-layout/nodes-mobile-393-light-fixture.png",
+    "width": 393,
+    "height": 852,
+    "sha256": "9f596a32a46ea13c454705cc79721be1cda8d47253c473689d8355fac282e3cb"
+  },
+  {
+    "renderer": "windows",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/windows-layout/overview-1440-dark-fixture.png",
+    "width": 1440,
+    "height": 900,
+    "sha256": "8a5defc3bb178cbbc3fa5c261a131ed914fb04c9b90952782086bc5570c20b63"
+  },
+  {
+    "renderer": "windows",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/windows-layout/overview-1440-light-fixture.png",
+    "width": 1440,
+    "height": 900,
+    "sha256": "45f0c67756313bba40b3706fa6f40359293546d29e62a63f16b4e02d7723cabe"
+  },
+  {
+    "renderer": "windows",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/windows-layout/overview-960-dark-fixture.png",
+    "width": 960,
+    "height": 640,
+    "sha256": "7a62691e1e361215b5700475f05c07ccf569b16b444796ac5f5e4faca11c83d9"
+  },
+  {
+    "renderer": "windows",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/windows-layout/overview-960-light-fixture.png",
+    "width": 960,
+    "height": 640,
+    "sha256": "2dd0ed3947873bc3a8f98095425554c333bd5dde89b976e23dcd994e90ea9fe7"
+  },
+  {
+    "renderer": "windows",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/windows-layout/overview-mobile-320-dark-fixture.png",
+    "width": 320,
+    "height": 640,
+    "sha256": "f91265527907a3d96a1dd2e412bbd4ca6ec074c4099e0e69d88228ae8561dc24"
+  },
+  {
+    "renderer": "windows",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/windows-layout/overview-mobile-320-large-ipv6-fixture.png",
+    "width": 320,
+    "height": 640,
+    "sha256": "82d6ea891e4389533d815fa2495eac5c9cb68995254839f0839b44ad2f9ca5cc"
+  },
+  {
+    "renderer": "windows",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/windows-layout/overview-mobile-320-large-summary-fixture.png",
+    "width": 320,
+    "height": 640,
+    "sha256": "82d6ea891e4389533d815fa2495eac5c9cb68995254839f0839b44ad2f9ca5cc"
+  },
+  {
+    "renderer": "windows",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/windows-layout/overview-mobile-320-light-fixture.png",
+    "width": 320,
+    "height": 640,
+    "sha256": "dca4008472ee2b97b78109fc91ebef4b768243c9f46c628b1b096b8e7cd01586"
+  },
+  {
+    "renderer": "windows",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/windows-layout/overview-mobile-393-dark-fixture.png",
+    "width": 393,
+    "height": 852,
+    "sha256": "8a6acb52ac9f3b7d2d44d90a163ba13df8609fc1f17d90656859938700e44ea5"
+  },
+  {
+    "renderer": "windows",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/windows-layout/overview-mobile-393-light-fixture.png",
+    "width": 393,
+    "height": 852,
+    "sha256": "6eff5b0a73caf0856ef5d613b3eb9b8a89451443f914efa53b6b920ee44c387d"
+  },
+  {
+    "renderer": "windows",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/windows-layout/rules-1440-dark-fixture.png",
+    "width": 1440,
+    "height": 900,
+    "sha256": "831db2bd7aa6303a9ed82072fbcbccc304ddfe6e52eaccc76872a7e501202228"
+  },
+  {
+    "renderer": "windows",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/windows-layout/rules-1440-light-fixture.png",
+    "width": 1440,
+    "height": 900,
+    "sha256": "aabc63b6c4461ba85bef179e75ed55ff011cbeb5c437268e4ad44ff2626d0a13"
+  },
+  {
+    "renderer": "windows",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/windows-layout/rules-960-dark-fixture.png",
+    "width": 960,
+    "height": 640,
+    "sha256": "b765585777262108b4e3477396eba8bfcaadf56540d227e725cb97316633d3b3"
+  },
+  {
+    "renderer": "windows",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/windows-layout/rules-960-light-fixture.png",
+    "width": 960,
+    "height": 640,
+    "sha256": "f9c83e75d743ddb9aed802d543d0ac7b14ad3cba9c94dedc83a3c03dcefaf102"
+  },
+  {
+    "renderer": "windows",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/windows-layout/settings-1440-dark-fixture.png",
+    "width": 1440,
+    "height": 900,
+    "sha256": "7d7a5a158a3ed503a5c45c57cc85cf5016328473f39868296fe980273b4f0c41"
+  },
+  {
+    "renderer": "windows",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/windows-layout/settings-1440-light-fixture.png",
+    "width": 1440,
+    "height": 900,
+    "sha256": "1f4c67071407b5b1e18c6229be707867f6ab7e46cb2c6face184e07b555e5324"
+  },
+  {
+    "renderer": "windows",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/windows-layout/settings-960-dark-fixture.png",
+    "width": 960,
+    "height": 640,
+    "sha256": "1ccfc9a26ad59885547046f76166ab2c6f53564f320f08c25838993c0cfe8e49"
+  },
+  {
+    "renderer": "windows",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/windows-layout/settings-960-light-fixture.png",
+    "width": 960,
+    "height": 640,
+    "sha256": "26a9ef3b1ce93bab02ae8de584681d726122c98267bae93a0bc921727a027d17"
+  },
+  {
+    "renderer": "windows",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/windows-layout/settings-mobile-320-dark-fixture.png",
+    "width": 320,
+    "height": 640,
+    "sha256": "752ea39189dd76873c9da33ddb2ba0cd7f7603a4738493fb6e231051f49fd6cc"
+  },
+  {
+    "renderer": "windows",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/windows-layout/settings-mobile-320-light-fixture.png",
+    "width": 320,
+    "height": 640,
+    "sha256": "15ccd6d1731796423559ea1014e790b6da949d913e43260c7acb6542272cb1b8"
+  },
+  {
+    "renderer": "windows",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/windows-layout/settings-mobile-393-dark-fixture.png",
+    "width": 393,
+    "height": 852,
+    "sha256": "ea60ac6c156b16e8f1111403869b89990632756edc460ef5957023f6177db8f4"
+  },
+  {
+    "renderer": "windows",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/windows-layout/settings-mobile-393-light-fixture.png",
+    "width": 393,
+    "height": 852,
+    "sha256": "fd0a7f785646a8c08ea119728814d9825a3d5aabe116491780b3df558c9bb140"
+  },
+  {
+    "renderer": "windows",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/windows-layout/traffic-1440-dark-fixture.png",
+    "width": 1440,
+    "height": 900,
+    "sha256": "809a6e8c7db0702b0b0a2226ebbe73b8091f92494a06df332631195ca4d083bb"
+  },
+  {
+    "renderer": "windows",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/windows-layout/traffic-1440-light-fixture.png",
+    "width": 1440,
+    "height": 900,
+    "sha256": "0983d2b5791873eba5afce13adb91150973127378cd6494f176408707a41b68e"
+  },
+  {
+    "renderer": "windows",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/windows-layout/traffic-960-dark-fixture.png",
+    "width": 960,
+    "height": 640,
+    "sha256": "4b1ef04063aac093e98e016fe5d0946a911b5f9462fa48a9501e7be3c1e98b43"
+  },
+  {
+    "renderer": "windows",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/windows-layout/traffic-960-light-fixture.png",
+    "width": 960,
+    "height": 640,
+    "sha256": "ac61f2a728da5e5dcec391ccefebbe1bffcafff94002320241f43667d6a7730e"
+  },
+  {
+    "renderer": "windows",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/windows-layout/traffic-mobile-320-dark-fixture.png",
+    "width": 320,
+    "height": 640,
+    "sha256": "f8b22d17ba71f33439b74d2014d3c2e9f1ab34507e900a4fa9b619d31480ba32"
+  },
+  {
+    "renderer": "windows",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/windows-layout/traffic-mobile-320-light-fixture.png",
+    "width": 320,
+    "height": 640,
+    "sha256": "90bf759c8a09fc60a18c308e27ed83a62bb91c106883f7d05fe517734d05a85a"
+  },
+  {
+    "renderer": "windows",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/windows-layout/traffic-mobile-393-dark-fixture.png",
+    "width": 393,
+    "height": 852,
+    "sha256": "21e6f672b987360b4d45d386935df2254048d0ae0a1536a3a1ff9205c0f5405c"
+  },
+  {
+    "renderer": "windows",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/windows-layout/traffic-mobile-393-light-fixture.png",
+    "width": 393,
+    "height": 852,
+    "sha256": "9fad32c33763a6e037ee7c0a099a23e1290b6f71ff7735d1dcc4c7dc8906490d"
+  },
+  {
+    "renderer": "linux",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/linux-layout/connections-1440-dark-fixture.png",
+    "width": 1440,
+    "height": 900,
+    "sha256": "a667fce67164fd55ebc845083503c1fb37d6e7406563a58ac2545cc1e3bd62cf"
+  },
+  {
+    "renderer": "linux",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/linux-layout/connections-1440-light-fixture.png",
+    "width": 1440,
+    "height": 900,
+    "sha256": "f50155bc22aa204a960dd36b2ac0aabee6b111eaa0f1b32d118e2892eb5eb668"
+  },
+  {
+    "renderer": "linux",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/linux-layout/connections-960-dark-fixture.png",
+    "width": 960,
+    "height": 640,
+    "sha256": "8a97a9f56ee828398ba044823c0250468e2585ba813942d99fd267fbafb59789"
+  },
+  {
+    "renderer": "linux",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/linux-layout/connections-960-light-fixture.png",
+    "width": 960,
+    "height": 640,
+    "sha256": "c081bc9347eb593d0f66fdc8a0c5d30240d8c1a259784fbbfc880c3f5f871e30"
+  },
+  {
+    "renderer": "linux",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/linux-layout/groups-1440-dark-fixture.png",
+    "width": 1440,
+    "height": 900,
+    "sha256": "bae005b99543b9da9d509d5c7458d0d924c0fbe4d1bb2d989821a9f853326b08"
+  },
+  {
+    "renderer": "linux",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/linux-layout/groups-1440-light-fixture.png",
+    "width": 1440,
+    "height": 900,
+    "sha256": "67ecf5d8327308779f187155647158c379d1728f3056a6bc1df017253e5bfb47"
+  },
+  {
+    "renderer": "linux",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/linux-layout/groups-960-dark-fixture.png",
+    "width": 960,
+    "height": 640,
+    "sha256": "8677e99ac2b129c61721d12ac8e5671cb3a5f5dfb602a2646691f242e1d5dd35"
+  },
+  {
+    "renderer": "linux",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/linux-layout/groups-960-light-fixture.png",
+    "width": 960,
+    "height": 640,
+    "sha256": "8308cced181356b145e05fe8e6c99465ee0d8486fc40b6e10fc6f14179d00829"
+  },
+  {
+    "renderer": "linux",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/linux-layout/groups-mobile-320-dark-fixture.png",
+    "width": 320,
+    "height": 640,
+    "sha256": "139cac25fddfb2c90d75863af58d232d10449f41ccaa21cbad631abef10b02e3"
+  },
+  {
+    "renderer": "linux",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/linux-layout/groups-mobile-320-light-fixture.png",
+    "width": 320,
+    "height": 640,
+    "sha256": "b9033e1f2e102b35f49a57814242d7110c3d2c64daf4e3f5963405f48d29a085"
+  },
+  {
+    "renderer": "linux",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/linux-layout/groups-mobile-393-dark-fixture.png",
+    "width": 393,
+    "height": 852,
+    "sha256": "910d6ee78f90cda58f132458f49bc707d1229609deec2716167cdb33aceef229"
+  },
+  {
+    "renderer": "linux",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/linux-layout/groups-mobile-393-light-fixture.png",
+    "width": 393,
+    "height": 852,
+    "sha256": "4c5fd80f0ea057754f114106e24a1ee5a621263d0b6815babaf7d72b484937a6"
+  },
+  {
+    "renderer": "linux",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/linux-layout/logs-1440-dark-fixture.png",
+    "width": 1440,
+    "height": 900,
+    "sha256": "b0a3b9c7e20194629c9a31d50e4df07124bd38df38e5402db18ff418fce23d59"
+  },
+  {
+    "renderer": "linux",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/linux-layout/logs-1440-light-fixture.png",
+    "width": 1440,
+    "height": 900,
+    "sha256": "19a65f6456318e23cae9465b409ecadf45d6c89ea6101866fce9a149bdf91d37"
+  },
+  {
+    "renderer": "linux",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/linux-layout/logs-960-dark-fixture.png",
+    "width": 960,
+    "height": 640,
+    "sha256": "90f0bcc9ae2085784efcf8e85f5a3f0cf87dc705550f6f1acdcc41445cf385c8"
+  },
+  {
+    "renderer": "linux",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/linux-layout/logs-960-light-fixture.png",
+    "width": 960,
+    "height": 640,
+    "sha256": "a3c93556b699c9ba9437821fc59de684b416d418280f8ce222b284e43af7e3ef"
+  },
+  {
+    "renderer": "linux",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/linux-layout/nodes-1440-dark-fixture.png",
+    "width": 1440,
+    "height": 900,
+    "sha256": "13ad10cbfdccc4506da970795626b323925668972f864b0ead8623f29a5672cc"
+  },
+  {
+    "renderer": "linux",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/linux-layout/nodes-1440-light-fixture.png",
+    "width": 1440,
+    "height": 900,
+    "sha256": "6e6c376e292e688b946eedefd8e493fbac9be125cab439e6d8efc81f278c7705"
+  },
+  {
+    "renderer": "linux",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/linux-layout/nodes-960-dark-fixture.png",
+    "width": 960,
+    "height": 640,
+    "sha256": "9487e44b710176b3edd55c83028004fdfc4a9201c726eab348cfeb3f1f002b16"
+  },
+  {
+    "renderer": "linux",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/linux-layout/nodes-960-light-fixture.png",
+    "width": 960,
+    "height": 640,
+    "sha256": "7f7e9efaa5fb3010c444d6867d9e41669993293f9653584cee2c7f90f247193f"
+  },
+  {
+    "renderer": "linux",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/linux-layout/nodes-mobile-320-dark-fixture.png",
+    "width": 320,
+    "height": 640,
+    "sha256": "d8d9bd3b620de277433069853e58a30a88ae13b6752d4ec026c72c9cfa12d048"
+  },
+  {
+    "renderer": "linux",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/linux-layout/nodes-mobile-320-light-fixture.png",
+    "width": 320,
+    "height": 640,
+    "sha256": "c307ddd482e033051ce9963e5869513e27b17792b632bff46866510fc6b9b940"
+  },
+  {
+    "renderer": "linux",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/linux-layout/nodes-mobile-393-dark-fixture.png",
+    "width": 393,
+    "height": 852,
+    "sha256": "406ebe00e9772a92fd8f417a3427db1e8088105351ba1578a7fc84b2e8e654cb"
+  },
+  {
+    "renderer": "linux",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/linux-layout/nodes-mobile-393-light-fixture.png",
+    "width": 393,
+    "height": 852,
+    "sha256": "108cb72fc2c8421634aaa0a289caed65a08b9af384726317de70448ca7765619"
+  },
+  {
+    "renderer": "linux",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/linux-layout/overview-1440-dark-fixture.png",
+    "width": 1440,
+    "height": 900,
+    "sha256": "8abd086839dfb6c9218beacbb1fbcfefdfff17ee6b6e31de62f007b67f625b51"
+  },
+  {
+    "renderer": "linux",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/linux-layout/overview-1440-light-fixture.png",
+    "width": 1440,
+    "height": 900,
+    "sha256": "129e89234899276863e40f34757469be26065b53b2ebad4b659b1cc505474f6a"
+  },
+  {
+    "renderer": "linux",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/linux-layout/overview-960-dark-fixture.png",
+    "width": 960,
+    "height": 640,
+    "sha256": "19ff5207e94970c5ed1be8059f68c44f029906cbc5b02c40bee70c9dedd0b7ea"
+  },
+  {
+    "renderer": "linux",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/linux-layout/overview-960-light-fixture.png",
+    "width": 960,
+    "height": 640,
+    "sha256": "84fab115b2a6bd0a782f632adb939b1a7ad324728a889b37a3420f94e7faf89c"
+  },
+  {
+    "renderer": "linux",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/linux-layout/overview-mobile-320-dark-fixture.png",
+    "width": 320,
+    "height": 640,
+    "sha256": "13dccef10ea96fee03b3c02ad5bfd830bac1bdae8fd6ab6aac206823f6d4f6cb"
+  },
+  {
+    "renderer": "linux",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/linux-layout/overview-mobile-320-large-ipv6-fixture.png",
+    "width": 320,
+    "height": 640,
+    "sha256": "d78721c559925b1fdb22fecbe00bedd808e847eae4326744525cab2bbee18779"
+  },
+  {
+    "renderer": "linux",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/linux-layout/overview-mobile-320-large-summary-fixture.png",
+    "width": 320,
+    "height": 640,
+    "sha256": "d78721c559925b1fdb22fecbe00bedd808e847eae4326744525cab2bbee18779"
+  },
+  {
+    "renderer": "linux",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/linux-layout/overview-mobile-320-light-fixture.png",
+    "width": 320,
+    "height": 640,
+    "sha256": "fd7961982f3fc3d255de26646848d3be75742370883a654826992eb2230c8142"
+  },
+  {
+    "renderer": "linux",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/linux-layout/overview-mobile-393-dark-fixture.png",
+    "width": 393,
+    "height": 852,
+    "sha256": "7cba094b685256e5eebad55b2152e4540449817819570361ec226a2dffd3a926"
+  },
+  {
+    "renderer": "linux",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/linux-layout/overview-mobile-393-light-fixture.png",
+    "width": 393,
+    "height": 852,
+    "sha256": "4538d60b4f4cf299e7455c20c423e01cf25e5cc3dcaf6fad6f3b286effe6a2b9"
+  },
+  {
+    "renderer": "linux",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/linux-layout/rules-1440-dark-fixture.png",
+    "width": 1440,
+    "height": 900,
+    "sha256": "4753150b002b445ce824c01dd30081ba4d035b4cb3e65f9d3bdc14a01a162451"
+  },
+  {
+    "renderer": "linux",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/linux-layout/rules-1440-light-fixture.png",
+    "width": 1440,
+    "height": 900,
+    "sha256": "e571fe5624d0ab34a6177942f9b8e45d124a12d582bb9888539bad7675e5b72b"
+  },
+  {
+    "renderer": "linux",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/linux-layout/rules-960-dark-fixture.png",
+    "width": 960,
+    "height": 640,
+    "sha256": "1566eae520368c53b1b1462e4634ec876019a2d58b1ac8231e9d7841ac584c85"
+  },
+  {
+    "renderer": "linux",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/linux-layout/rules-960-light-fixture.png",
+    "width": 960,
+    "height": 640,
+    "sha256": "a01388cdadd888796adb7299e79ad0951253ce3a29955528e7d4bb01877655e2"
+  },
+  {
+    "renderer": "linux",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/linux-layout/settings-1440-dark-fixture.png",
+    "width": 1440,
+    "height": 900,
+    "sha256": "dc5321f401579572179e26d57f3b683d122b7d86ea2b7b916db43884b6151b0b"
+  },
+  {
+    "renderer": "linux",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/linux-layout/settings-1440-light-fixture.png",
+    "width": 1440,
+    "height": 900,
+    "sha256": "81149a3c7f884657d35d7e4994197932878fe48ef77afe41244044d0db80c905"
+  },
+  {
+    "renderer": "linux",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/linux-layout/settings-960-dark-fixture.png",
+    "width": 960,
+    "height": 640,
+    "sha256": "85b492cca05b4034a312a697c70b1f8a55b5e74a17d17c90140d6dc132688c05"
+  },
+  {
+    "renderer": "linux",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/linux-layout/settings-960-light-fixture.png",
+    "width": 960,
+    "height": 640,
+    "sha256": "f80a0321c811517b9ca5319c4768662dcde8c5fb33d0a995b037352f45384008"
+  },
+  {
+    "renderer": "linux",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/linux-layout/settings-mobile-320-dark-fixture.png",
+    "width": 320,
+    "height": 640,
+    "sha256": "7249fac9773f719855e6164933c5e66a350e7098240d0d78e71801ebcdaaded8"
+  },
+  {
+    "renderer": "linux",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/linux-layout/settings-mobile-320-light-fixture.png",
+    "width": 320,
+    "height": 640,
+    "sha256": "3c6ceb2d36abda0275184457fc3323f56c196f5294449f2b6f8b235cbdb84a11"
+  },
+  {
+    "renderer": "linux",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/linux-layout/settings-mobile-393-dark-fixture.png",
+    "width": 393,
+    "height": 852,
+    "sha256": "d2366f1e4a328ec8a372991b89d713a86b4dd2774db89645ad8eee1dcba061bf"
+  },
+  {
+    "renderer": "linux",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/linux-layout/settings-mobile-393-light-fixture.png",
+    "width": 393,
+    "height": 852,
+    "sha256": "c14c065fe64cb9f08357270138e894293c7f5978eb77e32dfa050a68353a8c99"
+  },
+  {
+    "renderer": "linux",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/linux-layout/traffic-1440-dark-fixture.png",
+    "width": 1440,
+    "height": 900,
+    "sha256": "7bc72dffd45196ee445fa379953efd89eb6f80fc07ec4dd4585f8f76155cbb72"
+  },
+  {
+    "renderer": "linux",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/linux-layout/traffic-1440-light-fixture.png",
+    "width": 1440,
+    "height": 900,
+    "sha256": "3b5910ef8674617a12f68741fc71b3ddb297e5924ab268de3ed196591d9a501a"
+  },
+  {
+    "renderer": "linux",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/linux-layout/traffic-960-dark-fixture.png",
+    "width": 960,
+    "height": 640,
+    "sha256": "963353d97a77e20259655f2985266a00df484af8f9c6a90a393938cac3077674"
+  },
+  {
+    "renderer": "linux",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/linux-layout/traffic-960-light-fixture.png",
+    "width": 960,
+    "height": 640,
+    "sha256": "a782b5f4902c03b85d163f52f1af414e8963a102f3bcefcc2ea280df65a18570"
+  },
+  {
+    "renderer": "linux",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/linux-layout/traffic-mobile-320-dark-fixture.png",
+    "width": 320,
+    "height": 640,
+    "sha256": "a9bb4a4125d0b059bacda0dc2023fbc9e102356f913737df65eeeab738eff372"
+  },
+  {
+    "renderer": "linux",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/linux-layout/traffic-mobile-320-light-fixture.png",
+    "width": 320,
+    "height": 640,
+    "sha256": "f7829fd043af576f959f5b43fb559e8e357ec3ab62974a8f063148f4a9ef8f9d"
+  },
+  {
+    "renderer": "linux",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/linux-layout/traffic-mobile-393-dark-fixture.png",
+    "width": 393,
+    "height": 852,
+    "sha256": "eefe4e7ed3a6bd2dc0677cee8b7749f97f60139e4cd50bfa2bc2b0bc93dd4a3a"
+  },
+  {
+    "renderer": "linux",
+    "path": "build/qa/linux-gui/output/linux-lifecycle/linux-layout/traffic-mobile-393-light-fixture.png",
+    "width": 393,
+    "height": 852,
+    "sha256": "84899a6cf4c96899b8106318295a7987eaa8feb7aa808235a4dcedd4886733f4"
+  }
+]

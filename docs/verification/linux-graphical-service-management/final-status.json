@@ -1,0 +1,13 @@
+{
+  "id": 1,
+  "result": {
+    "protocolVersion": 1,
+    "state": "missing",
+    "canManage": true,
+    "enabled": false,
+    "active": false,
+    "message": "尚未安装 TUN 权限服务"
+  },
+  "noApplicationOrManagementProcesses": true,
+  "finalHostSha256": "20640cd8ac2d728729098c106623fea3bd8a4d28f5f5d0ae1bee0efbd662026b"
+}

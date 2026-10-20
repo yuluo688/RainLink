@@ -1,0 +1,113 @@
+Flutter assets will be downloaded from https://storage.flutter-io.cn. Make sure you trust this source!
+Running Gradle task 'assembleDebug'...                          
+Flutter assets will be downloaded from https://storage.flutter-io.cn. Make sure you trust this source!
+警告: [options] 源值 8 已过时，将在未来发行版中删除
+警告: [options] 目标值 8 已过时，将在未来发行版中删除
+警告: [options] 要隐藏有关已过时选项的警告, 请使用 -Xlint:-options。
+3 个警告
+警告: [options] 源值 8 已过时，将在未来发行版中删除
+警告: [options] 目标值 8 已过时，将在未来发行版中删除
+警告: [options] 要隐藏有关已过时选项的警告, 请使用 -Xlint:-options。
+3 个警告
+警告: [options] 源值 8 已过时，将在未来发行版中删除
+警告: [options] 目标值 8 已过时，将在未来发行版中删除
+警告: [options] 要隐藏有关已过时选项的警告, 请使用 -Xlint:-options。
+3 个警告
+Running Gradle task 'assembleDebug'...                             30.9s
+√ Built build\app\outputs\flutter-apk\app-debug.apk
+Installing build\app\outputs\flutter-apk\app-debug.apk...        2,236ms
+W/inlink.rainlink( 9487): type=1400 audit(0.0:196): avc:  denied  { read } for  name="tcp" dev="proc" ino=4026532053 scontext=u:r:untrusted_app:s0:c219,c256,c512,c768 tcontext=u:object_r:proc_net_tcp_udp:s0 tclass=file permissive=0 app=dev.rainlink.rainlink
+D/CompatChangeReporter( 9487): Compat change id reported: 352594277; UID 10219; state: ENABLED
+I/inlink.rainlink( 9487): hiddenapi: Accessing hidden method Landroid/view/accessibility/AccessibilityNodeInfo;->getSourceNodeId()J (runtime_flags=0, domain=platform, api=unsupported,test-api) from Lio/flutter/view/AccessibilityViewEmbedder$ReflectionAccessors; (domain=app) using reflection: allowed
+I/inlink.rainlink( 9487): hiddenapi: Accessing hidden method Landroid/view/accessibility/AccessibilityRecord;->getSourceNodeId()J (runtime_flags=0, domain=platform, api=unsupported) from Lio/flutter/view/AccessibilityViewEmbedder$ReflectionAccessors; (domain=app) using reflection: allowed
+I/inlink.rainlink( 9487): hiddenapi: Accessing hidden field Landroid/view/accessibility/AccessibilityNodeInfo;->mChildNodeIds:Landroid/util/LongArray; (runtime_flags=0, domain=platform, api=unsupported) from Lio/flutter/view/AccessibilityViewEmbedder$ReflectionAccessors; (domain=app) using reflection: allowed
+I/inlink.rainlink( 9487): hiddenapi: Accessing hidden method Landroid/util/LongArray;->get(I)J (runtime_flags=0, domain=platform, api=unsupported) from Lio/flutter/view/AccessibilityViewEmbedder$ReflectionAccessors; (domain=app) using reflection: allowed
+D/CompatChangeReporter( 9487): Compat change id reported: 309578419; UID 10219; state: ENABLED
+D/CompatChangeReporter( 9487): Compat change id reported: 349153669; UID 10219; state: ENABLED
+W/HWUI    ( 9487): Unknown dataspace 0
+I/WindowExtensionsImpl( 9487): Initializing Window Extensions, vendor API level=9, activity embedding enabled=true
+E/libEGL  ( 9487): called unimplemented OpenGL ES API
+VMServiceFlutterDriver: Connecting to Flutter application at http://127.0.0.1:65459/odJJfMJE0JQ=/
+VMServiceFlutterDriver: Isolate found with number: 5601209315655795
+E/libEGL  ( 9487): called unimplemented OpenGL ES API
+VMServiceFlutterDriver: Isolate 5601209315655795 is runnable.
+VMServiceFlutterDriver: Isolate is paused at start.
+VMServiceFlutterDriver: Attempting to resume isolate
+I/Choreographer( 9487): Skipped 102 frames!  The application may be doing too much work on its main thread.
+D/WindowLayoutComponentImpl( 9487): Register WindowLayoutInfoListener on Context=dev.rainlink.rainlink.MainActivity@36bb39a, of which baseContext=android.app.ContextImpl@930a1f9
+D/ProfileInstaller( 9487): Installing profile for dev.rainlink.rainlink
+I/inlink.rainlink( 9487): Compiler allocated 5042KB to compile void android.view.ViewRootImpl.performTraversals()
+I/Choreographer( 9487): Skipped 34 frames!  The application may be doing too much work on its main thread.
+I/flutter ( 9487): 00:00 +0: Android closed flows persist as conserved traffic partitions
+VMServiceFlutterDriver: Connected to Flutter application.
+E/libEGL  ( 9487): called unimplemented OpenGL ES API
+I/Choreographer( 9487): Skipped 83 frames!  The application may be doing too much work on its main thread.
+I/HWUI    ( 9487): Davey! duration=1451ms; Flags=1, FrameTimelineVsyncId=31855, IntendedVsync=1162781869642, Vsync=1164165202920, InputEventId=0, HandleInputStart=1164176646700, AnimationStart=1164177477200, PerformTraversalsStart=1164177649300, DrawStart=1164183457400, FrameDeadline=1162798536308, FrameStartTime=1164174278100, FrameInterval=16666666, WorkloadTarget=16666666, SyncQueued=1164185422600, SyncStart=1164186483700, IssueDrawCommandsStart=1164187027300, SwapBuffers=1164202335500, FrameCompleted=1164234799100, DequeueBufferDuration=28680500, QueueBufferDuration=2142300, GpuCompleted=1164219222900, SwapBuffersCompleted=1164234799100, DisplayPresentTime=0, CommandSubmissionCompleted=1164202335500, 
+E/libEGL  ( 9487): called unimplemented OpenGL ES API
+D/InsetsController( 9487): hide(ime(), fromIme=false)
+I/ImeTracker( 9487): dev.rainlink.rainlink:9ae9d12f: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+E/libEGL  ( 9487): called unimplemented OpenGL ES API
+I/inlink.rainlink( 9487): NativeAlloc concurrent mark compact GC freed 2228KB AllocSpace bytes, 6(220KB) LOS objects, 49% free, 3318KB/6637KB, paused 9.715ms,7.430ms total 124.755ms
+W/pool-3-thread-1( 9487): type=1400 audit(0.0:197): avc:  denied  { read } for  name="somaxconn" dev="proc" ino=23982 scontext=u:r:untrusted_app:s0:c219,c256,c512,c768 tcontext=u:object_r:proc_net:s0 tclass=file permissive=0 app=dev.rainlink.rainlink
+E/libEGL  ( 9487): called unimplemented OpenGL ES API
+E/libEGL  ( 9487): called unimplemented OpenGL ES API
+E/libEGL  ( 9487): called unimplemented OpenGL ES API
+E/libEGL  ( 9487): called unimplemented OpenGL ES API
+E/libEGL  ( 9487): called unimplemented OpenGL ES API
+E/libEGL  ( 9487): called unimplemented OpenGL ES API
+E/libEGL  ( 9487): called unimplemented OpenGL ES API
+E/libEGL  ( 9487): called unimplemented OpenGL ES API
+E/libEGL  ( 9487): called unimplemented OpenGL ES API
+E/libEGL  ( 9487): called unimplemented OpenGL ES API
+I/inlink.rainlink( 9487): IncrementDisableThreadFlip blocked for 23.073ms
+I/inlink.rainlink( 9487): Background concurrent mark compact GC freed 3070KB AllocSpace bytes, 6(248KB) LOS objects, 49% free, 3351KB/6702KB, paused 22.219ms,27.099ms total 470.676ms
+E/libEGL  ( 9487): called unimplemented OpenGL ES API
+E/libEGL  ( 9487): called unimplemented OpenGL ES API
+E/libEGL  ( 9487): called unimplemented OpenGL ES API
+E/libEGL  ( 9487): called unimplemented OpenGL ES API
+E/libEGL  ( 9487): called unimplemented OpenGL ES API
+E/libEGL  ( 9487): called unimplemented OpenGL ES API
+E/libEGL  ( 9487): called unimplemented OpenGL ES API
+E/libEGL  ( 9487): called unimplemented OpenGL ES API
+E/libEGL  ( 9487): called unimplemented OpenGL ES API
+E/libEGL  ( 9487): called unimplemented OpenGL ES API
+E/libEGL  ( 9487): called unimplemented OpenGL ES API
+E/libEGL  ( 9487): called unimplemented OpenGL ES API
+E/libEGL  ( 9487): called unimplemented OpenGL ES API
+I/inlink.rainlink( 9487): Background concurrent mark compact GC freed 3317KB AllocSpace bytes, 0(0B) LOS objects, 49% free, 3082KB/6164KB, paused 8.922ms,3.171ms total 38.494ms
+E/libEGL  ( 9487): called unimplemented OpenGL ES API
+E/libEGL  ( 9487): called unimplemented OpenGL ES API
+E/libEGL  ( 9487): called unimplemented OpenGL ES API
+E/libEGL  ( 9487): called unimplemented OpenGL ES API
+E/libEGL  ( 9487): called unimplemented OpenGL ES API
+E/libEGL  ( 9487): called unimplemented OpenGL ES API
+E/libEGL  ( 9487): called unimplemented OpenGL ES API
+E/libEGL  ( 9487): called unimplemented OpenGL ES API
+E/libEGL  ( 9487): called unimplemented OpenGL ES API
+I/inlink.rainlink( 9487): Background concurrent mark compact GC freed 2966KB AllocSpace bytes, 0(0B) LOS objects, 49% free, 3139KB/6278KB, paused 8.388ms,3.573ms total 54.393ms
+E/libEGL  ( 9487): called unimplemented OpenGL ES API
+E/libEGL  ( 9487): called unimplemented OpenGL ES API
+E/libEGL  ( 9487): called unimplemented OpenGL ES API
+E/libEGL  ( 9487): called unimplemented OpenGL ES API
+E/libEGL  ( 9487): called unimplemented OpenGL ES API
+E/libEGL  ( 9487): called unimplemented OpenGL ES API
+E/libEGL  ( 9487): called unimplemented OpenGL ES API
+E/libEGL  ( 9487): called unimplemented OpenGL ES API
+E/libEGL  ( 9487): called unimplemented OpenGL ES API
+E/libEGL  ( 9487): called unimplemented OpenGL ES API
+E/libEGL  ( 9487): called unimplemented OpenGL ES API
+E/libEGL  ( 9487): called unimplemented OpenGL ES API
+I/inlink.rainlink( 9487): Background concurrent mark compact GC freed 3113KB AllocSpace bytes, 0(0B) LOS objects, 49% free, 3206KB/6412KB, paused 15.768ms,6.164ms total 194.714ms
+E/libEGL  ( 9487): called unimplemented OpenGL ES API
+E/libEGL  ( 9487): called unimplemented OpenGL ES API
+E/libEGL  ( 9487): called unimplemented OpenGL ES API
+E/libEGL  ( 9487): called unimplemented OpenGL ES API
+E/libEGL  ( 9487): call to OpenGL ES API with no current context (logged once per thread)
+E/libEGL  ( 9487): called unimplemented OpenGL ES API
+E/libEGL  ( 9487): called unimplemented OpenGL ES API
+E/libEGL  ( 9487): called unimplemented OpenGL ES API
+E/libEGL  ( 9487): called unimplemented OpenGL ES API
+E/libEGL  ( 9487): called unimplemented OpenGL ES API
+I/flutter ( 9487): 01:11 +1: (tearDownAll)
+I/flutter ( 9487): 01:11 +2: All tests passed!
+All tests passed.

@@ -1,0 +1,20 @@
+{
+  "initialServicesAvailable": true,
+  "uiAutostartEnableDisableAndReadback": true,
+  "realPanelActivationRestoresWindow": true,
+  "realNotificationDisplayedAndActionOpensGroups": true,
+  "panelLossRestoresWindow": true,
+  "panelRestartRegistersAgain": true,
+  "notificationsWithoutTray": true,
+  "publicTunRemainsFalse": true,
+  "applicationActions": [
+    "show",
+    "showGroups",
+    "show",
+    "capabilitiesChanged",
+    "capabilitiesChanged",
+    "capabilitiesChanged",
+    "show",
+    "capabilitiesChanged"
+  ]
+}

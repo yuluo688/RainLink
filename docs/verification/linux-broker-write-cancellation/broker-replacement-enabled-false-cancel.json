@@ -1,0 +1,19 @@
+{
+  "action": "cancel",
+  "brokerUID": 65534,
+  "cancelAndRollbackSeconds": 21.033283633,
+  "controlRevokedBeforeFilesystemRelease": true,
+  "elevatedUID": 0,
+  "heldFile": "/usr/libexec/rainlink/sing-box",
+  "hostSha256After": "51d6fd356524a9c53329bb54976b3d4f0d17cdca7eea7793a898ff14e68bc0a8",
+  "hostSha256Before": "51d6fd356524a9c53329bb54976b3d4f0d17cdca7eea7793a898ff14e68bc0a8",
+  "hostSha256WhileHeld": "b03d54fa3665f7985fe25d683a6882dbeb1d90d8b97ec5880cd51dd5fc6b3a90",
+  "originalOperationCancelled": true,
+  "realCoreTemporaryWriteObserved": true,
+  "socketActiveAfter": false,
+  "socketEnabledAfter": false,
+  "transactionAndTemporaryFilesRetired": true,
+  "uncommittedJournalObserved": true,
+  "workerExited": true,
+  "workerPID": 961
+}

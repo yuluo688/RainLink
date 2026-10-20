@@ -1,0 +1,214 @@
+{
+  "date": "2026-10-20",
+  "collectedAtUtc": "2026-10-20T03:33:11.136956+00:00",
+  "baseCommit": "0f80987cac940518e77f23816c5490223debff76",
+  "workingTree": "uncommitted changes",
+  "scope": "ordinary-user production broker cancellation after actual installed-file replacement; not complete graphical desktop authentication",
+  "environment": "isolated Debian 13 / Linux 6.12.113 / systemd 257 / polkitd 126 on QEMU TCG; fresh overlay on read-only QA base, no shared host credentials/devices or inbound ports",
+  "compiler": "go1.25.5 windows/amd64 cross compiled linux/amd64, CGO_ENABLED=0",
+  "testHook": "kernel fanotify permission gate on actual core inode, after new host was installed and complete second-file temporary was written; no production injection hook",
+  "actualBrokerUID": 65534,
+  "elevatedUID": 0,
+  "policy": "VM-only scoped polkit YES for fixed UID and action/program; this is not graphical authentication",
+  "vmTopLevelSeconds": 234.38,
+  "checks": {
+    "durableReplacementCancellationPassed": 4,
+    "managementUnitsPassed": 6,
+    "managementFixturesSkipped": 5,
+    "goFormatPassed": true,
+    "linuxGoVetPassed": true,
+    "shellSyntaxPassed": true,
+    "sourceInputsMatched": 187
+  },
+  "binaries": [
+    {
+      "path": "build/qa/linux-manage/vm-broker-write-20261020-01/rainlink-host",
+      "bytes": 10688317,
+      "sha256": "b03d54fa3665f7985fe25d683a6882dbeb1d90d8b97ec5880cd51dd5fc6b3a90"
+    },
+    {
+      "path": "build/qa/linux-manage/vm-broker-write-20261020-01/previous-host",
+      "bytes": 10688317,
+      "sha256": "51d6fd356524a9c53329bb54976b3d4f0d17cdca7eea7793a898ff14e68bc0a8"
+    },
+    {
+      "path": "build/qa/linux-manage/vm-broker-write-20261020-01/linuxmanage.test",
+      "bytes": 7344657,
+      "sha256": "c3b4b54c1ba909c11b5d450871b2813e09fcb09767a0720d8f212e29b1e5146e"
+    },
+    {
+      "path": "build/qa/linux-manage/vm-broker-write-20261020-01/sing-box",
+      "bytes": 27218068,
+      "sha256": "640e5293d90b94c71318031284e65cf8121d99ee9c06482f021ed77c9f3fa96d"
+    }
+  ],
+  "observations": [
+    {
+      "action": "cancel",
+      "brokerUID": 65534,
+      "cancelAndRollbackSeconds": 21.033283633,
+      "controlRevokedBeforeFilesystemRelease": true,
+      "elevatedUID": 0,
+      "heldFile": "/usr/libexec/rainlink/sing-box",
+      "hostSha256After": "51d6fd356524a9c53329bb54976b3d4f0d17cdca7eea7793a898ff14e68bc0a8",
+      "hostSha256Before": "51d6fd356524a9c53329bb54976b3d4f0d17cdca7eea7793a898ff14e68bc0a8",
+      "hostSha256WhileHeld": "b03d54fa3665f7985fe25d683a6882dbeb1d90d8b97ec5880cd51dd5fc6b3a90",
+      "originalOperationCancelled": true,
+      "realCoreTemporaryWriteObserved": true,
+      "socketActiveAfter": false,
+      "socketEnabledAfter": false,
+      "transactionAndTemporaryFilesRetired": true,
+      "uncommittedJournalObserved": true,
+      "workerExited": true,
+      "workerPID": 961
+    },
+    {
+      "action": "eof",
+      "brokerUID": 65534,
+      "cancelAndRollbackSeconds": 20.826964235,
+      "controlRevokedBeforeFilesystemRelease": true,
+      "elevatedUID": 0,
+      "heldFile": "/usr/libexec/rainlink/sing-box",
+      "hostSha256After": "51d6fd356524a9c53329bb54976b3d4f0d17cdca7eea7793a898ff14e68bc0a8",
+      "hostSha256Before": "51d6fd356524a9c53329bb54976b3d4f0d17cdca7eea7793a898ff14e68bc0a8",
+      "hostSha256WhileHeld": "b03d54fa3665f7985fe25d683a6882dbeb1d90d8b97ec5880cd51dd5fc6b3a90",
+      "originalOperationCancelled": true,
+      "realCoreTemporaryWriteObserved": true,
+      "socketActiveAfter": false,
+      "socketEnabledAfter": false,
+      "transactionAndTemporaryFilesRetired": true,
+      "uncommittedJournalObserved": true,
+      "workerExited": true,
+      "workerPID": 1190
+    },
+    {
+      "action": "cancel",
+      "brokerUID": 65534,
+      "cancelAndRollbackSeconds": 21.767931246,
+      "controlRevokedBeforeFilesystemRelease": true,
+      "elevatedUID": 0,
+      "heldFile": "/usr/libexec/rainlink/sing-box",
+      "hostSha256After": "51d6fd356524a9c53329bb54976b3d4f0d17cdca7eea7793a898ff14e68bc0a8",
+      "hostSha256Before": "51d6fd356524a9c53329bb54976b3d4f0d17cdca7eea7793a898ff14e68bc0a8",
+      "hostSha256WhileHeld": "b03d54fa3665f7985fe25d683a6882dbeb1d90d8b97ec5880cd51dd5fc6b3a90",
+      "originalOperationCancelled": true,
+      "realCoreTemporaryWriteObserved": true,
+      "socketActiveAfter": true,
+      "socketEnabledAfter": true,
+      "transactionAndTemporaryFilesRetired": true,
+      "uncommittedJournalObserved": true,
+      "workerExited": true,
+      "workerPID": 1415
+    },
+    {
+      "action": "eof",
+      "brokerUID": 65534,
+      "cancelAndRollbackSeconds": 23.571076024,
+      "controlRevokedBeforeFilesystemRelease": true,
+      "elevatedUID": 0,
+      "heldFile": "/usr/libexec/rainlink/sing-box",
+      "hostSha256After": "51d6fd356524a9c53329bb54976b3d4f0d17cdca7eea7793a898ff14e68bc0a8",
+      "hostSha256Before": "51d6fd356524a9c53329bb54976b3d4f0d17cdca7eea7793a898ff14e68bc0a8",
+      "hostSha256WhileHeld": "b03d54fa3665f7985fe25d683a6882dbeb1d90d8b97ec5880cd51dd5fc6b3a90",
+      "originalOperationCancelled": true,
+      "realCoreTemporaryWriteObserved": true,
+      "socketActiveAfter": true,
+      "socketEnabledAfter": true,
+      "transactionAndTemporaryFilesRetired": true,
+      "uncommittedJournalObserved": true,
+      "workerExited": true,
+      "workerPID": 1658
+    }
+  ],
+  "publicLinuxTunEnabled": false,
+  "productRuntimeChangedThisStage": false,
+  "remaining": [
+    "graphical AUTH_ADMIN session and settings UI end to end",
+    "all desktop sessions and distribution compatibility",
+    "macOS host and iOS network extension",
+    "Android physical device and full native dialogs"
+  ],
+  "files": [
+    {
+      "path": "broker-replacement-enabled-false-cancel.json",
+      "bytes": 750,
+      "sha256": "dbdee5b4392bcb6dc057298acb95439b22f1149defea2a2c03b102ad4cdde99c"
+    },
+    {
+      "path": "broker-replacement-enabled-false-eof.json",
+      "bytes": 748,
+      "sha256": "3ba2cb67e2ca2e6f0fb4f5d892196575e99ee8945fff4aeabc9a2758ebd02f28"
+    },
+    {
+      "path": "broker-replacement-enabled-true-cancel.json",
+      "bytes": 749,
+      "sha256": "37190da57e368a387e82f3b40ae1981747aae6d1a190c82340587624f938e04b"
+    },
+    {
+      "path": "broker-replacement-enabled-true-eof.json",
+      "bytes": 746,
+      "sha256": "a6b3365bf791a1f88287073af11c9ed7ab57c0c56e7219ba435d2058402f0020"
+    },
+    {
+      "path": "guest-inputs.log",
+      "bytes": 601,
+      "sha256": "51f799715bff415aafef26ff5af31cb874f65d5a06bbee1e03c240c5c9348b47"
+    },
+    {
+      "path": "guest-result.txt",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "host-status.json",
+      "bytes": 203,
+      "sha256": "7b12c5442856ebbf58c07f6c3612b09da147b3c216e430c4d490a5cfac59dc66"
+    },
+    {
+      "path": "management-unit.log",
+      "bytes": 1693,
+      "sha256": "2ed9ae043b52a26b9999cca804481b4188397adeb95d3ce3d95322cbea705046"
+    },
+    {
+      "path": "polkit-journal.log",
+      "bytes": 4139,
+      "sha256": "6b3a2c8b277ac2df4e2191f139dbd1120dc68fe2b70acb71aae17c096ab9f0e3"
+    },
+    {
+      "path": "real-broker-replacement-tests.log",
+      "bytes": 4566,
+      "sha256": "d659e1cf57941e68ed3a3f286b12c524d0d144e62bf4c3e6f5bba79f79f5c385"
+    },
+    {
+      "path": "run_vm_namespace.sh",
+      "bytes": 1272,
+      "sha256": "7f39cb29f6ffd03d134d930a4b3f591feed0a513d431a96ff92354c2cb100fd8"
+    },
+    {
+      "path": "signed-dependency-check.log",
+      "bytes": 62,
+      "sha256": "ee1760053cfb58e06622b863dcfe3c443f591c4ef6f3be2d09f900f4c2a199eb"
+    },
+    {
+      "path": "source-inputs.json",
+      "bytes": 30969,
+      "sha256": "8b75701e29d91827acb51794b9cc99fa6d85eb84fcbe728cafb1cf0387b5b844"
+    },
+    {
+      "path": "systemd-journal.log",
+      "bytes": 2606,
+      "sha256": "14b2a7c681a4d529196b95f26879c9fff14277fd556bb09196c4be286bc50474"
+    },
+    {
+      "path": "vm-guest.sh",
+      "bytes": 2642,
+      "sha256": "6def3392a60e344fd71ba2e5b7daff5b94eae84a78349a1b1907dc7f506d222d"
+    },
+    {
+      "path": "vm-inner.sh",
+      "bytes": 1558,
+      "sha256": "e4a4e7a6f9f759285803c500c8acbfeb9ddb8a38f363a1f2f015e8ecec35aebf"
+    }
+  ],
+  "hostStatusScope": "current cross-compiled host read-only status under WSL, not guest desktop proxy capabilities"
+}

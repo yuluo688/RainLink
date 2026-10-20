@@ -1,0 +1,772 @@
+{
+  "date": "2026-10-20",
+  "collectedAtUtc": "2026-10-20T04:31:42.622717+00:00",
+  "baseCommit": "0f80987cac940518e77f23816c5490223debff76",
+  "workingTree": "uncommitted changes",
+  "scope": "real X11/logind/lxpolkit authentication and canonical final-package install/uninstall/close; not full desktop/distribution acceptance",
+  "environment": "disposable Debian 13 / Linux 6.12 / systemd 257 / polkitd 126 VM; Xvfb, Openbox and lxpolkit; no shared host credentials or devices",
+  "sessionUsers": {
+    "initialFixValidation": 2000,
+    "canonicalFinalPackage": 2001
+  },
+  "authentication": "real graphical password entry; VM-only AUTH_ADMIN policy and VM-generated credential, never exported",
+  "compiler": "Go 1.25.5 linux/amd64, CGO_ENABLED=0; Flutter 3.27.4 / Dart 3.6.2",
+  "initialValidationHosts": {
+    "originalPreview": "4bf88326baed0609ec52f39b40c1859654ff9fc795ab3a325c816fe3d6eef432",
+    "capabilityFixInstallUninstall": "17fe06d86a8f69ecdc5364ab240b3b7f0aa19492f057a99d72a8023147e27a8b",
+    "finalMessageCancelAndClose": "20640cd8ac2d728729098c106623fea3bd8a4d28f5f5d0ae1bee0efbd662026b"
+  },
+  "canonicalPackage": {
+    "path": "build/RainLink-linux-x64-preview.tar.xz",
+    "bytes": 32206576,
+    "sha256": "aaea75eee68c564655864cd9b0b191cf440958d88b67b7feb9af5ec2f6488e7e",
+    "version": "0.1.0+4",
+    "installedFiles": {
+      "/usr/libexec/rainlink/rainlink-host": "3c94988871e41f58fcfa486b7c58ce749b1b2cac6a217ffa9c1cf586f46394e4",
+      "/usr/libexec/rainlink/sing-box": "640e5293d90b94c71318031284e65cf8121d99ee9c06482f021ed77c9f3fa96d"
+    },
+    "installState": {
+      "protocolVersion": 1,
+      "state": "current",
+      "canManage": true,
+      "enabled": true,
+      "active": true,
+      "message": "服务文件与当前应用一致"
+    },
+    "uninstallState": {
+      "protocolVersion": 1,
+      "state": "missing",
+      "canManage": true,
+      "enabled": false,
+      "active": false,
+      "message": "尚未安装 TUN 权限服务"
+    },
+    "finalState": {
+      "applicationExitCode": 0,
+      "noApplicationOrManagementProcesses": true,
+      "noAuthenticationWindow": true,
+      "publicTun": false,
+      "remainingInstallEntries": [
+        "/var/lib/rainlink/tun-install/install.lock"
+      ],
+      "noPendingTransaction": true
+    },
+    "graphicalAuthorizations": 2,
+    "completePackageRunWithoutBinaryReplacement": true
+  },
+  "checks": {
+    "managementTopLevelPassed": 7,
+    "managementFixturesSkipped": 6,
+    "capabilityFixtureExecuted": true,
+    "capabilityThreadCount": 9,
+    "goFormat": true,
+    "linuxCrossCompile": true,
+    "crossAndNativeGoVet": true,
+    "reusableFixtureShellSyntax": true,
+    "reusableFixtureActuallyRerun": false,
+    "canonicalVmGuestResult": 0,
+    "ordinaryReleaseWindow": "960x640",
+    "figmaSvgMatched": 44,
+    "runtimeAssetsMatched": 55,
+    "sourceAudits": {
+      "source-inputs.json": {
+        "matched": 181,
+        "mismatches": []
+      },
+      "product-inputs.json": {
+        "matched": 733,
+        "mismatches": []
+      }
+    },
+    "newFlutterSuiteRuns": 0
+  },
+  "limitations": [
+    "public Linux capabilities.tun remains false",
+    "GTK/Flutter shutdown diagnostics remain unresolved",
+    "no new all-page or complete modal visual suite in this phase",
+    "full GNOME/Plasma/Wayland, other distributions and formal distribution pending",
+    "no commit, push or publication"
+  ],
+  "artifacts": [
+    {
+      "path": "advisory-inputs.json",
+      "bytes": 1165,
+      "sha256": "ba1fac8acbbe3ce2c5144b4215709888dc7ee8394960ff2cf61644f9de5ebd9d"
+    },
+    {
+      "path": "app-cancel-auth.sh",
+      "bytes": 1289,
+      "sha256": "18b15aef2808f8cef8ae959745ee3c0a6d59814b620ee195e20ec98c174cded3"
+    },
+    {
+      "path": "application-cancel.log",
+      "bytes": 46,
+      "sha256": "fc0ecbbca83a4cae06823104fdf601ced53a09eda89e754f6be7b6db3f46f4ef"
+    },
+    {
+      "path": "application-cancelled.png",
+      "bytes": 76581,
+      "sha256": "9b2d8dfb2e8f68c79fc5e1e735caced6b1ae6f093f89d32af2beccf134c3625e"
+    },
+    {
+      "path": "application-confirm-cancel.json",
+      "bytes": 196,
+      "sha256": "8cc63fd772a60234a61dfd3c7d7a4fdf1bb2dd46e5446e9e4783f577854286ee"
+    },
+    {
+      "path": "application-exit.log",
+      "bytes": 21,
+      "sha256": "5a8dc2b1fbbe83fd2673ee270623abb5e2eddc1e89e0a31f2654b17daeaacfa1"
+    },
+    {
+      "path": "apt-install.log",
+      "bytes": 69096,
+      "sha256": "9e03153391c9f2ed2440024db58eb6e5d78460c4fff69d3d7a2b0a32b430e7a5"
+    },
+    {
+      "path": "apt-update.log",
+      "bytes": 528,
+      "sha256": "71d89731687a2e6da01c8e7b2c890af9f114d9e14094e57835ec00ca7089e8c0"
+    },
+    {
+      "path": "authentication-agent.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "authorization-dismissed.png",
+      "bytes": 74139,
+      "sha256": "203219d47d7ebc2b8eb01e3cd67e51bab986c36590b2226bf40566b7a2ebd832"
+    },
+    {
+      "path": "before-capability-fix.log",
+      "bytes": 115,
+      "sha256": "2ffcedc794b544d194c03dd8636524dd0390303af33ef7fc8279c589f0c2fa53"
+    },
+    {
+      "path": "before-fix-login-session.log",
+      "bytes": 328,
+      "sha256": "ac4ffaccef88a89bc2881350adad3c75734f4b40b5f82a3b7acf34ccc35b5378"
+    },
+    {
+      "path": "broker-after-fix-capabilities.log",
+      "bytes": 189,
+      "sha256": "21acab070f0665ea182cf3a2ec5505b45720f7ea269e621cd38e9e85b8c214b6"
+    },
+    {
+      "path": "cancel-diagnostic-open.sh",
+      "bytes": 1130,
+      "sha256": "6028ee2a6a9ec168e69d8c345c0ae12b1097a2bf0972b1bd72fbad86bd11ace8"
+    },
+    {
+      "path": "cancel-diagnostic-result.sh",
+      "bytes": 335,
+      "sha256": "87cf0f9190c8efda0c0192edcb9754718cf54828dd1470dea5ddf61e14b32082"
+    },
+    {
+      "path": "canonical-package/application-exit.log",
+      "bytes": 21,
+      "sha256": "5a8dc2b1fbbe83fd2673ee270623abb5e2eddc1e89e0a31f2654b17daeaacfa1"
+    },
+    {
+      "path": "canonical-package/apt-install.log",
+      "bytes": 1406,
+      "sha256": "721f242c5ebbaaf005e3d212d14812b183213bd6617eccb0f01f936a43b44fb4"
+    },
+    {
+      "path": "canonical-package/apt-update.log",
+      "bytes": 149,
+      "sha256": "5ab657046a27f2d7c541a1e745c623d27b00faf1894e5700185cd625f9046709"
+    },
+    {
+      "path": "canonical-package/authentication-agent.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "canonical-package/canonical-engine-before.png",
+      "bytes": 73837,
+      "sha256": "31035ed57017c3a1a05ffa9885d015745b73facbaf87b1e6f299decfb94b23b2"
+    },
+    {
+      "path": "canonical-package/canonical-install-confirm.png",
+      "bytes": 76955,
+      "sha256": "96a3d4e15263b14aa8f0dfcc81af0a162fa040a41b2038008fb8d312f9bc94cf"
+    },
+    {
+      "path": "canonical-package/canonical-installed-window.png",
+      "bytes": 70340,
+      "sha256": "d1563439b5934db3afc68144666760eefa39373fd5efe15bebd147e4ee028e0d"
+    },
+    {
+      "path": "canonical-package/canonical-installed.png",
+      "bytes": 77167,
+      "sha256": "71a6eec5649afb0cb0a61c065402ed28d012b88f8d0533f967441226ee8df6e8"
+    },
+    {
+      "path": "canonical-package/canonical-overview-ready-window.png",
+      "bytes": 89456,
+      "sha256": "c9c767a565a54c1a4b5962ed1da6f4b7cdb6f936b7c5b55cbbf83ae9c71a73fe"
+    },
+    {
+      "path": "canonical-package/canonical-overview-ready.png",
+      "bytes": 97714,
+      "sha256": "26df1e4d1851a2d129fa687fd0a58fa0a87bfdf42d3cac1b5c99c9585946d5ea"
+    },
+    {
+      "path": "canonical-package/canonical-polkit-install-window.png",
+      "bytes": 71499,
+      "sha256": "624289cb0e55ec83ce51b5509d816fd6f51974857b26b9882c837bc5cd42dfa5"
+    },
+    {
+      "path": "canonical-package/canonical-polkit-install.png",
+      "bytes": 78033,
+      "sha256": "30edcb2a4b938d04e70a01726aac9f7cedcf97a955585df5996ee445730a929d"
+    },
+    {
+      "path": "canonical-package/canonical-polkit-uninstall-window.png",
+      "bytes": 69581,
+      "sha256": "950ec38d5fe86b698dd07c860e400342f06893f90cc1e05d7109d860c4eca36b"
+    },
+    {
+      "path": "canonical-package/canonical-polkit-uninstall.png",
+      "bytes": 75851,
+      "sha256": "571642ecc917999dac4745c945108b21db4bce8e43eed9389dcd0ae28ba2e8f6"
+    },
+    {
+      "path": "canonical-package/canonical-uninstall-confirm.png",
+      "bytes": 79584,
+      "sha256": "41c92acbfce81c80d0aee4a28b1ae366f6c4637fe1d3d951dca274638daff6ec"
+    },
+    {
+      "path": "canonical-package/canonical-uninstalled-window.png",
+      "bytes": 71527,
+      "sha256": "9bd0886da4695b4ea8b8d3631c8f82e84389158f9fa1f130719c926f4d077c0f"
+    },
+    {
+      "path": "canonical-package/canonical-uninstalled.png",
+      "bytes": 78539,
+      "sha256": "eb183f09636ed35eb20dad9c6ac8f26c5b579bfdb6b0cfe625a207a321db75ba"
+    },
+    {
+      "path": "canonical-package/close-and-verify.sh",
+      "bytes": 2032,
+      "sha256": "edef13c5ba65325ab481e3eede0db2f414d7c66783d5620dd85d2a4cf9e5d3d8"
+    },
+    {
+      "path": "canonical-package/desktop-current.png",
+      "bytes": 75844,
+      "sha256": "ead919a0eff44ab46f431d8b7257afb3effb5a8336338160738b5d0636fa2e2d"
+    },
+    {
+      "path": "canonical-package/desktop-session-journal.log",
+      "bytes": 376,
+      "sha256": "5af1ed34c4c1343f7cee2160f8ac42b13adb1346a75262f85a32abd7b668d16b"
+    },
+    {
+      "path": "canonical-package/desktop-session.sh",
+      "bytes": 1328,
+      "sha256": "3c78458c36e86b0cd4fce404f5a36238fdf4fc1926fe86b5b18fbe9f3858a3a5"
+    },
+    {
+      "path": "canonical-package/final-files.log",
+      "bytes": 169,
+      "sha256": "929e1a7f658d0c696804e44db346da2a5bdaf5f0c6684b1a1c9ddd93dc17b98e"
+    },
+    {
+      "path": "canonical-package/final-login-session.log",
+      "bytes": 325,
+      "sha256": "72f986b81be39697e84b3716605b8b03deea6a63c4e69cb92d394109d8a79a87"
+    },
+    {
+      "path": "canonical-package/final-status.json",
+      "bytes": 250,
+      "sha256": "33047cfb035990a60127de49350091a0263e8fe77e5fce81af6b0851ec87ee48"
+    },
+    {
+      "path": "canonical-package/guest-result.txt",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "canonical-package/gui-package-input.log",
+      "bytes": 103,
+      "sha256": "f11d9f8df9d1a79be5beafec7d51639626ba1b74fed27a453cd9b77f4efd03a9"
+    },
+    {
+      "path": "canonical-package/gui_rpc.py",
+      "bytes": 3446,
+      "sha256": "f607cd14281db69d577cce3fc8707dbed4416cc2555612dfc0a28b70d3c0f107"
+    },
+    {
+      "path": "canonical-package/host-status.json",
+      "bytes": 203,
+      "sha256": "7b12c5442856ebbf58c07f6c3612b09da147b3c216e430c4d490a5cfac59dc66"
+    },
+    {
+      "path": "canonical-package/install-authorize.sh",
+      "bytes": 934,
+      "sha256": "68bc180db9910b3fbb2f706c08a47775572fa659bd02725df6d0bba098af0a5d"
+    },
+    {
+      "path": "canonical-package/install-confirm.sh",
+      "bytes": 487,
+      "sha256": "bd20ff352d6e48ae38f275e082551ddec79fc718af99367629c51c1362002c8b"
+    },
+    {
+      "path": "canonical-package/installed-files.log",
+      "bytes": 322,
+      "sha256": "ca354f7ac37d2aec9edfd18ccccb824044feae748d8ff9a2e8a4a376ee2ad798"
+    },
+    {
+      "path": "canonical-package/installed-status.json",
+      "bytes": 432,
+      "sha256": "f15570440db8ca04debe08938d039be3604d001b28b3c0133c22fde524b3d577"
+    },
+    {
+      "path": "canonical-package/keyring.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "canonical-package/login-session.log",
+      "bytes": 325,
+      "sha256": "72f986b81be39697e84b3716605b8b03deea6a63c4e69cb92d394109d8a79a87"
+    },
+    {
+      "path": "canonical-package/open-engine.sh",
+      "bytes": 629,
+      "sha256": "b759548a30708c10c1abc9afa602447761a50ff7713b2310597e6416a60f70b3"
+    },
+    {
+      "path": "canonical-package/openbox.log",
+      "bytes": 149,
+      "sha256": "abdb301bf7267ccaba9e3ef45aa8b8065fee56b5348af4180f7ad322f6bd01a5"
+    },
+    {
+      "path": "canonical-package/polkit-journal.log",
+      "bytes": 2429,
+      "sha256": "8e3f907fd986ef6f5e7c266898d6153fb6857dde45f9bf76d81c64996e48157f"
+    },
+    {
+      "path": "canonical-package/qga-control.sh",
+      "bytes": 461,
+      "sha256": "f953027b494f98f0571985615191e9f12019cc45f1b4364b914cdc0b70d166a9"
+    },
+    {
+      "path": "canonical-package/rainlink.log",
+      "bytes": 536,
+      "sha256": "b64d33d622c614656b8447eb09fec186706e0893e4e55c96a43c3c9db1276915"
+    },
+    {
+      "path": "canonical-package/session-ready.log",
+      "bytes": 18,
+      "sha256": "a2ba336bbc4f5f74cbd64e50b1419fa875baa4fd011aa2abae7c0d27cabc3a4d"
+    },
+    {
+      "path": "canonical-package/tun-journal.log",
+      "bytes": 753,
+      "sha256": "bb448ccf24fbee18c0bbfc5d57a8bf28a7da78c45b0059511ef4d19b549ab12c"
+    },
+    {
+      "path": "canonical-package/uninstall-authorize.sh",
+      "bytes": 997,
+      "sha256": "bca710b7ac3f62da3ebec0beddf2690205802bf564c1a02a8a8a7617b7284c18"
+    },
+    {
+      "path": "canonical-package/uninstall-confirm.sh",
+      "bytes": 489,
+      "sha256": "e167d8fa2b15001fb4c41968df5d6d336c518499a6807e34e27599d882cd7ddf"
+    },
+    {
+      "path": "canonical-package/uninstalled-files.log",
+      "bytes": 169,
+      "sha256": "929e1a7f658d0c696804e44db346da2a5bdaf5f0c6684b1a1c9ddd93dc17b98e"
+    },
+    {
+      "path": "canonical-package/uninstalled-status.json",
+      "bytes": 267,
+      "sha256": "55c829c5deac18013967b16af1289477a52b727739f0407471dbf41b056eba43"
+    },
+    {
+      "path": "canonical-package/verify-installed.sh",
+      "bytes": 2013,
+      "sha256": "aeded90f641a205e499a41a3d24b2da4b8968e25a7db9952adfc9f7266cfcd45"
+    },
+    {
+      "path": "canonical-package/verify-uninstalled.sh",
+      "bytes": 2128,
+      "sha256": "a60818c8fca5367cab16f96047c7928e2382c3266f87b33d1c761bc75995362e"
+    },
+    {
+      "path": "canonical-package/vm-guest.sh",
+      "bytes": 4305,
+      "sha256": "c4012c10d6874e21ee310f897057b2e97f9c3956084e530e5e2c90fb61935a13"
+    },
+    {
+      "path": "canonical-package/xvfb.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "capability-diagnostic.sh",
+      "bytes": 806,
+      "sha256": "ae23708fe51f9cb7d59dc83c90ddc2fcd93f1f94e161085b6d40562215434e25"
+    },
+    {
+      "path": "capture-desktop.sh",
+      "bytes": 691,
+      "sha256": "71e817991899d3586d561aa57a9b0bde4f289a85c8111ed6fa56e644765380b3"
+    },
+    {
+      "path": "close-pending-authentication.png",
+      "bytes": 77318,
+      "sha256": "541f2f3ce33a91abfd2086376ea47d007da3440aac61903bb12ed0ac8c2060fc"
+    },
+    {
+      "path": "close-pending-result.log",
+      "bytes": 48,
+      "sha256": "b4fd0eb4ebccbc75c2b6ccf42b4fd1d24bc517e9875f0bc1fd74c48cdb665e12"
+    },
+    {
+      "path": "close-with-pending-auth.sh",
+      "bytes": 1725,
+      "sha256": "374db0837c0fa1bcf8bd1599c55c5cd08ed7e6727fa3a3abdc05ca78dccf4fb9"
+    },
+    {
+      "path": "deploy-capability-fix.sh",
+      "bytes": 1398,
+      "sha256": "0b858aa13914894afde5e4e742216ab58b6d5bde3574af2b6a009155260b65ca"
+    },
+    {
+      "path": "deploy-final-host.sh",
+      "bytes": 1742,
+      "sha256": "b99757f7faa360d1c4e9fa3292e2c39421fa8678490c7f983bb924c572f80e6e"
+    },
+    {
+      "path": "desktop-session-journal.log",
+      "bytes": 3029,
+      "sha256": "f6445e369729ce27027797947c44dfd360848c3a621e3295165cb1583c8ded6f"
+    },
+    {
+      "path": "desktop-session.sh",
+      "bytes": 1328,
+      "sha256": "3c78458c36e86b0cd4fce404f5a36238fdf4fc1926fe86b5b18fbe9f3858a3a5"
+    },
+    {
+      "path": "diagnostic-id-cancel.log",
+      "bytes": 139,
+      "sha256": "9660a983e3a5e135a41fee5ae16fd19253b8dbaf8cda7e9cd0796ee730115d20"
+    },
+    {
+      "path": "figma-context.json",
+      "bytes": 234,
+      "sha256": "1f6fe32ddd5bde22ca775b5a4aecb3cd774706ea0a9fff92853f9120dcf8dc9b"
+    },
+    {
+      "path": "figma-icon-audit.json",
+      "bytes": 13034,
+      "sha256": "8361a674382a43c37dcb273347dd4c8036e1e0aba4ca82313225e7f37d009b20"
+    },
+    {
+      "path": "figma-settings-current.png",
+      "bytes": 79702,
+      "sha256": "f4173c9a0581b9442011febd5d2d128c3569ce1d92fb144f22a52c9d595f5631"
+    },
+    {
+      "path": "final-auth-cancel.sh",
+      "bytes": 853,
+      "sha256": "9a15e0ec99ae2cd5d2fe0f9a6f7285be0c8c9bdc82c0503f1aa1887e59d05981"
+    },
+    {
+      "path": "final-files.log",
+      "bytes": 169,
+      "sha256": "929e1a7f658d0c696804e44db346da2a5bdaf5f0c6684b1a1c9ddd93dc17b98e"
+    },
+    {
+      "path": "final-host-status.json",
+      "bytes": 203,
+      "sha256": "7b12c5442856ebbf58c07f6c3612b09da147b3c216e430c4d490a5cfac59dc66"
+    },
+    {
+      "path": "final-host.log",
+      "bytes": 107,
+      "sha256": "a5ebb8436b40b5a6636610f796a21cc816d0194773c88304c7e3e713aaf789f1"
+    },
+    {
+      "path": "final-login-session.log",
+      "bytes": 329,
+      "sha256": "ec6ab1d36b57a00d0d650fd855c5a902d8e9600b94c1f4048c9de4800c8bedc4"
+    },
+    {
+      "path": "final-request.sh",
+      "bytes": 1095,
+      "sha256": "d72f1858d58d44d64de933cd6cd33d3c17aa4a186368be3dd9ccf63ade112d3a"
+    },
+    {
+      "path": "final-status.json",
+      "bytes": 331,
+      "sha256": "83705040ed0ad32fdbe6c7eed737241f542a4dd05a1cc7dd6a2c58562e921b0e"
+    },
+    {
+      "path": "finish-graphical.sh",
+      "bytes": 2008,
+      "sha256": "000e55863432e7616679492de4580c2e797679995d1b80d0bcf34dff87eec1bd"
+    },
+    {
+      "path": "first-fixed-host-application.log",
+      "bytes": 115,
+      "sha256": "8100884bd88d920e442999c92cd53dd18f2ea29a7748e1348cab9713ec0fad93"
+    },
+    {
+      "path": "first-fixed-host-login-session.log",
+      "bytes": 328,
+      "sha256": "fafe9ef7c80254f06b0b040cb161b8229b7a7cd698bb61927c54eeb92ac9aef9"
+    },
+    {
+      "path": "graphical-final-release-960.json",
+      "bytes": 369,
+      "sha256": "440ae5d2edaa557d58e2bacba8efbed65a2c0b541c1595fff6bcb3b7f09d486d"
+    },
+    {
+      "path": "graphical-final-release-960.png",
+      "bytes": 89997,
+      "sha256": "1f5770c2924964eb204a1211f97a7591e2254a6d7341bc8f98e721bc089cbfa5"
+    },
+    {
+      "path": "graphical-linux-bundle.json",
+      "bytes": 15005,
+      "sha256": "0c8d5252a43d00e500d2575377ec0c4d7ff71fd9ebaa73c0a3f7d6e36647a424"
+    },
+    {
+      "path": "graphical-native-checks.log",
+      "bytes": 359,
+      "sha256": "849796ebb066aa5d31885b87aa51b15626099c0c0bc16229094048ca3fda9a4f"
+    },
+    {
+      "path": "graphical-package-cached-advisories.log",
+      "bytes": 1384,
+      "sha256": "ab95adcbf82b2408d03a85f791a73185144dc73c9cbf47cf37a50df884995d6e"
+    },
+    {
+      "path": "graphical-package-offline.log",
+      "bytes": 379,
+      "sha256": "149ce5bb48fecfe1fe28258401ff8c818318cd4242f74e9c5cd4bf917cba5f20"
+    },
+    {
+      "path": "graphical-package-versions.log",
+      "bytes": 200,
+      "sha256": "555f8788dd1e94124a5b042805d72aa22b142307afda23e9828a113084770f05"
+    },
+    {
+      "path": "graphical-package.log",
+      "bytes": 578,
+      "sha256": "0d56d3613752dd0390b2f5a21c0b82e831452ba404d748b0d0662541c0fadaee"
+    },
+    {
+      "path": "graphical-release-diagnostics.log",
+      "bytes": 539,
+      "sha256": "9a03097307a2c4ea6dd91a6a6f16f3c4d54793f84cc0850fb5307c09a1ef0e4d"
+    },
+    {
+      "path": "graphical-release-smoke.log",
+      "bytes": 420,
+      "sha256": "deb116d1f14e7218f1d079b6942a11ec05989e7660e337fa7eccea0e0e2f1596"
+    },
+    {
+      "path": "graphical-source-audit.json",
+      "bytes": 56,
+      "sha256": "047b79c495e58108e75bad435323104dd5b31e779b5a5db6aa5a3d952b91b8bb"
+    },
+    {
+      "path": "graphics-runtime-install.log",
+      "bytes": 1331,
+      "sha256": "ef92d0f028c1387bf47a8a0f95efeea2b93197b5bf213b5b887f4fe0e9be0757"
+    },
+    {
+      "path": "guest-result.txt",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "gui-package-input.log",
+      "bytes": 103,
+      "sha256": "fdb4a03ab78e071e233aa6282ad508248f05b57a0ee580106211b6c4ec2ec47b"
+    },
+    {
+      "path": "gui_rpc.py",
+      "bytes": 3446,
+      "sha256": "5f28cd255cb7a90275f11bfb069523822e7985e8c1efc9fd5bfa9c883f225dc9"
+    },
+    {
+      "path": "host-replacement.log",
+      "bytes": 220,
+      "sha256": "3555707fdc7d35ef2437bd84e9f5d601c16fb4ec086b41c9eb34bb3be58582ae"
+    },
+    {
+      "path": "host-status.json",
+      "bytes": 203,
+      "sha256": "7b12c5442856ebbf58c07f6c3612b09da147b3c216e430c4d490a5cfac59dc66"
+    },
+    {
+      "path": "inherited-capability-failure.log",
+      "bytes": 378,
+      "sha256": "dcbf2c14e692751597dfe3107ba47147f5e17f00d8813e4fc4f3dca1b9e3de79"
+    },
+    {
+      "path": "install-confirm.png",
+      "bytes": 70633,
+      "sha256": "b31d4ef70402c651e2a93fb221cc81944a606f28347981f3a048101aff109c34"
+    },
+    {
+      "path": "installed-files.log",
+      "bytes": 322,
+      "sha256": "ca354f7ac37d2aec9edfd18ccccb824044feae748d8ff9a2e8a4a376ee2ad798"
+    },
+    {
+      "path": "installed-status.json",
+      "bytes": 432,
+      "sha256": "9ca6394f087c431ae900813a8f7c4749d7937fe86cb5ed1af6b6638d516b6f1a"
+    },
+    {
+      "path": "installed.png",
+      "bytes": 70340,
+      "sha256": "d1563439b5934db3afc68144666760eefa39373fd5efe15bebd147e4ee028e0d"
+    },
+    {
+      "path": "keyring.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "login-session.log",
+      "bytes": 329,
+      "sha256": "ec6ab1d36b57a00d0d650fd855c5a902d8e9600b94c1f4048c9de4800c8bedc4"
+    },
+    {
+      "path": "management-unit-with-capability-regression.log",
+      "bytes": 2155,
+      "sha256": "d9fd68e326eac2184f599c17a345b0de7dcc74f955d5f41f500a60df2272e34d"
+    },
+    {
+      "path": "openbox.log",
+      "bytes": 228,
+      "sha256": "5236ee129ace237d470ce39fa2fd49b884ab69472b7f5e89a20ea5a3350f33aa"
+    },
+    {
+      "path": "package-delta.json",
+      "bytes": 106,
+      "sha256": "84710f55f60e7be14382ff4d96fc39028347fc3811e4dee3182de8215f2f4683"
+    },
+    {
+      "path": "package_graphical_offline.sh",
+      "bytes": 1636,
+      "sha256": "c73852145d2478ecb47b702f3ecbcc1ccaadfc470f6881c9324505928fa04e72"
+    },
+    {
+      "path": "polkit-authentication.png",
+      "bytes": 70845,
+      "sha256": "69ee0fcbb4294fa74e19565e2640b04c6aad410ac55bfb2144c493fc04de5a7e"
+    },
+    {
+      "path": "polkit-cancel-exit-diagnostic.log",
+      "bytes": 144,
+      "sha256": "e400bbf50e5284810784baf6fb85b42d8777401e72bea89730ca739ef73676ae"
+    },
+    {
+      "path": "polkit-journal.log",
+      "bytes": 5966,
+      "sha256": "7af0944cfb06a1c9b216e82e4a72b3ebaed7ee2bfdaaf627a4421b47258c5f78"
+    },
+    {
+      "path": "processes-after-uninstall.log",
+      "bytes": 313,
+      "sha256": "49bc964d0fed58246531362d52545f657376552d6958508031906c263af2d9d1"
+    },
+    {
+      "path": "product-inputs.json",
+      "bytes": 119480,
+      "sha256": "c43e9978871cb91bd4225a1be98d5d955e752f2d63be9c7c5b843b641490126f"
+    },
+    {
+      "path": "qga-control.sh",
+      "bytes": 461,
+      "sha256": "414eda6e9d9cd47d5f3dd0146a79ef948adf6a246a564c60b986056fd58ce738"
+    },
+    {
+      "path": "rainlink.log",
+      "bytes": 542,
+      "sha256": "f442a9a95f7a48b6ed54ec781a62f10cb24ece143df86837e60f601e825648b1"
+    },
+    {
+      "path": "session-command.log",
+      "bytes": 144,
+      "sha256": "e400bbf50e5284810784baf6fb85b42d8777401e72bea89730ca739ef73676ae"
+    },
+    {
+      "path": "session-diagnostics.sh",
+      "bytes": 1038,
+      "sha256": "419447da03c69a393bf1c580477f3d24971ff7f4762ed2717f20a0b92179314a"
+    },
+    {
+      "path": "session-ready.log",
+      "bytes": 18,
+      "sha256": "a2ba336bbc4f5f74cbd64e50b1419fa875baa4fd011aa2abae7c0d27cabc3a4d"
+    },
+    {
+      "path": "source-inputs.json",
+      "bytes": 30013,
+      "sha256": "6b176ad2421ad8cea0ab86b188335c284d2de4d4879fe33b54048a5da50e3162"
+    },
+    {
+      "path": "system-auth-cancel.json",
+      "bytes": 196,
+      "sha256": "8cc63fd772a60234a61dfd3c7d7a4fdf1bb2dd46e5446e9e4783f577854286ee"
+    },
+    {
+      "path": "tun-journal.log",
+      "bytes": 753,
+      "sha256": "5b59f4d5bc080242420bd758f9f4f3baa6215e7ff2e9372a81c8aa91a8a3c4bf"
+    },
+    {
+      "path": "uninstall-confirm.png",
+      "bytes": 73170,
+      "sha256": "dc6c12557226902560837a63efa3deeca9856c2c3feea0b79caaf123f07ae476"
+    },
+    {
+      "path": "uninstalled-files.log",
+      "bytes": 169,
+      "sha256": "929e1a7f658d0c696804e44db346da2a5bdaf5f0c6684b1a1c9ddd93dc17b98e"
+    },
+    {
+      "path": "uninstalled-status.json",
+      "bytes": 235,
+      "sha256": "3a38872fed328abd89d531ef86db55cb26b0234171efd14eb6422983afdb881c"
+    },
+    {
+      "path": "uninstalled.png",
+      "bytes": 71527,
+      "sha256": "9bd0886da4695b4ea8b8d3631c8f82e84389158f9fa1f130719c926f4d077c0f"
+    },
+    {
+      "path": "verify-installed.sh",
+      "bytes": 2187,
+      "sha256": "eaf44a930a0c82c46b80bc5955d1c4ed9fe21f48f3e3ce1469d91f667287e021"
+    },
+    {
+      "path": "verify-uninstalled.sh",
+      "bytes": 2131,
+      "sha256": "aa17d9029f2d267124ab521fa687bb5fd74b352e04311e2a34f5760138e2cfde"
+    },
+    {
+      "path": "vm-guest.sh",
+      "bytes": 4153,
+      "sha256": "b590c2fcc8dcc09be164e765c8adf26878511047f382356b7f15bd6528e022ef"
+    },
+    {
+      "path": "xvfb.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ]
+}

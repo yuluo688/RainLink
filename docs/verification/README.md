@@ -1,5 +1,29 @@
 # 框架验证
 
+当前：[2026-10-20 暂停检查点](closeout-20261020.md)。按用户要求暂停并保存、推送；最新共享回归 546 项与静态分析通过。[Linux 首页 TUN](linux-tun-product.md)条件能力、刷新和设置入口已实现，真实安装/授权取消/四种直连回执与内核恢复通过；接受授权后的完整产品连接尚未验收，默认包未替换，五平台目标未完成。下列记录保留历史范围。
+
+最新：[Android 实际流量与应用归属](android-traffic-accounting.md)。专用 AVD 的真实隧道、三模式 36 次请求、已结束连接与实际包名、SQLite 重开、去重、两套排行和页面 CSV 已通过。五张实际 Android 渲染截图及当前 Figma 七个使用 SVG 已核对；本阶段新增运行验收代码，生产统计口径不变。真机/第三方应用、Apple 原生及分发继续推进，公开 Linux TUN 仍关闭。
+
+最新：[Android 应用更新与移动系统栏](android-app-update.md)。补 APK 下载/摘要、原生包身份/签名复验、恢复网络后系统授权/安装和跨进程回执；独立 AVD 真实拒绝、取消、4 → 5 升级、普通新版本重开及节点/浅色偏好保持通过。修复系统栏对比度及 iOS 安全区下的紧凑概览，最终全量回归、44 张布局、四个使用 SVG 和新 Debug 包检查见报告。正式线上更新、真机与 Apple 原生继续验收，公开 Linux TUN 仍关闭。
+
+最新：[扫码导入与分享链接](qr-import.md)。补移动相机扫码和桌面单节点粘贴，识别只预填，确认后订阅成组、手动节点未分组。522 项 Flutter、静态分析和 32 张布局通过；独立 Android AVD 的普通 APK 实际相机完成拒绝/恢复、HTTP 保存、订阅一次确认下载、流量/到期及重启回读。三个使用图标与当前 Figma 原生 SVG 一致，新 Debug APK 的签名、核心及 16 KB 对齐通过。Android 真机与 Apple 原生仍待验收，公开 Linux TUN 继续关闭。
+
+最新：[实际出站与应用流量归属](traffic-accounting.md)。补核心 TCP/UDP 累计、已结束连接、两个独立排行及 schema 8 事务检查点；Windows/Linux 真实核心 → SQLite → CSV 通过。482 项 Flutter、静态分析、双 runner 共 48 张布局与当前 Figma 44 个 SVG 核对；Windows/Linux Release 和 Android Debug 使用独立预览名。Android 本轮限构建/包检查，macOS 限交叉编译；完整平台目标继续进行，公开 Linux TUN 保持关闭。
+
+最新：[macOS 核心与凭据基础接入](macos-foundation.md)。补共享本地会话、Keychain helper 与本地签名构建代码，Intel / Apple Silicon 宿主及测试程序交叉编译通过。474 项 Flutter、Windows/Linux 凭据及真实本机核心回归、8 项 Mac 构建流程 fixture 通过；44 个 SVG 从当前 Figma 重导出一致。没有 Mac，Swift/Xcode/Keychain 和原生运行尚未验收，系统代理、TUN、菜单栏与 iOS 等仍未完成；没有生成 macOS 成品包，完整目标继续进行。
+
+最新：[Linux 生命周期与 Flutter SDK 升级](linux-flutter-lifecycle.md)。切至 Flutter 3.29.3 / Dart 3.7.2 并提前释放文件选择通道，复现过的 GTK 对象/弱引用/无引擎通道警告已消除；真实保存弹窗、面板与通知、473 项 Flutter 和共 108 张布局通过。最终 Linux 包三次严格退出、四次托盘恢复通过，仍保留一条上游隐式视图诊断。Windows Release、Android Debug/测试 APK、5 项 Kotlin 单元与原生库/签名/16 KB 对齐检查通过。746 项产品输入一致，当前 Figma 设置和未变的 44 个同源 SVG 已核对；完整五平台目标继续进行。
+
+最新：[Linux 通用系统功能](linux-desktop-system-services.md)。当前用户自动启动、托盘与独立通知已接入；真实面板消失/重启、通知显示与分组跳转通过。473 项 Flutter、8 项原生检查、静态分析及当前 Figma 44 个 SVG 一致，745 项输入通过。新的完整 Release 已实际解压、保存偏好并重开，默认包已更新；GTK/Flutter 退出诊断、完整桌面/发行版、真实注销启动和其他平台继续推进，公开 Linux TUN 保持关闭。
+
+前阶段：[活动桌面授权与最终 Linux 包](linux-graphical-service-management.md)。修复普通 broker 继承能力时 pkexec 的读取失败；最终完整 tar 经真实系统密码框安装、卸载和关闭通过，systemd、摘要与无残留已回读。733 项产品输入、181 项原生/构建输入及当前 Figma 44 个 SVG 一致。GTK 退出诊断、完整桌面/发行版与分发继续推进，公开 Linux TUN 保持关闭；该阶段未重跑旧的 Flutter/108 张布局结果。
+
+前阶段：[普通用户在真实替换期间取消](linux-broker-write-cancellation.md)。生产 broker / pkexec / root worker 的四种实际文件替换取消通过，旧宿主、清单及服务状态恢复，事务和 worker 退出确认；没有新增生产注入开关。本阶段没有新的 Flutter 或视觉执行，当时图形授权尚未验收。
+
+最新：[概览近期连接与紧凑布局](overview-recent-connections.md)。概览显示实际请求摘要并可跳转关闭；默认小窗口保留两行健康状态和一屏布局。468 项 Flutter、静态分析、Windows/Linux 真实核心集成、108 张布局截图通过，Linux Release 已重新构建。旧的 Linux 桌面预览及下列各阶段摘要保留其原始范围。
+
+最新：[Linux 桌面预览、真实连接与 Figma 核对](linux-desktop-preview.md)。Linux x64 tar 已完整构建并在普通用户 X11 会话解压运行，认证 HTTP、GNOME 系统代理接管及关闭后原配置恢复通过；原生冒烟、静态分析、38 张布局和 40 张服务状态 fixture 通过。当前 44 个 Figma SVG、28 个 PNG、ICO 和实际 X11 图标均已核对；活动桌面授权与正式分发仍待完成，公开 Linux TUN 保持关闭。
+
 2026-10-17 最新 Linux 续验：[普通宿主 TUN 接入](linux-tun-manager.md)完成真实密钥环、节点/链/规则、遥测、模式、共存接管与恢复确认；14 个完整宿主场景通过。当前 359 个 Linux、164 个 Windows Go 通过事件，440 项 Flutter 与静态检查通过，完整父网络与原安装文件保持。真实 systemd / polkit、安装管理与权限日志仍待完成，公开 Linux TUN 继续关闭；没有重新打包。以下各阶段保留原始范围和哈希。
 
 2026-10-17 图标实时复核：[当前 Figma 原生资产核对](runtime-audit-20261017.md)重新导出 44 个 SVG，与应用逐字节一致；品牌完整 RGBA 像素、27 个原生 PNG 和 9 尺寸 ICO 通过。没有修改应用资产或重新构建安装包，完整页面布局仍待核验。

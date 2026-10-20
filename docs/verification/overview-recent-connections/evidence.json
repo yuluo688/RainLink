@@ -1,0 +1,204 @@
+{
+  "date": "2026-10-20",
+  "collectedAt": "2026-10-19T19:14:54.281828+00:00",
+  "baseCommit": "0f80987cac940518e77f23816c5490223debff76",
+  "workingTree": "uncommitted changes; no push",
+  "scope": "desktop overview recent request and compact layout follow-up; five-platform goal remains active",
+  "sourceFilesMatched": 729,
+  "sourceManifestSha256": "8f0c4a9447e320711f8708de74854a512dcdd6041c76eb99e09b3d9d2cdb50ff",
+  "package": {
+    "path": "build/RainLink-linux-x64-preview.tar.xz",
+    "bytes": 32202636,
+    "sha256": "395f7875c5a612d5969c1adfef89093f6d6074860f2a737402ccbcdc0f917a03",
+    "version": "0.1.0+4",
+    "platform": "linux-x64",
+    "entries": 77,
+    "manifestPayloadFiles": 76,
+    "perFileDigestVerified": true,
+    "permissionsVerified": true,
+    "userDatabaseIncluded": false,
+    "applicationSha256": "1132119281eaa2e28f473aaa6f60c1fb181f903c655c1fd44d43aa21a6717a6f",
+    "aotSha256": "4f12ef34e699dd934c081935ef14bbdf8d5d9219a14626fe25693e099dea203c",
+    "hostSha256": "4bf88326baed0609ec52f39b40c1859654ff9fc795ab3a325c816fe3d6eef432",
+    "coreSha256": "640e5293d90b94c71318031284e65cf8121d99ee9c06482f021ed77c9f3fa96d",
+    "engineSha256": "2c9c1bae6de13a5dde00e4870b83ec4895830867bfcd2cc519ad54c312a9bfb2"
+  },
+  "figma": {
+    "fileKey": "unsaved-mvfj9942-5y6aivnm",
+    "overviewNode": "2:17066",
+    "recentRowNode": "I31:181510;77:121741",
+    "liveOverviewMatchesSaved": true,
+    "savedNativeSvgMatches": 44
+  },
+  "checks": {
+    "flutterTests": 468,
+    "flutterAnalyzePassed": true,
+    "nativePngs": 28,
+    "icoResolutions": 9,
+    "windowsRealCoreIntegration": 1,
+    "linuxRealCoreIntegration": 1,
+    "layoutCasesPerDesktopRenderer": 3,
+    "layoutScreenshots": 108,
+    "linuxRelease960x640LaunchAndClose": true
+  },
+  "knownDiagnostics": {
+    "releaseExitCode": 0,
+    "hostOrCoreLeftRunning": false,
+    "messagesRetained": [
+      "(dev.rainlink.rainlink:1817): Atk-CRITICAL **: 19:09:26.948: atk_socket_embed: assertion 'plug_id != NULL' failed",
+      "embedder.cc (2439): 'FlutterEngineRemoveView' returned 'kInvalidArguments'. Remove view info was invalid. The implicit view cannot be removed.",
+      "(dev.rainlink.rainlink:1817): GLib-GObject-CRITICAL **: 19:09:31.105: g_object_weak_unref: couldn't find weak ref 0x7ea30105ffa0(0x5e79516ba6c8)",
+      "** (dev.rainlink.rainlink:1817): WARNING **: 19:09:31.122: Attempted to set message handler on an FlBinaryMessenger without an engine"
+    ],
+    "status": "GTK/accessibility and Flutter engine teardown diagnostics retained for follow-up; successful exit does not prove all shutdown warnings resolved"
+  },
+  "limitations": [
+    "mobile-size desktop rendering is not native mobile device acceptance",
+    "current recent request is in-memory observation, not persisted complete history",
+    "Windows Release was not rebuilt in this stage",
+    "Linux public capabilities.tun remains false",
+    "graphical authentication, ordinary broker cancellation during writes, complete native dialogs and remaining platform services need further work"
+  ],
+  "files": [
+    {
+      "path": "bundle-manifest.json",
+      "bytes": 15005,
+      "sha256": "fd896bc4dcdd6ee9a3df562549384947babe2b18bd72c320c574a745a02e62a5"
+    },
+    {
+      "path": "compact-regression.log",
+      "bytes": 7526,
+      "sha256": "c8e97faeb233a7c365187fe9726a30997d44518d6f45484f5e6fa760a4509368"
+    },
+    {
+      "path": "figma-assets-audit.json",
+      "bytes": 9483,
+      "sha256": "9577be6ac0869ded5f44379f62c91a5d5558573e86bbf09465e82e4d49920a76"
+    },
+    {
+      "path": "figma-desktop-comparison.png",
+      "bytes": 260772,
+      "sha256": "d659b1f0c59be3ddec790db301fad8f69d181851c82d35ce83cfa8fc630cf1d7"
+    },
+    {
+      "path": "figma-desktop-current.png",
+      "bytes": 111124,
+      "sha256": "3ecf4f6e10e3dc9dc3fae75cdf845899325437c7366368261a41e31b465f3cd6"
+    },
+    {
+      "path": "flutter-analyze.log",
+      "bytes": 202,
+      "sha256": "d1068698039466ab80e1dd2044f24793523947a681ff6628bdc3217aaa10ad48"
+    },
+    {
+      "path": "flutter-tests.log",
+      "bytes": 93086,
+      "sha256": "dd8295cda89d52af94f38ade8501440c4f1bef33128ac7c345c18bc7a039cc1d"
+    },
+    {
+      "path": "layout-captures.json",
+      "bytes": 36986,
+      "sha256": "902fe914f6e74c385da0cb71dfa1e4f54c6b8de26252f7749a845409bfff4074"
+    },
+    {
+      "path": "linux-final-verification.sh",
+      "bytes": 1454,
+      "sha256": "06ed8924287735a299671d49dda6cc067daa90f24eac7e166eff9a01001c2969"
+    },
+    {
+      "path": "linux-layout.log",
+      "bytes": 565,
+      "sha256": "4a0c249501bd281b19a643f38eebda9fdaacb96320e88f37b53dd3ea3764a028"
+    },
+    {
+      "path": "linux-overview-1440-fixture.png",
+      "bytes": 127654,
+      "sha256": "8abd086839dfb6c9218beacbb1fbcfefdfff17ee6b6e31de62f007b67f625b51"
+    },
+    {
+      "path": "linux-overview-960-disconnected-real.png",
+      "bytes": 96679,
+      "sha256": "1490333681dbcdd8563cbcff02afc5855115ab6bcefcd05fa3e62c4a9137df35"
+    },
+    {
+      "path": "linux-overview-960-real.png",
+      "bytes": 92547,
+      "sha256": "c139438df99402b80b10fdaafb9e20c0ce6256a5b69b5a65c377c92f4dc23488"
+    },
+    {
+      "path": "linux-package-build.log",
+      "bytes": 4922,
+      "sha256": "f1d584ca5d9f966af1d23cd267caee764af01e168d1e47b3c6c0cfbe6c581176"
+    },
+    {
+      "path": "linux-real-connection.log",
+      "bytes": 428,
+      "sha256": "83d1146ff3e0fd08527e6332a39560b7774da11ee6b7b7c9fcece45f89cb2582"
+    },
+    {
+      "path": "linux-real-evidence.json",
+      "bytes": 571,
+      "sha256": "b9065e8beac4ad1308f17229096aac96b79f8267370d987c78d6376247ecaca7"
+    },
+    {
+      "path": "linux-release-960.png",
+      "bytes": 89997,
+      "sha256": "1f5770c2924964eb204a1211f97a7591e2254a6d7341bc8f98e721bc089cbfa5"
+    },
+    {
+      "path": "linux-release-diagnostics.log",
+      "bytes": 539,
+      "sha256": "8ccd0e806eb6fb92ecfe0043699eea918db479640e882b4888d97f0be8361fd6"
+    },
+    {
+      "path": "linux-release-verification.log",
+      "bytes": 485,
+      "sha256": "f92cf28736dd5492e49856b161fa6490bab9189e2d83f34fea1a00f6ee179666"
+    },
+    {
+      "path": "linux-release-window.json",
+      "bytes": 368,
+      "sha256": "cb9cac59b2e5ddf35e3544ff777337f3b0438214525ecdff2457a61dd4cadefd"
+    },
+    {
+      "path": "linux-source-audit.json",
+      "bytes": 156,
+      "sha256": "87ec238212e33001c963702dafb64e2dc5d7cb42107038bd5b04bf44552e3ac8"
+    },
+    {
+      "path": "native-icons.log",
+      "bytes": 77,
+      "sha256": "5788880db9d01a36072987c9ad30f44388ae3df10681d50fce97ac05ff528db5"
+    },
+    {
+      "path": "source-inputs.json",
+      "bytes": 118846,
+      "sha256": "8f0c4a9447e320711f8708de74854a512dcdd6041c76eb99e09b3d9d2cdb50ff"
+    },
+    {
+      "path": "windows-layout.log",
+      "bytes": 624,
+      "sha256": "47334c65a3f1bae99b1c5cfe3a604c742090785a3f6f32513c963984f4bbb24f"
+    },
+    {
+      "path": "windows-overview-960-disconnected-real.png",
+      "bytes": 79108,
+      "sha256": "f4b6327bf2e5e011d980897a4dd52cc62a80604249110703fa4d9d5f225aa57c"
+    },
+    {
+      "path": "windows-overview-960-real.png",
+      "bytes": 75441,
+      "sha256": "409841af6f6afbc7b560fd5d5bb807cd285c1e9f60c605f83e16c2c803679d3d"
+    },
+    {
+      "path": "windows-real-connection.log",
+      "bytes": 485,
+      "sha256": "4e88ee8e808a65bac11c9efe7196adbdbf5c1cb2322eaf93e8075339ac004536"
+    },
+    {
+      "path": "windows-real-evidence.json",
+      "bytes": 573,
+      "sha256": "1cfbec5099464a7e145eb3ed3db0641541970af365a2f41683f9d3dee9d7fbfe"
+    }
+  ]
+}

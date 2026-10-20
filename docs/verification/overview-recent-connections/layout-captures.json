@@ -1,0 +1,978 @@
+{
+  "count": 108,
+  "note": "PNG originals remain in ignored build/qa; this manifest records their paths, dimensions and hashes. Mobile-size captures are not Android/iOS device acceptance.",
+  "captures": [
+    {
+      "path": "build/qa/overview-connection/windows-layout/connections-1440-dark-fixture.png",
+      "bytes": 106869,
+      "sha256": "ed19e26e3c3457c8caf74e6fcbf779a4efd5824f57ba740fe10023736b8c6c00",
+      "renderer": "windows",
+      "width": 1440,
+      "height": 900,
+      "scope": "desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/overview-connection/windows-layout/connections-1440-light-fixture.png",
+      "bytes": 105462,
+      "sha256": "97f376ac7806eff407ee7c1e2cfb547386720da86b8a444a6cbb3fdfdc1b908c",
+      "renderer": "windows",
+      "width": 1440,
+      "height": 900,
+      "scope": "desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/overview-connection/windows-layout/connections-960-dark-fixture.png",
+      "bytes": 63805,
+      "sha256": "6518a4053273de8f1a88cf07f7aede1d5a90b9caa6cde8c01327f140bb6b622c",
+      "renderer": "windows",
+      "width": 960,
+      "height": 640,
+      "scope": "desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/overview-connection/windows-layout/connections-960-light-fixture.png",
+      "bytes": 62674,
+      "sha256": "cfbaed55276d589bd7baa8d1690d8c104f741866ab1800c1516e9bba4f434315",
+      "renderer": "windows",
+      "width": 960,
+      "height": 640,
+      "scope": "desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/overview-connection/windows-layout/groups-1440-dark-fixture.png",
+      "bytes": 55144,
+      "sha256": "ab949a07956c0fd280d2c4b8041661e7b69c97cd26818dc0744d008477c1cbed",
+      "renderer": "windows",
+      "width": 1440,
+      "height": 900,
+      "scope": "desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/overview-connection/windows-layout/groups-1440-light-fixture.png",
+      "bytes": 54353,
+      "sha256": "dcd91c9d51bbe7ed96729869c1dff3fc5c722e2d52e41a91a3e47769550754e8",
+      "renderer": "windows",
+      "width": 1440,
+      "height": 900,
+      "scope": "desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/overview-connection/windows-layout/groups-960-dark-fixture.png",
+      "bytes": 37709,
+      "sha256": "81cd7880fcab43c45b1f62b85df72d745a054b9e0b625beabd062ecfcc879d52",
+      "renderer": "windows",
+      "width": 960,
+      "height": 640,
+      "scope": "desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/overview-connection/windows-layout/groups-960-light-fixture.png",
+      "bytes": 37069,
+      "sha256": "c11c068530e9e3c01fb9169a26247abac950c27cf0cf3b5403bd36365e28b590",
+      "renderer": "windows",
+      "width": 960,
+      "height": 640,
+      "scope": "desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/overview-connection/windows-layout/groups-mobile-320-dark-fixture.png",
+      "bytes": 27744,
+      "sha256": "4980e59d0c8a23d346226b9667fa9f603e40c532f112e7fa7ab537ca1f8aea09",
+      "renderer": "windows",
+      "width": 320,
+      "height": 640,
+      "scope": "mobile-sized desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/overview-connection/windows-layout/groups-mobile-320-light-fixture.png",
+      "bytes": 27192,
+      "sha256": "08ebeaf27ffd8509710eca73dc12d10961111969412b4bef79debe4fe89c61ec",
+      "renderer": "windows",
+      "width": 320,
+      "height": 640,
+      "scope": "mobile-sized desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/overview-connection/windows-layout/groups-mobile-393-dark-fixture.png",
+      "bytes": 29219,
+      "sha256": "47c604c15f5c2ca309f46f29359e4c106d16373a511f6dc8e733ba30acfc05c9",
+      "renderer": "windows",
+      "width": 393,
+      "height": 852,
+      "scope": "mobile-sized desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/overview-connection/windows-layout/groups-mobile-393-light-fixture.png",
+      "bytes": 28696,
+      "sha256": "f11b4c568bb3f0ee278e6149de38aa8314de1756007242176ef2a14c143c69bf",
+      "renderer": "windows",
+      "width": 393,
+      "height": 852,
+      "scope": "mobile-sized desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/overview-connection/windows-layout/logs-1440-dark-fixture.png",
+      "bytes": 92821,
+      "sha256": "9563ea00dba551fe69b28839301cb5814a2471a111aa7d0108f8af254beae099",
+      "renderer": "windows",
+      "width": 1440,
+      "height": 900,
+      "scope": "desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/overview-connection/windows-layout/logs-1440-light-fixture.png",
+      "bytes": 91347,
+      "sha256": "93e62620a33dbe02574192958bcbc774358ac318741ac3ef41044ffda4d0cc5b",
+      "renderer": "windows",
+      "width": 1440,
+      "height": 900,
+      "scope": "desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/overview-connection/windows-layout/logs-960-dark-fixture.png",
+      "bytes": 56708,
+      "sha256": "c96bda82ad4ef99ed24939f2e425f4326414a4d15b0b74b3a7ce1e0458cb69cf",
+      "renderer": "windows",
+      "width": 960,
+      "height": 640,
+      "scope": "desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/overview-connection/windows-layout/logs-960-light-fixture.png",
+      "bytes": 55504,
+      "sha256": "ab30b451e08ee49d4a596606c2ac8d3e587ce56b9ea30168ec6e01e73433c98c",
+      "renderer": "windows",
+      "width": 960,
+      "height": 640,
+      "scope": "desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/overview-connection/windows-layout/nodes-1440-dark-fixture.png",
+      "bytes": 74906,
+      "sha256": "77c94e28f996d150122d26f5c3e2ee63fe9044ad6122ae7ab5efc48442cfd6c7",
+      "renderer": "windows",
+      "width": 1440,
+      "height": 900,
+      "scope": "desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/overview-connection/windows-layout/nodes-1440-light-fixture.png",
+      "bytes": 74209,
+      "sha256": "2e5f013178a08aa04670c434995c7dfcc4d85409929343721a2ce498a0407e8d",
+      "renderer": "windows",
+      "width": 1440,
+      "height": 900,
+      "scope": "desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/overview-connection/windows-layout/nodes-960-dark-fixture.png",
+      "bytes": 57721,
+      "sha256": "9ef17f374fb924349d5d71f9cd06e56efc06697daa253c1040bc238b7c33e621",
+      "renderer": "windows",
+      "width": 960,
+      "height": 640,
+      "scope": "desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/overview-connection/windows-layout/nodes-960-light-fixture.png",
+      "bytes": 57026,
+      "sha256": "c5cf6c1582cdadc133d6669c8a838abd33b5f96bee75bf7d74a0433a0064721b",
+      "renderer": "windows",
+      "width": 960,
+      "height": 640,
+      "scope": "desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/overview-connection/windows-layout/nodes-mobile-320-dark-fixture.png",
+      "bytes": 36452,
+      "sha256": "ebfdca8233ed108dd2a9d91c096c2efadf7bfd06358118d16e6d139f128e33c8",
+      "renderer": "windows",
+      "width": 320,
+      "height": 640,
+      "scope": "mobile-sized desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/overview-connection/windows-layout/nodes-mobile-320-light-fixture.png",
+      "bytes": 35799,
+      "sha256": "3b1ccded75be82537c15601a7233eae5ca4fe0b1f92f054c16b2f0b4c4cd2a24",
+      "renderer": "windows",
+      "width": 320,
+      "height": 640,
+      "scope": "mobile-sized desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/overview-connection/windows-layout/nodes-mobile-393-dark-fixture.png",
+      "bytes": 47965,
+      "sha256": "c280cef0d93c552985a8be5087cdff6761e313a9d2cfe1690e153f461200d5f3",
+      "renderer": "windows",
+      "width": 393,
+      "height": 852,
+      "scope": "mobile-sized desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/overview-connection/windows-layout/nodes-mobile-393-light-fixture.png",
+      "bytes": 46809,
+      "sha256": "4375cd29a881194314317c775bbfbb5fe2d432d5f8a60a0ea4cd339e4cce5593",
+      "renderer": "windows",
+      "width": 393,
+      "height": 852,
+      "scope": "mobile-sized desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/overview-connection/windows-layout/overview-1440-dark-fixture.png",
+      "bytes": 107002,
+      "sha256": "8a5defc3bb178cbbc3fa5c261a131ed914fb04c9b90952782086bc5570c20b63",
+      "renderer": "windows",
+      "width": 1440,
+      "height": 900,
+      "scope": "desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/overview-connection/windows-layout/overview-1440-light-fixture.png",
+      "bytes": 104446,
+      "sha256": "45f0c67756313bba40b3706fa6f40359293546d29e62a63f16b4e02d7723cabe",
+      "renderer": "windows",
+      "width": 1440,
+      "height": 900,
+      "scope": "desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/overview-connection/windows-layout/overview-960-dark-fixture.png",
+      "bytes": 81466,
+      "sha256": "7a62691e1e361215b5700475f05c07ccf569b16b444796ac5f5e4faca11c83d9",
+      "renderer": "windows",
+      "width": 960,
+      "height": 640,
+      "scope": "desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/overview-connection/windows-layout/overview-960-light-fixture.png",
+      "bytes": 78586,
+      "sha256": "2dd0ed3947873bc3a8f98095425554c333bd5dde89b976e23dcd994e90ea9fe7",
+      "renderer": "windows",
+      "width": 960,
+      "height": 640,
+      "scope": "desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/overview-connection/windows-layout/overview-mobile-320-dark-fixture.png",
+      "bytes": 33554,
+      "sha256": "f91265527907a3d96a1dd2e412bbd4ca6ec074c4099e0e69d88228ae8561dc24",
+      "renderer": "windows",
+      "width": 320,
+      "height": 640,
+      "scope": "mobile-sized desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/overview-connection/windows-layout/overview-mobile-320-large-ipv6-fixture.png",
+      "bytes": 41886,
+      "sha256": "82d6ea891e4389533d815fa2495eac5c9cb68995254839f0839b44ad2f9ca5cc",
+      "renderer": "windows",
+      "width": 320,
+      "height": 640,
+      "scope": "mobile-sized desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/overview-connection/windows-layout/overview-mobile-320-large-summary-fixture.png",
+      "bytes": 41886,
+      "sha256": "82d6ea891e4389533d815fa2495eac5c9cb68995254839f0839b44ad2f9ca5cc",
+      "renderer": "windows",
+      "width": 320,
+      "height": 640,
+      "scope": "mobile-sized desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/overview-connection/windows-layout/overview-mobile-320-light-fixture.png",
+      "bytes": 32258,
+      "sha256": "dca4008472ee2b97b78109fc91ebef4b768243c9f46c628b1b096b8e7cd01586",
+      "renderer": "windows",
+      "width": 320,
+      "height": 640,
+      "scope": "mobile-sized desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/overview-connection/windows-layout/overview-mobile-393-dark-fixture.png",
+      "bytes": 50461,
+      "sha256": "8a6acb52ac9f3b7d2d44d90a163ba13df8609fc1f17d90656859938700e44ea5",
+      "renderer": "windows",
+      "width": 393,
+      "height": 852,
+      "scope": "mobile-sized desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/overview-connection/windows-layout/overview-mobile-393-light-fixture.png",
+      "bytes": 48687,
+      "sha256": "6eff5b0a73caf0856ef5d613b3eb9b8a89451443f914efa53b6b920ee44c387d",
+      "renderer": "windows",
+      "width": 393,
+      "height": 852,
+      "scope": "mobile-sized desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/overview-connection/windows-layout/rules-1440-dark-fixture.png",
+      "bytes": 85825,
+      "sha256": "831db2bd7aa6303a9ed82072fbcbccc304ddfe6e52eaccc76872a7e501202228",
+      "renderer": "windows",
+      "width": 1440,
+      "height": 900,
+      "scope": "desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/overview-connection/windows-layout/rules-1440-light-fixture.png",
+      "bytes": 84807,
+      "sha256": "aabc63b6c4461ba85bef179e75ed55ff011cbeb5c437268e4ad44ff2626d0a13",
+      "renderer": "windows",
+      "width": 1440,
+      "height": 900,
+      "scope": "desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/overview-connection/windows-layout/rules-960-dark-fixture.png",
+      "bytes": 56225,
+      "sha256": "b765585777262108b4e3477396eba8bfcaadf56540d227e725cb97316633d3b3",
+      "renderer": "windows",
+      "width": 960,
+      "height": 640,
+      "scope": "desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/overview-connection/windows-layout/rules-960-light-fixture.png",
+      "bytes": 55172,
+      "sha256": "f9c83e75d743ddb9aed802d543d0ac7b14ad3cba9c94dedc83a3c03dcefaf102",
+      "renderer": "windows",
+      "width": 960,
+      "height": 640,
+      "scope": "desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/overview-connection/windows-layout/settings-1440-dark-fixture.png",
+      "bytes": 65416,
+      "sha256": "7d7a5a158a3ed503a5c45c57cc85cf5016328473f39868296fe980273b4f0c41",
+      "renderer": "windows",
+      "width": 1440,
+      "height": 900,
+      "scope": "desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/overview-connection/windows-layout/settings-1440-light-fixture.png",
+      "bytes": 64007,
+      "sha256": "1f4c67071407b5b1e18c6229be707867f6ab7e46cb2c6face184e07b555e5324",
+      "renderer": "windows",
+      "width": 1440,
+      "height": 900,
+      "scope": "desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/overview-connection/windows-layout/settings-960-dark-fixture.png",
+      "bytes": 47807,
+      "sha256": "1ccfc9a26ad59885547046f76166ab2c6f53564f320f08c25838993c0cfe8e49",
+      "renderer": "windows",
+      "width": 960,
+      "height": 640,
+      "scope": "desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/overview-connection/windows-layout/settings-960-light-fixture.png",
+      "bytes": 46718,
+      "sha256": "26a9ef3b1ce93bab02ae8de584681d726122c98267bae93a0bc921727a027d17",
+      "renderer": "windows",
+      "width": 960,
+      "height": 640,
+      "scope": "desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/overview-connection/windows-layout/settings-mobile-320-dark-fixture.png",
+      "bytes": 30689,
+      "sha256": "752ea39189dd76873c9da33ddb2ba0cd7f7603a4738493fb6e231051f49fd6cc",
+      "renderer": "windows",
+      "width": 320,
+      "height": 640,
+      "scope": "mobile-sized desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/overview-connection/windows-layout/settings-mobile-320-light-fixture.png",
+      "bytes": 29760,
+      "sha256": "15ccd6d1731796423559ea1014e790b6da949d913e43260c7acb6542272cb1b8",
+      "renderer": "windows",
+      "width": 320,
+      "height": 640,
+      "scope": "mobile-sized desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/overview-connection/windows-layout/settings-mobile-393-dark-fixture.png",
+      "bytes": 34986,
+      "sha256": "ea60ac6c156b16e8f1111403869b89990632756edc460ef5957023f6177db8f4",
+      "renderer": "windows",
+      "width": 393,
+      "height": 852,
+      "scope": "mobile-sized desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/overview-connection/windows-layout/settings-mobile-393-light-fixture.png",
+      "bytes": 34020,
+      "sha256": "fd0a7f785646a8c08ea119728814d9825a3d5aabe116491780b3df558c9bb140",
+      "renderer": "windows",
+      "width": 393,
+      "height": 852,
+      "scope": "mobile-sized desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/overview-connection/windows-layout/traffic-1440-dark-fixture.png",
+      "bytes": 81357,
+      "sha256": "8621d1eb5c3a864a03ccfd8e0085ab2632a55761a8a525ef08f9fca72a071cf8",
+      "renderer": "windows",
+      "width": 1440,
+      "height": 900,
+      "scope": "desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/overview-connection/windows-layout/traffic-1440-light-fixture.png",
+      "bytes": 78470,
+      "sha256": "39b84a4f4653f66edf53b347c1cd073e7bb3ed014d0acb79986c3627d64b73d6",
+      "renderer": "windows",
+      "width": 1440,
+      "height": 900,
+      "scope": "desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/overview-connection/windows-layout/traffic-960-dark-fixture.png",
+      "bytes": 53761,
+      "sha256": "cd6fd4e84a5639639b95c47cbe5eeb5cf192525979f4d7abe3152e688176cf19",
+      "renderer": "windows",
+      "width": 960,
+      "height": 640,
+      "scope": "desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/overview-connection/windows-layout/traffic-960-light-fixture.png",
+      "bytes": 51752,
+      "sha256": "3c9a2fa8be11cf1fac11799f8345f302817f18e2af6a485021d2845c4e940adb",
+      "renderer": "windows",
+      "width": 960,
+      "height": 640,
+      "scope": "desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/overview-connection/windows-layout/traffic-mobile-320-dark-fixture.png",
+      "bytes": 31140,
+      "sha256": "3955d61654e5122d9426f8d0725044629a76497bcb63cfe25e20e7aa4ec0d1ac",
+      "renderer": "windows",
+      "width": 320,
+      "height": 640,
+      "scope": "mobile-sized desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/overview-connection/windows-layout/traffic-mobile-320-light-fixture.png",
+      "bytes": 30108,
+      "sha256": "30509177ed54c01e68cc444b0fe4d182f3e5768ee3c1f3ae6dd62498a7ef8ae9",
+      "renderer": "windows",
+      "width": 320,
+      "height": 640,
+      "scope": "mobile-sized desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/overview-connection/windows-layout/traffic-mobile-393-dark-fixture.png",
+      "bytes": 42214,
+      "sha256": "2f0a42288b79768a02091ebbd3d7f5a6835b6b83211c131fff991e368b9fcde3",
+      "renderer": "windows",
+      "width": 393,
+      "height": 852,
+      "scope": "mobile-sized desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/overview-connection/windows-layout/traffic-mobile-393-light-fixture.png",
+      "bytes": 40391,
+      "sha256": "093a8f5d0f98c565c74c334daae9dbe0ca963f020dc5ca75a34585009c5e1955",
+      "renderer": "windows",
+      "width": 393,
+      "height": 852,
+      "scope": "mobile-sized desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/linux-gui/output/overview-layout-linux/connections-1440-dark-fixture.png",
+      "bytes": 130429,
+      "sha256": "c68cb323ca56511e9ace6b70af0b7c5e79bacacc661588002a79ebf9a35b86ef",
+      "renderer": "linux",
+      "width": 1440,
+      "height": 900,
+      "scope": "desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/linux-gui/output/overview-layout-linux/connections-1440-light-fixture.png",
+      "bytes": 128692,
+      "sha256": "595b7949435c87f83f136fda308b05730c18095b28134286791d9e150211c0d4",
+      "renderer": "linux",
+      "width": 1440,
+      "height": 900,
+      "scope": "desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/linux-gui/output/overview-layout-linux/connections-960-dark-fixture.png",
+      "bytes": 77377,
+      "sha256": "08fc90693fbd0e23e7894fbd96a051bc964141b65ff4f3548b1042c6c7b7768b",
+      "renderer": "linux",
+      "width": 960,
+      "height": 640,
+      "scope": "desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/linux-gui/output/overview-layout-linux/connections-960-light-fixture.png",
+      "bytes": 76162,
+      "sha256": "34b98946124e4565c04ea9bae6071d741d1dfd7492420118e9f7b3a5e1001aea",
+      "renderer": "linux",
+      "width": 960,
+      "height": 640,
+      "scope": "desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/linux-gui/output/overview-layout-linux/groups-1440-dark-fixture.png",
+      "bytes": 63638,
+      "sha256": "9bf6a3d4d04957e45e9c0d9dadc1ce302348808daab33afb3147f994d2ebe9ff",
+      "renderer": "linux",
+      "width": 1440,
+      "height": 900,
+      "scope": "desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/linux-gui/output/overview-layout-linux/groups-1440-light-fixture.png",
+      "bytes": 63343,
+      "sha256": "8950e47f29230aa5929707c26fa50305ea6937a78db7fb9c590da882a91b366f",
+      "renderer": "linux",
+      "width": 1440,
+      "height": 900,
+      "scope": "desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/linux-gui/output/overview-layout-linux/groups-960-dark-fixture.png",
+      "bytes": 45223,
+      "sha256": "83847cbdd6dbdbccb6f705f5d885d7509f667c63a0074b40c8b80c3b6fce4a36",
+      "renderer": "linux",
+      "width": 960,
+      "height": 640,
+      "scope": "desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/linux-gui/output/overview-layout-linux/groups-960-light-fixture.png",
+      "bytes": 44809,
+      "sha256": "ae77326cbe9084a1a3ded72981db6d87838d31998808430a2ab968eca11f9b9a",
+      "renderer": "linux",
+      "width": 960,
+      "height": 640,
+      "scope": "desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/linux-gui/output/overview-layout-linux/groups-mobile-320-dark-fixture.png",
+      "bytes": 33276,
+      "sha256": "93ee8470e37883806152ed4f11fe7a7de88063e3746ac42cf94b7fbc63ceb31c",
+      "renderer": "linux",
+      "width": 320,
+      "height": 640,
+      "scope": "mobile-sized desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/linux-gui/output/overview-layout-linux/groups-mobile-320-light-fixture.png",
+      "bytes": 33009,
+      "sha256": "b154d65d427f8be72b74925d5baa05b94fea380deb6050b94ee80caf6d77addc",
+      "renderer": "linux",
+      "width": 320,
+      "height": 640,
+      "scope": "mobile-sized desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/linux-gui/output/overview-layout-linux/groups-mobile-393-dark-fixture.png",
+      "bytes": 35034,
+      "sha256": "1d26c7295c18750bacb700ef416bb1a9c6e15ec078bb2a24fd4beca2adbfdaff",
+      "renderer": "linux",
+      "width": 393,
+      "height": 852,
+      "scope": "mobile-sized desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/linux-gui/output/overview-layout-linux/groups-mobile-393-light-fixture.png",
+      "bytes": 34794,
+      "sha256": "f3a834347b38beba556550d7c1a2a99e721559bdbf6a71f676e37a9f8da97b25",
+      "renderer": "linux",
+      "width": 393,
+      "height": 852,
+      "scope": "mobile-sized desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/linux-gui/output/overview-layout-linux/logs-1440-dark-fixture.png",
+      "bytes": 115919,
+      "sha256": "5ffb9eebbb3a63ef9ca7e6f18be4eb3c539555dee104f57bb9a0e53862659a20",
+      "renderer": "linux",
+      "width": 1440,
+      "height": 900,
+      "scope": "desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/linux-gui/output/overview-layout-linux/logs-1440-light-fixture.png",
+      "bytes": 114294,
+      "sha256": "28ef88e1ce5663cb948b998a4703ba089d24d8e4d64e09907ace0c42e374bffc",
+      "renderer": "linux",
+      "width": 1440,
+      "height": 900,
+      "scope": "desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/linux-gui/output/overview-layout-linux/logs-960-dark-fixture.png",
+      "bytes": 70906,
+      "sha256": "132d9037113019a1b56d5f2bcbb3f782ead8e8acb3eef2d5eb1fde1c10503c1c",
+      "renderer": "linux",
+      "width": 960,
+      "height": 640,
+      "scope": "desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/linux-gui/output/overview-layout-linux/logs-960-light-fixture.png",
+      "bytes": 69670,
+      "sha256": "5e2bd0fa51043a00b7feb964d39a416efa94758ab26bb100e9828e10bda928bb",
+      "renderer": "linux",
+      "width": 960,
+      "height": 640,
+      "scope": "desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/linux-gui/output/overview-layout-linux/nodes-1440-dark-fixture.png",
+      "bytes": 86866,
+      "sha256": "fdf26f70eb3991f1a1418ebe295793d045302de3f8e57a472de84ec84377e368",
+      "renderer": "linux",
+      "width": 1440,
+      "height": 900,
+      "scope": "desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/linux-gui/output/overview-layout-linux/nodes-1440-light-fixture.png",
+      "bytes": 86220,
+      "sha256": "9280f200521d8c97f48b2a2e663ce2aaed4fe7e575a8e8b5deb4d83551f2b674",
+      "renderer": "linux",
+      "width": 1440,
+      "height": 900,
+      "scope": "desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/linux-gui/output/overview-layout-linux/nodes-960-dark-fixture.png",
+      "bytes": 67085,
+      "sha256": "94b98b6cea524c0647d8c405f34208c39dee53e3bc2adb56418fcb6bdf6f80bd",
+      "renderer": "linux",
+      "width": 960,
+      "height": 640,
+      "scope": "desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/linux-gui/output/overview-layout-linux/nodes-960-light-fixture.png",
+      "bytes": 66513,
+      "sha256": "bde45e906cf711aa787d6f73f29bc41df849104a4725e099ff9be1ac707ec614",
+      "renderer": "linux",
+      "width": 960,
+      "height": 640,
+      "scope": "desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/linux-gui/output/overview-layout-linux/nodes-mobile-320-dark-fixture.png",
+      "bytes": 42110,
+      "sha256": "f73bd45ea309d55dbc5f101f32805fcc9725c747864814c5376a434b3156fe10",
+      "renderer": "linux",
+      "width": 320,
+      "height": 640,
+      "scope": "mobile-sized desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/linux-gui/output/overview-layout-linux/nodes-mobile-320-light-fixture.png",
+      "bytes": 41316,
+      "sha256": "2ba6ec40bdb88187ed105f43f597dcb3e4672e433c5e048e9226ad5d92e39a86",
+      "renderer": "linux",
+      "width": 320,
+      "height": 640,
+      "scope": "mobile-sized desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/linux-gui/output/overview-layout-linux/nodes-mobile-393-dark-fixture.png",
+      "bytes": 55903,
+      "sha256": "a8a14717b3153109893cb7124b50a456cd0972c3e4fbee0cefe01bf7f394351a",
+      "renderer": "linux",
+      "width": 393,
+      "height": 852,
+      "scope": "mobile-sized desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/linux-gui/output/overview-layout-linux/nodes-mobile-393-light-fixture.png",
+      "bytes": 54921,
+      "sha256": "69017d894b3a4ac4bb30fefe19b24c9538a1e6577ddbd2f19a96f559914b90c7",
+      "renderer": "linux",
+      "width": 393,
+      "height": 852,
+      "scope": "mobile-sized desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/linux-gui/output/overview-layout-linux/overview-1440-dark-fixture.png",
+      "bytes": 127654,
+      "sha256": "8abd086839dfb6c9218beacbb1fbcfefdfff17ee6b6e31de62f007b67f625b51",
+      "renderer": "linux",
+      "width": 1440,
+      "height": 900,
+      "scope": "desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/linux-gui/output/overview-layout-linux/overview-1440-light-fixture.png",
+      "bytes": 126082,
+      "sha256": "129e89234899276863e40f34757469be26065b53b2ebad4b659b1cc505474f6a",
+      "renderer": "linux",
+      "width": 1440,
+      "height": 900,
+      "scope": "desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/linux-gui/output/overview-layout-linux/overview-960-dark-fixture.png",
+      "bytes": 98464,
+      "sha256": "19ff5207e94970c5ed1be8059f68c44f029906cbc5b02c40bee70c9dedd0b7ea",
+      "renderer": "linux",
+      "width": 960,
+      "height": 640,
+      "scope": "desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/linux-gui/output/overview-layout-linux/overview-960-light-fixture.png",
+      "bytes": 96800,
+      "sha256": "84fab115b2a6bd0a782f632adb939b1a7ad324728a889b37a3420f94e7faf89c",
+      "renderer": "linux",
+      "width": 960,
+      "height": 640,
+      "scope": "desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/linux-gui/output/overview-layout-linux/overview-mobile-320-dark-fixture.png",
+      "bytes": 39701,
+      "sha256": "13dccef10ea96fee03b3c02ad5bfd830bac1bdae8fd6ab6aac206823f6d4f6cb",
+      "renderer": "linux",
+      "width": 320,
+      "height": 640,
+      "scope": "mobile-sized desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/linux-gui/output/overview-layout-linux/overview-mobile-320-large-ipv6-fixture.png",
+      "bytes": 52346,
+      "sha256": "d78721c559925b1fdb22fecbe00bedd808e847eae4326744525cab2bbee18779",
+      "renderer": "linux",
+      "width": 320,
+      "height": 640,
+      "scope": "mobile-sized desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/linux-gui/output/overview-layout-linux/overview-mobile-320-large-summary-fixture.png",
+      "bytes": 52346,
+      "sha256": "d78721c559925b1fdb22fecbe00bedd808e847eae4326744525cab2bbee18779",
+      "renderer": "linux",
+      "width": 320,
+      "height": 640,
+      "scope": "mobile-sized desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/linux-gui/output/overview-layout-linux/overview-mobile-320-light-fixture.png",
+      "bytes": 38798,
+      "sha256": "fd7961982f3fc3d255de26646848d3be75742370883a654826992eb2230c8142",
+      "renderer": "linux",
+      "width": 320,
+      "height": 640,
+      "scope": "mobile-sized desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/linux-gui/output/overview-layout-linux/overview-mobile-393-dark-fixture.png",
+      "bytes": 59860,
+      "sha256": "7cba094b685256e5eebad55b2152e4540449817819570361ec226a2dffd3a926",
+      "renderer": "linux",
+      "width": 393,
+      "height": 852,
+      "scope": "mobile-sized desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/linux-gui/output/overview-layout-linux/overview-mobile-393-light-fixture.png",
+      "bytes": 58634,
+      "sha256": "4538d60b4f4cf299e7455c20c423e01cf25e5cc3dcaf6fad6f3b286effe6a2b9",
+      "renderer": "linux",
+      "width": 393,
+      "height": 852,
+      "scope": "mobile-sized desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/linux-gui/output/overview-layout-linux/rules-1440-dark-fixture.png",
+      "bytes": 104593,
+      "sha256": "4753150b002b445ce824c01dd30081ba4d035b4cb3e65f9d3bdc14a01a162451",
+      "renderer": "linux",
+      "width": 1440,
+      "height": 900,
+      "scope": "desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/linux-gui/output/overview-layout-linux/rules-1440-light-fixture.png",
+      "bytes": 103758,
+      "sha256": "e571fe5624d0ab34a6177942f9b8e45d124a12d582bb9888539bad7675e5b72b",
+      "renderer": "linux",
+      "width": 1440,
+      "height": 900,
+      "scope": "desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/linux-gui/output/overview-layout-linux/rules-960-dark-fixture.png",
+      "bytes": 69129,
+      "sha256": "1566eae520368c53b1b1462e4634ec876019a2d58b1ac8231e9d7841ac584c85",
+      "renderer": "linux",
+      "width": 960,
+      "height": 640,
+      "scope": "desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/linux-gui/output/overview-layout-linux/rules-960-light-fixture.png",
+      "bytes": 68606,
+      "sha256": "a01388cdadd888796adb7299e79ad0951253ce3a29955528e7d4bb01877655e2",
+      "renderer": "linux",
+      "width": 960,
+      "height": 640,
+      "scope": "desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/linux-gui/output/overview-layout-linux/settings-1440-dark-fixture.png",
+      "bytes": 76791,
+      "sha256": "dc5321f401579572179e26d57f3b683d122b7d86ea2b7b916db43884b6151b0b",
+      "renderer": "linux",
+      "width": 1440,
+      "height": 900,
+      "scope": "desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/linux-gui/output/overview-layout-linux/settings-1440-light-fixture.png",
+      "bytes": 75878,
+      "sha256": "81149a3c7f884657d35d7e4994197932878fe48ef77afe41244044d0db80c905",
+      "renderer": "linux",
+      "width": 1440,
+      "height": 900,
+      "scope": "desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/linux-gui/output/overview-layout-linux/settings-960-dark-fixture.png",
+      "bytes": 57217,
+      "sha256": "85b492cca05b4034a312a697c70b1f8a55b5e74a17d17c90140d6dc132688c05",
+      "renderer": "linux",
+      "width": 960,
+      "height": 640,
+      "scope": "desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/linux-gui/output/overview-layout-linux/settings-960-light-fixture.png",
+      "bytes": 56379,
+      "sha256": "f80a0321c811517b9ca5319c4768662dcde8c5fb33d0a995b037352f45384008",
+      "renderer": "linux",
+      "width": 960,
+      "height": 640,
+      "scope": "desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/linux-gui/output/overview-layout-linux/settings-mobile-320-dark-fixture.png",
+      "bytes": 36853,
+      "sha256": "7249fac9773f719855e6164933c5e66a350e7098240d0d78e71801ebcdaaded8",
+      "renderer": "linux",
+      "width": 320,
+      "height": 640,
+      "scope": "mobile-sized desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/linux-gui/output/overview-layout-linux/settings-mobile-320-light-fixture.png",
+      "bytes": 36431,
+      "sha256": "3c6ceb2d36abda0275184457fc3323f56c196f5294449f2b6f8b235cbdb84a11",
+      "renderer": "linux",
+      "width": 320,
+      "height": 640,
+      "scope": "mobile-sized desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/linux-gui/output/overview-layout-linux/settings-mobile-393-dark-fixture.png",
+      "bytes": 41817,
+      "sha256": "d2366f1e4a328ec8a372991b89d713a86b4dd2774db89645ad8eee1dcba061bf",
+      "renderer": "linux",
+      "width": 393,
+      "height": 852,
+      "scope": "mobile-sized desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/linux-gui/output/overview-layout-linux/settings-mobile-393-light-fixture.png",
+      "bytes": 41404,
+      "sha256": "c14c065fe64cb9f08357270138e894293c7f5978eb77e32dfa050a68353a8c99",
+      "renderer": "linux",
+      "width": 393,
+      "height": 852,
+      "scope": "mobile-sized desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/linux-gui/output/overview-layout-linux/traffic-1440-dark-fixture.png",
+      "bytes": 116128,
+      "sha256": "ad8838b578eebbed27b8faeff4f6cd102170f2a0f41aa03b22716fa7362f7bd8",
+      "renderer": "linux",
+      "width": 1440,
+      "height": 900,
+      "scope": "desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/linux-gui/output/overview-layout-linux/traffic-1440-light-fixture.png",
+      "bytes": 111107,
+      "sha256": "374435cda9cc71102cb4bba57b2d1376810995a5043156afb61d632c6a4daca8",
+      "renderer": "linux",
+      "width": 1440,
+      "height": 900,
+      "scope": "desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/linux-gui/output/overview-layout-linux/traffic-960-dark-fixture.png",
+      "bytes": 74699,
+      "sha256": "b06f48e58d0162ef2cda0e0c592d59bfeb7de9e192a2d58f5bdc45fdb2694864",
+      "renderer": "linux",
+      "width": 960,
+      "height": 640,
+      "scope": "desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/linux-gui/output/overview-layout-linux/traffic-960-light-fixture.png",
+      "bytes": 71764,
+      "sha256": "e5b4ff711023cabd7f2b21b982252707165c00bf8a4c6c5dd923f3f3b9d6c746",
+      "renderer": "linux",
+      "width": 960,
+      "height": 640,
+      "scope": "desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/linux-gui/output/overview-layout-linux/traffic-mobile-320-dark-fixture.png",
+      "bytes": 46797,
+      "sha256": "74cfb2056309bc23206c8882eea4ff4c603232694319c24225e2c8fe188aab54",
+      "renderer": "linux",
+      "width": 320,
+      "height": 640,
+      "scope": "mobile-sized desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/linux-gui/output/overview-layout-linux/traffic-mobile-320-light-fixture.png",
+      "bytes": 44179,
+      "sha256": "1d82867ea37b3c947f28d51d678274b389980aa6095ccece285f5ea8e0fa133d",
+      "renderer": "linux",
+      "width": 320,
+      "height": 640,
+      "scope": "mobile-sized desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/linux-gui/output/overview-layout-linux/traffic-mobile-393-dark-fixture.png",
+      "bytes": 59497,
+      "sha256": "e04f689efc716e767cd35be33fb9c29236d26e4518f5e469ce0aad2e2e78b455",
+      "renderer": "linux",
+      "width": 393,
+      "height": 852,
+      "scope": "mobile-sized desktop renderer fixture"
+    },
+    {
+      "path": "build/qa/linux-gui/output/overview-layout-linux/traffic-mobile-393-light-fixture.png",
+      "bytes": 56665,
+      "sha256": "2541ad2245871f7c4dc5cb44f7e856719f42b70e6039147b219936155b580072",
+      "renderer": "linux",
+      "width": 393,
+      "height": 852,
+      "scope": "mobile-sized desktop renderer fixture"
+    }
+  ]
+}

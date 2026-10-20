@@ -2,6 +2,18 @@
 
 桌面优先的五平台客户端。Flutter 负责界面与业务，Go Host 负责桌面核心边界，Android 使用 Kotlin 前台网络服务与嵌入式 libbox。
 
+2026-10-20 暂停检查点：按用户要求暂停并保存、推送当前进度，见[保存范围与待办](docs/verification/closeout-20261020.md)。最新 Flutter 546 项及静态分析通过；扫码、Android 更新/流量、Linux 桌面集成与 macOS 基础代码一并保留。Linux 源码现按可信且启用、活动的匹配服务开放首页 TUN，真实安装/取消与恢复通过，但接受授权后的完整产品连接尚未验收，默认包未替换；见[Linux TUN 待续验](docs/verification/linux-tun-product.md)。五平台目标未完成，下列记录保留各阶段范围。
+
+2026-10-20 生命周期续验：基线升至 Flutter 3.29.3 / Dart 3.7.2，修复 Linux GTK 退出时的光标、弱引用与文件选择通道失效。473 项 Flutter、真实保存弹窗/托盘/通知流程及两套渲染器共 108 张布局通过；Linux 成品在致命 GTK 警告模式下三次退出、四次托盘恢复均通过。Windows Release 与 Android 0.1.0+4 Debug 包已重新构建，后者完成签名、16 KB 对齐及核心摘要检查。最新 Linux 包仍为 `build/RainLink-linux-x64-preview.tar.xz`，本轮副本为 `build/RainLink-linux-x64-lifecycle.tar.xz`；Android 包为 `build/RainLink-0.1.0+4-android-debug-preview.apk`。一条上游隐式视图诊断仍保留；实际范围、摘要与未完成项见[生命周期与 SDK 升级](docs/verification/linux-flutter-lifecycle.md)。以下保留历史检查点。
+
+2026-10-20 通用设置续验：Linux 已接入当前用户自动启动、托盘与独立系统通知，支持面板消失恢复窗口、重启后重新注册及通知跳转分组。473 项 Flutter、8 项原生检查及真实面板/通知完整流程通过；44 个 SVG 与当前 Figma 一致。新 Linux Release 包通过解压启动、保存偏好和重开，默认预览包已更新，见[Linux 通用系统功能](docs/verification/linux-desktop-system-services.md)。GTK/Flutter 退出诊断、完整桌面/发行版兼容和其他平台仍继续推进，公开 Linux TUN 保持关闭；下方保留各阶段历史范围。
+
+2026-10-20 图形授权续验：修复活动 Linux 登录会话继承能力导致 pkexec 无法读取 broker 的问题；最终完整 tar 在新普通用户会话中通过真实系统密码框安装、卸载和窗口退出，文件摘要、systemd 状态与无残留均已回读。当前 Figma 44 个 SVG 重新原生导出一致，最新包仍为 `build/RainLink-linux-x64-preview.tar.xz`，摘要及证据见[活动桌面授权与最终包](docs/verification/linux-graphical-service-management.md)。完整桌面/发行版兼容、通用系统功能与正式分发继续推进，公开 Linux TUN 保持关闭；旧阶段记录保留原范围。
+
+2026-10-20 权限恢复续验：普通用户通过生产 broker / pkexec，在宿主已替换且核心临时文件写完后发出取消或 EOF，启用/停用状态共四项通过。旧宿主、版本清单、服务状态和事务清理均已确认；见[真实替换期间取消](docs/verification/linux-broker-write-cancellation.md)。活动图形认证仍在验收，公开 Linux TUN 保持关闭。以下记录保留各阶段范围。
+
+2026-10-20 概览续验：补齐「最近连接」和连接列表入口，压缩小窗口连接卡，保留两行节点健康与一屏布局。468 项 Flutter 回归、静态分析、Windows/Linux 真实核心请求与关闭，以及两套渲染器的 108 张布局截图通过。Linux 0.1.0+4 tar 已重新构建，最新包摘要和边界见[概览与紧凑布局](docs/verification/overview-recent-connections.md)。历史测试和产物摘要继续保留原范围。
+
 2026-10-20 开发进展：Linux「设置 → 核心引擎」已加入 TUN 权限服务管理；共享桌面退出会等待管理操作、状态回读与网络恢复。已修复等待认证和安装提交前可能漏掉取消的问题。实际 pkexec/polkit 的八种授权/管理场景，以及安装器在真实 systemd 下的五种写入后取消场景通过，后者由私有测试 checkpoint 注入取消；普通 broker 写入中取消、活动图形认证、Linux GUI 与正式分发继续验收，公开 Linux TUN 仍关闭。最新证据见[安装取消与恢复](docs/verification/linux-install-cancellation.md)，前轮 Flutter、截图与图标范围见[服务管理与安全退出](docs/verification/linux-tun-service-management-acceptance.md)。下文早期阶段测试数量保留原验收范围。
 
 当前 Windows 版已支持 HTTP / HTTPS 代理、SOCKS5、Shadowsocks、VLESS、VMess、Trojan、Hysteria2 和 TUIC v5 的真实连接，以及订阅 URL 导入、自动分组、手动 / 自动更新、用量和到期信息。节点认证、UUID、混淆密码和订阅地址由 Windows DPAPI 加密保存；配置通过私有管道交给核心。两端按运行平台选择独立布局，共享路由与业务状态；手机横屏和桌面缩窄时保留本端导航。
@@ -20,7 +32,7 @@ Windows / Linux 的窗口按钮集成在顶部状态栏，支持最小化、最�
 
 2026-10-17 Windows 最新本地预览包：`build/RainLink-windows-x64-subscriptions-preview.zip`，版本 **0.1.0+4**。本次补齐订阅兼容确认和 sing-box 节点导入，继续包含设置六分类、Windows 托盘/启动集成、TUN、受控高级配置、紧凑/标准密度、到期提醒与更新中断恢复；默认仍为桌面小窗口紧凑布局。关闭 RainLink，将完整新包解压到新目录，运行 `rainlink.exe`；`rainlink-ui.exe` 为内部界面入口。旧布局预览需要先完整手动升级一次。打包摘要为 [desktop-build.json](docs/verification/desktop-build.json)。本轮共享数据库升级到 schema 7；程序/数据回滚的历史验收及未完成边界见[中断恢复验收](docs/verification/app-update-recovery.md)，本轮没有重跑完整 AOT 更新事务。
 
-Linux TUN 已接入普通宿主的真实密钥环、连接、遥测、模式和确认断开；权限核心日志现通过显式协商传回原日志页面，15 个完整宿主场景通过。最新 Linux 隔离网络 414 个、日志压力 20 轮共 500 个、真实 systemd / polkit 3 个、Windows 164 个 Go 通过事件分别记录，见[权限日志验收](docs/verification/linux-tun-logs.md)。本阶段未修改 Dart，Flutter 440 项属于前阶段。[安装续验](docs/verification/linux-tun-install.md)保留管理员安装、升级、卸载、持久回滚及三十次强杀恢复；独立 Debian 13 / systemd 257 / polkitd 126 已实际验证核心启动、日志、允许和拒绝授权及恢复，使用 VM-only 规则，未验证活动桌面认证弹窗。GUI 服务管理和正式分发仍待完成，公开 TUN 开关继续关闭；权限路径要求 Linux 6.5+。`bash tools/verify_linux_network.sh --permission-logs` 为 Linux amd64 root 隔离入口，需要网络工具、D-Bus、gnome-keyring 与 GNOME 设置后端，fixture 授权器使用私有挂载。[宿主接入](docs/verification/linux-tun-manager.md)和[实际转发](docs/verification/linux-tun-forwarding.md)保留原阶段范围，包括一次原因待调查的历史转发失败。
+Linux TUN 已接入普通宿主的真实密钥环、连接、遥测、模式和确认断开；权限核心日志现通过显式协商传回原日志页面，15 个完整宿主场景通过。最新 Linux 隔离网络 414 个、日志压力 20 轮共 500 个、真实 systemd / polkit 3 个、Windows 164 个 Go 通过事件分别记录，见[权限日志验收](docs/verification/linux-tun-logs.md)。本阶段未修改 Dart，Flutter 440 项属于前阶段。[安装续验](docs/verification/linux-tun-install.md)保留管理员安装、升级、卸载、持久回滚及三十次强杀恢复；独立 Debian 13 / systemd 257 / polkitd 126 已实际验证核心启动、日志、允许和拒绝授权及恢复，使用 VM-only 规则，未验证活动桌面认证弹窗。GUI 服务管理的活动桌面授权验收与正式系统安装包仍待完成；Linux x64 tar 预览、隔离 X11 界面及真实本地连接已通过[桌面预览验收](docs/verification/linux-desktop-preview.md)，公开 TUN 开关继续关闭；权限路径要求 Linux 6.5+。`bash tools/verify_linux_network.sh --permission-logs` 为 Linux amd64 root 隔离入口，需要网络工具、D-Bus、gnome-keyring 与 GNOME 设置后端，fixture 授权器使用私有挂载。[宿主接入](docs/verification/linux-tun-manager.md)和[实际转发](docs/verification/linux-tun-forwarding.md)保留原阶段范围，包括一次原因待调查的历史转发失败。
 
 桌面默认以 960 × 640 逻辑像素居中打开，采用紧凑图标导航，可自由拉宽或最大化。概览一屏展示连接控制、出口、统计与延迟趋势；窄屏和较大字体保留自然滚动。深浅主题截图与尺寸核对见 [概览布局验证](docs/verification/README.md#概览一屏布局--2026-10-16)。
 
@@ -40,7 +52,7 @@ Android 已接入 Keystore 凭据、原生系统隧道、前台服务、DNS 测�
 
 ## 开发
 
-基线：Flutter **3.27.4** / Dart **3.6.2**，Go **1.25.5**。版本记录在 `.fvmrc`、`.go-version`，Dart 依赖提交锁文件。可使用 FVM 或自行安装 SDK；脚本支持 PATH 中的 Flutter，也支持 `FLUTTER_ROOT` 或 `-FlutterRoot` 指定 SDK。
+基线：Flutter **3.29.3** / Dart **3.7.2**，Go **1.25.5**。版本记录在 `.fvmrc`、`.go-version`，Dart 依赖提交锁文件；扫码依赖要求 Dart 3.7，本次收尾统一受影响文件的格式。可使用 FVM 或自行安装 SDK；脚本支持 PATH 中的 Flutter，也支持 `FLUTTER_ROOT` 或 `-FlutterRoot` 指定 SDK。
 
 Windows 需要 Visual Studio 2022 的「使用 C++ 的桌面开发」及 Windows SDK。
 
@@ -58,9 +70,21 @@ Windows 需要 Visual Studio 2022 的「使用 C++ 的桌面开发」及 Windows
 
 `run` 先校验固定核心并构建宿主，再启动 Flutter；`check` 执行格式、静态检查与单元/组件测试；`smoke` 在真实桌面应用中验证宿主通信和主题落盘；`build` 生成 Windows x64 Release 目录，并放入宿主、核心及核心许可证。运行时保留完整目录。额外的连接与异常恢复检查见验收文档。
 
-核心基于 sing-box **1.12.25**，Windows amd64 与 Linux amd64 分别锁定二进制 SHA-256。Windows / Android 的证书指纹扩展为 **1.12.25-rainlink.1**，Linux 桌面增加托管 TUN 的版本为 **1.12.25-rainlink.2**。`tools/core.lock.json` 固定上游与依赖校验值、Go 1.25.5、修改位置和构建标签；`tools/setup_core.py` 从经校验的源码构建并核对结果。默认构建当前平台，可指定 `--platform linux-amd64`。sing-box 使用 GPLv3，各平台输出目录包含 LICENSE 和对应源码 `sing-box-source.zip`；扩展说明见 [native/core](native/core/README.md)，上游为 [SagerNet/sing-box v1.12.25](https://github.com/SagerNet/sing-box/tree/v1.12.25)。
+核心基于 sing-box **1.12.25**，Windows amd64、Linux amd64 及 macOS amd64/arm64 分别锁定二进制 SHA-256。Windows / Android / macOS 的证书指纹扩展为 **1.12.25-rainlink.1**，Linux 桌面增加托管 TUN 的版本为 **1.12.25-rainlink.2**。`tools/core.lock.json` 固定上游与依赖校验值、Go 1.25.5、修改位置和构建标签；`tools/setup_core.py` 从经校验的源码构建并核对结果。默认构建当前平台，可指定 `--platform linux-amd64` 或 `--platform darwin-arm64`。sing-box 使用 GPLv3，各平台输出目录包含 LICENSE 和对应源码 `sing-box-source.zip`；扩展说明见 [native/core](native/core/README.md)，上游为 [SagerNet/sing-box v1.12.25](https://github.com/SagerNet/sing-box/tree/v1.12.25)。
 
-macOS / Linux 可执行 `bash tools/dev.sh run`，其他命令为 `check`、`smoke`、`generate`，需要对应平台的 Flutter 桌面构建工具。Linux amd64 已接入本地端口、Secret Service 凭据、核心退出保护及 GNOME / KDE6 系统代理与异常恢复。凭据依赖 libsecret 的 `secret-tool` 和可解锁密钥环；GNOME 需要 gsettings / dconf / gdbus 和 schemas；KDE 需要宿主旁的 Qt6 / KF6 ConfigCore 辅助程序，开发入口在 KDE 下自动构建。两套后端还需要会话总线和 pidfd；实际环境不满足时保留本地端口。`bash tools/verify_linux_session.sh --kde` 使用隔离配置和密钥环复验，依赖与范围见 [KDE 验收](docs/verification/linux-kde-proxy.md)。真实 Plasma / GNOME 桌面、KDE5、活动用户 TUN 授权与 Linux GUI 尚未验收；内部 TUN 和独立 systemd 安装验收见上文。Windows 有实机、Android 有隔离模拟器验收；macOS 宿主与 iOS 网络扩展仍未完成。
+macOS / Linux 可执行 `bash tools/dev.sh run`，通用命令为 `check`、`smoke`、`generate`；Linux x64 另支持 `build` 和 `package`，需要对应平台的 Flutter 桌面构建工具。Linux 宿主要求 `CGO_ENABLED=0`，脚本已显式设置，以便普通管理 broker 清除所有 Go 线程的继承能力。Linux amd64 已接入本地端口、Secret Service 凭据、核心退出保护及 GNOME / KDE6 系统代理与异常恢复。凭据依赖 libsecret 的 `secret-tool` 和可解锁密钥环；GNOME 需要 gsettings / dconf / gdbus 和 schemas；KDE 需要宿主旁的 Qt6 / KF6 ConfigCore 辅助程序，开发入口在 KDE 下自动构建。两套后端还需要会话总线和 pidfd；实际环境不满足时保留本地端口。`bash tools/verify_linux_session.sh --kde` 使用隔离配置和密钥环复验，依赖与范围见 [KDE 验收](docs/verification/linux-kde-proxy.md)。隔离 X11 / Openbox 原生窗口、GNOME 配置后端接管与关闭恢复、活动 logind/lxpolkit 的密码授权安装/卸载已验收；真实 Plasma / GNOME 桌面、Wayland、KDE5 与完整 TUN 产品连接仍待验收。Windows 有实机、Android 有隔离模拟器验收；macOS 宿主与 iOS 网络扩展仍未完成。
+
+macOS 基础接入见[验收与待测清单](docs/verification/macos-foundation.md)：本地会话、原生 Keychain helper 和构建入口已补代码，Intel / Apple Silicon 交叉编译通过。需要 macOS 13+、Xcode/命令行工具、CocoaPods、Python 3.10+ 及上述 Flutter/Go；`bash tools/dev.sh run` 准备原生运行文件，`bash tools/dev.sh build` 尝试生成并装配本地 ad-hoc 签名的 `app/build/macos/Build/Products/Release/RainLink.app`。签名后核心摘要在链接时编入宿主，原始源码锁不变。当前没有 Mac，Swift/Xcode、依赖锁、Keychain 授权和运行均未验收；系统代理、TUN、菜单栏、正式签名/公证及 DMG 未完成，`package` 明确拒绝。
+
+Linux x64 构建需要 Python 3.10+、Clang、CMake、Ninja、pkg-config、GTK3 开发库、Qt6 和 KF6 Config 开发库。界面运行依赖 GTK3、EGL / OpenGL / GLES 和 C++ 运行库；Debian 13 对应 `libgtk-3-0t64 libegl1 libgl1 libgles2 libstdc++6`，软件渲染测试还使用 `libgl1-mesa-dri`。只安装 GTK3 仍可能缺少 `libEGL.so.1`，此时 Flutter 界面会在启动时中止，不能降级为本地端口界面。KDE 后端另需 Qt6/KF6 Config；凭据需要 `secret-tool`、会话总线和可解锁 Secret Service，GNOME 接管还需要 `gsettings`、`dconf`、`gdbus` 与 schemas。这些系统集成的依赖不满足时，关闭相应能力并保留可用的本地代理功能；其他发行版的库名称与 ABI 兼容仍需逐一验收。
+
+```sh
+bash tools/dev.sh build    # 生成 app/build/linux/x64/release/bundle
+bash tools/dev.sh package  # 生成 build/RainLink-linux-x64-preview.tar.xz
+# 将整个归档解压到新目录后运行 RainLink/rainlink。
+```
+
+当前 Linux 0.1.0+4 预览包在 Debian 13 / glibc 2.41 构建，完成隔离 X11 和真实密码授权安装/卸载验收；其他发行版的库兼容性、系统安装器和在线更新仍待完成。默认 960×640，图标来自当前 Figma。最新包摘要见[图形授权与最终包](docs/verification/linux-graphical-service-management.md)，概览布局见[概览续验](docs/verification/overview-recent-connections.md)，前轮系统代理与连接中关闭恢复见[Linux 桌面预览](docs/verification/linux-desktop-preview.md)。
 
 ## 目录
 

@@ -1,0 +1,10 @@
+{
+  "applicationExitCode": 0,
+  "noApplicationOrManagementProcesses": true,
+  "noAuthenticationWindow": true,
+  "publicTun": false,
+  "remainingInstallEntries": [
+    "/var/lib/rainlink/tun-install/install.lock"
+  ],
+  "noPendingTransaction": true
+}

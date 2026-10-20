@@ -1,0 +1,2988 @@
+{
+  "files": [
+    {
+      "path": ".fvmrc",
+      "sha256": "e037e9b461b93f5d63f6e06e5a5793aad245ee0a98161fd16f557261be8f0d1b"
+    },
+    {
+      "path": ".gitattributes",
+      "sha256": "f1fd42ed5323d98fe2c4b79ecf244eee2047ef1d40dd2685f75b7ce91c89aeb8"
+    },
+    {
+      "path": ".go-version",
+      "sha256": "a5c08ee5ccac2bffa9209f15e45b96f96413424ca56764172b4379d1ceedef91"
+    },
+    {
+      "path": "app/.gitignore",
+      "sha256": "a01d0e0344e9ab40bd0543c52cd0631e153d7a85b9f27c0089c2f23a73eef89b"
+    },
+    {
+      "path": "app/.metadata",
+      "sha256": "5a515da63aae28708bae5ae14fa2712b8d64dce052e749a3875b3add25a8ccf8"
+    },
+    {
+      "path": "app/README.md",
+      "sha256": "e7a547677c9f6c3fdfe29db31c6bef789ff02fe9e94f4d9d11a80631b18d9041"
+    },
+    {
+      "path": "app/analysis_options.yaml",
+      "sha256": "285855eebe5e562528edef72a293b7e2b6ed4c54f8a85ab9e4992bebe73d866e"
+    },
+    {
+      "path": "app/android/.gitignore",
+      "sha256": "b74b8563f97bcd519df6e2f8e7cc0789bb00fd5eb215c620eb72e3a945c2a6a4"
+    },
+    {
+      "path": "app/android/app/build.gradle",
+      "sha256": "1d8cc22d2e91ab4ce3e05283349d967e0bd8017aeeeea85a33e60f1047dae0a6"
+    },
+    {
+      "path": "app/android/app/src/androidTest/java/dev/rainlink/rainlink/core/TunnelRequest.java",
+      "sha256": "cfa3a930922df7eb208109cfe228b72906d97ddf46da84ec4264a14d3581722a"
+    },
+    {
+      "path": "app/android/app/src/androidTest/kotlin/dev/rainlink/rainlink/OrdinaryApp.kt",
+      "sha256": "cd02b9ba6f1e6c92a074415c360fe5d0916941d482514cd150682087ce074b71"
+    },
+    {
+      "path": "app/android/app/src/androidTest/kotlin/dev/rainlink/rainlink/core/AndroidCoreTest.kt",
+      "sha256": "48824f4c99b68e0fa60d236f530cc4961a5b2ec74852c111d2348d71925e48c2"
+    },
+    {
+      "path": "app/android/app/src/androidTest/kotlin/dev/rainlink/rainlink/core/AndroidNetworkHandoverTest.kt",
+      "sha256": "fd5e175186d736fbe371e2825ef35d2f738e1867d23d5e8ea269be4ab284fed2"
+    },
+    {
+      "path": "app/android/app/src/androidTest/kotlin/dev/rainlink/rainlink/core/CoreTestGateway.kt",
+      "sha256": "442ecf21027301ecb4c848273ffcf125da0de340fef719bc171e0f9db1e46048"
+    },
+    {
+      "path": "app/android/app/src/androidTest/kotlin/dev/rainlink/rainlink/export/AndroidDocumentExportTest.kt",
+      "sha256": "e235d20c5807de9901fc8c2a2235222c64a03ce85322a5492177a05f0763de2d"
+    },
+    {
+      "path": "app/android/app/src/androidTest/kotlin/dev/rainlink/rainlink/notifications/AndroidNotificationPermissionTest.kt",
+      "sha256": "19437729c0d32f0d431f08c7fc5f24f4707e067bb723f66200fab0bf73465c71"
+    },
+    {
+      "path": "app/android/app/src/androidTest/kotlin/dev/rainlink/rainlink/notifications/AndroidNotificationsTest.kt",
+      "sha256": "adb8e6fe7c63f50d4f77ac14d4046b1840b6aea41afb810006c95d796fdd043b"
+    },
+    {
+      "path": "app/android/app/src/androidTest/kotlin/dev/rainlink/rainlink/notifications/NotificationAssertions.kt",
+      "sha256": "8c0526c74e6d28ae13e3ef4a85a245278c67083489feb2cf3add607a52e64d0f"
+    },
+    {
+      "path": "app/android/app/src/debug/AndroidManifest.xml",
+      "sha256": "b01a4541a8144c15bc617bab7eb267c99fa1476368fbbda5a12cdbf4e316a34c"
+    },
+    {
+      "path": "app/android/app/src/main/AndroidManifest.xml",
+      "sha256": "1dec1acbe76aa44ea0e571da9ba5261fda4884fd4e3682fa7b17eb791867e0a2"
+    },
+    {
+      "path": "app/android/app/src/main/assets/licenses/sing-box.txt",
+      "sha256": "650d5e3b99a446fb38e820fa87a49562e0c79eab868fff58618ac487a58e554c"
+    },
+    {
+      "path": "app/android/app/src/main/kotlin/dev/rainlink/rainlink/MainActivity.kt",
+      "sha256": "dcf70bcdf5a4e3587feec08d7c37cf795334a6caf7484f141cbc0eead6a51195"
+    },
+    {
+      "path": "app/android/app/src/main/kotlin/dev/rainlink/rainlink/core/AndroidCore.kt",
+      "sha256": "428d3a011c2c1db09e8899f24547f677789664138003989ab9d5dc1ffa05100b"
+    },
+    {
+      "path": "app/android/app/src/main/kotlin/dev/rainlink/rainlink/core/AndroidPlatform.kt",
+      "sha256": "b38a228fbc317226ecb3cb2c300145384ae41bf7d3b0693e096ab2ccc22992f7"
+    },
+    {
+      "path": "app/android/app/src/main/kotlin/dev/rainlink/rainlink/core/AndroidSecretStore.kt",
+      "sha256": "ecd222632e73f25a3452be952268104dad9131e966173d5153618192bca08737"
+    },
+    {
+      "path": "app/android/app/src/main/kotlin/dev/rainlink/rainlink/core/RainlinkVpnService.kt",
+      "sha256": "dab07dedb004f12ca62cfed7cbd6b82e4949ad7d1e30fc770161f24555018c2a"
+    },
+    {
+      "path": "app/android/app/src/main/kotlin/dev/rainlink/rainlink/export/AndroidDocumentExporter.kt",
+      "sha256": "ae095454acf2c40ec7427a51677ff5e93028bb65c928456786923b44a517a306"
+    },
+    {
+      "path": "app/android/app/src/main/kotlin/dev/rainlink/rainlink/notifications/AndroidMobileIntegration.kt",
+      "sha256": "9b8e6ab7a06c21829393869ed52ea49a125c8fac3a79b7a4c6e485b8a81d4a24"
+    },
+    {
+      "path": "app/android/app/src/main/kotlin/dev/rainlink/rainlink/notifications/AndroidNotifications.kt",
+      "sha256": "3c8aabb5d73c5e3e588ed9fa0ad07cfd90b614a747fed1a14b14fae63ed10ba7"
+    },
+    {
+      "path": "app/android/app/src/main/kotlin/dev/rainlink/rainlink/notifications/PendingNotificationPermission.kt",
+      "sha256": "11d70b60886574254631897b16dca0f45749d5b8c38c97ad58c080235fb2f422"
+    },
+    {
+      "path": "app/android/app/src/main/res/drawable-v21/launch_background.xml",
+      "sha256": "dca312ec77de83e43ef70a825c299b51451247286c29167d62f19165750b8793"
+    },
+    {
+      "path": "app/android/app/src/main/res/drawable/ic_connection.xml",
+      "sha256": "1332a7a745a571e9459353394fa98af8028b06ad9222eb7672493ee27f9c9fe8"
+    },
+    {
+      "path": "app/android/app/src/main/res/drawable/launch_background.xml",
+      "sha256": "2df60e2cfbee873ce2858088cf003e6b93498f2f568476da437610467ea1a9d7"
+    },
+    {
+      "path": "app/android/app/src/main/res/mipmap-hdpi/ic_launcher.png",
+      "sha256": "c6d27c2c120b23865473de10c053e5f9b2c8adc74fe5fe31fea8ac97a9e7dcf6"
+    },
+    {
+      "path": "app/android/app/src/main/res/mipmap-mdpi/ic_launcher.png",
+      "sha256": "5b18a221e374da42763371c007039d6e068064cddb50b8908e9b96e49ca57f14"
+    },
+    {
+      "path": "app/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png",
+      "sha256": "449c7f1fe87fdcf4474938fd2410df2e553f890df9a3389fd95a3f179f9436a4"
+    },
+    {
+      "path": "app/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png",
+      "sha256": "40b27dc0d24d46287e6247856a77e51b0aa28848baab2a3d812f203de06c76b3"
+    },
+    {
+      "path": "app/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+      "sha256": "4372ecf72baf0ff54bb9b2a0846057c2d713fd494f4ae9be445f6e635e5ba063"
+    },
+    {
+      "path": "app/android/app/src/main/res/values-night/styles.xml",
+      "sha256": "ea763597dc1a84c8034251caee98d7753e0fbf57340ffc94677427de4b537516"
+    },
+    {
+      "path": "app/android/app/src/main/res/values/styles.xml",
+      "sha256": "cca15a99b59380a548bf6a890f7ca5380ee509b1f9bbb2f5f9ec3589fa25c2f7"
+    },
+    {
+      "path": "app/android/app/src/main/res/xml/data_extraction_rules.xml",
+      "sha256": "75cede7102f5c5dc82d30895ab6ff300c94d20d339183a79ef210a51e18af9ce"
+    },
+    {
+      "path": "app/android/app/src/profile/AndroidManifest.xml",
+      "sha256": "b01a4541a8144c15bc617bab7eb267c99fa1476368fbbda5a12cdbf4e316a34c"
+    },
+    {
+      "path": "app/android/app/src/test/kotlin/dev/rainlink/rainlink/notifications/PendingNotificationPermissionTest.kt",
+      "sha256": "82f564b06c280f6fe3ef75f7da41252537e4439b3ac37f31c02befe1558e20c7"
+    },
+    {
+      "path": "app/android/build.gradle",
+      "sha256": "d2258cc56a36165187d90045b83c7b17e3e59a92a8acb6e13f2ef468d7794b5f"
+    },
+    {
+      "path": "app/android/build/reports/problems/problems-report.html",
+      "sha256": "cb4aa6f1168064a297d8e6c8ff7938829388adf640a274bb5e11edab5efea0f0"
+    },
+    {
+      "path": "app/android/gradle.properties",
+      "sha256": "ce5add197675bba8e2d8a5c30955e2e0f29bfc6703a3a1a2f50f3d0c7e3a9611"
+    },
+    {
+      "path": "app/android/gradle/wrapper/gradle-wrapper.properties",
+      "sha256": "8a6f26580c4c0192e9a6eb8e9b3b0f0119737a3b9b788dea4102181c32403c7f"
+    },
+    {
+      "path": "app/android/settings.gradle",
+      "sha256": "f817b1e0ab50ce3833b5440d63bb2c66b56eece7d27bab82bbf7499cf743524f"
+    },
+    {
+      "path": "app/assets/brand/mark.svg",
+      "sha256": "ba9f8fdd784e5c7cdc3f603943c3db05e027be6896e1442c8f240c426873ce15"
+    },
+    {
+      "path": "app/assets/flags/cn.svg",
+      "sha256": "e92e178ff143a98e6bb9bf1e4237f02625ac97b34603bf4807db144568865a01"
+    },
+    {
+      "path": "app/assets/flags/de.svg",
+      "sha256": "e13d0a45ad4cbbc1602fa5092fe3f629cfb281ec89ba7b441b3c2bbf8ee74938"
+    },
+    {
+      "path": "app/assets/flags/gb.svg",
+      "sha256": "e266acfbc26e1cd1f9f40d55ebcd74a528b0fb78ad48cc2f0412069599ae7fd2"
+    },
+    {
+      "path": "app/assets/flags/jp.svg",
+      "sha256": "963b279a9f8c41c0045876f98c9577631225d763f07825e00a18f01b26510400"
+    },
+    {
+      "path": "app/assets/flags/nl.svg",
+      "sha256": "0e9f93c87774cd48f184d4ec774bda3f2afb5f24c2dba6f4140af8e5af918858"
+    },
+    {
+      "path": "app/assets/flags/sg.svg",
+      "sha256": "8e68845cf583c074e7f2f5e2dda466c70385c70061b4104685ea050137d125fc"
+    },
+    {
+      "path": "app/assets/flags/us.svg",
+      "sha256": "63d1a2c77d3e35e7ddb68da1f0e3d70c4b11cbf37f604e70aadbb1d777692827"
+    },
+    {
+      "path": "app/assets/fonts/Inter-OFL.txt",
+      "sha256": "5b9321a4298cfeb6b34354164a1c3afc3db114569984c502b9b35d988fd58c57"
+    },
+    {
+      "path": "app/assets/fonts/Inter.ttf",
+      "sha256": "29160a80ff49ddcab2c97711247e08b1fab27a484a329ce8b813d820dc559031"
+    },
+    {
+      "path": "app/assets/fonts/NotoSansSC-OFL.txt",
+      "sha256": "1c05c68c34f9708415aada51f17e1b0092d2cea709bf4a94cd38114f9e73d7d9"
+    },
+    {
+      "path": "app/assets/fonts/NotoSansSC.ttf",
+      "sha256": "763146584cf0710223441356b4395e279021b0806c196614377a7a0174ae074a"
+    },
+    {
+      "path": "app/assets/fonts/RobotoMono-OFL.txt",
+      "sha256": "50ab8dd54680d3473f649c9db86fece88434d097c7834475c1c72d2f8c429215"
+    },
+    {
+      "path": "app/assets/fonts/RobotoMono.ttf",
+      "sha256": "66a80e79d17e4c7cabd162e2916578a4cc08fd19eef6e2a643305eae9c567b2b"
+    },
+    {
+      "path": "app/assets/icons/arrow_right.svg",
+      "sha256": "7feae3042432015a36e2251d033513f819a239af3fbc6004335f0f2b63b6ce66"
+    },
+    {
+      "path": "app/assets/icons/back.svg",
+      "sha256": "801e21c14d9d6d6ac54115a081ad0aced2428311ad8a843c5929957086858564"
+    },
+    {
+      "path": "app/assets/icons/bell.svg",
+      "sha256": "761ec69516ea6688b9bf0b1cf79ccda75bf92971541b381aa56dedc00cd6ff3b"
+    },
+    {
+      "path": "app/assets/icons/chart.svg",
+      "sha256": "7df3d561072cc64d4b165243b0177d900f6bd86acc8c8eb6686d0dfceb875c79"
+    },
+    {
+      "path": "app/assets/icons/check.svg",
+      "sha256": "791e32fd0799693feeb2c788f895e196888b2475445c115cf4b1f2191cc4d1ad"
+    },
+    {
+      "path": "app/assets/icons/chevron_down.svg",
+      "sha256": "d3701ce3d8443a6cf2b2752adbf09382dfaf18d7713933d75f4f1400cee9ea39"
+    },
+    {
+      "path": "app/assets/icons/chevron_right.svg",
+      "sha256": "8461762bf55faed5c8570652e6a471821a4eeb06f0ef6c40b5669edefa375b52"
+    },
+    {
+      "path": "app/assets/icons/clock.svg",
+      "sha256": "073f9e636b873d122c6ffd75c56601ef41937766ea6668588b645ce07008b1e9"
+    },
+    {
+      "path": "app/assets/icons/close.svg",
+      "sha256": "0e44cfeb04317ecbd0216199b61cf940650cc394937714712f23e9b0be30e32d"
+    },
+    {
+      "path": "app/assets/icons/connections.svg",
+      "sha256": "7830dfed420dc04ec455f3c6e54fee8c361077ef528e4bb565f4fd38cdbe4cde"
+    },
+    {
+      "path": "app/assets/icons/copy.svg",
+      "sha256": "9a4b70d01a1a808ac7b39c1853af9a84bde7414a40fb0108fc24a49320b7c654"
+    },
+    {
+      "path": "app/assets/icons/download.svg",
+      "sha256": "541315177cfb8c35a8325e14c0f9c7ae696e377c099ab366fd77cda424dbe84d"
+    },
+    {
+      "path": "app/assets/icons/folder.svg",
+      "sha256": "5ba08b799a7a72ce1675e0eb49ef89cc42569b71489d01feb43630fe87f98817"
+    },
+    {
+      "path": "app/assets/icons/globe.svg",
+      "sha256": "330d3b0685e8526cea71a977e3f7ad34dc9534c58db7991b12b9943fb74d2c26"
+    },
+    {
+      "path": "app/assets/icons/grid.svg",
+      "sha256": "3c742af2ba5c4319e58284723edabf1b7651e48b856cbfc8a8f6b5a1627a30c5"
+    },
+    {
+      "path": "app/assets/icons/laptop.svg",
+      "sha256": "f5bedf0546745b973e8556d9f98cd4f832f3b6c66e095d80cdf3cef245a1ee1b"
+    },
+    {
+      "path": "app/assets/icons/link.svg",
+      "sha256": "f7caba95d08f1f9796d4d4f186d4e433a45a14a687e6427d90e550b30bdd6796"
+    },
+    {
+      "path": "app/assets/icons/moon.svg",
+      "sha256": "41d8ce698a4f70958db0e66343652a6977c6e11e1233aa323039fd476ff5c7c2"
+    },
+    {
+      "path": "app/assets/icons/more.svg",
+      "sha256": "7413c14ad2dd4a768796ca789ac9db5356df3583396c6d0897a083167028f349"
+    },
+    {
+      "path": "app/assets/icons/nodes.svg",
+      "sha256": "1322bc073b06a643f472d201b5a4e299523084968bd22fc2647c833b081ff0cb"
+    },
+    {
+      "path": "app/assets/icons/plus.svg",
+      "sha256": "d0754e215bec82b30ed71eb77db8176fe73498b2bfd1c1599ba371c86355abde"
+    },
+    {
+      "path": "app/assets/icons/power.svg",
+      "sha256": "7bdfc9859858a6679bcd4c66315e269947a50f4e23ed3e6ce287110521320ebf"
+    },
+    {
+      "path": "app/assets/icons/profile.svg",
+      "sha256": "ed87cd05a3313e28bcc1ce05024808dfa865b4358798f6785841f60ff9e7137d"
+    },
+    {
+      "path": "app/assets/icons/qr.svg",
+      "sha256": "2c99ae98883ca67056bb82efd2006575a4ae7bb693bb353245d0b38b3ee10235"
+    },
+    {
+      "path": "app/assets/icons/rain.svg",
+      "sha256": "c68253560af537ce1df009fa4fdaabdc210c8355a8e764c2283da9c8fc9cea8c"
+    },
+    {
+      "path": "app/assets/icons/refresh.svg",
+      "sha256": "05ee43f1ede9f058df6cff763afa9b1810a21829920529ca0d65c415539209e8"
+    },
+    {
+      "path": "app/assets/icons/rules.svg",
+      "sha256": "5123d0bb735adc0ae548c680033cf3506d4e96927f93681540213d45000807a2"
+    },
+    {
+      "path": "app/assets/icons/search.svg",
+      "sha256": "bbaf43a8562f89f526d3457864089d3084c8c5fb94289e96ba9f5acbc375d6f9"
+    },
+    {
+      "path": "app/assets/icons/settings.svg",
+      "sha256": "98c3560ee32a3a9fd321b3e709865500f93e8b464e52661b9015e99603cfc428"
+    },
+    {
+      "path": "app/assets/icons/shield.svg",
+      "sha256": "b310ca7c4045f37180da9edb016e5ac30efded5e560346890b9f32c0ac6d1d46"
+    },
+    {
+      "path": "app/assets/icons/speed.svg",
+      "sha256": "027ab4ed348b4c421ca9ac1020e470969a83d7b4984f06bcdf62896bebcf74d9"
+    },
+    {
+      "path": "app/assets/icons/star.svg",
+      "sha256": "292e8e3f06a882537616d73e0bd63025111e3347bf067c5dc33fdc3e839918b2"
+    },
+    {
+      "path": "app/assets/icons/sun.svg",
+      "sha256": "eff8943446a80324e4c24fc6be5d618d106a362859b59e3f92d64353dfb5edae"
+    },
+    {
+      "path": "app/assets/icons/terminal.svg",
+      "sha256": "c0c7cb1e7069c55bbc6a408809e71e1c426e41cbc1f4e52e21ed8c9db2868322"
+    },
+    {
+      "path": "app/assets/icons/upload.svg",
+      "sha256": "180537c624023c1f773ceda41dee3ed55c76fd480b9c2a44fa5f0adf0b4cf90c"
+    },
+    {
+      "path": "app/assets/icons/wifi.svg",
+      "sha256": "10f33922993e24c6db4b93fa7313554c5d4adee5d3379a053ab369f89975198a"
+    },
+    {
+      "path": "app/assets/licenses/go-winio-LICENSE.txt",
+      "sha256": "cf248820bf1178370bb4f1670a59f8748d46bc96d0f64080cd631511c6046409"
+    },
+    {
+      "path": "app/assets/licenses/sing-box-LICENSE.txt",
+      "sha256": "650d5e3b99a446fb38e820fa87a49562e0c79eab868fff58618ac487a58e554c"
+    },
+    {
+      "path": "app/assets/licenses/wintun-LICENSE.txt",
+      "sha256": "9aaf948856ce8845a762121306039ef09d0eeb4d9e4f4c355647d4081e818087"
+    },
+    {
+      "path": "app/integration_test/android_configuration_test.dart",
+      "sha256": "cff55e5fcd03737c4be4e9c13b22fbee9829daf10207974d61be440f6a8fdc2b"
+    },
+    {
+      "path": "app/integration_test/android_startup_test.dart",
+      "sha256": "469f6cc614621c5d5f5dd54b2f85de77e9a3fba0f132fccaecb43109439c63d0"
+    },
+    {
+      "path": "app/integration_test/android_telemetry_test.dart",
+      "sha256": "dead115685cdc6266228a483ca3adcba1e9bb0df03dff362a8e575cb186c94e4"
+    },
+    {
+      "path": "app/integration_test/android_ui_test.dart",
+      "sha256": "1a82d4ef79a583b1c139cf01f5a284a9d97b3054f8fd824dcfbaa5e798ac2a34"
+    },
+    {
+      "path": "app/integration_test/app_updates_visual_test.dart",
+      "sha256": "6d14c87673aa51e05180b51f802f24aa5281868f9b17747869f89fba079fd86e"
+    },
+    {
+      "path": "app/integration_test/chains_visual_test.dart",
+      "sha256": "71e6c828a8b7e633e3a15284ec28608be8886608356fa7a67ea85d5077204111"
+    },
+    {
+      "path": "app/integration_test/density_visual_test.dart",
+      "sha256": "b6ff1272c8054a079f509e1636af9ad4178052f0324ba787e7efefe2834ea9e3"
+    },
+    {
+      "path": "app/integration_test/desktop_smoke_test.dart",
+      "sha256": "2e1b5870f9bf11900749c1b90b151631f5beadd8d0c157c6241b30abdc752df5"
+    },
+    {
+      "path": "app/integration_test/linux_desktop_integration_test.dart",
+      "sha256": "b9581494181546db23847bd1c21ba515e267220ae454cada56dd0424d0c9a00a"
+    },
+    {
+      "path": "app/integration_test/linux_file_export_test.dart",
+      "sha256": "3a38ecc6d081570a77b1b9f822cdf7dbf058fd1f4c16ec798b3014b3ddcb4684"
+    },
+    {
+      "path": "app/integration_test/node_management_visual_test.dart",
+      "sha256": "7883b687486f0407325e5d40c227a93b5c43d60dad71fbca9c0ab75357622c44"
+    },
+    {
+      "path": "app/integration_test/overview_connection_test.dart",
+      "sha256": "f35bb4b57a32dff936262b8d90c8954c1c64a0c6afd2837e5165d0df1919593e"
+    },
+    {
+      "path": "app/integration_test/protocols_visual_test.dart",
+      "sha256": "8abda25c9e921ebe558dd709b87cce25337779d1377e150c8f8678b90fe49203"
+    },
+    {
+      "path": "app/integration_test/routing_visual_test.dart",
+      "sha256": "340c61aaeb6574eaecf216a1b499e4973cffa8c40657067e8b6aa5a16d8ebc95"
+    },
+    {
+      "path": "app/integration_test/settings_visual_test.dart",
+      "sha256": "5fde3b2df8b291aa75a3cb29ce70c3b86a05e8f405ca17b3839d8064517665d3"
+    },
+    {
+      "path": "app/integration_test/subscription_expiry_visual_test.dart",
+      "sha256": "9f6e9fdc290e163227b593c80577df6d9262318e30b81ba3fe7db81f3c4d759e"
+    },
+    {
+      "path": "app/integration_test/subscription_review_visual_test.dart",
+      "sha256": "669809754ccf0e247a6f680ace0dea06d01e1fe0ca639fae912bfa7bb8cf9143"
+    },
+    {
+      "path": "app/integration_test/support/local_proxy_fixture.dart",
+      "sha256": "bbb9acc2ea7a5f84ec05859701ce3392048edb9c318caf0e316032c202532f10"
+    },
+    {
+      "path": "app/integration_test/telemetry_visual_test.dart",
+      "sha256": "bbe84735151d85cf7a9188e645acd14ec46bbbc3bf7618b891594715f870caeb"
+    },
+    {
+      "path": "app/integration_test/traffic_visual_test.dart",
+      "sha256": "5e1761a7ac7dc2f1a9739438bb0eb071f55ea4665b39216e5ab56608e86d9065"
+    },
+    {
+      "path": "app/integration_test/tun_service_visual_test.dart",
+      "sha256": "eb666182d52d6a2ebee793cc5070891d31352719eeaa9ee6211e916f1fcc7322"
+    },
+    {
+      "path": "app/integration_test/ui_alignment_test.dart",
+      "sha256": "d30d9b9330c6a80568248ab5ac24b7d8b179ad314f889da0aeb7e2152fbb505f"
+    },
+    {
+      "path": "app/integration_test/windows_advanced_config_test.dart",
+      "sha256": "a6276c2779f65a9a4c1e4202a36fd13f20ef715423bc9d309817b1ab37d1c700"
+    },
+    {
+      "path": "app/integration_test/windows_app_updates_test.dart",
+      "sha256": "847f5151f6b9c6f51f828c101fe07881fd42567d7184e0388adf0d7e75c74527"
+    },
+    {
+      "path": "app/integration_test/windows_chain_test.dart",
+      "sha256": "d3049a64a1fc286eeff797e4dd14aa17dd258c677479826a726d754f09a48b04"
+    },
+    {
+      "path": "app/integration_test/windows_connection_test.dart",
+      "sha256": "52cdd64749e05813a993f3c74b55bc27921d92c30159956d3e15e09fde303705"
+    },
+    {
+      "path": "app/integration_test/windows_density_test.dart",
+      "sha256": "e065c1797779cd6c99528f58bff1127df4f830b0177457394d93388959a3777c"
+    },
+    {
+      "path": "app/integration_test/windows_desktop_integration_test.dart",
+      "sha256": "2800d2e9dc9b4886e155b9bb36fa51859356ff8057d8de18085ada8f3707eb12"
+    },
+    {
+      "path": "app/integration_test/windows_node_management_test.dart",
+      "sha256": "36b85074bf3841721e0e765f344e5f135de02cb4141507fc4a68deab4d65c29f"
+    },
+    {
+      "path": "app/integration_test/windows_protocols_test.dart",
+      "sha256": "b98c64cb57323a961e76b84932a11d2fff1beaae19ac2af457cad0fd6b470bbb"
+    },
+    {
+      "path": "app/integration_test/windows_routing_test.dart",
+      "sha256": "0d859f3ccccaf6d0a10e26cc790380d9c20aa96405b362ac57882066d6dd9e18"
+    },
+    {
+      "path": "app/integration_test/windows_settings_test.dart",
+      "sha256": "5fdd50f0fccac73628c6ec1ffc98ebd655621e1b537d2058a4201d18402d143c"
+    },
+    {
+      "path": "app/integration_test/windows_subscription_expiry_test.dart",
+      "sha256": "727d7a1278a48664afe3118beab94edba4757e1b738d079dfbc0f0a1722543b5"
+    },
+    {
+      "path": "app/integration_test/windows_subscription_test.dart",
+      "sha256": "e68e686b6136fc86ed92b2909256f06fbce6c72f96d061f925c79a9cb6b995e3"
+    },
+    {
+      "path": "app/integration_test/windows_telemetry_test.dart",
+      "sha256": "d761036b7f891df6a2d6077de0d1dd177572a93ba7976841463cbc818d3af42f"
+    },
+    {
+      "path": "app/integration_test/windows_traffic_test.dart",
+      "sha256": "26ec1b2563183e8c3ffa3b89d7abc64bcf9d5bca10c0127df32a39300586c476"
+    },
+    {
+      "path": "app/integration_test/windows_tun_test.dart",
+      "sha256": "10506eafc8dec4365c98c17b83f383904cb1eed44b208aa441fbb0979e5a258b"
+    },
+    {
+      "path": "app/ios/.gitignore",
+      "sha256": "e85b4db8ba6ed14708e5f7d3c60336e5a3067ce11329b84aa8ba5d98603ee253"
+    },
+    {
+      "path": "app/ios/Flutter/AppFrameworkInfo.plist",
+      "sha256": "5309426f22a74c9135d09de49b310ce7174be4d378af844b70b78c14fa872279"
+    },
+    {
+      "path": "app/ios/Flutter/Debug.xcconfig",
+      "sha256": "c0d1da54718e75f2028962b689258ecc741abf7cdaed50483aa5225264d0a7d7"
+    },
+    {
+      "path": "app/ios/Flutter/Release.xcconfig",
+      "sha256": "c0d1da54718e75f2028962b689258ecc741abf7cdaed50483aa5225264d0a7d7"
+    },
+    {
+      "path": "app/ios/Runner.xcodeproj/project.pbxproj",
+      "sha256": "961c98627bc8db881a3fd74eea2d8271c758fbb96adb42b26c2fe895d17cd10e"
+    },
+    {
+      "path": "app/ios/Runner.xcodeproj/project.xcworkspace/contents.xcworkspacedata",
+      "sha256": "ac28b35c2b940210bec0fff8e424b07fd0efe9112ab178a10533583f251a386c"
+    },
+    {
+      "path": "app/ios/Runner.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist",
+      "sha256": "d557c2c32fc6258ec28981fa45dc847b76c9968beb90a2e26d13ef9c4ea45c30"
+    },
+    {
+      "path": "app/ios/Runner.xcodeproj/project.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings",
+      "sha256": "dd64c0308ab2971c456871b990b24a008bdc3ece09833e8dbe9675e33a496e74"
+    },
+    {
+      "path": "app/ios/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme",
+      "sha256": "352747dd75665bb9e818e903a6586be075e7c87b7775f6985efcdee16957e9b7"
+    },
+    {
+      "path": "app/ios/Runner.xcworkspace/contents.xcworkspacedata",
+      "sha256": "706a4c812f2a1e220e6785c27580020d58048e2ae4d30d1280f3c43344ce6b38"
+    },
+    {
+      "path": "app/ios/Runner.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist",
+      "sha256": "d557c2c32fc6258ec28981fa45dc847b76c9968beb90a2e26d13ef9c4ea45c30"
+    },
+    {
+      "path": "app/ios/Runner.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings",
+      "sha256": "dd64c0308ab2971c456871b990b24a008bdc3ece09833e8dbe9675e33a496e74"
+    },
+    {
+      "path": "app/ios/Runner/AppDelegate.swift",
+      "sha256": "13e99dab5435148efc15d9177ba505da3d24859a6ba663767510622fdf7a97fa"
+    },
+    {
+      "path": "app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Contents.json",
+      "sha256": "5f8b941b774bde4496d73347c1f79cbdd786bb76fbdab9ed1f3f0cb78a0fb0d3"
+    },
+    {
+      "path": "app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
+      "sha256": "291ea4661e10c722cbe862ec58b7d96aec8519020045f7bf71f0acb93ef0ad75"
+    },
+    {
+      "path": "app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@1x.png",
+      "sha256": "7a57c499259d40723d26a56b893152e5b25af7fdfed087748478f5bef0211cb2"
+    },
+    {
+      "path": "app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@2x.png",
+      "sha256": "fd2e318a9e68c6ac37ed255d8af9efb98b9e3e194d14768ee9229cd11af297a6"
+    },
+    {
+      "path": "app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@3x.png",
+      "sha256": "35f3c422e337eef3b2a068e2e355c8fcc2d1c1a7dc864331627bb4567b3c5c6b"
+    },
+    {
+      "path": "app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@1x.png",
+      "sha256": "9a4f9fb1ce0ad1539a48f55f6e3b0348b9a1656f6b96eea2e13585d36385e01d"
+    },
+    {
+      "path": "app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@2x.png",
+      "sha256": "24a20eead842ff38a18b2b314ed04fcfd53298d94b3dbf116f409d9819fd8efa"
+    },
+    {
+      "path": "app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@3x.png",
+      "sha256": "d859fdc8163eadf0caf7c2ddf9b8e1af2623778505f257c5204c344f49d992e7"
+    },
+    {
+      "path": "app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@1x.png",
+      "sha256": "fd2e318a9e68c6ac37ed255d8af9efb98b9e3e194d14768ee9229cd11af297a6"
+    },
+    {
+      "path": "app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@2x.png",
+      "sha256": "712e2f2b6ff6a22012613676efa5f10451ba0e69f75daec38a9e081600cbc98b"
+    },
+    {
+      "path": "app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@3x.png",
+      "sha256": "cc921f6e8cc3bca815068b78c6d6e915cfa80bc7eb9ae5abe7179e3ddd635cde"
+    },
+    {
+      "path": "app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@2x.png",
+      "sha256": "cc921f6e8cc3bca815068b78c6d6e915cfa80bc7eb9ae5abe7179e3ddd635cde"
+    },
+    {
+      "path": "app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@3x.png",
+      "sha256": "bcc07e6862a5e6f9a6d09e8fd2d73137e4b184621422f8b44223f5d63c736930"
+    },
+    {
+      "path": "app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@1x.png",
+      "sha256": "ebe12dc6b5d8e259f653b99e6917ef3059d4ac5323e8c548a5c57060fbc7a90a"
+    },
+    {
+      "path": "app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@2x.png",
+      "sha256": "d1157716cafbf564fb75367952f2bfdd0009b0f7fe71de48e981bf4373cecc77"
+    },
+    {
+      "path": "app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-83.5x83.5@2x.png",
+      "sha256": "b216cba8514927553b934018775732d4c3a39ae6a445862f28a87dd5ef5afbe6"
+    },
+    {
+      "path": "app/ios/Runner/Assets.xcassets/LaunchImage.imageset/Contents.json",
+      "sha256": "fbd112a9f3b541a1d811f71ac8e4fe68b6176687d973a5f4d99b7aa4a722e94e"
+    },
+    {
+      "path": "app/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage.png",
+      "sha256": "93ae7d494fad0fb30cbf3ae746a39c4bc7a0f8bbf87fbb587a3f3c01f3c5ce20"
+    },
+    {
+      "path": "app/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@2x.png",
+      "sha256": "93ae7d494fad0fb30cbf3ae746a39c4bc7a0f8bbf87fbb587a3f3c01f3c5ce20"
+    },
+    {
+      "path": "app/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@3x.png",
+      "sha256": "93ae7d494fad0fb30cbf3ae746a39c4bc7a0f8bbf87fbb587a3f3c01f3c5ce20"
+    },
+    {
+      "path": "app/ios/Runner/Assets.xcassets/LaunchImage.imageset/README.md",
+      "sha256": "853ac958e2416fe2540f6f61165283a3618b71a7ba5f85f65ac41c2158dfcd21"
+    },
+    {
+      "path": "app/ios/Runner/Base.lproj/LaunchScreen.storyboard",
+      "sha256": "bc3644fbb251ff1e18de25a4932c927850ae1a025be3dd1447940429633fe4b2"
+    },
+    {
+      "path": "app/ios/Runner/Base.lproj/Main.storyboard",
+      "sha256": "dcea4686c02065e56217fd19fcfb73d7509b41872e7486126149d47a18559363"
+    },
+    {
+      "path": "app/ios/Runner/Info.plist",
+      "sha256": "cf3633bc72d3552c3ffc7573c75e93dd5dc46db01e07fed0f3f392ced8945f67"
+    },
+    {
+      "path": "app/ios/Runner/Runner-Bridging-Header.h",
+      "sha256": "efe657d8b27f7f8595a0d416bffb33fe7d93bd2869d81f7353b556c439d7a1a7"
+    },
+    {
+      "path": "app/ios/RunnerTests/RunnerTests.swift",
+      "sha256": "c0e04141287eb7f9c9f3d31cf5be8cb626a9ea71351206c9121578e8b8f480c3"
+    },
+    {
+      "path": "app/lib/app/app_licenses.dart",
+      "sha256": "a5a8be74eaa86ca4e3d67dc7353e997e570ad38051d2fccc5927637536423835"
+    },
+    {
+      "path": "app/lib/app/build_info.g.dart",
+      "sha256": "42f5b7827718c3d0ae2d9886af711e160a31af6c06bdd8edcc7ee8181498eaf8"
+    },
+    {
+      "path": "app/lib/app/dependencies.dart",
+      "sha256": "bb78c6db7f2ab8c267e853e9c9bab1a17e81126a454da34b2def39d048e8e568"
+    },
+    {
+      "path": "app/lib/app/navigation/app_destination.dart",
+      "sha256": "d360f98f43e6f6195d93868ad074867184d8a59370d18569252a32f56d1843cd"
+    },
+    {
+      "path": "app/lib/app/navigation/desktop_shell.dart",
+      "sha256": "05da84b3eb2033ec8aded494154c4122d1b6610087bb9708dfce2c4e41562c8b"
+    },
+    {
+      "path": "app/lib/app/navigation/mobile_shell.dart",
+      "sha256": "72c9fec6aba4fc63d39ca3b227fd7a8d54e3df61e01d8fd5fdbc497e9be8bbef"
+    },
+    {
+      "path": "app/lib/app/navigation/rainlink_shell.dart",
+      "sha256": "020fb267c215738ef614df04c424abbb6954af3aa8c7262475409e54b9e8b466"
+    },
+    {
+      "path": "app/lib/app/rainlink_app.dart",
+      "sha256": "3669b5ce04933ba3aa77b21ffc240815a16950185f4ae4bca04d51bc8a876f73"
+    },
+    {
+      "path": "app/lib/app/router.dart",
+      "sha256": "c0f49dba397ab580f564da0e4ef5084388eb57f508315daf5b216b48187d71c2"
+    },
+    {
+      "path": "app/lib/application/chains/chain_providers.dart",
+      "sha256": "9b631f7b763816929a375a833ec6fc0198a7659d863e7a7c3100468b90db3f45"
+    },
+    {
+      "path": "app/lib/application/connection/connect_selected.dart",
+      "sha256": "35a42829fcfae7317b33cfac36273ae5fea558a14f122c96384c334caaba41fc"
+    },
+    {
+      "path": "app/lib/application/connection/connection_providers.dart",
+      "sha256": "5f9ebb2a6dc63ed59d9a0304d4b720a87d6836bee797677ec630c2b002ff180c"
+    },
+    {
+      "path": "app/lib/application/connection/mobile_startup_controller.dart",
+      "sha256": "9cf1af94db329d583dfb81d556dc1309f3563332d198dc1b013bdf663c6f218e"
+    },
+    {
+      "path": "app/lib/application/connection/session_controller.dart",
+      "sha256": "f07cfbdb6ba5c2fd24d44b355ce808d7e2beb575b9a7622dfa247fb58bc4ed5a"
+    },
+    {
+      "path": "app/lib/application/connection/traffic_attribution.dart",
+      "sha256": "a035535f19a7f6a26504f752ce1dff2940162325410a87418591afc6c0c8a0d0"
+    },
+    {
+      "path": "app/lib/application/connection/traffic_format.dart",
+      "sha256": "9f06cd80a65af0130a01119d8fed998a87eed718647eae174ffa7ffea13b1075"
+    },
+    {
+      "path": "app/lib/application/core/core_providers.dart",
+      "sha256": "3f55673dfbb6df6115017836aa425337a72a7389ef29af937f5a51fc04bfe6cc"
+    },
+    {
+      "path": "app/lib/application/core/tun_service_controller.dart",
+      "sha256": "567f208888c27e635febf73c1993fce85ac3cc7a6b7efce807be7c59c704ff60"
+    },
+    {
+      "path": "app/lib/application/groups/group_providers.dart",
+      "sha256": "e76d62a668ca3703581216fa859d19900c2b30cc402e675c98812af4ae90b2c7"
+    },
+    {
+      "path": "app/lib/application/groups/subscription_expiry_monitor.dart",
+      "sha256": "25c1e486cdd70e49665f3461cf88ce57c27046b830c167a35b02d3ffd33876f7"
+    },
+    {
+      "path": "app/lib/application/nodes/node_display_info.dart",
+      "sha256": "cc551efa41d51a45a27d6475fb92b0f1d772ca036731760f026a068e94d3b8c1"
+    },
+    {
+      "path": "app/lib/application/nodes/node_latency.dart",
+      "sha256": "9bb7ce30f8b5ec18c979ca349a92973527282cf188b5282159c084f3d3ba9f86"
+    },
+    {
+      "path": "app/lib/application/nodes/node_probe_controller.dart",
+      "sha256": "21c9dc28a5bf25bd54d7a51e17e09137800930eacc40e1bea9579151d2fe6746"
+    },
+    {
+      "path": "app/lib/application/nodes/node_providers.dart",
+      "sha256": "9550885cf42d30a1f6c2bfe552340012084103a3e53eeff88eba81829e5aa265"
+    },
+    {
+      "path": "app/lib/application/preferences/desktop_integration_controller.dart",
+      "sha256": "57bae0fb0bc2fb0c5ae129f7fadab2aab0c2af0df71cb6d5733efaa564ec64cd"
+    },
+    {
+      "path": "app/lib/application/preferences/device_settings_controller.dart",
+      "sha256": "50a001923fffdc69c54e030f8698efe35832ce5cd9159c56e2cba8c72b96d340"
+    },
+    {
+      "path": "app/lib/application/preferences/mobile_integration_controller.dart",
+      "sha256": "14f63634895213e4358a52ad15a9cfef9a64452166bd3ad330816e20ae45d2dd"
+    },
+    {
+      "path": "app/lib/application/preferences/theme_controller.dart",
+      "sha256": "9ca81664561f30ca264f00eeec87eed5cb4fd44803c5bc3767e3c87eb04e53bd"
+    },
+    {
+      "path": "app/lib/application/routing/route_target_info.dart",
+      "sha256": "16b1ae2e30bd2f08970017d0d87e841f1b9ab09768797ac5e680ac48195e7d01"
+    },
+    {
+      "path": "app/lib/application/routing/routing_pending.dart",
+      "sha256": "9524e34011886b7144593d5d650def6aab51a6915e540483fdff65ec2866983c"
+    },
+    {
+      "path": "app/lib/application/routing/routing_providers.dart",
+      "sha256": "1904e13ded06a5d77cda21b1dcbc4077839df729da9b845adb153ebd7a7a96b5"
+    },
+    {
+      "path": "app/lib/application/telemetry/connections_controller.dart",
+      "sha256": "90b5b694b8b498ebe4e1d3363f733ec7cc4e721ea2da77c3cd3246915c5bf2b6"
+    },
+    {
+      "path": "app/lib/application/telemetry/core_log_collector.dart",
+      "sha256": "6255b52b4125f378dc20024e224e2908e3c64866206940b806faf62cc95e7bd8"
+    },
+    {
+      "path": "app/lib/application/updates/app_update_controller.dart",
+      "sha256": "5d1c19876e17f59ea500fad82205cd893e1e0e3aa4d8634087afb9efe29f7869"
+    },
+    {
+      "path": "app/lib/data/chains/chain_records.dart",
+      "sha256": "e036d900faaa13d9fa49731a5d2abd6317e6117cada9308d5aaf160715578290"
+    },
+    {
+      "path": "app/lib/data/chains/drift_chain_repository.dart",
+      "sha256": "00e15f2839b9b1a831ab00b7c62b94200a938dfcda740f84e348171c6329efd1"
+    },
+    {
+      "path": "app/lib/data/database/app_database.dart",
+      "sha256": "0c75bb4fa6890747ef7ddf42d71f1df245dd8b0ec7511ede3253fdb79026d9fd"
+    },
+    {
+      "path": "app/lib/data/database/app_database.g.dart",
+      "sha256": "62ed7b5a602c482d72bc75eecca32e2a0447436c5e1a0eeeea89f6f7b58ba7bd"
+    },
+    {
+      "path": "app/lib/data/database/open_database.dart",
+      "sha256": "d3ae33dc91a4be5882559ee922b7e608e1d43752c50cdd069e2767ab6ee60363"
+    },
+    {
+      "path": "app/lib/data/groups/drift_group_repository.dart",
+      "sha256": "85bced6053612d592d0ca7aae97295d296173acc0b8b27157103e9bb05cb8b7c"
+    },
+    {
+      "path": "app/lib/data/groups/drift_subscription_expiry_store.dart",
+      "sha256": "9c11bc21672505c40641db469c30d96c3dd680f3b016d74b575742c09f81916f"
+    },
+    {
+      "path": "app/lib/data/logs/drift_core_log_repository.dart",
+      "sha256": "836d64992004c7f1399100e44900a8bed18b2843d45cb9cb57d95a9eed999222"
+    },
+    {
+      "path": "app/lib/data/nodes/drift_node_overrides_repository.dart",
+      "sha256": "5ff8b6540df32f631c873c6825c53e64de90741bd6efdce834f2e16ece7c4621"
+    },
+    {
+      "path": "app/lib/data/nodes/drift_node_repository.dart",
+      "sha256": "dfccf88f06ca1a710a50a2536b72ef5574902a0bc4546ee74e8be2ea4c82a7d6"
+    },
+    {
+      "path": "app/lib/data/nodes/node_records.dart",
+      "sha256": "cbb3cc56d9bb88f30478c2c85565f6a857a1355df10b1f8c7a3a4ae4f209398a"
+    },
+    {
+      "path": "app/lib/data/preferences/drift_preferences_repository.dart",
+      "sha256": "c8f523e29bc2b55aa5dbbf4eeaa63b47284bb01fc08761fa959d3d550d33a5e9"
+    },
+    {
+      "path": "app/lib/data/routing/drift_route_repository.dart",
+      "sha256": "d3639d74b0c190c9d6fa75c215fcd41ecb7d15bf15b9f65d5308ccdff6ff1e42"
+    },
+    {
+      "path": "app/lib/data/routing/drift_routing_resolver.dart",
+      "sha256": "b7be577744044284fa8efdaed70cb398cb2aa5bd993ad3184302b7faba30a926"
+    },
+    {
+      "path": "app/lib/data/subscriptions/http_subscription_fetcher.dart",
+      "sha256": "5e9a8b508d9aceb0d81ca0060c89d525b76ab2e8ae1b5417601bcd33662599d5"
+    },
+    {
+      "path": "app/lib/data/subscriptions/singbox_outbound_parser.dart",
+      "sha256": "73a219d5f2c199b91761e472e505bce55f6fa40d6c2d0d40f4cbac387eca981b"
+    },
+    {
+      "path": "app/lib/data/subscriptions/subscription_parser.dart",
+      "sha256": "260af63950f9aaad2c970dcd9165e7e4369841a0a32d094dff54f1e017f05fa5"
+    },
+    {
+      "path": "app/lib/data/subscriptions/tuic_uri_parser.dart",
+      "sha256": "d3a62fa25b07f89b25599728eb956eb81845328c1eb1e11a0b4645747b236198"
+    },
+    {
+      "path": "app/lib/data/subscriptions/vmess_uri_parser.dart",
+      "sha256": "abea792fc2d045145d6a056462b2a7da4d9eb37166410e0cfe4af4b4c00d019c"
+    },
+    {
+      "path": "app/lib/data/traffic/drift_traffic_repository.dart",
+      "sha256": "afd908df17f3e2be3b2379df7aa67c97f4d8552a2c7797b9075270904edc00e8"
+    },
+    {
+      "path": "app/lib/data/updates/drift_update_preferences.dart",
+      "sha256": "cadbd4b92867d200e4885e5e09a951bd0bd36a29929c23bc613d7fba876db5c6"
+    },
+    {
+      "path": "app/lib/data/updates/github_release_source.dart",
+      "sha256": "dbe1e3aef20714b1b2ba9d985ea2d99586d75c597eea9e3208abb35bfa8576b7"
+    },
+    {
+      "path": "app/lib/design_system/layout/app_layout.dart",
+      "sha256": "7bf9afbee1f81cb815d09e36c63fd32c977c64766f37a45d35ce6df3de7e941c"
+    },
+    {
+      "path": "app/lib/design_system/layout/desktop_collection_layout.dart",
+      "sha256": "860bb0515b1c8c254e1b9cb972a7cb5f5438f0be69057ea62030cd4178d9fb99"
+    },
+    {
+      "path": "app/lib/design_system/layout/desktop_page_frame.dart",
+      "sha256": "a31ad090a491bcc8079ca06b6523ae227d022e3359774f52830b33bbbff75950"
+    },
+    {
+      "path": "app/lib/design_system/layout/mobile_collection_layout.dart",
+      "sha256": "74503e3c58c4a0244ebe59686e98ba9432cf62eeb1c42d4aced427a2c96033bb"
+    },
+    {
+      "path": "app/lib/design_system/layout/mobile_page_frame.dart",
+      "sha256": "7ab81eccf4aac7cee00340504fcbcea7dcb8366a6626cfea85d0d27e9dceee7b"
+    },
+    {
+      "path": "app/lib/design_system/theme/rainlink_colors.dart",
+      "sha256": "19ff6d67d98ecb5fe6233ce8b6ce1d992217a89bd04a0bb222491017a61e7b74"
+    },
+    {
+      "path": "app/lib/design_system/theme/rainlink_density.dart",
+      "sha256": "4f500bee8751ab5a08bc4eb0ea0f923bf9f10f4b26c6b212fa2ed9494bbce666"
+    },
+    {
+      "path": "app/lib/design_system/theme/rainlink_theme.dart",
+      "sha256": "b8045a2f8fe2c5dca67dd4ae1f71480f64885659b58835b150689ccdf9d4cc04"
+    },
+    {
+      "path": "app/lib/design_system/widgets/brand_mark.dart",
+      "sha256": "ffe67af3a6b32b2516201882c903f800c75ac9570165d66e74d9a61fc9f8f58d"
+    },
+    {
+      "path": "app/lib/design_system/widgets/desktop_window_chrome.dart",
+      "sha256": "cc7024227bdb3956117a3cc7128170e2420e139ee8d3acb3cd89c93a576ce1d3"
+    },
+    {
+      "path": "app/lib/design_system/widgets/empty_collection_page.dart",
+      "sha256": "02d156fa000e4d42d2c480066202b22558223249df190dcefda624f0265299c4"
+    },
+    {
+      "path": "app/lib/design_system/widgets/empty_state.dart",
+      "sha256": "728a1e124915c1dd8ea180455d7772c92889d5ba86b77a3d661a255ce7ae85ac"
+    },
+    {
+      "path": "app/lib/design_system/widgets/page_frame.dart",
+      "sha256": "4b9a9557599cf942878148fbc9396be09fd057d98874a7463f27ed61891f57a4"
+    },
+    {
+      "path": "app/lib/design_system/widgets/page_heading.dart",
+      "sha256": "c786140aa901a11bcfe765a186a3d72565fbd003bc4a7cb47070c70227311a7f"
+    },
+    {
+      "path": "app/lib/design_system/widgets/rainlink_icon.dart",
+      "sha256": "ecfcbb35f1dfb8d137012a6bd49be20dec5718643c4eebef0b11ab1d3f65c1ff"
+    },
+    {
+      "path": "app/lib/design_system/widgets/rainlink_line_chart.dart",
+      "sha256": "da460eaa73738d3afed729dbef34254f5ba4b3e4560fd348d216550ae327cf18"
+    },
+    {
+      "path": "app/lib/design_system/widgets/rainlink_page_transition.dart",
+      "sha256": "f37bafaec4df801c4da3464bbaaba9c4231ec92e90bbe8aee26ac64b94f4ba9d"
+    },
+    {
+      "path": "app/lib/design_system/widgets/rainlink_segmented_control.dart",
+      "sha256": "999c64d1d85d2ca12f3e2d4b7bf4622f5e6dd30ab599c5fb7596de7d2e1bdcd6"
+    },
+    {
+      "path": "app/lib/design_system/widgets/rainlink_switch.dart",
+      "sha256": "286b172908925c67904e1ec6f4c638e57403c1fb8861e0464c2def4b4e3bfecf"
+    },
+    {
+      "path": "app/lib/design_system/widgets/surface_card.dart",
+      "sha256": "e069c0890f003167a1786003958066c4937d7cfe998cebaecb08efebe6ed7b48"
+    },
+    {
+      "path": "app/lib/design_system/widgets/telemetry_controls.dart",
+      "sha256": "e30d914348978842f50b58f46fafd41e7341bfdd67210b7297cead24537bba3a"
+    },
+    {
+      "path": "app/lib/domain/chains/proxy_chain.dart",
+      "sha256": "5cec158ae2215ee3a14fe90caef1e7efcece290b55a6dc81a68703339ab174a4"
+    },
+    {
+      "path": "app/lib/domain/connection/connection_models.dart",
+      "sha256": "dfbacef1e4ca30f9e7fa97b87b5eca5741a1d157839bd77df40c5c684b86d7d2"
+    },
+    {
+      "path": "app/lib/domain/connection/traffic_history.dart",
+      "sha256": "602da81f8771fc3cbba613523ffa5f696f7af2c367729fc6832c5b1b23750437"
+    },
+    {
+      "path": "app/lib/domain/connection/traffic_repository.dart",
+      "sha256": "5947cb6102d10195302ee3666ca6990b402c30b2e0d2bea946e6999ba5d0f4d0"
+    },
+    {
+      "path": "app/lib/domain/core/advanced_config.dart",
+      "sha256": "eeea6f2b217e9746baf39e07001a4bcca83be5ffe0ec7f69cd7ae54acd10ac9c"
+    },
+    {
+      "path": "app/lib/domain/core/core_gateway.dart",
+      "sha256": "45c7a2b0e57cc3959ea056378a989bb6bb464f104f699b26126c5c031e60810a"
+    },
+    {
+      "path": "app/lib/domain/core/core_status.dart",
+      "sha256": "e5fa86d74a2a31b2b7d8b420e6105e82e1d9eee3efb4c42b2d982d10b94b4924"
+    },
+    {
+      "path": "app/lib/domain/core/core_telemetry.dart",
+      "sha256": "f0fbd4a8103fb150d90b1c5c9105d256bf27aa3315aa7ba313b3f2a2900ddf1f"
+    },
+    {
+      "path": "app/lib/domain/core/runtime_settings.dart",
+      "sha256": "66350d8183372d1834b22529ee8fbf85fcd51cf756a8ed69578e4517bed69290"
+    },
+    {
+      "path": "app/lib/domain/core/session_gateway.dart",
+      "sha256": "598c840fe730023559e5854597361f524f2515c85c1f2a246979408d72ddc0ee"
+    },
+    {
+      "path": "app/lib/domain/export/data_export.dart",
+      "sha256": "b1e476f12cf183d5933b270580dfcb50bbe0b40c74fd8145d702fc93d7280fba"
+    },
+    {
+      "path": "app/lib/domain/groups/node_group.dart",
+      "sha256": "85d0db0261b185bcfc508e5b2c4909fddd4b5a84ed79e6912bea734331966f68"
+    },
+    {
+      "path": "app/lib/domain/groups/subscription_expiry.dart",
+      "sha256": "313af52f457ebc23aa07099fac3335d7c498ba924a1c5ddd7e9ea5f467076a4f"
+    },
+    {
+      "path": "app/lib/domain/groups/subscription_issue.dart",
+      "sha256": "cf5d3c3077b10d075739d305db8848a92a4c9e209eb6a2ca10d9f80f32b38ddf"
+    },
+    {
+      "path": "app/lib/domain/groups/subscription_review.dart",
+      "sha256": "c5b586c0d3989fc8ff51e054c381e0f663aca1505651f95801784b1cabf8cedd"
+    },
+    {
+      "path": "app/lib/domain/identity/record_id.dart",
+      "sha256": "e4dc5a3fffb918f550847d167942f8a73824f1da15667d0dfe86f5299e6f5611"
+    },
+    {
+      "path": "app/lib/domain/nodes/node_overrides.dart",
+      "sha256": "a13903432d41088603ceb03bda1c60aef7bf985bf2922113c28fd2c769f1976b"
+    },
+    {
+      "path": "app/lib/domain/nodes/node_probe.dart",
+      "sha256": "87f2260b61900e039c751c7126af15f7e0e1186944673dcd4004f88175a5031d"
+    },
+    {
+      "path": "app/lib/domain/nodes/node_validation.dart",
+      "sha256": "1f4476a7ee03e41d4bcdcb6342f7ee138568e42052b01ea987280d011db859ca"
+    },
+    {
+      "path": "app/lib/domain/nodes/proxy_node.dart",
+      "sha256": "61a849d7a0342851a16a4cf5fb2ed59720c8ce4b78acf78b7bfe1d19589a7ae9"
+    },
+    {
+      "path": "app/lib/domain/platform/app_notifications.dart",
+      "sha256": "666e5ed7dc92ce9f8d8883df36f4bbcb78067d71dc83c6176ebcac1f26cc7d25"
+    },
+    {
+      "path": "app/lib/domain/platform/desktop_integration.dart",
+      "sha256": "fbc3726c909d5b4e84e6450a007e4b568f29f615658306f3ac0012621d44b8a8"
+    },
+    {
+      "path": "app/lib/domain/platform/mobile_integration.dart",
+      "sha256": "afe3d7ea661f391724efd4ea4522fad92f84bf19bf48cae3957e92ba428aa467"
+    },
+    {
+      "path": "app/lib/domain/platform/tun_service.dart",
+      "sha256": "74d8bb2640289d5b46f0b9eae75ef453ef3a32ffff46d4a32e7fd6d423f5a931"
+    },
+    {
+      "path": "app/lib/domain/preferences/app_preferences.dart",
+      "sha256": "538f64c3cddce3f551ee0809b398f545d6d0658cdba6b4cc40a8fab8b1fe9613"
+    },
+    {
+      "path": "app/lib/domain/preferences/device_settings.dart",
+      "sha256": "fb1fe27fe32f5a56c40c3219c11f56e3fd2f053d1370b3e69aa73534e44d5a2a"
+    },
+    {
+      "path": "app/lib/domain/preferences/general_preferences.dart",
+      "sha256": "41b54a6a9ea81cc68f8776a88094a992d04844d2539259c54412d166a57319e4"
+    },
+    {
+      "path": "app/lib/domain/routing/route_binding.dart",
+      "sha256": "db5003d7fe7818f00ceb12455313cbfdb182b9129c54f75fad4ad6e417710de0"
+    },
+    {
+      "path": "app/lib/domain/routing/route_rules.dart",
+      "sha256": "6bf7953a5a58ff344bf031cd282771025a3b4c8b09151c0f8faf4cf7f5e3c213"
+    },
+    {
+      "path": "app/lib/domain/routing/routing_plan.dart",
+      "sha256": "a697d82faf70fb6d397b981fd72548551daf050232bbf38724ba57743f42a871"
+    },
+    {
+      "path": "app/lib/domain/updates/app_update.dart",
+      "sha256": "6a268f3bcc2d7c9674ce170c00484205b7718f09af05e679cd97a87265482d8c"
+    },
+    {
+      "path": "app/lib/features/chain/presentation/chain_node_picker.dart",
+      "sha256": "ea8f3917fb5e3b444c73f08010fac6bc2ab790f1c4f14846d305f1fbab0a2d46"
+    },
+    {
+      "path": "app/lib/features/chain/presentation/chain_page.dart",
+      "sha256": "914b51f98f77570cfe0854aaab985a40f4c88f955093923e1ecf267cc668fa5e"
+    },
+    {
+      "path": "app/lib/features/connections/presentation/connections_page.dart",
+      "sha256": "453db637b6d7c3967b016ffba997ca9007da5fa280b796707320f78d0bfd517f"
+    },
+    {
+      "path": "app/lib/features/groups/presentation/group_details_dialog.dart",
+      "sha256": "81ca2063da39321be9d9ada173c070a8aa9b290e5311bf7899c3ff9e08d5ff02"
+    },
+    {
+      "path": "app/lib/features/groups/presentation/groups_page.dart",
+      "sha256": "99938d5c8a5fc0de9eea3e7f380160bc328c1501cf418a00349911a98aef2931"
+    },
+    {
+      "path": "app/lib/features/groups/presentation/subscription_review_panel.dart",
+      "sha256": "b088180cbcbf6cc1331151b551652c8f5b7fb77790b66f3fe557cfd35d5f090e"
+    },
+    {
+      "path": "app/lib/features/logs/presentation/logs_page.dart",
+      "sha256": "0efbadd436287b974b481a4669f04c2d994ae66e5dd5065408abf8c7c144f220"
+    },
+    {
+      "path": "app/lib/features/nodes/presentation/desktop_node_toolbar.dart",
+      "sha256": "129bea23c672b0eb5bffe80e8857f9bc1c4cd6f19d629889734f02aa9ca18d73"
+    },
+    {
+      "path": "app/lib/features/nodes/presentation/mobile_node_toolbar.dart",
+      "sha256": "e90480b1c5a75e5064482a4da9c96132509767471b1cc95f03fb0742c55847bb"
+    },
+    {
+      "path": "app/lib/features/nodes/presentation/move_node_dialog.dart",
+      "sha256": "1e986f21d4e877d3799760ecf85d2d5efce86bcc4ea55cd917bb67943a865bbf"
+    },
+    {
+      "path": "app/lib/features/nodes/presentation/node_alias_dialog.dart",
+      "sha256": "bbd591bf200b59c497eb8f37e22dea4250197771f82fef310d47be53e629708f"
+    },
+    {
+      "path": "app/lib/features/nodes/presentation/node_editor_dialog.dart",
+      "sha256": "6e78be67aef60b428ae6f7f7618e298a135e334870f35d02fc8768ecaf299768"
+    },
+    {
+      "path": "app/lib/features/nodes/presentation/nodes_page.dart",
+      "sha256": "077bdbede081044a70ba10702735d6c5430bb2594916b70e4c2748fa232e41ef"
+    },
+    {
+      "path": "app/lib/features/nodes/presentation/widgets/node_controls.dart",
+      "sha256": "edc6ed4efa237ee53c9f0b0a85246e5d9bb477785fba9baecdf45f1f6b579bff"
+    },
+    {
+      "path": "app/lib/features/nodes/presentation/widgets/node_identity.dart",
+      "sha256": "a39b90d9862277fb67862abb63a0964acdce104ab63c9ac94ba51185d5687d81"
+    },
+    {
+      "path": "app/lib/features/nodes/presentation/widgets/node_row.dart",
+      "sha256": "187366786e230bb31e8e616f1576d8f57beafd8158503964ba0796f6cd5f0772"
+    },
+    {
+      "path": "app/lib/features/overview/presentation/desktop_overview.dart",
+      "sha256": "648c271aa9ca98ad87e8e91fca3dcd33619fba9b6c6dc28bc4ff1e49104bd79a"
+    },
+    {
+      "path": "app/lib/features/overview/presentation/mobile_overview.dart",
+      "sha256": "bcceb5ad2559c1f98123eb991002772d181c449f11bf787dfe30d92dd79c2cd2"
+    },
+    {
+      "path": "app/lib/features/overview/presentation/overview_page.dart",
+      "sha256": "fdd5f48af5b4eea44cc6e0e95a5f68421eef6c8e856de95673793a52292f2ab2"
+    },
+    {
+      "path": "app/lib/features/overview/presentation/widgets/overview_cards.dart",
+      "sha256": "ba18bf8bf2f3cf629443e0e3ff79bb3a974bc42f349b1577cba32c3d419219ab"
+    },
+    {
+      "path": "app/lib/features/overview/presentation/widgets/overview_recent_connection.dart",
+      "sha256": "640dc1cd2614ce6573cc013c9bc84195488146026535d72941109534d701d53b"
+    },
+    {
+      "path": "app/lib/features/rules/presentation/rule_editor_dialog.dart",
+      "sha256": "661c41ff101b8bd62de260c01f9525987e5ea8e105ff21e41e07e3edc559cd36"
+    },
+    {
+      "path": "app/lib/features/rules/presentation/rules_page.dart",
+      "sha256": "0dedd401b6882c9877d3827bbb60f3d2d600852ac23aa5c706ee73c24449e6d1"
+    },
+    {
+      "path": "app/lib/features/settings/presentation/desktop_settings.dart",
+      "sha256": "d413226894d65d457bfdd3ad8729a01bd84fa86db510e10d5919dabc6d6f03ca"
+    },
+    {
+      "path": "app/lib/features/settings/presentation/mobile_settings.dart",
+      "sha256": "9097bebd8b44c43079a68205f718d46f996f5d6457a052a79f40bc0cb8312f90"
+    },
+    {
+      "path": "app/lib/features/settings/presentation/settings_page.dart",
+      "sha256": "dac905fe008f1496698fbae763b2951ec7eaf1b65285c56d802f8c5960110495"
+    },
+    {
+      "path": "app/lib/features/settings/presentation/settings_section.dart",
+      "sha256": "f832fa1370f07e3c3f386f5d01ba08823e5e145f6d78f185603a2cbad9c6b30f"
+    },
+    {
+      "path": "app/lib/features/settings/presentation/widgets/advanced_settings_panel.dart",
+      "sha256": "d214f3c21c0f6b7dce459fb0096ba5cd6179452b79dd862c041fe1a14e392422"
+    },
+    {
+      "path": "app/lib/features/settings/presentation/widgets/general_settings_panel.dart",
+      "sha256": "f59e509c618f892ed90a158be99bb4ba1a5c0def9e8ab0e6336de2c6336f3a96"
+    },
+    {
+      "path": "app/lib/features/settings/presentation/widgets/mobile_general_settings.dart",
+      "sha256": "a5b643229ac88794781e6a8dfd9ceccdf80f3b999b91ebf0229e45bd62f3f220"
+    },
+    {
+      "path": "app/lib/features/settings/presentation/widgets/network_settings_panel.dart",
+      "sha256": "f58003a28e6cc062e40f536cf1ff270cedd69fa972681ad08d5ec7c7b8deb096"
+    },
+    {
+      "path": "app/lib/features/settings/presentation/widgets/settings_navigation.dart",
+      "sha256": "e66a1801f5ad6e950bf5b3eed77bd032d614dd4b1519a083444209e5116e6188"
+    },
+    {
+      "path": "app/lib/features/settings/presentation/widgets/settings_panels.dart",
+      "sha256": "e289e74de6a2efb4ce233a6b9584b16d8a1b4aa5e964cd78d816c7222f8afb7b"
+    },
+    {
+      "path": "app/lib/features/settings/presentation/widgets/settings_rows.dart",
+      "sha256": "0b4c742448bceb4d6dfe6f3017deae9aeaee8ea61e1545809ed3a741b254fbc7"
+    },
+    {
+      "path": "app/lib/features/settings/presentation/widgets/tun_service_panel.dart",
+      "sha256": "033ed8115e0686f26b1af6ee8fabb8bfdb9ba0641662667cae53e34220cb716f"
+    },
+    {
+      "path": "app/lib/features/settings/presentation/widgets/update_settings_panel.dart",
+      "sha256": "2218fe928ed2b72d6ef7d66d3db07d2622465012ff53081abcb2334a120862eb"
+    },
+    {
+      "path": "app/lib/features/traffic/presentation/traffic_chart.dart",
+      "sha256": "2ea4ab0222089a2e92d029d07826c307819cf25fd24ee2a54e898c643f70b915"
+    },
+    {
+      "path": "app/lib/features/traffic/presentation/traffic_page.dart",
+      "sha256": "f64a268e2f8d9f491fd67521402758c476a141a14f0e0c910003dbc95692440c"
+    },
+    {
+      "path": "app/lib/features/traffic/presentation/traffic_ranking.dart",
+      "sha256": "117bd22455b8346e14bf065cf4f87063a202a3751a7a59155ff1e0b5c07575fd"
+    },
+    {
+      "path": "app/lib/features/traffic/presentation/traffic_summary.dart",
+      "sha256": "ee03ff5dc8ae2aa0aeb950476ad18a3b2c5723f6070e738a0bce460c6bfbfd81"
+    },
+    {
+      "path": "app/lib/main.dart",
+      "sha256": "930d4b3336c900cca7962c87a90c98b370d968a93172ce69805ab63dc30e5051"
+    },
+    {
+      "path": "app/lib/platform/core/android_core_gateway.dart",
+      "sha256": "4f86da3cee897f1cf39ef9becf22c17a18f819d66d5d93d26d5b489d40daefd0"
+    },
+    {
+      "path": "app/lib/platform/core/core_telemetry_protocol.dart",
+      "sha256": "9da59871a8c076a82b922aecbfdd95cf07042173239ba7d91bb12f484b44e0b0"
+    },
+    {
+      "path": "app/lib/platform/core/desktop_core_gateway.dart",
+      "sha256": "ecc2af554e9cc1804126d6f380b57fc1ce02c1aefaefb329a6c9703214fcc96c"
+    },
+    {
+      "path": "app/lib/platform/core/desktop_probe_gateway.dart",
+      "sha256": "37ae7229e8226867dc2bd36d963b7af0427a6428dff37df43b1577139b1452cb"
+    },
+    {
+      "path": "app/lib/platform/core/desktop_settings_gateway.dart",
+      "sha256": "f16bbcd83e0a1ab97b0f240d6fbc5f307bf21da6081079678095cc89eb6b2b02"
+    },
+    {
+      "path": "app/lib/platform/core/host_command_runner.dart",
+      "sha256": "d702c24a54ed84401308a09a6a70774261d428770ff51b22c79c49dbe8619b41"
+    },
+    {
+      "path": "app/lib/platform/core/host_session_client.dart",
+      "sha256": "dc3e68fc21354b57ec2bcc1aea0d643e0db860570096b3218409c280df5a8aa0"
+    },
+    {
+      "path": "app/lib/platform/core/host_status_protocol.dart",
+      "sha256": "515a138ac2954f821ae2dc7da5f5abed2e29a9990775143c3ad9a61f0e637dbc"
+    },
+    {
+      "path": "app/lib/platform/core/linux_tun_service_gateway.dart",
+      "sha256": "e04c80686a6faf52e821bba9e9777ac132d78918c064efa17dc045782ddc119a"
+    },
+    {
+      "path": "app/lib/platform/core/session_protocol.dart",
+      "sha256": "c2588cb309100d2837299dfffd17ded2d4b73d5bd05e6b5e6593f3dc12a612ac"
+    },
+    {
+      "path": "app/lib/platform/core/session_request_protocol.dart",
+      "sha256": "2f9bdb7e041282a81445afa3908c5e1f11d09a9999e553e47f4940deef21ece5"
+    },
+    {
+      "path": "app/lib/platform/core/unavailable_core_gateway.dart",
+      "sha256": "45113c8278c651da8aa48adfa03848d303e99fa5b38ecdbc90fbe46b80e9c28b"
+    },
+    {
+      "path": "app/lib/platform/export/android_document_export_service.dart",
+      "sha256": "138fd58bc4537c5da5d8b5fe8a24743440be345d147b61c767a82e362fc2cceb"
+    },
+    {
+      "path": "app/lib/platform/export/file_data_export_service.dart",
+      "sha256": "cd61b527f04a9ba34002f540632892c32f800d13a1b0db27f874abac40e7c6a7"
+    },
+    {
+      "path": "app/lib/platform/notifications/android_mobile_integration.dart",
+      "sha256": "e096aa9f68b78e6b003947f776d1373cb5ca35e11d9a6c0e2b4001430e7aad89"
+    },
+    {
+      "path": "app/lib/platform/updates/file_update_downloader.dart",
+      "sha256": "2bcd70f8203aae584eac518d265a145deb0d914d88143416678572032482da79"
+    },
+    {
+      "path": "app/lib/platform/updates/process_update_installer.dart",
+      "sha256": "4ba10f60a8534bf2c10028c702e3a9f88327997d11f522a9a081650616585e3f"
+    },
+    {
+      "path": "app/lib/platform/updates/windows_update_startup.dart",
+      "sha256": "3838904818e3cf099b7e720a87179e9c5df27073cc52811df3619f8aab96ca29"
+    },
+    {
+      "path": "app/lib/platform/window/desktop_session_guard.dart",
+      "sha256": "d9535dbe3c3d7c1eba5c3561fb9f00586a15e5612d4bd8cc0bafde453699b8ca"
+    },
+    {
+      "path": "app/lib/platform/window/desktop_window.dart",
+      "sha256": "dedb04fc7b70757449d479ca5322378f70309967fe228704750435e8192c8fad"
+    },
+    {
+      "path": "app/lib/platform/window/linux_desktop_integration.dart",
+      "sha256": "440e6a5a6b759de4c8070b915fed48a4c027dd0d279aff478df53cd02e130e62"
+    },
+    {
+      "path": "app/lib/platform/window/native_desktop_integration.dart",
+      "sha256": "57babee4bf7fb59309205948ce46d02753ea1be1340db925fd15e0682a89c5d7"
+    },
+    {
+      "path": "app/lib/platform/window/windows_desktop_integration.dart",
+      "sha256": "f0bcbad7909eaa74fbcb7575ec5173a659e9a61118692013cda5617a7a5f7311"
+    },
+    {
+      "path": "app/linux/.gitignore",
+      "sha256": "d7bbeac6ba86e2d94d8ccc63a1a2fbbac5ee7467f52f75c168165412d6ac3b60"
+    },
+    {
+      "path": "app/linux/CMakeLists.txt",
+      "sha256": "37719ca00675d98eb30831d752167744da3ceff4d5d334c23a465174e2ca559b"
+    },
+    {
+      "path": "app/linux/flutter/CMakeLists.txt",
+      "sha256": "4eb17836308c1cd53f6b2bb8edb3b7b30610bff3b1d9df7fecc9317f9109700c"
+    },
+    {
+      "path": "app/linux/flutter/generated_plugin_registrant.cc",
+      "sha256": "8e7101a56aae9f839e21d7d79b8825df53d0af41f3edf76eb6969e52b4200bd6"
+    },
+    {
+      "path": "app/linux/flutter/generated_plugin_registrant.h",
+      "sha256": "00f93bb5b1faefdede8f6065df327522900fb0b8efee86bacf424fd947ed14bb"
+    },
+    {
+      "path": "app/linux/flutter/generated_plugins.cmake",
+      "sha256": "78d28013bc40e227acda6606b30f4b39442be584a4502bce1ffa1d6be23d85df"
+    },
+    {
+      "path": "app/linux/packaging/dev.rainlink.rainlink.desktop",
+      "sha256": "6f049299a0648753db815f5768724fd4448289070b19e305b8c526ef41a3da3d"
+    },
+    {
+      "path": "app/linux/runner/CMakeLists.txt",
+      "sha256": "299fd5d8a2c9fbab5995a1f91d7d3533c139e179e90b1114a8f7989ff4d4b2e8"
+    },
+    {
+      "path": "app/linux/runner/desktop_autostart.cc",
+      "sha256": "7466027e0d693196009659d4becfe33dca2a0008a011bfb0d7c46d67e62f777a"
+    },
+    {
+      "path": "app/linux/runner/desktop_autostart.h",
+      "sha256": "0c0833a43a809130d27984649bf25f9774ed1fbed778c6caf8f9872d4258a30a"
+    },
+    {
+      "path": "app/linux/runner/desktop_channel.cc",
+      "sha256": "ff72ac32d410b09e1fede72156bc9313161a00d4e29c5de68913d3cab7a5c724"
+    },
+    {
+      "path": "app/linux/runner/desktop_channel.h",
+      "sha256": "287b2058afd5209e1023399a5fb8f210d6c80e47edac40a0b4e6811a665a2515"
+    },
+    {
+      "path": "app/linux/runner/desktop_integration.cc",
+      "sha256": "9f7858fdba2b0a5773d9a12faa0ea30ab54c2438572322be2cb061f492ca2771"
+    },
+    {
+      "path": "app/linux/runner/desktop_integration.h",
+      "sha256": "49998dcea7177345295fb1c80c395fb225b074360a3afa5a4b95531072d95c8c"
+    },
+    {
+      "path": "app/linux/runner/main.cc",
+      "sha256": "905b4dfa4eab584c1eb6244899b7d5ef56d0bceaf3bffb5ea335ed7e0ba3c549"
+    },
+    {
+      "path": "app/linux/runner/my_application.cc",
+      "sha256": "91016bbce93085d21f0b53fc25c40577facd0c51c6c9c05c9c605665abfda696"
+    },
+    {
+      "path": "app/linux/runner/my_application.h",
+      "sha256": "b9be2b58ead9fa2fa3422636120e85ea8ee2a600aa0b42e268cb8ff0ae4b9b5d"
+    },
+    {
+      "path": "app/linux/runner/resources/rainlink.gresource.xml",
+      "sha256": "585e98408d84c660dd877bb1227256e8f8d2ff9fa1333f23cca4f546eaeda04b"
+    },
+    {
+      "path": "app/linux/runner/resources/rainlink.png",
+      "sha256": "5819b5d2e0b47653685a072f5d9579d2eb08fcdda5bf77fb667390554de964cb"
+    },
+    {
+      "path": "app/macos/.gitignore",
+      "sha256": "236a523a43625a2d63af3cd0f2ce8600a3668846f8cb278c1c7c5cbfd4aa4088"
+    },
+    {
+      "path": "app/macos/Flutter/Flutter-Debug.xcconfig",
+      "sha256": "7e9b3ee3961b7d7718b418ceaed812a5f06a4e4cec894aae712a78e159c32ab0"
+    },
+    {
+      "path": "app/macos/Flutter/Flutter-Release.xcconfig",
+      "sha256": "7e9b3ee3961b7d7718b418ceaed812a5f06a4e4cec894aae712a78e159c32ab0"
+    },
+    {
+      "path": "app/macos/Flutter/GeneratedPluginRegistrant.swift",
+      "sha256": "ee14ac185a652b0774c0ef4fe159ed244eda8d10d0ef0663390e9113583bce7e"
+    },
+    {
+      "path": "app/macos/Runner.xcodeproj/project.pbxproj",
+      "sha256": "1d47fb745a42f10a7f96499777cf14bc4f2e608fa47c84db68a2003cf91470c6"
+    },
+    {
+      "path": "app/macos/Runner.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist",
+      "sha256": "d557c2c32fc6258ec28981fa45dc847b76c9968beb90a2e26d13ef9c4ea45c30"
+    },
+    {
+      "path": "app/macos/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme",
+      "sha256": "5e1e83e9730e81bcd60eb89a72090ca0c7ed9bb3c04455b318a0e4ddd4923d4d"
+    },
+    {
+      "path": "app/macos/Runner.xcworkspace/contents.xcworkspacedata",
+      "sha256": "706a4c812f2a1e220e6785c27580020d58048e2ae4d30d1280f3c43344ce6b38"
+    },
+    {
+      "path": "app/macos/Runner.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist",
+      "sha256": "d557c2c32fc6258ec28981fa45dc847b76c9968beb90a2e26d13ef9c4ea45c30"
+    },
+    {
+      "path": "app/macos/Runner/AppDelegate.swift",
+      "sha256": "5b9cbdcb563ad8578a99b7c283958490e4af537322e9092fe1efbb3c29ab3e1b"
+    },
+    {
+      "path": "app/macos/Runner/Assets.xcassets/AppIcon.appiconset/Contents.json",
+      "sha256": "992ba63d183dfb8f8e3af38ac203d834d23c004da1417c438b4c5a3d7d1d7103"
+    },
+    {
+      "path": "app/macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_1024.png",
+      "sha256": "86ae368726b6787d26e73f1c4d0861355018761f66033edde5417169b70ad416"
+    },
+    {
+      "path": "app/macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_128.png",
+      "sha256": "c42a37318aa343ff53b281df31b56e549cdc1b800fe3ab0e48f7ca7fc75c9aff"
+    },
+    {
+      "path": "app/macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_16.png",
+      "sha256": "ad89083023ebecba8b158eae9cef9738a6c3d77198ac1205298fba8c1bc4ef79"
+    },
+    {
+      "path": "app/macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_256.png",
+      "sha256": "7295321302b1542e27a2dabd78ce02c6de653799289e48ae127609323a43fb07"
+    },
+    {
+      "path": "app/macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_32.png",
+      "sha256": "2b671835acb3b766262eaf9d039d8ef26b1d50b899bcd32d602f68963fbf5594"
+    },
+    {
+      "path": "app/macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_512.png",
+      "sha256": "5819b5d2e0b47653685a072f5d9579d2eb08fcdda5bf77fb667390554de964cb"
+    },
+    {
+      "path": "app/macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_64.png",
+      "sha256": "f7d2b0159fb90e3549258055ee58345f900a4622f8461a22cd1a6323cf3d2fa9"
+    },
+    {
+      "path": "app/macos/Runner/Base.lproj/MainMenu.xib",
+      "sha256": "776c35481f6581f14148b90071558b25f6ce6262e771988985e9fe8d3e70a472"
+    },
+    {
+      "path": "app/macos/Runner/Configs/AppInfo.xcconfig",
+      "sha256": "6e4bee28a7fcb5bc6c346b5a2c031e99c56ba207144a83860db34c912c109295"
+    },
+    {
+      "path": "app/macos/Runner/Configs/Debug.xcconfig",
+      "sha256": "86be603022e2a385dd7884fce4cc29255676c3dda579d3d4a56c958bf1e57de0"
+    },
+    {
+      "path": "app/macos/Runner/Configs/Release.xcconfig",
+      "sha256": "d1bf3f0349aadd5c58ee9d46c0ce4ce45467127c438936e9bb481d861d296565"
+    },
+    {
+      "path": "app/macos/Runner/Configs/Warnings.xcconfig",
+      "sha256": "aa8ded4c14068cb05f51f5446509fe56805cf1e29961ad6d5a97233bb0632bc1"
+    },
+    {
+      "path": "app/macos/Runner/DebugProfile.entitlements",
+      "sha256": "b2aa41d03e18907d360b721b7bb3edb302897c8a3de98ec47b6665033fea0b0e"
+    },
+    {
+      "path": "app/macos/Runner/Info.plist",
+      "sha256": "047f9cb0f1122c04589483beaedbbe23492fdc8946b94e09bb13080736af4f93"
+    },
+    {
+      "path": "app/macos/Runner/MainFlutterWindow.swift",
+      "sha256": "8178ad756f958f986f794a8bb06e321a6630ceaaf8f235b3b4ae3936e415dc7c"
+    },
+    {
+      "path": "app/macos/Runner/Release.entitlements",
+      "sha256": "c3b881c72aa4cca9cf50da6654c4d675dec929056692af46a6fbecd00aef5990"
+    },
+    {
+      "path": "app/macos/RunnerTests/RunnerTests.swift",
+      "sha256": "8a0ff977c64ceac0750fffa48087988b7b4125d1b1c49019221e7fffb574423e"
+    },
+    {
+      "path": "app/pubspec.lock",
+      "sha256": "a4a75323cc72c78d78976ccd4cc2008ec67e56d6bac46b9d83342ec68126dc68"
+    },
+    {
+      "path": "app/pubspec.yaml",
+      "sha256": "a9a096868be0eb37fd6d163afaeee9bc6dcea6ed52b0e3ab5d2e5b58d5722544"
+    },
+    {
+      "path": "app/test/advanced_config_controller_test.dart",
+      "sha256": "8548f6da05e14efa8c945b90f3832b1810f648859e93c8a0f26599d618f71013"
+    },
+    {
+      "path": "app/test/advanced_config_test.dart",
+      "sha256": "0e00341d4e44ed0dae9ee2319f8c221bfa09fb3559126b229234f5b00eb61c47"
+    },
+    {
+      "path": "app/test/android_core_gateway_test.dart",
+      "sha256": "91c29a355ff29af9e55c66bc90f06538f862a5b527edc3469352ec26ecaf66ef"
+    },
+    {
+      "path": "app/test/android_document_export_test.dart",
+      "sha256": "255c90e09b94ab1cfaa8ab9b4f1391b023610e8aaac531d96cadde4cc0014876"
+    },
+    {
+      "path": "app/test/android_telemetry_test.dart",
+      "sha256": "d6c2209fe51c1aec04fae76e5650bad339408072a485514fbc87c8a5607fb2ca"
+    },
+    {
+      "path": "app/test/app_test.dart",
+      "sha256": "b369a81fc8761546461294ddb78915396a854d8b346ef1a00ad4ae56991ba42f"
+    },
+    {
+      "path": "app/test/app_update_controller_test.dart",
+      "sha256": "5deed8cf079d5b8804f6a93bc5dd844a1ed7e197daa21bafb14c4aafc1f6e3d4"
+    },
+    {
+      "path": "app/test/app_update_receipt_test.dart",
+      "sha256": "c4466c6d9881a0d30914aa57d1675ff74f78407c398da9fd40c6753d54b9fb17"
+    },
+    {
+      "path": "app/test/app_update_transport_test.dart",
+      "sha256": "ecb0f69c8ae5af0e27855a7a3aca20dbc7ec7203b9d149fd0f3af28c8cbfa29a"
+    },
+    {
+      "path": "app/test/app_update_ui_test.dart",
+      "sha256": "bd027c69edf1f3e0a49028302ea86ef3f16d48f36588c2f03bb7ffd9aaa187c6"
+    },
+    {
+      "path": "app/test/bootstrap_failure_test.dart",
+      "sha256": "1da23c2e9947f7b19845b797f05700270daca12f913a458688b8098bca4bcf66"
+    },
+    {
+      "path": "app/test/chain_ui_test.dart",
+      "sha256": "f4dd7ab8e5055ccd85b9efb9c3436eb7ef5e1230e190fc5f3da089899b518869"
+    },
+    {
+      "path": "app/test/chains_test.dart",
+      "sha256": "521ae01cc4b342406a46a9137d228bd197e20ff81756fd384f20873def43fffd"
+    },
+    {
+      "path": "app/test/core_gateway_test.dart",
+      "sha256": "faf86c975574a0db7188b296ea8888df7f3e284e2c9b5d48f3c03dc0a95f5355"
+    },
+    {
+      "path": "app/test/core_telemetry_test.dart",
+      "sha256": "b6dbbc4b67d5e5ceab6796a19e89062f9348a276c9ca16a6ad4977d73a1c140b"
+    },
+    {
+      "path": "app/test/density_ui_test.dart",
+      "sha256": "ae7c947ce7692d2e647f4407e929209e4544cedb6d171ed4a8220fa29fa06c38"
+    },
+    {
+      "path": "app/test/design_assets_test.dart",
+      "sha256": "47c068dc9654df9ee753a08b07d5264fdc57cfe2b4175bdf26db2adf94390ddc"
+    },
+    {
+      "path": "app/test/desktop_core_gateway_test.dart",
+      "sha256": "dc48068ef181dcbca0122555dc3606ab7c54cdc5312ed959664454c8003eaff1"
+    },
+    {
+      "path": "app/test/desktop_integration_test.dart",
+      "sha256": "1c591047487fb515510d473059d877015250c9e6ab52786d692d3c68cb63904b"
+    },
+    {
+      "path": "app/test/desktop_window_chrome_test.dart",
+      "sha256": "4434f0b441a5e3c7924c87a3fbd7c9e97df3496d7bf119bd1f7681e9a7101a7e"
+    },
+    {
+      "path": "app/test/device_settings_test.dart",
+      "sha256": "028411aa4a70dc9f24812a02aa79f2ae39b851d1ae3e6e14e48f9553aab88e23"
+    },
+    {
+      "path": "app/test/group_repository_test.dart",
+      "sha256": "111979e4af12a0b44ec178d8ed64f40d66b185e8ff0aa067d058705ebbb5339b"
+    },
+    {
+      "path": "app/test/host_command_runner_test.dart",
+      "sha256": "2e06cd1d0afa1cf486d468f53d67dcb4c9e9670c52e9a7caf973605480b022e3"
+    },
+    {
+      "path": "app/test/hysteria2_test.dart",
+      "sha256": "72e6e27669a4dc8208c69e5feff91234d23e1018a6d60bb9ad52bfeb8316de52"
+    },
+    {
+      "path": "app/test/linux_desktop_integration_test.dart",
+      "sha256": "8c60f1c5d94d0a6922593252a1dba9cfff02c44c9b7658f4c00a361305da4ffd"
+    },
+    {
+      "path": "app/test/local_proxy_fixture_test.dart",
+      "sha256": "21889d2d9eaee73c8ab511318e03e8053a5b77a068552c465ad1092f89c78923"
+    },
+    {
+      "path": "app/test/mobile_integration_test.dart",
+      "sha256": "febbc3a277ff5cf6a097f0d0f0fbed030d36db383065aa3bcf4e41f567ed6761"
+    },
+    {
+      "path": "app/test/mobile_settings_ui_test.dart",
+      "sha256": "f14072315c406327608ec04851ff6225a2060707ca521359bf35ad6f0f311a4c"
+    },
+    {
+      "path": "app/test/node_display_info_test.dart",
+      "sha256": "f9fa140614bc3e13c3dc1129e8eaa99695b68644473d3f90a14acfd4d26926bf"
+    },
+    {
+      "path": "app/test/node_identity_ui_test.dart",
+      "sha256": "01b40888f5cec64ded829b4fad63a00c820544250341a508f0cb6e4f016dcc99"
+    },
+    {
+      "path": "app/test/node_management_ui_test.dart",
+      "sha256": "987a3b1c5f317b126839c5d9397f1f8779cd30ef874af38948fe502137575132"
+    },
+    {
+      "path": "app/test/node_overrides_test.dart",
+      "sha256": "d948690da7837cec9fb4d513d0e663eb8aa0069f983ad1b1eeb39e75d40e6e1b"
+    },
+    {
+      "path": "app/test/node_probe_test.dart",
+      "sha256": "89c737ad1583d09c768f8b92a82329d78049c6ea5e89dd1bc2d59d1d25d12d10"
+    },
+    {
+      "path": "app/test/node_repository_test.dart",
+      "sha256": "7d0ee33d047ca36b77ca4ae439e2b613b81e67fdffff6b8ea967a8254cd99953"
+    },
+    {
+      "path": "app/test/overview_connections_test.dart",
+      "sha256": "d111b882fa87453047d2b756b2f94a0c564cffa57a48064a54031e6f528ba6af"
+    },
+    {
+      "path": "app/test/platform_layout_test.dart",
+      "sha256": "c390a6ce5ec4504ec06e69b66e65f753425d54f6e78adb0bd101131d4a09e9d2"
+    },
+    {
+      "path": "app/test/protocol_editor_test.dart",
+      "sha256": "a25e80b5bcc76e21f44760fb4b2982447be4c79ab419b22dcc7cbd23dbb37d25"
+    },
+    {
+      "path": "app/test/routing_test.dart",
+      "sha256": "ee476b34ff1c7cc727a24b45a887171d55de0e257db859a4a113a40ee978de63"
+    },
+    {
+      "path": "app/test/rules_ui_test.dart",
+      "sha256": "edf0b11604ef89522b2a0d6c37805fffb3c04396c5440823b09d37e68dfd07eb"
+    },
+    {
+      "path": "app/test/session_controller_test.dart",
+      "sha256": "7f2c0658b327bdf2798badf43f3b1dd4ab0e0aa6d1db8d9e0067dca3f1e45bdb"
+    },
+    {
+      "path": "app/test/session_protocol_test.dart",
+      "sha256": "cc6ef6ceb74b5c92fc1a947f6d2d1d070723898273ef4ede48bd199014cf5dda"
+    },
+    {
+      "path": "app/test/settings_ui_test.dart",
+      "sha256": "b1bd18165c14b12e97b140039678e79dc5f2c8301164d4324de7eb11f4b0f896"
+    },
+    {
+      "path": "app/test/singbox_subscription_test.dart",
+      "sha256": "045b38fb649bd536d8954d413ff3e243c58b7a28661698c3d2329e6526966371"
+    },
+    {
+      "path": "app/test/subscription_controller_test.dart",
+      "sha256": "11e9b3c30b28932e18b7e7d6d57e8e4ab6f9d183ad84335bcf4f858a088009eb"
+    },
+    {
+      "path": "app/test/subscription_expiry_test.dart",
+      "sha256": "47b0165e200b0b9775b8ab46b339178eece4686e90475aaa1ffe7c2a37f3de3a"
+    },
+    {
+      "path": "app/test/subscription_fetcher_test.dart",
+      "sha256": "659ac1db58c8c5f8a93b2e5f5bd05cd2ce39a0d23ccd1939d4f1f72d6fcf344b"
+    },
+    {
+      "path": "app/test/subscription_parser_test.dart",
+      "sha256": "95b4a65630f40892a3e1370b060c2598b699ce2b671140b56b2ea251c3daa6cb"
+    },
+    {
+      "path": "app/test/subscription_review_test.dart",
+      "sha256": "16c18f977a5806d6f1f584779f77c3d4f660f866ba6495e247825214b894da63"
+    },
+    {
+      "path": "app/test/subscription_review_ui_test.dart",
+      "sha256": "b8cae62df5b39ed78220c933ddc0086f437db509232e004c94a68edaaa4bae75"
+    },
+    {
+      "path": "app/test/subscription_route_test.dart",
+      "sha256": "4024c38603357a6d49e18a4f7db5d8d722dabe712a90391781a2d73470762a34"
+    },
+    {
+      "path": "app/test/subscription_ui_test.dart",
+      "sha256": "29fb6fdcbe455b5ea7832fe4ebf121eea03ff126796da26ef7dad3966d7971dd"
+    },
+    {
+      "path": "app/test/support/fake_desktop_integration.dart",
+      "sha256": "eeaab1282f343a34248f1112e8c6cff0e2055cc75f84051cf0a74c7b4b53027e"
+    },
+    {
+      "path": "app/test/support/fake_mobile_integration.dart",
+      "sha256": "14cced8ad61b1fc6255c5ef6b2e32c6992e912b2ec0451dc7a8e690f40d08de9"
+    },
+    {
+      "path": "app/test/support/fake_tun_service.dart",
+      "sha256": "4873c6e3757c52b7cc6ac67dede948ac8c20fb6810f42e8ecfa50b1410c50bc9"
+    },
+    {
+      "path": "app/test/support/memory_preferences.dart",
+      "sha256": "3a066833ac7a56308834f5e3adce3cf1ae21c67c73f7958c3ad5df80c1b90142"
+    },
+    {
+      "path": "app/test/support/routing_fixture.dart",
+      "sha256": "d9b0ee5b56c6af1d6e744033d1f9870f83f3f76240d132826b52d8d8057c28de"
+    },
+    {
+      "path": "app/test/support/subscription_fixtures.dart",
+      "sha256": "5367bfd3a9659be3d450e764407c25f0cca1408f8dcaabfba77cf88fd29b653f"
+    },
+    {
+      "path": "app/test/support/telemetry_fixture.dart",
+      "sha256": "1a4c9a64eb29b97548f662150ec6abe55c3ca7c44a33066572299cc695cf3f7c"
+    },
+    {
+      "path": "app/test/support/ui_fixture.dart",
+      "sha256": "cc3e2541576bfae68f6679a0878dc155f65b95e62a5294b1aed4e152ae40e39d"
+    },
+    {
+      "path": "app/test/support/update_fixture.dart",
+      "sha256": "368e870187f07983f8a114313dba2d5be5f41db1665820b098753d6b78761bc9"
+    },
+    {
+      "path": "app/test/telemetry_ui_test.dart",
+      "sha256": "af331882ce8ad99f06778747ff472c965baddce7320c7f1743e2d916c9f480c4"
+    },
+    {
+      "path": "app/test/theme_controller_test.dart",
+      "sha256": "d8765a342fe8dd586e1e999e43ae7d1127e5f91c8ef0b65732e219766aa56e52"
+    },
+    {
+      "path": "app/test/traffic_history_test.dart",
+      "sha256": "d4295b936786d25da1c5944b776cf907c084f5cc48540634e5ddf6228d524c29"
+    },
+    {
+      "path": "app/test/traffic_repository_test.dart",
+      "sha256": "05820ffe3858b30dfd5584d8e6a842313c8df0e37171663439cf8c6c87c34774"
+    },
+    {
+      "path": "app/test/traffic_ui_test.dart",
+      "sha256": "930dc2a6f310328efb208ec5c6738e2b5cd65763a49d6c26a92b65f2c579257a"
+    },
+    {
+      "path": "app/test/tun_service_shutdown_test.dart",
+      "sha256": "dc5b51172d3e06953148c89950f898005891272bd0ee84edb471baa40f6a0f85"
+    },
+    {
+      "path": "app/test/tun_service_test.dart",
+      "sha256": "d3e1f5cdf8bec0bbd975cee8000ed9ab08594abf9215d5a1d7e1bcf47771b603"
+    },
+    {
+      "path": "app/test/tun_service_ui_test.dart",
+      "sha256": "796f3fe5448d0dddea54588572edbcb9631c5e38e970bebedbe67406496dfac6"
+    },
+    {
+      "path": "app/test/ui_alignment_test.dart",
+      "sha256": "29ff208223f6fc44548542fa4182069f891036cca693fedf986130eac0a1f8c5"
+    },
+    {
+      "path": "app/test/vmess_tuic_test.dart",
+      "sha256": "f3ebef16079ef91c6bf2c4474d3de264a23527045d99eba3b7d3deddc77237c3"
+    },
+    {
+      "path": "app/test_driver/android_configuration_driver.dart",
+      "sha256": "8a0163707fe4d12c222139b123f2d59dcd9e349b8ee5c6a4039a0da7e9f138bf"
+    },
+    {
+      "path": "app/test_driver/android_ui_driver.dart",
+      "sha256": "eb841be58d1dbd6d96d442460f8b62dc783590d585398d61995b54d0ea5cf6fa"
+    },
+    {
+      "path": "app/tool/benchmark_host.dart",
+      "sha256": "5a24cb08ef92445d20bf91492d5e3ba7ec1ee8033a33ad2079d1de6a44596fb4"
+    },
+    {
+      "path": "app/tool/generate_build_info.dart",
+      "sha256": "79bf0b77c95ad0af8ae131a43df0925985ed51aa5a0f505d738fdcb51d432d41"
+    },
+    {
+      "path": "app/tool/verify_host_process.dart",
+      "sha256": "82f95a51ff813d7c2f9493f212edd4286c28855d85af3cb659e11790caeb5ec0"
+    },
+    {
+      "path": "app/tool/verify_remote.dart",
+      "sha256": "4205570cfabe7f8a56d7c45206115cefeb5cbf98b81a3d31bf6759f9443f9126"
+    },
+    {
+      "path": "app/tool/verify_subscription_path.dart",
+      "sha256": "86927af53ba3fc1615aef7904a0ec85060ec42cbaeac48c3a171bdab82f30971"
+    },
+    {
+      "path": "app/windows/.gitignore",
+      "sha256": "955e3110cb16494ee76e1cd5df47e2c212309eb94a49a123fe87f718de413cb8"
+    },
+    {
+      "path": "app/windows/CMakeLists.txt",
+      "sha256": "44b9da504e16fca6f7195d72d175d059dc588edac60769a61437a7a23977cd7c"
+    },
+    {
+      "path": "app/windows/flutter/CMakeLists.txt",
+      "sha256": "bd05e3268b2f246bcbafdb778165fe67a7bafdba04eb73599502563a67b8ae7e"
+    },
+    {
+      "path": "app/windows/flutter/generated_plugin_registrant.cc",
+      "sha256": "4c77e746a210447692e82dfd4eb1dccfcccbbc114474a3a71f9dae7eb76db380"
+    },
+    {
+      "path": "app/windows/flutter/generated_plugin_registrant.h",
+      "sha256": "dbc11635d7b1ba1887adf40df5b83d634e9c3ab0bee34510c71528bb4d73602a"
+    },
+    {
+      "path": "app/windows/flutter/generated_plugins.cmake",
+      "sha256": "7b4d1dba84686aff13f9ddddae721994241673bbb0467fdaf308fc1618f8307d"
+    },
+    {
+      "path": "app/windows/runner/CMakeLists.txt",
+      "sha256": "fbe5e35aa5f7af4c5772bedcd76cdba2fa14998a86d050b5705a3d60f2d8d81a"
+    },
+    {
+      "path": "app/windows/runner/Runner.rc",
+      "sha256": "25e5c6d734c9e46b13a4d6b7323a454e38bbc9815b2009c774666b8cfe89a2d5"
+    },
+    {
+      "path": "app/windows/runner/desktop_integration.cpp",
+      "sha256": "fe7d139b160fe814f734259c9108a65cc099492e51c57209f1d8f643c13f384d"
+    },
+    {
+      "path": "app/windows/runner/desktop_integration.h",
+      "sha256": "d546a9c3bcbff05e66a75edfc0aa9179f727f9bc4e58a41ed16b00e1488c378e"
+    },
+    {
+      "path": "app/windows/runner/flutter_window.cpp",
+      "sha256": "4ca8c86210fa55faa7430a084e518c05540e22e6a7f35aabfdf6c9bcb47fdd4a"
+    },
+    {
+      "path": "app/windows/runner/flutter_window.h",
+      "sha256": "dfe27e748c9af4e5b8d60387cfff5cae36f04198aa176be9a6588a63c82d62f8"
+    },
+    {
+      "path": "app/windows/runner/main.cpp",
+      "sha256": "454218a6624d6d3a5d4b5c32ea4d1fe8996e3c379635f1718ce3653c080d0fe5"
+    },
+    {
+      "path": "app/windows/runner/resource.h",
+      "sha256": "d0e8bf7835468b4b6b1f8f0747f2e8f25c19841f2df2ac60aaa584ddae3aa7c6"
+    },
+    {
+      "path": "app/windows/runner/resources/app_icon.ico",
+      "sha256": "9c54225754e4a6d021f53744ec9553f59221fb43b3049357d1aa8f25470b6cfc"
+    },
+    {
+      "path": "app/windows/runner/runner.exe.manifest",
+      "sha256": "639a56233fcd8cbcb8bbefcd93e4680ec2664f32d9acfb3d2ec1d8726a96e090"
+    },
+    {
+      "path": "app/windows/runner/utils.cpp",
+      "sha256": "fbb18524c22593d0ce7869b0733e237be38e668fe045e3023bcf2d0b31784fa3"
+    },
+    {
+      "path": "app/windows/runner/utils.h",
+      "sha256": "832e246b6758253f89016fb0374b30791242e97ad950d27fc678b3d9feacfdc4"
+    },
+    {
+      "path": "app/windows/runner/win32_window.cpp",
+      "sha256": "4e4f4dcf8e86ea6e097562cb3476039e693449bd8045367538afee579c017511"
+    },
+    {
+      "path": "app/windows/runner/win32_window.h",
+      "sha256": "d154cf89ba85f820631a9b5bedacbe64fc5815e428fe6bc5da579ce649f69841"
+    },
+    {
+      "path": "native/core/README.md",
+      "sha256": "13f8be02523dedd40c214725b04cf79e8825360a5bbcbd61aa747ca3413be887"
+    },
+    {
+      "path": "native/core/linux_tun/rainlink_managed_linux.go",
+      "sha256": "5884a58aee33d04407b6b8a2376a78b69f32de33f66164570146adb38ec9ad5f"
+    },
+    {
+      "path": "native/core/linux_tun/rainlink_managed_linux_test.go",
+      "sha256": "c82784772e9c275664e7a645a4d191669113ce9f5d305b8e7179b1c831f831db"
+    },
+    {
+      "path": "native/core/rainlink_certificate_pin.go",
+      "sha256": "d51edec4bad54e64b6ebefd7a9a991e198a4b700a5b8a8d6827ba81231ecd03d"
+    },
+    {
+      "path": "native/core/rainlink_certificate_pin_test.go",
+      "sha256": "b3a0805fa107c50623e2eef8f73146ee69c43e468db25ba0daf3a05db61c4bb5"
+    },
+    {
+      "path": "native/host/cmd/rainlink-host/install_linux.go",
+      "sha256": "1b010381f7b48b85bdb2ee8794788fd8872d08ffd7d3d80cd1cac2e29a79d16b"
+    },
+    {
+      "path": "native/host/cmd/rainlink-host/install_other.go",
+      "sha256": "9451c971b6e1b1e62c21945760a3d91c493e2d6aff6f2406770f00c0e779b4f2"
+    },
+    {
+      "path": "native/host/cmd/rainlink-host/main.go",
+      "sha256": "1ce35b1c373f863bd26efe1a67d7326db91d158f63dc0ebe94b873ff17045ea4"
+    },
+    {
+      "path": "native/host/cmd/rainlink-host/manage_linux.go",
+      "sha256": "5bd1b2a5321c5376d8d2a1dbe3c6d67e304809213d7159f9df03df2907b78a3a"
+    },
+    {
+      "path": "native/host/cmd/rainlink-host/manage_other.go",
+      "sha256": "c89a2e30d9774ddb4d6feff02fde07b399b201184fe8c33f353d36f1e1e39919"
+    },
+    {
+      "path": "native/host/cmd/rainlink-host/tun_service_linux.go",
+      "sha256": "215c586a202fa03263c1106bb01e79b7ce7c34ab180d2ff369b8a08904f85c1e"
+    },
+    {
+      "path": "native/host/cmd/rainlink-host/tun_service_other.go",
+      "sha256": "4fd810cdd7d475ddaf73cc6f5025fa1b68abf1c7a3a60f109d0a820a79745325"
+    },
+    {
+      "path": "native/host/cmd/rainlink-host/watch_tun_linux.go",
+      "sha256": "0eb3069acbdd23c9f8383b7c589682e305707ed13f0497aaa55b2471edcf12be"
+    },
+    {
+      "path": "native/host/cmd/rainlink-host/watch_tun_other.go",
+      "sha256": "af5424cd5e4556bcb8e802a56f96e0f64f9640f3ebe64147cf80f8f91ed0c01c"
+    },
+    {
+      "path": "native/host/cmd/rainlink-launcher/main_windows.go",
+      "sha256": "91e75f1428d9ebf91be0f378f45b53a2662e19eaa42e527047bb3ef7ad3cc36d"
+    },
+    {
+      "path": "native/host/cmd/rainlink-updater/main_windows.go",
+      "sha256": "9298e2efa6763b9f7deafb1e0748c5a86eb759e8b7d9326ac2a3a833a77bb3c8"
+    },
+    {
+      "path": "native/host/go.mod",
+      "sha256": "6cbd3d4bc03cd42d48ed429f097f0bae25b0c56b666def197f4ef419069d9275"
+    },
+    {
+      "path": "native/host/go.sum",
+      "sha256": "680565d6c0cb938b328e363959a68f8671f6222b5c717adfff72a3621dcaa632"
+    },
+    {
+      "path": "native/host/internal/cli/run.go",
+      "sha256": "568274ea1531a6666e84e02aaa74cdb21df429352911b4101203aa8344e3959e"
+    },
+    {
+      "path": "native/host/internal/cli/run_test.go",
+      "sha256": "4907a520e3e3fe1b3a0f90041f2ca2752543d13e4da8b34c7796bb888c1c0493"
+    },
+    {
+      "path": "native/host/internal/coreprocess/core_hash_generated.go",
+      "sha256": "e08c74359054285e8a992832d6645d875ad7d577c8b2723b56e04f1008a9eb41"
+    },
+    {
+      "path": "native/host/internal/coreprocess/elevation_windows.go",
+      "sha256": "42509e6ea72758fa4fadb77f6483d21a17d7ee33eed6a51d7bf5158fb22a0e73"
+    },
+    {
+      "path": "native/host/internal/coreprocess/platform_other.go",
+      "sha256": "d2c8c409ed178e393f374e4dc325db436b53d357d927c80f2073e81f2a8f73ed"
+    },
+    {
+      "path": "native/host/internal/coreprocess/platform_windows.go",
+      "sha256": "eca74dac264c6a862aa326106ed48db53345efe92720b76470686ab4b37adc7a"
+    },
+    {
+      "path": "native/host/internal/coreprocess/process.go",
+      "sha256": "47e13e28324189b8ea32218e83c0c044a23480bbc87dbd01dbb78cfe5dc92fa4"
+    },
+    {
+      "path": "native/host/internal/coreprocess/process_test.go",
+      "sha256": "4b67b03f96175a516e7055881e687f84cbb741f3e94663794ce452c6cda41a34"
+    },
+    {
+      "path": "native/host/internal/coreprocess/start_linux.go",
+      "sha256": "405f471dcc9de0a467b77cbf1faac051ef780f4950b1c8cc21e22c8d55708a53"
+    },
+    {
+      "path": "native/host/internal/coreprocess/start_linux_test.go",
+      "sha256": "ac1b2291826184ade7f37755c2ef073300aada27cef14da3cd34743134a9846a"
+    },
+    {
+      "path": "native/host/internal/coreprocess/start_other.go",
+      "sha256": "bc54add526848fe4a7e2e76c55f2b67d7a979fe0511a14ca2b0fb9e4d2929c23"
+    },
+    {
+      "path": "native/host/internal/host/status.go",
+      "sha256": "786f14215eaa6152cad3d773f9eb7145a9e68924cc8c7765ea467a533bd7090a"
+    },
+    {
+      "path": "native/host/internal/linuxinstall/cancellation_systemd_linux_test.go",
+      "sha256": "7d032cfff7321b808d36964a92e81618bb6d38a3f9d8e35443c59d269fae6b5f"
+    },
+    {
+      "path": "native/host/internal/linuxinstall/cli_fixture_linux_test.go",
+      "sha256": "5ec7b5e79f22f8f1a1f2e1094c64820de0fd8406a1ba4e02688a56fc4f1ae121"
+    },
+    {
+      "path": "native/host/internal/linuxinstall/inspect_linux.go",
+      "sha256": "b152d1395bd1c5a2a9d4944bbe7c42ab4567874583ddb9692d14fb5f952b6029"
+    },
+    {
+      "path": "native/host/internal/linuxinstall/inspect_linux_test.go",
+      "sha256": "a94905bec3a30f8bb4b89cc43f9b1a2031fd5df6e5fa9ee501bca96dedcb8226"
+    },
+    {
+      "path": "native/host/internal/linuxinstall/install_linux.go",
+      "sha256": "83c1b57b83fa8ed1fd2bdbd8094ec06d7c342fc8c1d056f1ab561b27041ce09a"
+    },
+    {
+      "path": "native/host/internal/linuxinstall/install_linux_test.go",
+      "sha256": "5eff96ba9689e784987c026c56cf952623ed82095b109cc7ce10db167016be18"
+    },
+    {
+      "path": "native/host/internal/linuxinstall/service_linux.go",
+      "sha256": "980862fe1568957f81945400e02353970fd5ea283dd18bbdb4640df73c3e1b36"
+    },
+    {
+      "path": "native/host/internal/linuxinstall/service_linux_test.go",
+      "sha256": "0fde335f45fe332a38f1ba4da8badf27c74eafb873d0ae029f60197df9cb90e3"
+    },
+    {
+      "path": "native/host/internal/linuxinstall/state_linux.go",
+      "sha256": "2f15e2eef8bbff6c3b1604e52d66d045dd0c40b38cd6ffdfcc6c795463ba08e0"
+    },
+    {
+      "path": "native/host/internal/linuxinstall/systemd_integration_linux_test.go",
+      "sha256": "796392d2dbd9ffdf1220525cdb74ae0f77a74424412030ae59cdcaa3e0f7c64d"
+    },
+    {
+      "path": "native/host/internal/linuxipc/authorization_linux.go",
+      "sha256": "2c85b77045985fd90b7ddf95dd6719064361f7597bc48afe2a1ffa159e914586"
+    },
+    {
+      "path": "native/host/internal/linuxipc/authorization_linux_test.go",
+      "sha256": "9f78b53097e0dc4414ada1fd47413c01d10426dd2d43f9396a72413e85448962"
+    },
+    {
+      "path": "native/host/internal/linuxipc/command_linux.go",
+      "sha256": "baf506cee7077c23cc093c5c6fd08777ceae6a7bbeb7eca21105888ab913fdca"
+    },
+    {
+      "path": "native/host/internal/linuxipc/command_linux_test.go",
+      "sha256": "ddf823f2ffdb389c956f48e08c109164eb33d1d1fc8c25d72e85716741fd880d"
+    },
+    {
+      "path": "native/host/internal/linuxipc/dial_linux.go",
+      "sha256": "0fba7c05f296c5edd81cafb7b69d9a6ae04e950b2d843bdbc8b67dcb57e80fb6"
+    },
+    {
+      "path": "native/host/internal/linuxipc/dial_linux_test.go",
+      "sha256": "89e4d8e02685187300c8425f6175156126565bfa94abd7543f11910d9aedad5b"
+    },
+    {
+      "path": "native/host/internal/linuxipc/frame_linux.go",
+      "sha256": "761720951bd56dea9494f08a711f51c24c9113ff00bfb274e905397966582379"
+    },
+    {
+      "path": "native/host/internal/linuxipc/frame_linux_test.go",
+      "sha256": "31f71e1c29555a6e2e60583f24577bc3043882b6824b5ee2a95278315bd841bd"
+    },
+    {
+      "path": "native/host/internal/linuxipc/peer_linux.go",
+      "sha256": "48b3ce5b7f900f43f32800c313fb98b7645e5712f134651fa810b2c573e92a2f"
+    },
+    {
+      "path": "native/host/internal/linuxipc/peer_linux_test.go",
+      "sha256": "e7048cfc76417809119b25a5d44a623e497f9e27c17f0221ab1b3c84624de947"
+    },
+    {
+      "path": "native/host/internal/linuxipc/trusted_linux.go",
+      "sha256": "8c4bdc1811c4e763758cb6d933cb40dfc4567124e36cab31735b385740b2926f"
+    },
+    {
+      "path": "native/host/internal/linuxmanage/authentication_linux_test.go",
+      "sha256": "99e1e48a4667b2b3c03fac4898cf3b25bdb489f1fdbc87e5d523eb8786c66050"
+    },
+    {
+      "path": "native/host/internal/linuxmanage/capabilities_linux.go",
+      "sha256": "8ebaa7058ad3b91faeb3f94db2995fd3bab4e46eda0f37ee793e223818c96591"
+    },
+    {
+      "path": "native/host/internal/linuxmanage/capabilities_linux_test.go",
+      "sha256": "967c379005316c7597d00c6c267d986dcbfec609594e6028ad405b867d4e5c94"
+    },
+    {
+      "path": "native/host/internal/linuxmanage/elevation_linux.go",
+      "sha256": "ba574df9b6af10dd89082295cda4366e854c76bd883139eac1b2bd1d0f69467f"
+    },
+    {
+      "path": "native/host/internal/linuxmanage/elevation_linux_test.go",
+      "sha256": "6d6e1846648b866843148edf909c70070ea1b952be8da49994407408cb3bbcff"
+    },
+    {
+      "path": "native/host/internal/linuxmanage/server_linux.go",
+      "sha256": "6eb7c672ba49b90e9741db84055648534eab813e0198fc63b4038f4e067177ce"
+    },
+    {
+      "path": "native/host/internal/linuxmanage/server_linux_test.go",
+      "sha256": "8fee1561064d01acc028e5de81cde868529d07ffda5630f4fe257c6dd4a01e2a"
+    },
+    {
+      "path": "native/host/internal/linuxmanage/systemd_linux_test.go",
+      "sha256": "58026d670f7e464f54b8c892c84de6fff0cbdd01cee8b7bfb22a68e824675816"
+    },
+    {
+      "path": "native/host/internal/linuxnet/kernel_core_linux_test.go",
+      "sha256": "f06aaa545b1e1965f6dd1b54a0c032d0fb085123cc8c2ae1defbda94252323d2"
+    },
+    {
+      "path": "native/host/internal/linuxnet/kernel_linux_test.go",
+      "sha256": "85bc6830be47f9a46fad68ee27a2e34c3f81c04dc690307128a3b019bad02603"
+    },
+    {
+      "path": "native/host/internal/linuxnet/netlink_linux.go",
+      "sha256": "98d2b535003e6507a000705a238477691fdf37af7f9e290071d16394c12ccaa8"
+    },
+    {
+      "path": "native/host/internal/linuxnet/netlink_linux_test.go",
+      "sha256": "107b12e02073d161871c52bdd7d4eef11fb90e851c738e0eeeb3cae24473fa0a"
+    },
+    {
+      "path": "native/host/internal/linuxnet/rule_kernel_linux_test.go",
+      "sha256": "25d40cde54f4291f1c1dc7cc465cdb2f330712039c02992355a0a9406e0d5a1c"
+    },
+    {
+      "path": "native/host/internal/linuxnet/rule_linux.go",
+      "sha256": "df2a899fc8f8347a9b74032a687070ebde85d9946c4b4c94912127521596574b"
+    },
+    {
+      "path": "native/host/internal/linuxnet/rule_linux_test.go",
+      "sha256": "4d16142b76b54c17d181e27fec8e9ec97b4a70a0d0d51b5bdd004e4299df5c87"
+    },
+    {
+      "path": "native/host/internal/linuxnet/state_linux.go",
+      "sha256": "3f6a7aaabe2d36730e4df7710bd39504a0c9ce45f46d4d014a9996217bd44251"
+    },
+    {
+      "path": "native/host/internal/linuxnet/state_linux_test.go",
+      "sha256": "057cc90ab186e8dc9ebc0dd3d956cb6184d1ff89c9b33325370cb5a34705fe25"
+    },
+    {
+      "path": "native/host/internal/linuxnet/tun_holder_linux_test.go",
+      "sha256": "478e180ce4d0ef2bfecf284bc6dc174e46b60733ca7dec75cbb3c75a7d4b2fb6"
+    },
+    {
+      "path": "native/host/internal/linuxnet/upstream_linux.go",
+      "sha256": "c2a8f95ee9be70fafa789f747360bbe9b108adeb9f0d0cf3c94710d21ca74ce0"
+    },
+    {
+      "path": "native/host/internal/linuxnet/upstream_linux_test.go",
+      "sha256": "bcaf6ec1a16f9399df55b455abad3a56274e44c2120b6632523ab21ec4fa7100"
+    },
+    {
+      "path": "native/host/internal/linuxprocess/credentials_linux.go",
+      "sha256": "a15417814ee855117f5b11310b5b903f77502751c9eded9e03d49a72c61b4f9e"
+    },
+    {
+      "path": "native/host/internal/linuxprocess/credentials_linux_test.go",
+      "sha256": "de1b90808cc65f40ebbddee40d14a624c2bef4b748ee8c0a0ff87b86748e8282"
+    },
+    {
+      "path": "native/host/internal/linuxprocess/handle_linux.go",
+      "sha256": "16c3c6b077a7daf298955c30d6c049217aa8160a4fd5c3ca7c043b58fc6ee779"
+    },
+    {
+      "path": "native/host/internal/linuxprocess/handle_linux_test.go",
+      "sha256": "b25edb07b25c81d76220f1ba534b49dbef9be86c09c2884424c917c94b75de42"
+    },
+    {
+      "path": "native/host/internal/linuxprocess/identity_linux.go",
+      "sha256": "a6dafb5913f34142b6228f3f6a4781a92b2cd4881e8bb5fab444f112854ce99b"
+    },
+    {
+      "path": "native/host/internal/linuxprocess/identity_linux_test.go",
+      "sha256": "f609cf6048bd7b2496352107231505d567598dac9e99f86ce5697d6c9be3acee"
+    },
+    {
+      "path": "native/host/internal/linuxproxy/configuration_linux.go",
+      "sha256": "49dcc8789e1f923cb7de5fc2feb07cfee2ef9846a4ed780c080d16ba5795e39f"
+    },
+    {
+      "path": "native/host/internal/linuxproxy/controller_linux.go",
+      "sha256": "b20a416a756339646ce4de0f5cffa9b7ae5da8dd7bdfd052eb20febbb2f462a0"
+    },
+    {
+      "path": "native/host/internal/linuxproxy/controller_linux_test.go",
+      "sha256": "078916b952c508f6ed01df70b6a3057ec7ec6e735f1a821486986e15624e0885"
+    },
+    {
+      "path": "native/host/internal/linuxproxy/gnome_environment_linux.go",
+      "sha256": "fc957e4a5dc6c2e3f109598a32acf537be75cbd5ba5f02c804218d19d51d47fb"
+    },
+    {
+      "path": "native/host/internal/linuxproxy/gnome_linux.go",
+      "sha256": "22fc1b322dab7249f3e4816d84b028f3a424e59ad0b610af6deb9a768ef90ac6"
+    },
+    {
+      "path": "native/host/internal/linuxproxy/kde_linux.go",
+      "sha256": "31be49c7b7e173bfe9e151672f22ee87e65c8cd54d2f526122071763d51a7b14"
+    },
+    {
+      "path": "native/host/internal/linuxproxy/kde_linux_test.go",
+      "sha256": "b38ff4b1ab9c1cf15942d5a8678a8779fe3e13ccfb8a0699aaf832366614996a"
+    },
+    {
+      "path": "native/host/internal/linuxtun/controller_linux.go",
+      "sha256": "a5c4b5baa3dd217f4b9b85de53cec8e06558026cb3c308bc046bdd8d8627cf10"
+    },
+    {
+      "path": "native/host/internal/linuxtun/controller_linux_test.go",
+      "sha256": "ca2bf2a62bd6361d8305452d1a6fa4234780fa322742505d225fc1e2ebb0faf5"
+    },
+    {
+      "path": "native/host/internal/linuxtun/kernel_linux_test.go",
+      "sha256": "38977b4d99b58f58c70a928440daf3495f5275033a73b89f91d8b1a66db61536"
+    },
+    {
+      "path": "native/host/internal/linuxtun/managed_core_linux_test.go",
+      "sha256": "38e1ee573bbeb14998236533f0a99e2b7f023ba9ea15240dd4a8d5cda5ba9e62"
+    },
+    {
+      "path": "native/host/internal/linuxtun/policy_linux.go",
+      "sha256": "3a61cd1f5826de8955da1cbf04ebcdbe9d53ce9e8c44f9892314e9f63d3f908c"
+    },
+    {
+      "path": "native/host/internal/linuxtun/watcher_linux.go",
+      "sha256": "0360825e0c2e5cc26c48817d49a3054afa803be31618de8ef968930aa4d7d4d0"
+    },
+    {
+      "path": "native/host/internal/linuxtun/watcher_linux_test.go",
+      "sha256": "a78dc874135c67c859a3922ca736f7d98b38627ae9e734e7aab5cdd5db00093b"
+    },
+    {
+      "path": "native/host/internal/privatefs/directory_linux.go",
+      "sha256": "dc49eeb4bd2e8c562b1c06dc2fcbdfff5b1be6023aab5420560b52eeca778319"
+    },
+    {
+      "path": "native/host/internal/privatefs/directory_linux_test.go",
+      "sha256": "4d8601fff28d1214f40c37d071101f2f98ff8d4c03973f0ba5a8ce8c4179bd56"
+    },
+    {
+      "path": "native/host/internal/rootfs/directory_linux.go",
+      "sha256": "9eb6c4f76491c38a841ddc2daba9fa0a387d8d832cfcf3d23bdb4f2d0b1a3589"
+    },
+    {
+      "path": "native/host/internal/rootfs/directory_linux_test.go",
+      "sha256": "78ef47b82921ac13b23c1aaba50b9fe4fbeef4238edd3720f9985addbff0996b"
+    },
+    {
+      "path": "native/host/internal/securestore/envelope.go",
+      "sha256": "f9a8349f5c422e1ee7c39e47a598dc409a420732e7a8aba91d8359f07626a35b"
+    },
+    {
+      "path": "native/host/internal/securestore/envelope_test.go",
+      "sha256": "cbc7c279c92844924347c195c00a7f452399a4effdecc5b3fdb2b6cabf0e8e8e"
+    },
+    {
+      "path": "native/host/internal/securestore/key_service_linux.go",
+      "sha256": "88f9f0a66531222055ac352754dd3393b022843d3c662e06a71f6c7f9fa6066b"
+    },
+    {
+      "path": "native/host/internal/securestore/key_service_linux_test.go",
+      "sha256": "1faaa668058b4785324ceb98dc6c6b0d340167387f3badabd2235597e3e0b338"
+    },
+    {
+      "path": "native/host/internal/session/advanced.go",
+      "sha256": "343800fdd9a07a24bb6ad1e40b065a4f104c9cc26ef36dc966fb852fa22ed6c1"
+    },
+    {
+      "path": "native/host/internal/session/advanced_test.go",
+      "sha256": "66ee6b2ddd973d002e3a9cb06c94da64b6e45ab85586b72760e5e57b3766c218"
+    },
+    {
+      "path": "native/host/internal/session/chains.go",
+      "sha256": "adaff643df19c082ec0b2fba0faa3ed31859a692fad714bc26a1f4c6da94eb97"
+    },
+    {
+      "path": "native/host/internal/session/chains_test.go",
+      "sha256": "7f68e8515ba41492e4212d07fa31afcf8b4e389cfb20f927ea22f6ba93a73d69"
+    },
+    {
+      "path": "native/host/internal/session/config.go",
+      "sha256": "8388bfd0d78f85dbf4887022f927dc66f2b248cfe8031442e65bbe7940354a25"
+    },
+    {
+      "path": "native/host/internal/session/connections.go",
+      "sha256": "2bf4dc0786c6e0cf38c8fb560215b912294d1206401ef4ecdcfa253b96455185"
+    },
+    {
+      "path": "native/host/internal/session/credentials.go",
+      "sha256": "af7fcb4e7273c39997b4fae99b87eef4ede9b88e42f33e6831d0926b4c0ecca3"
+    },
+    {
+      "path": "native/host/internal/session/credentials_linux.go",
+      "sha256": "0d4da892d58a703466b58e131a13f0c9dfb358e06599a24782aebbe5efe7c962"
+    },
+    {
+      "path": "native/host/internal/session/credentials_other.go",
+      "sha256": "eabe29e39b898f582068566d4f9ba184d26e45e0e7f6ba6a7e71e1a206f1d33f"
+    },
+    {
+      "path": "native/host/internal/session/credentials_test.go",
+      "sha256": "55c2abe7b751431fa760f7197fde6e4436de1cb95ccc9846ccbfcb2994c51eee"
+    },
+    {
+      "path": "native/host/internal/session/hysteria2_test.go",
+      "sha256": "66a88050451dc9b73fa8cd7ccdf4c860323fd194f0690ee21255f97b10394cdb"
+    },
+    {
+      "path": "native/host/internal/session/log_clock_linux.go",
+      "sha256": "a9a3d21d2c1ae66aea74996db4c9ed39f2c68f84cd6de3c313cd72a569ce8ab5"
+    },
+    {
+      "path": "native/host/internal/session/log_clock_other.go",
+      "sha256": "733a71f65be58d1097e5163b03a0f11606d167add1a55c598b6be884ca4da08f"
+    },
+    {
+      "path": "native/host/internal/session/logs.go",
+      "sha256": "e5d0ce61a34795b57354cb48a9ce73fb6be6f6de800366394460055084a89d3c"
+    },
+    {
+      "path": "native/host/internal/session/managed_tun_linux.go",
+      "sha256": "78f50db7c6009332334ed6ac6d6fc1d61b940e8f3426aeff64947ed3f65d9211"
+    },
+    {
+      "path": "native/host/internal/session/managed_tun_linux_test.go",
+      "sha256": "4ebd9ffbcce659f4de73e0c14c02c2a1cb7735a9f475d47202d74824077cf8b0"
+    },
+    {
+      "path": "native/host/internal/session/managed_tun_other.go",
+      "sha256": "fafc07baf331ee434641b46df49cb2483fe017bd9e5c23a3b51840b761ae37fc"
+    },
+    {
+      "path": "native/host/internal/session/manager.go",
+      "sha256": "fdd26696ca9de81bd67ca7ab04bfc003188d1df00fcdcfbb187daf7fe6f1a23c"
+    },
+    {
+      "path": "native/host/internal/session/manager_test.go",
+      "sha256": "046949706f966dc9af9ce7f7687ef321e213cbf4f5b4fc98504599c0f16b0e18"
+    },
+    {
+      "path": "native/host/internal/session/mobile.go",
+      "sha256": "dbbe71af3338e0521188e545b3a132829e52450c14acf90bfaff4ede1847a98f"
+    },
+    {
+      "path": "native/host/internal/session/mobile_connections.go",
+      "sha256": "a28f5612980547097f6628d47149cc8d626c193715b2034deef68dad5b343a22"
+    },
+    {
+      "path": "native/host/internal/session/mobile_connections_test.go",
+      "sha256": "5f0ea9fb6a48b2ef5b961abde59a4ad1c9cc5e3d2ae21521679b60bb77f4fedf"
+    },
+    {
+      "path": "native/host/internal/session/mobile_test.go",
+      "sha256": "1b17ed7d39827111895ea239bbf5830da11df5f7bec9de85af272587250a1c21"
+    },
+    {
+      "path": "native/host/internal/session/node_probe.go",
+      "sha256": "e64c931e3c9c0defe6c0df9ff8f5abe4c929bb211657d90bbb45d728290920b1"
+    },
+    {
+      "path": "native/host/internal/session/node_probe_test.go",
+      "sha256": "6fb3b02e90c197f81f1793805cc216ea20f38faf51d27869b377a266b3a950ba"
+    },
+    {
+      "path": "native/host/internal/session/platform_other.go",
+      "sha256": "65b7137c4f028917150c5ba38f606e4deaaedf006bcf85e686e3ce6325dd776c"
+    },
+    {
+      "path": "native/host/internal/session/platform_windows.go",
+      "sha256": "b229e32532f0ba6bba8932fd759faa95a87c616759a2c420317a7635a8fed52f"
+    },
+    {
+      "path": "native/host/internal/session/probe_test.go",
+      "sha256": "315916723d79fbe48a2bd8feda113a97c53b0826611c9906f5d35bdd50807e47"
+    },
+    {
+      "path": "native/host/internal/session/protocols_test.go",
+      "sha256": "27e4a207eadeb85ffe92161eae5fc1d4f52f6f5b892fe1ec3dabec395525d10f"
+    },
+    {
+      "path": "native/host/internal/session/proxy_linux.go",
+      "sha256": "da7fa4d4a97e78acd8ce41035e410e59e6c048292b73b0c2fb60166842feb017"
+    },
+    {
+      "path": "native/host/internal/session/proxy_linux_test.go",
+      "sha256": "74c0b6b5908112dbb22eaec16fa39010bcd4bf79a057b182a5317170a4c0f632"
+    },
+    {
+      "path": "native/host/internal/session/proxy_other.go",
+      "sha256": "800574a66b575d0334a7432e35dc9b02972babb787fc58e198a035dca0555219"
+    },
+    {
+      "path": "native/host/internal/session/proxy_windows_test.go",
+      "sha256": "ebeda076d51f30f706141923698726287f5d30009ea913b7acb5683017198706"
+    },
+    {
+      "path": "native/host/internal/session/routing.go",
+      "sha256": "2f6282451c7cb37a9d5c02c13092141a3b5429ff01f3a3e83e9866fd3fccd83b"
+    },
+    {
+      "path": "native/host/internal/session/routing_test.go",
+      "sha256": "58cdfd7c0fde3941da552261227cee485d8bcb54bf751502474531753cb72b30"
+    },
+    {
+      "path": "native/host/internal/session/serve.go",
+      "sha256": "ce5bfa0ae59d1d7d7d22fb6110a803d93f7222cf6f6c1945527138f4806eb8f5"
+    },
+    {
+      "path": "native/host/internal/session/serve_linux_test.go",
+      "sha256": "5341fb935ab5eeadc59770fb9831bea0dd165ca27df5d4177c05248d53c54165"
+    },
+    {
+      "path": "native/host/internal/session/settings.go",
+      "sha256": "eeb0bfb65cf783acba54f9acb240ed4776aa4f8b5bc8a358c70370787f475106"
+    },
+    {
+      "path": "native/host/internal/session/settings_test.go",
+      "sha256": "4b27eb1280440fd332f8b92350f7d3c4a837e6edf272017317bcf079211cd98b"
+    },
+    {
+      "path": "native/host/internal/session/telemetry_test.go",
+      "sha256": "807eefd5ae83668f2e75d27fdfbca8085dd6893430ea6500f4dd9a69b16778e2"
+    },
+    {
+      "path": "native/host/internal/session/tun.go",
+      "sha256": "a9b7ac2d9160c0f1f04e3a448bfb22d438e3830917506dcd6db2a41e0c3081b6"
+    },
+    {
+      "path": "native/host/internal/session/tun_client_linux.go",
+      "sha256": "91d4c88df5944df5fd7a03ceb3f0526c1d0d7982900da185086046ad4553b459"
+    },
+    {
+      "path": "native/host/internal/session/tun_client_linux_test.go",
+      "sha256": "1d30332b4ffec032f0cc264cd5f5f2dc8ebcb47169485788fbb1bf87c81d1c84"
+    },
+    {
+      "path": "native/host/internal/session/tun_compile_linux.go",
+      "sha256": "ca497b6d663e3892e0621e7ad720a1d8fbe5fcec30a558c1586dee29d1f973f3"
+    },
+    {
+      "path": "native/host/internal/session/tun_compile_linux_test.go",
+      "sha256": "57d919624abeba50ff3f2acdae513c7493fb331174ed615c51eeb7f7e2c875e9"
+    },
+    {
+      "path": "native/host/internal/session/tun_forward_linux_test.go",
+      "sha256": "7dda60dc023c08126f5a2bebfec04bbedc113e624ce1330edecac701beb508c1"
+    },
+    {
+      "path": "native/host/internal/session/tun_forward_server_linux_test.go",
+      "sha256": "68116a01c640f237680846df8e2f38972d8cc8aafbbb1903a676f4a1b5d40f54"
+    },
+    {
+      "path": "native/host/internal/session/tun_logged_client_linux_test.go",
+      "sha256": "af3fdfb14bd53994db12442a0fa4dce73fc0e22365f9a085ddaa68452b7837ec"
+    },
+    {
+      "path": "native/host/internal/session/tun_logs_linux.go",
+      "sha256": "156389b7ff6b27c039650600ee14fdee0ff46a430b515faa19a5621ef6989555"
+    },
+    {
+      "path": "native/host/internal/session/tun_logs_linux_test.go",
+      "sha256": "e3bdbf512c0ad09820e7b02bedbda6647c58e28728ad349b6bed1b8b07037211"
+    },
+    {
+      "path": "native/host/internal/session/tun_other.go",
+      "sha256": "e28e38283215e364a89f3b113809fd8a08c2abaf9d1e8cc4298dbaaa643e534a"
+    },
+    {
+      "path": "native/host/internal/session/tun_service_linux.go",
+      "sha256": "be7e810561b009c4c1138b0084fd89b229c932a1736f79023ef8a50a067f7ef8"
+    },
+    {
+      "path": "native/host/internal/session/tun_service_linux_test.go",
+      "sha256": "facf7d4af5a41a8fa0c4f221c14eb2371a4b64337e70c225e316ee69e522c52a"
+    },
+    {
+      "path": "native/host/internal/session/tun_systemd_logs_linux_test.go",
+      "sha256": "20142f4a94d5d96c109d0f66300ace608a4d9f0c8fac99b32d95a697ad1baa9d"
+    },
+    {
+      "path": "native/host/internal/session/tun_test.go",
+      "sha256": "3c1ddeb4a44b38ef67719f77f49df4da32fc6d84e902884cba21495b0ff9d6e5"
+    },
+    {
+      "path": "native/host/internal/session/tun_windows.go",
+      "sha256": "5b22f129e3c7d56b736f926bd1752c08e400490b748c440c039878c2bcd551fb"
+    },
+    {
+      "path": "native/host/internal/session/upstream.go",
+      "sha256": "15e286e5233e030597bcac49510f89aa50bfaf67a24b45868c3165a9d14e2567"
+    },
+    {
+      "path": "native/host/internal/session/upstream_linux.go",
+      "sha256": "9a878b2eb87b595052dcacf17139e3320126273fa5cab95b1bc68e0cfd36edcd"
+    },
+    {
+      "path": "native/host/internal/session/upstream_linux_test.go",
+      "sha256": "5d4017650ed2bb8ad564d9a4db52fe49a79d4cae3700ebf56aaa016a64ab3a0d"
+    },
+    {
+      "path": "native/host/internal/session/upstream_other.go",
+      "sha256": "2ed6733818bfa10b7a8154f157527973fa761942d64b9854d41edb9ceb4d8c71"
+    },
+    {
+      "path": "native/host/internal/session/upstream_test.go",
+      "sha256": "1112859708ff59888024239a77da660e633d6e1e6ff81725f5fe1e581851ddee"
+    },
+    {
+      "path": "native/host/internal/session/upstream_windows.go",
+      "sha256": "d7fd951a29eda63b80fb47ed08cc1198c49ea5f39b614cee96a70c9760f2035b"
+    },
+    {
+      "path": "native/host/internal/session/upstream_windows_test.go",
+      "sha256": "59d80ee8061b736d0e754812f1be3f2529d5078108f392d390e7d9642bca97d4"
+    },
+    {
+      "path": "native/host/internal/session/vmess_tuic_test.go",
+      "sha256": "6fd1807831823c93014617f03b4ce551a4ce00880ccd7dd1980817c48f8d5ffb"
+    },
+    {
+      "path": "native/host/internal/tunconfig/addresses.go",
+      "sha256": "c7948397392d293209087db5b02641811884ff03cbd8eaab7ad1c0ef536e11e6"
+    },
+    {
+      "path": "native/host/internal/update/archive.go",
+      "sha256": "8757edf5d7822c63d88762f5103db8e0fdea2e0a137cd08e152bf08e363aaf49"
+    },
+    {
+      "path": "native/host/internal/update/journal.go",
+      "sha256": "4111dafd615805457b580c0444dccaa41aeec763f9a99fe5b96571a355324882"
+    },
+    {
+      "path": "native/host/internal/update/journal_test.go",
+      "sha256": "d01363f1c17420838c76bc07e958eabc1e9a800624679bb3be548ae062d98e50"
+    },
+    {
+      "path": "native/host/internal/update/process_windows_test.go",
+      "sha256": "db4a25c557346c2e8ba9d2736492cc1c1009a3cf6e6d0c0076c78402525d24fb"
+    },
+    {
+      "path": "native/host/internal/update/recovery_windows.go",
+      "sha256": "f09ef55ea0b1621b034592e10e19241e120af73095ef6854303548381c4e0f20"
+    },
+    {
+      "path": "native/host/internal/update/recovery_windows_test.go",
+      "sha256": "91d24d7d218c6ab7d06718c3ff5d5f997a34ee50189df776177b6f790601b5d3"
+    },
+    {
+      "path": "native/host/internal/update/runtime_windows.go",
+      "sha256": "f7fb100e00e52306055196682bf3220065ba5aed2182c79d4fc7956e35ef4391"
+    },
+    {
+      "path": "native/host/internal/update/safety_other.go",
+      "sha256": "62a4875f2e97972183b03234751997ec319d6621c9d4e526d59de3a903595383"
+    },
+    {
+      "path": "native/host/internal/update/testdata/fixture.go",
+      "sha256": "92d3f8d16b3afc8b010fac09241584ea629993a5f9237b201909ee955a12bcee"
+    },
+    {
+      "path": "native/host/internal/update/testdata/offline_host.go",
+      "sha256": "f0abf542793eb7f706fb3562147170181013c2a02932ba57624c253e34141070"
+    },
+    {
+      "path": "native/host/internal/update/transaction.go",
+      "sha256": "05491ed19a3bc01172dcd3b307f9012af4465d2d19c2eff72e2ef73aadd35c8b"
+    },
+    {
+      "path": "native/host/internal/update/transaction_test.go",
+      "sha256": "7fe13b806ea7cfb028ff72360a876670a0c113c6bafa008069e6201d9933c2cb"
+    },
+    {
+      "path": "native/host/mobileconfig/config.go",
+      "sha256": "d934a6dc8ce887bde9fe3166733cc501b3c6be48b63a4fe445eb0164ae25d611"
+    },
+    {
+      "path": "native/host/packaging/linux/README.md",
+      "sha256": "784c63f8d17739e91a5d94b2efc3b981010a0f3a8c51427321d734902fea6032"
+    },
+    {
+      "path": "native/host/packaging/linux/assets.go",
+      "sha256": "a49a0e4ccc677b6fb4102e672544bf9612540998305649b18a7c38dce4765747"
+    },
+    {
+      "path": "native/host/packaging/linux/org.rainlink.tun.policy",
+      "sha256": "6d64994e94116d412cb75ef1d152acc0ddf95ba35036d2075a6f411b989a4c24"
+    },
+    {
+      "path": "native/host/packaging/linux/rainlink-tun.socket",
+      "sha256": "ce56a26f0b9de0bc8a359075da476d32119771bc3ae0d552879fc376e77c97da"
+    },
+    {
+      "path": "native/host/packaging/linux/rainlink-tun@.service",
+      "sha256": "f681f247d252b0b53cc639dc6186e850de8690a6c99fc55f66a7da418973c008"
+    },
+    {
+      "path": "native/linux/kde_proxy/CMakeLists.txt",
+      "sha256": "5d9dc38efa960f32a8fdb8cee384e0be8800a64d27d4c1cd283d8bf95f5fa91f"
+    },
+    {
+      "path": "native/linux/kde_proxy/README.md",
+      "sha256": "f4b56d48ddaaa5f38e8346f831d7137bc4358d19d64fb8bb03c8e714a5bd4de8"
+    },
+    {
+      "path": "native/linux/kde_proxy/main.cpp",
+      "sha256": "53fde8b17e6d4b78d1ec0453c6dbcb2d3a5baedd131361beff7aa0ed932c294d"
+    },
+    {
+      "path": "native/mobile/dns.go",
+      "sha256": "2f25ba2477868d34b58aabf240373f4991bd63fb061407ba42b106ece5ad7471"
+    },
+    {
+      "path": "native/mobile/go.mod",
+      "sha256": "f6bbcf386122870e70ac1d6fd4c52c9adad49f7910990002054b1e90002a1284"
+    },
+    {
+      "path": "native/mobile/go.sum",
+      "sha256": "d83a6906c5895edda30345a8243f7542fcda134c8ad6e26efb0684b31ae42bc3"
+    },
+    {
+      "path": "native/mobile/mobile.go",
+      "sha256": "c027f3dd6ba79e9447c7d5b5ae58079028bf3bb3adc1213a98d48e13d05bb3b8"
+    },
+    {
+      "path": "native/mobile/runtime.go",
+      "sha256": "446e282277448303253e011f030a6008c47d13de23bc273566291b943721cb05"
+    },
+    {
+      "path": "native/mobile/telemetry.go",
+      "sha256": "4248611b9e56327a57bec13428248b3e711bdfb0c2b0ec4a816ad0ddf484b1a2"
+    },
+    {
+      "path": "native/mobile/tools.go",
+      "sha256": "36ab3b796328479a06207b250be9af241570f0745c690b94aad36c644bfe4b59"
+    },
+    {
+      "path": "native/mobile/tunnel_android.go",
+      "sha256": "46e2acaebb024e53030d7467bd3c6d045975601ca587848f828ec4fa8300b3a8"
+    },
+    {
+      "path": "tools/android-mirrors.init.gradle",
+      "sha256": "47026cf2a246c18d27440f5c6c7abe5e98ebbdc612d3f04319b1260e34e99fb6"
+    },
+    {
+      "path": "tools/build_android.py",
+      "sha256": "2e61fb534a99bf9ed53ca8576de9db67d4af093130d853a2f81de7b0b9319267"
+    },
+    {
+      "path": "tools/build_kde_proxy.sh",
+      "sha256": "ad31b638c78136940e1f8d107b0a363797dda2d86b1bf956e4f42ead0c20a0eb"
+    },
+    {
+      "path": "tools/capture_window.py",
+      "sha256": "3eb3177197016081b875e1f83eb0a9f0ec2ba3e485b5cc430e09979745ea0d2b"
+    },
+    {
+      "path": "tools/complete_export_dialog.py",
+      "sha256": "61f4fa94dd1861ae436f52294f2180b6ddc23d15520135a8513252ff2f6b877f"
+    },
+    {
+      "path": "tools/core.lock.json",
+      "sha256": "66601a2192c780a4cd03580c7f35bcc903ab3caed674f6b7b909f66baec54aaf"
+    },
+    {
+      "path": "tools/core_linux_tun.py",
+      "sha256": "3df74b653099953b05d4d1f40af9d29ae5d2698a7bc06de7818f89e26c2b6e84"
+    },
+    {
+      "path": "tools/core_sources.py",
+      "sha256": "4586dc3bfa95c1522c4bad1f5c1276208494f8593e815bdc7e53077a35186276"
+    },
+    {
+      "path": "tools/dev.ps1",
+      "sha256": "072821fc84d03d45060c83e0636291760170c1a472e58be54f03ba089fe41069"
+    },
+    {
+      "path": "tools/dev.sh",
+      "sha256": "c47655629ce5f11f4a508f53ad077eca843254babe843d95f422dbd857498ada"
+    },
+    {
+      "path": "tools/embed_launcher_resources.py",
+      "sha256": "2f19e33902f27fe0772d7e3e3dddec3d3c06c37f5a77bdca8d5191a74c62781a"
+    },
+    {
+      "path": "tools/finalize_linux_forwarding_evidence.py",
+      "sha256": "0562f5bac2c199942a22f42e42d3e4aa7c4bf682945355f42abc85b7e7d72683"
+    },
+    {
+      "path": "tools/finalize_linux_install_evidence.py",
+      "sha256": "0e98eb3542e392e17aadd24b900e1293ff6d29da2f7432aa3d37d57fa5b52ed9"
+    },
+    {
+      "path": "tools/finalize_linux_log_evidence.py",
+      "sha256": "646e3964c4f9cf30ec835da4d1845415134ad59b18ff3203f2a32a37793ba425"
+    },
+    {
+      "path": "tools/finalize_linux_manager_evidence.py",
+      "sha256": "785c516cdf8208f0ab8cade97925fa282f8d7bcb72bb3d8d0973d1fe119c85c6"
+    },
+    {
+      "path": "tools/fixtures/android_request.sh",
+      "sha256": "e3142ac7c44a90174608fdbb0aac485cd63debd1565ecc6eb7b195a57fc3086c"
+    },
+    {
+      "path": "tools/fixtures/linux_desktop_autostart_test.cc",
+      "sha256": "b41889144806d8894593c00001777d878b5c36bd6ff27bfaebf7766e2cc20cc2"
+    },
+    {
+      "path": "tools/fixtures/linux_desktop_integration_test.cc",
+      "sha256": "4d385c2603d234a69ca9e54536fb229f6f9f3b46d091b895f16f097d5a9166c8"
+    },
+    {
+      "path": "tools/fixtures/linux_graphical_management_guest.sh",
+      "sha256": "621d4614f80f26bdb89c5df383fa8ce961081bcf3cd1b435cf58a5f8a2dacd60"
+    },
+    {
+      "path": "tools/fixtures/linux_graphical_management_session.sh",
+      "sha256": "3c78458c36e86b0cd4fce404f5a36238fdf4fc1926fe86b5b18fbe9f3858a3a5"
+    },
+    {
+      "path": "tools/fixtures/linux_install_namespace.sh",
+      "sha256": "0ae19bd8d4a9efb504f5909f1d558583266d1d71b85496f4f863bc120ba8a0e7"
+    },
+    {
+      "path": "tools/fixtures/linux_network_namespace.sh",
+      "sha256": "1473ea7f384047a65ef5fb040c2103efd34408db88029be862464fb889bc94f1"
+    },
+    {
+      "path": "tools/fixtures/linux_polkit_agent.py",
+      "sha256": "54555c063d07944a516349d7327c69994293862f4687d6758fa036b124ff7e04"
+    },
+    {
+      "path": "tools/fixtures/linux_proxy_resolver.c",
+      "sha256": "7530528969711f2156807ff3c7a4db5b9df8adff69effcb70a70c68c1a854d16"
+    },
+    {
+      "path": "tools/fixtures/linux_systemd_guest.sh",
+      "sha256": "3c0375c09bd43db9504ed4e666d428c64657a920a6f95df5d72bb80231907e8b"
+    },
+    {
+      "path": "tools/fixtures/linux_systemd_logs_guest.sh",
+      "sha256": "920578fe30d6d6087e5ecbd6ff99809453930009fdf15defd93270063ca68b30"
+    },
+    {
+      "path": "tools/fixtures/linux_systemd_management_guest.sh",
+      "sha256": "de9ebd1302b97a46d009bbfa5f5a9504e67510a624c9c1babcce008c4525eb96"
+    },
+    {
+      "path": "tools/fixtures/linux_tun_manager_session.sh",
+      "sha256": "b915656e99621de822e86670258ffab5d95ab0313900cac5dec3a3bf27840ef7"
+    },
+    {
+      "path": "tools/generate_app_icons.py",
+      "sha256": "b303307f14d84fa80d10dd613809c871941787964c3af60fc94a9842b91c1779"
+    },
+    {
+      "path": "tools/linux_systemd_qa.lock.json",
+      "sha256": "f8958fae3a09cc85dc11e5206d1b389d950da4e278159d354db32a0e328db1eb"
+    },
+    {
+      "path": "tools/mobile-core.lock.json",
+      "sha256": "0bf9ae3300246479bb609019cdde10f6d3415faf167c5f72499ef3be74a75541"
+    },
+    {
+      "path": "tools/mobile_cgo_alignment.py",
+      "sha256": "3d0afddbd2c45bb40d1acf74b71d8cad43a02f0218b49639c8ae955b19820ed6"
+    },
+    {
+      "path": "tools/mobile_cgo_tool/main.go",
+      "sha256": "c3adafccd382d1aaad0b7af3d53fb627fed3c015f556782f2db8d3a6177bdc4b"
+    },
+    {
+      "path": "tools/package_common.py",
+      "sha256": "dae7df473f309682fc9b0c104e804ffc2fdc4f22743edd3282e8ea39a6877094"
+    },
+    {
+      "path": "tools/package_linux.py",
+      "sha256": "fbbb40b5359f974b3a71055745e2f460ef16c9516e6108b9935923b9a55a491e"
+    },
+    {
+      "path": "tools/package_windows.py",
+      "sha256": "0bfeb4a81c8b060c72afa5f215873f3fae89baf476d54e667d57887d56ac0d8a"
+    },
+    {
+      "path": "tools/requirements-design.txt",
+      "sha256": "41b54a6fb2918667ca47a61d73b522629d84490f3d78f0f20b21135faba10d35"
+    },
+    {
+      "path": "tools/runtime-licenses.lock.json",
+      "sha256": "d8289ff107406df49ceffb07bc4ab026b67196fa8044fd0514f1eabbe8b2967c"
+    },
+    {
+      "path": "tools/setup_core.py",
+      "sha256": "22a1d40fa08338ade5fc60294a802191bbb69f433b1e78cc352a57c427ff36a4"
+    },
+    {
+      "path": "tools/setup_mobile_core.py",
+      "sha256": "2bf231f0a34ae6abe5710bec56ff01c30d8c66c8778dfe77a513b1a84a36c55d"
+    },
+    {
+      "path": "tools/setup_runtime_licenses.py",
+      "sha256": "6c3c9d8cb658c5423a93c961f83bb405a01597ce60c10ae94e946210b583eff3"
+    },
+    {
+      "path": "tools/test_core_sources.py",
+      "sha256": "d2df243a5e4cf86421b5989cfa4487886a620bbcc026c711cefeec889b97fe9f"
+    },
+    {
+      "path": "tools/test_package_linux.py",
+      "sha256": "fadebefc598888db2936d7e2539bd93bb942ceae5063993833692676e68d8848"
+    },
+    {
+      "path": "tools/test_package_windows.py",
+      "sha256": "c8c61220f5d499eef697c27a9dac2703d1aba2af28cec14435f0bb5817f02828"
+    },
+    {
+      "path": "tools/verify_android.py",
+      "sha256": "aab96e74622ec65e3a65b40533899a6b08b46432f7e9482cb7de2431bcc7f302"
+    },
+    {
+      "path": "tools/verify_android_package.py",
+      "sha256": "f1f0744e80a8e518ad7a72c03d4629dade43f934d02ecbebfdcb724fcc7a8e36"
+    },
+    {
+      "path": "tools/verify_app_updates.py",
+      "sha256": "2ddfe491ec0cb1e0fb879b0505c24f89fe2446fbeba67a545d87be0f2d497206"
+    },
+    {
+      "path": "tools/verify_desktop_window.py",
+      "sha256": "10b670f2caa77fb44b2033adfe6fc9acdb6378989bd739885f0e93caef3e53d9"
+    },
+    {
+      "path": "tools/verify_launcher_resources.py",
+      "sha256": "17a0d1e1069474d20e31fd17b59bd5ad69c82e22d5cdfe10a32eb20038e0bcdf"
+    },
+    {
+      "path": "tools/verify_linux_install.sh",
+      "sha256": "88f441db7c928eb8e55e9e9b49eb28d30947b4ebd7d47d1959b0980d26c6428f"
+    },
+    {
+      "path": "tools/verify_linux_network.sh",
+      "sha256": "cc316d5d571e89b34018ba4b237791ac0a56c274560d3dc626bc30a0a48572dd"
+    },
+    {
+      "path": "tools/verify_linux_session.sh",
+      "sha256": "ba8d1f42628485a0d34207b911dc32e33f8b4dd5c6f0c58af0854f1ab5cfee52"
+    },
+    {
+      "path": "tools/verify_linux_systemd_vm.sh",
+      "sha256": "bb5c0d048b8747498410a4c06f151dc09ef28b1816b427ab9711e98fdb192742"
+    },
+    {
+      "path": "tools/verify_node_probes.py",
+      "sha256": "0395b72a8d49a1bf2c35ee7f05a29653e64952293ebb73f224f9b3fd36357d8b"
+    },
+    {
+      "path": "tools/verify_remote.py",
+      "sha256": "f5948ae44daa8ae1452578fca2fddaeea2f85bfb88e19524e31c9e5d53958953"
+    },
+    {
+      "path": "tools/verify_session.py",
+      "sha256": "439ad9c4a4753071d7a4001b26ea57a12c65713cc0ce9359ac0dbe1b354c4c1c"
+    },
+    {
+      "path": "tools/verify_subscription_path.py",
+      "sha256": "9829c2f8b7613f63138c98d39b8c631b914d5ca663bf176fbea000328be5c75e"
+    },
+    {
+      "path": "tools/verify_tun.py",
+      "sha256": "936ad7c9881986ef7834e61d1812841714e515dd2d63ec25d7c610607547ab84"
+    }
+  ]
+}

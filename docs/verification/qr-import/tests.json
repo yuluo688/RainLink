@@ -1,0 +1,66 @@
+{
+  "flutter": {
+    "passed": 522,
+    "failed": 0,
+    "skipped": 0,
+    "qrSuites": {
+      "mobile_qr_camera_session_test.dart": 8,
+      "qr_import_parser_test.dart": 14,
+      "qr_import_ui_test.dart": 18
+    },
+    "rawLogSha256": "9f286790aa7ff93224d98692a8972716300c7f5088dc8c4f4399d6d21a87e775",
+    "rawLog": "build/qa/qr-import/flutter-tests-final.jsonl"
+  },
+  "analyze": {
+    "issues": 0,
+    "log": {
+      "path": "docs/verification/qr-import/logs/analyze-final.log",
+      "sha256": "fb6421252dccffa8327eecac38e2bb424204c6ff6e53f5254a4db0086e41235f"
+    }
+  },
+  "format": {
+    "files": 14,
+    "changed": 0
+  },
+  "visual": {
+    "runner": "Windows Flutter native debug runner",
+    "fixtureScreenshots": 32,
+    "mobileHardware": false,
+    "cameraFixture": true,
+    "log": {
+      "path": "docs/verification/qr-import/logs/visual-test-final.log",
+      "sha256": "84a8ed37152b49169d64fc7c832d74cb7cdcb4389a5444ad117d75f375c98469"
+    }
+  },
+  "android": {
+    "kotlinUnitTests": 5,
+    "lintErrors": 0,
+    "lintWarnings": 4,
+    "warningIds": [
+      "OldTargetApi",
+      "GradleDependency",
+      "ObsoleteSdkInt",
+      "UseKtx"
+    ],
+    "nativeAcceptanceScenarios": 6,
+    "realCameraFrames": true,
+    "realDevice": false,
+    "logs": {
+      "android-build-final.log": {
+        "path": "docs/verification/qr-import/logs/android-build-final.log",
+        "sha256": "7a1e18e54e331029a314770e966f4b9b3865645f8469d56d6ac81d18fb5a500c"
+      },
+      "native-qa.log": {
+        "path": "docs/verification/qr-import/logs/native-qa.log",
+        "sha256": "590801082e30b374fe9ef516e9672a9fd013464b128d6722a99269a09535e262"
+      }
+    }
+  },
+  "figma": {
+    "currentNativeExportsIdentical": 3
+  },
+  "apple": {
+    "nativeBuildVerified": false,
+    "reason": "No Mac environment available"
+  }
+}

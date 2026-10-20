@@ -1,0 +1,15 @@
+{
+  "id": 1,
+  "result": {
+    "protocolVersion": 1,
+    "state": "current",
+    "canManage": true,
+    "enabled": true,
+    "active": true,
+    "message": "服务文件与当前应用一致"
+  },
+  "files": {
+    "/usr/libexec/rainlink/rainlink-host": "17fe06d86a8f69ecdc5364ab240b3b7f0aa19492f057a99d72a8023147e27a8b",
+    "/usr/libexec/rainlink/sing-box": "640e5293d90b94c71318031284e65cf8121d99ee9c06482f021ed77c9f3fa96d"
+  }
+}

@@ -1,0 +1,244 @@
+{
+  "packages": [
+    {
+      "package": "clang-format-19",
+      "version": "1:19.1.7-3+b1",
+      "url": "https://deb.debian.org/debian/pool/main/l/llvm-toolchain-19/clang-format-19_19.1.7-3%2bb1_amd64.deb",
+      "filename": "clang-format-19_19.1.7-3+b1_amd64.deb",
+      "bytes": 93000,
+      "sha256": "25c849491d8cddc1d65e6f5f67d188a4406c5cdb8c78c490bef08c9477a4e150"
+    },
+    {
+      "package": "clang-format",
+      "version": "1:19.0-63",
+      "url": "https://deb.debian.org/debian/pool/main/l/llvm-defaults/clang-format_19.0-63_amd64.deb",
+      "filename": "clang-format_19.0-63_amd64.deb",
+      "bytes": 6352,
+      "sha256": "c9ed32a010b98bc4d092c283771c17a6c639d5c5362031526fed152c3a90e52b"
+    },
+    {
+      "package": "xdg-utils",
+      "version": "1.2.1-2",
+      "url": "https://deb.debian.org/debian/pool/main/x/xdg-utils/xdg-utils_1.2.1-2_all.deb",
+      "filename": "xdg-utils_1.2.1-2_all.deb",
+      "bytes": 75840,
+      "sha256": "01dd31db093f1e810824519200112ec3fd447ba0341f7213244525eaa289355e"
+    },
+    {
+      "package": "libnotify4",
+      "version": "0.8.6-1",
+      "url": "https://deb.debian.org/debian/pool/main/libn/libnotify/libnotify4_0.8.6-1_amd64.deb",
+      "filename": "libnotify4_0.8.6-1_amd64.deb",
+      "bytes": 26648,
+      "sha256": "6f2beb5a20e948247c0c62aba87a7a2cece07c10e09978d1039b3cad2fa16951"
+    },
+    {
+      "package": "libxss1",
+      "version": "1:1.2.3-1+b3",
+      "url": "https://deb.debian.org/debian/pool/main/libx/libxss/libxss1_1.2.3-1%2bb3_amd64.deb",
+      "filename": "libxss1_1.2.3-1+b3_amd64.deb",
+      "bytes": 16984,
+      "sha256": "302d4a97800429fa0d67ae2e0e8e3adc1228b12d25d3d3cca6c9d24eeff40a6c"
+    },
+    {
+      "package": "dunst",
+      "version": "1.12.2-1",
+      "url": "https://deb.debian.org/debian/pool/main/d/dunst/dunst_1.12.2-1_amd64.deb",
+      "filename": "dunst_1.12.2-1_amd64.deb",
+      "bytes": 138112,
+      "sha256": "88cc8e6e31632bcdec59526df101aeaf294cde5673e2e5fd9506c3b28de7a461"
+    },
+    {
+      "package": "libexo-common",
+      "version": "4.20.0-1",
+      "url": "https://deb.debian.org/debian/pool/main/e/exo/libexo-common_4.20.0-1_all.deb",
+      "filename": "libexo-common_4.20.0-1_all.deb",
+      "bytes": 29420,
+      "sha256": "ef6ded4b71ec85e2f12126c3d2da7579640677f1e0f6b49b7aa1e941721fd592"
+    },
+    {
+      "package": "libxfce4util-common",
+      "version": "4.20.1-1",
+      "url": "https://deb.debian.org/debian/pool/main/libx/libxfce4util/libxfce4util-common_4.20.1-1_all.deb",
+      "filename": "libxfce4util-common_4.20.1-1_all.deb",
+      "bytes": 63620,
+      "sha256": "5ab783ba4ac8a2cfc378ff9808ab86abece59a87a557146e819d102f8093d196"
+    },
+    {
+      "package": "libxfce4util7",
+      "version": "4.20.1-1",
+      "url": "https://deb.debian.org/debian/pool/main/libx/libxfce4util/libxfce4util7_4.20.1-1_amd64.deb",
+      "filename": "libxfce4util7_4.20.1-1_amd64.deb",
+      "bytes": 39404,
+      "sha256": "bf1e9723e7249b9e83e50b76a2a698d3461cfcb5a3662b13c1772fdc87999adf"
+    },
+    {
+      "package": "libexo-2-0",
+      "version": "4.20.0-1",
+      "url": "https://deb.debian.org/debian/pool/main/e/exo/libexo-2-0_4.20.0-1_amd64.deb",
+      "filename": "libexo-2-0_4.20.0-1_amd64.deb",
+      "bytes": 252716,
+      "sha256": "4305334d21f102ddd1b20bb3c0dc931a8776ce1fbf03e2c830124743bef0fb28"
+    },
+    {
+      "package": "libxfce4ui-common",
+      "version": "4.20.1-1",
+      "url": "https://deb.debian.org/debian/pool/main/libx/libxfce4ui/libxfce4ui-common_4.20.1-1_all.deb",
+      "filename": "libxfce4ui-common_4.20.1-1_all.deb",
+      "bytes": 229268,
+      "sha256": "5a4d3e1e20677e3ad1a53385c6e813e55415a15c9cdf0653c3b8aa58696cb322"
+    },
+    {
+      "package": "xfconf",
+      "version": "4.20.0-1",
+      "url": "https://deb.debian.org/debian/pool/main/x/xfconf/xfconf_4.20.0-1_amd64.deb",
+      "filename": "xfconf_4.20.0-1_amd64.deb",
+      "bytes": 128136,
+      "sha256": "84cf28a22c060073254f9e83e418edad88ce6146c3114556fa2f8470662cfd16"
+    },
+    {
+      "package": "libxfconf-0-3",
+      "version": "4.20.0-1",
+      "url": "https://deb.debian.org/debian/pool/main/x/xfconf/libxfconf-0-3_4.20.0-1_amd64.deb",
+      "filename": "libxfconf-0-3_4.20.0-1_amd64.deb",
+      "bytes": 46640,
+      "sha256": "836b43967d1f55b06df5cb61479c581592685b3935cd55ea5b5df5c358345340"
+    },
+    {
+      "package": "libxfce4ui-2-0",
+      "version": "4.20.1-1",
+      "url": "https://deb.debian.org/debian/pool/main/libx/libxfce4ui/libxfce4ui-2-0_4.20.1-1_amd64.deb",
+      "filename": "libxfce4ui-2-0_4.20.1-1_amd64.deb",
+      "bytes": 79132,
+      "sha256": "785fb9a47008f5fb8085f65cb927c1d59c26a082b49ed10cbf6fa81aa75edd51"
+    },
+    {
+      "package": "exo-utils",
+      "version": "4.20.0-1",
+      "url": "https://deb.debian.org/debian/pool/main/e/exo/exo-utils_4.20.0-1_amd64.deb",
+      "filename": "exo-utils_4.20.0-1_amd64.deb",
+      "bytes": 58112,
+      "sha256": "9f31b627a11321b41bd6b1fa47bdab991a78ec2b567bfb3ed0064eda10bfda8a"
+    },
+    {
+      "package": "libdbusmenu-glib4",
+      "version": "18.10.20180917~bzr492+repack1-4",
+      "url": "https://deb.debian.org/debian/pool/main/libd/libdbusmenu/libdbusmenu-glib4_18.10.20180917%7ebzr492%2brepack1-4_amd64.deb",
+      "filename": "libdbusmenu-glib4_18.10.20180917~bzr492+repack1-4_amd64.deb",
+      "bytes": 40616,
+      "sha256": "497128ea59ad99d26379bf1cff5a0897f6f0520e9cc0b5a44707676c6cf3f589"
+    },
+    {
+      "package": "libdbusmenu-gtk3-4",
+      "version": "18.10.20180917~bzr492+repack1-4",
+      "url": "https://deb.debian.org/debian/pool/main/libd/libdbusmenu/libdbusmenu-gtk3-4_18.10.20180917%7ebzr492%2brepack1-4_amd64.deb",
+      "filename": "libdbusmenu-gtk3-4_18.10.20180917~bzr492+repack1-4_amd64.deb",
+      "bytes": 27184,
+      "sha256": "04b73c2590bd8a99e9ee5ae51bf6b66229edf896278bcb0b450f88e32fb51c73"
+    },
+    {
+      "package": "libdisplay-info2",
+      "version": "0.2.0-2",
+      "url": "https://deb.debian.org/debian/pool/main/libd/libdisplay-info/libdisplay-info2_0.2.0-2_amd64.deb",
+      "filename": "libdisplay-info2_0.2.0-2_amd64.deb",
+      "bytes": 73868,
+      "sha256": "961924d484d4c14b6decb76cf0e860a1e7b6c89bfc85e527d873a89faf24b846"
+    },
+    {
+      "package": "libgarcon-common",
+      "version": "4.20.0-1",
+      "url": "https://deb.debian.org/debian/pool/main/g/garcon/libgarcon-common_4.20.0-1_all.deb",
+      "filename": "libgarcon-common_4.20.0-1_all.deb",
+      "bytes": 64228,
+      "sha256": "52ef941f4499b8e68f9353a760353ec24d3dc64fee395542de632f3c5c343e2f"
+    },
+    {
+      "package": "libgarcon-1-0",
+      "version": "4.20.0-1",
+      "url": "https://deb.debian.org/debian/pool/main/g/garcon/libgarcon-1-0_4.20.0-1_amd64.deb",
+      "filename": "libgarcon-1-0_4.20.0-1_amd64.deb",
+      "bytes": 51320,
+      "sha256": "e40f6e1d0d799bb4661cd89ec206c16e1658dccdf86094e862cc931191494cdf"
+    },
+    {
+      "package": "libgarcon-gtk3-1-0",
+      "version": "4.20.0-1",
+      "url": "https://deb.debian.org/debian/pool/main/g/garcon/libgarcon-gtk3-1-0_4.20.0-1_amd64.deb",
+      "filename": "libgarcon-gtk3-1-0_4.20.0-1_amd64.deb",
+      "bytes": 21972,
+      "sha256": "a5f3536f46d8b836904cd6d74e9390e8d10cc9eb5a0d917994e86b5a2cfdc525"
+    },
+    {
+      "package": "libgtk-layer-shell0",
+      "version": "0.9.0-2",
+      "url": "https://deb.debian.org/debian/pool/main/g/gtk-layer-shell/libgtk-layer-shell0_0.9.0-2_amd64.deb",
+      "filename": "libgtk-layer-shell0_0.9.0-2_amd64.deb",
+      "bytes": 56592,
+      "sha256": "de8f0e98a4f48cea3bee516f76b5c314e5e6e7e684fff91fc26a87e970f5edbf"
+    },
+    {
+      "package": "libnotify-bin",
+      "version": "0.8.6-1",
+      "url": "https://deb.debian.org/debian/pool/main/libn/libnotify/libnotify-bin_0.8.6-1_amd64.deb",
+      "filename": "libnotify-bin_0.8.6-1_amd64.deb",
+      "bytes": 12820,
+      "sha256": "53224b8df8e3e3bb4dcb60e8bd28e0cb340d459253fe15e01e86d03f8941015d"
+    },
+    {
+      "package": "libxres1",
+      "version": "2:1.2.1-1+b2",
+      "url": "https://deb.debian.org/debian/pool/main/libx/libxres/libxres1_1.2.1-1%2bb2_amd64.deb",
+      "filename": "libxres1_1.2.1-1+b2_amd64.deb",
+      "bytes": 17492,
+      "sha256": "995b467fa9d0d47b4bff46cafd11ac7067f36a0e30cfaa121e73df7f8af93041"
+    },
+    {
+      "package": "libwnck-3-common",
+      "version": "43.2-1",
+      "url": "https://deb.debian.org/debian/pool/main/libw/libwnck3/libwnck-3-common_43.2-1_all.deb",
+      "filename": "libwnck-3-common_43.2-1_all.deb",
+      "bytes": 229648,
+      "sha256": "a1c4e2f59a663d7410339f63ca28d200905124872d4b6cdceb291f67a58976ad"
+    },
+    {
+      "package": "libwnck-3-0",
+      "version": "43.2-1",
+      "url": "https://deb.debian.org/debian/pool/main/libw/libwnck3/libwnck-3-0_43.2-1_amd64.deb",
+      "filename": "libwnck-3-0_43.2-1_amd64.deb",
+      "bytes": 109740,
+      "sha256": "54d240d236681afee5eead2827bbb777d95422bcc1c760ab0ba160438a0db8fc"
+    },
+    {
+      "package": "libxfce4windowing-common",
+      "version": "4.20.2-1",
+      "url": "https://deb.debian.org/debian/pool/main/libx/libxfce4windowing/libxfce4windowing-common_4.20.2-1_all.deb",
+      "filename": "libxfce4windowing-common_4.20.2-1_all.deb",
+      "bytes": 50024,
+      "sha256": "77342fc7b38a5880f271e4ec238db4ae273896c9001b939ae18fe0e510dd28a9"
+    },
+    {
+      "package": "libxfce4windowing-0-0",
+      "version": "4.20.2-1",
+      "url": "https://deb.debian.org/debian/pool/main/libx/libxfce4windowing/libxfce4windowing-0-0_4.20.2-1_amd64.deb",
+      "filename": "libxfce4windowing-0-0_4.20.2-1_amd64.deb",
+      "bytes": 105256,
+      "sha256": "44e3158c859c30aff647c78f0ff1531b0bd72c5629a422698d428522dd668412"
+    },
+    {
+      "package": "libxfce4panel-2.0-4",
+      "version": "4.20.4-1",
+      "url": "https://deb.debian.org/debian/pool/main/x/xfce4-panel/libxfce4panel-2.0-4_4.20.4-1_amd64.deb",
+      "filename": "libxfce4panel-2.0-4_4.20.4-1_amd64.deb",
+      "bytes": 81756,
+      "sha256": "b52ca5085f49f634205b60a77492c286c1e96532414ae140ef93c04d4e2b5089"
+    },
+    {
+      "package": "xfce4-panel",
+      "version": "4.20.4-1",
+      "url": "https://deb.debian.org/debian/pool/main/x/xfce4-panel/xfce4-panel_4.20.4-1_amd64.deb",
+      "filename": "xfce4-panel_4.20.4-1_amd64.deb",
+      "bytes": 835944,
+      "sha256": "1c8079234fee586589cfd9982a2e741cbdfd9b36688a66abc9ca9acdbf9072e4"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+cancel_pkexec_exit 127
+stdout 
+stderr Error executing command as another user: Not authorized
+
+This incident has been reported.
+
+command_exit=0

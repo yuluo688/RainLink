@@ -1,0 +1,19 @@
+
+(dev.rainlink.rainlink:3166): Atk-CRITICAL **: 05:16:44.542: atk_socket_embed: assertion 'plug_id != NULL' failed
+embedder.cc (2439): 'FlutterEngineRemoveView' returned 'kInvalidArguments'. Remove view info was invalid. The implicit view cannot be removed.
+
+(dev.rainlink.rainlink:3166): GLib-GObject-CRITICAL **: 05:17:25.757: g_object_weak_unref: couldn't find weak ref 0x7eb07fd8bfa0(0x61d2377e35f8)
+
+(dev.rainlink.rainlink:3166): GLib-GObject-CRITICAL **: 05:17:25.766: invalid uninstantiatable type '<invalid>' in cast to 'FlMouseCursorHandler'
+
+(dev.rainlink.rainlink:3166): Gtk-CRITICAL **: 05:17:25.767: gtk_widget_get_toplevel: assertion 'GTK_IS_WIDGET (widget)' failed
+
+(dev.rainlink.rainlink:3166): Gtk-CRITICAL **: 05:17:25.768: gtk_widget_get_window: assertion 'GTK_IS_WIDGET (widget)' failed
+
+(dev.rainlink.rainlink:3166): Gdk-CRITICAL **: 05:17:25.768: gdk_window_get_display: assertion 'GDK_IS_WINDOW (window)' failed
+
+(dev.rainlink.rainlink:3166): Gdk-CRITICAL **: 05:17:25.768: gdk_cursor_new_from_name: assertion 'GDK_IS_DISPLAY (display)' failed
+
+(dev.rainlink.rainlink:3166): Gdk-CRITICAL **: 05:17:25.768: gdk_window_set_cursor: assertion 'GDK_IS_WINDOW (window)' failed
+
+** (dev.rainlink.rainlink:3166): WARNING **: 05:17:25.785: Attempted to set message handler on an FlBinaryMessenger without an engine

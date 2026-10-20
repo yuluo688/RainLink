@@ -1,0 +1,9 @@
+goos: windows
+goarch: amd64
+pkg: github.com/sagernet/sing-box/experimental/clashapi/trafficontrol
+cpu: 11th Gen Intel(R) Core(TM) i5-11400H @ 2.70GHz
+BenchmarkRainLinkTrafficCounterHotPath-12    	177195709	         6.720 ns/op	       0 B/op	       0 allocs/op
+BenchmarkRainLinkTrafficCounterHotPath-12    	183884259	         6.558 ns/op	       0 B/op	       0 allocs/op
+BenchmarkRainLinkTrafficCounterHotPath-12    	186208267	         6.435 ns/op	       0 B/op	       0 allocs/op
+PASS
+ok  	github.com/sagernet/sing-box/experimental/clashapi/trafficontrol	4.472s

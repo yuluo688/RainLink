@@ -1,0 +1,64 @@
+{
+  "run": "26691074ff41dad7",
+  "scope": "Android actual system tunnel, shell-UID client, embedded core, SQLite, traffic UI and app-private CSV; isolated AVD only",
+  "systemTunnelEstablished": true,
+  "sameSessionAcrossModes": true,
+  "completedPayloadBytes": 1179648,
+  "upload": 2772,
+  "download": 1185660,
+  "actualClosedFlowsIncluded": true,
+  "bothPartitionsConserved": true,
+  "shellApplicationIdentified": true,
+  "duplicateSamplesIgnored": true,
+  "databaseReopened": true,
+  "uiCsvReadBack": true,
+  "userDatabaseModified": false,
+  "applications": [
+    {
+      "name": "com.android.shell",
+      "upload": 2772,
+      "download": 1185660
+    }
+  ],
+  "targets": [
+    {
+      "name": "Android 流量验收",
+      "kind": "node",
+      "upload": 1848,
+      "download": 790440
+    },
+    {
+      "name": "直连",
+      "kind": "direct",
+      "upload": 924,
+      "download": 395220
+    }
+  ],
+  "captures": [
+    {
+      "file": "applications-dark.png",
+      "width": 394,
+      "height": 852
+    },
+    {
+      "file": "outbounds-dark.png",
+      "width": 394,
+      "height": 852
+    },
+    {
+      "file": "outbounds-light.png",
+      "width": 394,
+      "height": 852
+    },
+    {
+      "file": "applications-light.png",
+      "width": 394,
+      "height": 852
+    },
+    {
+      "file": "reopened-applications-light.png",
+      "width": 394,
+      "height": 852
+    }
+  ]
+}

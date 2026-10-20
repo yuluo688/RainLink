@@ -1,0 +1,10 @@
+TAP version 14
+# random seed: R02S3dd98483c55ed301fef68581888ae603
+1..4
+# Start of autostart tests
+# GLib-GIO-DEBUG: _g_io_module_get_default: Found default implementation local (GLocalVfs) for ?gio-vfs?
+ok 1 /autostart/exec-desktop-parser-and-spawn
+ok 2 /autostart/other-installation
+ok 3 /autostart/foreign-and-symlink
+ok 4 /autostart/disabled-entry
+# End of autostart tests

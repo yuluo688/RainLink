@@ -1,0 +1,6 @@
+{
+  "url": "https://sqlite.org/2025/sqlite-autoconf-3480000.tar.gz",
+  "sha256": "ac992f7fca3989de7ed1fe99c16363f848794c8c32a158dafd4eb927a2e02fd5",
+  "origin": "Existing Windows CMake download from the same pinned plugin; reused for isolated Linux build after official URL TLS reset/stall.",
+  "freshOfficialDownloadVerified": false
+}

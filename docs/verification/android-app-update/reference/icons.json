@@ -1,0 +1,35 @@
+{
+  "fileKey": "unsaved-mvfj9942-5y6aivnm",
+  "fileName": "RainLink",
+  "icons": {
+    "refresh": {
+      "nodeId": "2:16567",
+      "reference": "docs/verification/android-app-update/reference/refresh.svg",
+      "runtime": "app/assets/icons/refresh.svg",
+      "sha256": "05ee43f1ede9f058df6cff763afa9b1810a21829920529ca0d65c415539209e8",
+      "identicalBytes": true
+    },
+    "download": {
+      "nodeId": "2:16539",
+      "reference": "docs/verification/android-app-update/reference/download.svg",
+      "runtime": "app/assets/icons/download.svg",
+      "sha256": "541315177cfb8c35a8325e14c0f9c7ae696e377c099ab366fd77cda424dbe84d",
+      "identicalBytes": true
+    },
+    "back": {
+      "nodeId": "59:44535",
+      "reference": "docs/verification/android-app-update/reference/back.svg",
+      "runtime": "app/assets/icons/back.svg",
+      "sha256": "801e21c14d9d6d6ac54115a081ad0aced2428311ad8a843c5929957086858564",
+      "identicalBytes": true
+    },
+    "mark": {
+      "nodeId": "2:16609",
+      "reference": "docs/verification/android-app-update/reference/mark.svg",
+      "runtime": "app/assets/brand/mark.svg",
+      "sha256": "ba9f8fdd784e5c7cdc3f603943c3db05e027be6896e1442c8f240c426873ce15",
+      "identicalBytes": true
+    }
+  },
+  "figmaMutated": false
+}

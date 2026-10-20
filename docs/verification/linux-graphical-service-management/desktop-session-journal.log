@@ -1,0 +1,24 @@
+Oct 20 03:36:06 rainlink-disposable-qa systemd[1]: Started rainlink-gui-qa.service - RainLink isolated graphical QA session.
+Oct 20 03:36:07 rainlink-disposable-qa (-session)[3366]: pam_unix(login:session): session opened for user rainlinkgui(uid=2000) by rainlinkgui(uid=0)
+Oct 20 03:36:16 rainlink-disposable-qa systemd[1]: rainlink-gui-qa.service: Main process exited, code=exited, status=134/n/a
+Oct 20 03:36:16 rainlink-disposable-qa systemd[1]: rainlink-gui-qa.service: Failed with result 'exit-code'.
+Oct 20 03:38:46 rainlink-disposable-qa systemd[1]: Started rainlink-gui-qa.service - RainLink isolated graphical QA session.
+Oct 20 03:38:46 rainlink-disposable-qa (-session)[3818]: pam_unix(login:session): session opened for user rainlinkgui(uid=2000) by rainlinkgui(uid=0)
+Oct 20 03:50:03 rainlink-disposable-qa systemd[1]: Stopping rainlink-gui-qa.service - RainLink isolated graphical QA session...
+Oct 20 03:50:03 rainlink-disposable-qa systemd[1]: rainlink-gui-qa.service: Deactivated successfully.
+Oct 20 03:50:03 rainlink-disposable-qa systemd[1]: Stopped rainlink-gui-qa.service - RainLink isolated graphical QA session.
+Oct 20 03:50:03 rainlink-disposable-qa systemd[1]: Started rainlink-gui-qa.service - RainLink isolated graphical QA session.
+Oct 20 03:50:04 rainlink-disposable-qa (-session)[4890]: pam_unix(login:session): session opened for user rainlinkgui(uid=2000) by rainlinkgui(uid=0)
+Oct 20 03:55:11 rainlink-disposable-qa systemd[1]: Stopping rainlink-gui-qa.service - RainLink isolated graphical QA session...
+Oct 20 03:55:11 rainlink-disposable-qa systemd[1]: rainlink-gui-qa.service: Deactivated successfully.
+Oct 20 03:55:11 rainlink-disposable-qa systemd[1]: Stopped rainlink-gui-qa.service - RainLink isolated graphical QA session.
+Oct 20 03:55:12 rainlink-disposable-qa systemd[1]: Started rainlink-gui-qa.service - RainLink isolated graphical QA session.
+Oct 20 03:55:12 rainlink-disposable-qa (-session)[6868]: pam_unix(login:session): session opened for user rainlinkgui(uid=2000) by rainlinkgui(uid=0)
+Oct 20 04:01:33 rainlink-disposable-qa systemd[1]: Stopping rainlink-gui-qa.service - RainLink isolated graphical QA session...
+Oct 20 04:01:33 rainlink-disposable-qa systemd[1]: rainlink-gui-qa.service: Deactivated successfully.
+Oct 20 04:01:33 rainlink-disposable-qa systemd[1]: Stopped rainlink-gui-qa.service - RainLink isolated graphical QA session.
+Oct 20 04:01:34 rainlink-disposable-qa systemd[1]: Started rainlink-gui-qa.service - RainLink isolated graphical QA session.
+Oct 20 04:01:34 rainlink-disposable-qa (-session)[10675]: pam_unix(login:session): session opened for user rainlinkgui(uid=2000) by rainlinkgui(uid=0)
+Oct 20 04:04:59 rainlink-disposable-qa systemd[1]: Stopping rainlink-gui-qa.service - RainLink isolated graphical QA session...
+Oct 20 04:04:59 rainlink-disposable-qa systemd[1]: rainlink-gui-qa.service: Deactivated successfully.
+Oct 20 04:04:59 rainlink-disposable-qa systemd[1]: Stopped rainlink-gui-qa.service - RainLink isolated graphical QA session.

@@ -1,0 +1,63 @@
+ok  	github.com/sagernet/sing-box/common/tls	0.860s
+ok  	github.com/sagernet/sing-box/experimental/clashapi/trafficontrol	0.492s
+ok  	github.com/sagernet/sing-box/experimental/clashapi	0.966s
+{
+  "coreVersion": "1.12.25-rainlink.3",
+  "sourceSum": "h1:zg7RV4CCRsSelCfMTlQWiFvZE4gVyCVgwQWkfQWXggs=",
+  "toolchain": "go1.25.5",
+  "recipe": {
+    "schema": 1,
+    "gomobileVersion": "v0.1.8",
+    "gomobileSum": "h1:vXgoN0pjsMONAaYCTdsKBX2T1kxuS7sbT/mZ7PElGoo=",
+    "ndkVersion": "27.0.12077973",
+    "androidApi": 29,
+    "cgoAlignment": {
+      "source": "src/cmd/cgo/out.go",
+      "sourceSha256": "3d05dfcfebb4ee9d3b04e08a3ff6b45401abab1ce8140673f35485a190ce8948"
+    },
+    "targets": [
+      "android/arm64",
+      "android/amd64"
+    ],
+    "tags": [
+      "with_gvisor",
+      "with_quic",
+      "with_utls",
+      "with_clash_api",
+      "with_conntrack"
+    ]
+  },
+  "cgo": {
+    "recipe": {
+      "toolchain": "go1.25.5",
+      "sourceSha256": "3d05dfcfebb4ee9d3b04e08a3ff6b45401abab1ce8140673f35485a190ce8948",
+      "patchedSourceSha256": "540c6c534c447d9172c83ac31307b94808fcdfffbfc3e24325f3c3391d4a6067",
+      "wrapperSourceSha256": "c3adafccd382d1aaad0b7af3d53fb627fed3c015f556782f2db8d3a6177bdc4b"
+    },
+    "compilerSha256": "f027b53f8707e3620bfbcef992d211d322d8483178d2cd2e3442bf133dcd4d8c",
+    "wrapperSha256": "60061067d84a972abf05c4107f54af79755e90f812bb8151237b6afa10d142d3"
+  },
+  "extensionTestsPlatform": "windows-amd64",
+  "sourceArchiveSha256": "b5eada6ef352eada1cdcfbbea0d3f63a778db7a2ae76d687cbbae39690928099",
+  "aarSha256": "675ee4dcb87c36771e6eb64126cdbeb0b52b8629a94ae7cb115ea47cceb90906",
+  "libraries": {
+    "jni/arm64-v8a/librainlink.so": {
+      "sha256": "ce648eff63e8583334b3980184cd01efb5ed30436fa7c3771bc58e9aaf98b3cc",
+      "loadAlignments": [
+        16384,
+        16384,
+        16384,
+        16384
+      ]
+    },
+    "jni/x86_64/librainlink.so": {
+      "sha256": "af8b8a3e56a7582cc95f62a75efdf8760d048659c9ad5d34a4ccf3545e0a1561",
+      "loadAlignments": [
+        16384,
+        16384,
+        16384,
+        16384
+      ]
+    }
+  }
+}

@@ -1,0 +1,7 @@
+
+(dev.rainlink.rainlink:2169): Atk-CRITICAL **: 04:18:08.825: atk_socket_embed: assertion 'plug_id != NULL' failed
+embedder.cc (2439): 'FlutterEngineRemoveView' returned 'kInvalidArguments'. Remove view info was invalid. The implicit view cannot be removed.
+
+(dev.rainlink.rainlink:2169): GLib-GObject-CRITICAL **: 04:18:13.229: g_object_weak_unref: couldn't find weak ref 0x7d36eaca4fa0(0x64386df8a598)
+
+** (dev.rainlink.rainlink:2169): WARNING **: 04:18:13.246: Attempted to set message handler on an FlBinaryMessenger without an engine

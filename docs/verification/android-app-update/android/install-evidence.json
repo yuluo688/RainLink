@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "avd": "RainLink_Update_QA",
+  "realDevice": false,
+  "systemPackageVersionCode": 5,
+  "candidateSha256": "bc81b7ff7abb274a6ef34f6b28b1e8916365e08c1134b77b463d1c43227609ad",
+  "normalAppReopenedVersion": "0.1.0+5",
+  "productionReleasePublished": false,
+  "nativeInstalledReceiptDisplayed": true,
+  "databaseSchema": 8,
+  "fictitiousNodesPreserved": 1,
+  "themePreserved": "light",
+  "controlledUserDataUnchanged": true,
+  "lightSystemBarContrastVerified": true,
+  "controlledUserDataSha256": "9a7565e7f47c1bfa0df6b9cb81a9c55a63d6a9076e5ce96ca14b44cd4e35ebb3"
+}

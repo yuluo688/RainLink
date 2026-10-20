@@ -2,6 +2,28 @@
 
 日期：2026-10-15。目标平台：Windows、macOS、Linux、Android、iOS。首期交付前三种桌面平台，移动端在桌面内测稳定后推进。
 
+2026-10-20 暂停：按用户要求保存并推送当前进度，完整目标未完成。恢复时从[检查点](verification/closeout-20261020.md)继续，优先完成[Linux 首页 TUN](verification/linux-tun-product.md)接受授权后的连接、三模式双栈/DNS、开关与退出恢复及最终视觉。条件能力代码已开放，默认包未替换；下列关闭状态属于历史阶段。用户暂无 Mac，Apple 原生仍待环境。
+
+2026-10-20 Android 流量续验：新增实际系统隧道 → 已结束连接累计 → SQLite → 排行/CSV 的独立验收，三模式 36 次请求和服务端回执通过，识别实际 shell 包名，重开及去重通过。当前 Figma 七个使用 SVG 一致，五张实际 Android 渲染截图保留；生产统计代码不变，见[Android 流量验收](verification/android-traffic-accounting.md)。用户暂无 Mac，继续可验证平台；Apple 原生、真机/第三方应用、分发与完整目标仍未完成，公开 Linux TUN 保持关闭。
+
+2026-10-20 Android 应用更新：复用原设置页并补 APK 渠道、下载校验、原生包名/版本/签名验证、恢复网络后系统安装和持久回执。独立 AVD 的实际拒绝、取消、4 → 5 升级、正常新版本重开及节点/偏好保持已通过；跟进修复浅色系统栏及 iOS 安全区的概览间距。最终测试、44 张布局、使用图标与独立 Debug 包见[更新验收](verification/android-app-update.md)。正式源、真机、Apple 和其余平台范围继续推进，公开 Linux TUN 继续关闭。
+
+2026-10-20 扫码导入：补齐 Figma 移动添加入口、八协议预填与桌面单节点粘贴。522 项 Flutter、静态分析、32 张布局和当前三个使用图标核对通过；独立 Android AVD 真实相机完成权限拒绝/后台恢复、HTTP 节点保存、订阅确认前零请求/确认后一次请求、自动组名及流量/到期/重启回读。最终 Debug APK 的签名/核心/16 KB 对齐通过，历史包保持原样，见[扫码验收](verification/qr-import.md)。后续继续真机、其他平台与分发；用户没有 Mac，Apple 原生范围待环境可用，公开 Linux TUN 继续关闭。
+
+2026-10-20 macOS 基础接入：共享本地会话、原生 Keychain helper 与开发构建入口已补代码，两架构 Go 宿主/测试程序交叉编译与 vet 通过；474 项 Flutter 及跨平台凭据/构建回归通过。44 个当前 Figma SVG 重导出一致。用户目前没有 Mac，Swift/Keychain/Xcode 与实际运行尚未验证，系统代理、TUN、菜单栏和 iOS 继续推进；详见[基础接入与验收边界](verification/macos-foundation.md)。公开 Linux TUN 保持关闭。
+
+2026-10-20 生命周期续验：已切换到 Flutter 3.29.3 / Dart 3.7.2，并提前释放 Linux 文件选择通道。473 项 Flutter、静态分析、两套渲染器共 108 张布局及真实文件弹窗/托盘/通知通过；最终 Linux 包在致命 GTK 警告模式下三次退出、四次托盘恢复通过，保留一条上游隐式视图诊断。Windows Release 与 Android Debug 包重新构建，后者完成签名/核心/16 KB 对齐检查。见[生命周期与 SDK 升级](verification/linux-flutter-lifecycle.md)。后续仍推进完整桌面/发行版兼容、Linux TUN 产品连接及分发和其他平台；公开 Linux TUN 保持关闭，下方为各阶段原始快照。
+
+2026-10-20 通用设置：Linux 当前用户自动启动、StatusNotifier 托盘和独立通知已接入，真实面板消失/重启与通知动作通过。473 项 Flutter、8 项原生检查、静态分析和当前 Figma 44 个 SVG 核对通过；745 项输入一致，新的完整 Release 已启动、保存偏好并重开，见[通用系统功能](verification/linux-desktop-system-services.md)。下一步处理 GTK/Flutter 生命周期诊断、完整桌面/发行版、分发与其余平台，公开 Linux TUN 仍关闭。下方各阶段摘要与范围保留。
+
+2026-10-20 活动桌面授权：最终完整 Linux 0.1.0+4 tar 已在新的普通用户登录会话中完成真实 lxpolkit 密码授权安装、卸载和窗口退出，systemd/摘要/清理均回读；继承 capability 导致的 broker 兼容缺陷已修复。当前 Figma 44 个 SVG 重新导出一致，733 项产品输入及 181 项原生/构建输入一致。见[图形授权与最终包](verification/linux-graphical-service-management.md)。下一步推进 Linux 通用系统功能、GTK 退出诊断、完整桌面/发行版兼容、分发及其余平台；公开 Linux TUN 仍关闭，下方记录保留各阶段原始范围。
+
+2026-10-20 普通用户写入取消：真实生产 broker 经 pkexec 在宿主已替换、核心临时写入已完成时取消，启用/停用的 cancel / EOF 共四项通过。没有增加生产故障注入参数，旧宿主、清单、socket 状态和事务清理均已验收，见[普通用户写入取消](verification/linux-broker-write-cancellation.md)。图形授权、完整 GUI、发行版兼容与其余平台继续推进，公开 Linux TUN 保持关闭。
+
+2026-10-20 概览续验：补齐 Figma 底部近期连接摘要，按实际请求显示目标、代理/直连和时间；小窗口连接卡、趋势图和节点健康重新分配空间。468 项 Flutter、静态分析、两端桌面真实核心回执及关闭、108 张布局截图通过，729 项源码与 QA 一致；Linux Release tar 已更新。见[概览与紧凑布局](verification/overview-recent-connections.md)。活动桌面授权、普通 broker 写入取消和其他平台原生能力继续推进，公开 Linux TUN 保持关闭。
+
+2026-10-20 Linux 桌面预览：x64 Release tar 已由普通用户完整构建，原生核心摘要一致；隔离 X11 窗口、真实认证 HTTP、GNOME 接管及关闭恢复、原生冒烟和 78 张布局/状态截图通过。当前 Figma SVG 已原生更新，Linux 窗口/启动器图标同源。下一步继续活动桌面授权、普通 broker 写入取消、完整桌面与正式分发，公开 TUN 仍关闭，见[桌面预览验收](verification/linux-desktop-preview.md)。
+
 2026-10-20 安装取消续验：50 个取消边界和原有 30 次 SIGKILL 恢复通过；实际 systemd 下的五种写入后取消/提交保持场景，以及八种授权与管理回归通过。私有测试 checkpoint 的恢复证据与普通 broker 端到端取消范围分开记录，见[安装取消与恢复](verification/linux-install-cancellation.md)。接着补图形桌面、普通 broker 写入中取消和分发，公开 Linux TUN 保持关闭。
 
 2026-10-20 等待认证取消：已修复并通过真实 pkexec/polkit 的 AUTH_ADMIN 取消、EOF 和代理拒绝，五种原有服务管理场景也通过回归。测试使用无密码的 D-Bus 协议代理，图形桌面认证及写入期间取消继续验收，见[认证取消记录](verification/linux-service-authentication-cancellation.md)。
@@ -16,7 +38,7 @@
 
 2026-10-16 进展：Windows 八种协议（HTTP、SOCKS5、Shadowsocks、VLESS、VMess、Trojan、Hysteria2、TUIC v5）、认证安全保存、真实 sing-box 会话、系统代理、模式切换、出口探测及采样已接入；订阅 URL 导入、自动分组、手动 / 自动更新、流量和到期信息已接入。节点收藏、订阅本地别名、隐藏恢复与可取消的独立测速已实现；连接、日志、自定义规则与可视化代理链已有实际核心验收，正常与异常恢复已有实机验证。桌面 / 移动布局继续独立，共享业务层。当前 stdio 会话协议及尚未实现的范围见 [宿主接口](HOST_PROTOCOL.md)、[实现清单](IMPLEMENTATION_STATUS.md)、[节点管理验收](verification/node-management.md)、[八协议验收](verification/protocols.md) 和 [订阅验收](verification/windows-subscriptions.md)。以下表格保留完整产品目标，不表示所有功能已经完成。
 
-流量续验：持久 15 分钟用量、日/周/月、保守归属排行及 CSV 已在 Windows 接入，切换页面继续采样；应用/规则多出站的精确归属仍未实现，见 [持久流量验收](verification/traffic.md)。
+2026-10-20 流量续验：实际 TCP/UDP 出站和应用累计已接入核心、桌面宿主及 Android transport；SQLite schema 8 原子保存两个独立分区和来源检查点，包含已结束连接，模式切换不重标旧流。未知、容量上限、旧聚合迁移及中断边界明确保留，原卡片内切换“出站/应用”，紧凑桌面并排显示图表和排行。当前实测、双端布局与平台范围见[流量归属验收](verification/traffic-accounting.md)；前阶段[保守归属](verification/traffic.md)保留原始范围。
 
 2026-10-17 订阅兼容续验：Clash、sing-box JSON 节点及 URI 参数按现有核心能力严格校验；不兼容项在原添加/详情弹窗逐项说明，确认后提交内存中的同一份预览。取消、预览失效与自动更新未确认均保留旧节点，远端 DNS/规则/监听配置不会直接应用。schema 7 保存安全兼容原因，两端流量详情不再用缺失值组成大号比值。下载器在已连接时使用当前本地代理，失败不自动回退直连；实际经 HY2 获取并解析了 68 个节点。真实 HY2 抽测、Figma 对照、回归及最新 0.1.0+4 预览见[订阅兼容验收](verification/subscription-compatibility.md)。
 

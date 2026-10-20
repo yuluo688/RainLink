@@ -1,0 +1,14 @@
+{
+  "cancel": {
+    "dialog": "4194384",
+    "action": "cancel"
+  },
+  "cancelDoesNotWriteOrReportSuccess": true,
+  "save": {
+    "dialog": "4195910",
+    "action": "save"
+  },
+  "selectedPathWithSpacesWrittenAndReadBack": true,
+  "csvBytes": 2363,
+  "fixtureDataOnly": true
+}

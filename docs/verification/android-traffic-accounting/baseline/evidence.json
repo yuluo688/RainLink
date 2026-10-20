@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "tests": 5,
+  "scope": "Existing AndroidCoreTest paths on isolated Traffic QA AVD; ordinary preview APK; original /probe and /hold clients",
+  "apkSha256": "d85a514c3f3b15f0801b733c602643e354d6aee298602a5bb5602c12f97dd460",
+  "targetRequests": 25,
+  "ipv6Connects": 1,
+  "heldConnectionsClosed": 3,
+  "completedAt": "2026-10-20T19:36:01+0800"
+}
