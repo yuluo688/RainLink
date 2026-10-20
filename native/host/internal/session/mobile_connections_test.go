@@ -14,6 +14,28 @@ import (
 	"time"
 )
 
+func TestMobileTrafficUsesTheDesktopAccountingContract(t *testing.T) {
+	manager, _ := trafficFixture(t, validTrafficFixture())
+	address, err := url.Parse(manager.active.api)
+	if err != nil {
+		t.Fatal(err)
+	}
+	port, err := strconv.Atoi(address.Port())
+	if err != nil {
+		t.Fatal(err)
+	}
+	monitor := NewMobileConnections(MobileConfiguration{APIPort: port, APISecret: manager.active.secret,
+		Snapshot: manager.active.snapshot, TrafficTargets: manager.active.trafficTargets}, manager.active.client, NewMobileLogs(nil))
+	snapshot, err := monitor.Traffic(t.Context(), "session-a")
+	if err != nil || snapshot.UploadTotal != 10 || snapshot.DownloadTotal != 100 ||
+		len(snapshot.Targets) != 1 || snapshot.Targets[0].ID != "node-a" || len(snapshot.Applications) != 1 || snapshot.Applications[0].Name != "browser.exe" {
+		t.Fatalf("mobile accounting diverged: %+v, %v", snapshot, err)
+	}
+	if _, err := monitor.Traffic(t.Context(), "stale-session"); err == nil {
+		t.Fatal("mobile accepted a stale accounting session")
+	}
+}
+
 func TestMobileConnectionsReuseStablePagingAttributionAndConfirmedClosing(t *testing.T) {
 	var mu sync.Mutex
 	var entries []map[string]any

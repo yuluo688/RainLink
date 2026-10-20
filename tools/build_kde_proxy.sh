@@ -9,6 +9,8 @@ case "$(uname -m)" in
   *) echo "Unsupported architecture" >&2; exit 2 ;;
 esac
 output_directory="${1:-$repo_root/build/host/linux-$arch}"
-cmake -S "$repo_root/native/linux/kde_proxy" -B "$repo_root/build/native/kde-proxy-$arch" -DCMAKE_BUILD_TYPE=Release
-cmake --build "$repo_root/build/native/kde-proxy-$arch" --parallel 2
-install -m 755 -D "$repo_root/build/native/kde-proxy-$arch/rainlink-kde-proxy" "$output_directory/rainlink-kde-proxy"
+# Match Flutter's documented Ninja toolchain and keep old Makefile caches valid.
+build_directory="$repo_root/build/native/kde-proxy-$arch/ninja"
+cmake -G Ninja -S "$repo_root/native/linux/kde_proxy" -B "$build_directory" -DCMAKE_BUILD_TYPE=Release
+cmake --build "$build_directory" --parallel 2
+install -m 755 -D "$build_directory/rainlink-kde-proxy" "$output_directory/rainlink-kde-proxy"

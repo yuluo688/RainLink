@@ -44,8 +44,8 @@ func ServeIsolated(input io.Reader, output io.Writer, corePath string) error {
 }
 
 func serve(input io.Reader, output io.Writer, corePath, stateDir string, isolated bool) error {
-	if runtime.GOOS != "windows" && runtime.GOOS != "linux" {
-		return errors.New("interactive sessions are currently implemented for Windows and Linux")
+	if runtime.GOOS != "windows" && runtime.GOOS != "linux" && runtime.GOOS != "darwin" {
+		return errors.New("interactive sessions are unavailable on this platform")
 	}
 	if stateDir == "" {
 		directory, err := os.UserCacheDir()
@@ -270,6 +270,14 @@ func (m *Manager) execute(ctx context.Context, command request) (any, error) {
 		return nil, m.ValidateRules(ctx, payload)
 	case "snapshot":
 		return m.Snapshot(ctx), nil
+	case "traffic":
+		var payload struct {
+			SessionID string `json:"sessionId"`
+		}
+		if err := json.Unmarshal(command.Payload, &payload); err != nil {
+			return nil, fail("invalid_request", "流量读取参数无效")
+		}
+		return m.Traffic(ctx, payload.SessionID)
 	case "connections":
 		var payload struct {
 			SessionID  string `json:"sessionId"`

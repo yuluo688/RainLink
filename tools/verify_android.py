@@ -38,6 +38,7 @@ class Fixtures:
         self.held_requests = 0
         self.held_closed = 0
         self.delayed_connects = 0
+        self.accounting_acknowledgements = 0
         owner = self
 
         class Target(BaseHTTPRequestHandler):
@@ -52,6 +53,15 @@ class Fixtures:
                 self.end_headers()
                 self.wfile.write(payload)
                 self.wfile.flush()
+                if self.path == "/traffic-accounting":
+                    # Wait for a complete-body receipt before closing this
+                    # Windows/QEMU socket. Immediate close can truncate the
+                    # final bytes in the emulator's host-network bridge.
+                    self.connection.settimeout(5)
+                    if self.rfile.read(1) != b"R":
+                        return
+                    with owner.lock:
+                        owner.accounting_acknowledgements += 1
                 if held:
                     with owner.lock:
                         owner.held_requests += 1

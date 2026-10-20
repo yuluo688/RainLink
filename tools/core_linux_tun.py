@@ -1,8 +1,9 @@
 """Stage the reviewed Linux-only managed-TUN dependency extensions."""
 import json
 from pathlib import Path
-import shutil
 import subprocess
+
+from core_sources import copy_module_sources
 
 
 def prepare_linux_tun(lock, env, source_dir, replacements, digest, replace_once):
@@ -18,7 +19,7 @@ def prepare_linux_tun(lock, env, source_dir, replacements, digest, replace_once)
         if module.get("Sum") != entry["sum"]:
             raise RuntimeError("Linux TUN dependency checksum mismatch: " + name)
         destination = source_dir / "rainlink-modules" / name
-        shutil.copytree(Path(module["Dir"]), destination, dirs_exist_ok=True, copy_function=shutil.copyfile)
+        copy_module_sources(Path(module["Dir"]), destination)
         for relative, expected in entry["files"].items():
             if digest((destination / relative).read_bytes()) != expected:
                 raise RuntimeError("Linux TUN dependency file changed: " + name + "/" + relative)

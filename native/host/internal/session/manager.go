@@ -75,19 +75,20 @@ type managedCapture interface {
 }
 
 type runningCore struct {
-	process       coreprocess.Process
-	managed       managedCapture
-	done          chan struct{}
-	api           string
-	secret        string
-	client        *http.Client
-	snapshot      Snapshot
-	telemetry     Telemetry
-	lastUpload    int64
-	lastDownload  int64
-	lastSample    time.Time
-	cancelProbe   context.CancelFunc
-	outboundNames map[string]string
+	process        coreprocess.Process
+	managed        managedCapture
+	done           chan struct{}
+	api            string
+	secret         string
+	client         *http.Client
+	snapshot       Snapshot
+	telemetry      Telemetry
+	lastUpload     int64
+	lastDownload   int64
+	lastSample     time.Time
+	cancelProbe    context.CancelFunc
+	outboundNames  map[string]string
+	trafficTargets map[string]TrafficTarget
 }
 
 // Manager serializes all lifecycle operations. Exit monitoring restores capture.
@@ -314,7 +315,8 @@ func (m *Manager) connectTargetCapture(ctx context.Context, node Node, chain *Ch
 		return Snapshot{}, fail("core_start_failed", "无法启动网络核心")
 	}
 	core := &runningCore{process: process, done: make(chan struct{}), api: fmt.Sprintf("http://127.0.0.1:%d", apiPort), secret: secret,
-		client: &http.Client{Timeout: 2 * time.Second, Transport: &http.Transport{Proxy: nil}}, lastSample: time.Now(), outboundNames: names}
+		client: &http.Client{Timeout: 2 * time.Second, Transport: &http.Transport{Proxy: nil}}, lastSample: time.Now(), outboundNames: names,
+		trafficTargets: trafficTargets(primary.RoutingOutbound, plan)}
 	go func() { _ = process.Wait(); stdout.finish(); stderr.finish(); close(core.done); m.coreExited(core) }()
 	defer func() {
 		if !committed {

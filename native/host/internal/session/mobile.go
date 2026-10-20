@@ -33,12 +33,13 @@ type MobileRequest struct {
 // MobileConfiguration is private to the native service. Only Snapshot may be
 // returned to Flutter; Configuration and APISecret contain runtime secrets.
 type MobileConfiguration struct {
-	Configuration string            `json:"configuration"`
-	Snapshot      Snapshot          `json:"snapshot"`
-	APIPort       int               `json:"apiPort"`
-	APISecret     string            `json:"apiSecret"`
-	SecretValues  []string          `json:"-"`
-	OutboundNames map[string]string `json:"-"`
+	Configuration  string                   `json:"configuration"`
+	Snapshot       Snapshot                 `json:"snapshot"`
+	APIPort        int                      `json:"apiPort"`
+	APISecret      string                   `json:"apiSecret"`
+	SecretValues   []string                 `json:"-"`
+	OutboundNames  map[string]string        `json:"-"`
+	TrafficTargets map[string]TrafficTarget `json:"-"`
 }
 
 // MobileLogs applies the same secret filtering, bounds and cursor as desktop.
@@ -186,7 +187,7 @@ func compileNativeRequest(raw []byte, tunnel bool, capture func([]byte) ([]byte,
 	if request.Routing != nil {
 		ruleRevision = request.Routing.Revision
 	}
-	result = MobileConfiguration{Configuration: string(config), APIPort: apiPort, APISecret: secret, OutboundNames: names,
+	result = MobileConfiguration{Configuration: string(config), APIPort: apiPort, APISecret: secret, OutboundNames: names, TrafficTargets: trafficTargets(primary, request.Routing),
 		Snapshot: Snapshot{Phase: "connected", SessionID: randomID(), Target: &target, Mode: request.Mode,
 			ConfigRevision: hex.EncodeToString(digest[:]), ProxyPort: proxyPort, TUN: tunnel,
 			RuleRevision: ruleRevision, RouteBindings: bindings, RuntimeSettings: &settings}}

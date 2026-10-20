@@ -25,7 +25,7 @@ case "${1:-}" in
     test_package=linuxmanage
     guest_source=linux_systemd_management_guest.sh
     result_log=real-systemd-management-tests.log
-    vm_timeout=1080
+    vm_timeout=1800
     ;;
   *) echo "Usage: $0 [--permission-logs|--service-management]" >&2; exit 2 ;;
 esac
@@ -118,7 +118,10 @@ timeout "$vm_timeout" qemu-system-x86_64 -machine pc,accel=tcg,smm=off -cpu qemu
 if [[ "$result" != 0 ]]; then echo "VM failed ($result); evidence retained in $run" >&2; exit "$result"; fi
 mcopy -i "$run/seed.img" '::/*.log' "$run/results/"
 if [[ "$test_package" == session ]]; then mcopy -i "$run/seed.img" '::/*.json' "$run/results/"; fi
-if [[ "$test_package" == linuxmanage ]]; then mcopy -i "$run/seed.img" '::/installation-cancel-*.json' "$run/results/"; fi
+if [[ "$test_package" == linuxmanage ]]; then
+  mcopy -i "$run/seed.img" '::/installation-cancel-*.json' "$run/results/"
+  mcopy -i "$run/seed.img" '::/broker-replacement-*.json' "$run/results/"
+fi
 mcopy -i "$run/seed.img" ::/guest-result.txt "$run/results/"
 cat "$run/results/$result_log"
 [[ "$(cat "$run/results/guest-result.txt")" == 0 ]] || { echo "Guest acceptance failed; evidence retained in $run" >&2; exit 1; }

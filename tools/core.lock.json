@@ -1,5 +1,5 @@
 {
-  "version": "1.12.25-rainlink.1",
+  "version": "1.12.25-rainlink.3",
   "upstreamVersion": "v1.12.25",
   "module": "github.com/sagernet/sing-box",
   "moduleSum": "h1:zg7RV4CCRsSelCfMTlQWiFvZE4gVyCVgwQWkfQWXggs=",
@@ -10,19 +10,25 @@
     "with_utls",
     "with_clash_api"
   ],
-  "binarySha256": "cf6863552456c535fd79a0724f2d01352e77c97f4958466b75d9f07d8f0edef7",
+  "binarySha256": "b80c854474ae697ddcd2b543dcda5c1aec5c2d56f971a8c1b1b0b5ceace074db",
   "upstreamFiles": {
     "option/tls.go": "394b1bdab6751f5b82ad2b75170faf116e0dcce765e542f0666d5c0d1ccf73dd",
     "common/tls/std_client.go": "ad41901bbf0e252d364f62f0f3afca0d902cf3fce089f6aaf9e7080d700dc955"
   },
   "additionalPlatforms": {
     "linux-amd64": {
-      "version": "1.12.25-rainlink.2",
-      "binarySha256": "640e5293d90b94c71318031284e65cf8121d99ee9c06482f021ed77c9f3fa96d"
+      "version": "1.12.25-rainlink.4",
+      "binarySha256": "37a7e31533c7250f2117b50f945c3926959d0d736ee4a9569d815ba2cea04c9f"
+    },
+    "darwin-arm64": {
+      "binarySha256": "bb7672b03949a27b86d9d5a2460bc0039fa5203d1800a4b1f09a7e1e2224f054"
+    },
+    "darwin-amd64": {
+      "binarySha256": "fa6abfba874c522b50ad7cada342aabfa84a711961a339a4bf6887fd3fec9794"
     }
   },
   "linuxTUN": {
-    "version": "1.12.25-rainlink.2",
+    "version": "1.12.25-rainlink.4",
     "upstreamFiles": {
       "go.mod": "02dbbd355ff8db37886a4d292d1c87cf74fdee71c5276b45bbeb180b06196fb1",
       "option/tun.go": "b8ec239b64b1b75ed0080c0ddff747805e62eba906b5f67e8e47e52b04e4aae0",
@@ -48,6 +54,14 @@
           "rule_linux.go": "12bb315914903771e99060b2da9efff988a91bb5acfcfad46cb8de1e178c7c9b"
         }
       }
+    }
+  },
+  "traffic": {
+    "protocolVersion": 1,
+    "upstreamFiles": {
+      "experimental/clashapi/trafficontrol/manager.go": "090d87cbdc71abf45a6816a93ea1bfffbcfe88a17ef83df0ca884f850fe7e770",
+      "experimental/clashapi/trafficontrol/tracker.go": "c4d6dfe1b1ef6731ab4da701bbe3715e7396e9feb0dbd53860bece189db3e6f2",
+      "experimental/clashapi/server.go": "b3fa79e0e73fb45447adf0339645b6fc020eeeb343ca070ab63099aecf44fc65"
     }
   }
 }

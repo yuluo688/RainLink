@@ -49,9 +49,9 @@ def main() -> None:
         path = ROOT / f"app/android/app/src/main/res/mipmap-{density}/ic_launcher.png"
         targets[path] = (size, False)
 
+    targets[ROOT / "app/linux/runner/resources/rainlink.png"] = (512, False)
+
     for path, (size, opaque) in targets.items():
-        if not path.is_file():
-            raise FileNotFoundError(f"Missing existing launcher asset: {path}")
         output = source.resize((size, size), Image.Resampling.LANCZOS)
         if opaque:
             # iOS applies its own mask and requires opaque App Store artwork.
@@ -61,9 +61,12 @@ def main() -> None:
         encoded = io.BytesIO()
         output.save(encoded, format="PNG", optimize=True)
         if args.check:
+            if not path.is_file():
+                raise FileNotFoundError(f"Missing generated launcher asset: {path}")
             if path.read_bytes() != encoded.getvalue():
                 raise ValueError(f"Stale generated launcher asset: {path}")
         else:
+            path.parent.mkdir(parents=True, exist_ok=True)
             path.write_bytes(encoded.getvalue())
 
     ico = ROOT / "app/windows/runner/resources/app_icon.ico"

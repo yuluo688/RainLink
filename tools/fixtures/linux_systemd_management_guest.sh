@@ -49,6 +49,8 @@ export RAINLINK_TEST_REAL_MANAGEMENT=disposable-vm
 export RAINLINK_TEST_MANAGEMENT_EVIDENCE=/mnt/qa-seed
 /opt/rainlink-qa/linuxmanage.test -test.v -test.run='^(TestRealSystemdManagementViaOrdinaryBroker|TestRealPolkitManagementAuthenticationCancellation)$' -test.timeout=360s > /mnt/qa-seed/real-systemd-management-tests.log 2>&1
 cat /mnt/qa-seed/real-systemd-management-tests.log
+/opt/rainlink-qa/linuxmanage.test -test.v -test.run='^TestRealSystemdBrokerCancellationDuringReplacement$' -test.timeout=600s > /mnt/qa-seed/real-broker-replacement-tests.log 2>&1
+cat /mnt/qa-seed/real-broker-replacement-tests.log
 export RAINLINK_TEST_REAL_SYSTEMD=disposable-vm
 export RAINLINK_TEST_INSTALL_CANCELLATION_EVIDENCE=/mnt/qa-seed
 /opt/rainlink-qa/linuxinstall.test -test.v -test.run='^TestRealSystemdCancellationAtDurableBoundaries$' -test.timeout=540s > /mnt/qa-seed/real-systemd-cancellation-tests.log 2>&1

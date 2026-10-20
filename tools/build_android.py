@@ -14,15 +14,26 @@ def main():
     args = parser.parse_args()
     if not args.java_home:
         raise RuntimeError("Set JAVA_HOME to a Java 17 installation")
-    # Flutter 3.27 writes Windows drive colons unescaped. Fix only its generated
+    # Flutter writes Windows drive colons unescaped. Fix only its generated
     # local file; Android lint must remain enabled without a PropertyEscape rule exception.
     properties = ROOT / "app/android/local.properties"
+    version = re.search(r"^version:\s*([^\s+]+)\+([1-9]\d*)\s*$",
+                        (ROOT / "app/pubspec.yaml").read_text(encoding="utf-8"), re.M)
+    if version is None:
+        raise RuntimeError("pubspec.yaml must declare a version with a positive build number")
+    # Direct Gradle builds do not refresh the Flutter-generated version fields.
+    # Read the same source as Flutter so a previous run cannot produce an old APK.
+    versions = {"flutter.versionName": version.group(1),
+                "flutter.versionCode": version.group(2)}
     lines = []
     for line in properties.read_text(encoding="utf-8").splitlines():
         key, separator, value = line.partition("=")
+        if key in versions:
+            value = versions.pop(key)
         if key in ("sdk.dir", "flutter.sdk") and re.match(r"^[A-Za-z]:", value):
             value = value[:1] + r"\:" + value[2:]
         lines.append(key + separator + value)
+    lines.extend(key + "=" + value for key, value in versions.items())
     properties.write_text("\n".join(lines) + "\n", encoding="utf-8")
     env = os.environ.copy()
     env["JAVA_HOME"] = args.java_home

@@ -91,7 +91,9 @@ func (systemBackend) change(ctx context.Context, method string) (result error) {
 		case 126:
 			return &failure{"authorization_cancelled", "已取消系统授权"}
 		case 127:
-			return &failure{"authorization_unavailable", "系统授权失败，请检查桌面认证服务"}
+			// Desktop agents can also return 127 when the user dismisses their
+			// prompt. Do not label that outcome as a system failure or success.
+			return &failure{"authorization_unavailable", "未获得系统授权，请重试或检查桌面认证服务"}
 		}
 	}
 	if err != nil || writeErr != nil {

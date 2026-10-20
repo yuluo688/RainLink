@@ -85,7 +85,7 @@ class WindowsPackageTest(unittest.TestCase):
                 path.write_bytes(content)
 
     def test_live_transaction_state_cannot_be_packaged(self):
-        for name in [".rainlink-update.json", ".rainlink-updating", ".rainlink-update.lock"]:
+        for name in [".rainlink-update.json", ".rainlink-updating", ".rainlink-update.lock", "native_assets.json"]:
             with self.subTest(file=name):
                 path = self.release / name
                 path.write_text("private update state", encoding="utf-8")

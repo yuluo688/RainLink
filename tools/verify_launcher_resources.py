@@ -1,4 +1,5 @@
 """Verify the standalone launcher identity and original ICO payloads on Windows."""
+import argparse
 import hashlib
 import json
 from pathlib import Path
@@ -15,6 +16,10 @@ RELEASE = ROOT / "app/build/windows/x64/runner/Release"
 
 
 def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--output", default="docs/verification/app-update-recovery/launcher-evidence.json",
+                        help="Report path relative to the repository, or an absolute path")
+    args = parser.parse_args()
     launcher = RELEASE / "rainlink.exe"
     ui = RELEASE / "rainlink-ui.exe"
     resources = read_resources(launcher)
@@ -46,7 +51,7 @@ def main():
               "launcherAndUiIconResourcesIdentical": True,
               "explicitBootstrapIdentityVerified": True,
               "standaloneWithoutFlutterDll": True, "startupWritesNoLockFile": True}
-    destination = ROOT / "docs/verification/app-update-recovery/launcher-evidence.json"
+    destination = ROOT / args.output
     destination.parent.mkdir(parents=True, exist_ok=True)
     destination.write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
     print(json.dumps(report, indent=2))

@@ -63,7 +63,10 @@ try {
             Invoke-Checked $dartCommand @('run', 'build_runner', 'build', '--delete-conflicting-outputs')
         }
         'check' {
+            Invoke-Checked 'python' @((Join-Path $repoRoot 'tools\test_core_sources.py'))
             Invoke-Checked 'python' @((Join-Path $repoRoot 'tools\test_package_windows.py'))
+            Invoke-Checked 'python' @((Join-Path $repoRoot 'tools\test_package_linux.py'))
+            Invoke-Checked 'python' @((Join-Path $repoRoot 'tools\test_build_macos.py'))
             Invoke-Checked $dartCommand @('format', '--output=none', '--set-exit-if-changed', 'lib', 'test', 'integration_test', 'tool')
             Invoke-Checked $flutterCommand ($flutterFlags + @('analyze', '--no-pub'))
             Invoke-Checked $flutterCommand ($flutterFlags + @('test', '--no-pub'))
@@ -98,7 +101,7 @@ try {
             Copy-Item -LiteralPath (Join-Path $repoRoot 'build\host\wintun-LICENSE.txt') -Destination $releaseDirectory
             Copy-Item -LiteralPath (Join-Path $repoRoot 'build\host\go-winio-LICENSE.txt') -Destination $releaseDirectory
             Invoke-Checked 'python' @((Join-Path $repoRoot 'tools\package_windows.py'), '--manifest-only', '--flutter-root', $flutterSdkDirectory)
-            Invoke-Checked 'python' @((Join-Path $repoRoot 'tools\verify_launcher_resources.py'))
+            Invoke-Checked 'python' @((Join-Path $repoRoot 'tools\verify_launcher_resources.py'), '--output', (Join-Path $repoRoot 'build\windows-launcher-evidence.json'))
             Write-Output "RainLink bundle: $releaseDirectory"
         }
     }

@@ -9,7 +9,7 @@ import struct
 import subprocess
 import zipfile
 
-from setup_core import ROOT, digest, prepare_sources
+from setup_core import ROOT, digest, prepare_sources, native_platform
 from mobile_cgo_alignment import prepare_cgo
 
 
@@ -67,6 +67,12 @@ def main():
         subprocess.run(["go", "install", "github.com/sagernet/gomobile/cmd/" + tool + "@" + lock["gomobileVersion"]],
                        env=env, check=True, timeout=180)
     source, source_dir, overlay, replacements = prepare_sources(base, env)
+    test_env = env.copy()
+    test_env["GOOS"], test_env["GOARCH"] = native_platform().split("-")
+    subprocess.run(["go", "test", "-overlay", str(overlay), "-mod=readonly", "-tags", ",".join(base["tags"]),
+                    "./common/tls", "./experimental/clashapi/trafficontrol", "./experimental/clashapi",
+                    "-run", "^TestRainLink", "-count=1"],
+                   cwd=source_dir, env=test_env, check=True, timeout=600)
     env["GOFLAGS"] = ('-mod=readonly -buildvcs=false "-overlay=' + str(overlay) +
                       '" "-toolexec=' + str(cgo_tool) + '"')
     aar = target / "rainlink-core.aar"
@@ -99,8 +105,11 @@ def main():
         for original, modified in replacements.items():
             if not Path(original).exists():
                 archive.write(modified, str(Path(original).relative_to(source_dir)))
+        archive.write(ROOT / "native/core/README.md", "RAINLINK-CHANGES.md")
     evidence = {"coreVersion": base["version"], "sourceSum": source["Sum"], "toolchain": base["goVersion"],
-                "recipe": lock, "cgo": cgo_evidence, "aarSha256": digest(aar.read_bytes()), "libraries": native}
+                "recipe": lock, "cgo": cgo_evidence, "extensionTestsPlatform": native_platform(),
+                "sourceArchiveSha256": digest((target / "sing-box-source.zip").read_bytes()),
+                "aarSha256": digest(aar.read_bytes()), "libraries": native}
     (target / "core-build.json").write_text(json.dumps(evidence, indent=2) + "\n", encoding="utf-8")
     print(json.dumps(evidence, indent=2))
 

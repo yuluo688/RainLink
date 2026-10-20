@@ -56,3 +56,18 @@ func (r *Runtime) CloseConnections(sessionID, connectionID string, all bool) err
 	}
 	return r.connections.Close(r.ctx, sessionID, connectionID, all)
 }
+
+// ReadTraffic returns public cumulative accounting, never a native configuration.
+func (r *Runtime) ReadTraffic(sessionID string) (string, error) {
+	r.mu.Lock()
+	defer r.mu.Unlock()
+	if !r.started || r.closed {
+		return "", errors.New("当前没有活动连接")
+	}
+	snapshot, err := r.connections.Traffic(r.ctx, sessionID)
+	if err != nil {
+		return "", err
+	}
+	encoded, err := json.Marshal(snapshot)
+	return string(encoded), err
+}

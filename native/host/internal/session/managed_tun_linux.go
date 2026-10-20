@@ -148,7 +148,7 @@ func (m *Manager) connectManagedTUNLocked(ctx context.Context, node Node, chain 
 	core := &runningCore{managed: capture, done: client.done, snapshot: client.started.Snapshot,
 		api: "http://" + net.JoinHostPort("127.0.0.1", strconv.Itoa(client.started.APIPort)), secret: client.started.APISecret,
 		client:     &http.Client{Timeout: 2 * time.Second, Transport: &http.Transport{Proxy: nil}},
-		lastSample: time.Now(), outboundNames: names}
+		lastSample: time.Now(), outboundNames: names, trafficTargets: trafficTargets(RoutingOutbound{Node: node, Chain: chain}, plan)}
 	if chain == nil {
 		publicNode := node
 		publicNode.Credential = ""

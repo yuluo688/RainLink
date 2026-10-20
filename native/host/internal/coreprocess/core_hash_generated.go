@@ -2,6 +2,8 @@
 package coreprocess
 
 var expectedCoreSHA256 = map[string]string{
-	"linux-amd64":   "640e5293d90b94c71318031284e65cf8121d99ee9c06482f021ed77c9f3fa96d",
-	"windows-amd64": "cf6863552456c535fd79a0724f2d01352e77c97f4958466b75d9f07d8f0edef7",
+	"darwin-amd64":  "fa6abfba874c522b50ad7cada342aabfa84a711961a339a4bf6887fd3fec9794",
+	"darwin-arm64":  "bb7672b03949a27b86d9d5a2460bc0039fa5203d1800a4b1f09a7e1e2224f054",
+	"linux-amd64":   "37a7e31533c7250f2117b50f945c3926959d0d736ee4a9569d815ba2cea04c9f",
+	"windows-amd64": "b80c854474ae697ddcd2b543dcda5c1aec5c2d56f971a8c1b1b0b5ceace074db",
 }

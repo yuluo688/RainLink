@@ -130,20 +130,6 @@ func (s *linuxKeyService) Key(ctx context.Context, create bool) (key []byte, err
 	return key, nil
 }
 
-type boundedOutput struct {
-	buffer   bytes.Buffer
-	limit    int
-	overflow bool
-}
-
-func (b *boundedOutput) Write(data []byte) (int, error) {
-	if len(data) > b.limit-b.buffer.Len() {
-		b.overflow = true
-		return 0, errors.New("key service output exceeds limit")
-	}
-	return b.buffer.Write(data)
-}
-
 func runSecretCommand(ctx context.Context, path string, args []string, input []byte) ([]byte, bool, error) {
 	command := exec.CommandContext(ctx, path, args...)
 	command.Stdin = bytes.NewReader(input)

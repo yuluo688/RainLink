@@ -89,6 +89,9 @@ func parseRequest(raw []byte) (request, error) {
 // Serve runs independently of the network session. EOF cancels authorization or
 // installation and waits for the elevated worker's bounded rollback and exit.
 func Serve(parent context.Context, input io.Reader, output io.Writer) error {
+	if err := dropBrokerCapabilities(); err != nil {
+		return err
+	}
 	return serve(parent, input, output, systemBackend{})
 }
 

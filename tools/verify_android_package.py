@@ -14,6 +14,8 @@ from setup_mobile_core import ROOT, sdk_from_properties, verify_elf_alignment
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--apk", default="app/build/app/outputs/apk/debug/app-debug.apk")
+    parser.add_argument("--output", default="docs/verification/android/package-evidence.json",
+                        help="Report path relative to the repository, or an absolute path")
     args = parser.parse_args()
     apk = ROOT / args.apk
     build_tools = sdk_from_properties() / "build-tools/35.0.0"
@@ -84,7 +86,7 @@ def main():
                   debuggable="application-debuggable" in badging, passed=True)
     if not report["debugSigned"] or not report["debuggable"]:
         raise RuntimeError("This verifier expects an explicitly labelled debug preview")
-    output = ROOT / "docs/verification/android/package-evidence.json"
+    output = ROOT / args.output
     output.parent.mkdir(parents=True, exist_ok=True)
     output.write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
     print(json.dumps(report, indent=2))

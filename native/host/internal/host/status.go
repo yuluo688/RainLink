@@ -5,7 +5,6 @@ import (
 	"context"
 	"runtime"
 
-	"rainlink.local/host/internal/coreprocess"
 	"rainlink.local/host/internal/session"
 )
 
@@ -53,14 +52,12 @@ func Inspect() Status {
 		},
 		Core: Core{State: "not_configured"},
 	}
-	if runtime.GOOS == "windows" || runtime.GOOS == "linux" {
+	if runtime.GOOS == "windows" || runtime.GOOS == "linux" || runtime.GOOS == "darwin" {
 		if version, err := session.Version(session.CorePath()); err == nil {
 			status.Core = Core{State: "ready", Version: &version}
 			status.Capabilities.Connect = true
 			status.Capabilities.SystemProxy = session.SystemProxyAvailable(context.Background())
-			if runtime.GOOS == "windows" {
-				status.Capabilities.TUN = coreprocess.Trusted(session.CorePath())
-			}
+			status.Capabilities.TUN = tunAvailable(context.Background(), session.CorePath())
 		}
 	}
 	return status

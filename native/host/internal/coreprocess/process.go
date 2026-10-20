@@ -78,4 +78,20 @@ func TrustedFile(file *os.File) bool {
 	return err == nil && seekErr == nil && hex.EncodeToString(digest.Sum(nil)) == expected
 }
 
-func lockedCoreHash() string { return expectedCoreSHA256[runtime.GOOS+"-"+runtime.GOARCH] }
+// Code signing changes Mach-O bytes. The macOS builder verifies the unsigned
+// core against the source lock, signs that copy, then pins its exact digest into
+// the host at link time. No runtime path, environment or manifest can override it.
+var signedDarwinCoreSHA256 string
+
+func coreHash(platform string) string {
+	if platform == "darwin" && signedDarwinCoreSHA256 != "" {
+		raw, err := hex.DecodeString(signedDarwinCoreSHA256)
+		if err != nil || len(raw) != sha256.Size {
+			return ""
+		}
+		return hex.EncodeToString(raw)
+	}
+	return expectedCoreSHA256[platform+"-"+runtime.GOARCH]
+}
+
+func lockedCoreHash() string { return coreHash(runtime.GOOS) }

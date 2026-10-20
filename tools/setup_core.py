@@ -9,11 +9,12 @@ import json
 import os
 import platform
 from pathlib import Path
-import shutil
 import subprocess
 import zipfile
 
 from core_linux_tun import prepare_linux_tun
+from core_sources import copy_module_sources
+from core_traffic import prepare_traffic
 
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -63,8 +64,7 @@ def prepare_sources(lock, env, managed_tun=False):
     variant = "linux-tun-" if managed_tun else ""
     source_dir = ROOT / "build/core-source" / (variant + lock["upstreamVersion"])
     # Go forbids overlays inside GOMODCACHE; use a disposable verified copy.
-    shutil.copytree(Path(source["Dir"]), source_dir, dirs_exist_ok=True,
-                    copy_function=shutil.copyfile)
+    copy_module_sources(Path(source["Dir"]), source_dir)
     overlay_dir = ROOT / "build/core-overlay" / ("linux-tun" if managed_tun else "tls")
     overlay_dir.mkdir(parents=True, exist_ok=True)
     replacements = {}
@@ -86,6 +86,7 @@ def prepare_sources(lock, env, managed_tun=False):
         replacements[str(original)] = str(modified)
     for extension in sorted((ROOT / "native/core").glob("*.go")):
         replacements[str(source_dir / "common/tls" / extension.name)] = str(extension)
+    prepare_traffic(lock, source_dir, overlay_dir, replacements, digest)
     if managed_tun:
         prepare_linux_tun(lock, env, source_dir, replacements, digest, replace_once)
     subprocess.run(["gofmt", "-w", *[v for v in replacements.values()
@@ -127,6 +128,8 @@ def main():
     source_archive = target / "sing-box-source.zip"
     recipe = {"lock": lock, "platform": target_platform, "builder": digest(Path(__file__).read_bytes()),
               "linuxBuilder": digest((ROOT / "tools/core_linux_tun.py").read_bytes()),
+              "sourceStager": digest((ROOT / "tools/core_sources.py").read_bytes()),
+              "trafficBuilder": digest((ROOT / "tools/core_traffic.py").read_bytes()),
               "extension": {p.relative_to(ROOT / "native/core").as_posix(): digest(p.read_bytes())
                             for p in sorted((ROOT / "native/core").rglob("*")) if p.is_file()}}
     recipe_hash = digest(json.dumps(recipe, sort_keys=True).encode())
@@ -149,7 +152,8 @@ def main():
     common = ["-overlay", str(overlay_path), "-mod=readonly", "-tags", ",".join(lock["tags"])]
     test_env = env.copy()
     test_env["GOOS"], test_env["GOARCH"] = native_platform().split("-")
-    subprocess.run(["go", "test", *common, "./common/tls", "-run", "^TestRainLink", "-count=1"],
+    subprocess.run(["go", "test", *common, "./common/tls", "./experimental/clashapi/trafficontrol",
+                    "./experimental/clashapi", "-run", "^TestRainLink", "-count=1"],
                    cwd=source_dir, env=test_env, check=True, timeout=600)
     managed_test_status = "not applicable"
     if managed_tun:
@@ -191,8 +195,9 @@ def main():
         archive.write(ROOT / "native/core/README.md", "RAINLINK-CHANGES.md")
         archive.writestr("RAINLINK-BUILD.txt",
             "Toolchain: " + lock["goVersion"] + "; GOOS=" + goos + "; GOARCH=" + goarch + "; CGO_ENABLED=0\n"
-            "Certificate extension tests ran on " + native_platform() + "\n"
-            "go test -mod=readonly -tags " + ",".join(lock["tags"]) + " ./common/tls -run ^TestRainLink\n"
+            "TLS and traffic extension tests ran on " + native_platform() + "\n"
+            "go test -mod=readonly -tags " + ",".join(lock["tags"]) +
+            " ./common/tls ./experimental/clashapi/trafficontrol ./experimental/clashapi -run ^TestRainLink\n"
             "go build -mod=readonly -trimpath -buildvcs=false -tags " + ",".join(lock["tags"]) +
             ' -ldflags "-s -w -buildid= -X github.com/sagernet/sing-box/constant.Version=' +
             version + '" -o ' + binary_name + ' ./cmd/sing-box\n')

@@ -16,7 +16,7 @@ type MobileConnections struct{ manager *Manager }
 func NewMobileConnections(prepared MobileConfiguration, client *http.Client, logs *MobileLogs) *MobileConnections {
 	return &MobileConnections{manager: &Manager{
 		active: &runningCore{api: fmt.Sprintf("http://127.0.0.1:%d", prepared.APIPort),
-			secret: prepared.APISecret, client: client, snapshot: prepared.Snapshot, outboundNames: prepared.OutboundNames},
+			secret: prepared.APISecret, client: client, snapshot: prepared.Snapshot, outboundNames: prepared.OutboundNames, trafficTargets: prepared.TrafficTargets},
 		logs: logs.writer.logs,
 	}}
 }
@@ -32,4 +32,9 @@ func (c *MobileConnections) Page(ctx context.Context, sessionID, snapshotID stri
 // Close confirms disappearance of the requested stream IDs before succeeding.
 func (c *MobileConnections) Close(ctx context.Context, sessionID, connectionID string, all bool) error {
 	return c.manager.CloseConnections(ctx, sessionID, connectionID, all)
+}
+
+// Traffic reads cumulative accounting including flows which have already closed.
+func (c *MobileConnections) Traffic(ctx context.Context, sessionID string) (TrafficSnapshot, error) {
+	return c.manager.Traffic(ctx, sessionID)
 }

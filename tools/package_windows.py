@@ -8,6 +8,8 @@ import shutil
 import zipfile
 from pathlib import Path
 
+from package_common import app_version, digest
+
 ROOT = Path(__file__).resolve().parent.parent
 MANIFEST = "rainlink-bundle.json"
 REQUIRED = (
@@ -15,14 +17,6 @@ REQUIRED = (
     "flutter_windows.dll", "data/app.so",
     "sing-box-source.zip", "sing-box-LICENSE.txt", "wintun-LICENSE.txt", "go-winio-LICENSE.txt",
 )
-
-
-def digest(path):
-    result = hashlib.sha256()
-    with path.open("rb") as source:
-        for chunk in iter(lambda: source.read(1024 * 1024), b""):
-            result.update(chunk)
-    return result.hexdigest()
 
 
 def verify_runtime(release, flutter_root):
@@ -51,11 +45,7 @@ def verify_runtime(release, flutter_root):
 
 
 def package(release, output=None):
-    version = re.search(
-        r"^version:\s*(.+)$",
-        (ROOT / "app/pubspec.yaml").read_text(encoding="utf-8"),
-        re.MULTILINE,
-    ).group(1).strip()
+    version = app_version(ROOT)
     files = sorted(path for path in release.rglob("*")
                    if path.is_file() and path.name != MANIFEST)
     if any(path.is_symlink() for path in release.rglob("*")):
@@ -134,11 +124,7 @@ def main():
     if flutter_root is None:
         parser.error("Set --flutter-root or FLUTTER_ROOT to verify the release engine")
     runtime = verify_runtime(release, Path(flutter_root))
-    version = re.search(
-        r"^version:\s*(.+)$",
-        (ROOT / "app/pubspec.yaml").read_text(encoding="utf-8"),
-        re.MULTILINE,
-    ).group(1).strip()
+    version = app_version(ROOT)
     output = None if args.manifest_only else ROOT / (
         f"build/RainLink-{version}-windows-x64.zip" if args.release_asset
         else f"build/RainLink-windows-x64-{args.label}.zip"

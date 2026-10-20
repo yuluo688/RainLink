@@ -468,7 +468,7 @@ func targetConfiguration(primary preparedOutbound, mode string, proxyPort, apiPo
 		"dns":          dns,
 		"inbounds":     []any{map[string]any{"type": "mixed", "tag": "mixed-in", "listen": "127.0.0.1", "listen_port": proxyPort}},
 		"outbounds":    outbounds,
-		"route":        map[string]any{"default_domain_resolver": resolver, "rules": rules, "final": "proxy"},
+		"route":        map[string]any{"default_domain_resolver": resolver, "rules": rules, "final": "proxy", "find_process": true},
 		"experimental": map[string]any{"clash_api": map[string]any{"external_controller": net.JoinHostPort("127.0.0.1", strconv.Itoa(apiPort)), "secret": secret, "default_mode": clashMode(mode)}},
 	}
 	if err := applyAdvanced(config, settings); err != nil {
